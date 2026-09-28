@@ -26,6 +26,10 @@ FONTS = OUT / "fonts"
 
 def copy_dir(name: str) -> None:
     src, dst = SRC / name, OUT / name
+    if not src.exists():
+        if dst.exists():
+            shutil.rmtree(dst)
+        return
     if dst.exists():
         shutil.rmtree(dst)
     shutil.copytree(src, dst)
@@ -127,7 +131,8 @@ def write_data() -> None:
         png = icon_dir / f"{t['id']}.png"
         if png.exists():
             t["icon"] = f"assets/icons/{t['id']}.png"
-    svg_ids = sorted(p.stem for p in (OUT / "icons-svg").glob("*.svg"))
+    svg_dir = OUT / "icons-svg"
+    svg_ids = sorted(p.stem for p in svg_dir.glob("*.svg")) if svg_dir.is_dir() else []
     data = {"words": words, "themes": themes, "grammar": grammar, "cats": cats, "svgIds": svg_ids}
     text = "window.LAZYCAT_DATA=" + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + ";\n"
     (ROOT / "js" / "data.js").write_text(text, encoding="utf-8")

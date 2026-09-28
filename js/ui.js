@@ -477,7 +477,6 @@
       '<div class="setrow"><span>🔊 試聽</span><button class="btn sm" data-speak="Hello! Nice to meet you.">Hello!</button></div>' +
       '<div class="setrow"><span>每日問我揀陪讀貓</span><button class="switch' + (S.settings.askCompanionDaily ? " on" : "") + '" data-act="askcat"></button></div>' +
       '<div class="setrow"><span>顯示音標</span><button class="switch' + (S.settings.showIPA ? " on" : "") + '" data-act="ipa"></button></div>' +
-      '<div class="setrow col"><span>生字圖示</span><div class="segs tiny"><button data-act="svg" data-v="0"' + (!S.settings.svgIcons ? ' class="on"' : "") + '>字母方塊（預設）</button><button data-act="svg" data-v="1"' + (S.settings.svgIcons ? ' class="on"' : "") + ">向量圖（試用）</button></div><p class=\"fine\">向量圖（試用）覆蓋自我介紹同家人、身體、屋企、日常作息。手繪圖永遠優先。</p></div>" +
       '<div class="setrow"><button class="btn ghost sm" data-act="export">匯出進度</button><button class="btn ghost sm" data-act="import">匯入進度</button></div>' +
       '<p class="fine center">懶貓英文 v1.0（第 1 季）</p><input id="importFile" type="file" accept="application/json" hidden></div>';
   }
@@ -576,7 +575,7 @@
 
   function openDev() {
     const nxt = nextNewNode();
-    modal('<h3>🛠 開發者面板</h3><div class="devinfo">日期 ' + today() + "（偏移 " + (S.dayOffset || 0) + " 日）<br>下一課：" + (nxt ? nxt.id : "—") + "<br>已學 " + newLessonsDoneSafe() + " ・ 預期 " + LC.expectedCount() + " ・ 落後 " + behindBy() + "<br>今日新課 " + newCountToday() + " ・ 心 " + S.hearts + " ・ 圖示 " + placeholderMode() + (S.settings.svgIcons ? " +SVG" : "") + "</div>" +
+    modal('<h3>🛠 開發者面板</h3><div class="devinfo">日期 ' + today() + "（偏移 " + (S.dayOffset || 0) + " 日）<br>下一課：" + (nxt ? nxt.id : "—") + "<br>已學 " + newLessonsDoneSafe() + " ・ 預期 " + LC.expectedCount() + " ・ 落後 " + behindBy() + "<br>今日新課 " + newCountToday() + " ・ 心 " + S.hearts + " ・ 圖示 " + placeholderMode() + "</div>" +
       '<div class="devbtns">' +
       '<button class="btn sm" data-act="dev" data-d="prevday">⏮️ 前一日</button>' +
       '<button class="btn sm" data-act="dev" data-d="nextday">⏭️ 跳去聽日</button>' +
@@ -597,8 +596,6 @@
       '<button class="btn sm" data-act="dev" data-d="perfect">模擬零錯誤主題</button>' +
       '<button class="btn sm" data-act="dev" data-d="icon-tile">圖示 tile</button>' +
       '<button class="btn sm" data-act="dev" data-d="icon-emoji">圖示 emoji</button>' +
-      '<button class="btn sm" data-act="dev" data-d="svg">向量圖：' + (S.settings.svgIcons ? "開" : "關") + "</button>" +
-      '<button class="btn sm" data-act="dev" data-d="compare">圖示比較</button>' +
       '<button class="btn sm" data-act="dev" data-d="prev-card">預覽生字卡</button>' +
       '<button class="btn sm" data-act="dev" data-d="prev-photo">預覽新相</button>' +
       '<button class="btn sm" data-act="dev" data-d="prev-yarn">預覽毛線</button>' +
@@ -629,9 +626,7 @@
     if (d === "perfect") simPerfect();
     if (d === "icon-tile") S.devIconMode = "tile";
     if (d === "icon-emoji") S.devIconMode = "emoji";
-    if (d === "svg") S.settings.svgIcons = !S.settings.svgIcons;
     if (d === "due") Object.values(S.srs).forEach(r => r.due = today());
-    if (d === "compare") { closeModal(); ui.tab = "icons"; render(); return; }
     if (d === "prev-card") { closeModal(); preview({ type: "themeCard", theme: "t01", xp: 15 }); return; }
     if (d === "prev-photo") { closeModal(); preview({ type: "photo", cat: S.companion, pose: "stretch", xp: 20, lessons: 10 }); return; }
     if (d === "prev-yarn") { closeModal(); preview({ type: "yarn", cat: S.companion, theme: "t01", xp: 20 }); return; }
