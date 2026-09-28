@@ -73,20 +73,26 @@ h2,h3,h4{font-weight:normal}
 .ilet{font-family:var(--en);font-weight:800;line-height:1}
 .iemoji{line-height:1}
 .ipaw{position:absolute;right:8%;bottom:8%;width:28%;height:28%;fill:currentColor;opacity:.18}
-.hero{position:relative;height:220px;border-radius:26px;overflow:hidden;background:linear-gradient(180deg,#FFEED3,#FFE2C0);border:2px solid #F7DDBE;flex-shrink:0}
-.hero{cursor:pointer}
-.heroimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 62%;transform-origin:50% 62%}
-.hero.nap .heroimg{animation:breathe 3.4s ease-in-out infinite}
-.hero.wave .heroimg{animation:wave .7s ease}
-.hero.hop .heroimg{animation:hop .55s ease}
-.hero.stretch .heroimg{animation:stretch .7s ease}
-.hero.happy .heroimg{animation:happy .65s ease}
+.hero{position:relative;height:220px;border-radius:26px;overflow:hidden;background:linear-gradient(180deg,#FFEED3,#FFE2C0);border:2px solid #F7DDBE;flex-shrink:0;cursor:pointer}
+.herostage{position:absolute;left:-6%;width:112%;top:-14%;height:132%;transform-origin:50% 70%}
+.heroimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 62%}
+.hero.nap .herostage{animation:breathe 2.2s ease-in-out infinite}
+.hero.wave .herostage{animation:wave 1.15s ease-in-out infinite}
+.hero.hop .herostage{animation:hop .85s ease-in-out infinite}
+.hero.stretch .herostage{animation:stretch 1.5s ease-in-out infinite}
+.hero.happy .herostage{animation:happy .9s ease-in-out infinite}
 .heroname{position:absolute;right:12px;bottom:10px;background:rgba(255,248,238,.92);color:var(--cocoa);border-radius:999px;padding:3px 10px;font-size:13px;z-index:2}
-@keyframes breathe{50%{transform:scale(1.045)}}
-@keyframes wave{0%,100%{transform:rotate(0)}30%{transform:rotate(-2.5deg) translateY(-6px)}70%{transform:rotate(2.5deg) translateY(-2px)}}
-@keyframes hop{40%{transform:translateY(-12px) scale(1.04)}100%{transform:translateY(0)}}
-@keyframes stretch{35%{transform:scale(1.08,.94)}100%{transform:scale(1)}}
-@keyframes happy{30%{transform:scale(1.06) rotate(-2deg)}65%{transform:scale(1.03) rotate(2deg)}100%{transform:scale(1)}}
+.heroacts{display:flex;gap:6px;justify-content:space-between}
+.heroacts button{flex:1;min-height:44px;border-radius:14px;background:#fff;border:2px solid var(--line);font-size:18px;box-shadow:0 3px 0 var(--line)}
+.heroacts button.on{background:var(--orange-l);border-color:var(--orange);color:var(--orange-d)}
+.heroacts small{display:block;font-size:10px;line-height:1.1}
+.meowpop{position:absolute;right:16px;top:36px;z-index:4;font-size:22px;color:#8E7CC9;font-weight:800;animation:meowup .8s ease forwards;pointer-events:none}
+@keyframes meowup{to{transform:translateY(-36px);opacity:0}}
+@keyframes breathe{0%,100%{transform:translateY(16px)}50%{transform:translateY(-20px)}}
+@keyframes wave{0%,100%{transform:rotate(-4deg) translateY(6px)}50%{transform:rotate(5deg) translateY(-18px)}}
+@keyframes hop{0%,100%{transform:translateY(8px)}35%{transform:translateY(-32px)}55%{transform:translateY(0)}72%{transform:translateY(-18px)}}
+@keyframes stretch{0%,100%{transform:scale(1,1) translateY(4px)}40%{transform:scale(1.06,.9) translateY(16px)}72%{transform:scale(.98,1.08) translateY(-14px)}}
+@keyframes happy{0%,100%{transform:translateY(4px) rotate(0)}30%{transform:translateY(-22px) rotate(-3deg)}60%{transform:translateY(-8px) rotate(3deg)}}
 .is-speak{box-shadow:0 0 0 3px #F59A3E;transform:scale(.96)}
 .is-slow{box-shadow:0 0 0 3px #8E7CC9;transform:scale(.96)}
 .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,238,211,.28),rgba(255,238,211,0) 42%)}

@@ -154,8 +154,12 @@
     const strip = weekStrip(theme);
     const frame = heroFrame();
     const zzz = frame.nap ? '<span class="zzz z1">z</span><span class="zzz z2">z</span><span class="zzz z3">Z</span>' : "";
+    const acts = [["nap", "😴", "瞓"], ["wave", "👋", "揮手"], ["stretch", "🙆", "伸腰"], ["hop", "🐾", "跳"], ["happy", "😸", "開心"]].map(([id, emoji, lab]) =>
+      '<button type="button" data-act="pose" data-m="' + id + '"' + (frame.motion === id ? ' class="on"' : "") + ">" + emoji + "<small>" + lab + "</small></button>"
+    ).join("");
     return '<div class="page home">' +
-      '<div class="hero ' + frame.motion + '" data-act="poke" role="button" tabindex="0" aria-label="撳一下睇' + esc(frame.name) + '下一個動作"><img class="heroimg" src="' + esc(frame.src) + '" alt="' + esc(frame.alt) + '" style="object-position:' + frame.pos + '"><div class="shade"></div>' + zzz + '<span class="heroname">' + esc(frame.label) + '</span><div class="bubble"><b>' + esc(ht) + "</b>" + esc(hb) + "</div></div>" +
+      '<div class="hero ' + frame.motion + '" data-act="poke" role="button" tabindex="0" aria-label="撳一下睇' + esc(frame.name) + '下一個動作"><div class="herostage"><img class="heroimg" src="' + esc(frame.src) + '" alt="' + esc(frame.alt) + '" style="object-position:' + frame.pos + '"></div><div class="shade"></div>' + zzz + '<span class="heroname">' + esc(frame.label) + '</span><div class="bubble"><b>' + esc(ht) + "</b>" + esc(hb) + "</div></div>" +
+      '<div class="heroacts">' + acts + "</div>" +
       themeCard +
       '<div class="card today"><div class="row"><h3>' + esc(todayCard.title) + "</h3>" + (todayCard.learned ? '<span class="pill sun">' + todayCard.learned + "</span>" : "") + "</div>" +
       (todayCard.sub && !todayCard.learned ? '<p class="muted">' + esc(todayCard.sub) + "</p>" : "") +
@@ -477,7 +481,7 @@
       '<div class="setrow"><span>🔊 試聽</span><button class="btn sm" data-speak="Hello! Nice to meet you.">Hello!</button></div>' +
       '<div class="setrow"><span>每日問我揀陪讀貓</span><button class="switch' + (S.settings.askCompanionDaily ? " on" : "") + '" data-act="askcat"></button></div>' +
       '<div class="setrow"><span>顯示音標</span><button class="switch' + (S.settings.showIPA ? " on" : "") + '" data-act="ipa"></button></div>' +
-      '<div class="setrow col"><span>生字圖示</span><div class="segs tiny"><button data-act="svg" data-v="0"' + (!S.settings.svgIcons ? ' class="on"' : "") + '>字母方塊（預設）</button><button data-act="svg" data-v="1"' + (S.settings.svgIcons ? ' class="on"' : "") + ">向量圖（試用）</button></div><p class=\"fine\">向量圖（試用）覆蓋自我介紹同家人、身體、屋企、日常作息。手繪圖永遠優先。</p></div>" +
+      '<div class="setrow col"><span>生字圖示</span><div class="segs tiny"><button data-act="svg" data-v="0"' + (!S.settings.svgIcons ? ' class="on"' : "") + '>字母方塊（預設）</button><button data-act="svg" data-v="1"' + (S.settings.svgIcons ? ' class="on"' : "") + ">向量圖（試用）</button></div><p class=\"fine\">向量圖（試用）覆蓋自我介紹同家人、身體、屋企、日常作息，畫風係懶洋洋嘅小貓。手繪圖永遠優先。</p><button class=\"btn sm\" data-act=\"seecards\">睇晒向量圖樣</button></div>" +
       '<div class="setrow"><button class="btn ghost sm" data-act="export">匯出進度</button><button class="btn ghost sm" data-act="import">匯入進度</button></div>' +
       '<p class="fine center">懶貓英文 v1.0（第 1 季）</p><input id="importFile" type="file" accept="application/json" hidden></div>';
   }
@@ -697,7 +701,7 @@
         : tileHTML(w, 56, "tile");
       return '<div class="cmp"><div class="cmprow"><div>' + tileHTML(w, 56, "tile") + '<small>字母</small></div><div>' + svg + '<small>向量</small></div><div>' + tileHTML(w, 56, "emoji") + '<small>表情</small></div></div><b>' + esc(w.word) + "</b></div>";
     }).join("");
-    return '<div class="page"><div class="chead"><button class="back" data-act="closecompare" aria-label="返回">‹</button><h2>圖示比較</h2></div><div class="segs tiny">' + tabs + '</div><p class="fine">' + esc(theme.zh) + " ・ 字母 │ 向量 │ 表情。手繪 PNG 永遠優先於向量圖。</p><div class=\"cmpgrid\">" + cells + "</div></div>";
+    return '<div class="page"><div class="chead"><button class="back" data-act="closecompare" aria-label="返回">‹</button><h2>生字圖樣</h2></div><div class="segs tiny">' + tabs + '</div><p class="fine">' + esc(theme.zh) + " ・ 字母 │ 向量 │ 表情。懶洋洋小貓畫風。手繪 PNG 永遠優先。</p><div class=\"cmpgrid\">" + cells + "</div></div>";
   }
 
   async function exportCard(themeId, share) {
@@ -875,55 +879,52 @@
     reader.readAsText(file);
   }
 
-  const MOTION_ZH = { nap: "", wave: "揮手", hop: "跳起", stretch: "伸懶腰", happy: "開心" };
+  const MOTION_ZH = { nap: "瞓緊", wave: "揮手", hop: "跳起", stretch: "伸懶腰", happy: "開心" };
   function heroFrame() {
     const cat = companion();
     const motion = ui.heroMotion || "nap";
-    const lessons = (S.cats[cat.slug] && S.cats[cat.slug].lessons) || 0;
-    const poseOk = key => {
-      const meta = POSES.find(p => p.key === key);
-      return !!(meta && cat.poses && cat.poses[key] && poseUnlocked(cat.slug, meta, lessons));
-    };
-    let src = cat.photo;
-    let pos = Math.round((cat.crop.fx || 0.5) * 100) + "% " + Math.round(((cat.crop.ey || 0.4)) * 100) + "%";
+    const poses = cat.poses || {};
+    let src = poses.sit || cat.photo;
+    let pos = "50% 42%";
     let alt = cat.name_zh;
-    let nap = false;
     if (motion === "nap") {
-      nap = true;
-      if (cat.slug === "fanshu") {
-        src = HERO.file;
-        pos = "40% 62%";
-        alt = "番薯瞓緊";
-      } else if (poseOk("sleep")) {
-        src = cat.poses.sleep;
-        pos = "50% 55%";
-        alt = cat.name_zh + "瞓緊";
-      } else alt = cat.name_zh + "陪緊你";
-    } else if (motion === "stretch" && poseOk("stretch")) {
-      src = cat.poses.stretch;
-      pos = "50% 55%";
-      alt = cat.name_zh + "伸懶腰";
-    } else if (motion === "happy" && poseOk("happy")) {
-      src = cat.poses.happy;
-      pos = "50% 45%";
-      alt = cat.name_zh + "好開心";
-    } else if (motion === "wave" && poseOk("sit")) {
-      alt = cat.name_zh + "揮手";
+      if (cat.slug === "fanshu") { src = HERO.file; pos = "40% 62%"; }
+      else { src = poses.sleep || cat.photo; pos = "50% 58%"; }
+      alt = cat.name_zh + "瞓緊";
+    } else if (motion === "stretch") {
+      src = poses.stretch || cat.photo; pos = "50% 62%"; alt = cat.name_zh + "伸懶腰";
+    } else if (motion === "happy") {
+      src = poses.happy || cat.photo; pos = "50% 46%"; alt = cat.name_zh + "好開心";
+    } else if (motion === "hop") {
+      src = poses.happy || cat.photo; pos = "50% 46%"; alt = cat.name_zh + "跳起";
+    } else {
+      src = poses.sit || cat.photo; pos = "50% 40%"; alt = cat.name_zh + "揮手";
     }
-    const extra = MOTION_ZH[motion] || "";
-    return { src, pos, alt, motion, nap, name: cat.name_zh, label: extra ? cat.name_zh + "・" + extra : cat.name_zh };
+    return { src, pos, alt, motion, nap: motion === "nap", name: cat.name_zh, label: cat.name_zh + "・" + (MOTION_ZH[motion] || "") };
+  }
+  function popMeow() {
+    const hero = document.querySelector(".hero");
+    if (!hero) return;
+    const s = document.createElement("span");
+    s.className = "meowpop";
+    s.textContent = "喵";
+    hero.appendChild(s);
+  }
+  function setHeroMotion(motion) {
+    ui.heroMotion = motion || "nap";
+    render();
+    popMeow();
+    LC.meow(S.companion, "poke");
   }
   function pokeHero() {
-    const order = ["nap", "wave", "hop", "stretch", "happy"];
+    const order = ["nap", "wave", "stretch", "hop", "happy"];
     const i = Math.max(0, order.indexOf(ui.heroMotion || "nap"));
-    ui.heroMotion = order[(i + 1) % order.length];
-    LC.meow(S.companion, "poke");
-    render();
+    setHeroMotion(order[(i + 1) % order.length]);
   }
 
   Object.assign(LC, {
     render, renderTop, showCelebration, nextCelebration, heartsModal, openCompanion, shouldAskCompanion,
     openDev, devAction, exportCard, openMapSheet, openLightbox, fitWords, preview, exportProgress, importProgress,
-    homeToday, pokeHero, MAP_POS, mapNodeState
+    homeToday, pokeHero, setHeroMotion, MAP_POS, mapNodeState
   });
 })(window.LC);
