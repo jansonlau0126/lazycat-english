@@ -1,0 +1,556 @@
+{
+ "hero": {
+  "file": "assets/cats/hero-fanshu-napping.webp",
+  "cat": "fanshu",
+  "sleeping_face": {
+   "x": 0.29,
+   "y": 0.51
+  },
+  "note": "番薯 napping on a pink cushion; body spans x 20–90%, y 30–80%. Used on Home and in the theme-card header when the card's cat is 番薯."
+ },
+ "starter": "fanshu",
+ "photo_size": {
+  "w": 800,
+  "h": 450,
+  "aspect": "16:9"
+ },
+ "poses": [
+  {
+   "key": "sit",
+   "n": 1,
+   "zh": "坐定定",
+   "emoji": "🐱",
+   "unlock": "with_cat",
+   "lessons_needed": 0,
+   "tag_zh": "解鎖圖鑑時",
+   "object_position": "50% 40%"
+  },
+  {
+   "key": "sleep",
+   "n": 2,
+   "zh": "瞓覺",
+   "emoji": "💤",
+   "unlock": "companion_lessons",
+   "lessons_needed": 5,
+   "tag_zh": "陪讀 5 堂",
+   "object_position": "50% 55%",
+   "title_tpl": "{name}瞓到打呼嚕！",
+   "quote": "陪你學完 5 堂，我可以安心瞓陣先……Zzz。",
+   "locked_hint": "佢會點瞓呢？"
+  },
+  {
+   "key": "stretch",
+   "n": 3,
+   "zh": "伸懶腰",
+   "emoji": "🙆",
+   "unlock": "companion_lessons",
+   "lessons_needed": 10,
+   "tag_zh": "陪讀 10 堂",
+   "object_position": "50% 55%",
+   "title_tpl": "{name}伸咗個大懶腰！",
+   "quote": "伸完呢個懶腰，就有力氣陪你學多 5 個字……先瞓。",
+   "locked_hint": "伸咩姿勢呢？"
+  },
+  {
+   "key": "happy",
+   "n": 4,
+   "zh": "開心",
+   "emoji": "😸",
+   "unlock": "companion_lessons",
+   "lessons_needed": 15,
+   "tag_zh": "陪讀 15 堂",
+   "object_position": "50% 45%",
+   "title_tpl": "{name}開心到彈起！",
+   "quote": "你咁勤力，我開心到唔記得瞓覺！",
+   "locked_hint": "？？？"
+  },
+  {
+   "key": "yarn",
+   "n": 5,
+   "zh": "玩毛線",
+   "emoji": "🧶",
+   "unlock": "perfect_theme_bonus",
+   "lessons_needed": null,
+   "tag_zh": "隱藏相",
+   "object_position": "50% 50%",
+   "bonus": true,
+   "title_tpl": "{name}玩緊毛線波波！",
+   "quote": "成個主題零錯誤？今日就玩毛線慶祝喇！",
+   "locked_hint": "任何一個主題全部答啱（零錯誤）就會解鎖呢張隱藏相"
+  }
+ ],
+ "album_rule": {
+  "lessons_per_photo": 5,
+  "max_regular_photos": 3,
+  "formula": "regular_unlocked = min(3, floor(companion_lessons / 5))",
+  "album_denominator": 4,
+  "bonus_counts_in_denominator": false
+ },
+ "cats": [
+  {
+   "slug": "fanshu",
+   "no": 1,
+   "name_zh": "番薯",
+   "breed_zh": "橘貓",
+   "breed_en": "Orange Tabby",
+   "hair_zh": "短毛",
+   "quote_zh": "瞓醒先算，英文慢慢嚟。",
+   "photo": "assets/cats/01-fanshu-orange-tabby.webp",
+   "crop": {
+    "fx": 0.5,
+    "ey": 0.38,
+    "top": 0.05,
+    "chin": 0.54,
+    "note": "fractions of photo width/height: face centre x, eye line y, top of ears y, chin y"
+   },
+   "poses": {
+    "sit": "assets/cats/01-fanshu-orange-tabby.webp",
+    "sleep": "assets/poses/fanshu-sleep.webp",
+    "stretch": "assets/poses/fanshu-stretch.webp",
+    "happy": "assets/poses/fanshu-happy.webp",
+    "yarn": "assets/poses/fanshu-yarn.webp"
+   },
+   "unlock": {
+    "type": "starter",
+    "value": 0,
+    "label_zh": "新手貓",
+    "progress_tpl": null
+   },
+   "reachable_in_season1": "yes"
+  },
+  {
+   "slug": "huihui",
+   "no": 2,
+   "name_zh": "灰灰",
+   "breed_zh": "英國短毛貓",
+   "breed_en": "British Shorthair",
+   "hair_zh": "短毛",
+   "quote_zh": "我唔係肥，我係毛多。",
+   "photo": "assets/cats/02-huihui-british-shorthair.webp",
+   "crop": {
+    "fx": 0.51,
+    "ey": 0.32,
+    "top": 0.05,
+    "chin": 0.49,
+    "note": "fractions of photo width/height: face centre x, eye line y, top of ears y, chin y"
+   },
+   "poses": {
+    "sit": "assets/cats/02-huihui-british-shorthair.webp",
+    "sleep": "assets/poses/huihui-sleep.webp",
+    "stretch": "assets/poses/huihui-stretch.webp",
+    "happy": "assets/poses/huihui-happy.webp",
+    "yarn": "assets/poses/huihui-yarn.webp"
+   },
+   "unlock": {
+    "type": "lessons_completed",
+    "value": 1,
+    "label_zh": "完成第一課",
+    "progress_tpl": "{n} / 1 課"
+   },
+   "reachable_in_season1": "yes"
+  },
+  {
+   "slug": "zima",
+   "no": 3,
+   "name_zh": "芝麻",
+   "breed_zh": "黑貓",
+   "breed_en": "Black Cat",
+   "hair_zh": "短毛",
+   "quote_zh": "夜貓子一名，最鍾意半夜溫書……然後瞓著。",
+   "photo": "assets/cats/03-zima-black.webp",
+   "crop": {
+    "fx": 0.49,
+    "ey": 0.3,
+    "top": 0.02,
+    "chin": 0.46,
+    "note": "fractions of photo width/height: face centre x, eye line y, top of ears y, chin y"
+   },
+   "poses": {
+    "sit": "assets/cats/03-zima-black.webp",
+    "sleep": "assets/poses/zima-sleep.webp",
+    "stretch": "assets/poses/zima-stretch.webp",
+    "happy": "assets/poses/zima-happy.webp",
+    "yarn": "assets/poses/zima-yarn.webp"
+   },
+   "unlock": {
+    "type": "theme_cards",
+    "value": 1,
+    "label_zh": "第一張生字卡",
+    "progress_tpl": "{n} / 1 張"
+   },
+   "reachable_in_season1": "yes"
+  },
+  {
+   "slug": "banban",
+   "no": 4,
+   "name_zh": "斑斑",
+   "breed_zh": "美國短毛貓",
+   "breed_en": "American Shorthair",
+   "hair_zh": "短毛",
+   "quote_zh": "你連續學咗七日？我連續瞓咗七日。",
+   "photo": "assets/cats/04-banban-american-shorthair.webp",
+   "crop": {
+    "fx": 0.47,
+    "ey": 0.35,
+    "top": 0.05,
+    "chin": 0.51,
+    "note": "fractions of photo width/height: face centre x, eye line y, top of ears y, chin y"
+   },
+   "poses": {
+    "sit": "assets/cats/04-banban-american-shorthair.webp",
+    "sleep": "assets/poses/banban-sleep.webp",
+    "stretch": "assets/poses/banban-stretch.webp",
+    "happy": "assets/poses/banban-happy.webp",
+    "yarn": "assets/poses/banban-yarn.webp"
+   },
+   "unlock": {
+    "type": "best_streak",
+    "value": 7,
+    "label_zh": "🔥 連續 7 日",
+    "progress_tpl": "{n} / 7 日"
+   },
+   "reachable_in_season1": "yes"
+  },
+  {
+   "slug": "fafa",
+   "no": 5,
+   "name_zh": "花花",
+   "breed_zh": "三色貓",
+   "breed_en": "Calico",
+   "hair_zh": "短毛",
+   "quote_zh": "三種顏色三種心情：想瞓、好想瞓、即刻瞓。",
+   "photo": "assets/cats/05-fafa-calico.webp",
+   "crop": {
+    "fx": 0.49,
+    "ey": 0.37,
+    "top": 0.06,
+    "chin": 0.51,
+    "note": "fractions of photo width/height: face centre x, eye line y, top of ears y, chin y"
+   },
+   "poses": {
+    "sit": "assets/cats/05-fafa-calico.webp",
+    "sleep": "assets/poses/fafa-sleep.webp",
+    "stretch": "assets/poses/fafa-stretch.webp",
+    "happy": "assets/poses/fafa-happy.webp",
+    "yarn": "assets/poses/fafa-yarn.webp"
+   },
+   "unlock": {
+    "type": "monthly_reviews",
+    "value": 1,
+    "label_zh": "第一次月度複習",
+    "progress_tpl": "{n} / 1 次"
+   },
+   "reachable_in_season1": "yes"
+  },
+  {
+   "slug": "kafe",
+   "no": 6,
+   "name_zh": "咖啡",
+   "breed_zh": "暹羅貓",
+   "breed_en": "Siamese",
+   "hair_zh": "短毛",
+   "quote_zh": "我好多嘢講㗎，喵喵喵……講完就瞓。",
+   "photo": "assets/cats/06-kafe-siamese.webp",
+   "crop": {
+    "fx": 0.49,
+    "ey": 0.3,
+    "top": 0.02,
+    "chin": 0.46,
+    "note": "fractions of photo width/height: face centre x, eye line y, top of ears y, chin y"
+   },
+   "poses": {
+    "sit": "assets/cats/06-kafe-siamese.webp",
+    "sleep": "assets/poses/kafe-sleep.webp",
+    "stretch": "assets/poses/kafe-stretch.webp",
+    "happy": "assets/poses/kafe-happy.webp",
+    "yarn": "assets/poses/kafe-yarn.webp"
+   },
+   "unlock": {
+    "type": "best_streak",
+    "value": 30,
+    "label_zh": "🔥 連續 30 日",
+    "progress_tpl": "{n} / 30 日"
+   },
+   "reachable_in_season1": "yes"
+  },
+  {
+   "slug": "tongyun",
+   "no": 7,
+   "name_zh": "湯圓",
+   "breed_zh": "蘇格蘭摺耳貓",
+   "breed_en": "Scottish Fold",
+   "hair_zh": "短毛",
+   "quote_zh": "耳仔摺埋，因為唔想聽鬧鐘。",
+   "photo": "assets/cats/07-tongyun-scottish-fold.webp",
+   "crop": {
+    "fx": 0.5,
+    "ey": 0.36,
+    "top": 0.18,
+    "chin": 0.51,
+    "note": "fractions of photo width/height: face centre x, eye line y, top of ears y, chin y"
+   },
+   "poses": {
+    "sit": "assets/cats/07-tongyun-scottish-fold.webp",
+    "sleep": "assets/poses/tongyun-sleep.webp",
+    "stretch": "assets/poses/tongyun-stretch.webp",
+    "happy": "assets/poses/tongyun-happy.webp",
+    "yarn": "assets/poses/tongyun-yarn.webp"
+   },
+   "unlock": {
+    "type": "season_complete",
+    "value": 1,
+    "label_zh": "完成第 1 季",
+    "progress_tpl": "第 {week} / 13 週"
+   },
+   "reachable_in_season1": "yes"
+  },
+  {
+   "slug": "aigwa",
+   "no": 8,
+   "name_zh": "矮瓜",
+   "breed_zh": "曼赤肯",
+   "breed_en": "Munchkin",
+   "hair_zh": "短毛",
+   "quote_zh": "腳短唔係問題，行得慢先睇到風景。",
+   "photo": "assets/cats/08-aigwa-munchkin.webp",
+   "crop": {
+    "fx": 0.5,
+    "ey": 0.36,
+    "top": 0.15,
+    "chin": 0.51,
+    "note": "fractions of photo width/height: face centre x, eye line y, top of ears y, chin y"
+   },
+   "poses": {
+    "sit": "assets/cats/08-aigwa-munchkin.webp",
+    "sleep": "assets/poses/aigwa-sleep.webp",
+    "stretch": "assets/poses/aigwa-stretch.webp",
+    "happy": "assets/poses/aigwa-happy.webp",
+    "yarn": "assets/poses/aigwa-yarn.webp"
+   },
+   "unlock": {
+    "type": "mastered_words",
+    "value": 100,
+    "label_zh": "100 字達「掌握」",
+    "progress_tpl": "{n} / 100"
+   },
+   "reachable_in_season1": "yes"
+  },
+  {
+   "slug": "lammui",
+   "no": 9,
+   "name_zh": "藍莓",
+   "breed_zh": "俄羅斯藍貓",
+   "breed_en": "Russian Blue",
+   "hair_zh": "短毛",
+   "quote_zh": "靜靜哋陪你溫書（因為瞓著咗）。",
+   "photo": "assets/cats/09-lammui-russian-blue.webp",
+   "crop": {
+    "fx": 0.5,
+    "ey": 0.26,
+    "top": 0.04,
+    "chin": 0.39,
+    "note": "fractions of photo width/height: face centre x, eye line y, top of ears y, chin y"
+   },
+   "poses": {
+    "sit": "assets/cats/09-lammui-russian-blue.webp",
+    "sleep": "assets/poses/lammui-sleep.webp",
+    "stretch": "assets/poses/lammui-stretch.webp",
+    "happy": "assets/poses/lammui-happy.webp",
+    "yarn": "assets/poses/lammui-yarn.webp"
+   },
+   "unlock": {
+    "type": "season_complete",
+    "value": 2,
+    "label_zh": "完成第 2 季",
+    "progress_tpl": null
+   },
+   "reachable_in_season1": "no_needs_s2"
+  },
+  {
+   "slug": "minfa",
+   "no": 10,
+   "name_zh": "棉花",
+   "breed_zh": "金吉拉",
+   "breed_en": "Chinchilla",
+   "hair_zh": "長毛",
+   "quote_zh": "零錯誤？咁我可以安心瞓喇。",
+   "photo": "assets/cats/10-minfa-chinchilla.webp",
+   "crop": {
+    "fx": 0.505,
+    "ey": 0.35,
+    "top": 0.1,
+    "chin": 0.49,
+    "note": "fractions of photo width/height: face centre x, eye line y, top of ears y, chin y"
+   },
+   "poses": {
+    "sit": "assets/cats/10-minfa-chinchilla.webp",
+    "sleep": "assets/poses/minfa-sleep.webp",
+    "stretch": "assets/poses/minfa-stretch.webp",
+    "happy": "assets/poses/minfa-happy.webp",
+    "yarn": "assets/poses/minfa-yarn.webp"
+   },
+   "unlock": {
+    "type": "perfect_lessons",
+    "value": 30,
+    "label_zh": "30 課零錯誤",
+    "progress_tpl": "{n} / 30"
+   },
+   "reachable_in_season1": "yes"
+  },
+  {
+   "slug": "suetgo",
+   "no": 11,
+   "name_zh": "雪糕",
+   "breed_zh": "布偶貓",
+   "breed_en": "Ragdoll",
+   "hair_zh": "長毛",
+   "quote_zh": "一抱就軟晒，好似雪糕溶咗咁。",
+   "photo": "assets/cats/11-suetgo-ragdoll.webp",
+   "crop": {
+    "fx": 0.48,
+    "ey": 0.32,
+    "top": 0.02,
+    "chin": 0.44,
+    "note": "fractions of photo width/height: face centre x, eye line y, top of ears y, chin y"
+   },
+   "poses": {
+    "sit": "assets/cats/11-suetgo-ragdoll.webp",
+    "sleep": "assets/poses/suetgo-sleep.webp",
+    "stretch": "assets/poses/suetgo-stretch.webp",
+    "happy": "assets/poses/suetgo-happy.webp",
+    "yarn": "assets/poses/suetgo-yarn.webp"
+   },
+   "unlock": {
+    "type": "best_streak",
+    "value": 100,
+    "label_zh": "🔥 連續 100 日",
+    "progress_tpl": "{n} / 100 日"
+   },
+   "reachable_in_season1": "yes_via_streak_after_s1_possible"
+  },
+  {
+   "slug": "daihung",
+   "no": 12,
+   "name_zh": "大熊",
+   "breed_zh": "緬因貓",
+   "breed_en": "Maine Coon",
+   "hair_zh": "長毛",
+   "quote_zh": "大隻但好溫柔，係你嘅專屬攬枕。",
+   "photo": "assets/cats/12-daihung-maine-coon.webp",
+   "crop": {
+    "fx": 0.5,
+    "ey": 0.37,
+    "top": 0.02,
+    "chin": 0.51,
+    "note": "fractions of photo width/height: face centre x, eye line y, top of ears y, chin y"
+   },
+   "poses": {
+    "sit": "assets/cats/12-daihung-maine-coon.webp",
+    "sleep": "assets/poses/daihung-sleep.webp",
+    "stretch": "assets/poses/daihung-stretch.webp",
+    "happy": "assets/poses/daihung-happy.webp",
+    "yarn": "assets/poses/daihung-yarn.webp"
+   },
+   "unlock": {
+    "type": "season_complete",
+    "value": 3,
+    "label_zh": "完成第 3 季",
+    "progress_tpl": null
+   },
+   "reachable_in_season1": "no_needs_s3"
+  },
+  {
+   "slug": "daufu",
+   "no": 13,
+   "name_zh": "豆腐",
+   "breed_zh": "無毛貓",
+   "breed_en": "Sphynx",
+   "hair_zh": "無毛",
+   "quote_zh": "冇毛都唔怕凍，因為有文法暖心。",
+   "photo": "assets/cats/13-daufu-sphynx.webp",
+   "crop": {
+    "fx": 0.51,
+    "ey": 0.41,
+    "top": 0.04,
+    "chin": 0.61,
+    "note": "fractions of photo width/height: face centre x, eye line y, top of ears y, chin y"
+   },
+   "poses": {
+    "sit": "assets/cats/13-daufu-sphynx.webp",
+    "sleep": "assets/poses/daufu-sleep.webp",
+    "stretch": "assets/poses/daufu-stretch.webp",
+    "happy": "assets/poses/daufu-happy.webp",
+    "yarn": "assets/poses/daufu-yarn.webp"
+   },
+   "unlock": {
+    "type": "grammar_done",
+    "value": 24,
+    "label_zh": "完成 24 課文法",
+    "progress_tpl": null
+   },
+   "reachable_in_season1": "no_needs_24_grammar"
+  },
+  {
+   "slug": "naisik",
+   "no": 14,
+   "name_zh": "奶昔",
+   "breed_zh": "波斯貓",
+   "breed_en": "Persian",
+   "hair_zh": "長毛",
+   "quote_zh": "扁扁面、慢慢行，每一步都好優雅（同好慢）。",
+   "photo": "assets/cats/14-naisik-persian.webp",
+   "crop": {
+    "fx": 0.51,
+    "ey": 0.44,
+    "top": 0.1,
+    "chin": 0.63,
+    "note": "fractions of photo width/height: face centre x, eye line y, top of ears y, chin y"
+   },
+   "poses": {
+    "sit": "assets/cats/14-naisik-persian.webp",
+    "sleep": "assets/poses/naisik-sleep.webp",
+    "stretch": "assets/poses/naisik-stretch.webp",
+    "happy": "assets/poses/naisik-happy.webp",
+    "yarn": "assets/poses/naisik-yarn.webp"
+   },
+   "unlock": {
+    "type": "xp",
+    "value": 5000,
+    "label_zh": "累積 5,000 XP",
+    "progress_tpl": null
+   },
+   "reachable_in_season1": "unlikely_in_s1"
+  },
+  {
+   "slug": "baubau",
+   "no": 15,
+   "name_zh": "豹豹",
+   "breed_zh": "孟加拉豹貓",
+   "breed_en": "Bengal",
+   "hair_zh": "短毛",
+   "quote_zh": "一年喇！連我都肯郁一郁同你慶祝。",
+   "photo": "assets/cats/15-baubau-bengal.webp",
+   "crop": {
+    "fx": 0.52,
+    "ey": 0.3,
+    "top": 0.04,
+    "chin": 0.45,
+    "note": "fractions of photo width/height: face centre x, eye line y, top of ears y, chin y"
+   },
+   "poses": {
+    "sit": "assets/cats/15-baubau-bengal.webp",
+    "sleep": "assets/poses/baubau-sleep.webp",
+    "stretch": "assets/poses/baubau-stretch.webp",
+    "happy": "assets/poses/baubau-happy.webp",
+    "yarn": "assets/poses/baubau-yarn.webp"
+   },
+   "unlock": {
+    "type": "words_learned",
+    "value": 1200,
+    "label_zh": "👑 完成全年 1,200 字",
+    "progress_tpl": null
+   },
+   "reachable_in_season1": "no_needs_1200_words"
+  }
+ ]
+}

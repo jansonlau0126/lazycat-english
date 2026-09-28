@@ -1,0 +1,35 @@
+<!doctype html><html lang="zh-HK"><meta charset="utf-8"><link rel="stylesheet" href="common.css">
+<style>
+html,body{width:1280px;height:1090px;background:linear-gradient(180deg,#FFF3E2,#FFE9D6)}
+.wrap{padding:34px 44px}
+.head{display:flex;align-items:center;gap:16px;margin-bottom:26px}
+.head h1{font-family:"Huninn";font-weight:normal;font-size:36px;color:var(--cocoa)}
+.head h1 span{color:var(--orange-d)}
+.head p{font-family:"Huninn";font-size:16px;color:var(--muted);margin-top:2px}
+.legend{margin-left:auto;display:flex;gap:8px}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.c{background:#fff;border:2px solid var(--line);border-radius:26px;box-shadow:0 4px 0 var(--line);padding:12px 12px 12px;display:flex;flex-direction:column;align-items:center;position:relative}
+.c .cphoto{box-shadow:0 4px 12px rgba(150,95,50,.2)}
+.no{position:absolute;top:18px;left:18px;z-index:2;background:rgba(255,255,255,.92);color:var(--orange-d);font:800 13px/1 Nunito;padding:5px 8px;border-radius:99px;box-shadow:0 1px 3px rgba(150,95,50,.2)}
+.star{position:absolute;top:16px;right:18px;z-index:2;font-size:18px}
+.nm{font-family:"Huninn";font-size:25px;margin-top:9px;line-height:1.1}
+.br{font-family:"Huninn";font-size:14px;color:#8C7666;margin-top:3px}
+.en{font:700 12.5px/1.2 Nunito;color:var(--muted);margin:2px 0 8px}
+.hair{font-size:13px;padding:4px 12px}
+.h-short{background:var(--sky-l);color:#3B89B3}
+.h-long{background:var(--lav-l);color:var(--lav-d)}
+.h-none{background:var(--pink-l);color:#D0607D}
+</style>
+<body><div class="wrap">
+<div class="head"><div id="logo"></div><div><h1><span>懶貓英文</span>・貓貓圖鑑 15 隻</h1><p>真實大眼貓貓相 ・ 長毛短毛混合 ・ 番薯係新手陪讀貓，其餘 14 隻靠學習解鎖</p></div>
+<div class="legend"><span class="pill hair h-short">短毛</span><span class="pill hair h-long">長毛</span><span class="pill hair h-none">無毛</span></div></div>
+<div class="grid" id="g"></div></div>
+<script src="photos.js"></script><script>
+document.getElementById('logo').innerHTML = catPhoto('orange',{w:64,mode:'face'});
+const HC = {'短毛':'h-short','長毛':'h-long','無毛':'h-none'};
+document.getElementById('g').innerHTML = CAT_ORDER.map(k => { const c = CATS[k]; return `<div class="c">
+  <span class="no">#${String(c.n).padStart(2,'0')}</span>${k==='orange'?'<span class="star emoji">⭐</span>':''}
+  ${catPhoto(k,{w:200,h:172,mode:'bust',r:'20px'})}
+  <div class="nm">${c.name}</div><div class="br">${c.breed}</div><div class="en">${c.en}</div>
+  <span class="pill hair ${HC[c.hair]}">${c.hair}</span></div>`; }).join('');
+</script></body></html>

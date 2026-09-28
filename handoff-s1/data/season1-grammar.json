@@ -1,0 +1,864 @@
+{
+ "format": "Same shape as old grammar.js: intro[].p may contain <b>/<br> HTML; ex[].t = mc (o options, a = correct index) | fill (a = list of accepted answers, compare case-insensitively after trimming punctuation) | tiles (a = answer sentence, extra = distractor tiles). q uses ___ for the blank.",
+ "season": 1,
+ "lessons": [
+  {
+   "id": "g01",
+   "no": 1,
+   "week": 2,
+   "emoji": "🟰",
+   "title": "be 動詞 am / is / are",
+   "en": "The verb be: am / is / are",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "am / is / are 點揀？",
+     "p": "<b>I → am</b>；<b>he / she / it / 單數名詞 → is</b>；<b>you / we / they / 複數名詞 → are</b>。<br>be 動詞用嚟講<b>身份、年齡、感覺、喺邊度</b>。",
+     "ex": [
+      [
+       "I am Janson.",
+       "我係 Janson。"
+      ],
+      [
+       "My sister is ten years old.",
+       "我妹妹十歲。"
+      ],
+      [
+       "We are hungry.",
+       "我哋肚餓。"
+      ]
+     ]
+    },
+    {
+     "h": "縮寫",
+     "p": "口語好常用：I'm, you're, he's, she's, it's, we're, they're。",
+     "ex": [
+      [
+       "She's my cousin.",
+       "佢係我表姐。"
+      ]
+     ]
+    },
+    {
+     "h": "否定同問句",
+     "p": "否定：be + <b>not</b>（isn't / aren't；I'm not）。<br>問句：將 be 搬去句頭：<b>Are</b> you tired? <b>Is</b> he your brother?<br>⚠️ 冇 amn't，要講 I'm not。",
+     "ex": [
+      [
+       "Is your father at home?",
+       "你爸爸喺唔喺屋企？"
+      ],
+      [
+       "My hands aren't cold.",
+       "我對手唔凍。"
+      ]
+     ]
+    },
+    {
+     "h": "⚠️ 香港人常犯",
+     "p": "中文「佢好高」冇「係」，但英文一定要有 be：<br>✅ He is tall.　❌ He tall.<br>✅ I am hungry.　❌ I hungry.",
+     "ex": []
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "My eyes ___ brown.",
+     "zh": "我對眼係啡色嘅。",
+     "o": [
+      "am",
+      "is",
+      "are",
+      "be"
+     ],
+     "a": 2,
+     "why": "eyes 係複數，用 are。"
+    },
+    {
+     "t": "mc",
+     "q": "I ___ thirteen years old.",
+     "zh": "我十三歲。",
+     "o": [
+      "am",
+      "is",
+      "are",
+      "have"
+     ],
+     "a": 0,
+     "why": "I 永遠配 am；講歲數用 be，唔用 have。"
+    },
+    {
+     "t": "fill",
+     "q": "My grandmother ___ seventy. (am / is / are)",
+     "zh": "我嫲嫲七十歲。",
+     "a": [
+      "is"
+     ],
+     "why": "my grandmother 係第三人稱單數，用 is。"
+    },
+    {
+     "t": "mc",
+     "q": "___ your brother tall?",
+     "zh": "你哥哥高唔高？",
+     "o": [
+      "Am",
+      "Is",
+      "Are",
+      "Does"
+     ],
+     "a": 1,
+     "why": "問句將 be 搬去句頭；your brother 係單數，用 Is。"
+    },
+    {
+     "t": "fill",
+     "q": "They ___ my cousins. (am / is / are)",
+     "zh": "佢哋係我嘅表兄弟。",
+     "a": [
+      "are"
+     ],
+     "why": "they 用 are。"
+    },
+    {
+     "t": "tiles",
+     "zh": "我唔肚餓。",
+     "a": "I am not hungry",
+     "extra": [
+      "is",
+      "no"
+     ],
+     "why": "否定：I am not + 形容詞。"
+    },
+    {
+     "t": "mc",
+     "q": "My parents ___ at home.",
+     "zh": "我爸媽喺屋企。",
+     "o": [
+      "is",
+      "am",
+      "are",
+      "be"
+     ],
+     "a": 2,
+     "why": "my parents 係複數（兩個人），用 are。"
+    }
+   ],
+   "xp": 15,
+   "unlock_rule": "available after week 2 Day-5 lesson is done (that week's Saturday slot)"
+  },
+  {
+   "id": "g02",
+   "no": 2,
+   "week": 4,
+   "emoji": "⏰",
+   "title": "一般現在式",
+   "en": "Present Simple",
+   "reuse": "old grammar.js #1 (part 1) — adapted",
+   "intro": [
+    {
+     "h": "幾時用？",
+     "p": "講<b>習慣、日常作息、事實</b>。常見字眼：every day, always, usually, often, sometimes, never, on Mondays。",
+     "ex": [
+      [
+       "I wake up at seven every day.",
+       "我每日七點起身。"
+      ],
+      [
+       "The sun rises in the east.",
+       "太陽喺東邊升起。"
+      ]
+     ]
+    },
+    {
+     "h": "he / she / it 要加 -s",
+     "p": "I / you / we / they + 動詞原形；<b>he / she / it + 動詞加 -s / -es</b>。<br>一般加 -s：play → plays；-sh / -ch / -o / -x 加 -es：brush → brushes，go → goes，watch → watches；輔音 + y → -ies：study → studies；<b>have → has</b>。",
+     "ex": [
+      [
+       "She brushes her teeth after breakfast.",
+       "佢食完早餐刷牙。"
+      ],
+      [
+       "My brother has lunch at school.",
+       "我細佬喺學校食晏。"
+      ]
+     ]
+    },
+    {
+     "h": "否定同問句：do / does",
+     "p": "否定：I / you / we / they <b>don't</b> + 原形；he / she / it <b>doesn't</b> + 原形。<br>問句：<b>Do</b> you…? / <b>Does</b> she…?<br>⚠️ 用咗 does，動詞唔再加 -s：✅ Does he like tea?　❌ Does he likes tea?",
+     "ex": [
+      [
+       "I don't drink coffee.",
+       "我唔飲咖啡。"
+      ],
+      [
+       "Does your cat sleep all day?",
+       "你隻貓係咪成日瞓覺？"
+      ]
+     ]
+    },
+    {
+     "h": "頻率副詞擺邊？",
+     "p": "放喺<b>普通動詞前面</b>、<b>be 動詞後面</b>：<br>I <b>always</b> get up early.　She is <b>never</b> late.",
+     "ex": [
+      [
+       "I usually walk to school.",
+       "我通常行路返學。"
+      ]
+     ]
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "My dad ___ to work by MTR every day.",
+     "zh": "我爸爸每日搭港鐵返工。",
+     "o": [
+      "go",
+      "goes",
+      "is going",
+      "going"
+     ],
+     "a": 1,
+     "why": "every day = 習慣，用一般現在式；my dad 係第三人稱單數，go 要加 -es。"
+    },
+    {
+     "t": "fill",
+     "q": "She usually ___ (have) lunch at one.",
+     "zh": "佢通常一點食晏。",
+     "a": [
+      "has"
+     ],
+     "why": "usually = 習慣；have 嘅第三人稱單數係 has。"
+    },
+    {
+     "t": "mc",
+     "q": "Janson ___ his teeth twice a day.",
+     "zh": "Janson 一日刷兩次牙。",
+     "o": [
+      "brush",
+      "brushs",
+      "brushes",
+      "brushing"
+     ],
+     "a": 2,
+     "why": "-sh 結尾加 -es：brushes。"
+    },
+    {
+     "t": "mc",
+     "q": "___ your sister get up early?",
+     "zh": "你家姐早唔早起身？",
+     "o": [
+      "Do",
+      "Does",
+      "Is",
+      "Are"
+     ],
+     "a": 1,
+     "why": "your sister 係第三人稱單數，問句用 Does + 原形。"
+    },
+    {
+     "t": "fill",
+     "q": "We ___ eat breakfast at home. (do 嘅否定)",
+     "zh": "我哋唔喺屋企食早餐。",
+     "a": [
+      "don't",
+      "do not",
+      "dont"
+     ],
+     "why": "we 否定用 don't + 原形。"
+    },
+    {
+     "t": "mc",
+     "q": "My cat ___ sleeps on my bed.",
+     "zh": "我隻貓通常瞓喺我張床度。",
+     "o": [
+      "usually",
+      "usual",
+      "is usually",
+      "usually is"
+     ],
+     "a": 0,
+     "why": "頻率副詞放喺普通動詞前面：usually sleeps。"
+    },
+    {
+     "t": "tiles",
+     "zh": "佢每晚都沖涼。",
+     "a": "She takes a shower every night",
+     "extra": [
+      "take",
+      "is"
+     ],
+     "why": "she 用 takes（加 -s）；every night 表示習慣。"
+    }
+   ],
+   "xp": 15,
+   "unlock_rule": "available after week 4 Day-5 lesson is done (that week's Saturday slot)"
+  },
+  {
+   "id": "g03",
+   "no": 3,
+   "week": 6,
+   "emoji": "🍩",
+   "title": "名詞眾數 + a / an",
+   "en": "Plural nouns + a / an",
+   "reuse": "a / an section adapted from old grammar.js #3",
+   "intro": [
+    {
+     "h": "一個：a 定 an？睇讀音",
+     "p": "<b>a</b> + 輔音「音」：a cup, a waiter, a <b>u</b>niform（讀 /juː/）。<br><b>an</b> + 元音「音」：an egg, an orange, an <b>h</b>our（h 唔發音）。",
+     "ex": [
+      [
+       "I'd like an orange juice.",
+       "我想要杯橙汁。"
+      ],
+      [
+       "We wear a uniform at school.",
+       "我哋返學要著校服。"
+      ]
+     ]
+    },
+    {
+     "h": "眾數：一般加 -s / -es",
+     "p": "cup → cups；sandwich → sandwich<b>es</b>（-ch / -sh / -s / -x 加 -es）；tomato → tomato<b>es</b>；輔音 + y → -ies：baby → bab<b>ies</b>；-f / -fe → -ves：shelf → shel<b>ves</b>，scarf → scar<b>ves</b>。",
+     "ex": [
+      [
+       "Two milk teas, please.",
+       "唔該兩杯奶茶。"
+      ],
+      [
+       "These sandwiches are delicious.",
+       "呢啲三文治好好味。"
+      ]
+     ]
+    },
+    {
+     "h": "唔規則眾數：要背",
+     "p": "child → <b>children</b>　man → <b>men</b>　woman → <b>women</b>　tooth → <b>teeth</b>　foot → <b>feet</b>　mouse → <b>mice</b><br>單複數一樣：fish, sheep, goldfish",
+     "ex": [
+      [
+       "I brush my teeth every morning.",
+       "我每朝刷牙。"
+      ],
+      [
+       "There are three children in the park.",
+       "公園有三個小朋友。"
+      ]
+     ]
+    },
+    {
+     "h": "⚠️ 永遠複數",
+     "p": "clothes, trousers, jeans, shorts, glasses 一定用複數：<br>✅ My jeans are blue.　❌ My jeans is blue.<br>想講「一條」：<b>a pair of</b> jeans。",
+     "ex": []
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "I'd like ___ egg sandwich, please.",
+     "zh": "唔該我要一份蛋三文治。",
+     "o": [
+      "a",
+      "an",
+      "some",
+      "two"
+     ],
+     "a": 1,
+     "why": "egg 以元音音 /e/ 開頭，用 an。"
+    },
+    {
+     "t": "mc",
+     "q": "She is wearing ___ uniform.",
+     "zh": "佢著住校服。",
+     "o": [
+      "a",
+      "an",
+      "some",
+      "two"
+     ],
+     "a": 0,
+     "why": "uniform 讀 /ˈjuːnɪfɔːm/，以輔音音 /j/ 開頭，用 a。"
+    },
+    {
+     "t": "fill",
+     "q": "My aunt has three ___ (child).",
+     "zh": "我阿姨有三個仔女。",
+     "a": [
+      "children"
+     ],
+     "why": "child 嘅複數唔規則：children。"
+    },
+    {
+     "t": "mc",
+     "q": "Can I have two ___, please?",
+     "zh": "唔該俾兩份三文治我。",
+     "o": [
+      "sandwich",
+      "sandwichs",
+      "sandwiches",
+      "sandwichies"
+     ],
+     "a": 2,
+     "why": "-ch 結尾加 -es：sandwiches。"
+    },
+    {
+     "t": "fill",
+     "q": "Brush your ___ (tooth) before bed.",
+     "zh": "瞓覺前刷牙。",
+     "a": [
+      "teeth"
+     ],
+     "why": "tooth → teeth（唔規則）。"
+    },
+    {
+     "t": "mc",
+     "q": "My new jeans ___ too tight.",
+     "zh": "我條新牛仔褲太緊。",
+     "o": [
+      "is",
+      "are",
+      "am",
+      "be"
+     ],
+     "a": 1,
+     "why": "jeans 永遠係複數，用 are。"
+    },
+    {
+     "t": "tiles",
+     "zh": "我想要兩杯凍檸茶。",
+     "a": "I want two iced lemon teas",
+     "extra": [
+      "tea",
+      "a"
+     ],
+     "why": "兩杯 → teas（加 -s）；叫嘢飲時可以用杯數去數 tea。"
+    }
+   ],
+   "xp": 15,
+   "unlock_rule": "available after week 6 Day-5 lesson is done (that week's Saturday slot)"
+  },
+  {
+   "id": "g04",
+   "no": 4,
+   "week": 8,
+   "emoji": "🍎",
+   "title": "可數／不可數名詞 + some / any",
+   "en": "Countable & Uncountable Nouns + some / any",
+   "reuse": "old grammar.js #3 — reused, examples switched to Season 1 words",
+   "intro": [
+    {
+     "h": "可數 vs 不可數",
+     "p": "<b>可數名詞</b>可以數：an apple, two apples。<br><b>不可數名詞</b>唔可以直接數、冇複數：water, milk, rice, bread, sugar, hair, money, advice, information。",
+     "ex": [
+      [
+       "I need some advice.",
+       "我想要啲意見。"
+      ],
+      [
+       "There is some rice in the bowl.",
+       "碗入面有啲飯。"
+      ]
+     ]
+    },
+    {
+     "h": "點樣數不可數？加「量詞」",
+     "p": "a <b>glass</b> of water　a <b>bowl</b> of rice　a <b>slice</b> of bread　a <b>cup</b> of tea　a <b>piece</b> of cake",
+     "ex": [
+      [
+       "Can I have a glass of water?",
+       "可唔可以俾杯水我？"
+      ]
+     ]
+    },
+    {
+     "h": "some 同 any",
+     "p": "<b>some</b> 用喺肯定句；<b>any</b> 用喺否定句同問句。<br>請人食嘢、提出要求嘅問句都用 some：Would you like some tea?",
+     "ex": [
+      [
+       "I don't have any money.",
+       "我一啲錢都冇。"
+      ],
+      [
+       "Do you have any questions?",
+       "你有冇問題？"
+      ]
+     ]
+    },
+    {
+     "h": "⚠️ 香港人常犯",
+     "p": "❌ breads, rices, hairs, advices, homeworks<br>✅ some bread, some rice, some advice",
+     "ex": []
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "Can you give me some ___?",
+     "zh": "你可唔可以俾啲意見我？",
+     "o": [
+      "advice",
+      "advices",
+      "an advice",
+      "a advice"
+     ],
+     "a": 0,
+     "why": "advice 係不可數名詞，冇 -s、唔用 a / an。"
+    },
+    {
+     "t": "mc",
+     "q": "We don't have ___ milk left.",
+     "zh": "我哋冇晒牛奶喇。",
+     "o": [
+      "some",
+      "any",
+      "a",
+      "an"
+     ],
+     "a": 1,
+     "why": "否定句用 any；milk 不可數，唔用 a / an。"
+    },
+    {
+     "t": "mc",
+     "q": "Would you like ___ coffee?",
+     "zh": "你想唔想飲啲咖啡？",
+     "o": [
+      "any",
+      "some",
+      "many",
+      "a few"
+     ],
+     "a": 1,
+     "why": "請人食嘢／飲嘢嘅問句用 some。"
+    },
+    {
+     "t": "mc",
+     "q": "Can I have a ___ of rice, please?",
+     "zh": "唔該俾一碗飯我。",
+     "o": [
+      "bowl",
+      "glass",
+      "pair",
+      "slice"
+     ],
+     "a": 0,
+     "why": "飯用碗裝：a bowl of rice。"
+    },
+    {
+     "t": "fill",
+     "q": "Is there ___ sugar in my tea? (some / any)",
+     "zh": "我杯茶有冇糖？",
+     "a": [
+      "any"
+     ],
+     "why": "一般問句用 any；sugar 不可數。"
+    },
+    {
+     "t": "tiles",
+     "zh": "你有冇問題想問？",
+     "a": "Do you have any questions",
+     "extra": [
+      "much",
+      "is"
+     ],
+     "why": "一般問句用 any；questions 可數，用複數。"
+    },
+    {
+     "t": "mc",
+     "q": "My hair ___ very long.",
+     "zh": "我啲頭髮好長。",
+     "o": [
+      "is",
+      "are",
+      "have",
+      "has"
+     ],
+     "a": 0,
+     "why": "hair 係不可數名詞，當單數用 is。"
+    }
+   ],
+   "xp": 15,
+   "unlock_rule": "available after week 8 Day-5 lesson is done (that week's Saturday slot)"
+  },
+  {
+   "id": "g05",
+   "no": 5,
+   "week": 10,
+   "emoji": "🏃",
+   "title": "現在進行式",
+   "en": "Present Continuous",
+   "reuse": "old grammar.js #1 (part 2) — reused",
+   "intro": [
+    {
+     "h": "結構：am / is / are + 動詞-ing",
+     "p": "講<b>而家進行緊</b>嘅事。常見字眼：now, right now, at the moment, Look!, Listen!",
+     "ex": [
+      [
+       "It is raining now.",
+       "而家落緊雨。"
+      ],
+      [
+       "The baby is sleeping.",
+       "BB 瞓緊覺。"
+      ]
+     ]
+    },
+    {
+     "h": "-ing 點加？",
+     "p": "一般加 -ing：rain → raining；e 結尾去 e：make → making，smile → smiling；短元音 + 單輔音要雙寫：run → run<b>n</b>ing，sit → sit<b>t</b>ing，swim → swim<b>m</b>ing。",
+     "ex": [
+      [
+       "The kids are swimming in the sea.",
+       "啲細路喺海度游緊水。"
+      ]
+     ]
+    },
+    {
+     "h": "一般現在式 vs 現在進行式",
+     "p": "習慣 → 一般現在式：I <b>usually walk</b> to school.<br>而家 → 現在進行式：I <b>am taking</b> a taxi <b>now</b>.",
+     "ex": [
+      [
+       "I drink coffee every morning.",
+       "我每朝都飲咖啡。"
+      ],
+      [
+       "I am drinking coffee now.",
+       "我而家飲緊咖啡。"
+      ]
+     ]
+    },
+    {
+     "h": "⚠️ 小心",
+     "p": "like, know, want, need 呢類「狀態動詞」通常<b>唔用進行式</b>。<br>✅ I want tea.　❌ I am wanting tea.",
+     "ex": []
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "Look! The bus ___.",
+     "zh": "睇下！架巴士嚟緊。",
+     "o": [
+      "comes",
+      "come",
+      "is coming",
+      "are coming"
+     ],
+     "a": 2,
+     "why": "Look! 表示而家發生緊，用現在進行式；the bus 係單數，用 is。"
+    },
+    {
+     "t": "fill",
+     "q": "Please be quiet. The baby ___ (sleep).",
+     "zh": "請靜啲，BB 瞓緊覺。",
+     "a": [
+      "is sleeping",
+      "'s sleeping"
+     ],
+     "why": "BB 而家瞓緊 → is + sleeping。"
+    },
+    {
+     "t": "mc",
+     "q": "I ___ what you mean.",
+     "zh": "我明你意思。",
+     "o": [
+      "know",
+      "am knowing",
+      "knows",
+      "knowing"
+     ],
+     "a": 0,
+     "why": "know 係狀態動詞，唔用進行式；主語 I 用原形。"
+    },
+    {
+     "t": "mc",
+     "q": "What ___ you doing now?",
+     "zh": "你而家做緊咩？",
+     "o": [
+      "do",
+      "are",
+      "is",
+      "does"
+     ],
+     "a": 1,
+     "why": "now + doing → 現在進行式；主語 you 用 are。"
+    },
+    {
+     "t": "fill",
+     "q": "It ___ (rain) now. Take an umbrella.",
+     "zh": "而家落緊雨，帶把遮啦。",
+     "a": [
+      "is raining",
+      "'s raining"
+     ],
+     "why": "now → is + raining。"
+    },
+    {
+     "t": "mc",
+     "q": "The kids are ___ in the sea.",
+     "zh": "啲細路喺海度游緊水。",
+     "o": [
+      "swiming",
+      "swimming",
+      "swim",
+      "swims"
+     ],
+     "a": 1,
+     "why": "短元音 + 單輔音：swim → swimming（雙寫 m）。"
+    },
+    {
+     "t": "tiles",
+     "zh": "我哋而家食緊晚飯。",
+     "a": "We are having dinner now",
+     "extra": [
+      "have",
+      "is"
+     ],
+     "why": "而家進行緊：We are + having。"
+    }
+   ],
+   "xp": 15,
+   "unlock_rule": "available after week 10 Day-5 lesson is done (that week's Saturday slot)"
+  },
+  {
+   "id": "g06",
+   "no": 6,
+   "week": 12,
+   "emoji": "🙋",
+   "title": "代名詞同物主 I / me / my / mine",
+   "en": "Pronouns & Possessives",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "四種形式",
+     "p": "<b>主格</b>（做嘢嗰個）：I, you, he, she, it, we, they<br><b>受格</b>（被做嗰個）：me, you, him, her, it, us, them<br><b>物主形容詞</b>（+ 名詞）：my, your, his, her, its, our, their<br><b>物主代名詞</b>（唔使名詞）：mine, yours, his, hers, ours, theirs",
+     "ex": [
+      [
+       "She loves her cat.",
+       "佢好愛佢隻貓。"
+      ]
+     ]
+    },
+    {
+     "h": "主格 vs 受格",
+     "p": "動詞前面用主格；動詞或者介詞後面用受格：<br><b>I</b> love <b>him</b>. <b>He</b> loves <b>me</b>.<br>✅ Give it to me.　❌ Give it to I.",
+     "ex": [
+      [
+       "Can you help me?",
+       "你可唔可以幫我？"
+      ],
+      [
+       "We miss them.",
+       "我哋好掛住佢哋。"
+      ]
+     ]
+    },
+    {
+     "h": "my vs mine",
+     "p": "<b>my</b> 後面要跟名詞：This is <b>my</b> bag.<br><b>mine</b> 自己成立：This bag is <b>mine</b>.<br>⚠️ its（佢嘅）冇 apostrophe；it's = it is。",
+     "ex": [
+      [
+       "Is this pen yours?",
+       "呢支筆係咪你嘅？"
+      ],
+      [
+       "The cat is licking its tail.",
+       "隻貓舔緊佢條尾。"
+      ]
+     ]
+    },
+    {
+     "h": "⚠️ 香港人常犯：he 定 she？",
+     "p": "廣東話「佢」唔分男女，英文要分：男仔 he / him / his；女仔 she / her / hers；動物同嘢 it / its。",
+     "ex": [
+      [
+       "My sister is shy. She doesn't talk much.",
+       "我妹妹好怕醜，佢唔多講嘢。"
+      ]
+     ]
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "My mum is worried about ___.",
+     "zh": "媽媽好擔心我。",
+     "o": [
+      "I",
+      "me",
+      "my",
+      "mine"
+     ],
+     "a": 1,
+     "why": "介詞 about 後面用受格 me。"
+    },
+    {
+     "t": "mc",
+     "q": "___ is my best friend. Her name is Amy.",
+     "zh": "佢係我最好嘅朋友，佢叫 Amy。",
+     "o": [
+      "He",
+      "She",
+      "Her",
+      "Hers"
+     ],
+     "a": 1,
+     "why": "女仔做主語用 She；Her name 嘅 Her 係物主形容詞。"
+    },
+    {
+     "t": "fill",
+     "q": "This bag isn't yours. It's ___. (我嘅)",
+     "zh": "呢個袋唔係你嘅，係我嘅。",
+     "a": [
+      "mine"
+     ],
+     "why": "後面冇名詞嘅「我嘅」用 mine。"
+    },
+    {
+     "t": "mc",
+     "q": "The dog is wagging ___ tail.",
+     "zh": "隻狗搖緊佢條尾。",
+     "o": [
+      "it's",
+      "its",
+      "his",
+      "it"
+     ],
+     "a": 1,
+     "why": "動物用 its（冇 apostrophe）；it's = it is。"
+    },
+    {
+     "t": "mc",
+     "q": "Tom and I are cousins. ___ are the same age.",
+     "zh": "Tom 同我係表兄弟，我哋同年。",
+     "o": [
+      "Us",
+      "We",
+      "Our",
+      "They"
+     ],
+     "a": 1,
+     "why": "Tom and I = we，做主語用 We。"
+    },
+    {
+     "t": "fill",
+     "q": "I miss my grandparents. I often call ___. (佢哋)",
+     "zh": "我好掛住爺爺嫲嫲，成日打電話俾佢哋。",
+     "a": [
+      "them"
+     ],
+     "why": "動詞 call 後面用受格 them。"
+    },
+    {
+     "t": "tiles",
+     "zh": "佢好愛佢隻貓。（佢係女仔）",
+     "a": "She loves her cat",
+     "extra": [
+      "he",
+      "his"
+     ],
+     "why": "女仔：She + loves（加 -s）+ her cat。"
+    }
+   ],
+   "xp": 15,
+   "unlock_rule": "available after week 12 Day-5 lesson is done (that week's Saturday slot)"
+  }
+ ]
+}

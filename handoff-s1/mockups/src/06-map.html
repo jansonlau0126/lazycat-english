@@ -1,0 +1,77 @@
+<!doctype html><html lang="zh-HK"><meta charset="utf-8"><link rel="stylesheet" href="common.css">
+<style>
+main{gap:9px;padding-top:0}
+.yh{padding:9px 14px 10px}
+.yh .row{display:flex;justify-content:space-between;align-items:baseline}
+.yh h2{font-family:"Huninn";font-weight:normal;font-size:19px}
+.yh .wk{font:800 13px Nunito;color:var(--orange-d)}
+.yh .sub{display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted);margin-top:6px;font-family:"Huninn"}
+.yh .bar{height:10px;margin-top:4px}
+.s1{background:linear-gradient(180deg,#FFF0F3,#FFF8EE);border:2px solid #F9D7DF;border-radius:22px;padding:8px 12px 4px}
+.sh{display:flex;align-items:center;gap:6px;font-family:"Huninn";font-size:15px}
+.sh small{font-size:11px;color:var(--muted);margin-left:auto}
+.snake{position:relative;height:294px;margin-top:2px}
+.snake svg.path{position:absolute;inset:0}
+.nd{position:absolute;width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;background:#EFE5DA;box-shadow:0 4px 0 #DCCCBB}
+.nd.done{background:#FFD66B;box-shadow:0 4px 0 #E3B23C}
+.nd.rev{background:var(--lav);box-shadow:0 4px 0 var(--lav-d)}
+.nd.rev.lockd{background:#E6DFF3;box-shadow:0 4px 0 #CFC4E6}
+.nd.cur{background:var(--orange);box-shadow:0 4px 0 var(--orange-d),0 0 0 6px rgba(245,154,62,.25)}
+.nd.lockd .emoji{opacity:.45;filter:saturate(.4)}
+.nd.q{width:52px;height:52px;margin:-26px 0 0 -26px;background:#FFE7A8;box-shadow:0 4px 0 #E8C66A}
+.ck{position:absolute;right:-4px;bottom:-3px;width:17px;height:17px;border-radius:50%;background:var(--mint-d);color:#fff;font:900 10px/17px Nunito;text-align:center;border:2px solid #fff}
+.lb{position:absolute;width:80px;margin-left:-40px;text-align:center;font-family:"Huninn";font-size:10.5px;color:#8C7666;line-height:1.15}
+.lb b{font:800 9.5px Nunito;color:#B9A898;display:block}
+.here{position:absolute;margin-left:-19px}
+.tipb{position:absolute;background:var(--cocoa);color:#fff;font-family:"Huninn";font-size:11px;padding:4px 8px;border-radius:10px;white-space:nowrap}
+.tipb:after{content:"";position:absolute;left:50%;bottom:-5px;margin-left:-5px;border:5px solid transparent;border-top-color:var(--cocoa);border-bottom:0}
+.sc{display:flex;align-items:center;gap:8px;padding:8px 10px 8px 12px;border-radius:20px;border:2px solid var(--line)}
+.sc .l{flex:1;min-width:0}
+.sc .t{font-family:"Huninn";font-size:14px;display:flex;align-items:center;gap:5px}
+.sc .t small{font-size:10.5px;color:var(--muted)}
+.sc .ems{display:flex;justify-content:space-between;margin-top:5px;font-size:16px}
+.sc .ems .emoji{filter:saturate(.55);opacity:.8}
+.rw{width:54px;text-align:center;font-family:"Huninn";font-size:9.5px;color:var(--muted);line-height:1.1}
+.rw .c{width:42px;margin:0 auto 4px;position:relative}
+.rw .c img{filter:grayscale(1) blur(1.6px) brightness(.8);opacity:.55}
+.rw .c .lk2{position:absolute;right:-6px;bottom:-4px;width:18px;height:18px;border-radius:50%;background:#fff;font-size:10px;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 3px rgba(150,95,50,.3)}
+</style>
+<body><div class="phone" id="p"></div>
+<script src="photos.js"></script><script src="common.js"></script>
+<script>
+const X=[42,125,208,291], Y=[24,96,168,240];
+const seq=[
+ [0,0,'🙋','自我介紹','W1','done'],[1,0,'🖐️','身體','W2','done'],[2,0,'🏠','屋企','W3','done'],[3,0,'⏰','日常作息','W4','done'],
+ [3,1,'🏆','月度複習','月 1','rev done'],[2,1,'food','食物','W5','cur'],[1,1,'🧋','茶餐廳','W6','lockd'],[0,1,'👕','衣服','W7','lockd'],
+ [0,2,'🎨','顏色數字','W8','lockd'],[1,2,'🏆','月度複習','月 2','rev lockd'],[2,2,'🌦️','天氣','W9','lockd'],[3,2,'📅','時間日期','W10','lockd'],
+ [3,3,'🐾','動物寵物','W11','lockd'],[2,3,'😊','情緒','W12','lockd'],[1,3,'🏆','月度複習','月 3','rev lockd'],[0,3,'👑','季度大複習','W13','q lockd'],
+];
+const seasons=[
+ ['#FFF7E0','#F6E3A6','☀️','第 2 季・出去曬太陽','第 14–26 週','🚌🧭🛍️💰🍽️🏥⚽🎸✈️⛰️🏖️📱','russian','藍莓'],
+ ['#FFF1E6','#F4D3B5','🍂','第 3 季・返學返工','第 27–39 週','🏫📚📝🤝🪞🎒🧹🍳🏘️🎬🧑‍🍳💼','mainecoon','大熊'],
+ ['#EEF5FB','#CFE3F2','❄️','第 4 季・窩喺被竇','第 40–52 週','♻️📰💻🚨📋💬❤️🎯🎉🏙️🌟🚀','bengal','豹豹'],
+];
+const splitEm = s => [...new Intl.Segmenter().segment(s)].map(x=>x.segment);
+document.getElementById('p').innerHTML = statusBar() + topBar() + `
+<main>
+ <div class="card yh">
+  <div class="row"><h2>年度課程地圖 <i class="emoji">🗺️</i></h2><span class="wk">第 5 / 52 週</span></div>
+  <div class="bar"><i style="width:10.25%"></i></div>
+  <div class="sub"><span>已學 123 / 1,200 字</span><span>主題 4 / 48 ・ 文法 2 / 24</span></div>
+ </div>
+ <div class="s1">
+  <div class="sh"><i class="emoji">🌸</i>第 1 季・伸個懶腰<small>第 1–13 週 ・ 生活基本</small></div>
+  <div class="snake">
+   <svg class="path" viewBox="0 0 334 294"><path d="M${X[0]} ${Y[0]} H${X[3]} A36 36 0 0 1 ${X[3]} ${Y[1]} H${X[0]} A36 36 0 0 0 ${X[0]} ${Y[2]} H${X[3]} A36 36 0 0 1 ${X[3]} ${Y[3]} H${X[0]}" fill="none" stroke="#EAD9C8" stroke-width="7" stroke-dasharray="2 11" stroke-linecap="round"/>
+   <path d="M${X[0]} ${Y[0]} H${X[3]} A36 36 0 0 1 ${X[3]} ${Y[1]} H${X[2]}" fill="none" stroke="#FFD66B" stroke-width="7" stroke-linecap="round"/></svg>
+   ${seq.map(([c,r,e,l,w,st])=>`<div class="nd ${st}" style="left:${X[c]}px;top:${Y[r]}px">${e==='food'?foodIcon('food',36):`<i class="emoji">${e}</i>`}${st.includes('done')?'<span class="ck">✓</span>':''}</div>
+     <div class="lb" style="left:${X[c]}px;top:${Y[r]+(st.includes('q')?30:27)}px">${st==='cur'?`<span style="color:#D9782A">${l}・學緊</span>`:l}${st.includes('q')?'<br><span style="color:#C08A5E">解鎖湯圓 🐱</span>':''}</div>`).join('')}
+   <div class="here" style="left:${X[2]-40}px;top:${Y[1]-44}px">${catPhoto('orange',{w:38,mode:'face'})}</div>
+  </div>
+ </div>
+ ${seasons.map(([bg,bd,ic,t,w,ems,cat,nm])=>`<div class="sc" style="background:${bg};border-color:${bd}">
+   <div class="l"><div class="t"><i class="emoji">${ic}</i>${t}<small>${w}</small></div>
+   <div class="ems">${splitEm(ems).map(x=>`<i class="emoji">${x}</i>`).join('')}</div></div>
+   <div class="rw"><div class="c">${catPhoto(cat,{w:42,mode:'face',cls:'ring2'})}<span class="lk2 emoji">🔒</span></div>解鎖 ${nm}</div></div>`).join('')}
+</main>` + tabBar('map');
+</script></body></html>

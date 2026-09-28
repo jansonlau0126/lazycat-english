@@ -1,0 +1,72 @@
+<!doctype html><html lang="zh-HK"><meta charset="utf-8"><link rel="stylesheet" href="common.css">
+<style>
+.bg{position:absolute;inset:0;width:390px;height:844px;filter:blur(2px)}
+.dim{position:absolute;inset:0;background:rgba(74,52,38,.5)}
+.sheet{position:absolute;left:0;right:0;bottom:0;top:176px;background:var(--cream);border-radius:30px 30px 0 0;box-shadow:0 -8px 30px rgba(0,0,0,.2);padding:10px 16px 26px;display:flex;flex-direction:column}
+.handle{width:44px;height:5px;border-radius:99px;background:#E6D3BD;margin:0 auto 12px}
+.hd{display:flex;justify-content:space-between;align-items:flex-start}
+.hd h2{font-family:"Huninn";font-weight:normal;font-size:22px;display:flex;gap:7px;align-items:center}
+.hd p{font-family:"Huninn";font-size:12.5px;color:var(--muted);margin-top:4px;line-height:1.4}
+.x{width:32px;height:32px;border-radius:50%;background:#fff;border:2px solid var(--line);display:flex;align-items:center;justify-content:center;color:#C2B2A4}
+.list{display:flex;flex-direction:column;gap:9px;margin-top:14px}
+.row{display:flex;align-items:center;gap:12px;background:#fff;border:2px solid var(--line);border-radius:20px;box-shadow:0 3px 0 var(--line);padding:9px 12px 9px 10px;position:relative}
+.row.sel{border-color:var(--orange);background:#FFF6EA;box-shadow:0 3px 0 var(--orange-d),0 0 0 3px #FFE1BF}
+.info{flex:1;min-width:0}
+.info .nm{display:flex;align-items:center;gap:6px;font-family:"Huninn";font-size:16.5px;line-height:1.1}
+.info .nm small{font-size:11px;color:var(--muted)}
+.tag{font-family:"Huninn";font-size:10.5px;padding:2px 7px;border-radius:99px}
+.alb{display:flex;align-items:center;gap:8px;margin-top:6px}
+.seg{display:flex;gap:3px}
+.seg i{width:24px;height:18px;border-radius:6px;background:#F1E6DA;display:flex;align-items:center;justify-content:center;font-size:10px;font-style:normal;color:#CDBBA9}
+.seg i.f{background:var(--orange-l);border:1.5px solid #F6C997}
+.seg i.b{background:var(--lav-l);border:1.5px dashed #CFC3F0;color:#B7A6E6}
+.alb .n{font:800 13px Nunito;color:var(--orange-d)}
+.alb .n span{font-family:"Huninn";font-weight:normal;font-size:11px;color:var(--muted);margin-left:3px}
+.next{font-family:"Huninn";font-size:11px;color:#B98F6E;margin-top:4px}
+.next b{font-weight:normal;color:var(--orange-d)}
+.mini{height:6px;width:70px;display:inline-block;vertical-align:middle;margin-left:5px;border-radius:99px;background:#F4EADF;overflow:hidden}
+.mini i{display:block;height:100%;background:var(--orange);border-radius:99px}
+.radio{width:26px;height:26px;border-radius:50%;border:2.5px solid #E6D3BD;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.radio.on{background:var(--orange);border-color:var(--orange);color:#fff}
+.more{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:11px;font-family:"Huninn";font-size:12.5px;color:var(--muted)}
+.more .dots{display:flex}
+.more .dots .cphoto{margin-left:-7px;box-shadow:0 0 0 2px var(--cream)}
+.more .dots .cphoto img{filter:grayscale(1) blur(1.5px);opacity:.55}
+.foot{margin-top:auto}
+.foot small{display:block;text-align:center;font-family:"Huninn";font-size:11.5px;color:var(--muted);margin-top:10px}
+</style>
+<body><div class="phone" id="p"></div>
+<script src="photos.js"></script><script src="album.js"></script><script src="common.js"></script>
+<script>
+const paw = (c,s=15) => IC.paw.replace('<svg',`<svg style="width:${s}px;height:${s}px;color:${c}"`);
+// [key, photos unlocked, lessons toward next (of 5), tag]
+const cats = [
+ ['orange', 2, 2, ''],
+ ['british',2, 4, ''],
+ ['black',  1, 3, ''],
+ ['american',1,1, ''],
+ ['calico', 1, 0, 'now'],
+];
+const ico = ['🐱','💤','🙆','😸'];
+const row = ([k,u,p,tag]) => `<div class="row ${k==='orange'?'sel':''}">
+  ${catPhoto(k,{w:54,mode:'face'})}
+  <div class="info">
+   <div class="nm">${CATS[k].name} <small>${CATS[k].breed}</small>
+    ${tag==='now'?'<span class="tag" style="background:var(--mint-l);color:#3F9466">而家陪緊你</span>':''}
+    ${k==='calico'?'<span class="tag" style="background:var(--coral);color:#fff;font:900 9px/1.3 Nunito">NEW</span>':''}</div>
+   <div class="alb"><span class="seg">${ico.map((e,i)=>`<i class="${i<u?'f':''}"><span class="emoji" style="${i<u?'':'filter:grayscale(1);opacity:.35'}">${i<u?e:'🔒'}</span></i>`).join('')}<i class="b"><span class="emoji" style="filter:grayscale(1);opacity:.45">🧶</span></i></span>
+    <span class="n">${u} / 4<span>張相</span></span></div>
+   <div class="next">下一張：<b>再陪讀 ${5-p} 堂</b><span class="mini"><i style="width:${p*20}%"></i></span></div>
+  </div>
+  <span class="radio ${k==='orange'?'on':''}">${k==='orange'?'<svg width="14" height="14" viewBox="0 0 14 14"><path d="M2.5 7.5l3 3 6-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>':''}</span>
+ </div>`;
+document.getElementById('p').innerHTML = `<img class="bg" src="../01-home.png"><div class="dim"></div>
+<div class="sheet">
+ <div class="handle"></div>
+ <div class="hd"><div><h2><i class="emoji">🐾</i>揀今日陪讀貓</h2><p>陪你學完 5 堂，佢嘅畫冊就會多一張新相 <i class="emoji">📷</i></p></div>
+  <span class="x"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span></div>
+ <div class="list">${cats.map(row).join('')}</div>
+ <div class="more"><span class="dots">${['siamese','fold','munchkin','russian'].map(k=>catPhoto(k,{w:24,mode:'face',cls:'flat'})).join('')}</span>仲有 10 隻貓貓未解鎖，去圖鑑睇吓</div>
+ <div class="foot"><div class="btn">就揀番薯喇 ${paw('#fff',20)}</div><small>隨時可以換 ・ 每堂計落當時嘅陪讀貓度</small></div>
+</div>`;
+</script></body></html>

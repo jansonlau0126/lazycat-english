@@ -1,0 +1,815 @@
+{
+ "source": "包仔英文 words.js (live app v0.1). Old SRS keys in localStorage 'baozai-english-v1' are these numeric ids.",
+ "words": [
+  {
+   "old_id": 0,
+   "old_day": 1,
+   "word": "busy",
+   "ipa": "/ˈbɪzi/",
+   "pos": "adj.",
+   "meaning_zh": "忙碌",
+   "new_id_in_s1": "busy"
+  },
+  {
+   "old_id": 1,
+   "old_day": 1,
+   "word": "tired",
+   "ipa": "/ˈtaɪəd/",
+   "pos": "adj.",
+   "meaning_zh": "疲倦；攰",
+   "new_id_in_s1": "tired"
+  },
+  {
+   "old_id": 2,
+   "old_day": 1,
+   "word": "hungry",
+   "ipa": "/ˈhʌŋgri/",
+   "pos": "adj.",
+   "meaning_zh": "肚餓",
+   "new_id_in_s1": "hungry"
+  },
+  {
+   "old_id": 3,
+   "old_day": 2,
+   "word": "breakfast",
+   "ipa": "/ˈbrekfəst/",
+   "pos": "n.",
+   "meaning_zh": "早餐",
+   "new_id_in_s1": "breakfast"
+  },
+  {
+   "old_id": 4,
+   "old_day": 2,
+   "word": "traffic",
+   "ipa": "/ˈtræfɪk/",
+   "pos": "n.",
+   "meaning_zh": "交通；車流",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 5,
+   "old_day": 2,
+   "word": "late",
+   "ipa": "/leɪt/",
+   "pos": "adj.",
+   "meaning_zh": "遲；遲到",
+   "new_id_in_s1": "late"
+  },
+  {
+   "old_id": 6,
+   "old_day": 3,
+   "word": "weather",
+   "ipa": "/ˈweðə/",
+   "pos": "n.",
+   "meaning_zh": "天氣",
+   "new_id_in_s1": "weather"
+  },
+  {
+   "old_id": 7,
+   "old_day": 3,
+   "word": "umbrella",
+   "ipa": "/ʌmˈbrelə/",
+   "pos": "n.",
+   "meaning_zh": "雨傘；遮",
+   "new_id_in_s1": "umbrella"
+  },
+  {
+   "old_id": 8,
+   "old_day": 3,
+   "word": "forget",
+   "ipa": "/fəˈget/",
+   "pos": "v.",
+   "meaning_zh": "忘記；唔記得",
+   "new_id_in_s1": "forget"
+  },
+  {
+   "old_id": 9,
+   "old_day": 4,
+   "word": "cheap",
+   "ipa": "/tʃiːp/",
+   "pos": "adj.",
+   "meaning_zh": "便宜；平",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 10,
+   "old_day": 4,
+   "word": "expensive",
+   "ipa": "/ɪkˈspensɪv/",
+   "pos": "adj.",
+   "meaning_zh": "昂貴；貴",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 11,
+   "old_day": 4,
+   "word": "price",
+   "ipa": "/praɪs/",
+   "pos": "n.",
+   "meaning_zh": "價錢",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 12,
+   "old_day": 5,
+   "word": "order",
+   "ipa": "/ˈɔːdə/",
+   "pos": "v.",
+   "meaning_zh": "點（菜）；訂購",
+   "new_id_in_s1": "order"
+  },
+  {
+   "old_id": 13,
+   "old_day": 5,
+   "word": "menu",
+   "ipa": "/ˈmenjuː/",
+   "pos": "n.",
+   "meaning_zh": "菜單；餐牌",
+   "new_id_in_s1": "menu"
+  },
+  {
+   "old_id": 14,
+   "old_day": 5,
+   "word": "bill",
+   "ipa": "/bɪl/",
+   "pos": "n.",
+   "meaning_zh": "帳單",
+   "new_id_in_s1": "bill"
+  },
+  {
+   "old_id": 15,
+   "old_day": 6,
+   "word": "healthy",
+   "ipa": "/ˈhelθi/",
+   "pos": "adj.",
+   "meaning_zh": "健康的",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 16,
+   "old_day": 6,
+   "word": "exercise",
+   "ipa": "/ˈeksəsaɪz/",
+   "pos": "v.",
+   "meaning_zh": "做運動",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 17,
+   "old_day": 6,
+   "word": "sleep",
+   "ipa": "/sliːp/",
+   "pos": "v.",
+   "meaning_zh": "睡覺；瞓覺",
+   "new_id_in_s1": "sleep"
+  },
+  {
+   "old_id": 18,
+   "old_day": 7,
+   "word": "weekend",
+   "ipa": "/ˌwiːkˈend/",
+   "pos": "n.",
+   "meaning_zh": "週末",
+   "new_id_in_s1": "weekend"
+  },
+  {
+   "old_id": 19,
+   "old_day": 7,
+   "word": "relax",
+   "ipa": "/rɪˈlæks/",
+   "pos": "v.",
+   "meaning_zh": "放鬆",
+   "new_id_in_s1": "relax"
+  },
+  {
+   "old_id": 20,
+   "old_day": 7,
+   "word": "plan",
+   "ipa": "/plæn/",
+   "pos": "n.",
+   "meaning_zh": "計劃",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 21,
+   "old_day": 8,
+   "word": "meeting",
+   "ipa": "/ˈmiːtɪŋ/",
+   "pos": "n.",
+   "meaning_zh": "會議",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 22,
+   "old_day": 8,
+   "word": "email",
+   "ipa": "/ˈiːmeɪl/",
+   "pos": "n.",
+   "meaning_zh": "電郵",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 23,
+   "old_day": 8,
+   "word": "reply",
+   "ipa": "/rɪˈplaɪ/",
+   "pos": "v.",
+   "meaning_zh": "回覆",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 24,
+   "old_day": 9,
+   "word": "colleague",
+   "ipa": "/ˈkɒliːg/",
+   "pos": "n.",
+   "meaning_zh": "同事",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 25,
+   "old_day": 9,
+   "word": "manager",
+   "ipa": "/ˈmænɪdʒə/",
+   "pos": "n.",
+   "meaning_zh": "經理",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 26,
+   "old_day": 9,
+   "word": "office",
+   "ipa": "/ˈɒfɪs/",
+   "pos": "n.",
+   "meaning_zh": "辦公室",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 27,
+   "old_day": 10,
+   "word": "deadline",
+   "ipa": "/ˈdedlaɪn/",
+   "pos": "n.",
+   "meaning_zh": "截止日期",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 28,
+   "old_day": 10,
+   "word": "finish",
+   "ipa": "/ˈfɪnɪʃ/",
+   "pos": "v.",
+   "meaning_zh": "完成",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 29,
+   "old_day": 10,
+   "word": "report",
+   "ipa": "/rɪˈpɔːt/",
+   "pos": "n.",
+   "meaning_zh": "報告",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 30,
+   "old_day": 11,
+   "word": "appointment",
+   "ipa": "/əˈpɔɪntmənt/",
+   "pos": "n.",
+   "meaning_zh": "預約",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 31,
+   "old_day": 11,
+   "word": "available",
+   "ipa": "/əˈveɪləbl/",
+   "pos": "adj.",
+   "meaning_zh": "有空；可用的",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 32,
+   "old_day": 11,
+   "word": "cancel",
+   "ipa": "/ˈkænsl/",
+   "pos": "v.",
+   "meaning_zh": "取消",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 33,
+   "old_day": 12,
+   "word": "salary",
+   "ipa": "/ˈsæləri/",
+   "pos": "n.",
+   "meaning_zh": "薪金；人工",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 34,
+   "old_day": 12,
+   "word": "holiday",
+   "ipa": "/ˈhɒlədeɪ/",
+   "pos": "n.",
+   "meaning_zh": "假期",
+   "new_id_in_s1": "holiday"
+  },
+  {
+   "old_id": 35,
+   "old_day": 12,
+   "word": "overtime",
+   "ipa": "/ˈəʊvətaɪm/",
+   "pos": "adv.",
+   "meaning_zh": "超時工作",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 36,
+   "old_day": 13,
+   "word": "problem",
+   "ipa": "/ˈprɒbləm/",
+   "pos": "n.",
+   "meaning_zh": "問題",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 37,
+   "old_day": 13,
+   "word": "solve",
+   "ipa": "/sɒlv/",
+   "pos": "v.",
+   "meaning_zh": "解決",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 38,
+   "old_day": 13,
+   "word": "idea",
+   "ipa": "/aɪˈdɪə/",
+   "pos": "n.",
+   "meaning_zh": "主意；想法",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 39,
+   "old_day": 14,
+   "word": "customer",
+   "ipa": "/ˈkʌstəmə/",
+   "pos": "n.",
+   "meaning_zh": "顧客；客人",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 40,
+   "old_day": 14,
+   "word": "service",
+   "ipa": "/ˈsɜːvɪs/",
+   "pos": "n.",
+   "meaning_zh": "服務",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 41,
+   "old_day": 14,
+   "word": "complain",
+   "ipa": "/kəmˈpleɪn/",
+   "pos": "v.",
+   "meaning_zh": "投訴；抱怨",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 42,
+   "old_day": 15,
+   "word": "airport",
+   "ipa": "/ˈeəpɔːt/",
+   "pos": "n.",
+   "meaning_zh": "機場",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 43,
+   "old_day": 15,
+   "word": "passport",
+   "ipa": "/ˈpɑːspɔːt/",
+   "pos": "n.",
+   "meaning_zh": "護照",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 44,
+   "old_day": 15,
+   "word": "luggage",
+   "ipa": "/ˈlʌgɪdʒ/",
+   "pos": "n.",
+   "meaning_zh": "行李",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 45,
+   "old_day": 16,
+   "word": "direction",
+   "ipa": "/dəˈrekʃn/",
+   "pos": "n.",
+   "meaning_zh": "方向",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 46,
+   "old_day": 16,
+   "word": "nearby",
+   "ipa": "/ˌnɪəˈbaɪ/",
+   "pos": "adv.",
+   "meaning_zh": "附近",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 47,
+   "old_day": 16,
+   "word": "crowded",
+   "ipa": "/ˈkraʊdɪd/",
+   "pos": "adj.",
+   "meaning_zh": "擠迫的",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 48,
+   "old_day": 17,
+   "word": "fever",
+   "ipa": "/ˈfiːvə/",
+   "pos": "n.",
+   "meaning_zh": "發燒",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 49,
+   "old_day": 17,
+   "word": "medicine",
+   "ipa": "/ˈmedsn/",
+   "pos": "n.",
+   "meaning_zh": "藥",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 50,
+   "old_day": 17,
+   "word": "recover",
+   "ipa": "/rɪˈkʌvə/",
+   "pos": "v.",
+   "meaning_zh": "康復",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 51,
+   "old_day": 18,
+   "word": "borrow",
+   "ipa": "/ˈbɒrəʊ/",
+   "pos": "v.",
+   "meaning_zh": "借（入）",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 52,
+   "old_day": 18,
+   "word": "lend",
+   "ipa": "/lend/",
+   "pos": "v.",
+   "meaning_zh": "借（出）",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 53,
+   "old_day": 18,
+   "word": "return",
+   "ipa": "/rɪˈtɜːn/",
+   "pos": "v.",
+   "meaning_zh": "歸還；返回",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 54,
+   "old_day": 19,
+   "word": "decide",
+   "ipa": "/dɪˈsaɪd/",
+   "pos": "v.",
+   "meaning_zh": "決定",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 55,
+   "old_day": 19,
+   "word": "choose",
+   "ipa": "/tʃuːz/",
+   "pos": "v.",
+   "meaning_zh": "選擇；揀",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 56,
+   "old_day": 19,
+   "word": "prefer",
+   "ipa": "/prɪˈfɜː/",
+   "pos": "v.",
+   "meaning_zh": "比較喜歡",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 57,
+   "old_day": 20,
+   "word": "improve",
+   "ipa": "/ɪmˈpruːv/",
+   "pos": "v.",
+   "meaning_zh": "改善；進步",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 58,
+   "old_day": 20,
+   "word": "practice",
+   "ipa": "/ˈpræktɪs/",
+   "pos": "n.",
+   "meaning_zh": "練習",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 59,
+   "old_day": 20,
+   "word": "mistake",
+   "ipa": "/mɪˈsteɪk/",
+   "pos": "n.",
+   "meaning_zh": "錯誤",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 60,
+   "old_day": 21,
+   "word": "friendly",
+   "ipa": "/ˈfrendli/",
+   "pos": "adj.",
+   "meaning_zh": "友善的",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 61,
+   "old_day": 21,
+   "word": "polite",
+   "ipa": "/pəˈlaɪt/",
+   "pos": "adj.",
+   "meaning_zh": "有禮貌的",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 62,
+   "old_day": 21,
+   "word": "honest",
+   "ipa": "/ˈɒnɪst/",
+   "pos": "adj.",
+   "meaning_zh": "誠實的",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 63,
+   "old_day": 22,
+   "word": "experience",
+   "ipa": "/ɪkˈspɪəriəns/",
+   "pos": "n.",
+   "meaning_zh": "經驗；經歷",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 64,
+   "old_day": 22,
+   "word": "skill",
+   "ipa": "/skɪl/",
+   "pos": "n.",
+   "meaning_zh": "技能",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 65,
+   "old_day": 22,
+   "word": "confident",
+   "ipa": "/ˈkɒnfɪdənt/",
+   "pos": "adj.",
+   "meaning_zh": "有信心的",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 66,
+   "old_day": 23,
+   "word": "opportunity",
+   "ipa": "/ˌɒpəˈtjuːnəti/",
+   "pos": "n.",
+   "meaning_zh": "機會",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 67,
+   "old_day": 23,
+   "word": "career",
+   "ipa": "/kəˈrɪə/",
+   "pos": "n.",
+   "meaning_zh": "事業；職業生涯",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 68,
+   "old_day": 23,
+   "word": "interview",
+   "ipa": "/ˈɪntəvjuː/",
+   "pos": "n.",
+   "meaning_zh": "面試；訪問",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 69,
+   "old_day": 24,
+   "word": "responsible",
+   "ipa": "/rɪˈspɒnsəbl/",
+   "pos": "adj.",
+   "meaning_zh": "負責的",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 70,
+   "old_day": 24,
+   "word": "reliable",
+   "ipa": "/rɪˈlaɪəbl/",
+   "pos": "adj.",
+   "meaning_zh": "可靠的",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 71,
+   "old_day": 24,
+   "word": "efficient",
+   "ipa": "/ɪˈfɪʃnt/",
+   "pos": "adj.",
+   "meaning_zh": "有效率的",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 72,
+   "old_day": 25,
+   "word": "environment",
+   "ipa": "/ɪnˈvaɪrənmənt/",
+   "pos": "n.",
+   "meaning_zh": "環境",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 73,
+   "old_day": 25,
+   "word": "recycle",
+   "ipa": "/ˌriːˈsaɪkl/",
+   "pos": "v.",
+   "meaning_zh": "回收",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 74,
+   "old_day": 25,
+   "word": "reduce",
+   "ipa": "/rɪˈdjuːs/",
+   "pos": "v.",
+   "meaning_zh": "減少",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 75,
+   "old_day": 26,
+   "word": "suggest",
+   "ipa": "/səˈdʒest/",
+   "pos": "v.",
+   "meaning_zh": "建議",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 76,
+   "old_day": 26,
+   "word": "agree",
+   "ipa": "/əˈgriː/",
+   "pos": "v.",
+   "meaning_zh": "同意",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 77,
+   "old_day": 26,
+   "word": "discuss",
+   "ipa": "/dɪˈskʌs/",
+   "pos": "v.",
+   "meaning_zh": "討論",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 78,
+   "old_day": 27,
+   "word": "convenient",
+   "ipa": "/kənˈviːniənt/",
+   "pos": "adj.",
+   "meaning_zh": "方便的",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 79,
+   "old_day": 27,
+   "word": "comfortable",
+   "ipa": "/ˈkʌmftəbl/",
+   "pos": "adj.",
+   "meaning_zh": "舒服的",
+   "new_id_in_s1": "comfortable"
+  },
+  {
+   "old_id": 80,
+   "old_day": 27,
+   "word": "necessary",
+   "ipa": "/ˈnesəsəri/",
+   "pos": "adj.",
+   "meaning_zh": "必要的",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 81,
+   "old_day": 28,
+   "word": "achieve",
+   "ipa": "/əˈtʃiːv/",
+   "pos": "v.",
+   "meaning_zh": "達成；實現",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 82,
+   "old_day": 28,
+   "word": "goal",
+   "ipa": "/gəʊl/",
+   "pos": "n.",
+   "meaning_zh": "目標",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 83,
+   "old_day": 28,
+   "word": "effort",
+   "ipa": "/ˈefət/",
+   "pos": "n.",
+   "meaning_zh": "努力",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 84,
+   "old_day": 29,
+   "word": "communicate",
+   "ipa": "/kəˈmjuːnɪkeɪt/",
+   "pos": "v.",
+   "meaning_zh": "溝通",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 85,
+   "old_day": 29,
+   "word": "explain",
+   "ipa": "/ɪkˈspleɪn/",
+   "pos": "v.",
+   "meaning_zh": "解釋",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 86,
+   "old_day": 29,
+   "word": "misunderstand",
+   "ipa": "/ˌmɪsʌndəˈstænd/",
+   "pos": "v.",
+   "meaning_zh": "誤會",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 87,
+   "old_day": 30,
+   "word": "organise",
+   "ipa": "/ˈɔːgənaɪz/",
+   "pos": "v.",
+   "meaning_zh": "組織；安排",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 88,
+   "old_day": 30,
+   "word": "budget",
+   "ipa": "/ˈbʌdʒɪt/",
+   "pos": "n.",
+   "meaning_zh": "預算",
+   "new_id_in_s1": null
+  },
+  {
+   "old_id": 89,
+   "old_day": 30,
+   "word": "priority",
+   "ipa": "/praɪˈɒrəti/",
+   "pos": "n.",
+   "meaning_zh": "優先事項",
+   "new_id_in_s1": null
+  }
+ ]
+}

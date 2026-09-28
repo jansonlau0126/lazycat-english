@@ -1,0 +1,78 @@
+<!doctype html><html lang="zh-HK"><meta charset="utf-8"><link rel="stylesheet" href="common.css">
+<style>
+.hero{position:relative;height:252px;border-radius:26px;overflow:hidden;background:linear-gradient(180deg,#FFEED3 0%,#FFE2C0 100%);border:2px solid #F7DDBE;flex-shrink:0}
+.hero .heroimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 62%}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,238,211,.25),rgba(255,238,211,0) 40%)}
+.bubble{position:absolute;left:14px;top:14px;width:200px;background:#fff;border-radius:18px;padding:10px 12px;box-shadow:0 3px 0 rgba(217,120,42,.18);font-size:13px;line-height:1.45}
+.bubble b{display:block;font-family:"Huninn";font-weight:normal;font-size:16px;color:var(--orange-d);margin-bottom:2px}
+.bubble:after{content:"";position:absolute;left:92px;bottom:-9px;border:10px solid transparent;border-top-color:#fff;border-bottom:0}
+.zzz{position:absolute;font-family:"Baloo 2";font-weight:800;color:#8E7CC9;text-shadow:0 1px 0 #fff,0 0 6px rgba(255,255,255,.9)}
+.theme{display:flex;gap:12px;align-items:center;padding:12px 14px}
+.tile{width:54px;height:54px;border-radius:16px;background:var(--sun-l);display:flex;align-items:center;justify-content:center;font-size:30px;flex-shrink:0;border:2px solid #FBE3A0}
+.theme .t1{font-size:12px;color:var(--muted);font-family:"Huninn"}
+.theme .t2{font-family:"Huninn";font-size:18px;margin:1px 0 6px}
+.theme .t2 .en{font-weight:800;font-size:16px;color:var(--orange-d)}
+.today{padding:12px 14px 14px}
+.row{display:flex;justify-content:space-between;align-items:center}
+.today h3{font-family:"Huninn";font-weight:normal;font-size:16px}
+.words{display:flex;gap:7px;margin:10px 0 14px}
+.w{flex:1;border-radius:16px;background:#FFFBF5;border:2px solid var(--line);padding:7px 0 6px;text-align:center;position:relative}
+.w .emoji{font-size:25px;display:block;margin-bottom:3px}
+.w span{font:800 12px/1.1 "Nunito"}
+.w.done{background:var(--mint-l);border-color:#BFE8CF}
+.w.done:after{content:"✓";position:absolute;top:-7px;right:-5px;width:18px;height:18px;border-radius:50%;background:var(--mint-d);color:#fff;font:900 11px/18px Nunito}
+.w.cur{border-color:var(--orange);background:#FFF3E4;box-shadow:0 0 0 3px #FFE1BF}
+.w.lock{opacity:.5}
+.w.lock .ficon{filter:grayscale(.6)}
+.week{display:flex;justify-content:space-between;padding:10px 12px}
+.d{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;color:var(--muted);font-family:"Huninn";width:44px}
+.d i{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#F6EDE3;font-style:normal;font-size:15px}
+.d.ok i{background:var(--orange);color:#fff}
+.d.ok i svg{width:18px;height:18px}
+.d.now i{background:#fff;border:3px solid var(--orange);color:var(--orange-d);font:900 13px Nunito}
+.d.gr i{background:var(--lav-l)} .d.rest i{background:var(--sky-l)}
+.d small{font-size:10px;color:#B9A898;margin-top:-2px;white-space:nowrap}
+</style>
+<body><div class="phone" id="p"></div>
+<script src="photos.js"></script><script src="common.js"></script>
+<script>
+const paw = IC.paw.replace('<svg','<svg style="width:17px;height:17px;color:#fff"');
+document.getElementById('p').innerHTML = statusBar() + topBar() + `
+<main>
+ <div class="hero">
+  <img class="heroimg" src="${catSrc('hero')}" alt="番薯瞓緊">
+  <div class="shade"></div>
+  <span class="zzz" style="left:252px;top:70px;font-size:22px">Z</span><span class="zzz" style="left:269px;top:54px;font-size:16px;opacity:.75">z</span><span class="zzz" style="left:282px;top:41px;font-size:12px;opacity:.55">z</span>
+  <div class="bubble"><b>喵～瞓醒未呀 Janson？</b>今日學埋 5 個字，就可以一齊瞓返個晏覺 <i class="emoji">😴</i></div>
+ </div>
+
+ <div class="card theme">
+  <div class="tile">${foodIcon('food',46)}</div>
+  <div style="flex:1">
+   <div class="t1">第 1 季・<i class="emoji">🌸</i> 伸個懶腰 ・ 第 5 / 52 週</div>
+   <div class="t2">食物 <span class="en">Food</span></div>
+   <div class="bar"><i style="width:92%"></i></div>
+  </div>
+  <div class="hn" style="font-size:15px;color:var(--orange-d);align-self:flex-end;margin-bottom:-2px">23/25</div>
+ </div>
+
+ <div class="card today">
+  <div class="row"><h3>今日 5 個字 ・ 星期五</h3><span class="pill" style="background:var(--orange-l);color:var(--orange-d)">已學 3 / 5</span></div>
+  <div class="words">
+   <div class="w done">${foodIcon('cheese',34,'margin:-2px auto 1px')}<span>cheese</span></div>
+   <div class="w done">${foodIcon('sweet',34,'margin:-2px auto 1px')}<span>sweet</span></div>
+   <div class="w done">${foodIcon('salty',34,'margin:-2px auto 1px')}<span>salty</span></div>
+   <div class="w cur">${foodIcon('spicy',34,'margin:-2px auto 1px')}<span>spicy</span></div>
+   <div class="w lock">${foodIcon('delicious',34,'margin:-2px auto 1px')}<span>delicious</span></div>
+  </div>
+  <div class="btn">繼續學 ${paw} 仲有 2 個字</div>
+ </div>
+
+ <div class="card week">
+  ${['一','二','三','四'].map(d=>`<div class="d ok"><i>${paw}</i>${d}</div>`).join('')}
+  <div class="d now"><i>5</i>五</div>
+  <div class="d gr"><i class="emoji">📖</i>六<small>文法+複習</small></div>
+  <div class="d rest"><i class="emoji">😴</i>日<small>懶貓日</small></div>
+ </div>
+</main>` + tabBar('home');
+</script></body></html>

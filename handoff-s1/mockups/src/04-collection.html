@@ -1,0 +1,49 @@
+<!doctype html><html lang="zh-HK"><meta charset="utf-8"><link rel="stylesheet" href="common.css">
+<style>
+.hd{padding:2px 16px 8px;flex-shrink:0}
+.hd .row{display:flex;justify-content:space-between;align-items:flex-end}
+.hd h2{font-family:"Huninn";font-weight:normal;font-size:24px}
+.hd h2 .emoji{font-size:22px}
+.cnt{font:800 15px Nunito;color:var(--orange-d)}
+.cnt span{font-family:"Huninn";font-weight:normal;font-size:12px;color:var(--muted)}
+.hd .bar{margin-top:7px;height:10px}
+.comp{display:flex;align-items:center;gap:6px;margin-top:8px;font-size:12px;color:var(--muted);font-family:"Huninn"}
+.comp b{font-weight:normal;color:var(--cocoa)}
+main{padding-top:0;gap:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.ct{height:112px;border-radius:18px;background:#fff;border:2px solid var(--line);box-shadow:0 3px 0 var(--line);display:flex;flex-direction:column;align-items:center;position:relative;padding-top:2px;overflow:hidden}
+.ct .pic{margin:9px 0 6px}
+.ct b{font-family:"Huninn";font-weight:normal;font-size:14px;line-height:1.1}
+.ct small{font-size:10px;color:var(--muted);line-height:1.3}
+.ct.lock{background:#FBF5EE;border-style:dashed;box-shadow:none}
+.ct.lock .pic .cphoto{box-shadow:0 0 0 3px #fff;background:#EFE4D8}
+.ct.lock .pic{position:relative}
+.ct.lock .pic img{filter:grayscale(1) blur(2.6px) brightness(.72) contrast(1.15);opacity:.5}
+.ct.lock b.cond{color:#A2785A;font-size:11.5px;line-height:1.2;text-align:center;padding:0 4px;white-space:nowrap}
+.ct.lock small{color:#C3B2A2;font:800 10px/1.4 Nunito;text-align:center}
+.lk{position:absolute;top:40px;left:calc(50% + 17px);width:26px;height:26px;border-radius:50%;background:#fff;box-shadow:0 2px 4px rgba(150,95,50,.25);font-size:14px;display:flex;align-items:center;justify-content:center}
+.star{position:absolute;top:6px;right:7px;font-size:13px}
+.newb{position:absolute;top:7px;left:7px;background:var(--coral);color:#fff;font:900 9px/1 Nunito;padding:3px 6px;border-radius:99px}
+.prog2{position:absolute;bottom:0;left:0;right:0;height:4px;background:#F1E4D4}.prog2 i{display:block;height:100%;background:var(--orange)}
+</style>
+<body><div class="phone" id="p"></div>
+<script src="photos.js"></script><script src="common.js"></script>
+<script>
+const BG = {orange:'#FFF1E0',british:'#EEF2F7',black:'#F1EEF5',american:'#F2F4F7',calico:'#FFF4EC'};
+const list = [
+ ['orange',1,'新手貓'],['british',1,'完成第一課'],['black',1,'第一張生字卡'],['american',1,'連續 7 日'],['calico',1,'第一次月度複習'],
+ ['siamese',0,'🔥 連續 30 日','12 / 30 日'],['fold',0,'完成第 1 季','第 5 / 13 週'],['munchkin',0,'100 字達「掌握」','22 / 100'],['russian',0,'完成第 2 季'],
+ ['chinchilla',0,'30 課零錯誤','8 / 30'],['ragdoll',0,'🔥 連續 100 日'],['mainecoon',0,'完成第 3 季'],['sphynx',0,'完成 24 課文法'],['persian',0,'累積 5,000 XP'],['bengal',0,'👑 完成全年 1,200 字'],
+];
+document.getElementById('p').innerHTML = statusBar() + topBar() + `
+<div class="hd">
+ <div class="row"><h2>貓貓圖鑑 <i class="emoji">🐾</i></h2><div class="cnt">5 / 15 <span>隻貓貓</span></div></div>
+ <div class="bar"><i style="width:33%"></i></div>
+ <div class="comp">陪讀貓：<b>番薯（橘貓）</b>・ 撳一下可以換陪讀貓</div>
+</div>
+<main><div class="grid">
+ ${list.map(([k,u,cond,pct])=>u
+  ? `<div class="ct" style="background:${BG[k]}">${k==='calico'?'<span class="newb">NEW</span>':''}${k==='orange'?'<span class="star emoji">⭐</span>':''}<div class="pic">${catPhoto(k,{w:58,mode:'face'})}</div><b>${CATS[k].name}</b><small>${CATS[k].breed}・${CATS[k].hair}</small></div>`
+  : `<div class="ct lock"><div class="pic">${catPhoto(k,{w:58,mode:'face'})}</div><span class="lk emoji">🔒</span><b class="cond">${cond}</b><small>${pct||'未解鎖'}</small></div>`).join('')}
+</div></main>` + tabBar('paw');
+</script></body></html>
