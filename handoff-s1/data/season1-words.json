@@ -17,7 +17,7 @@
   "example_en": "Hello, my name is Janson.",
   "example_zh": "你好，我叫 Janson。",
   "tip": "口語亦成日講 Hi；接電話講 Hello?",
-  "icon": null,
+  "icon": "assets/icons/hello.png",
   "emoji": "👋",
   "abstract": true,
   "icon_idea": "a kitten waving one paw with a small speech bubble"
@@ -40,7 +40,7 @@
   "example_en": "What's your name?",
   "example_zh": "你叫咩名呀？",
   "tip": "自我介紹：My name is…；first name = 名，surname = 姓。",
-  "icon": null,
+  "icon": "assets/icons/name.png",
   "emoji": "📛",
   "abstract": false,
   "icon_idea": "a name tag sticker with a paw print"
@@ -63,7 +63,7 @@
   "example_en": "Nice to meet you.",
   "example_zh": "好高興認識你。",
   "tip": "第一次見面講 Nice to meet you.；過去式 met。",
-  "icon": null,
+  "icon": "assets/icons/meet.png",
   "emoji": "🤝",
   "abstract": true,
   "icon_idea": "two kittens touching paws like a handshake"
@@ -86,7 +86,7 @@
   "example_en": "Tom is my best friend.",
   "example_zh": "Tom 係我最好嘅朋友。",
   "tip": "best friend = 最好嘅朋友；make friends = 識朋友（friends 用複數）。",
-  "icon": null,
+  "icon": "assets/icons/friend.png",
   "emoji": "🧑‍🤝‍🧑",
   "abstract": false,
   "icon_idea": "two kittens sitting side by side with a small heart above"
@@ -109,7 +109,7 @@
   "example_en": "I live in Sha Tin.",
   "example_zh": "我住喺沙田。",
   "tip": "live in + 地方；he / she lives（第三人稱加 -s）。",
-  "icon": null,
+  "icon": "assets/icons/live.png",
   "emoji": "📍",
   "abstract": true,
   "icon_idea": "a small house with a map pin on top"
@@ -132,7 +132,7 @@
   "example_en": "There are four people in my family.",
   "example_zh": "我屋企有四個人。",
   "tip": "問人屋企有幾多人：How many people are there in your family?",
-  "icon": null,
+  "icon": "assets/icons/family.png",
   "emoji": "👨‍👩‍👧‍👦",
   "abstract": false,
   "icon_idea": "a family of cats inside a heart-shaped frame"
@@ -155,7 +155,7 @@
   "example_en": "My father works in Kowloon.",
   "example_zh": "我爸爸喺九龍返工。",
   "tip": "口語多數叫 dad；th 要輕輕咬住舌頭讀 /ð/。",
-  "icon": null,
+  "icon": "assets/icons/father.png",
   "emoji": "👨",
   "abstract": false,
   "icon_idea": "a dad with glasses and a tie, soft smile"
@@ -178,7 +178,7 @@
   "example_en": "My mother cooks dinner every day.",
   "example_zh": "我媽媽日日煮晚飯。",
   "tip": "口語叫 mum（英式）／ mom（美式）。",
-  "icon": null,
+  "icon": "assets/icons/mother.png",
   "emoji": "👩",
   "abstract": false,
   "icon_idea": "a mum wearing an apron, soft smile"
@@ -201,7 +201,7 @@
   "example_en": "My brother is ten years old.",
   "example_zh": "我細佬十歲。",
   "tip": "哥哥 = older brother；細佬 = younger brother。",
-  "icon": null,
+  "icon": "assets/icons/brother.png",
   "emoji": "👦",
   "abstract": false,
   "icon_idea": "a boy in a cap"
@@ -224,7 +224,7 @@
   "example_en": "My sister likes drawing.",
   "example_zh": "我妹妹鍾意畫畫。",
   "tip": "家姐 = older sister；妹妹 = younger sister。",
-  "icon": null,
+  "icon": "assets/icons/sister.png",
   "emoji": "👧",
   "abstract": false,
   "icon_idea": "a girl with a ponytail holding a crayon"
@@ -247,7 +247,7 @@
   "example_en": "My grandfather is eighty years old.",
   "example_zh": "我爺爺八十歲。",
   "tip": "口語叫 grandpa；英文唔分爺爺同公公。",
-  "icon": null,
+  "icon": "assets/icons/grandfather.png",
   "emoji": "👴",
   "abstract": false,
   "icon_idea": "a grandpa with white hair and a walking stick"
@@ -270,7 +270,7 @@
   "example_en": "I visit my grandmother on Sundays.",
   "example_zh": "我逢星期日去探嫲嫲。",
   "tip": "口語叫 grandma；英文唔分嫲嫲同婆婆。",
-  "icon": null,
+  "icon": "assets/icons/grandmother.png",
   "emoji": "👵",
   "abstract": false,
   "icon_idea": "a grandma with a hair bun and round glasses"
@@ -293,7 +293,7 @@
   "example_en": "My uncle lives in Canada.",
   "example_zh": "我舅父住喺加拿大。",
   "tip": "英文一個 uncle 包晒叔伯、舅父、姑丈、姨丈。",
-  "icon": null,
+  "icon": "assets/icons/uncle.png",
   "emoji": "🧔",
   "abstract": false,
   "icon_idea": "a smiling man with a beard waving"
@@ -316,7 +316,7 @@
   "example_en": "My aunt lives near us.",
   "example_zh": "我阿姨住喺我哋附近。",
   "tip": "英式讀 /ɑːnt/；美式讀音似 ant（螞蟻）。",
-  "icon": null,
+  "icon": "assets/icons/aunt.png",
   "emoji": "👩‍🦱",
   "abstract": false,
   "icon_idea": "a lady with curly hair holding a gift box"
@@ -339,7 +339,7 @@
   "example_en": "My cousin and I are the same age.",
   "example_zh": "我同我表哥同年。",
   "tip": "英文唔分表定堂、唔分男女，一律叫 cousin。",
-  "icon": null,
+  "icon": "assets/icons/cousin.png",
   "emoji": "👫",
   "abstract": false,
   "icon_idea": "two children of the same height holding hands"
@@ -362,7 +362,7 @@
   "example_en": "They have a son and a daughter.",
   "example_zh": "佢哋有一個仔同一個女。",
   "tip": "讀音同 sun（太陽）一樣。",
-  "icon": null,
+  "icon": "assets/icons/son.png",
   "emoji": "👨‍👦",
   "abstract": false,
   "icon_idea": "a dad holding a little boy's hand"
@@ -385,7 +385,7 @@
   "example_en": "Their daughter is very cute.",
   "example_zh": "佢哋個女好可愛。",
   "tip": "gh 唔發音，讀 DAW-ter。",
-  "icon": null,
+  "icon": "assets/icons/daughter.png",
   "emoji": "👩‍👧",
   "abstract": false,
   "icon_idea": "a mum holding a little girl's hand"
@@ -408,7 +408,7 @@
   "example_en": "The baby is sleeping.",
   "example_zh": "BB 瞓緊覺。",
   "tip": "複數 babies（y 變 ies）。",
-  "icon": null,
+  "icon": "assets/icons/baby.png",
   "emoji": "👶",
   "abstract": false,
   "icon_idea": "a sleeping baby with a dummy"
@@ -431,7 +431,7 @@
   "example_en": "Every child needs love.",
   "example_zh": "每個小朋友都需要愛。",
   "tip": "複數唔規則：children，唔係 childs。",
-  "icon": null,
+  "icon": "assets/icons/child.png",
   "emoji": "🧒",
   "abstract": false,
   "icon_idea": "a small child holding a balloon"
@@ -454,7 +454,7 @@
   "example_en": "Every parent loves their child.",
   "example_zh": "每個父母都疼自己嘅仔女。",
   "tip": "爸爸媽媽兩個一齊講 parents（複數）。",
-  "icon": null,
+  "icon": "assets/icons/parent.png",
   "emoji": "👪",
   "abstract": false,
   "icon_idea": "a mother cat hugging a kitten"
@@ -477,7 +477,7 @@
   "example_en": "Let me introduce myself.",
   "example_zh": "等我自我介紹下。",
   "tip": "introduce A to B = 介紹 A 俾 B 識；名詞 introduction。",
-  "icon": null,
+  "icon": "assets/icons/introduce.png",
   "emoji": "🙋",
   "abstract": true,
   "icon_idea": "a kitten raising one paw beside a tiny microphone"
@@ -500,7 +500,7 @@
   "example_en": "My surname is Lau.",
   "example_zh": "我姓劉。",
   "tip": "填表會見到 surname / family name（姓）同 first name（名）。",
-  "icon": null,
+  "icon": "assets/icons/surname.png",
   "emoji": "🪪",
   "abstract": false,
   "icon_idea": "an ID card with the top line highlighted"
@@ -523,7 +523,7 @@
   "example_en": "My nickname is Jan.",
   "example_zh": "我個花名叫 Jan。",
   "tip": "香港人嘅「英文名」唔係 nickname；nickname 係朋友改嘅花名。",
-  "icon": null,
+  "icon": "assets/icons/nickname.png",
   "emoji": "🏷️",
   "abstract": false,
   "icon_idea": "a cute luggage tag with a star doodle"
@@ -546,7 +546,7 @@
   "example_en": "We are the same age.",
   "example_zh": "我哋同年。",
   "tip": "問歲數多數講 How old are you?，比 What's your age? 自然。",
-  "icon": null,
+  "icon": "assets/icons/age.png",
   "emoji": "🎈",
   "abstract": true,
   "icon_idea": "a balloon with a number on it"
@@ -569,7 +569,7 @@
   "example_en": "Let's have lunch together.",
   "example_zh": "我哋一齊食晏啦。",
   "tip": "放句尾：We study together.（我哋一齊溫書）",
-  "icon": null,
+  "icon": "assets/icons/together.png",
   "emoji": "🫂",
   "abstract": true,
   "icon_idea": "two kittens curled up together on one cushion"
@@ -592,7 +592,7 @@
   "example_en": "My head hurts.",
   "example_zh": "我頭痛。",
   "tip": "頭痛 = headache：I have a headache.",
-  "icon": null,
+  "icon": "assets/icons/head.png",
   "emoji": "👤",
   "abstract": false,
   "icon_idea": "a round kitten head, front view"
@@ -615,7 +615,7 @@
   "example_en": "Wash your face before bed.",
   "example_zh": "瞓覺前洗面。",
   "tip": "洗面 = wash your face；make a face = 扮鬼臉。",
-  "icon": null,
+  "icon": "assets/icons/face.png",
   "emoji": "🙂",
   "abstract": false,
   "icon_idea": "a round smiling face with rosy cheeks"
@@ -638,7 +638,7 @@
   "example_en": "She has long black hair.",
   "example_zh": "佢有一頭長長嘅黑頭髮。",
   "tip": "頭髮係不可數：唔講 hairs（除非講幾條毛）。",
-  "icon": null,
+  "icon": "assets/icons/hair.png",
   "emoji": "💇",
   "abstract": false,
   "icon_idea": "a comb brushing a wavy lock of hair"
@@ -661,7 +661,7 @@
   "example_en": "I have something in my eye.",
   "example_zh": "我眼入咗嘢。",
   "tip": "讀音同 I 一樣；兩隻眼 = eyes。",
-  "icon": null,
+  "icon": "assets/icons/eye.png",
   "emoji": "👁️",
   "abstract": false,
   "icon_idea": "a big sparkly cartoon eye with lashes"
@@ -684,7 +684,7 @@
   "example_en": "My cat licks my ear.",
   "example_zh": "我隻貓舔我隻耳仔。",
   "tip": "耳仔痛 = earache；元音開頭：an ear。",
-  "icon": null,
+  "icon": "assets/icons/ear.png",
   "emoji": "👂",
   "abstract": false,
   "icon_idea": "a cute ear with small sound waves"
@@ -707,7 +707,7 @@
   "example_en": "The dog has a wet nose.",
   "example_zh": "隻狗個鼻濕濕哋。",
   "tip": "流鼻水 = have a runny nose。",
-  "icon": null,
+  "icon": "assets/icons/nose.png",
   "emoji": "👃",
   "abstract": false,
   "icon_idea": "a little pink cat nose with whiskers"
@@ -730,7 +730,7 @@
   "example_en": "Don't talk with your mouth full.",
   "example_zh": "口入面有嘢就唔好講嘢。",
   "tip": "尾音 th 輕輕咬舌讀 /θ/，唔好讀成 mouse。",
-  "icon": null,
+  "icon": "assets/icons/mouth.png",
   "emoji": "👄",
   "abstract": false,
   "icon_idea": "a smiling mouth with a little tongue"
@@ -753,7 +753,7 @@
   "example_en": "My tooth hurts.",
   "example_zh": "我隻牙好痛。",
   "tip": "複數唔規則：teeth；刷牙 = brush your teeth。",
-  "icon": null,
+  "icon": "assets/icons/tooth.png",
   "emoji": "🦷",
   "abstract": false,
   "icon_idea": "a smiling tooth with a sparkle"
@@ -776,7 +776,7 @@
   "example_en": "A giraffe has a long neck.",
   "example_zh": "長頸鹿條頸好長。",
   "tip": "瞓捩頸 = have a stiff neck。",
-  "icon": null,
+  "icon": "assets/icons/neck.png",
   "emoji": "🦒",
   "abstract": false,
   "icon_idea": "a giraffe's long neck wearing a little scarf"
@@ -799,7 +799,7 @@
   "example_en": "She carries her bag on her shoulder.",
   "example_zh": "佢將個袋孭喺膊頭。",
   "tip": "聳膊頭 = shrug your shoulders。",
-  "icon": null,
+  "icon": "assets/icons/shoulder.png",
   "emoji": "🤷",
   "abstract": false,
   "icon_idea": "a shoulder with a bag strap over it"
@@ -822,7 +822,7 @@
   "example_en": "My arm is tired.",
   "example_zh": "我隻手好攰。",
   "tip": "手臂係 arm，手掌係 hand。",
-  "icon": null,
+  "icon": "assets/icons/arm.png",
   "emoji": "💪",
   "abstract": false,
   "icon_idea": "a flexing arm with a tiny heart"
@@ -845,7 +845,7 @@
   "example_en": "Raise your hand if you know.",
   "example_zh": "知道嘅就舉手。",
   "tip": "舉手 = raise your hand；洗手 = wash your hands。",
-  "icon": null,
+  "icon": "assets/icons/hand.png",
   "emoji": "✋",
   "abstract": false,
   "icon_idea": "an open hand waving"
@@ -868,7 +868,7 @@
   "example_en": "I cut my finger.",
   "example_zh": "我割親隻手指。",
   "tip": "腳趾係 toe，唔係 finger。",
-  "icon": null,
+  "icon": "assets/icons/finger.png",
   "emoji": "☝️",
   "abstract": false,
   "icon_idea": "a pointing finger with a small plaster"
@@ -891,7 +891,7 @@
   "example_en": "I can stand on one leg.",
   "example_zh": "我可以單腳企。",
   "tip": "leg 係成條腿；foot 係腳掌。",
-  "icon": null,
+  "icon": "assets/icons/leg.png",
   "emoji": "🦵",
   "abstract": false,
   "icon_idea": "a leg kicking a small ball"
@@ -914,7 +914,7 @@
   "example_en": "I go to school on foot.",
   "example_zh": "我行路返學。",
   "tip": "複數唔規則：feet；on foot = 行路。",
-  "icon": null,
+  "icon": "assets/icons/foot.png",
   "emoji": "🦶",
   "abstract": false,
   "icon_idea": "a single footprint"
@@ -937,7 +937,7 @@
   "example_en": "Exercise is good for your body.",
   "example_zh": "運動對身體好。",
   "tip": "everybody = 每個人。",
-  "icon": null,
+  "icon": "assets/icons/body.png",
   "emoji": "🧍",
   "abstract": false,
   "icon_idea": "a standing kitten silhouette with sparkles"
@@ -960,7 +960,7 @@
   "example_en": "My back hurts after a long day.",
   "example_zh": "辛苦咗成日，我條腰好痛。",
   "tip": "back 亦解「返嚟」：I'll be back.（我會返嚟）",
-  "icon": null,
+  "icon": "assets/icons/back.png",
   "emoji": "🙇",
   "abstract": false,
   "icon_idea": "a kitten seen from behind with a curved spine line"
@@ -983,7 +983,7 @@
   "example_en": "My stomach is making noises.",
   "example_zh": "我個肚打緊鼓。",
   "tip": "讀 STUM-uk，ch 讀 /k/；肚痛 = stomachache。",
-  "icon": null,
+  "icon": "assets/icons/stomach.png",
   "emoji": "🤢",
   "abstract": false,
   "icon_idea": "a round tummy with a little grumble line"
@@ -1006,7 +1006,7 @@
   "example_en": "Bend your knee a little.",
   "example_zh": "屈少少膝頭。",
   "tip": "k 唔發音，讀 /niː/。",
-  "icon": null,
+  "icon": "assets/icons/knee.png",
   "emoji": "🧎",
   "abstract": false,
   "icon_idea": "a bent knee with a round plaster"
@@ -1029,7 +1029,7 @@
   "example_en": "The baby is playing with her toe.",
   "example_zh": "BB 玩緊自己隻腳趾。",
   "tip": "big toe = 腳拇趾。",
-  "icon": null,
+  "icon": "assets/icons/toe.png",
   "emoji": "👣",
   "abstract": false,
   "icon_idea": "a small foot with five round toes"
@@ -1052,7 +1052,7 @@
   "example_en": "I can see the sea from my window.",
   "example_zh": "我喺窗口見到海。",
   "tip": "see 係「見到」；look at / watch 係有意識咁睇。",
-  "icon": null,
+  "icon": "assets/icons/see.png",
   "emoji": "👀",
   "abstract": true,
   "icon_idea": "a kitten looking through binoculars"
@@ -1075,7 +1075,7 @@
   "example_en": "Can you hear me?",
   "example_zh": "你聽唔聽到我講嘢？",
   "tip": "hear 係「聽到」；listen to 係「留心聽」。",
-  "icon": null,
+  "icon": "assets/icons/hear.png",
   "emoji": "🎧",
   "abstract": true,
   "icon_idea": "a kitten cupping its ear with music notes"
@@ -1098,7 +1098,7 @@
   "example_en": "I can smell the bread.",
   "example_zh": "我聞到麵包味。",
   "tip": "smell good / bad = 好香／好臭。",
-  "icon": null,
+  "icon": "assets/icons/smell.png",
   "emoji": "🌼",
   "abstract": true,
   "icon_idea": "a kitten sniffing a flower with wavy scent lines"
@@ -1121,7 +1121,7 @@
   "example_en": "Don't touch the hot pan!",
   "example_zh": "唔好掂個熱鑊！",
   "tip": "keep in touch = 保持聯絡。",
-  "icon": null,
+  "icon": "assets/icons/touch.png",
   "emoji": "👆",
   "abstract": true,
   "icon_idea": "a finger gently touching a soft paw"
@@ -1144,7 +1144,7 @@
   "example_en": "Can I taste your soup?",
   "example_zh": "我可唔可以試下你碗湯？",
   "tip": "taste good = 好味；名詞解「味道」。",
-  "icon": null,
+  "icon": "assets/icons/taste.png",
   "emoji": "👅",
   "abstract": true,
   "icon_idea": "a tongue with a little spoon"
@@ -1167,7 +1167,7 @@
   "example_en": "I go home at six.",
   "example_zh": "我六點返屋企。",
   "tip": "返屋企講 go home，唔使加 to；at home = 喺屋企。",
-  "icon": null,
+  "icon": "assets/icons/home.png",
   "emoji": "🏠",
   "abstract": false,
   "icon_idea": "a cosy house with a cat on the roof"
@@ -1190,7 +1190,7 @@
   "example_en": "We live in a small flat.",
   "example_zh": "我哋住喺一個細單位。",
   "tip": "英式講 flat，美式講 apartment；flat 做形容詞解「平」。",
-  "icon": null,
+  "icon": "assets/icons/flat.png",
   "emoji": "🏢",
   "abstract": false,
   "icon_idea": "a tall building with one warm lit window"
@@ -1213,7 +1213,7 @@
   "example_en": "My bedroom is very small.",
   "example_zh": "我間睡房好細。",
   "tip": "兩房單位 = a two-bedroom flat。",
-  "icon": null,
+  "icon": "assets/icons/bedroom.png",
   "emoji": "🛌",
   "abstract": false,
   "icon_idea": "a small room with a bed under a window"
@@ -1236,7 +1236,7 @@
   "example_en": "Mum is cooking in the kitchen.",
   "example_zh": "媽媽喺廚房煮緊嘢。",
   "tip": "唔好同 chicken（雞）搞亂。",
-  "icon": null,
+  "icon": "assets/icons/kitchen.png",
   "emoji": "🍳",
   "abstract": false,
   "icon_idea": "a stove with a little pot and steam"
@@ -1259,7 +1259,7 @@
   "example_en": "Where is the bathroom?",
   "example_zh": "廁所喺邊度？",
   "tip": "喺人哋屋企問廁所，講 bathroom 比 toilet 有禮貌。",
-  "icon": null,
+  "icon": "assets/icons/bathroom.png",
   "emoji": "🛁",
   "abstract": false,
   "icon_idea": "a bathtub full of bubbles"
@@ -1282,7 +1282,7 @@
   "example_en": "My cat sleeps on my bed.",
   "example_zh": "我隻貓瞓喺我張床度。",
   "tip": "go to bed = 上床瞓覺；make the bed = 執床。",
-  "icon": null,
+  "icon": "assets/icons/bed.png",
   "emoji": "🛏️",
   "abstract": false,
   "icon_idea": "a cosy bed with a patchwork blanket"
@@ -1305,7 +1305,7 @@
   "example_en": "The keys are on the table.",
   "example_zh": "鎖匙喺枱面。",
   "tip": "食飯枱 = dining table；書枱多數叫 desk。",
-  "icon": null,
+  "icon": "assets/icons/table.png",
   "emoji": "🍽️",
   "abstract": false,
   "icon_idea": "a round wooden table with a vase"
@@ -1328,7 +1328,7 @@
   "example_en": "Please sit on this chair.",
   "example_zh": "請坐呢張櫈。",
   "tip": "armchair = 扶手椅。",
-  "icon": null,
+  "icon": "assets/icons/chair.png",
   "emoji": "🪑",
   "abstract": false,
   "icon_idea": "a wooden chair with a cushion"
@@ -1351,7 +1351,7 @@
   "example_en": "Our sofa is big and soft.",
   "example_zh": "我哋張梳化又大又軟。",
   "tip": "「梳化」就係 sofa 嘅譯音。",
-  "icon": null,
+  "icon": "assets/icons/sofa.png",
   "emoji": "🛋️",
   "abstract": false,
   "icon_idea": "a soft pink sofa with a sleeping cat"
@@ -1374,7 +1374,7 @@
   "example_en": "I do my homework at my desk.",
   "example_zh": "我喺書枱做功課。",
   "tip": "at my desk = 喺書枱前面。",
-  "icon": null,
+  "icon": "assets/icons/desk.png",
   "emoji": "🖊️",
   "abstract": false,
   "icon_idea": "a study desk with a lamp and books"
@@ -1397,7 +1397,7 @@
   "example_en": "Please close the door.",
   "example_zh": "唔該閂門。",
   "tip": "開門 = open the door；閂門 = close / shut the door。",
-  "icon": null,
+  "icon": "assets/icons/door.png",
   "emoji": "🚪",
   "abstract": false,
   "icon_idea": "a wooden door with a round knob"
@@ -1420,7 +1420,7 @@
   "example_en": "Can you open the window?",
   "example_zh": "你可唔可以開窗？",
   "tip": "電腦嘅「視窗」都叫 window。",
-  "icon": null,
+  "icon": "assets/icons/window.png",
   "emoji": "🪟",
   "abstract": false,
   "icon_idea": "a window with curtains and sunlight"
@@ -1443,7 +1443,7 @@
   "example_en": "I live on the tenth floor.",
   "example_zh": "我住喺十樓。",
   "tip": "on the floor = 喺地下；on the 5th floor = 喺五樓。",
-  "icon": null,
+  "icon": "assets/icons/floor.png",
   "emoji": "🧹",
   "abstract": false,
   "icon_idea": "a wooden floor with a small round rug"
@@ -1466,7 +1466,7 @@
   "example_en": "There is a clock on the wall.",
   "example_zh": "牆上面有個鐘。",
   "tip": "on the wall = 喺牆上（掛住）。",
-  "icon": null,
+  "icon": "assets/icons/wall.png",
   "emoji": "🧱",
   "abstract": false,
   "icon_idea": "a brick wall with a hanging picture"
@@ -1489,7 +1489,7 @@
   "example_en": "Turn on the lamp, please.",
   "example_zh": "唔該開燈。",
   "tip": "天花燈叫 light；枱燈叫 lamp / desk lamp。",
-  "icon": null,
+  "icon": "assets/icons/lamp.png",
   "emoji": "🪔",
   "abstract": false,
   "icon_idea": "a desk lamp glowing warmly"
@@ -1512,7 +1512,7 @@
   "example_en": "Put the milk in the fridge.",
   "example_zh": "將啲牛奶放入雪櫃。",
   "tip": "全寫係 refrigerator，口語講 fridge。",
-  "icon": null,
+  "icon": "assets/icons/fridge.png",
   "emoji": "🧊",
   "abstract": false,
   "icon_idea": "a small fridge with magnets on the door"
@@ -1535,7 +1535,7 @@
   "example_en": "It's hot. Turn on the fan.",
   "example_zh": "好熱呀，開風扇啦。",
   "tip": "冷氣係 air conditioner；fans 亦解粉絲。",
-  "icon": null,
+  "icon": "assets/icons/fan.png",
   "emoji": "🪭",
   "abstract": false,
   "icon_idea": "an electric fan with breezy wind lines"
@@ -1558,7 +1558,7 @@
   "example_en": "The cups are in the cupboard.",
   "example_zh": "啲杯喺櫃入面。",
   "tip": "p 唔發音，讀 KUB-erd。",
-  "icon": null,
+  "icon": "assets/icons/cupboard.png",
   "emoji": "🗄️",
   "abstract": false,
   "icon_idea": "a cupboard with one door open showing cups"
@@ -1581,7 +1581,7 @@
   "example_en": "Put the books on the shelf.",
   "example_zh": "將啲書放上書架。",
   "tip": "複數 shelves；bookshelf = 書架。",
-  "icon": null,
+  "icon": "assets/icons/shelf.png",
   "emoji": "📚",
   "abstract": false,
   "icon_idea": "a wall shelf with books and a plant"
@@ -1604,7 +1604,7 @@
   "example_en": "I need a soft pillow.",
   "example_zh": "我要個軟啲嘅枕頭。",
   "tip": "cushion 係梳化上面嘅咕𠱸；pillow 係床上面嘅枕頭。",
-  "icon": null,
+  "icon": "assets/icons/pillow.png",
   "emoji": "☁️",
   "abstract": false,
   "icon_idea": "a fluffy pillow with a kitten napping on it"
@@ -1627,7 +1627,7 @@
   "example_en": "This sofa is very comfortable.",
   "example_zh": "張梳化好舒服。",
   "tip": "通常讀 COMF-ta-ble，三個音節。",
-  "icon": null,
+  "icon": "assets/icons/comfortable.png",
   "emoji": "💆",
   "abstract": true,
   "icon_idea": "a cat melting happily into a soft cushion"
@@ -1650,7 +1650,7 @@
   "example_en": "My room is clean today.",
   "example_zh": "我間房今日好乾淨。",
   "tip": "clean 亦可以做動詞：clean your room（執房）。",
-  "icon": null,
+  "icon": "assets/icons/clean.png",
   "emoji": "✨",
   "abstract": true,
   "icon_idea": "a shiny plate with sparkle stars"
@@ -1673,7 +1673,7 @@
   "example_en": "My brother's room is always messy.",
   "example_zh": "我細佬間房成日都好亂。",
   "tip": "反義：tidy（整齊）。",
-  "icon": null,
+  "icon": "assets/icons/messy.png",
   "emoji": "🌪️",
   "abstract": true,
   "icon_idea": "a pile of clothes and books with a confused kitten"
@@ -1696,7 +1696,7 @@
   "example_en": "I can't find my key.",
   "example_zh": "我搵唔到我條鎖匙。",
   "tip": "the key to… = …嘅關鍵。",
-  "icon": null,
+  "icon": "assets/icons/key.png",
   "emoji": "🔑",
   "abstract": false,
   "icon_idea": "a golden key with a paw-shaped head"
@@ -1719,7 +1719,7 @@
   "example_en": "Let's take the lift.",
   "example_zh": "我哋搭升降機啦。",
   "tip": "英式講 lift，美式講 elevator。",
-  "icon": null,
+  "icon": "assets/icons/lift.png",
   "emoji": "🛗",
   "abstract": false,
   "icon_idea": "lift doors with up and down arrow buttons"
@@ -1742,7 +1742,7 @@
   "example_en": "I wake up at seven every day.",
   "example_zh": "我每日七點起身。",
   "tip": "wake up = 醒；過去式 woke。",
-  "icon": null,
+  "icon": "assets/icons/wake.png",
   "emoji": "🌅",
   "abstract": true,
   "icon_idea": "a kitten stretching in bed as the sun rises"
@@ -1765,7 +1765,7 @@
   "example_en": "My alarm rings at half past six.",
   "example_zh": "我個鬧鐘六點半響。",
   "tip": "較鬧鐘 = set an alarm；alarm clock = 鬧鐘。",
-  "icon": null,
+  "icon": "assets/icons/alarm.png",
   "emoji": "⏰",
   "abstract": false,
   "icon_idea": "a ringing twin-bell alarm clock"
@@ -1788,7 +1788,7 @@
   "example_en": "I brush my teeth twice a day.",
   "example_zh": "我一日刷兩次牙。",
   "tip": "brush your teeth（牙用複數）；名詞解「刷」。",
-  "icon": null,
+  "icon": "assets/icons/brush.png",
   "emoji": "🪥",
   "abstract": false,
   "icon_idea": "a toothbrush with foam bubbles"
@@ -1811,7 +1811,7 @@
   "example_en": "Wash your hands before dinner.",
   "example_zh": "食飯前洗手。",
   "tip": "wash the dishes = 洗碗；washing machine = 洗衣機。",
-  "icon": null,
+  "icon": "assets/icons/wash.png",
   "emoji": "🧼",
   "abstract": false,
   "icon_idea": "two paws washing with soap bubbles"
@@ -1834,7 +1834,7 @@
   "example_en": "I have breakfast at home.",
   "example_zh": "我喺屋企食早餐。",
   "tip": "「食早餐」講 have breakfast，前面唔使加 the。",
-  "icon": null,
+  "icon": "assets/icons/breakfast.png",
   "emoji": "🥞",
   "abstract": false,
   "icon_idea": "a breakfast plate with toast and a fried egg"
@@ -1857,7 +1857,7 @@
   "example_en": "I take a shower every night.",
   "example_zh": "我每晚都沖涼。",
   "tip": "沖涼 = take / have a shower；bath 係浸浴。",
-  "icon": null,
+  "icon": "assets/icons/shower.png",
   "emoji": "🚿",
   "abstract": false,
   "icon_idea": "a shower head with water drops"
@@ -1880,7 +1880,7 @@
   "example_en": "What do you want for lunch?",
   "example_zh": "你晏晝想食咩？",
   "tip": "食晏 = have lunch；lunch break = 午飯時間。",
-  "icon": null,
+  "icon": "assets/icons/lunch.png",
   "emoji": "🍱",
   "abstract": false,
   "icon_idea": "a lunch box with rice and vegetables"
@@ -1903,7 +1903,7 @@
   "example_en": "We have dinner at eight.",
   "example_zh": "我哋八點食晚飯。",
   "tip": "食晚飯 = have dinner（唔使加 the）。",
-  "icon": null,
+  "icon": "assets/icons/dinner.png",
   "emoji": "🍲",
   "abstract": false,
   "icon_idea": "a family dinner table with a steaming pot"
@@ -1926,7 +1926,7 @@
   "example_en": "My bedtime is eleven o'clock.",
   "example_zh": "我十一點瞓覺。",
   "tip": "bedtime story = 瞓前故事。",
-  "icon": null,
+  "icon": "assets/icons/bedtime.png",
   "emoji": "💤",
   "abstract": true,
   "icon_idea": "a crescent moon over a clock showing 11"
@@ -1949,7 +1949,7 @@
   "example_en": "I need to sleep early tonight.",
   "example_zh": "我今晚要早啲瞓。",
   "tip": "過去式 slept；go to sleep = 入瞓；fall asleep = 瞓着咗。",
-  "icon": null,
+  "icon": "assets/icons/sleep.png",
   "emoji": "😴",
   "abstract": true,
   "icon_idea": "a curled-up sleeping kitten with Zzz"
@@ -1972,7 +1972,7 @@
   "example_en": "I go running in the morning.",
   "example_zh": "我朝早去跑步。",
   "tip": "Good morning! = 早晨！；in the morning（用 in）。",
-  "icon": null,
+  "icon": "assets/icons/morning.png",
   "emoji": "🌄",
   "abstract": true,
   "icon_idea": "a sunrise over hills with a coffee cup"
@@ -1995,7 +1995,7 @@
   "example_en": "Let's meet in the afternoon.",
   "example_zh": "我哋下晝見啦。",
   "tip": "afternoon tea = 下午茶；Good afternoon!",
-  "icon": null,
+  "icon": "assets/icons/afternoon.png",
   "emoji": "🕑",
   "abstract": true,
   "icon_idea": "a slanting afternoon sun with a teacup"
@@ -2018,7 +2018,7 @@
   "example_en": "I read books in the evening.",
   "example_zh": "我夜晚睇書。",
   "tip": "Good evening! 係夜晚見面講；Good night! 係講拜拜或者瞓覺。",
-  "icon": null,
+  "icon": "assets/icons/evening.png",
   "emoji": "🌆",
   "abstract": true,
   "icon_idea": "a sunset sky with city lights coming on"
@@ -2041,7 +2041,7 @@
   "example_en": "Good night, sleep well.",
   "example_zh": "早唞，瞓個好覺。",
   "tip": "at night（用 at）；tonight = 今晚。",
-  "icon": null,
+  "icon": "assets/icons/night.png",
   "emoji": "🌃",
   "abstract": true,
   "icon_idea": "a dark blue sky with a moon and stars"
@@ -2064,7 +2064,7 @@
   "example_en": "I get up early on Mondays.",
   "example_zh": "我逢星期一好早起身。",
   "tip": "反義：late；early bird = 早起嘅人。",
-  "icon": null,
+  "icon": "assets/icons/early.png",
   "emoji": "🐓",
   "abstract": true,
   "icon_idea": "a rooster crowing on top of an alarm clock at sunrise"
@@ -2087,7 +2087,7 @@
   "example_en": "I always drink milk in the morning.",
   "example_zh": "我朝早一定飲牛奶。",
   "tip": "放喺動詞前面、be 動詞後面：She is always late.",
-  "icon": null,
+  "icon": "assets/icons/always.png",
   "emoji": "🔁",
   "abstract": true,
   "icon_idea": "a clock with a looping arrow around it"
@@ -2110,7 +2110,7 @@
   "example_en": "I usually walk to school.",
   "example_zh": "我通常行路返學。",
   "tip": "always > usually > often > sometimes > never",
-  "icon": null,
+  "icon": "assets/icons/usually.png",
   "emoji": "✅",
   "abstract": true,
   "icon_idea": "a calendar with most days ticked"
@@ -2133,7 +2133,7 @@
   "example_en": "We often eat noodles for lunch.",
   "example_zh": "我哋晏晝經常食麵。",
   "tip": "t 通常唔發音，讀 /ˈɒfn/。",
-  "icon": null,
+  "icon": "assets/icons/often.png",
   "emoji": "🔂",
   "abstract": true,
   "icon_idea": "a calendar covered with many paw stamps"
@@ -2156,7 +2156,7 @@
   "example_en": "Sometimes I play games after dinner.",
   "example_zh": "我有時食完飯打機。",
   "tip": "可以放句頭；唔好同 sometime（某個時候）搞亂。",
-  "icon": null,
+  "icon": "assets/icons/sometimes.png",
   "emoji": "🌗",
   "abstract": true,
   "icon_idea": "a calendar with only a few days ticked"
@@ -2179,7 +2179,7 @@
   "example_en": "My cat never gets up early.",
   "example_zh": "我隻貓從來唔會早起。",
   "tip": "never 本身已經係否定，唔好再加 not。",
-  "icon": null,
+  "icon": "assets/icons/never.png",
   "emoji": "🚫",
   "abstract": true,
   "icon_idea": "a crossed-out alarm clock beside a sleepy cat"
@@ -2202,7 +2202,7 @@
   "example_en": "I'm very busy today.",
   "example_zh": "我今日好忙。",
   "tip": "busy with + 名詞：I'm busy with homework.（我忙緊做功課）",
-  "icon": null,
+  "icon": "assets/icons/busy.png",
   "emoji": "🏃",
   "abstract": true,
   "icon_idea": "a kitten juggling books and a clock"
@@ -2225,7 +2225,7 @@
   "example_en": "Sorry, I am late again.",
   "example_zh": "唔好意思，我又遲到。",
   "tip": "be late for + 事情：I was late for school.（我返學遲到）",
-  "icon": null,
+  "icon": "assets/icons/late.png",
   "emoji": "⌛",
   "abstract": true,
   "icon_idea": "a kitten running past a clock whose hand has passed 12"
@@ -2248,7 +2248,7 @@
   "example_en": "Don't forget your keys.",
   "example_zh": "唔好唔記得帶鎖匙。",
   "tip": "過去式 forgot；forget to do = 唔記得去做某事。",
-  "icon": null,
+  "icon": "assets/icons/forget.png",
   "emoji": "❓",
   "abstract": true,
   "icon_idea": "a kitten with an empty thought bubble and a question mark"
@@ -2271,7 +2271,7 @@
   "example_en": "I like to relax at home.",
   "example_zh": "我鍾意喺屋企放鬆下。",
   "tip": "relaxed 形容人覺得輕鬆；relaxing 形容嘢令人輕鬆。",
-  "icon": null,
+  "icon": "assets/icons/relax.png",
   "emoji": "🧘",
   "abstract": true,
   "icon_idea": "a cat lying on its back in a sunbeam"
@@ -2294,7 +2294,7 @@
   "example_en": "What do you do at the weekend?",
   "example_zh": "你週末通常做啲咩？",
   "tip": "英式講 at the weekend，美式講 on the weekend。",
-  "icon": null,
+  "icon": "assets/icons/weekend.png",
   "emoji": "🎉",
   "abstract": true,
   "icon_idea": "a calendar with Saturday and Sunday circled with hearts"
@@ -2893,7 +2893,7 @@
   "example_en": "Can I have a glass of water?",
   "example_zh": "可唔可以俾杯水我？",
   "tip": "不可數：a glass / bottle of water；英式讀 WAW-ta。",
-  "icon": null,
+  "icon": "assets/icons/water.png",
   "emoji": "💧",
   "abstract": false,
   "icon_idea": "a glass of water with a drop"
@@ -2916,7 +2916,7 @@
   "example_en": "I put milk in my tea.",
   "example_zh": "我杯茶加奶。",
   "tip": "不可數：some milk；奶茶 = milk tea。",
-  "icon": null,
+  "icon": "assets/icons/milk.png",
   "emoji": "🥛",
   "abstract": false,
   "icon_idea": "a milk carton and a glass of milk"
@@ -2939,7 +2939,7 @@
   "example_en": "A hot milk tea, please.",
   "example_zh": "唔該一杯熱奶茶。",
   "tip": "凍檸茶 = iced lemon tea；英國人講 a cup of tea。",
-  "icon": null,
+  "icon": "assets/icons/tea.png",
   "emoji": "🍵",
   "abstract": false,
   "icon_idea": "a Hong Kong milk tea cup on a saucer"
@@ -2962,7 +2962,7 @@
   "example_en": "My dad drinks coffee every morning.",
   "example_zh": "我爸爸每朝都飲咖啡。",
   "tip": "鴛鴦 = yuenyeung（coffee with tea）；英式讀 KOF-ee。",
-  "icon": null,
+  "icon": "assets/icons/coffee.png",
   "emoji": "☕",
   "abstract": false,
   "icon_idea": "a coffee cup with latte-art heart"
@@ -2985,7 +2985,7 @@
   "example_en": "I'd like an orange juice.",
   "example_zh": "我想要杯橙汁。",
   "tip": "不可數，但叫嘢飲可以講 an orange juice（一杯）。",
-  "icon": null,
+  "icon": "assets/icons/juice.png",
   "emoji": "🧃",
   "abstract": false,
   "icon_idea": "a juice box with an orange slice"
@@ -3008,7 +3008,7 @@
   "example_en": "Iced lemon tea is my favourite drink.",
   "example_zh": "凍檸茶係我最鍾意嘅飲品。",
   "tip": "檸水 = hot / iced lemon water。",
-  "icon": null,
+  "icon": "assets/icons/lemon.png",
   "emoji": "🍋",
   "abstract": false,
   "icon_idea": "a lemon with a slice cut"
@@ -3031,7 +3031,7 @@
   "example_en": "No ice, please.",
   "example_zh": "唔該走冰。",
   "tip": "走冰 = no ice；少冰 = less ice；凍嘅 = iced。",
-  "icon": null,
+  "icon": "assets/icons/ice.png",
   "emoji": "🧊",
   "abstract": false,
   "icon_idea": "three ice cubes with sparkles"
@@ -3054,7 +3054,7 @@
   "example_en": "Do you take sugar in your coffee?",
   "example_zh": "你飲咖啡落唔落糖？",
   "tip": "少甜 = less sugar；走甜 = no sugar；s 讀 /ʃ/。",
-  "icon": null,
+  "icon": "assets/icons/sugar.png",
   "emoji": "🍯",
   "abstract": false,
   "icon_idea": "a sugar bowl with a small spoon and cubes"
@@ -3077,7 +3077,7 @@
   "example_en": "Would you like a cup of tea?",
   "example_zh": "你想唔想飲杯茶？",
   "tip": "有耳嘅茶杯係 cup；玻璃杯係 glass。",
-  "icon": null,
+  "icon": "assets/icons/cup.png",
   "emoji": "☕",
   "abstract": false,
   "icon_idea": "an empty teacup with a handle"
@@ -3100,7 +3100,7 @@
   "example_en": "I don't need a straw, thanks.",
   "example_zh": "唔使飲管，唔該。",
   "tip": "走飲管更環保；strawberry（士多啤梨）入面都有 straw。",
-  "icon": null,
+  "icon": "assets/icons/straw.png",
   "emoji": "🥤",
   "abstract": false,
   "icon_idea": "a striped paper straw in a cup"
@@ -3123,7 +3123,7 @@
   "example_en": "I'd like French toast, please.",
   "example_zh": "唔該我要一份西多士。",
   "tip": "西多士 = French toast；奶油多 = toast with butter and condensed milk。",
-  "icon": null,
+  "icon": "assets/icons/toast.png",
   "emoji": "🍞",
   "abstract": false,
   "icon_idea": "a slice of French toast with butter and syrup"
@@ -3146,7 +3146,7 @@
   "example_en": "Put some butter on the bread.",
   "example_zh": "喺麵包上面搽啲牛油。",
   "tip": "不可數；菠蘿油 = pineapple bun with butter。",
-  "icon": null,
+  "icon": "assets/icons/butter.png",
   "emoji": "🧈",
   "abstract": false,
   "icon_idea": "a pat of butter on a small dish"
@@ -3169,7 +3169,7 @@
   "example_en": "Can I have a sausage with my eggs?",
   "example_zh": "我可唔可以要條腸仔配蛋？",
   "tip": "讀 SOS-ij；常餐多數有 sausage and eggs。",
-  "icon": null,
+  "icon": "assets/icons/sausage.png",
   "emoji": "🌭",
   "abstract": false,
   "icon_idea": "two little sausages on a plate"
@@ -3192,7 +3192,7 @@
   "example_en": "I'd like ham and eggs, please.",
   "example_zh": "唔該我要火腿蛋。",
   "tip": "不可數：a slice of ham；火腿通粉 = macaroni with ham。",
-  "icon": null,
+  "icon": "assets/icons/ham.png",
   "emoji": "🍖",
   "abstract": false,
   "icon_idea": "a pink slice of ham"
@@ -3215,7 +3215,7 @@
   "example_en": "I often have macaroni for breakfast.",
   "example_zh": "我早餐成日食通粉。",
   "tip": "火腿通粉 = macaroni soup with ham；重音喺 RO。",
-  "icon": null,
+  "icon": "assets/icons/macaroni.png",
   "emoji": "🍝",
   "abstract": false,
   "icon_idea": "a bowl of macaroni soup with ham strips"
@@ -3238,7 +3238,7 @@
   "example_en": "Can I order a milk tea?",
   "example_zh": "我可唔可以叫杯奶茶？",
   "tip": "名詞用法：Can I take your order?（請問想點啲咩？）",
-  "icon": null,
+  "icon": "assets/icons/order.png",
   "emoji": "📝",
   "abstract": true,
   "icon_idea": "a notepad with a pencil and a tick"
@@ -3261,7 +3261,7 @@
   "example_en": "Can I see the menu, please?",
   "example_zh": "可唔可以俾個餐牌我睇下？",
   "tip": "on the menu = 餐牌上有：Is French toast on the menu?",
-  "icon": null,
+  "icon": "assets/icons/menu.png",
   "emoji": "📋",
   "abstract": false,
   "icon_idea": "a cha chaan teng menu card"
@@ -3284,7 +3284,7 @@
   "example_en": "Can we have the bill, please?",
   "example_zh": "唔該埋單。",
   "tip": "美式埋單多數講 check；pay the bill = 俾錢。",
-  "icon": null,
+  "icon": "assets/icons/bill.png",
   "emoji": "🧾",
   "abstract": false,
   "icon_idea": "a paper receipt with a total line"
@@ -3307,7 +3307,7 @@
   "example_en": "The waiter is very busy at lunch time.",
   "example_zh": "午飯時間個侍應好忙。",
   "tip": "女侍應可以叫 waitress；叫人講 Excuse me 就得。",
-  "icon": null,
+  "icon": "assets/icons/waiter.png",
   "emoji": "🤵",
   "abstract": false,
   "icon_idea": "a waiter carrying a tray with a drink"
@@ -3330,7 +3330,7 @@
   "example_en": "Let's get a takeaway tonight.",
   "example_zh": "我哋今晚叫外賣啦。",
   "tip": "堂食定拎走：Eat in or take away?（英式）",
-  "icon": null,
+  "icon": "assets/icons/takeaway.png",
   "emoji": "🥡",
   "abstract": false,
   "icon_idea": "a takeaway box and a drink in a plastic bag"
@@ -3353,7 +3353,7 @@
   "example_en": "Are you hungry now?",
   "example_zh": "你而家肚唔肚餓？",
   "tip": "肚餓用 hungry；口渴就用 thirsty。",
-  "icon": null,
+  "icon": "assets/icons/hungry.png",
   "emoji": "🤤",
   "abstract": true,
   "icon_idea": "a kitten with a rumbling tummy looking at food"
@@ -3376,7 +3376,7 @@
   "example_en": "I'm thirsty. Let's get a drink.",
   "example_zh": "我好口渴，去買嘢飲啦。",
   "tip": "唔好同 thirty（三十）搞亂。",
-  "icon": null,
+  "icon": "assets/icons/thirsty.png",
   "emoji": "🚰",
   "abstract": true,
   "icon_idea": "a kitten panting next to an empty glass"
@@ -3399,7 +3399,7 @@
   "example_en": "What would you like to drink?",
   "example_zh": "你想飲啲咩？",
   "tip": "過去式 drank；常餐包 a drink（一杯嘢飲）。",
-  "icon": null,
+  "icon": "assets/icons/drink.png",
   "emoji": "🍹",
   "abstract": true,
   "icon_idea": "a kitten sipping from a cup through a straw"
@@ -3422,7 +3422,7 @@
   "example_en": "I'm full. I can't eat any more.",
   "example_zh": "我飽喇，食唔落喇。",
   "tip": "full 亦解「滿」：The bus is full.（架巴士滿咗）",
-  "icon": null,
+  "icon": "assets/icons/full.png",
   "emoji": "😮‍💨",
   "abstract": true,
   "icon_idea": "a kitten lying back with a round full tummy"
@@ -3445,7 +3445,7 @@
   "example_en": "Less ice, please.",
   "example_zh": "唔該少冰。",
   "tip": "茶餐廳實用：less sweet / less ice / less spicy；反義 more。",
-  "icon": null,
+  "icon": "assets/icons/less.png",
   "emoji": "➖",
   "abstract": true,
   "icon_idea": "a cup with a small down arrow and only a few ice cubes"
@@ -3468,7 +3468,7 @@
   "example_en": "I wash my clothes on Sunday.",
   "example_zh": "我逢星期日洗衫。",
   "tip": "clothes 永遠係複數，冇 a clothes；讀音似 /kləʊz/。",
-  "icon": null,
+  "icon": "assets/icons/clothes.png",
   "emoji": "👚",
   "abstract": false,
   "icon_idea": "a pile of folded clothes"
@@ -3491,7 +3491,7 @@
   "example_en": "Dad wears a white shirt to work.",
   "example_zh": "爸爸著白恤衫返工。",
   "tip": "T-shirt = T 恤（冇領冇鈕）。",
-  "icon": null,
+  "icon": "assets/icons/shirt.png",
   "emoji": "👔",
   "abstract": false,
   "icon_idea": "a white collared shirt on a hanger"
@@ -3514,7 +3514,7 @@
   "example_en": "These trousers are too long.",
   "example_zh": "條褲太長喇。",
   "tip": "永遠複數：a pair of trousers；美式講 pants（英式 pants = 底褲！）。",
-  "icon": null,
+  "icon": "assets/icons/trousers.png",
   "emoji": "👖",
   "abstract": false,
   "icon_idea": "a pair of grey trousers folded"
@@ -3537,7 +3537,7 @@
   "example_en": "She is wearing a red skirt.",
   "example_zh": "佢著住條紅色裙。",
   "tip": "連身裙係 dress；半截裙係 skirt。",
-  "icon": null,
+  "icon": "assets/icons/skirt.png",
   "emoji": "🎀",
   "abstract": false,
   "icon_idea": "a pleated skirt with a bow"
@@ -3560,7 +3560,7 @@
   "example_en": "My sister has a pretty pink dress.",
   "example_zh": "我家姐有條好靚嘅粉紅色連身裙。",
   "tip": "dress 做動詞解「著衫」：get dressed。",
-  "icon": null,
+  "icon": "assets/icons/dress.png",
   "emoji": "👗",
   "abstract": false,
   "icon_idea": "a flowing dress on a hanger"
@@ -3583,7 +3583,7 @@
   "example_en": "Take a jacket. It's cold outside.",
   "example_zh": "帶件外套啦，出面好凍。",
   "tip": "coat 通常長啲、厚啲；jacket 短啲、薄啲。",
-  "icon": null,
+  "icon": "assets/icons/jacket.png",
   "emoji": "🧥",
   "abstract": false,
   "icon_idea": "a short zip-up jacket"
@@ -3606,7 +3606,7 @@
   "example_en": "Put on your coat before you go out.",
   "example_zh": "出街前著返件大褸。",
   "tip": "put on your coat = 著褸；take off = 除。",
-  "icon": null,
+  "icon": "assets/icons/coat.png",
   "emoji": "🥼",
   "abstract": false,
   "icon_idea": "a long warm coat with big buttons"
@@ -3629,7 +3629,7 @@
   "example_en": "This sweater is soft and warm.",
   "example_zh": "件冷衫又軟又暖。",
   "tip": "英式亦叫 jumper；ea 讀 /e/：SWET-er。",
-  "icon": null,
+  "icon": "assets/icons/sweater.png",
   "emoji": "🧶",
   "abstract": false,
   "icon_idea": "a knitted sweater with a cat face pattern"
@@ -3652,7 +3652,7 @@
   "example_en": "I wear jeans at the weekend.",
   "example_zh": "我週末著牛仔褲。",
   "tip": "永遠複數：a pair of jeans。",
-  "icon": null,
+  "icon": "assets/icons/jeans.png",
   "emoji": "👖",
   "abstract": false,
   "icon_idea": "a pair of blue jeans"
@@ -3675,7 +3675,7 @@
   "example_en": "It's hot, so I'm wearing shorts.",
   "example_zh": "好熱，所以我著短褲。",
   "tip": "永遠複數：a pair of shorts。",
-  "icon": null,
+  "icon": "assets/icons/shorts.png",
   "emoji": "🩳",
   "abstract": false,
   "icon_idea": "a pair of summer shorts"
@@ -3698,7 +3698,7 @@
   "example_en": "Take off your shoes at the door.",
   "example_zh": "喺門口除鞋。",
   "tip": "一對鞋 = a pair of shoes；波鞋 = trainers / sneakers。",
-  "icon": null,
+  "icon": "assets/icons/shoes.png",
   "emoji": "👟",
   "abstract": false,
   "icon_idea": "a pair of trainers"
@@ -3721,7 +3721,7 @@
   "example_en": "My socks are wet.",
   "example_zh": "我對襪濕咗。",
   "tip": "一對襪 = a pair of socks。",
-  "icon": null,
+  "icon": "assets/icons/socks.png",
   "emoji": "🧦",
   "abstract": false,
   "icon_idea": "a pair of striped socks"
@@ -3744,7 +3744,7 @@
   "example_en": "Wear a hat in the sun.",
   "example_zh": "曬太陽要戴帽。",
   "tip": "有帽舌嘅鴨舌帽叫 cap。",
-  "icon": null,
+  "icon": "assets/icons/hat.png",
   "emoji": "👒",
   "abstract": false,
   "icon_idea": "a straw sun hat with a ribbon"
@@ -3767,7 +3767,7 @@
   "example_en": "I wear a scarf in winter.",
   "example_zh": "我冬天會圍頸巾。",
   "tip": "複數 scarves（f 變 ves）。",
-  "icon": null,
+  "icon": "assets/icons/scarf.png",
   "emoji": "🧣",
   "abstract": false,
   "icon_idea": "a striped knitted scarf"
@@ -3790,7 +3790,7 @@
   "example_en": "My hands are cold. Where are my gloves?",
   "example_zh": "我對手好凍，我對手襪呢？",
   "tip": "一對手襪 = a pair of gloves；o 讀 /ʌ/。",
-  "icon": null,
+  "icon": "assets/icons/gloves.png",
   "emoji": "🧤",
   "abstract": false,
   "icon_idea": "a pair of woolly gloves"
@@ -3813,7 +3813,7 @@
   "example_en": "My bag is very heavy today.",
   "example_zh": "我個袋今日好重。",
   "tip": "書包 = school bag；膠袋 = plastic bag。",
-  "icon": null,
+  "icon": "assets/icons/bag.png",
   "emoji": "👜",
   "abstract": false,
   "icon_idea": "a school backpack"
@@ -3836,7 +3836,7 @@
   "example_en": "These trousers need a belt.",
   "example_zh": "呢條褲要綁皮帶。",
   "tip": "安全帶 = seat belt。",
-  "icon": null,
+  "icon": "assets/icons/belt.png",
   "emoji": "🪢",
   "abstract": false,
   "icon_idea": "a brown leather belt with a buckle"
@@ -3859,7 +3859,7 @@
   "example_en": "My phone is in my pocket.",
   "example_zh": "我部電話喺我個褲袋度。",
   "tip": "pocket money = 零用錢。",
-  "icon": null,
+  "icon": "assets/icons/pocket.png",
   "emoji": "🪙",
   "abstract": false,
   "icon_idea": "a jeans pocket with a coin peeking out"
@@ -3882,7 +3882,7 @@
   "example_en": "My shirt has a missing button.",
   "example_zh": "我件恤衫甩咗粒鈕。",
   "tip": "button 亦解機器嘅「掣」：Press the button.",
-  "icon": null,
+  "icon": "assets/icons/button.png",
   "emoji": "🔘",
   "abstract": false,
   "icon_idea": "a round four-hole button with thread"
@@ -3905,7 +3905,7 @@
   "example_en": "We wear a uniform at school.",
   "example_zh": "我哋返學要著校服。",
   "tip": "u 讀 /juː/，所以講 a uniform；school uniform = 校服。",
-  "icon": null,
+  "icon": "assets/icons/uniform.png",
   "emoji": "👕",
   "abstract": false,
   "icon_idea": "a school uniform shirt with a badge"
@@ -3928,7 +3928,7 @@
   "example_en": "What do you want to wear today?",
   "example_zh": "你今日想著咩衫？",
   "tip": "著衫、戴帽、戴眼鏡都用 wear；過去式 wore。",
-  "icon": null,
+  "icon": "assets/icons/wear.png",
   "emoji": "🧢",
   "abstract": true,
   "icon_idea": "a kitten trying on a hat in front of a mirror"
@@ -3951,7 +3951,7 @@
   "example_en": "Do you have this in a smaller size?",
   "example_zh": "呢件有冇細碼？",
   "tip": "S = small，M = medium，L = large；What size are you?",
-  "icon": null,
+  "icon": "assets/icons/size.png",
   "emoji": "📏",
   "abstract": true,
   "icon_idea": "three T-shirts in S, M and L sizes"
@@ -3974,7 +3974,7 @@
   "example_en": "These jeans are too loose.",
   "example_zh": "條牛仔褲太鬆喇。",
   "tip": "讀 /luːs/；唔好同 lose /luːz/（輸、唔見咗）搞亂。",
-  "icon": null,
+  "icon": "assets/icons/loose.png",
   "emoji": "↔️",
   "abstract": true,
   "icon_idea": "baggy trousers held up by a kitten"
@@ -3997,7 +3997,7 @@
   "example_en": "My shoes are too tight.",
   "example_zh": "對鞋太緊喇。",
   "tip": "反義：loose；gh 唔發音。",
-  "icon": null,
+  "icon": "assets/icons/tight.png",
   "emoji": "🤏",
   "abstract": true,
   "icon_idea": "a kitten squeezing into a tiny sweater"
@@ -4020,7 +4020,7 @@
   "example_en": "I need a new pair of socks.",
   "example_zh": "我要一對新襪。",
   "tip": "a pair of shoes / socks / trousers；讀音同 pear（啤梨）一樣。",
-  "icon": null,
+  "icon": "assets/icons/pair.png",
   "emoji": "👯",
   "abstract": true,
   "icon_idea": "two matching socks tied with a ribbon"
@@ -4043,7 +4043,7 @@
   "example_en": "The traffic light is red. Stop!",
   "example_zh": "紅燈呀，停！",
   "tip": "red packet = 利是；turn red = 面紅。",
-  "icon": null,
+  "icon": "assets/icons/red.png",
   "emoji": "🔴",
   "abstract": true,
   "icon_idea": "a red paint splash with a little brush"
@@ -4066,7 +4066,7 @@
   "example_en": "The banana is yellow.",
   "example_zh": "條香蕉係黃色嘅。",
   "tip": "蛋黃 = egg yolk（唔係 egg yellow）。",
-  "icon": null,
+  "icon": "assets/icons/yellow.png",
   "emoji": "🟡",
   "abstract": true,
   "icon_idea": "a yellow paint splash with a little brush"
@@ -4089,7 +4089,7 @@
   "example_en": "The sky is blue today.",
   "example_zh": "今日個天好藍。",
   "tip": "feel blue = 心情唔好；讀音同 blew 一樣。",
-  "icon": null,
+  "icon": "assets/icons/blue.png",
   "emoji": "🔵",
   "abstract": true,
   "icon_idea": "a blue paint splash with a little brush"
@@ -4112,7 +4112,7 @@
   "example_en": "Green tea is good for you.",
   "example_zh": "綠茶對身體好。",
   "tip": "綠燈 = green light；go green = 環保。",
-  "icon": null,
+  "icon": "assets/icons/green.png",
   "emoji": "🟢",
   "abstract": true,
   "icon_idea": "a green paint splash with a leaf"
@@ -4135,7 +4135,7 @@
   "example_en": "My cat has a pink nose.",
   "example_zh": "我隻貓有個粉紅色鼻。",
   "tip": "淺色 light，深色 dark：light pink / dark pink。",
-  "icon": null,
+  "icon": "assets/icons/pink.png",
   "emoji": "🩷",
   "abstract": true,
   "icon_idea": "a pink paint splash with a paw print"
@@ -4158,7 +4158,7 @@
   "example_en": "My school shirt is white.",
   "example_zh": "我件校服恤衫係白色嘅。",
   "tip": "h 唔發音，讀 /waɪt/。",
-  "icon": null,
+  "icon": "assets/icons/white.png",
   "emoji": "⚪",
   "abstract": true,
   "icon_idea": "a white paint splash with a milk drop"
@@ -4181,7 +4181,7 @@
   "example_en": "Zima is a black cat.",
   "example_zh": "芝麻係一隻黑貓。",
   "tip": "齋啡 = black coffee（冇奶）。",
-  "icon": null,
+  "icon": "assets/icons/black.png",
   "emoji": "⚫",
   "abstract": true,
   "icon_idea": "a black paint splash with a black cat silhouette"
@@ -4204,7 +4204,7 @@
   "example_en": "My dog has brown eyes.",
   "example_zh": "我隻狗有對啡色眼。",
   "tip": "brown rice = 糙米；brown bread = 麥包。",
-  "icon": null,
+  "icon": "assets/icons/brown.png",
   "emoji": "🟤",
   "abstract": true,
   "icon_idea": "a brown paint splash with a chocolate square"
@@ -4227,7 +4227,7 @@
   "example_en": "Huihui is a grey cat.",
   "example_zh": "灰灰係一隻灰色嘅貓。",
   "tip": "英式串 grey，美式串 gray。",
-  "icon": null,
+  "icon": "assets/icons/grey.png",
   "emoji": "🩶",
   "abstract": true,
   "icon_idea": "a grey paint splash with a small cloud"
@@ -4250,7 +4250,7 @@
   "example_en": "Grapes can be purple or green.",
   "example_zh": "提子可以係紫色或者綠色。",
   "tip": "淺紫色 = light purple / lilac。",
-  "icon": null,
+  "icon": "assets/icons/purple.png",
   "emoji": "🟣",
   "abstract": true,
   "icon_idea": "a purple paint splash with a ball of yarn"
@@ -4273,7 +4273,7 @@
   "example_en": "What colour is your bag?",
   "example_zh": "你個袋係咩顏色？",
   "tip": "英式串 colour，美式串 color。",
-  "icon": null,
+  "icon": "assets/icons/colour.png",
   "emoji": "🎨",
   "abstract": true,
   "icon_idea": "a painter's palette with five colour dots"
@@ -4296,7 +4296,7 @@
   "example_en": "This cake is in the shape of a cat.",
   "example_zh": "呢個蛋糕係貓仔形狀嘅。",
   "tip": "in good shape = 身體好、狀態好。",
-  "icon": null,
+  "icon": "assets/icons/shape.png",
   "emoji": "🔷",
   "abstract": true,
   "icon_idea": "a circle, a square and a triangle stacked playfully"
@@ -4319,7 +4319,7 @@
   "example_en": "Draw a circle on the paper.",
   "example_zh": "喺張紙度畫個圓形。",
   "tip": "形容詞係 round（圓）；c 讀 /s/。",
-  "icon": null,
+  "icon": "assets/icons/circle.png",
   "emoji": "⭕",
   "abstract": false,
   "icon_idea": "a hand-drawn circle with a pencil"
@@ -4342,7 +4342,7 @@
   "example_en": "A square has four sides.",
   "example_zh": "正方形有四條邊。",
   "tip": "長方形 = rectangle；square 亦解「廣場」。",
-  "icon": null,
+  "icon": "assets/icons/square.png",
   "emoji": "🟥",
   "abstract": false,
   "icon_idea": "a soft square block with a smile"
@@ -4365,7 +4365,7 @@
   "example_en": "A slice of pizza looks like a triangle.",
   "example_zh": "一件薄餅好似個三角形。",
   "tip": "tri- = 三：tricycle（三輪車）。",
-  "icon": null,
+  "icon": "assets/icons/triangle.png",
   "emoji": "🔺",
   "abstract": false,
   "icon_idea": "a triangle made from a pizza slice"
@@ -4388,7 +4388,7 @@
   "example_en": "What's your phone number?",
   "example_zh": "你電話號碼幾多號？",
   "tip": "縮寫 No.；a number of = 好幾個。",
-  "icon": null,
+  "icon": "assets/icons/number.png",
   "emoji": "🔢",
   "abstract": true,
   "icon_idea": "number blocks 1, 2 and 3 stacked"
@@ -4411,7 +4411,7 @@
   "example_en": "I have a hundred dollars.",
   "example_zh": "我有一百蚊。",
   "tip": "兩百 = two hundred（唔加 s）；hundreds of = 好幾百。",
-  "icon": null,
+  "icon": "assets/icons/hundred.png",
   "emoji": "💯",
   "abstract": true,
   "icon_idea": "a banknote with 100 on it"
@@ -4434,7 +4434,7 @@
   "example_en": "This phone costs three thousand dollars.",
   "example_zh": "呢部電話三千蚊。",
   "tip": "三千 = three thousand（唔加 s）；th 讀 /θ/。",
-  "icon": null,
+  "icon": "assets/icons/thousand.png",
   "emoji": "🧮",
   "abstract": true,
   "icon_idea": "an abacus beside the number 1,000"
@@ -4457,7 +4457,7 @@
   "example_en": "Hong Kong has about seven million people.",
   "example_zh": "香港大約有七百萬人。",
   "tip": "英文冇「萬」：一萬 = ten thousand；十萬 = a hundred thousand。",
-  "icon": null,
+  "icon": "assets/icons/million.png",
   "emoji": "💰",
   "abstract": true,
   "icon_idea": "a big money bag with six zeros"
@@ -4480,7 +4480,7 @@
   "example_en": "Can I have half of your sandwich?",
   "example_zh": "可唔可以俾一半三文治我？",
   "tip": "l 唔發音；半個鐘 = half an hour。",
-  "icon": null,
+  "icon": "assets/icons/half.png",
   "emoji": "🌓",
   "abstract": true,
   "icon_idea": "an orange cut exactly in half"
@@ -4503,7 +4503,7 @@
   "example_en": "Can you count to ten in English?",
   "example_zh": "你識唔識用英文由一數到十？",
   "tip": "count on someone = 靠某人。",
-  "icon": null,
+  "icon": "assets/icons/count.png",
   "emoji": "🔟",
   "abstract": true,
   "icon_idea": "a kitten counting on its paw toes"
@@ -4526,7 +4526,7 @@
   "example_en": "My first class is at eight.",
   "example_zh": "我第一堂八點。",
   "tip": "1st first，2nd second，3rd third；at first = 起初。",
-  "icon": null,
+  "icon": "assets/icons/first.png",
   "emoji": "🥇",
   "abstract": true,
   "icon_idea": "a gold medal with number 1"
@@ -4549,7 +4549,7 @@
   "example_en": "Daihung is a big cat.",
   "example_zh": "大熊係一隻大貓。",
   "tip": "比較級 bigger（雙寫 g）。",
-  "icon": null,
+  "icon": "assets/icons/big.png",
   "emoji": "🐋",
   "abstract": true,
   "icon_idea": "a big cat next to a tiny mouse, the big one highlighted"
@@ -4572,7 +4572,7 @@
   "example_en": "This hat is too small for me.",
   "example_zh": "頂帽對我嚟講太細。",
   "tip": "反義 big / large；small talk = 閒聊。",
-  "icon": null,
+  "icon": "assets/icons/small.png",
   "emoji": "🐜",
   "abstract": true,
   "icon_idea": "a tiny kitten next to a big cushion, the tiny one highlighted"
@@ -4595,7 +4595,7 @@
   "example_en": "The moon is round tonight.",
   "example_zh": "今晚個月亮好圓。",
   "tip": "all year round = 全年。",
-  "icon": null,
+  "icon": "assets/icons/round.png",
   "emoji": "🌕",
   "abstract": true,
   "icon_idea": "a round full moon with a cat silhouette"
@@ -4618,7 +4618,7 @@
   "example_en": "The weather is nice today.",
   "example_zh": "今日天氣好好。",
   "tip": "唔好同 whether（是否）搞亂，兩個字讀音差唔多。",
-  "icon": null,
+  "icon": "assets/icons/weather.png",
   "emoji": "🌦️",
   "abstract": true,
   "icon_idea": "a sun peeking out behind a rain cloud"
@@ -4641,7 +4641,7 @@
   "example_en": "It's sunny today. Let's go out!",
   "example_zh": "今日好天，出去玩啦！",
   "tip": "sun + ny；sunny day = 晴天。",
-  "icon": null,
+  "icon": "assets/icons/sunny.png",
   "emoji": "🌞",
   "abstract": true,
   "icon_idea": "a smiling sun with rays"
@@ -4664,7 +4664,7 @@
   "example_en": "It's cloudy but not raining.",
   "example_zh": "多雲，但係冇落雨。",
   "tip": "cloud + y。",
-  "icon": null,
+  "icon": "assets/icons/cloudy.png",
   "emoji": "🌥️",
   "abstract": true,
   "icon_idea": "two fluffy grey clouds"
@@ -4687,7 +4687,7 @@
   "example_en": "I stay at home on rainy days.",
   "example_zh": "落雨天我留喺屋企。",
   "tip": "rainy season = 雨季。",
-  "icon": null,
+  "icon": "assets/icons/rainy.png",
   "emoji": "🌧️",
   "abstract": true,
   "icon_idea": "a cloud with falling raindrops"
@@ -4710,7 +4710,7 @@
   "example_en": "It's very windy by the sea.",
   "example_zh": "海邊風好大。",
   "tip": "wind（風）+ y。",
-  "icon": null,
+  "icon": "assets/icons/windy.png",
   "emoji": "🌬️",
   "abstract": true,
   "icon_idea": "a tree bending with swirly wind lines"
@@ -4733,7 +4733,7 @@
   "example_en": "It's so hot in July.",
   "example_zh": "七月好熱。",
   "tip": "hot 亦解「辣」：hot sauce；熱飲 = hot drink。",
-  "icon": null,
+  "icon": "assets/icons/hot.png",
   "emoji": "🥵",
   "abstract": true,
   "icon_idea": "a kitten fanning itself under a blazing sun"
@@ -4756,7 +4756,7 @@
   "example_en": "It's cold. Wear a jacket.",
   "example_zh": "好凍呀，著件外套啦。",
   "tip": "catch a cold = 感冒；凍飲 = cold drink。",
-  "icon": null,
+  "icon": "assets/icons/cold.png",
   "emoji": "🥶",
   "abstract": true,
   "icon_idea": "a shivering kitten wrapped in a scarf"
@@ -4779,7 +4779,7 @@
   "example_en": "The sun feels warm today.",
   "example_zh": "今日太陽曬落身好暖。",
   "tip": "warm up = 熱身；ar 讀 /ɔː/。",
-  "icon": null,
+  "icon": "assets/icons/warm.png",
   "emoji": "🌤️",
   "abstract": true,
   "icon_idea": "a kitten basking in a warm sunbeam"
@@ -4802,7 +4802,7 @@
   "example_en": "It's cool in the evening.",
   "example_zh": "夜晚好涼。",
   "tip": "口語：That's cool! = 好正！",
-  "icon": null,
+  "icon": "assets/icons/cool.png",
   "emoji": "😎",
   "abstract": true,
   "icon_idea": "a kitten in sunglasses with a gentle breeze"
@@ -4825,7 +4825,7 @@
   "example_en": "Hong Kong is very humid in summer.",
   "example_zh": "香港夏天好潮濕。",
   "tip": "回南天好 humid；名詞 humidity（濕度）。",
-  "icon": null,
+  "icon": "assets/icons/humid.png",
   "emoji": "💦",
   "abstract": true,
   "icon_idea": "a foggy window with water drops"
@@ -4848,7 +4848,7 @@
   "example_en": "It may rain this afternoon.",
   "example_zh": "今日下晝可能會落雨。",
   "tip": "大雨 = heavy rain；黑雨 = black rainstorm。",
-  "icon": null,
+  "icon": "assets/icons/rain.png",
   "emoji": "☔",
   "abstract": true,
   "icon_idea": "big raindrops falling on a puddle"
@@ -4871,7 +4871,7 @@
   "example_en": "I want to see snow in Japan.",
   "example_zh": "我想去日本睇雪。",
   "tip": "落雪 = It snows；snowman = 雪人。",
-  "icon": null,
+  "icon": "assets/icons/snow.png",
   "emoji": "❄️",
   "abstract": false,
   "icon_idea": "a snowflake above a little snowman"
@@ -4894,7 +4894,7 @@
   "example_en": "The storm is coming tonight.",
   "example_zh": "風暴今晚到。",
   "tip": "rainstorm = 暴雨；thunderstorm = 雷暴。",
-  "icon": null,
+  "icon": "assets/icons/storm.png",
   "emoji": "⛈️",
   "abstract": false,
   "icon_idea": "a dark cloud with heavy rain and wind"
@@ -4917,7 +4917,7 @@
   "example_en": "There's no school because of the typhoon.",
   "example_zh": "因為打風，所以唔使返學。",
   "tip": "八號風球 = Typhoon Signal No. 8。",
-  "icon": null,
+  "icon": "assets/icons/typhoon.png",
   "emoji": "🌀",
   "abstract": false,
   "icon_idea": "a swirling typhoon with a No. 8 signal sign"
@@ -4940,7 +4940,7 @@
   "example_en": "My cat is scared of thunder.",
   "example_zh": "我隻貓好驚行雷。",
   "tip": "閃電 = lightning；th 讀 /θ/。",
-  "icon": null,
+  "icon": "assets/icons/thunder.png",
   "emoji": "🌩️",
   "abstract": false,
   "icon_idea": "a cloud with a zigzag boom sound"
@@ -4963,7 +4963,7 @@
   "example_en": "The sun is very strong today.",
   "example_zh": "今日太陽好猛。",
   "tip": "in the sun = 喺太陽底下；讀音同 son 一樣。",
-  "icon": null,
+  "icon": "assets/icons/sun.png",
   "emoji": "☀️",
   "abstract": false,
   "icon_idea": "a round warm sun"
@@ -4986,7 +4986,7 @@
   "example_en": "Look at the stars in the sky.",
   "example_zh": "望下天上面啲星星。",
   "tip": "in the sky（用 in）；skyscraper = 摩天大樓。",
-  "icon": null,
+  "icon": "assets/icons/sky.png",
   "emoji": "🌌",
   "abstract": false,
   "icon_idea": "a blue sky with a small cloud and a bird"
@@ -5009,7 +5009,7 @@
   "example_en": "Look, there's a rainbow!",
   "example_zh": "睇下，有條彩虹呀！",
   "tip": "rain + bow（弓）= 彩虹。",
-  "icon": null,
+  "icon": "assets/icons/rainbow.png",
   "emoji": "🌈",
   "abstract": false,
   "icon_idea": "a rainbow arching over two clouds"
@@ -5032,7 +5032,7 @@
   "example_en": "The temperature is 33 degrees today.",
   "example_zh": "今日氣溫三十三度。",
   "tip": "探熱 = take your temperature；讀 TEM-pruh-cher。",
-  "icon": null,
+  "icon": "assets/icons/temperature.png",
   "emoji": "🌡️",
   "abstract": true,
   "icon_idea": "a thermometer showing a high reading"
@@ -5055,7 +5055,7 @@
   "example_en": "Let's check the weather forecast.",
   "example_zh": "我哋睇下天氣預報。",
   "tip": "天文台 = the Observatory；fore- = 預先。",
-  "icon": null,
+  "icon": "assets/icons/forecast.png",
   "emoji": "📺",
   "abstract": true,
   "icon_idea": "a small TV showing weather symbols"
@@ -5078,7 +5078,7 @@
   "example_en": "Take an umbrella with you.",
   "example_zh": "帶把遮喺身啦。",
   "tip": "umbrella 係元音開頭，所以講 an umbrella。",
-  "icon": null,
+  "icon": "assets/icons/umbrella.png",
   "emoji": "🌂",
   "abstract": false,
   "icon_idea": "an open polka-dot umbrella"
@@ -5101,7 +5101,7 @@
   "example_en": "Flowers come out in spring.",
   "example_zh": "春天啲花開晒。",
   "tip": "in spring；spring 亦解彈弓、泉水。",
-  "icon": null,
+  "icon": "assets/icons/spring.png",
   "emoji": "🌸",
   "abstract": true,
   "icon_idea": "cherry blossom branch with a small bird"
@@ -5124,7 +5124,7 @@
   "example_en": "We go swimming in summer.",
   "example_zh": "我哋夏天去游水。",
   "tip": "summer holiday = 暑假。",
-  "icon": null,
+  "icon": "assets/icons/summer.png",
   "emoji": "🏖️",
   "abstract": true,
   "icon_idea": "a beach with a parasol and a watermelon slice"
@@ -5147,7 +5147,7 @@
   "example_en": "Autumn is the best season in Hong Kong.",
   "example_zh": "秋天係香港最好嘅季節。",
   "tip": "美式講 fall；n 唔發音，讀 AW-tum。",
-  "icon": null,
+  "icon": "assets/icons/autumn.png",
   "emoji": "🍂",
   "abstract": true,
   "icon_idea": "falling orange maple leaves"
@@ -5170,7 +5170,7 @@
   "example_en": "I drink hot soup in winter.",
   "example_zh": "我冬天飲熱湯。",
   "tip": "winter holiday = 寒假。",
-  "icon": null,
+  "icon": "assets/icons/winter.png",
   "emoji": "⛄",
   "abstract": true,
   "icon_idea": "a snowman wearing a scarf"
@@ -5193,7 +5193,7 @@
   "example_en": "What time is it?",
   "example_zh": "而家幾點？",
   "tip": "on time = 準時；have a good time = 玩得開心。",
-  "icon": null,
+  "icon": "assets/icons/time.png",
   "emoji": "⌚",
   "abstract": true,
   "icon_idea": "a wristwatch with a paw on the dial"
@@ -5216,7 +5216,7 @@
   "example_en": "The clock is five minutes fast.",
   "example_zh": "個鐘快咗五分鐘。",
   "tip": "手錶叫 watch；o'clock = 點正：six o'clock。",
-  "icon": null,
+  "icon": "assets/icons/clock.png",
   "emoji": "🕰️",
   "abstract": false,
   "icon_idea": "a round wall clock"
@@ -5239,7 +5239,7 @@
   "example_en": "The lesson is one hour long.",
   "example_zh": "一堂有一個鐘頭。",
   "tip": "h 唔發音，所以講 an hour。",
-  "icon": null,
+  "icon": "assets/icons/hour.png",
   "emoji": "⏳",
   "abstract": true,
   "icon_idea": "an hourglass with sand flowing"
@@ -5262,7 +5262,7 @@
   "example_en": "Wait a minute, please.",
   "example_zh": "唔該等一陣。",
   "tip": "Just a minute! = 等陣！",
-  "icon": null,
+  "icon": "assets/icons/minute.png",
   "emoji": "⏱️",
   "abstract": true,
   "icon_idea": "a stopwatch with the hand at one minute"
@@ -5285,7 +5285,7 @@
   "example_en": "Give me a second.",
   "example_zh": "俾我一秒（等我一陣）。",
   "tip": "second 亦解「第二」：my second class（我第二堂）。",
-  "icon": null,
+  "icon": "assets/icons/second.png",
   "emoji": "⏲️",
   "abstract": true,
   "icon_idea": "a stopwatch with a tiny ticking hand"
@@ -5308,7 +5308,7 @@
   "example_en": "I don't like Monday mornings.",
   "example_zh": "我唔鍾意星期一朝早。",
   "tip": "星期幾前面用 on：on Monday；開頭要大楷。",
-  "icon": null,
+  "icon": "assets/icons/monday.png",
   "emoji": "1️⃣",
   "abstract": true,
   "icon_idea": "a calendar page with MON and a sleepy cat"
@@ -5331,7 +5331,7 @@
   "example_en": "We have PE on Tuesday.",
   "example_zh": "我哋星期二有體育堂。",
   "tip": "縮寫 Tue；英式讀 TYOOZ-day。",
-  "icon": null,
+  "icon": "assets/icons/tuesday.png",
   "emoji": "2️⃣",
   "abstract": true,
   "icon_idea": "a calendar page with TUE and a ball"
@@ -5354,7 +5354,7 @@
   "example_en": "Wednesday is in the middle of the week.",
   "example_zh": "星期三喺一個星期中間。",
   "tip": "第一個 d 唔發音，讀 WENZ-day。",
-  "icon": null,
+  "icon": "assets/icons/wednesday.png",
   "emoji": "3️⃣",
   "abstract": true,
   "icon_idea": "a calendar page with WED and a see-saw"
@@ -5377,7 +5377,7 @@
   "example_en": "See you on Thursday!",
   "example_zh": "星期四見！",
   "tip": "th 讀 /θ/；唔好同 Tuesday 搞亂。",
-  "icon": null,
+  "icon": "assets/icons/thursday.png",
   "emoji": "4️⃣",
   "abstract": true,
   "icon_idea": "a calendar page with THU and a waving paw"
@@ -5400,7 +5400,7 @@
   "example_en": "Friday is my favourite day.",
   "example_zh": "星期五係我最鍾意嘅日子。",
   "tip": "TGIF = Thank God it's Friday（終於星期五）。",
-  "icon": null,
+  "icon": "assets/icons/friday.png",
   "emoji": "5️⃣",
   "abstract": true,
   "icon_idea": "a calendar page with FRI and confetti"
@@ -5423,7 +5423,7 @@
   "example_en": "I play football on Saturday.",
   "example_zh": "我星期六踢波。",
   "tip": "on Saturdays（加 s）= 逢星期六。",
-  "icon": null,
+  "icon": "assets/icons/saturday.png",
   "emoji": "6️⃣",
   "abstract": true,
   "icon_idea": "a calendar page with SAT and a football"
@@ -5446,7 +5446,7 @@
   "example_en": "Sunday is a lazy cat day.",
   "example_zh": "星期日係懶貓日。",
   "tip": "英國人一個星期通常由 Monday 開始計。",
-  "icon": null,
+  "icon": "assets/icons/sunday.png",
   "emoji": "7️⃣",
   "abstract": true,
   "icon_idea": "a calendar page with SUN and a napping cat"
@@ -5469,7 +5469,7 @@
   "example_en": "I learn twenty-five words a week.",
   "example_zh": "我一個星期學廿五個字。",
   "tip": "this / next / last week 前面唔使加介詞。",
-  "icon": null,
+  "icon": "assets/icons/week.png",
   "emoji": "🗓️",
   "abstract": true,
   "icon_idea": "a strip of seven day boxes with paw stamps"
@@ -5492,7 +5492,7 @@
   "example_en": "My birthday is next month.",
   "example_zh": "我下個月生日。",
   "tip": "尾音 th /θ/；a month ago = 一個月前。",
-  "icon": null,
+  "icon": "assets/icons/month.png",
   "emoji": "📆",
   "abstract": true,
   "icon_idea": "a month calendar page with a circled date"
@@ -5515,7 +5515,7 @@
   "example_en": "Happy New Year!",
   "example_zh": "新年快樂！",
   "tip": "…years old 講歲數；this year = 今年。",
-  "icon": null,
+  "icon": "assets/icons/year.png",
   "emoji": "🎆",
   "abstract": true,
   "icon_idea": "fireworks over a calendar showing a new year"
@@ -5538,7 +5538,7 @@
   "example_en": "What day is it today?",
   "example_zh": "今日星期幾？",
   "tip": "today 前面唔使加 on / in。",
-  "icon": null,
+  "icon": "assets/icons/today.png",
   "emoji": "🔆",
   "abstract": true,
   "icon_idea": "a calendar with today's box glowing"
@@ -5561,7 +5561,7 @@
   "example_en": "See you tomorrow!",
   "example_zh": "聽日見！",
   "tip": "一個 m、兩個 r：to-mo-rr-ow。",
-  "icon": null,
+  "icon": "assets/icons/tomorrow.png",
   "emoji": "⏭️",
   "abstract": true,
   "icon_idea": "a calendar with an arrow pointing to the next day"
@@ -5584,7 +5584,7 @@
   "example_en": "It rained yesterday.",
   "example_zh": "琴日落咗雨。",
   "tip": "講琴日要用過去式：I was busy yesterday.",
-  "icon": null,
+  "icon": "assets/icons/yesterday.png",
   "emoji": "⏮️",
   "abstract": true,
   "icon_idea": "a calendar with an arrow pointing back one day"
@@ -5607,7 +5607,7 @@
   "example_en": "What's the date today?",
   "example_zh": "今日幾月幾號？",
   "tip": "date 亦解「約會」；英式寫日期：2 October 2026。",
-  "icon": null,
+  "icon": "assets/icons/date.png",
   "emoji": "📌",
   "abstract": true,
   "icon_idea": "a calendar page with a pin on one date"
@@ -5630,7 +5630,7 @@
   "example_en": "I write my plans on the calendar.",
   "example_zh": "我將啲計劃寫喺月曆度。",
   "tip": "串法：cal-en-dar（尾係 -dar 唔係 -der）。",
-  "icon": null,
+  "icon": "assets/icons/calendar.png",
   "emoji": "📅",
   "abstract": false,
   "icon_idea": "a hanging wall calendar"
@@ -5653,7 +5653,7 @@
   "example_en": "Happy birthday to you!",
   "example_zh": "祝你生日快樂！",
   "tip": "on my birthday（用 on）；birthday party = 生日會。",
-  "icon": null,
+  "icon": "assets/icons/birthday.png",
   "emoji": "🎂",
   "abstract": false,
   "icon_idea": "a birthday cake with candles"
@@ -5676,7 +5676,7 @@
   "example_en": "We are going on holiday next week.",
   "example_zh": "我哋下個禮拜去度假。",
   "tip": "go on holiday = 去度假；public holiday = 公眾假期。",
-  "icon": null,
+  "icon": "assets/icons/holiday.png",
   "emoji": "🏝️",
   "abstract": true,
   "icon_idea": "a suitcase beside a palm tree"
@@ -5699,7 +5699,7 @@
   "example_en": "It's a quarter past three.",
   "example_zh": "而家三點一個骨。",
   "tip": "quarter past = 過咗十五分鐘；quarter to = 差十五分鐘。",
-  "icon": null,
+  "icon": "assets/icons/quarter.png",
   "emoji": "🕒",
   "abstract": true,
   "icon_idea": "a clock face with one quarter shaded"
@@ -5722,7 +5722,7 @@
   "example_en": "I study English every weekday.",
   "example_zh": "我每個平日都學英文。",
   "tip": "反義：weekend（週末）。",
-  "icon": null,
+  "icon": "assets/icons/weekday.png",
   "emoji": "💼",
   "abstract": true,
   "icon_idea": "five day boxes Mon–Fri highlighted"
@@ -5745,7 +5745,7 @@
   "example_en": "What's for dinner tonight?",
   "example_zh": "今晚食咩餸？",
   "tip": "tonight 前面唔使加 in / at。",
-  "icon": null,
+  "icon": "assets/icons/tonight.png",
   "emoji": "🌙",
   "abstract": true,
   "icon_idea": "a crescent moon over a lit window"
@@ -5768,7 +5768,7 @@
   "example_en": "What's your favourite animal?",
   "example_zh": "你最鍾意咩動物？",
   "tip": "元音開頭：an animal。",
-  "icon": null,
+  "icon": "assets/icons/animal.png",
   "emoji": "🦓",
   "abstract": false,
   "icon_idea": "a group of small animals: cat, dog, rabbit"
@@ -5791,7 +5791,7 @@
   "example_en": "Do you have a pet?",
   "example_zh": "你有冇養寵物？",
   "tip": "pet shop = 寵物店；keep a pet = 養寵物。",
-  "icon": null,
+  "icon": "assets/icons/pet.png",
   "emoji": "🐶",
   "abstract": false,
   "icon_idea": "a pet bed with a food bowl"
@@ -5814,7 +5814,7 @@
   "example_en": "My cat sleeps all day.",
   "example_zh": "我隻貓成日瞓覺。",
   "tip": "It's raining cats and dogs. = 落好大雨。",
-  "icon": null,
+  "icon": "assets/icons/cat.png",
   "emoji": "🐱",
   "abstract": false,
   "icon_idea": "a sitting orange tabby cat"
@@ -5837,7 +5837,7 @@
   "example_en": "I walk my dog every evening.",
   "example_zh": "我每晚都帶隻狗去散步。",
   "tip": "walk the dog = 帶狗散步；puppy = 狗仔。",
-  "icon": null,
+  "icon": "assets/icons/dog.png",
   "emoji": "🐕",
   "abstract": false,
   "icon_idea": "a happy puppy with a wagging tail"
@@ -5860,7 +5860,7 @@
   "example_en": "The rabbit has long ears.",
   "example_zh": "隻兔仔有對長耳仔。",
   "tip": "兔仔口語亦叫 bunny。",
-  "icon": null,
+  "icon": "assets/icons/rabbit.png",
   "emoji": "🐰",
   "abstract": false,
   "icon_idea": "a white rabbit holding a carrot"
@@ -5883,7 +5883,7 @@
   "example_en": "A bird is singing outside.",
   "example_zh": "出面有隻雀仔喺度唱歌。",
   "tip": "early bird = 早起嘅人；ir 讀 /ɜː/。",
-  "icon": null,
+  "icon": "assets/icons/bird.png",
   "emoji": "🐦",
   "abstract": false,
   "icon_idea": "a small bird singing on a branch"
@@ -5906,7 +5906,7 @@
   "example_en": "My hamster runs on its wheel at night.",
   "example_zh": "我隻倉鼠夜晚喺轆度跑。",
   "tip": "讀 HAM-ster；唔好同 hamburger 搞亂。",
-  "icon": null,
+  "icon": "assets/icons/hamster.png",
   "emoji": "🐹",
   "abstract": false,
   "icon_idea": "a round hamster with full cheeks"
@@ -5929,7 +5929,7 @@
   "example_en": "We have two goldfish at home.",
   "example_zh": "我哋屋企養咗兩條金魚。",
   "tip": "複數都係 goldfish；金魚街 = Goldfish Market（旺角）。",
-  "icon": null,
+  "icon": "assets/icons/goldfish.png",
   "emoji": "🐠",
   "abstract": false,
   "icon_idea": "a goldfish in a round bowl"
@@ -5952,7 +5952,7 @@
   "example_en": "The turtle walks very slowly.",
   "example_zh": "隻龜行得好慢。",
   "tip": "海龜叫 turtle；陸龜叫 tortoise。",
-  "icon": null,
+  "icon": "assets/icons/turtle.png",
   "emoji": "🐢",
   "abstract": false,
   "icon_idea": "a green turtle with a patterned shell"
@@ -5975,7 +5975,7 @@
   "example_en": "The cat is chasing a mouse.",
   "example_zh": "隻貓追緊一隻老鼠。",
   "tip": "複數唔規則：mice；電腦滑鼠都叫 mouse。",
-  "icon": null,
+  "icon": "assets/icons/mouse.png",
   "emoji": "🐭",
   "abstract": false,
   "icon_idea": "a little grey mouse with big ears"
@@ -5998,7 +5998,7 @@
   "example_en": "The lion is the king of animals.",
   "example_zh": "獅子係萬獸之王。",
   "tip": "母獅 = lioness；舞獅 = lion dance。",
-  "icon": null,
+  "icon": "assets/icons/lion.png",
   "emoji": "🦁",
   "abstract": false,
   "icon_idea": "a friendly lion with a fluffy mane"
@@ -6021,7 +6021,7 @@
   "example_en": "A tiger has black stripes.",
   "example_zh": "老虎有黑色間條。",
   "tip": "虎年 = the Year of the Tiger。",
-  "icon": null,
+  "icon": "assets/icons/tiger.png",
   "emoji": "🐯",
   "abstract": false,
   "icon_idea": "a baby tiger with bold stripes"
@@ -6044,7 +6044,7 @@
   "example_en": "The elephant is very big.",
   "example_zh": "隻大笨象好大隻。",
   "tip": "元音開頭：an elephant；象鼻 = trunk。",
-  "icon": null,
+  "icon": "assets/icons/elephant.png",
   "emoji": "🐘",
   "abstract": false,
   "icon_idea": "a grey elephant spraying water from its trunk"
@@ -6067,7 +6067,7 @@
   "example_en": "The monkey is eating a banana.",
   "example_zh": "隻馬騮食緊香蕉。",
   "tip": "複數 monkeys（y 前面係元音，直接加 s）。",
-  "icon": null,
+  "icon": "assets/icons/monkey.png",
   "emoji": "🐵",
   "abstract": false,
   "icon_idea": "a monkey hanging from a branch holding a banana"
@@ -6090,7 +6090,7 @@
   "example_en": "The panda is eating bamboo.",
   "example_zh": "隻熊貓食緊竹。",
   "tip": "大熊貓 = giant panda。",
-  "icon": null,
+  "icon": "assets/icons/panda.png",
   "emoji": "🐼",
   "abstract": false,
   "icon_idea": "a panda munching bamboo"
@@ -6113,7 +6113,7 @@
   "example_en": "The cow says moo.",
   "example_zh": "頭牛「哞」咁叫。",
   "tip": "牛肉叫 beef；公牛 = bull。",
-  "icon": null,
+  "icon": "assets/icons/cow.png",
   "emoji": "🐄",
   "abstract": false,
   "icon_idea": "a black-and-white cow with a bell"
@@ -6136,7 +6136,7 @@
   "example_en": "The pig is sleeping in the mud.",
   "example_zh": "隻豬喺泥度瞓緊覺。",
   "tip": "豬肉叫 pork；piggy bank = 豬仔錢罌。",
-  "icon": null,
+  "icon": "assets/icons/pig.png",
   "emoji": "🐷",
   "abstract": false,
   "icon_idea": "a pink piglet with a curly tail"
@@ -6159,7 +6159,7 @@
   "example_en": "Can you ride a horse?",
   "example_zh": "你識唔識騎馬？",
   "tip": "賽馬 = horse racing；英式 r 唔發音。",
-  "icon": null,
+  "icon": "assets/icons/horse.png",
   "emoji": "🐴",
   "abstract": false,
   "icon_idea": "a brown horse with a flowing mane"
@@ -6182,7 +6182,7 @@
   "example_en": "The sheep has soft white wool.",
   "example_zh": "隻羊有軟熟嘅白色羊毛。",
   "tip": "複數都係 sheep（唔加 s）；羊毛 = wool。",
-  "icon": null,
+  "icon": "assets/icons/sheep.png",
   "emoji": "🐑",
   "abstract": false,
   "icon_idea": "a fluffy white sheep"
@@ -6205,7 +6205,7 @@
   "example_en": "Roast duck is delicious.",
   "example_zh": "燒鴨好好味。",
   "tip": "燒鴨 = roast duck；鴨仔 = duckling。",
-  "icon": null,
+  "icon": "assets/icons/duck.png",
   "emoji": "🦆",
   "abstract": false,
   "icon_idea": "a yellow duck swimming"
@@ -6228,7 +6228,7 @@
   "example_en": "Please feed the cat at six.",
   "example_zh": "唔該六點餵隻貓。",
   "tip": "過去式 fed；feed + 動物 + 食物。",
-  "icon": null,
+  "icon": "assets/icons/feed.png",
   "emoji": "🍼",
   "abstract": true,
   "icon_idea": "a hand pouring kibble into a cat bowl"
@@ -6251,7 +6251,7 @@
   "example_en": "My cat has a long fluffy tail.",
   "example_zh": "我隻貓有條又長又鬆毛嘅尾巴。",
   "tip": "讀音同 tale（故事）一樣。",
-  "icon": null,
+  "icon": "assets/icons/tail.png",
   "emoji": "🐈",
   "abstract": false,
   "icon_idea": "a fluffy striped cat tail curling"
@@ -6274,7 +6274,7 @@
   "example_en": "Your kitten is so cute!",
   "example_zh": "你隻貓仔好可愛！",
   "tip": "cute 亦可以形容人：a cute baby。",
-  "icon": null,
+  "icon": "assets/icons/cute.png",
   "emoji": "🥰",
   "abstract": true,
   "icon_idea": "a kitten with sparkly eyes and little hearts"
@@ -6297,7 +6297,7 @@
   "example_en": "The kitten is only two months old.",
   "example_zh": "隻貓仔先至兩個月大。",
   "tip": "狗仔叫 puppy；讀 KIT-n。",
-  "icon": null,
+  "icon": "assets/icons/kitten.png",
   "emoji": "😺",
   "abstract": false,
   "icon_idea": "a tiny kitten peeking out of a basket"
@@ -6320,7 +6320,7 @@
   "example_en": "Let's go to the zoo this Sunday.",
   "example_zh": "我哋今個星期日去動物園啦。",
   "tip": "香港動植物公園 = Hong Kong Zoological and Botanical Gardens。",
-  "icon": null,
+  "icon": "assets/icons/zoo.png",
   "emoji": "🏞️",
   "abstract": false,
   "icon_idea": "a zoo gate with a giraffe peeking over"
@@ -6343,7 +6343,7 @@
   "example_en": "I'm happy to see you!",
   "example_zh": "見到你好開心！",
   "tip": "Happy birthday! = 生日快樂；比較級 happier。",
-  "icon": null,
+  "icon": "assets/icons/happy.png",
   "emoji": "😊",
   "abstract": true,
   "icon_idea": "a smiling cat with closed happy eyes"
@@ -6366,7 +6366,7 @@
   "example_en": "Why are you sad today?",
   "example_zh": "你今日點解唔開心？",
   "tip": "比較級 sadder（雙寫 d）。",
-  "icon": null,
+  "icon": "assets/icons/sad.png",
   "emoji": "😢",
   "abstract": true,
   "icon_idea": "a kitten with droopy ears and a small tear"
@@ -6389,7 +6389,7 @@
   "example_en": "Don't be angry with me.",
   "example_zh": "唔好嬲我呀。",
   "tip": "be angry with + 人；be angry about + 事。",
-  "icon": null,
+  "icon": "assets/icons/angry.png",
   "emoji": "😠",
   "abstract": true,
   "icon_idea": "a puffed-up kitten with a steam puff"
@@ -6412,7 +6412,7 @@
   "example_en": "I'm scared of the dark.",
   "example_zh": "我好驚黑。",
   "tip": "be scared of + 嘢；同 afraid 意思差唔多。",
-  "icon": null,
+  "icon": "assets/icons/scared.png",
   "emoji": "😨",
   "abstract": true,
   "icon_idea": "a kitten hiding under a blanket, only eyes showing"
@@ -6435,7 +6435,7 @@
   "example_en": "I'm so excited about the trip!",
   "example_zh": "我好期待個旅行！",
   "tip": "excited 形容人；exciting 形容令人興奮嘅嘢。",
-  "icon": null,
+  "icon": "assets/icons/excited.png",
   "emoji": "🤩",
   "abstract": true,
   "icon_idea": "a kitten jumping with stars around it"
@@ -6458,7 +6458,7 @@
   "example_en": "I feel tired after school.",
   "example_zh": "放學之後我覺得好攰。",
   "tip": "be tired of = 厭倦：I'm tired of waiting.（我等到厭晒）",
-  "icon": null,
+  "icon": "assets/icons/tired.png",
   "emoji": "🥱",
   "abstract": true,
   "icon_idea": "a yawning kitten with heavy eyelids"
@@ -6481,7 +6481,7 @@
   "example_en": "I'm bored. Let's play a game.",
   "example_zh": "好悶呀，我哋玩個遊戲啦。",
   "tip": "bored 形容人；boring 形容令人悶嘅嘢。",
-  "icon": null,
+  "icon": "assets/icons/bored.png",
   "emoji": "😑",
   "abstract": true,
   "icon_idea": "a kitten resting its chin on its paws, flat eyes"
@@ -6504,7 +6504,7 @@
   "example_en": "I'm nervous before a test.",
   "example_zh": "測驗之前我好緊張。",
   "tip": "Don't be nervous! = 唔使緊張！",
-  "icon": null,
+  "icon": "assets/icons/nervous.png",
   "emoji": "😬",
   "abstract": true,
   "icon_idea": "a kitten biting its paw with sweat drops"
@@ -6527,7 +6527,7 @@
   "example_en": "Mum is worried about me.",
   "example_zh": "媽媽好擔心我。",
   "tip": "be worried about + 人／事；o 讀 /ʌ/。",
-  "icon": null,
+  "icon": "assets/icons/worried.png",
   "emoji": "😟",
   "abstract": true,
   "icon_idea": "a kitten with furrowed brows and a small cloud above"
@@ -6550,7 +6550,7 @@
   "example_en": "I was surprised to see him.",
   "example_zh": "見到佢我好驚訝。",
   "tip": "surprised 形容人；surprise 做名詞係「驚喜」。",
-  "icon": null,
+  "icon": "assets/icons/surprised.png",
   "emoji": "😲",
   "abstract": true,
   "icon_idea": "a kitten with wide eyes and an exclamation mark"
@@ -6573,7 +6573,7 @@
   "example_en": "How do you feel today?",
   "example_zh": "你今日覺得點？",
   "tip": "過去式 felt；feel like + -ing = 想做。",
-  "icon": null,
+  "icon": "assets/icons/feel.png",
   "emoji": "💭",
   "abstract": true,
   "icon_idea": "a kitten with a thought bubble containing a heart"
@@ -6596,7 +6596,7 @@
   "example_en": "Smile for the photo!",
   "example_zh": "影相啦，笑一笑！",
   "tip": "smile at someone = 對人笑；laugh 係笑出聲。",
-  "icon": null,
+  "icon": "assets/icons/smile.png",
   "emoji": "😃",
   "abstract": true,
   "icon_idea": "a kitten smiling at a camera"
@@ -6619,7 +6619,7 @@
   "example_en": "His jokes always make me laugh.",
   "example_zh": "佢講笑話次次都令我笑。",
   "tip": "gh 讀 /f/；laugh at = 取笑。",
-  "icon": null,
+  "icon": "assets/icons/laugh.png",
   "emoji": "😂",
   "abstract": true,
   "icon_idea": "a kitten rolling on its back laughing"
@@ -6642,7 +6642,7 @@
   "example_en": "Don't cry, everything is OK.",
   "example_zh": "唔好喊，冇事㗎。",
   "tip": "過去式 cried。",
-  "icon": null,
+  "icon": "assets/icons/cry.png",
   "emoji": "😭",
   "abstract": true,
   "icon_idea": "a kitten with big tears and a tissue"
@@ -6665,7 +6665,7 @@
   "example_en": "Can I give you a hug?",
   "example_zh": "我可唔可以攬下你？",
   "tip": "give someone a hug = 攬人；hug 亦可以做動詞。",
-  "icon": null,
+  "icon": "assets/icons/hug.png",
   "emoji": "🤗",
   "abstract": true,
   "icon_idea": "two kittens hugging"
@@ -6688,7 +6688,7 @@
   "example_en": "I love my cat so much.",
   "example_zh": "我好愛我隻貓。",
   "tip": "love + -ing：I love reading.；比 like 強。",
-  "icon": null,
+  "icon": "assets/icons/love.png",
   "emoji": "💕",
   "abstract": true,
   "icon_idea": "a kitten holding a big heart"
@@ -6711,7 +6711,7 @@
   "example_en": "I hate waking up early.",
   "example_zh": "我好討厭早起。",
   "tip": "hate 好強烈；講嘢食可以用 don't like 客氣啲。",
-  "icon": null,
+  "icon": "assets/icons/hate.png",
   "emoji": "😤",
   "abstract": true,
   "icon_idea": "a grumpy kitten turning away from an alarm clock"
@@ -6734,7 +6734,7 @@
   "example_en": "I hope you feel better soon.",
   "example_zh": "希望你快啲好返。",
   "tip": "hope to do / hope that…；名詞解「希望」。",
-  "icon": null,
+  "icon": "assets/icons/hope.png",
   "emoji": "🌟",
   "abstract": true,
   "icon_idea": "a kitten looking up at a shooting star"
@@ -6757,7 +6757,7 @@
   "example_en": "I miss my grandmother.",
   "example_zh": "我好掛住嫲嫲。",
   "tip": "miss the bus = 趕唔切巴士。",
-  "icon": null,
+  "icon": "assets/icons/miss.png",
   "emoji": "🥺",
   "abstract": true,
   "icon_idea": "a kitten looking at a photo frame by the window"
@@ -6780,7 +6780,7 @@
   "example_en": "Sorry, I didn't hear you.",
   "example_zh": "唔好意思，我聽唔到你講嘢。",
   "tip": "Sorry? 亦可以解「唔該講多次？」；道歉 = say sorry。",
-  "icon": null,
+  "icon": "assets/icons/sorry.png",
   "emoji": "🙏",
   "abstract": true,
   "icon_idea": "a kitten with lowered ears offering a flower"
@@ -6803,7 +6803,7 @@
   "example_en": "Stay calm and take a deep breath.",
   "example_zh": "保持冷靜，深呼吸。",
   "tip": "l 唔發音；calm down = 冷靜啲。",
-  "icon": null,
+  "icon": "assets/icons/calm.png",
   "emoji": "😌",
   "abstract": true,
   "icon_idea": "a kitten meditating on a cushion by still water"
@@ -6826,7 +6826,7 @@
   "example_en": "I'm proud of you!",
   "example_zh": "我為你感到驕傲！",
   "tip": "be proud of + 人／事；名詞 pride。",
-  "icon": null,
+  "icon": "assets/icons/proud.png",
   "emoji": "🏅",
   "abstract": true,
   "icon_idea": "a kitten wearing a medal, chest puffed out"
@@ -6849,7 +6849,7 @@
   "example_en": "My dog feels lonely when I'm out.",
   "example_zh": "我出咗街，隻狗就覺得好孤單。",
   "tip": "alone 係「一個人」；lonely 係覺得寂寞。",
-  "icon": null,
+  "icon": "assets/icons/lonely.png",
   "emoji": "😔",
   "abstract": true,
   "icon_idea": "a kitten alone by a rainy window"
@@ -6872,7 +6872,7 @@
   "example_en": "Don't be shy. Say hello!",
   "example_zh": "唔使怕醜，講聲 hello 啦！",
   "tip": "比較級 shyer；a shy smile = 靦腆嘅笑。",
-  "icon": null,
+  "icon": "assets/icons/shy.png",
   "emoji": "☺️",
   "abstract": true,
   "icon_idea": "a kitten half hiding behind a curtain, blushing"
@@ -6895,7 +6895,7 @@
   "example_en": "I'm happy because it's Friday.",
   "example_zh": "我好開心，因為今日星期五。",
   "tip": "問原因用 Why…?，答用 Because…；口語可以縮做 'cause。",
-  "icon": null,
+  "icon": "assets/icons/because.png",
   "emoji": "💡",
   "abstract": true,
   "icon_idea": "a lightbulb connecting a question mark to an arrow"
