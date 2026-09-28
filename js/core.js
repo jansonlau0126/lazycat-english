@@ -523,6 +523,7 @@
       return AC;
     } catch (e) { return null; }
   }
+  function unlockAudio() { audioCtx(); }
   const MEOWS = {
     fanshu: { a: 380, b: 720, c: 300, dur: 0.4, form: 1000, type: "triangle" },
     huihui: { a: 540, b: 880, c: 460, dur: 0.26, form: 900, type: "sine" },
@@ -540,35 +541,57 @@
     daufu: { a: 460, b: 760, c: 360, dur: 0.34, form: 1200, type: "sine" },
     baubau: { a: 660, b: 1220, c: 560, dur: 0.22, form: 1700, type: "triangle" }
   };
+  function scheduleMeow(ac, slug, kind, when) {
+    const p = MEOWS[slug] || MEOWS.fanshu;
+    const n = kind === "done" ? 2 : 1;
+    const dur = Math.max(0.34, p.dur);
+    for (let i = 0; i < n; i++) {
+      const t0 = when + i * (dur * 0.78 + 0.08);
+      const lift = kind === "done" && i === 1 ? 1.22 : (kind === "start" ? 1.06 : 1);
+      const a = p.a * lift, b = p.b * lift, c = Math.max(90, p.c * lift);
+      const o = ac.createOscillator();
+      const o2 = ac.createOscillator();
+      const g = ac.createGain();
+      const g2 = ac.createGain();
+      const lp = ac.createBiquadFilter();
+      o.type = p.type || "triangle";
+      o2.type = "sine";
+      o.frequency.setValueAtTime(a, t0);
+      o.frequency.linearRampToValueAtTime(b, t0 + dur * 0.38);
+      o.frequency.linearRampToValueAtTime(c, t0 + dur);
+      o2.frequency.setValueAtTime(a * 2, t0);
+      o2.frequency.linearRampToValueAtTime(b * 1.7, t0 + dur * 0.38);
+      o2.frequency.linearRampToValueAtTime(c * 1.45, t0 + dur);
+      lp.type = "lowpass";
+      lp.frequency.setValueAtTime(Math.max(700, a * 2), t0);
+      lp.frequency.linearRampToValueAtTime(Math.max(1600, b * 2.4), t0 + dur * 0.38);
+      lp.frequency.linearRampToValueAtTime(Math.max(500, c * 1.6), t0 + dur);
+      lp.Q.value = 0.6;
+      const peak = kind === "done" ? 0.46 : 0.4;
+      g.gain.setValueAtTime(0.0001, t0);
+      g.gain.exponentialRampToValueAtTime(peak, t0 + 0.045);
+      g.gain.setValueAtTime(peak * 0.72, t0 + dur * 0.42);
+      g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+      g2.gain.setValueAtTime(0.0001, t0);
+      g2.gain.exponentialRampToValueAtTime(peak * 0.28, t0 + 0.05);
+      g2.gain.exponentialRampToValueAtTime(0.0001, t0 + dur * 0.9);
+      o.connect(lp); lp.connect(g); g.connect(ac.destination);
+      o2.connect(g2); g2.connect(ac.destination);
+      o.start(t0); o.stop(t0 + dur + 0.03);
+      o2.start(t0); o2.stop(t0 + dur + 0.03);
+    }
+  }
   function meow(slug, kind) {
     if (!S.settings.sound) return;
-    const p = MEOWS[slug] || MEOWS.fanshu;
     const ac = audioCtx();
     if (!ac) return;
-    const n = kind === "done" ? 2 : 1;
-    try {
-      for (let i = 0; i < n; i++) {
-        const t0 = ac.currentTime + 0.02 + i * (p.dur * 0.72 + 0.08);
-        const lift = kind === "done" && i === 1 ? 1.2 : (kind === "start" ? 1.05 : 1);
-        const o = ac.createOscillator();
-        const g = ac.createGain();
-        const f = ac.createBiquadFilter();
-        o.type = p.type;
-        o.frequency.setValueAtTime(p.a * lift, t0);
-        o.frequency.exponentialRampToValueAtTime(p.b * lift, t0 + p.dur * 0.36);
-        o.frequency.exponentialRampToValueAtTime(Math.max(70, p.c * lift), t0 + p.dur);
-        f.type = "bandpass";
-        f.frequency.setValueAtTime(p.form, t0);
-        f.Q.value = 5;
-        const peak = kind === "done" ? 0.2 : 0.16;
-        g.gain.setValueAtTime(0.0001, t0);
-        g.gain.exponentialRampToValueAtTime(peak, t0 + 0.035);
-        g.gain.exponentialRampToValueAtTime(peak * 0.55, t0 + p.dur * 0.5);
-        g.gain.exponentialRampToValueAtTime(0.0001, t0 + p.dur);
-        o.connect(f); f.connect(g); g.connect(ac.destination);
-        o.start(t0); o.stop(t0 + p.dur + 0.03);
-      }
-    } catch (e) {}
+    const go = () => { try { scheduleMeow(ac, slug, kind, ac.currentTime + 0.02); } catch (e) {} };
+    if (ac.state === "running") go();
+    else {
+      const pending = ac.resume();
+      if (pending && pending.then) pending.then(go);
+      else go();
+    }
   }
   function beep(kind) {
     if (!S.settings.sound) return;
@@ -642,6 +665,6 @@
     openSaturday, blockingMonthly, nextQuarterly, activeTheme, currentWeek, themeWordsLearned, wordLearnedOnCard,
     grammarDoneCount, monthlyDoneCount, unlockValue, ruleMet, checkUnlocks, albumMath, poseUnlocked, lockedProgressText, hairTint,
     placeholderMode, iconKind, renderIcon, tileHTML, iconErr, themeIconHTML, themeSlug, cardFileName, cropStyle, faceHTML, companion,
-    toast, closeModal, modal, TTS, SR, beep, meow, highlight, tipHTML, maybeAwardYarn, ui
+    toast, closeModal, modal, TTS, SR, beep, meow, scheduleMeow, unlockAudio, highlight, tipHTML, maybeAwardYarn, ui
   });
 })(window.LC = window.LC || {});

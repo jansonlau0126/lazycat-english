@@ -26,6 +26,18 @@ def spark(cx, cy, s=1):
         f'<path d="M{cx} {cy-7*s} V{cy+7*s} M{cx-6*s} {cy} H{cx+6*s}" stroke="{S}" stroke-width="3" stroke-linecap="round"/>'
     )
 
+def bedcat(fill=O):
+    """A round kitten sprawled on a cushion, eyes shut."""
+    return (
+        E(64, 112, 50, 12, PL, 3)
+        + E(78, 96, 32, 15, fill)
+        + head(46, 86, 17, fill, "shut")
+        + f'<path d="M102 94 Q120 78 112 102" {st(3)} fill="none"/>'
+    )
+
+def scene(prop, fill=O):
+    return prop + bedcat(fill)
+
 ICONS = {}
 
 # ---- t02 身體 ----
@@ -511,6 +523,13 @@ ICONS["weekend"] = (
     + heart(48, 76, 0.35, P)
     + heart(80, 76, 0.35, P)
 )
+
+
+for key in list(ICONS):
+    ICONS[key] = (
+        f'<g transform="translate(64,34) scale(0.62) translate(-64,-64)">{ICONS[key]}</g>'
+        + bedcat()
+    )
 
 
 def main():
