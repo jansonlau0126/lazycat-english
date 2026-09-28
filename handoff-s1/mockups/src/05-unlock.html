@@ -1,0 +1,60 @@
+<!doctype html><html lang="zh-HK"><meta charset="utf-8"><link rel="stylesheet" href="common.css">
+<style>
+.bgscr{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;padding-top:120px;gap:14px;filter:blur(3px)}
+.bgscr h1{font-family:"Huninn";font-weight:normal;font-size:28px;color:var(--orange-d)}
+.bgscr .stats3{display:flex;gap:10px}
+.bgscr .stats3 div{width:100px;height:80px;border-radius:18px;border:2px solid var(--line);background:#fff}
+.dim{position:absolute;inset:0;background:rgba(74,52,38,.5)}
+.modal{position:absolute;left:18px;right:18px;top:92px;background:#FFF8EE;border-radius:30px;padding:0 18px 20px;box-shadow:0 10px 0 #E7CBAE,0 20px 40px rgba(0,0,0,.25);text-align:center;overflow:visible}
+.ribbon{position:relative;margin:-22px auto 0;width:236px;height:48px;background:var(--coral);color:#fff;font-family:"Huninn";font-size:21px;display:flex;align-items:center;justify-content:center;border-radius:14px;box-shadow:0 5px 0 #E05A5F;letter-spacing:1px}
+.ribbon:before,.ribbon:after{content:"";position:absolute;top:12px;width:26px;height:38px;background:#E05A5F;z-index:-1}
+.ribbon:before{left:-16px;clip-path:polygon(0 0,100% 0,100% 100%,0 100%,40% 50%)}
+.ribbon:after{right:-16px;clip-path:polygon(0 0,100% 0,60% 50%,100% 100%,0 100%)}
+.stage{position:relative;height:250px;margin:6px -18px 0;overflow:hidden}
+.rays{position:absolute;left:50%;top:50%;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;
+  background:repeating-conic-gradient(from 0deg,rgba(255,214,107,.55) 0 10deg,rgba(255,214,107,0) 10deg 20deg);
+  -webkit-mask:radial-gradient(circle,#000 16%,transparent 46%);mask:radial-gradient(circle,#000 16%,transparent 46%)}
+.glow{position:absolute;left:50%;top:50%;width:200px;height:200px;margin:-100px 0 0 -100px;border-radius:50%;background:radial-gradient(circle,#FFF4CC 0,rgba(255,244,204,0) 70%)}
+.cush{position:absolute;left:50%;bottom:18px;width:210px;height:44px;margin-left:-105px;border-radius:50%;background:#F7B5C4;box-shadow:0 7px 0 #EE9CB0}
+.bigcat{position:absolute;left:50%;top:50%;margin:-96px 0 0 -96px}
+.bigcat .cphoto{box-shadow:0 0 0 7px #fff,0 0 0 11px #FFE1A6,0 14px 26px rgba(160,100,50,.3)}
+.sp{position:absolute;font-size:22px}
+.conf{position:absolute;width:9px;height:14px;border-radius:3px}
+.name{font-family:"Huninn";font-size:34px;line-height:1.1;margin-top:2px}
+.breed{margin:6px 0 12px}
+.quote{position:relative;background:#fff;border:2px solid var(--line);border-radius:18px;padding:10px 14px;font-size:14.5px;line-height:1.5;color:#6B5444}
+.quote:before{content:"";position:absolute;top:-10px;left:50%;margin-left:-9px;border:9px solid transparent;border-bottom-color:var(--line);border-top:0}
+.quote:after{content:"";position:absolute;top:-7px;left:50%;margin-left:-8px;border:8px solid transparent;border-bottom-color:#fff;border-top:0}
+.how{display:flex;gap:8px;justify-content:center;margin:12px 0 16px;flex-wrap:wrap}
+.how .pill{font-size:12.5px;padding:5px 11px}
+.btns{display:flex;flex-direction:column;gap:12px}
+</style>
+<body><div class="phone" id="p"></div>
+<script src="photos.js"></script><script src="common.js"></script>
+<script>
+const conf=[[40,30,'#FF7A7A',20],[80,70,'#FFD66B',-30],[300,40,'#8FCBEA',15],[330,120,'#B7A6E6',40],[60,160,'#8FD6AE',-10],[290,190,'#F7B5C4',60],[120,20,'#8FD6AE',70],[250,14,'#FF7A7A',-50],[20,220,'#FFD66B',30],[340,230,'#FF7A7A',-20]];
+document.getElementById('p').innerHTML = statusBar() + `
+<div class="bgscr"><h1>月度大複習完成！</h1><div class="stats3"><div></div><div></div><div></div></div></div>
+<div class="dim"></div>
+<div class="modal">
+ <div class="ribbon"><i class="emoji" style="font-size:20px;margin-right:6px">🎉</i>解鎖新貓貓！</div>
+ <div class="stage">
+  <div class="rays"></div><div class="glow"></div>
+  ${conf.map(([x,y,c,r])=>`<i class="conf" style="left:${x}px;top:${y}px;background:${c};transform:rotate(${r}deg)"></i>`).join('')}
+  <span class="sp emoji" style="left:52px;top:96px">✨</span><span class="sp emoji" style="right:50px;top:60px;font-size:18px">✨</span><span class="sp emoji" style="right:74px;top:170px;font-size:15px">💖</span>
+  <div class="bigcat">${catPhoto('calico',{w:192,mode:'bust'})}</div>
+ </div>
+ <div class="name">花花</div>
+ <div class="breed"><span class="pill" style="background:var(--orange-l);color:var(--orange-d)">三色貓 ・ <span class="en" style="font-weight:800">Calico</span> ・ 短毛</span></div>
+ <div class="quote">「三種顏色三種心情：<br>想瞓、好想瞓、即刻瞓。」</div>
+ <div class="how">
+  <span class="pill" style="background:var(--lav-l);color:var(--lav-d)"><i class="emoji">🏆</i> 完成第 1 次月度大複習</span>
+  <span class="pill" style="background:var(--sun-l);color:#B7801A"><i class="emoji">⭐</i> +40 XP</span>
+  <span class="pill" style="background:var(--mint-l);color:#3F9466"><i class="emoji">🐾</i> 圖鑑 5 / 15</span>
+ </div>
+ <div class="btns">
+  <div class="btn">設為陪讀貓 <i class="emoji">🐾</i></div>
+  <div class="btn ghost">收埋入圖鑑先</div>
+ </div>
+</div>`;
+</script></body></html>

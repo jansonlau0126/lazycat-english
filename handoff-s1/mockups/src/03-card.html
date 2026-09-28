@@ -1,0 +1,35 @@
+<!doctype html><html lang="zh-HK"><meta charset="utf-8"><link rel="stylesheet" href="common.css"><link rel="stylesheet" href="vocabcard.css">
+<style>
+.ph{display:flex;align-items:center;gap:10px;height:50px;padding:0 16px;flex-shrink:0}
+.back{width:36px;height:36px;border-radius:12px;background:#fff;border:2px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);font:900 20px Nunito}
+.ph h2{font-family:"Huninn";font-weight:normal;font-size:20px;flex:1}
+.ph h2 small{display:block;font-size:11.5px;color:var(--muted);margin-top:-1px}
+main{padding-top:2px;gap:12px;align-items:center}
+.wrap{width:358px;height:537px;flex-shrink:0;filter:drop-shadow(0 6px 10px rgba(160,110,60,.18))}
+.wrap .vc{transform:scale(.9944);transform-origin:0 0}
+.acts{display:flex;gap:8px;width:100%}
+.acts .btn{flex:1;height:46px;font-size:15px}
+.acts .btn .emoji{font-size:18px}
+.tog{display:flex;align-items:center;gap:6px;font-family:"Huninn";font-size:13px;color:var(--cocoa);background:#fff;border:2px solid var(--line-d);border-radius:14px;padding:0 10px;height:46px;box-shadow:0 4px 0 var(--line-d)}
+.sw{width:34px;height:20px;border-radius:99px;background:var(--mint-d);position:relative}
+.sw:after{content:"";position:absolute;right:2px;top:2px;width:16px;height:16px;border-radius:50%;background:#fff}
+.next{width:100%;display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:16px;background:var(--lav-l);font-size:12.5px;line-height:1.4;color:#6F5FA8}
+.next .emoji{font-size:22px}
+.dots{display:flex;gap:6px;align-items:center}
+.dots i{width:8px;height:8px;border-radius:50%;background:#E8D8C6}.dots i.on{width:20px;border-radius:99px;background:var(--orange)}
+</style>
+<body><div class="phone" id="p"></div>
+<script src="photos.js"></script><script src="common.js"></script><script src="vocabcard.js"></script>
+<script>
+document.getElementById('p').innerHTML = statusBar() + `
+<div class="ph"><div class="back">‹</div><h2>主題生字卡<small>已收集 5 / 48 張 ・ 左右掃睇其他主題</small></h2><div class="dots"><i></i><i></i><i></i><i></i><i class="on"></i></div></div>
+<main>
+ <div class="wrap">${vocabCard(true)}</div>
+ <div class="acts">
+  <div class="tog">音標<span class="sw"></span></div>
+  <div class="btn ghost"><i class="emoji">💾</i>存做圖片</div>
+  <div class="btn"><i class="emoji">📤</i>分享</div>
+ </div>
+ <div class="next"><i class="emoji">✨</i><span>每學完一個主題就解鎖一張生字卡<br>下一張：<i class="emoji" style="font-size:14px">🧋</i> 飲品同茶餐廳（第 6 週）</span></div>
+</main>` + tabBar('cards');
+</script></body></html>

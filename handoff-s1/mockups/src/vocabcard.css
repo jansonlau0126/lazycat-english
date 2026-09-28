@@ -1,0 +1,19 @@
+.vc{width:360px;height:540px;background:#FFF8EE;border-radius:24px;border:3px solid #F3D7B4;padding:12px 12px 10px;display:flex;flex-direction:column;position:relative;overflow:hidden;
+  background-image:radial-gradient(circle at 12px 12px,#F7E6D2 1.6px,transparent 2px);background-size:22px 22px}
+.vc-head{display:flex;align-items:center;gap:6px;height:74px;margin-bottom:8px;background:#fff;border-radius:18px;padding:0 12px 0 4px;border:2px solid #F6E3CC}
+.vc-cat{width:84px;flex-shrink:0;margin:0 4px 0 6px}
+.vc-title{flex:1}
+.vc-kicker{font-family:"Huninn";font-size:10.5px;color:#B89F8A}
+.vc-name{font-family:"Huninn";font-size:25px;color:#5B4636;line-height:1.15}
+.vc-name span{font:800 21px "Baloo 2";color:#E0822F}
+.vc-name .emoji{font-size:21px}
+.vc-count{text-align:center;font-family:"Huninn";font-size:11px;color:#B89F8A;line-height:1}
+.vc-count b{display:block;font:800 26px/1 "Baloo 2";color:#F59A3E;font-weight:800}
+.vc-grid{flex:1;display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(5,1fr);gap:5px}
+.vc-cell{border-radius:13px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2px 1px;border:1.5px solid rgba(91,70,54,.06)}
+.vc-cell .emoji{font-size:23px;margin-bottom:2px}
+.vc-cell b{font:800 11.5px/1.1 "Nunito";color:#4A3A30;letter-spacing:-.2px}
+.vc-cell small{font:500 8.6px/1.25 "Noto Sans","Nunito",sans-serif;color:#9C8676;letter-spacing:-.1px}
+.vc-cell span{font-family:"Huninn";font-size:11px;color:#6B5444;line-height:1.2;margin-top:1px}
+.vc-foot{display:flex;justify-content:space-between;align-items:center;font-family:"Huninn";font-size:10.5px;color:#B89F8A;margin-top:8px;padding:0 4px}
+.vc-logo{color:#E0822F;font-size:12px}

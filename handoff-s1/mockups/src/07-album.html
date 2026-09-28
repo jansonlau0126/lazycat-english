@@ -1,0 +1,91 @@
+<!doctype html><html lang="zh-HK"><meta charset="utf-8"><link rel="stylesheet" href="common.css">
+<style>
+.nav{height:46px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:0 14px 0 10px}
+.back{display:flex;align-items:center;gap:2px;font-family:"Huninn";font-size:15px;color:var(--orange-d)}
+.back svg{width:24px;height:24px}
+.nav h2{font-family:"Huninn";font-weight:normal;font-size:20px;position:absolute;left:0;right:0;text-align:center;pointer-events:none}
+.cnt{font:800 14px Nunito;color:var(--orange-d);background:var(--orange-l);border-radius:99px;padding:4px 10px;display:flex;gap:4px;align-items:center}
+main{padding:2px 16px 0;gap:10px}
+.prof{display:flex;gap:13px;align-items:center;padding:11px 13px;background:#FFF1E0;border-color:#F7DDBE;box-shadow:0 3px 0 #F7DDBE}
+.prof .nm{font-family:"Huninn";font-size:22px;line-height:1.1;display:flex;align-items:center;gap:8px}
+.prof .q{font-size:12.5px;color:#8A6F5C;margin-top:5px;line-height:1.35}
+.sect{display:flex;justify-content:space-between;align-items:flex-end;margin-top:2px}
+.sect h3{font-family:"Huninn";font-weight:normal;font-size:16px;display:flex;gap:6px;align-items:center}
+.sect small{font-family:"Huninn";font-size:12px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pc{background:#fff;border:2px solid var(--line);border-radius:20px;box-shadow:0 3px 0 var(--line);padding:6px 6px 7px;position:relative}
+.pc .pframe{box-shadow:0 0 0 2px #fff}
+.pc .cap{display:flex;justify-content:space-between;align-items:center;padding:6px 4px 0}
+.pc .cap b{font-family:"Huninn";font-weight:normal;font-size:14.5px;display:flex;align-items:center;gap:5px}
+.num{width:19px;height:19px;border-radius:50%;background:var(--orange);color:#fff;font:900 11px/19px Nunito;text-align:center;display:inline-block}
+.pc .ok{font:800 10.5px Nunito;color:#3F9466;background:var(--mint-l);border-radius:99px;padding:2px 7px;font-family:"Huninn";font-weight:normal}
+.pc.lock{background:#FBF5EE;border-style:dashed;box-shadow:none}
+.pc.lock .num{background:#D8C8B8}
+.pc.lock .cap b{color:#A2785A}
+.pc.lock .cond{font-family:"Huninn";font-size:11px;color:#B98F6E;background:#fff;border-radius:99px;padding:2px 7px;border:1.5px solid #EEDCC8}
+.lk{position:absolute;left:50%;top:50%;width:40px;height:40px;margin:-20px 0 0 -20px;border-radius:50%;background:#fff;box-shadow:0 3px 8px rgba(150,95,50,.28);font-size:19px;display:flex;align-items:center;justify-content:center}
+.lkt{position:absolute;left:0;right:0;top:calc(50% + 24px);text-align:center;font-family:"Huninn";font-size:13px;color:#fff;text-shadow:0 1px 3px rgba(90,60,40,.55)}
+.pwrap{position:relative}
+.star{position:absolute;top:8px;left:8px;font-size:11px;background:#fff;border-radius:99px;padding:2px 7px;font-family:"Huninn";color:var(--orange-d);box-shadow:0 2px 4px rgba(150,95,50,.2)}
+.bonus{display:flex;gap:12px;align-items:center;padding:7px 12px 7px 7px;border-radius:20px;background:var(--lav-l);border:2px dashed #CFC3F0}
+.bonus .t{flex:1}
+.bonus .t b{font-family:"Huninn";font-weight:normal;font-size:14.5px;color:#6E5DB0;display:flex;align-items:center;gap:6px}
+.bonus .t p{font-size:12px;color:#8E7CC9;margin-top:3px;line-height:1.35;font-family:"Huninn"}
+.bonus .tag{font:900 9.5px/1 Nunito;color:#fff;background:var(--lav-d);padding:3px 6px;border-radius:99px;letter-spacing:.3px}
+.prog{padding:11px 14px 12px}
+.prog .row{display:flex;justify-content:space-between;align-items:center}
+.prog h4{font-family:"Huninn";font-weight:normal;font-size:14.5px;display:flex;align-items:center;gap:6px}
+.prog .n{font:800 15px Nunito;color:var(--orange-d)}
+.prog .n span{font-family:"Huninn";font-weight:normal;font-size:12px;color:var(--muted)}
+.steps{display:flex;gap:6px;margin:9px 0 7px}
+.steps i{flex:1;height:26px;border-radius:10px;background:#F4EADF;display:flex;align-items:center;justify-content:center;color:#D8C8B8}
+.steps i.f{background:linear-gradient(180deg,#FFC46B,var(--orange));color:#fff;box-shadow:inset 0 -3px 0 rgba(0,0,0,.08)}
+.steps i svg{width:15px;height:15px}
+.prog p{font-size:12.5px;color:var(--muted);font-family:"Huninn"}
+.prog p b{font-weight:normal;color:var(--orange-d)}
+.foot{padding:4px 16px 26px;flex-shrink:0}
+.foot small{display:block;text-align:center;font-family:"Huninn";font-size:11.5px;color:var(--muted);margin-top:11px}
+</style>
+<body><div class="phone" id="p"></div>
+<script src="photos.js"></script><script src="album.js"></script><script src="common.js"></script>
+<script>
+const paw = (c,s=15) => IC.paw.replace('<svg',`<svg style="width:${s}px;height:${s}px;color:${c}"`);
+const PW = 162, PH = 110;
+const unlocked = (k, note) => `<div class="pc"><div class="pwrap">${poseImg(k,{w:PW,h:PH})}${note||''}</div>
+  <div class="cap"><b><span class="num">${POSES[k].n}</span>${POSES[k].zh}</b><span class="ok">已解鎖</span></div></div>`;
+const locked = (k, cond, sub) => `<div class="pc lock"><div class="pwrap">${poseImg(k,{w:PW,h:PH,cls:'locked'})}<span class="lk emoji">🔒</span><span class="lkt">${sub}</span></div>
+  <div class="cap"><b><span class="num">${POSES[k].n}</span>${POSES[k].zh}</b><span class="cond">${cond}</span></div></div>`;
+document.getElementById('p').innerHTML = statusBar() + `
+<div class="nav"><div class="back"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>圖鑑</div>
+ <h2>番薯嘅畫冊</h2><div class="cnt"><i class="emoji">📷</i>2 / 4</div></div>
+<main>
+ <div class="card prof">
+  ${catPhoto('orange',{w:66,mode:'face'})}
+  <div style="flex:1">
+   <div class="nm">番薯 <span class="pill" style="background:#fff;color:var(--orange-d)">橘貓・短毛</span></div>
+   <div class="q">「瞓醒先算，英文慢慢嚟。」<br><span style="color:var(--muted)">一齊學咗 <b style="color:var(--orange-d);font-weight:800;font-family:Nunito">7</b> 堂 ・ 新手貓</span></div>
+  </div>
+ </div>
+
+ <div class="sect"><h3><i class="emoji">📖</i>畫冊</h3><small>每陪你學 5 堂，就多一張相</small></div>
+ <div class="grid">
+  ${unlocked('sit','<span class="star">解鎖圖鑑時</span>')}
+  ${unlocked('sleep','<span class="star">陪讀 5 堂</span>')}
+  ${locked('stretch','再陪讀 3 堂','伸咩姿勢呢？')}
+  ${locked('happy','再陪讀 8 堂','？？？')}
+ </div>
+
+ <div class="bonus">
+  ${poseImg('yarn',{w:74,h:58,r:'14px',cls:'locked'})}
+  <div class="t"><b><span class="emoji">🧶</span>隱藏相：玩毛線 <span class="tag">BONUS</span></b>
+   <p>🔒 任何一個主題全部答啱（零錯誤）<br>就會解鎖呢張隱藏相</p></div>
+ </div>
+
+ <div class="card prog">
+  <div class="row"><h4><i class="emoji">📷</i>下一張相：伸懶腰</h4><div class="n">2 / 5 <span>堂</span></div></div>
+  <div class="steps"><i class="f">${paw('#fff')}</i><i class="f">${paw('#fff')}</i><i>${paw('#D8C8B8')}</i><i>${paw('#D8C8B8')}</i><i>${paw('#D8C8B8')}</i></div>
+  <p>揀番薯做陪讀貓，<b>再學 3 堂</b>就解鎖新相！</p>
+ </div>
+</main>
+<div class="foot"><div class="btn">揀佢做今日陪讀貓 ${paw('#fff',20)}</div><small>今日陪讀貓：花花 ・ 換咗都唔會蝕咗進度</small></div>`;
+</script></body></html>

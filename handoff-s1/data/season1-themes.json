@@ -1,0 +1,1133 @@
+{
+ "season": 1,
+ "zh": "伸個懶腰",
+ "en": "Big Stretch",
+ "emoji": "🌸",
+ "subtitle_zh": "生活基本",
+ "weeks": "1–13",
+ "level": "A1",
+ "learning_weeks": 12,
+ "review_week": 13,
+ "total_words": 300,
+ "path_order": [
+  "t01",
+  "t02",
+  "t03",
+  "t04",
+  "m1",
+  "t05",
+  "t06",
+  "t07",
+  "t08",
+  "m2",
+  "t09",
+  "t10",
+  "t11",
+  "t12",
+  "m3",
+  "q1"
+ ],
+ "themes": [
+  {
+   "id": "t01",
+   "no": 1,
+   "season": 1,
+   "week": 1,
+   "emoji": "🙋",
+   "zh": "自我介紹同家人",
+   "short_zh": "自我介紹",
+   "en": "Me & Family",
+   "description": "打招呼、講自己個名、住喺邊，同埋介紹屋企人（爸媽、兄弟姊妹、爺爺嫲嫲、表兄弟姊妹）。",
+   "description_en": "Greetings, saying your name and where you live, and introducing family members.",
+   "icon": null,
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "row_colour": "#FFF3E0",
+     "words": [
+      "hello",
+      "name",
+      "meet",
+      "friend",
+      "live"
+     ]
+    },
+    {
+     "day": 2,
+     "row_colour": "#FDEBF0",
+     "words": [
+      "family",
+      "father",
+      "mother",
+      "brother",
+      "sister"
+     ]
+    },
+    {
+     "day": 3,
+     "row_colour": "#EEF7EC",
+     "words": [
+      "grandfather",
+      "grandmother",
+      "uncle",
+      "aunt",
+      "cousin"
+     ]
+    },
+    {
+     "day": 4,
+     "row_colour": "#EAF4FB",
+     "words": [
+      "son",
+      "daughter",
+      "baby",
+      "child",
+      "parent"
+     ]
+    },
+    {
+     "day": 5,
+     "row_colour": "#F2EEFB",
+     "words": [
+      "introduce",
+      "surname",
+      "nickname",
+      "age",
+      "together"
+     ]
+    }
+   ],
+   "saturday": {
+    "weekly_review": true,
+    "grammar": null,
+    "story": "deferred"
+   },
+   "grammar": null,
+   "cat_unlock": {
+    "cat": "zima",
+    "trigger": "first_theme_card",
+    "note": "芝麻 unlocks when the first theme vocab card is earned (Day 5 of this theme). 灰灰 (huihui) already unlocks on this theme's Day 1 (first lesson)."
+   },
+   "followed_by": null
+  },
+  {
+   "id": "t02",
+   "no": 2,
+   "season": 1,
+   "week": 2,
+   "emoji": "🖐️",
+   "zh": "身體",
+   "short_zh": "身體",
+   "en": "Body",
+   "description": "頭、面、手腳等身體部位，加埋五官感覺（see / hear / smell / touch / taste）。",
+   "description_en": "Parts of the body plus the five senses.",
+   "icon": null,
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "row_colour": "#FFF3E0",
+     "words": [
+      "head",
+      "face",
+      "hair",
+      "eye",
+      "ear"
+     ]
+    },
+    {
+     "day": 2,
+     "row_colour": "#FDEBF0",
+     "words": [
+      "nose",
+      "mouth",
+      "tooth",
+      "neck",
+      "shoulder"
+     ]
+    },
+    {
+     "day": 3,
+     "row_colour": "#EEF7EC",
+     "words": [
+      "arm",
+      "hand",
+      "finger",
+      "leg",
+      "foot"
+     ]
+    },
+    {
+     "day": 4,
+     "row_colour": "#EAF4FB",
+     "words": [
+      "body",
+      "back",
+      "stomach",
+      "knee",
+      "toe"
+     ]
+    },
+    {
+     "day": 5,
+     "row_colour": "#F2EEFB",
+     "words": [
+      "see",
+      "hear",
+      "smell",
+      "touch",
+      "taste"
+     ]
+    }
+   ],
+   "saturday": {
+    "weekly_review": true,
+    "grammar": "g01",
+    "story": null
+   },
+   "grammar": "g01",
+   "cat_unlock": null,
+   "followed_by": null
+  },
+  {
+   "id": "t03",
+   "no": 3,
+   "season": 1,
+   "week": 3,
+   "emoji": "🏠",
+   "zh": "屋企同家具",
+   "short_zh": "屋企",
+   "en": "Home",
+   "description": "香港住屋：單位、房間、傢俬、家電，同埋形容屋企嘅字（舒服、乾淨、亂）。",
+   "description_en": "Rooms, furniture and appliances in a Hong Kong flat, plus words to describe a home.",
+   "icon": null,
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "row_colour": "#FFF3E0",
+     "words": [
+      "home",
+      "flat",
+      "bedroom",
+      "kitchen",
+      "bathroom"
+     ]
+    },
+    {
+     "day": 2,
+     "row_colour": "#FDEBF0",
+     "words": [
+      "bed",
+      "table",
+      "chair",
+      "sofa",
+      "desk"
+     ]
+    },
+    {
+     "day": 3,
+     "row_colour": "#EEF7EC",
+     "words": [
+      "door",
+      "window",
+      "floor",
+      "wall",
+      "lamp"
+     ]
+    },
+    {
+     "day": 4,
+     "row_colour": "#EAF4FB",
+     "words": [
+      "fridge",
+      "fan",
+      "cupboard",
+      "shelf",
+      "pillow"
+     ]
+    },
+    {
+     "day": 5,
+     "row_colour": "#F2EEFB",
+     "words": [
+      "comfortable",
+      "clean",
+      "messy",
+      "key",
+      "lift"
+     ]
+    }
+   ],
+   "saturday": {
+    "weekly_review": true,
+    "grammar": null,
+    "story": "deferred"
+   },
+   "grammar": null,
+   "cat_unlock": null,
+   "followed_by": null
+  },
+  {
+   "id": "t04",
+   "no": 4,
+   "season": 1,
+   "week": 4,
+   "emoji": "⏰",
+   "zh": "日常作息",
+   "short_zh": "日常作息",
+   "en": "Daily Routine",
+   "description": "起身、刷牙、三餐、瞓覺；一日嘅時段；頻率副詞 always / usually / often / sometimes / never（配合文法②一般現在式）。",
+   "description_en": "A day from waking up to bedtime, parts of the day, and frequency adverbs (pairs with grammar lesson 2).",
+   "icon": null,
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "row_colour": "#FFF3E0",
+     "words": [
+      "wake",
+      "alarm",
+      "brush",
+      "wash",
+      "breakfast"
+     ]
+    },
+    {
+     "day": 2,
+     "row_colour": "#FDEBF0",
+     "words": [
+      "shower",
+      "lunch",
+      "dinner",
+      "bedtime",
+      "sleep"
+     ]
+    },
+    {
+     "day": 3,
+     "row_colour": "#EEF7EC",
+     "words": [
+      "morning",
+      "afternoon",
+      "evening",
+      "night",
+      "early"
+     ]
+    },
+    {
+     "day": 4,
+     "row_colour": "#EAF4FB",
+     "words": [
+      "always",
+      "usually",
+      "often",
+      "sometimes",
+      "never"
+     ]
+    },
+    {
+     "day": 5,
+     "row_colour": "#F2EEFB",
+     "words": [
+      "busy",
+      "late",
+      "forget",
+      "relax",
+      "weekend"
+     ]
+    }
+   ],
+   "saturday": {
+    "weekly_review": true,
+    "grammar": "g02",
+    "story": null
+   },
+   "grammar": "g02",
+   "cat_unlock": null,
+   "followed_by": "m1"
+  },
+  {
+   "id": "t05",
+   "no": 5,
+   "season": 1,
+   "week": 5,
+   "emoji": "🍱",
+   "zh": "食物",
+   "short_zh": "食物",
+   "en": "Food",
+   "description": "日常食物、肉類海鮮、蔬果、點心甜品，同埋講味道（甜、鹹、辣、好味）。食物 icon 已全部畫好。",
+   "description_en": "Everyday food, meat and seafood, fruit and vegetables, snacks, and taste words. All 25 icons are drawn.",
+   "icon": "assets/icons/noodles.png",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "row_colour": "#FFF3E0",
+     "words": [
+      "rice",
+      "noodles",
+      "bread",
+      "egg",
+      "chicken"
+     ]
+    },
+    {
+     "day": 2,
+     "row_colour": "#FDEBF0",
+     "words": [
+      "beef",
+      "pork",
+      "fish",
+      "shrimp",
+      "vegetable"
+     ]
+    },
+    {
+     "day": 3,
+     "row_colour": "#EEF7EC",
+     "words": [
+      "tomato",
+      "carrot",
+      "fruit",
+      "apple",
+      "banana"
+     ]
+    },
+    {
+     "day": 4,
+     "row_colour": "#EAF4FB",
+     "words": [
+      "orange",
+      "soup",
+      "sandwich",
+      "dumpling",
+      "cake"
+     ]
+    },
+    {
+     "day": 5,
+     "row_colour": "#F2EEFB",
+     "words": [
+      "cheese",
+      "sweet",
+      "salty",
+      "spicy",
+      "delicious"
+     ]
+    }
+   ],
+   "saturday": {
+    "weekly_review": true,
+    "grammar": null,
+    "story": "deferred"
+   },
+   "grammar": null,
+   "cat_unlock": null,
+   "followed_by": null
+  },
+  {
+   "id": "t06",
+   "no": 6,
+   "season": 1,
+   "week": 6,
+   "emoji": "🧋",
+   "zh": "飲品同茶餐廳",
+   "short_zh": "茶餐廳",
+   "en": "Drinks & Café",
+   "description": "奶茶、檸茶、咖啡等飲品；茶餐廳常見食物（多士、腸仔、火腿、通粉）；落單、埋單、走冰少甜。",
+   "description_en": "Drinks, cha chaan teng classics, and ordering phrases like no ice / less sugar.",
+   "icon": null,
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "row_colour": "#FFF3E0",
+     "words": [
+      "water",
+      "milk",
+      "tea",
+      "coffee",
+      "juice"
+     ]
+    },
+    {
+     "day": 2,
+     "row_colour": "#FDEBF0",
+     "words": [
+      "lemon",
+      "ice",
+      "sugar",
+      "cup",
+      "straw"
+     ]
+    },
+    {
+     "day": 3,
+     "row_colour": "#EEF7EC",
+     "words": [
+      "toast",
+      "butter",
+      "sausage",
+      "ham",
+      "macaroni"
+     ]
+    },
+    {
+     "day": 4,
+     "row_colour": "#EAF4FB",
+     "words": [
+      "order",
+      "menu",
+      "bill",
+      "waiter",
+      "takeaway"
+     ]
+    },
+    {
+     "day": 5,
+     "row_colour": "#F2EEFB",
+     "words": [
+      "hungry",
+      "thirsty",
+      "drink",
+      "full",
+      "less"
+     ]
+    }
+   ],
+   "saturday": {
+    "weekly_review": true,
+    "grammar": "g03",
+    "story": null
+   },
+   "grammar": "g03",
+   "cat_unlock": null,
+   "followed_by": null
+  },
+  {
+   "id": "t07",
+   "no": 7,
+   "season": 1,
+   "week": 7,
+   "emoji": "👕",
+   "zh": "衣服",
+   "short_zh": "衣服",
+   "en": "Clothes",
+   "description": "衫褲鞋襪、外套、配件、校服，同埋 wear、size、loose / tight、a pair of。",
+   "description_en": "Clothes, shoes, accessories, school uniform, and size / fit words.",
+   "icon": null,
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "row_colour": "#FFF3E0",
+     "words": [
+      "clothes",
+      "shirt",
+      "trousers",
+      "skirt",
+      "dress"
+     ]
+    },
+    {
+     "day": 2,
+     "row_colour": "#FDEBF0",
+     "words": [
+      "jacket",
+      "coat",
+      "sweater",
+      "jeans",
+      "shorts"
+     ]
+    },
+    {
+     "day": 3,
+     "row_colour": "#EEF7EC",
+     "words": [
+      "shoes",
+      "socks",
+      "hat",
+      "scarf",
+      "gloves"
+     ]
+    },
+    {
+     "day": 4,
+     "row_colour": "#EAF4FB",
+     "words": [
+      "bag",
+      "belt",
+      "pocket",
+      "button",
+      "uniform"
+     ]
+    },
+    {
+     "day": 5,
+     "row_colour": "#F2EEFB",
+     "words": [
+      "wear",
+      "size",
+      "loose",
+      "tight",
+      "pair"
+     ]
+    }
+   ],
+   "saturday": {
+    "weekly_review": true,
+    "grammar": null,
+    "story": "deferred"
+   },
+   "grammar": null,
+   "cat_unlock": null,
+   "followed_by": null
+  },
+  {
+   "id": "t08",
+   "no": 8,
+   "season": 1,
+   "week": 8,
+   "emoji": "🎨",
+   "zh": "顏色、形狀、數字",
+   "short_zh": "顏色數字",
+   "en": "Colours & Numbers",
+   "description": "十種顏色、基本形狀、大數字（hundred / thousand / million）、一半、第一，同埋大細圓。",
+   "description_en": "Ten colours, basic shapes, big numbers, half / first, and size words.",
+   "icon": null,
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "row_colour": "#FFF3E0",
+     "words": [
+      "red",
+      "yellow",
+      "blue",
+      "green",
+      "pink"
+     ]
+    },
+    {
+     "day": 2,
+     "row_colour": "#FDEBF0",
+     "words": [
+      "white",
+      "black",
+      "brown",
+      "grey",
+      "purple"
+     ]
+    },
+    {
+     "day": 3,
+     "row_colour": "#EEF7EC",
+     "words": [
+      "colour",
+      "shape",
+      "circle",
+      "square",
+      "triangle"
+     ]
+    },
+    {
+     "day": 4,
+     "row_colour": "#EAF4FB",
+     "words": [
+      "number",
+      "hundred",
+      "thousand",
+      "million",
+      "half"
+     ]
+    },
+    {
+     "day": 5,
+     "row_colour": "#F2EEFB",
+     "words": [
+      "count",
+      "first",
+      "big",
+      "small",
+      "round"
+     ]
+    }
+   ],
+   "saturday": {
+    "weekly_review": true,
+    "grammar": "g04",
+    "story": null
+   },
+   "grammar": "g04",
+   "cat_unlock": null,
+   "followed_by": "m2"
+  },
+  {
+   "id": "t09",
+   "no": 9,
+   "season": 1,
+   "week": 9,
+   "emoji": "🌦️",
+   "zh": "天氣",
+   "short_zh": "天氣",
+   "en": "Weather",
+   "description": "晴、陰、雨、風；冷熱潮濕；雨、雪、颱風、行雷；天氣預報；四季。",
+   "description_en": "Weather types, temperature words, typhoons and storms, forecasts, and the four seasons.",
+   "icon": null,
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "row_colour": "#FFF3E0",
+     "words": [
+      "weather",
+      "sunny",
+      "cloudy",
+      "rainy",
+      "windy"
+     ]
+    },
+    {
+     "day": 2,
+     "row_colour": "#FDEBF0",
+     "words": [
+      "hot",
+      "cold",
+      "warm",
+      "cool",
+      "humid"
+     ]
+    },
+    {
+     "day": 3,
+     "row_colour": "#EEF7EC",
+     "words": [
+      "rain",
+      "snow",
+      "storm",
+      "typhoon",
+      "thunder"
+     ]
+    },
+    {
+     "day": 4,
+     "row_colour": "#EAF4FB",
+     "words": [
+      "sun",
+      "sky",
+      "rainbow",
+      "temperature",
+      "forecast"
+     ]
+    },
+    {
+     "day": 5,
+     "row_colour": "#F2EEFB",
+     "words": [
+      "umbrella",
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+     ]
+    }
+   ],
+   "saturday": {
+    "weekly_review": true,
+    "grammar": null,
+    "story": "deferred"
+   },
+   "grammar": null,
+   "cat_unlock": null,
+   "followed_by": null
+  },
+  {
+   "id": "t10",
+   "no": 10,
+   "season": 1,
+   "week": 10,
+   "emoji": "📅",
+   "zh": "時間同日期",
+   "short_zh": "時間日期",
+   "en": "Time & Dates",
+   "description": "鐘、鐘頭、分鐘；星期一至日；今日、聽日、琴日；日期、生日、假期、一個骨。",
+   "description_en": "Clock time, the seven days, today / tomorrow / yesterday, dates, birthdays and holidays.",
+   "icon": null,
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "row_colour": "#FFF3E0",
+     "words": [
+      "time",
+      "clock",
+      "hour",
+      "minute",
+      "second"
+     ]
+    },
+    {
+     "day": 2,
+     "row_colour": "#FDEBF0",
+     "words": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+     ]
+    },
+    {
+     "day": 3,
+     "row_colour": "#EEF7EC",
+     "words": [
+      "saturday",
+      "sunday",
+      "week",
+      "month",
+      "year"
+     ]
+    },
+    {
+     "day": 4,
+     "row_colour": "#EAF4FB",
+     "words": [
+      "today",
+      "tomorrow",
+      "yesterday",
+      "date",
+      "calendar"
+     ]
+    },
+    {
+     "day": 5,
+     "row_colour": "#F2EEFB",
+     "words": [
+      "birthday",
+      "holiday",
+      "quarter",
+      "weekday",
+      "tonight"
+     ]
+    }
+   ],
+   "saturday": {
+    "weekly_review": true,
+    "grammar": "g05",
+    "story": null
+   },
+   "grammar": "g05",
+   "cat_unlock": null,
+   "followed_by": null
+  },
+  {
+   "id": "t11",
+   "no": 11,
+   "season": 1,
+   "week": 11,
+   "emoji": "🐾",
+   "zh": "動物同寵物",
+   "short_zh": "動物寵物",
+   "en": "Animals & Pets",
+   "description": "寵物（貓、狗、倉鼠、金魚）、動物園動物、農場動物，同埋餵、尾巴、可愛、貓仔。",
+   "description_en": "Pets, zoo animals and farm animals, plus feed / tail / cute / kitten.",
+   "icon": null,
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "row_colour": "#FFF3E0",
+     "words": [
+      "animal",
+      "pet",
+      "cat",
+      "dog",
+      "rabbit"
+     ]
+    },
+    {
+     "day": 2,
+     "row_colour": "#FDEBF0",
+     "words": [
+      "bird",
+      "hamster",
+      "goldfish",
+      "turtle",
+      "mouse"
+     ]
+    },
+    {
+     "day": 3,
+     "row_colour": "#EEF7EC",
+     "words": [
+      "lion",
+      "tiger",
+      "elephant",
+      "monkey",
+      "panda"
+     ]
+    },
+    {
+     "day": 4,
+     "row_colour": "#EAF4FB",
+     "words": [
+      "cow",
+      "pig",
+      "horse",
+      "sheep",
+      "duck"
+     ]
+    },
+    {
+     "day": 5,
+     "row_colour": "#F2EEFB",
+     "words": [
+      "feed",
+      "tail",
+      "cute",
+      "kitten",
+      "zoo"
+     ]
+    }
+   ],
+   "saturday": {
+    "weekly_review": true,
+    "grammar": null,
+    "story": "deferred"
+   },
+   "grammar": null,
+   "cat_unlock": null,
+   "followed_by": null
+  },
+  {
+   "id": "t12",
+   "no": 12,
+   "season": 1,
+   "week": 12,
+   "emoji": "😊",
+   "zh": "情緒",
+   "short_zh": "情緒",
+   "en": "Feelings",
+   "description": "開心、唔開心、嬲、驚、緊張等情緒，笑、喊、攬，同埋用 because 講原因。",
+   "description_en": "Feelings and emotions, smiling / crying / hugging, and giving reasons with because.",
+   "icon": null,
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "row_colour": "#FFF3E0",
+     "words": [
+      "happy",
+      "sad",
+      "angry",
+      "scared",
+      "excited"
+     ]
+    },
+    {
+     "day": 2,
+     "row_colour": "#FDEBF0",
+     "words": [
+      "tired",
+      "bored",
+      "nervous",
+      "worried",
+      "surprised"
+     ]
+    },
+    {
+     "day": 3,
+     "row_colour": "#EEF7EC",
+     "words": [
+      "feel",
+      "smile",
+      "laugh",
+      "cry",
+      "hug"
+     ]
+    },
+    {
+     "day": 4,
+     "row_colour": "#EAF4FB",
+     "words": [
+      "love",
+      "hate",
+      "hope",
+      "miss",
+      "sorry"
+     ]
+    },
+    {
+     "day": 5,
+     "row_colour": "#F2EEFB",
+     "words": [
+      "calm",
+      "proud",
+      "lonely",
+      "shy",
+      "because"
+     ]
+    }
+   ],
+   "saturday": {
+    "weekly_review": true,
+    "grammar": "g06",
+    "story": null
+   },
+   "grammar": "g06",
+   "cat_unlock": null,
+   "followed_by": "m3"
+  }
+ ],
+ "monthly_reviews": [
+  {
+   "id": "m1",
+   "no": 1,
+   "after_week": 4,
+   "themes": [
+    "t01",
+    "t02",
+    "t03",
+    "t04"
+   ],
+   "word_pool": 100,
+   "questions": 30,
+   "match_groups": 3,
+   "xp": 40,
+   "cat_unlock": {
+    "cat": "fafa",
+    "trigger": "first_monthly_review"
+   }
+  },
+  {
+   "id": "m2",
+   "no": 2,
+   "after_week": 8,
+   "themes": [
+    "t05",
+    "t06",
+    "t07",
+    "t08"
+   ],
+   "word_pool": 100,
+   "questions": 30,
+   "match_groups": 3,
+   "xp": 40,
+   "cat_unlock": null
+  },
+  {
+   "id": "m3",
+   "no": 3,
+   "after_week": 12,
+   "themes": [
+    "t09",
+    "t10",
+    "t11",
+    "t12"
+   ],
+   "word_pool": 100,
+   "questions": 30,
+   "match_groups": 3,
+   "xp": 40,
+   "cat_unlock": null
+  }
+ ],
+ "quarterly_review": {
+  "id": "q1",
+  "week": 13,
+  "emoji": "👑",
+  "zh": "季度複習週",
+  "map_label_zh": "季度大複習",
+  "review_days": [
+   {
+    "day": 1,
+    "themes": [
+     "t01",
+     "t02",
+     "t03"
+    ]
+   },
+   {
+    "day": 2,
+    "themes": [
+     "t04",
+     "t05",
+     "t06"
+    ]
+   },
+   {
+    "day": 3,
+    "themes": [
+     "t07",
+     "t08"
+    ]
+   },
+   {
+    "day": 4,
+    "themes": [
+     "t09",
+     "t10"
+    ]
+   },
+   {
+    "day": 5,
+    "themes": [
+     "t11",
+     "t12"
+    ]
+   }
+  ],
+  "review_day_questions": 15,
+  "review_day_xp": 20,
+  "exam": {
+   "day": 6,
+   "zh": "季度大考",
+   "word_pool": 300,
+   "questions": 40,
+   "match_groups": 4,
+   "xp": 60
+  },
+  "cat_unlock": {
+   "cat": "tongyun",
+   "trigger": "complete_season_1",
+   "note": "湯圓 unlocks when the week-13 quarterly exam is completed."
+  }
+ },
+ "later_seasons": [
+  {
+   "season": 2,
+   "zh": "出去曬太陽",
+   "emoji": "☀️",
+   "weeks": "14–26",
+   "status": "coming_soon",
+   "theme_emojis": "🚌🧭🛍️💰🍽️🏥⚽🎸✈️⛰️🏖️📱",
+   "unlock_cat": "lammui",
+   "bg": "#FFF7E0",
+   "border": "#F6E3A6"
+  },
+  {
+   "season": 3,
+   "zh": "返學返工",
+   "emoji": "🍂",
+   "weeks": "27–39",
+   "status": "coming_soon",
+   "theme_emojis": "🏫📚📝🤝🪞🎒🧹🍳🏘️🎬🧑‍🍳💼",
+   "unlock_cat": "daihung",
+   "bg": "#FFF1E6",
+   "border": "#F4D3B5"
+  },
+  {
+   "season": 4,
+   "zh": "窩喺被竇",
+   "emoji": "❄️",
+   "weeks": "40–52",
+   "status": "coming_soon",
+   "theme_emojis": "♻️📰💻🚨📋💬❤️🎯🎉🏙️🌟🚀",
+   "unlock_cat": "baubau",
+   "bg": "#EEF5FB",
+   "border": "#CFE3F2"
+  }
+ ]
+}
