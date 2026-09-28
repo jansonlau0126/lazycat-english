@@ -472,31 +472,115 @@
       }
       return this.voices[0] || null;
     },
-    speak(text, slow) {
+    speak(text, slow, opt) {
       if (!text) return;
       if (!this.ok) { toast("你部機唔支援發音 😢"); return; }
-      try {
-        speechSynthesis.cancel();
-        const u = new SpeechSynthesisUtterance(text);
-        const v = this.pick();
-        if (v) { u.voice = v; u.lang = v.lang; } else u.lang = "en-GB";
-        u.rate = slow ? 0.55 : 0.9;
-        speechSynthesis.speak(u);
-      } catch (e) {}
+      opt = opt || {};
+      if (!opt.auto) {
+        this.userAt = Date.now();
+        clearTimeout(this.autoTimer);
+      }
+      this.gen = (this.gen || 0) + 1;
+      const gen = this.gen;
+      clearTimeout(this.timer);
+      try { speechSynthesis.cancel(); } catch (e) {}
+      // Chrome and Safari drop the rate when speak() follows cancel() in the same turn.
+      this.timer = setTimeout(() => {
+        if (gen !== this.gen) return;
+        try {
+          if (speechSynthesis.paused) speechSynthesis.resume();
+          const u = new SpeechSynthesisUtterance(text);
+          const v = this.pick();
+          if (v) u.voice = v;
+          u.lang = (v && v.lang) || "en-GB";
+          u.rate = slow ? 0.5 : 0.9;
+          u.pitch = slow ? 0.92 : 1;
+          speechSynthesis.speak(u);
+        } catch (e) {}
+      }, 120);
+    },
+    armAuto(text, ms) {
+      clearTimeout(this.autoTimer);
+      const t0 = Date.now();
+      this.autoTimer = setTimeout(() => {
+        if (this.userAt && this.userAt >= t0) return;
+        this.speak(text, false, { auto: true });
+      }, ms || 280);
+    },
+    cancel() {
+      this.gen = (this.gen || 0) + 1;
+      clearTimeout(this.timer);
+      clearTimeout(this.autoTimer);
+      try { speechSynthesis.cancel(); } catch (e) {}
     }
   };
   const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   let AC = null;
-  function beep(kind) {
-    if (!S.settings.sound) return;
+  function audioCtx() {
     try {
       AC = AC || new (window.AudioContext || window.webkitAudioContext)();
+      if (AC.state === "suspended") AC.resume();
+      return AC;
+    } catch (e) { return null; }
+  }
+  const MEOWS = {
+    fanshu: { a: 380, b: 720, c: 300, dur: 0.4, form: 1000, type: "triangle" },
+    huihui: { a: 540, b: 880, c: 460, dur: 0.26, form: 900, type: "sine" },
+    zima: { a: 190, b: 340, c: 150, dur: 0.55, form: 620, type: "triangle" },
+    banban: { a: 440, b: 920, c: 380, dur: 0.32, form: 1300, type: "triangle" },
+    fafa: { a: 620, b: 1120, c: 520, dur: 0.28, form: 1600, type: "sine" },
+    kafe: { a: 740, b: 1280, c: 600, dur: 0.24, form: 1850, type: "triangle" },
+    tongyun: { a: 300, b: 520, c: 250, dur: 0.42, form: 720, type: "sine" },
+    aigwa: { a: 900, b: 1520, c: 720, dur: 0.18, form: 2100, type: "sine" },
+    lammui: { a: 340, b: 640, c: 280, dur: 0.38, form: 1100, type: "triangle" },
+    minfa: { a: 480, b: 820, c: 400, dur: 0.3, form: 1450, type: "sine" },
+    suetgo: { a: 780, b: 1340, c: 640, dur: 0.2, form: 1900, type: "triangle" },
+    naisik: { a: 400, b: 680, c: 320, dur: 0.44, form: 860, type: "sine" },
+    daihung: { a: 160, b: 300, c: 130, dur: 0.62, form: 500, type: "triangle" },
+    daufu: { a: 460, b: 760, c: 360, dur: 0.34, form: 1200, type: "sine" },
+    baubau: { a: 660, b: 1220, c: 560, dur: 0.22, form: 1700, type: "triangle" }
+  };
+  function meow(slug, kind) {
+    if (!S.settings.sound) return;
+    const p = MEOWS[slug] || MEOWS.fanshu;
+    const ac = audioCtx();
+    if (!ac) return;
+    const n = kind === "done" ? 2 : 1;
+    try {
+      for (let i = 0; i < n; i++) {
+        const t0 = ac.currentTime + 0.02 + i * (p.dur * 0.72 + 0.08);
+        const lift = kind === "done" && i === 1 ? 1.2 : (kind === "start" ? 1.05 : 1);
+        const o = ac.createOscillator();
+        const g = ac.createGain();
+        const f = ac.createBiquadFilter();
+        o.type = p.type;
+        o.frequency.setValueAtTime(p.a * lift, t0);
+        o.frequency.exponentialRampToValueAtTime(p.b * lift, t0 + p.dur * 0.36);
+        o.frequency.exponentialRampToValueAtTime(Math.max(70, p.c * lift), t0 + p.dur);
+        f.type = "bandpass";
+        f.frequency.setValueAtTime(p.form, t0);
+        f.Q.value = 5;
+        const peak = kind === "done" ? 0.2 : 0.16;
+        g.gain.setValueAtTime(0.0001, t0);
+        g.gain.exponentialRampToValueAtTime(peak, t0 + 0.035);
+        g.gain.exponentialRampToValueAtTime(peak * 0.55, t0 + p.dur * 0.5);
+        g.gain.exponentialRampToValueAtTime(0.0001, t0 + p.dur);
+        o.connect(f); f.connect(g); g.connect(ac.destination);
+        o.start(t0); o.stop(t0 + p.dur + 0.03);
+      }
+    } catch (e) {}
+  }
+  function beep(kind) {
+    if (!S.settings.sound) return;
+    const ac = audioCtx();
+    if (!ac) return;
+    try {
       const seq = kind === "ok" ? [[660, 0], [990, .09]] : kind === "bad" ? [[196, 0], [155, .13]] : [[523, 0], [659, .12], [784, .24], [1047, .38]];
       seq.forEach(([f, t]) => {
-        const o = AC.createOscillator(), g = AC.createGain(), t0 = AC.currentTime + t;
+        const o = ac.createOscillator(), g = ac.createGain(), t0 = ac.currentTime + t;
         o.type = kind === "bad" ? "sawtooth" : "triangle"; o.frequency.value = f;
         g.gain.setValueAtTime(0.0001, t0); g.gain.exponentialRampToValueAtTime(kind === "bad" ? 0.06 : 0.15, t0 + 0.02); g.gain.exponentialRampToValueAtTime(0.0001, t0 + 0.28);
-        o.connect(g); g.connect(AC.destination); o.start(t0); o.stop(t0 + 0.3);
+        o.connect(g); g.connect(ac.destination); o.start(t0); o.stop(t0 + 0.3);
       });
     } catch (e) {}
   }
@@ -558,6 +642,6 @@
     openSaturday, blockingMonthly, nextQuarterly, activeTheme, currentWeek, themeWordsLearned, wordLearnedOnCard,
     grammarDoneCount, monthlyDoneCount, unlockValue, ruleMet, checkUnlocks, albumMath, poseUnlocked, lockedProgressText, hairTint,
     placeholderMode, iconKind, renderIcon, tileHTML, iconErr, themeIconHTML, themeSlug, cardFileName, cropStyle, faceHTML, companion,
-    toast, closeModal, modal, TTS, SR, beep, highlight, tipHTML, maybeAwardYarn, ui
+    toast, closeModal, modal, TTS, SR, beep, meow, highlight, tipHTML, maybeAwardYarn, ui
   });
 })(window.LC = window.LC || {});

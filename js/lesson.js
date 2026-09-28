@@ -131,7 +131,10 @@
     const el = document.createElement("div"); el.className = "lesson"; el.id = "lesson";
     el.innerHTML = '<div class="lhead"><button class="xbtn" data-act="quit" aria-label="離開">✕</button><div class="lprog"><i></i></div><div class="lhearts"></div></div><div class="lbody"></div><div class="lfoot"></div><div class="fb"></div>';
     $("#app").appendChild(el);
+    el.classList.add("arriving");
     renderStep();
+    LC.meow(S.companion, "start");
+    setTimeout(() => { if (el.isConnected) el.classList.remove("arriving"); }, 700);
   }
   function updateProgress() {
     const p = $("#lesson .lprog>i"); if (p) p.style.width = Math.min(100, Math.round(100 * L.doneCount / L.total)) + "%";
@@ -177,7 +180,7 @@
       '<div class="sec tip">' + tipHTML(w.tip) + "</div>";
     const skip = L.replay ? '<button class="btn ghost sm" data-act="skipcards">跳過生字卡</button>' : "";
     setFoot(skip + '<button class="btn" data-act="next">' + (last ? "明白喇！開始小測驗 💪" : "明白喇，下一個 →") + "</button>");
-    if (S.settings.sound) setTimeout(() => TTS.speak(w.word, false), 250);
+    if (S.settings.sound) TTS.armAuto(w.word, 680);
   }
   function renderIntro(st, body) {
     const g = st.g, s = st.section;
@@ -196,10 +199,10 @@
     let h = '<div class="qtype">' + TYPE_LABEL[e.t] + "</div>";
     if (e.t === "listen") {
       h += '<div class="qtitle">你聽到邊個字？</div><div class="playrow"><button class="ab orange big" data-speak="' + esc(w.word) + '"><span class="emoji">🔊</span>聽發音</button><button class="ab" data-speak="' + esc(w.word) + '" data-slow="1"><span class="emoji">🐢</span>慢速</button></div>' + optBtns(e.opts);
-      setTimeout(() => TTS.speak(w.word), 280);
+      if (S.settings.sound) TTS.armAuto(w.word, 280);
     } else if (e.t === "meaning") {
       h += '<div class="qtitle">呢個字係咩意思？</div><div class="speech">' + cat + '<div class="bubble"><button class="spk" data-speak="' + esc(w.word) + '">🔊</button><span class="bigword speakable" data-speak="' + esc(w.word) + '">' + esc(w.word) + "</span></div></div>" + optBtns(e.opts);
-      setTimeout(() => TTS.speak(w.word), 280);
+      if (S.settings.sound) TTS.armAuto(w.word, 280);
     } else if (e.t === "reverse") {
       h += '<div class="qtitle">揀出啱嘅英文字</div><div class="speech">' + cat + '<div class="bubble">「' + esc(w.meaning_zh) + '」<div class="qsub">英文點講？</div></div></div>' + optBtns(e.opts);
     } else if (e.t === "fill") {
@@ -291,6 +294,12 @@
   function showFeedback(ok, okDetail, ans, why) {
     L.checked = true; L.answered++;
     const fb = $("#lesson .fb");
+    const lesson = $("#lesson");
+    if (lesson) {
+      lesson.classList.remove("okpeek", "badpeek");
+      void lesson.offsetWidth;
+      lesson.classList.add(ok ? "okpeek" : "badpeek");
+    }
     if (ok) { L.correct++; L.doneCount++; beep("ok"); }
     else {
       L.mistakes++; beep("bad");
@@ -378,7 +387,7 @@
       learned + (ext ? '<div class="learned fire">🔥 連續學習 ' + S.streak + " 日！</div>" : "") + "</div>";
     $("#lesson .fb").className = "fb";
     setFoot('<button class="btn" data-act="done">繼續</button>');
-    beep("win");
+    LC.meow(S.companion, "done");
     const box = $("#lesson .complete");
     if (box) ["#F59A3E", "#FFD66B", "#F7B5C4", "#8FD6AE", "#8FCBEA", "#B7A6E6"].forEach((col, i) => {});
     for (let i = 0; i < 28; i++) {
@@ -392,7 +401,7 @@
   }
   function closeLesson() {
     const el = $("#lesson"); if (el) el.remove();
-    try { speechSynthesis.cancel(); } catch (e) {}
+    TTS.cancel();
     L = null;
   }
   function quitLesson() {

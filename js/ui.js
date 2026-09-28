@@ -152,8 +152,10 @@
     const due = dueWords().length;
     const dueChip = due ? '<button class="due-chip" data-act="review">🧠 你有 <b>' + due + "</b> 個字今日要複習<span>去複習 →</span></button>" : "";
     const strip = weekStrip(theme);
+    const frame = heroFrame();
+    const zzz = frame.nap ? '<span class="zzz z1">z</span><span class="zzz z2">z</span><span class="zzz z3">Z</span>' : "";
     return '<div class="page home">' +
-      '<div class="hero"><img class="heroimg" src="' + esc(HERO.file) + '" alt="番薯瞓緊"><div class="shade"></div><span class="zzz z1">z</span><span class="zzz z2">z</span><span class="zzz z3">Z</span><div class="bubble"><b>' + esc(ht) + "</b>" + esc(hb) + "</div></div>" +
+      '<div class="hero ' + frame.motion + '" data-act="poke" role="button" tabindex="0" aria-label="撳一下睇' + esc(frame.name) + '下一個動作"><img class="heroimg" src="' + esc(frame.src) + '" alt="' + esc(frame.alt) + '" style="object-position:' + frame.pos + '"><div class="shade"></div>' + zzz + '<span class="heroname">' + esc(frame.label) + '</span><div class="bubble"><b>' + esc(ht) + "</b>" + esc(hb) + "</div></div>" +
       themeCard +
       '<div class="card today"><div class="row"><h3>' + esc(todayCard.title) + "</h3>" + (todayCard.learned ? '<span class="pill sun">' + todayCard.learned + "</span>" : "") + "</div>" +
       (todayCard.sub && !todayCard.learned ? '<p class="muted">' + esc(todayCard.sub) + "</p>" : "") +
@@ -475,7 +477,7 @@
       '<div class="setrow"><span>🔊 試聽</span><button class="btn sm" data-speak="Hello! Nice to meet you.">Hello!</button></div>' +
       '<div class="setrow"><span>每日問我揀陪讀貓</span><button class="switch' + (S.settings.askCompanionDaily ? " on" : "") + '" data-act="askcat"></button></div>' +
       '<div class="setrow"><span>顯示音標</span><button class="switch' + (S.settings.showIPA ? " on" : "") + '" data-act="ipa"></button></div>' +
-      '<div class="setrow col"><span>生字圖示</span><div class="segs tiny"><button data-act="svg" data-v="0"' + (!S.settings.svgIcons ? ' class="on"' : "") + '>字母方塊（預設）</button><button data-act="svg" data-v="1"' + (S.settings.svgIcons ? ' class="on"' : "") + ">向量圖（試用）</button></div><p class=\"fine\">向量圖（試用・第 1 課題）只覆蓋自我介紹同家人。手繪圖永遠優先。</p></div>" +
+      '<div class="setrow col"><span>生字圖示</span><div class="segs tiny"><button data-act="svg" data-v="0"' + (!S.settings.svgIcons ? ' class="on"' : "") + '>字母方塊（預設）</button><button data-act="svg" data-v="1"' + (S.settings.svgIcons ? ' class="on"' : "") + ">向量圖（試用）</button></div><p class=\"fine\">向量圖（試用）覆蓋自我介紹同家人、身體、屋企、日常作息。手繪圖永遠優先。</p></div>" +
       '<div class="setrow"><button class="btn ghost sm" data-act="export">匯出進度</button><button class="btn ghost sm" data-act="import">匯入進度</button></div>' +
       '<p class="fine center">懶貓英文 v1.0（第 1 季）</p><input id="importFile" type="file" accept="application/json" hidden></div>';
   }
@@ -684,12 +686,18 @@
     $("#app").appendChild(el);
   }
   function renderCompare() {
-    const ids = THEMES[0].days.flatMap(d => d.words);
+    const themes = THEMES.filter(t => t.days.some(d => d.words.some(id => LC.SVG_SET.has(id))));
+    const theme = themes.find(t => t.id === ui.compareTheme) || themes[0] || THEMES[0];
+    const tabs = themes.map(t => '<button class="' + (t.id === theme.id ? "on" : "") + '" data-act="cmp" data-id="' + t.id + '">' + t.emoji + "</button>").join("");
+    const ids = theme.days.flatMap(d => d.words);
     const cells = ids.map(id => {
       const w = WORD[id];
-      return '<div class="cmp"><div class="cmprow"><div>' + tileHTML(w, 56, "tile") + '<small>字母</small></div><div><span class="itile svg" style="width:56px;height:56px;border-radius:16px;background:' + DAY_COLORS[w.day].tile + '"><img alt="" src="assets/icons-svg/' + id + '.svg" width="48" height="48"></span><small>向量</small></div><div>' + tileHTML(w, 56, "emoji") + '<small>表情</small></div></div><b>' + esc(w.word) + "</b></div>";
+      const svg = LC.SVG_SET.has(id)
+        ? '<span class="itile svg" style="width:56px;height:56px;border-radius:16px;background:' + DAY_COLORS[w.day].tile + '"><img alt="" src="assets/icons-svg/' + id + '.svg" width="48" height="48"></span>'
+        : tileHTML(w, 56, "tile");
+      return '<div class="cmp"><div class="cmprow"><div>' + tileHTML(w, 56, "tile") + '<small>字母</small></div><div>' + svg + '<small>向量</small></div><div>' + tileHTML(w, 56, "emoji") + '<small>表情</small></div></div><b>' + esc(w.word) + "</b></div>";
     }).join("");
-    return '<div class="page"><div class="chead"><button class="back" data-act="closecompare" aria-label="返回">‹</button><h2>圖示比較</h2></div><p class="fine">第 1 週 25 個字 ・ tile │ SVG │ emoji。手繪 PNG 永遠優先於向量圖。</p><div class="cmpgrid">' + cells + "</div></div>";
+    return '<div class="page"><div class="chead"><button class="back" data-act="closecompare" aria-label="返回">‹</button><h2>圖示比較</h2></div><div class="segs tiny">' + tabs + '</div><p class="fine">' + esc(theme.zh) + " ・ 字母 │ 向量 │ 表情。手繪 PNG 永遠優先於向量圖。</p><div class=\"cmpgrid\">" + cells + "</div></div>";
   }
 
   async function exportCard(themeId, share) {
@@ -867,9 +875,55 @@
     reader.readAsText(file);
   }
 
+  const MOTION_ZH = { nap: "", wave: "揮手", hop: "跳起", stretch: "伸懶腰", happy: "開心" };
+  function heroFrame() {
+    const cat = companion();
+    const motion = ui.heroMotion || "nap";
+    const lessons = (S.cats[cat.slug] && S.cats[cat.slug].lessons) || 0;
+    const poseOk = key => {
+      const meta = POSES.find(p => p.key === key);
+      return !!(meta && cat.poses && cat.poses[key] && poseUnlocked(cat.slug, meta, lessons));
+    };
+    let src = cat.photo;
+    let pos = Math.round((cat.crop.fx || 0.5) * 100) + "% " + Math.round(((cat.crop.ey || 0.4)) * 100) + "%";
+    let alt = cat.name_zh;
+    let nap = false;
+    if (motion === "nap") {
+      nap = true;
+      if (cat.slug === "fanshu") {
+        src = HERO.file;
+        pos = "40% 62%";
+        alt = "番薯瞓緊";
+      } else if (poseOk("sleep")) {
+        src = cat.poses.sleep;
+        pos = "50% 55%";
+        alt = cat.name_zh + "瞓緊";
+      } else alt = cat.name_zh + "陪緊你";
+    } else if (motion === "stretch" && poseOk("stretch")) {
+      src = cat.poses.stretch;
+      pos = "50% 55%";
+      alt = cat.name_zh + "伸懶腰";
+    } else if (motion === "happy" && poseOk("happy")) {
+      src = cat.poses.happy;
+      pos = "50% 45%";
+      alt = cat.name_zh + "好開心";
+    } else if (motion === "wave" && poseOk("sit")) {
+      alt = cat.name_zh + "揮手";
+    }
+    const extra = MOTION_ZH[motion] || "";
+    return { src, pos, alt, motion, nap, name: cat.name_zh, label: extra ? cat.name_zh + "・" + extra : cat.name_zh };
+  }
+  function pokeHero() {
+    const order = ["nap", "wave", "hop", "stretch", "happy"];
+    const i = Math.max(0, order.indexOf(ui.heroMotion || "nap"));
+    ui.heroMotion = order[(i + 1) % order.length];
+    LC.meow(S.companion, "poke");
+    render();
+  }
+
   Object.assign(LC, {
     render, renderTop, showCelebration, nextCelebration, heartsModal, openCompanion, shouldAskCompanion,
     openDev, devAction, exportCard, openMapSheet, openLightbox, fitWords, preview, exportProgress, importProgress,
-    homeToday, MAP_POS, mapNodeState
+    homeToday, pokeHero, MAP_POS, mapNodeState
   });
 })(window.LC);
