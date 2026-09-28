@@ -400,13 +400,17 @@ ICONS["together"] = (
     + f'<path d="M60 84 Q64 90 70 82" {st(3)} fill="none"/>'
 )
 
-assert len(ICONS) == 25, len(ICONS)
-for wid, body in ICONS.items():
-    path = os.path.join(OUT, wid + ".svg")
-    data = svg(body)
-    if len(data.encode()) > 4096:
-        raise SystemExit(f"{wid} is {len(data)} bytes")
-    if "<text" in data or "href=" in data or "://" in data.replace("http://www.w3.org/2000/svg", ""):
-        raise SystemExit(f"{wid} has text or external ref")
-    open(path, "w", encoding="utf-8").write(data)
-print(f"wrote {len(ICONS)} icons to {OUT}")
+def write_icons(icons):
+    for wid, body in icons.items():
+        path = os.path.join(OUT, wid + ".svg")
+        data = svg(body)
+        if len(data.encode()) > 4096:
+            raise SystemExit(f"{wid} is {len(data)} bytes")
+        if "<text" in data or "href=" in data or "://" in data.replace("http://www.w3.org/2000/svg", ""):
+            raise SystemExit(f"{wid} has text or external ref")
+        open(path, "w", encoding="utf-8").write(data)
+
+if __name__ == "__main__":
+    assert len(ICONS) == 25, len(ICONS)
+    write_icons(ICONS)
+    print(f"wrote {len(ICONS)} icons to {OUT}")

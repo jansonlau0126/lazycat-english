@@ -17,6 +17,11 @@
     const dbl = lastSpeak.el === el && now - lastSpeak.t < 300;
     const slow = el.getAttribute("data-slow") === "1" || dbl;
     lastSpeak = { el, t: now };
+    el.classList.remove("is-speak", "is-slow");
+    void el.offsetWidth;
+    el.classList.add(slow ? "is-slow" : "is-speak");
+    clearTimeout(el._speakT);
+    el._speakT = setTimeout(() => el.classList.remove("is-speak", "is-slow"), slow ? 1100 : 500);
     TTS.speak(text, slow);
   }
 
@@ -167,7 +172,7 @@
     if (name === "info") { wordSheet(el.dataset.id); return; }
     if (name === "closealbum") { ui.album = null; LC.render(); return; }
     if (name === "album") { ui.album = el.dataset.id; LC.render(); return; }
-    if (name === "setcomp") { S.companion = el.dataset.id; save(); toast("今日陪讀貓換成" + (CAT[S.companion] || {}).name_zh); LC.render(); return; }
+    if (name === "setcomp") { S.companion = el.dataset.id; ui.heroMotion = "nap"; save(); toast("今日陪讀貓換成" + (CAT[S.companion] || {}).name_zh); LC.render(); return; }
     if (name === "goal") { S.settings.goal = +el.dataset.v; save(); LC.render(); return; }
     if (name === "cal") {
       const d = ui.calMonth || new Date();
@@ -231,7 +236,7 @@
       LC.nextCelebration();
       return;
     }
-    if (name === "cel-comp") { S.companion = el.dataset.id; save(); LC.nextCelebration(); return; }
+    if (name === "cel-comp") { S.companion = el.dataset.id; ui.heroMotion = "nap"; save(); LC.nextCelebration(); return; }
     if (name === "cel-album") {
       if (S.celebrationQueue && S.celebrationQueue.length) S.celebrationQueue.shift();
       save();
@@ -257,6 +262,7 @@
     if (name === "compradio") { ui.pick = el.dataset.id; refreshCompanionRows(); return; }
     if (name === "comppick") {
       S.companion = ui.pick || S.companion;
+      ui.heroMotion = "nap";
       save();
       const then = ui.afterCompanion;
       ui.afterCompanion = null;
@@ -276,6 +282,8 @@
     if (name === "companion") { LC.openCompanion(); return; }
     if (name === "dev") { LC.devAction(el.dataset.d); return; }
     if (name === "closecompare") { ui.tab = "home"; LC.render(); return; }
+    if (name === "cmp") { ui.compareTheme = el.dataset.id; LC.render(); return; }
+    if (name === "poke") { LC.pokeHero(); return; }
   }
 
   document.addEventListener("click", e => {
