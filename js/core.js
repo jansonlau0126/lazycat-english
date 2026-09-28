@@ -524,61 +524,78 @@
     } catch (e) { return null; }
   }
   function unlockAudio() { audioCtx(); }
+  // Adult meow: F0 rises then falls; the mouth opens from a close "ee" to an open "ow"
+  // (F1 rises, F2 falls). Kittens sit higher and shorter; big cats sit lower and longer.
   const MEOWS = {
-    fanshu: { a: 380, b: 720, c: 300, dur: 0.4, form: 1000, type: "triangle" },
-    huihui: { a: 540, b: 880, c: 460, dur: 0.26, form: 900, type: "sine" },
-    zima: { a: 190, b: 340, c: 150, dur: 0.55, form: 620, type: "triangle" },
-    banban: { a: 440, b: 920, c: 380, dur: 0.32, form: 1300, type: "triangle" },
-    fafa: { a: 620, b: 1120, c: 520, dur: 0.28, form: 1600, type: "sine" },
-    kafe: { a: 740, b: 1280, c: 600, dur: 0.24, form: 1850, type: "triangle" },
-    tongyun: { a: 300, b: 520, c: 250, dur: 0.42, form: 720, type: "sine" },
-    aigwa: { a: 900, b: 1520, c: 720, dur: 0.18, form: 2100, type: "sine" },
-    lammui: { a: 340, b: 640, c: 280, dur: 0.38, form: 1100, type: "triangle" },
-    minfa: { a: 480, b: 820, c: 400, dur: 0.3, form: 1450, type: "sine" },
-    suetgo: { a: 780, b: 1340, c: 640, dur: 0.2, form: 1900, type: "triangle" },
-    naisik: { a: 400, b: 680, c: 320, dur: 0.44, form: 860, type: "sine" },
-    daihung: { a: 160, b: 300, c: 130, dur: 0.62, form: 500, type: "triangle" },
-    daufu: { a: 460, b: 760, c: 360, dur: 0.34, form: 1200, type: "sine" },
-    baubau: { a: 660, b: 1220, c: 560, dur: 0.22, form: 1700, type: "triangle" }
+    fanshu: { a: 480, b: 640, c: 390, dur: 0.62, vib: 5, depth: 16, f1: [520, 920], f2: [2100, 1350] },
+    huihui: { a: 560, b: 690, c: 500, dur: 0.46, vib: 4, depth: 8, f1: [480, 780], f2: [1800, 1400] },
+    zima: { a: 320, b: 420, c: 250, dur: 0.78, vib: 4.2, depth: 12, f1: [420, 760], f2: [1700, 1200] },
+    banban: { a: 500, b: 700, c: 430, dur: 0.52, vib: 6, depth: 18, f1: [540, 980], f2: [2200, 1400] },
+    fafa: { a: 640, b: 840, c: 560, dur: 0.44, vib: 6.2, depth: 14, f1: [560, 1000], f2: [2300, 1500] },
+    kafe: { a: 700, b: 880, c: 600, dur: 0.5, vib: 5, depth: 10, f1: [450, 700], f2: [2400, 1900] },
+    tongyun: { a: 400, b: 510, c: 340, dur: 0.58, vib: 3.4, depth: 7, f1: [400, 680], f2: [1500, 1100] },
+    aigwa: { a: 900, b: 1120, c: 780, dur: 0.36, vib: 7, depth: 20, f1: [620, 1100], f2: [2600, 1700] },
+    lammui: { a: 440, b: 580, c: 360, dur: 0.6, vib: 5, depth: 11, f1: [500, 860], f2: [1900, 1300] },
+    minfa: { a: 520, b: 660, c: 450, dur: 0.5, vib: 4, depth: 8, f1: [480, 820], f2: [2000, 1450] },
+    suetgo: { a: 760, b: 980, c: 660, dur: 0.36, vib: 7, depth: 16, f1: [600, 1050], f2: [2500, 1600] },
+    naisik: { a: 460, b: 600, c: 400, dur: 0.64, vib: 4, depth: 9, f1: [500, 880], f2: [1850, 1280] },
+    daihung: { a: 240, b: 310, c: 190, dur: 0.92, vib: 3.2, depth: 8, f1: [360, 640], f2: [1400, 1000] },
+    daufu: { a: 500, b: 640, c: 430, dur: 0.54, vib: 5, depth: 11, f1: [510, 900], f2: [2000, 1380] },
+    baubau: { a: 680, b: 880, c: 560, dur: 0.4, vib: 6.5, depth: 18, f1: [580, 1020], f2: [2400, 1550] }
   };
   function scheduleMeow(ac, slug, kind, when) {
     const p = MEOWS[slug] || MEOWS.fanshu;
     const n = kind === "done" ? 2 : 1;
-    const dur = Math.max(0.34, p.dur);
     for (let i = 0; i < n; i++) {
-      const t0 = when + i * (dur * 0.78 + 0.08);
-      const lift = kind === "done" && i === 1 ? 1.22 : (kind === "start" ? 1.06 : 1);
-      const a = p.a * lift, b = p.b * lift, c = Math.max(90, p.c * lift);
-      const o = ac.createOscillator();
-      const o2 = ac.createOscillator();
-      const g = ac.createGain();
+      const dur = Math.max(0.32, p.dur * (i ? 0.72 : 1));
+      const t0 = when + i * (p.dur * 0.7 + 0.12);
+      const lift = i ? 1.12 : 1;
+      const a = p.a * lift, b = p.b * lift, c = Math.max(80, p.c * lift);
+      const src = ac.createOscillator();
+      const vib = ac.createOscillator();
+      const vibG = ac.createGain();
+      const dry = ac.createGain();
+      const g1 = ac.createGain();
       const g2 = ac.createGain();
+      const master = ac.createGain();
+      const f1 = ac.createBiquadFilter();
+      const f2 = ac.createBiquadFilter();
       const lp = ac.createBiquadFilter();
-      o.type = p.type || "triangle";
-      o2.type = "sine";
-      o.frequency.setValueAtTime(a, t0);
-      o.frequency.linearRampToValueAtTime(b, t0 + dur * 0.38);
-      o.frequency.linearRampToValueAtTime(c, t0 + dur);
-      o2.frequency.setValueAtTime(a * 2, t0);
-      o2.frequency.linearRampToValueAtTime(b * 1.7, t0 + dur * 0.38);
-      o2.frequency.linearRampToValueAtTime(c * 1.45, t0 + dur);
+      src.type = "sawtooth";
+      vib.type = "sine";
+      vib.frequency.value = p.vib;
+      vibG.gain.value = p.depth;
+      vib.connect(vibG);
+      vibG.connect(src.frequency);
+      src.frequency.setValueAtTime(a, t0);
+      src.frequency.linearRampToValueAtTime(b, t0 + dur * 0.32);
+      src.frequency.linearRampToValueAtTime(c, t0 + dur);
+      f1.type = "bandpass";
+      f1.Q.value = 3.2;
+      f1.frequency.setValueAtTime(p.f1[0], t0);
+      f1.frequency.linearRampToValueAtTime(p.f1[1], t0 + dur * 0.62);
+      f2.type = "bandpass";
+      f2.Q.value = 4;
+      f2.frequency.setValueAtTime(p.f2[0], t0);
+      f2.frequency.linearRampToValueAtTime(p.f2[1], t0 + dur * 0.55);
       lp.type = "lowpass";
-      lp.frequency.setValueAtTime(Math.max(700, a * 2), t0);
-      lp.frequency.linearRampToValueAtTime(Math.max(1600, b * 2.4), t0 + dur * 0.38);
-      lp.frequency.linearRampToValueAtTime(Math.max(500, c * 1.6), t0 + dur);
-      lp.Q.value = 0.6;
-      const peak = kind === "done" ? 0.46 : 0.4;
-      g.gain.setValueAtTime(0.0001, t0);
-      g.gain.exponentialRampToValueAtTime(peak, t0 + 0.045);
-      g.gain.setValueAtTime(peak * 0.72, t0 + dur * 0.42);
-      g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
-      g2.gain.setValueAtTime(0.0001, t0);
-      g2.gain.exponentialRampToValueAtTime(peak * 0.28, t0 + 0.05);
-      g2.gain.exponentialRampToValueAtTime(0.0001, t0 + dur * 0.9);
-      o.connect(lp); lp.connect(g); g.connect(ac.destination);
-      o2.connect(g2); g2.connect(ac.destination);
-      o.start(t0); o.stop(t0 + dur + 0.03);
-      o2.start(t0); o2.stop(t0 + dur + 0.03);
+      lp.frequency.setValueAtTime(900, t0);
+      lp.frequency.linearRampToValueAtTime(1800, t0 + dur * 0.4);
+      lp.frequency.linearRampToValueAtTime(700, t0 + dur);
+      dry.gain.value = 0.1;
+      g1.gain.value = 0.34;
+      g2.gain.value = 0.2;
+      const peak = 0.85;
+      master.gain.setValueAtTime(0.0001, t0);
+      master.gain.exponentialRampToValueAtTime(peak, t0 + 0.07);
+      master.gain.setValueAtTime(peak * 0.8, t0 + dur * 0.55);
+      master.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+      src.connect(lp); lp.connect(dry); dry.connect(master);
+      src.connect(f1); f1.connect(g1); g1.connect(master);
+      src.connect(f2); f2.connect(g2); g2.connect(master);
+      master.connect(ac.destination);
+      vib.start(t0); vib.stop(t0 + dur + 0.04);
+      src.start(t0); src.stop(t0 + dur + 0.04);
     }
   }
   function meow(slug, kind) {

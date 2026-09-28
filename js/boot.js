@@ -172,7 +172,7 @@
     if (name === "info") { wordSheet(el.dataset.id); return; }
     if (name === "closealbum") { ui.album = null; LC.render(); return; }
     if (name === "album") { ui.album = el.dataset.id; LC.render(); return; }
-    if (name === "setcomp") { S.companion = el.dataset.id; ui.heroMotion = "nap"; save(); toast("今日陪讀貓換成" + (CAT[S.companion] || {}).name_zh); LC.meow(S.companion, "pick"); LC.render(); return; }
+    if (name === "setcomp") { S.companion = el.dataset.id; save(); toast("今日陪讀貓換成" + (CAT[S.companion] || {}).name_zh); LC.meow(S.companion, "pick"); LC.render(); return; }
     if (name === "goal") { S.settings.goal = +el.dataset.v; save(); LC.render(); return; }
     if (name === "cal") {
       const d = ui.calMonth || new Date();
@@ -236,7 +236,7 @@
       LC.nextCelebration();
       return;
     }
-    if (name === "cel-comp") { S.companion = el.dataset.id; ui.heroMotion = "nap"; save(); LC.meow(S.companion, "pick"); LC.nextCelebration(); return; }
+    if (name === "cel-comp") { S.companion = el.dataset.id; save(); LC.meow(S.companion, "pick"); LC.nextCelebration(); return; }
     if (name === "cel-album") {
       if (S.celebrationQueue && S.celebrationQueue.length) S.celebrationQueue.shift();
       save();
@@ -262,7 +262,6 @@
     if (name === "compradio") { ui.pick = el.dataset.id; refreshCompanionRows(); LC.meow(ui.pick, "pick"); return; }
     if (name === "comppick") {
       S.companion = ui.pick || S.companion;
-      ui.heroMotion = "nap";
       save();
       LC.meow(S.companion, "pick");
       const then = ui.afterCompanion;
@@ -284,9 +283,6 @@
     if (name === "dev") { LC.devAction(el.dataset.d); return; }
     if (name === "closecompare") { ui.tab = "home"; LC.render(); return; }
     if (name === "cmp") { ui.compareTheme = el.dataset.id; LC.render(); return; }
-    if (name === "poke") { LC.pokeHero(); return; }
-    if (name === "pose") { LC.setHeroMotion(el.dataset.m); return; }
-    if (name === "seecards") { ui.tab = "icons"; LC.render(); return; }
   }
 
   document.addEventListener("click", e => {
