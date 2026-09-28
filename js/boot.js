@@ -182,7 +182,6 @@
     }
     if (name === "sound") { S.settings.sound = !S.settings.sound; save(); LC.render(); return; }
     if (name === "askcat") { S.settings.askCompanionDaily = !S.settings.askCompanionDaily; save(); LC.render(); return; }
-    if (name === "svg") { S.settings.svgIcons = el.dataset.v === "1"; save(); LC.render(); return; }
     if (name === "export") { LC.exportProgress(); return; }
     if (name === "import") { const f = $("#importFile"); if (f) f.click(); return; }
     if (name === "quit") { quitPrompt(); return; }

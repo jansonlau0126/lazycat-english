@@ -16,7 +16,7 @@
   const SVG_SET = new Set(DATA.svgIds || []);
 
   const ICON_PLACEHOLDER = "tile";
-  const SVG_ICON_TRIAL = true;
+  const SVG_ICON_TRIAL = false;
   const NEW_LESSONS_PER_DAY = 1;
   const CATCHUP_UNLIMITED = true;
   const CATCHUP_ON_SUNDAY = false;
@@ -89,7 +89,7 @@
     out.perfectThemes = Array.isArray(s.perfectThemes) ? s.perfectThemes : [];
     out.celebrationQueue = Array.isArray(s.celebrationQueue) ? s.celebrationQueue : [];
     if (!out.cats.fanshu) out.cats.fanshu = { unlocked: out.createdAt || d.createdAt, lessons: 0, bonus: null, seen: false };
-    if (out.settings.svgIcons !== true) out.settings.svgIcons = false;
+    out.settings.svgIcons = false;
     if (out.devIconMode !== "emoji" && out.devIconMode !== "tile") out.devIconMode = null;
     return out;
   }
@@ -366,7 +366,6 @@
   function placeholderMode() { return S.devIconMode === "emoji" ? "emoji" : "tile"; }
   function iconKind(word) {
     if (word.icon) return "png";
-    if (SVG_ICON_TRIAL && S.settings.svgIcons && SVG_SET.has(word.id)) return "svg";
     return placeholderMode();
   }
   const PAW_SVG = '<svg class="ipaw" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="16" rx="5.2" ry="4.2"/><ellipse cx="6.2" cy="10.6" rx="2.1" ry="2.6"/><ellipse cx="17.8" cy="10.6" rx="2.1" ry="2.6"/><ellipse cx="9.2" cy="6.6" rx="2" ry="2.5"/><ellipse cx="14.8" cy="6.6" rx="2" ry="2.5"/></svg>';
