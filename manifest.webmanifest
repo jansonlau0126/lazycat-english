@@ -1,0 +1,14 @@
+{
+  "name": "懶貓英文・每日五個字",
+  "short_name": "懶貓英文",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FFF8EE",
+  "theme_color": "#FFF8EE",
+  "lang": "zh-HK",
+  "icons": [
+    { "src": "assets/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
