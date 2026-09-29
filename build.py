@@ -156,7 +156,7 @@ def cache_bust() -> None:
 def main() -> None:
     print("copy assets")
     OUT.mkdir(exist_ok=True)
-    for name in ("cats", "poses", "icons", "icons-svg"):
+    for name in ("cats", "poses", "icons", "icons-svg", "meows"):
         copy_dir(name)
     if FONTS.exists():
         shutil.rmtree(FONTS)

@@ -65,6 +65,32 @@
    "locked_hint": "？？？"
   },
   {
+   "key": "actA",
+   "n": 5,
+   "zh": "新動作",
+   "emoji": "✨",
+   "unlock": "companion_lessons",
+   "lessons_needed": 20,
+   "tag_zh": "陪讀 20 堂",
+   "object_position": "50% 50%",
+   "title_tpl": "{name}有新相喇！",
+   "quote": "陪你學完 20 堂，影多張相紀念吓。",
+   "locked_hint": "佢會做咩呢？"
+  },
+  {
+   "key": "actB",
+   "n": 6,
+   "zh": "又一個動作",
+   "emoji": "🌟",
+   "unlock": "companion_lessons",
+   "lessons_needed": 25,
+   "tag_zh": "陪讀 25 堂",
+   "object_position": "50% 50%",
+   "title_tpl": "{name}又有新相！",
+   "quote": "25 堂喇，我慢慢伸個懶腰，再陪你。",
+   "locked_hint": "仲有一張相"
+  },
+  {
    "key": "yarn",
    "n": 5,
    "zh": "玩毛線",
@@ -81,10 +107,12 @@
  ],
  "album_rule": {
   "lessons_per_photo": 5,
-  "max_regular_photos": 3,
-  "formula": "regular_unlocked = min(3, floor(companion_lessons / 5))",
-  "album_denominator": 4,
-  "bonus_counts_in_denominator": false
+  "max_regular_photos": 5,
+  "formula": "regular_unlocked = 1 + count of gates 5, 10, 15, 20, 25 reached",
+  "album_denominator": 6,
+  "bonus_counts_in_denominator": false,
+  "act_a_lessons": 20,
+  "act_b_lessons": 25
  },
  "cats": [
   {
@@ -108,7 +136,21 @@
     "sleep": "assets/poses/fanshu-sleep.webp",
     "stretch": "assets/poses/fanshu-stretch.webp",
     "happy": "assets/poses/fanshu-happy.webp",
-    "yarn": "assets/poses/fanshu-yarn.webp"
+    "yarn": "assets/poses/fanshu-yarn.webp",
+    "actA": "assets/poses/fanshu-act-a.webp",
+    "actB": "assets/poses/fanshu-act-b.webp"
+   },
+   "act": {
+    "a": {
+     "zh": "追老鼠",
+     "title": "{name}追緊隻老鼠！",
+     "quote": "追完隻老鼠，我要瞓返陣先。"
+    },
+    "b": {
+     "zh": "望窗",
+     "title": "{name}望住窗外。",
+     "quote": "望吓窗外就夠，出街可以慢慢嚟。"
+    }
    },
    "unlock": {
     "type": "starter",
@@ -139,7 +181,21 @@
     "sleep": "assets/poses/huihui-sleep.webp",
     "stretch": "assets/poses/huihui-stretch.webp",
     "happy": "assets/poses/huihui-happy.webp",
-    "yarn": "assets/poses/huihui-yarn.webp"
+    "yarn": "assets/poses/huihui-yarn.webp",
+    "actA": "assets/poses/huihui-act-a.webp",
+    "actB": "assets/poses/huihui-act-b.webp"
+   },
+   "act": {
+    "a": {
+     "zh": "紙袋",
+     "title": "{name}躲咗入紙袋。",
+     "quote": "紙袋裏面好靜，我躲一陣先。"
+    },
+    "b": {
+     "zh": "窗台",
+     "title": "{name}趴喺窗台。",
+     "quote": "窗台晒到太陽，瞓陣先算。"
+    }
    },
    "unlock": {
     "type": "lessons_completed",
@@ -170,7 +226,21 @@
     "sleep": "assets/poses/zima-sleep.webp",
     "stretch": "assets/poses/zima-stretch.webp",
     "happy": "assets/poses/zima-happy.webp",
-    "yarn": "assets/poses/zima-yarn.webp"
+    "yarn": "assets/poses/zima-yarn.webp",
+    "actA": "assets/poses/zima-act-a.webp",
+    "actB": "assets/poses/zima-act-b.webp"
+   },
+   "act": {
+    "a": {
+     "zh": "毛線球",
+     "title": "{name}玩緊毛線球。",
+     "quote": "毛線波波好好玩，玩完先休息。"
+    },
+    "b": {
+     "zh": "摸下巴",
+     "title": "{name}俾人摸下巴。",
+     "quote": "摸下巴最舒服，慢慢嚟。"
+    }
    },
    "unlock": {
     "type": "theme_cards",
@@ -201,7 +271,21 @@
     "sleep": "assets/poses/banban-sleep.webp",
     "stretch": "assets/poses/banban-stretch.webp",
     "happy": "assets/poses/banban-happy.webp",
-    "yarn": "assets/poses/banban-yarn.webp"
+    "yarn": "assets/poses/banban-yarn.webp",
+    "actA": "assets/poses/banban-act-a.webp",
+    "actB": "assets/poses/banban-act-b.webp"
+   },
+   "act": {
+    "a": {
+     "zh": "逗貓棒",
+     "title": "{name}追緊逗貓棒。",
+     "quote": "逗貓棒晃兩下，我就歇吓。"
+    },
+    "b": {
+     "zh": "偷睇",
+     "title": "{name}偷偷望住你。",
+     "quote": "我偷偷望你學英文，睇完先瞓。"
+    }
    },
    "unlock": {
     "type": "best_streak",
@@ -232,7 +316,21 @@
     "sleep": "assets/poses/fafa-sleep.webp",
     "stretch": "assets/poses/fafa-stretch.webp",
     "happy": "assets/poses/fafa-happy.webp",
-    "yarn": "assets/poses/fafa-yarn.webp"
+    "yarn": "assets/poses/fafa-yarn.webp",
+    "actA": "assets/poses/fafa-act-a.webp",
+    "actB": "assets/poses/fafa-act-b.webp"
+   },
+   "act": {
+    "a": {
+     "zh": "鍵盤",
+     "title": "{name}趴咗喺鍵盤上面。",
+     "quote": "鍵盤暖暖哋，趴一陣先。"
+    },
+    "b": {
+     "zh": "紙箱",
+     "title": "{name}坐咗入紙箱。",
+     "quote": "紙箱就係我屋企，慢慢嚟。"
+    }
    },
    "unlock": {
     "type": "monthly_reviews",
@@ -263,7 +361,21 @@
     "sleep": "assets/poses/kafe-sleep.webp",
     "stretch": "assets/poses/kafe-stretch.webp",
     "happy": "assets/poses/kafe-happy.webp",
-    "yarn": "assets/poses/kafe-yarn.webp"
+    "yarn": "assets/poses/kafe-yarn.webp",
+    "actA": "assets/poses/kafe-act-a.webp",
+    "actB": "assets/poses/kafe-act-b.webp"
+   },
+   "act": {
+    "a": {
+     "zh": "開聲",
+     "title": "{name}開聲叫你。",
+     "quote": "我開聲叫你一聲，就繼續瞓。"
+    },
+    "b": {
+     "zh": "趴窗",
+     "title": "{name}趴喺窗邊。",
+     "quote": "趴喺窗邊睇風景，唔急住。"
+    }
    },
    "unlock": {
     "type": "best_streak",
@@ -294,7 +406,21 @@
     "sleep": "assets/poses/tongyun-sleep.webp",
     "stretch": "assets/poses/tongyun-stretch.webp",
     "happy": "assets/poses/tongyun-happy.webp",
-    "yarn": "assets/poses/tongyun-yarn.webp"
+    "yarn": "assets/poses/tongyun-yarn.webp",
+    "actA": "assets/poses/tongyun-act-a.webp",
+    "actB": "assets/poses/tongyun-act-b.webp"
+   },
+   "act": {
+    "a": {
+     "zh": "摺耳",
+     "title": "{name}摺埋對耳。",
+     "quote": "摺埋對耳，世界靜啲。"
+    },
+    "b": {
+     "zh": "毯子",
+     "title": "{name}鑽咗入毯仔。",
+     "quote": "毯仔好暖，一齊慢慢學。"
+    }
    },
    "unlock": {
     "type": "season_complete",
@@ -325,7 +451,21 @@
     "sleep": "assets/poses/aigwa-sleep.webp",
     "stretch": "assets/poses/aigwa-stretch.webp",
     "happy": "assets/poses/aigwa-happy.webp",
-    "yarn": "assets/poses/aigwa-yarn.webp"
+    "yarn": "assets/poses/aigwa-yarn.webp",
+    "actA": "assets/poses/aigwa-act-a.webp",
+    "actB": "assets/poses/aigwa-act-b.webp"
+   },
+   "act": {
+    "a": {
+     "zh": "小紙箱",
+     "title": "{name}躲入小紙箱。",
+     "quote": "小紙箱啱晒我，躲埋先。"
+    },
+    "b": {
+     "zh": "壁櫃",
+     "title": "{name}坐喺壁櫃入面。",
+     "quote": "壁櫃裏面好暗，瞓得安心。"
+    }
    },
    "unlock": {
     "type": "mastered_words",
@@ -356,7 +496,21 @@
     "sleep": "assets/poses/lammui-sleep.webp",
     "stretch": "assets/poses/lammui-stretch.webp",
     "happy": "assets/poses/lammui-happy.webp",
-    "yarn": "assets/poses/lammui-yarn.webp"
+    "yarn": "assets/poses/lammui-yarn.webp",
+    "actA": "assets/poses/lammui-act-a.webp",
+    "actB": "assets/poses/lammui-act-b.webp"
+   },
+   "act": {
+    "a": {
+     "zh": "鏡",
+     "title": "{name}望住塊鏡。",
+     "quote": "鏡入面又有一隻我，嚇親自己。"
+    },
+    "b": {
+     "zh": "木盒",
+     "title": "{name}趴喺木盒度。",
+     "quote": "木盒好窄，我鍾意。"
+    }
    },
    "unlock": {
     "type": "season_complete",
@@ -387,7 +541,21 @@
     "sleep": "assets/poses/minfa-sleep.webp",
     "stretch": "assets/poses/minfa-stretch.webp",
     "happy": "assets/poses/minfa-happy.webp",
-    "yarn": "assets/poses/minfa-yarn.webp"
+    "yarn": "assets/poses/minfa-yarn.webp",
+    "actA": "assets/poses/minfa-act-a.webp",
+    "actB": "assets/poses/minfa-act-b.webp"
+   },
+   "act": {
+    "a": {
+     "zh": "毛毛蟲",
+     "title": "{name}玩緊毛毛蟲。",
+     "quote": "毛毛蟲玩具，玩兩下就攰。"
+    },
+    "b": {
+     "zh": "抱住",
+     "title": "{name}抱住你。",
+     "quote": "抱住你，一齊慢慢學。"
+    }
    },
    "unlock": {
     "type": "perfect_lessons",
@@ -418,7 +586,21 @@
     "sleep": "assets/poses/suetgo-sleep.webp",
     "stretch": "assets/poses/suetgo-stretch.webp",
     "happy": "assets/poses/suetgo-happy.webp",
-    "yarn": "assets/poses/suetgo-yarn.webp"
+    "yarn": "assets/poses/suetgo-yarn.webp",
+    "actA": "assets/poses/suetgo-act-a.webp",
+    "actB": "assets/poses/suetgo-act-b.webp"
+   },
+   "act": {
+    "a": {
+     "zh": "白長毛",
+     "title": "{name}梳緊啲白毛。",
+     "quote": "白毛太多，梳完先瞓。"
+    },
+    "b": {
+     "zh": "伸懶腰",
+     "title": "{name}又伸個懶腰。",
+     "quote": "伸多個大懶腰，再陪你一陣。"
+    }
    },
    "unlock": {
     "type": "best_streak",
@@ -449,7 +631,21 @@
     "sleep": "assets/poses/daihung-sleep.webp",
     "stretch": "assets/poses/daihung-stretch.webp",
     "happy": "assets/poses/daihung-happy.webp",
-    "yarn": "assets/poses/daihung-yarn.webp"
+    "yarn": "assets/poses/daihung-yarn.webp",
+    "actA": "assets/poses/daihung-act-a.webp",
+    "actB": "assets/poses/daihung-act-b.webp"
+   },
+   "act": {
+    "a": {
+     "zh": "大懶覺",
+     "title": "{name}瞓緊大懶覺。",
+     "quote": "大懶覺瞓得好，慢慢先起身。"
+    },
+    "b": {
+     "zh": "欄杆",
+     "title": "{name}趴喺欄杆上面。",
+     "quote": "欄杆上面涼涼哋，望一陣先落嚟。"
+    }
    },
    "unlock": {
     "type": "season_complete",
@@ -480,7 +676,21 @@
     "sleep": "assets/poses/daufu-sleep.webp",
     "stretch": "assets/poses/daufu-stretch.webp",
     "happy": "assets/poses/daufu-happy.webp",
-    "yarn": "assets/poses/daufu-yarn.webp"
+    "yarn": "assets/poses/daufu-yarn.webp",
+    "actA": "assets/poses/daufu-act-a.webp",
+    "actB": "assets/poses/daufu-act-b.webp"
+   },
+   "act": {
+    "a": {
+     "zh": "粉紅無毛",
+     "title": "{name}展示粉紅無毛。",
+     "quote": "冇毛都好暖，慢慢嚟。"
+    },
+    "b": {
+     "zh": "伸手",
+     "title": "{name}伸隻手出嚟。",
+     "quote": "伸隻手同你打招呼，打完先瞓。"
+    }
    },
    "unlock": {
     "type": "grammar_done",
@@ -511,7 +721,21 @@
     "sleep": "assets/poses/naisik-sleep.webp",
     "stretch": "assets/poses/naisik-stretch.webp",
     "happy": "assets/poses/naisik-happy.webp",
-    "yarn": "assets/poses/naisik-yarn.webp"
+    "yarn": "assets/poses/naisik-yarn.webp",
+    "actA": "assets/poses/naisik-act-a.webp",
+    "actB": "assets/poses/naisik-act-b.webp"
+   },
+   "act": {
+    "a": {
+     "zh": "貓樹",
+     "title": "{name}爬上貓樹。",
+     "quote": "貓樹高高，爬完要休息。"
+    },
+    "b": {
+     "zh": "絲帶",
+     "title": "{name}玩緊條絲帶。",
+     "quote": "絲帶晃兩下，我就夠喇。"
+    }
    },
    "unlock": {
     "type": "xp",
@@ -542,7 +766,21 @@
     "sleep": "assets/poses/baubau-sleep.webp",
     "stretch": "assets/poses/baubau-stretch.webp",
     "happy": "assets/poses/baubau-happy.webp",
-    "yarn": "assets/poses/baubau-yarn.webp"
+    "yarn": "assets/poses/baubau-yarn.webp",
+    "actA": "assets/poses/baubau-act-a.webp",
+    "actB": "assets/poses/baubau-act-b.webp"
+   },
+   "act": {
+    "a": {
+     "zh": "打滾",
+     "title": "{name}喺度打滾。",
+     "quote": "打完個滾，我要攤一陣。"
+    },
+    "b": {
+     "zh": "水碗",
+     "title": "{name}飲緊水。",
+     "quote": "飲啖水，再陪你學多兩個字。"
+    }
    },
    "unlock": {
     "type": "words_learned",

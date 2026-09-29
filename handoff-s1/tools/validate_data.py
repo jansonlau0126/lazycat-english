@@ -71,5 +71,6 @@ for md in [f for f in os.listdir(".") if f.endswith(".md")]:
         check(os.path.isfile(p), f"{md}: referenced file does not exist: {p}")
 if fails:
     print("FAILED:\n  " + "\n  ".join(fails)); sys.exit(1)
+photos = sum(len(c["poses"]) for c in C["cats"])
 print(f"OK: {len(W)} unique words, 12 themes x 25, 5 days x 5; {sum(1 for w in W if w['icon'])} icons present, "
-      f"{sum(1 for w in W if not w['icon'])} icon: null; {len(svg_ids)} trial SVG icons; 6 grammar lessons; 15 cats with 75 photos; all referenced files exist.")
+      f"{sum(1 for w in W if not w['icon'])} icon: null; {len(svg_ids)} trial SVG icons; 6 grammar lessons; 15 cats with {photos} photos; all referenced files exist.")
