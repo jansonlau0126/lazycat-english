@@ -1,0 +1,1079 @@
+{
+ "season": 3,
+ "lessons": [
+  {
+   "id": "g13",
+   "no": 13,
+   "week": 2,
+   "emoji": "👩‍🏫",
+   "title": "have to / don't have to",
+   "en": "have to",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "一定要",
+     "p": "<b>have to</b> + 動詞原形，表示規定或者不得不。<br>he / she 用 <b>has to</b>。",
+     "ex": [
+      [
+       "I have to be quiet.",
+       "我一定要安靜。"
+      ],
+      [
+       "She has to wear a uniform.",
+       "佢一定要著校服。"
+      ]
+     ]
+    },
+    {
+     "h": "唔使",
+     "p": "<b>don't have to</b> 係「唔使」，唔係「唔准」。<br>唔准用 must not 或者 can't。",
+     "ex": [
+      [
+       "You don't have to run.",
+       "你唔使跑。"
+      ],
+      [
+       "We must not shout.",
+       "我哋唔准大叫。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "mc",
+     "q": "I ___ line up.",
+     "zh": "我一定要排隊。",
+     "o": [
+      "have to",
+      "has to",
+      "having to",
+      "have"
+     ],
+     "a": 0,
+     "why": "I 用 have to。"
+    },
+    {
+     "t": "mc",
+     "q": "He ___ be polite.",
+     "zh": "佢一定要有禮。",
+     "o": [
+      "has to",
+      "have to",
+      "have",
+      "is to"
+     ],
+     "a": 0,
+     "why": "he 用 has to。"
+    },
+    {
+     "t": "mc",
+     "q": "You ___ shout. It is a free choice.",
+     "zh": "你唔使大叫。",
+     "o": [
+      "don't have to",
+      "must not",
+      "has not",
+      "aren't"
+     ],
+     "a": 0,
+     "why": "唔使用 don't have to；must not 係唔准。"
+    },
+    {
+     "t": "fill",
+     "q": "She has to ___ the homework.",
+     "zh": "佢一定要做功課。",
+     "a": [
+      "do",
+      "finish"
+     ],
+     "why": "has to + 原形。"
+    },
+    {
+     "t": "fill",
+     "q": "We don't have to ___ today.",
+     "zh": "我哋今日唔使留低。填 stay。",
+     "a": [
+      "stay"
+     ],
+     "why": "don't have to + 原形。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "我一定要聽老師講。",
+     "a": "I have to listen.",
+     "extra": [
+      "has",
+      "to to"
+     ],
+     "why": "I have to + 原形。"
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "I ___ line up.",
+     "zh": "我一定要排隊。",
+     "o": [
+      "have to",
+      "has to",
+      "having to",
+      "have"
+     ],
+     "a": 0,
+     "why": "I 用 have to。"
+    },
+    {
+     "t": "mc",
+     "q": "He ___ be polite.",
+     "zh": "佢一定要有禮。",
+     "o": [
+      "has to",
+      "have to",
+      "have",
+      "is to"
+     ],
+     "a": 0,
+     "why": "he 用 has to。"
+    },
+    {
+     "t": "mc",
+     "q": "You ___ shout. It is a free choice.",
+     "zh": "你唔使大叫。",
+     "o": [
+      "don't have to",
+      "must not",
+      "has not",
+      "aren't"
+     ],
+     "a": 0,
+     "why": "唔使用 don't have to；must not 係唔准。"
+    },
+    {
+     "t": "fill",
+     "q": "She has to ___ the homework.",
+     "zh": "佢一定要做功課。",
+     "a": [
+      "do",
+      "finish"
+     ],
+     "why": "has to + 原形。"
+    },
+    {
+     "t": "fill",
+     "q": "We don't have to ___ today.",
+     "zh": "我哋今日唔使留低。填 stay。",
+     "a": [
+      "stay"
+     ],
+     "why": "don't have to + 原形。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "我一定要聽老師講。",
+     "a": "I have to listen.",
+     "extra": [
+      "has",
+      "to to"
+     ],
+     "why": "I have to + 原形。"
+    }
+   ]
+  },
+  {
+   "id": "g14",
+   "no": 14,
+   "week": 4,
+   "emoji": "📝",
+   "title": "過去式（規則動詞）",
+   "en": "past simple, regular verbs",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "講已經發生嘅事",
+     "p": "規則動詞過去式多數加 <b>-ed</b>。<br>以 e 結尾只加 d：revise → revised。",
+     "ex": [
+      [
+       "I passed the test.",
+       "我合格咗。"
+      ],
+      [
+       "She studied Chinese yesterday.",
+       "佢尋日溫中文。"
+      ],
+      [
+       "We finished the project.",
+       "我哋做完個專題。"
+      ]
+     ]
+    },
+    {
+     "h": "否定同問句",
+     "p": "過去式否定同問句用 <b>did</b>，動詞變返原形。<br>✅ I didn't pass.　❌ I didn't passed.<br>✅ Did you study? ",
+     "ex": [
+      [
+       "Did you finish the worksheet?",
+       "你做完工作紙未？"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "mc",
+     "q": "I ___ the quiz yesterday.",
+     "zh": "我尋日合格咗個小測。",
+     "o": [
+      "passed",
+      "pass",
+      "passing",
+      "passes"
+     ],
+     "a": 0,
+     "why": "尋日已經發生，用 passed。"
+    },
+    {
+     "t": "mc",
+     "q": "She didn't ___ the homework.",
+     "zh": "佢冇做完功課。",
+     "o": [
+      "finish",
+      "finished",
+      "finishes",
+      "finishing"
+     ],
+     "a": 0,
+     "why": "did 後面用原形。"
+    },
+    {
+     "t": "mc",
+     "q": "___ you study last night?",
+     "zh": "你尋晚溫書未？",
+     "o": [
+      "Did",
+      "Do",
+      "Are",
+      "Have"
+     ],
+     "a": 0,
+     "why": "過去問句用 Did。"
+    },
+    {
+     "t": "fill",
+     "q": "We ___ the experiment.",
+     "zh": "我哋做完個實驗。填 finished。",
+     "a": [
+      "finished"
+     ],
+     "why": "過去式加 -ed。"
+    },
+    {
+     "t": "fill",
+     "q": "He ___ not answer the question.",
+     "zh": "佢冇答到條問題。填 did。",
+     "a": [
+      "did"
+     ],
+     "why": "否定用 did not。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "我尋日溫書。",
+     "a": "I revised yesterday.",
+     "extra": [
+      "revise",
+      "did"
+     ],
+     "why": "肯定句直接用 revised。"
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "I ___ the quiz yesterday.",
+     "zh": "我尋日合格咗個小測。",
+     "o": [
+      "passed",
+      "pass",
+      "passing",
+      "passes"
+     ],
+     "a": 0,
+     "why": "尋日已經發生，用 passed。"
+    },
+    {
+     "t": "mc",
+     "q": "She didn't ___ the homework.",
+     "zh": "佢冇做完功課。",
+     "o": [
+      "finish",
+      "finished",
+      "finishes",
+      "finishing"
+     ],
+     "a": 0,
+     "why": "did 後面用原形。"
+    },
+    {
+     "t": "mc",
+     "q": "___ you study last night?",
+     "zh": "你尋晚溫書未？",
+     "o": [
+      "Did",
+      "Do",
+      "Are",
+      "Have"
+     ],
+     "a": 0,
+     "why": "過去問句用 Did。"
+    },
+    {
+     "t": "fill",
+     "q": "We ___ the experiment.",
+     "zh": "我哋做完個實驗。填 finished。",
+     "a": [
+      "finished"
+     ],
+     "why": "過去式加 -ed。"
+    },
+    {
+     "t": "fill",
+     "q": "He ___ not answer the question.",
+     "zh": "佢冇答到條問題。填 did。",
+     "a": [
+      "did"
+     ],
+     "why": "否定用 did not。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "我尋日溫書。",
+     "a": "I revised yesterday.",
+     "extra": [
+      "revise",
+      "did"
+     ],
+     "why": "肯定句直接用 revised。"
+    }
+   ]
+  },
+  {
+   "id": "g15",
+   "no": 15,
+   "week": 6,
+   "emoji": "💡",
+   "title": "should / shouldn't",
+   "en": "should",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "建議",
+     "p": "<b>should</b> + 動詞原形，俾建議，語氣比 must 軟。<br>否定 <b>shouldn't</b>。",
+     "ex": [
+      [
+       "You should revise tonight.",
+       "你今晚應該溫書。"
+      ],
+      [
+       "You shouldn't copy.",
+       "你唔應該抄。"
+      ]
+     ]
+    },
+    {
+     "h": "問句",
+     "p": "<b>Should I …?</b> 用來問意見。",
+     "ex": [
+      [
+       "Should I ask the teacher?",
+       "我應唔應該問老師？"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "mc",
+     "q": "You ___ rest before the exam.",
+     "zh": "考試前你應該休息。",
+     "o": [
+      "should",
+      "should to",
+      "are should",
+      "shoulds"
+     ],
+     "a": 0,
+     "why": "should 後面直接接原形。"
+    },
+    {
+     "t": "mc",
+     "q": "We ___ shout in the hall.",
+     "zh": "我哋唔應該喺禮堂大叫。",
+     "o": [
+      "shouldn't",
+      "should",
+      "don't have",
+      "aren't"
+     ],
+     "a": 0,
+     "why": "唔應該用 shouldn't。"
+    },
+    {
+     "t": "mc",
+     "q": "___ I tell the teacher?",
+     "zh": "我應唔應該話畀老師知？",
+     "o": [
+      "Should",
+      "Do",
+      "Am",
+      "Have"
+     ],
+     "a": 0,
+     "why": "問建議用 Should 開頭。"
+    },
+    {
+     "t": "fill",
+     "q": "You should ___ the question.",
+     "zh": "你應該答條問題。",
+     "a": [
+      "answer"
+     ],
+     "why": "should + 原形。"
+    },
+    {
+     "t": "fill",
+     "q": "She shouldn't ___ in the test.",
+     "zh": "佢測驗唔應該抄。",
+     "a": [
+      "copy"
+     ],
+     "why": "shouldn't + 原形。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "你應該再問一次。",
+     "a": "You should ask again.",
+     "extra": [
+      "to",
+      "asking"
+     ],
+     "why": "should 後面用 ask。"
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "You ___ rest before the exam.",
+     "zh": "考試前你應該休息。",
+     "o": [
+      "should",
+      "should to",
+      "are should",
+      "shoulds"
+     ],
+     "a": 0,
+     "why": "should 後面直接接原形。"
+    },
+    {
+     "t": "mc",
+     "q": "We ___ shout in the hall.",
+     "zh": "我哋唔應該喺禮堂大叫。",
+     "o": [
+      "shouldn't",
+      "should",
+      "don't have",
+      "aren't"
+     ],
+     "a": 0,
+     "why": "唔應該用 shouldn't。"
+    },
+    {
+     "t": "mc",
+     "q": "___ I tell the teacher?",
+     "zh": "我應唔應該話畀老師知？",
+     "o": [
+      "Should",
+      "Do",
+      "Am",
+      "Have"
+     ],
+     "a": 0,
+     "why": "問建議用 Should 開頭。"
+    },
+    {
+     "t": "fill",
+     "q": "You should ___ the question.",
+     "zh": "你應該答條問題。",
+     "a": [
+      "answer"
+     ],
+     "why": "should + 原形。"
+    },
+    {
+     "t": "fill",
+     "q": "She shouldn't ___ in the test.",
+     "zh": "佢測驗唔應該抄。",
+     "a": [
+      "copy"
+     ],
+     "why": "shouldn't + 原形。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "你應該再問一次。",
+     "a": "You should ask again.",
+     "extra": [
+      "to",
+      "asking"
+     ],
+     "why": "should 後面用 ask。"
+    }
+   ]
+  },
+  {
+   "id": "g16",
+   "no": 16,
+   "week": 8,
+   "emoji": "💼",
+   "title": "問職業",
+   "en": "What do you do?",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "做咩工",
+     "p": "問職業：<b>What do you do?</b><br>答：<b>I am a / an</b> + 職業。母音開頭用 an：an engineer, an actor。",
+     "ex": [
+      [
+       "What do you do?",
+       "你做咩工作？"
+      ],
+      [
+       "I am a teacher.",
+       "我係老師。"
+      ],
+      [
+       "She is an engineer.",
+       "佢係工程師。"
+      ]
+     ]
+    },
+    {
+     "h": "he / she",
+     "p": "問第三人稱：<b>What does she do?</b><br>✅ He is a chef.　❌ He is chef.",
+     "ex": [
+      [
+       "What does your father do?",
+       "你爸爸做咩工作？"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "mc",
+     "q": "What ___ you do?",
+     "zh": "你做咩工作？",
+     "o": [
+      "do",
+      "does",
+      "are",
+      "is"
+     ],
+     "a": 0,
+     "why": "you 用 do。"
+    },
+    {
+     "t": "mc",
+     "q": "What ___ she do?",
+     "zh": "佢做咩工作？",
+     "o": [
+      "does",
+      "do",
+      "is",
+      "are"
+     ],
+     "a": 0,
+     "why": "she 用 does。"
+    },
+    {
+     "t": "mc",
+     "q": "I am ___ engineer.",
+     "zh": "我係工程師。",
+     "o": [
+      "an",
+      "a",
+      "the",
+      "one"
+     ],
+     "a": 0,
+     "why": "engineer 母音開頭用 an。"
+    },
+    {
+     "t": "fill",
+     "q": "He is ___ driver.",
+     "zh": "佢係司機。",
+     "a": [
+      "a"
+     ],
+     "why": "driver 子音開頭用 a。"
+    },
+    {
+     "t": "fill",
+     "q": "She is ___ actress.",
+     "zh": "佢係演員。",
+     "a": [
+      "an"
+     ],
+     "why": "actress 母音開頭用 an。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "我係老師。",
+     "a": "I am a teacher.",
+     "extra": [
+      "an",
+      "the"
+     ],
+     "why": "teacher 用 a。"
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "What ___ you do?",
+     "zh": "你做咩工作？",
+     "o": [
+      "do",
+      "does",
+      "are",
+      "is"
+     ],
+     "a": 0,
+     "why": "you 用 do。"
+    },
+    {
+     "t": "mc",
+     "q": "What ___ she do?",
+     "zh": "佢做咩工作？",
+     "o": [
+      "does",
+      "do",
+      "is",
+      "are"
+     ],
+     "a": 0,
+     "why": "she 用 does。"
+    },
+    {
+     "t": "mc",
+     "q": "I am ___ engineer.",
+     "zh": "我係工程師。",
+     "o": [
+      "an",
+      "a",
+      "the",
+      "one"
+     ],
+     "a": 0,
+     "why": "engineer 母音開頭用 an。"
+    },
+    {
+     "t": "fill",
+     "q": "He is ___ driver.",
+     "zh": "佢係司機。",
+     "a": [
+      "a"
+     ],
+     "why": "driver 子音開頭用 a。"
+    },
+    {
+     "t": "fill",
+     "q": "She is ___ actress.",
+     "zh": "佢係演員。",
+     "a": [
+      "an"
+     ],
+     "why": "actress 母音開頭用 an。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "我係老師。",
+     "a": "I am a teacher.",
+     "extra": [
+      "an",
+      "the"
+     ],
+     "why": "teacher 用 a。"
+    }
+   ]
+  },
+  {
+   "id": "g17",
+   "no": 17,
+   "week": 10,
+   "emoji": "⏰",
+   "title": "時間介詞 at / on / in",
+   "en": "prepositions of time",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "幾點、星期、月份",
+     "p": "<b>at</b> + 幾點；<b>on</b> + 星期或者日子；<b>in</b> + 月份、年份、早上／下午／晚上。",
+     "ex": [
+      [
+       "The class starts at nine.",
+       "堂九點開始。"
+      ],
+      [
+       "We have PE on Monday.",
+       "我哋星期一有體育。"
+      ],
+      [
+       "I was born in May.",
+       "我五月出世。"
+      ]
+     ]
+    },
+    {
+     "h": "⚠️ 常犯",
+     "p": "✅ at night　❌ in night<br>✅ in the morning　❌ at the morning",
+     "ex": [
+      [
+       "I do homework in the evening.",
+       "我晚上做功課。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "mc",
+     "q": "School starts ___ eight.",
+     "zh": "學校八點開始。",
+     "o": [
+      "at",
+      "on",
+      "in",
+      "to"
+     ],
+     "a": 0,
+     "why": "幾點用 at。"
+    },
+    {
+     "t": "mc",
+     "q": "The test is ___ Friday.",
+     "zh": "測驗喺星期五。",
+     "o": [
+      "on",
+      "at",
+      "in",
+      "by"
+     ],
+     "a": 0,
+     "why": "星期用 on。"
+    },
+    {
+     "t": "mc",
+     "q": "We rest ___ the afternoon.",
+     "zh": "我哋下晝休息。",
+     "o": [
+      "in",
+      "at",
+      "on",
+      "to"
+     ],
+     "a": 0,
+     "why": "in the afternoon。"
+    },
+    {
+     "t": "fill",
+     "q": "I get up ___ seven o'clock.",
+     "zh": "我七點起身。",
+     "a": [
+      "at"
+     ],
+     "why": "幾點用 at。"
+    },
+    {
+     "t": "fill",
+     "q": "Her birthday is ___ June.",
+     "zh": "佢生日喺六月。",
+     "a": [
+      "in"
+     ],
+     "why": "月份用 in。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "堂星期一開始。",
+     "a": "Class starts on Monday.",
+     "extra": [
+      "at",
+      "in"
+     ],
+     "why": "星期用 on。"
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "School starts ___ eight.",
+     "zh": "學校八點開始。",
+     "o": [
+      "at",
+      "on",
+      "in",
+      "to"
+     ],
+     "a": 0,
+     "why": "幾點用 at。"
+    },
+    {
+     "t": "mc",
+     "q": "The test is ___ Friday.",
+     "zh": "測驗喺星期五。",
+     "o": [
+      "on",
+      "at",
+      "in",
+      "by"
+     ],
+     "a": 0,
+     "why": "星期用 on。"
+    },
+    {
+     "t": "mc",
+     "q": "We rest ___ the afternoon.",
+     "zh": "我哋下晝休息。",
+     "o": [
+      "in",
+      "at",
+      "on",
+      "to"
+     ],
+     "a": 0,
+     "why": "in the afternoon。"
+    },
+    {
+     "t": "fill",
+     "q": "I get up ___ seven o'clock.",
+     "zh": "我七點起身。",
+     "a": [
+      "at"
+     ],
+     "why": "幾點用 at。"
+    },
+    {
+     "t": "fill",
+     "q": "Her birthday is ___ June.",
+     "zh": "佢生日喺六月。",
+     "a": [
+      "in"
+     ],
+     "why": "月份用 in。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "堂星期一開始。",
+     "a": "Class starts on Monday.",
+     "extra": [
+      "at",
+      "in"
+     ],
+     "why": "星期用 on。"
+    }
+   ]
+  },
+  {
+   "id": "g18",
+   "no": 18,
+   "week": 12,
+   "emoji": "🤝",
+   "title": "agree / suggest / let's",
+   "en": "agree, suggest, let's",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "同意同建議",
+     "p": "<b>I agree</b> 後面可以加 <b>with</b> + 人。<br><b>Let's</b> + 動詞原形，提議一齊做。",
+     "ex": [
+      [
+       "I agree with you.",
+       "我同意你。"
+      ],
+      [
+       "Let's discuss the plan.",
+       "我哋討論個計劃。"
+      ],
+      [
+       "She suggests a new idea.",
+       "佢提出一個新主意。"
+      ]
+     ]
+    },
+    {
+     "h": "唔同意",
+     "p": "<b>I don't agree</b> 或者 <b>I disagree</b>。語氣可以溫和。",
+     "ex": [
+      [
+       "I don't agree with that idea.",
+       "我唔同意嗰個主意。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "mc",
+     "q": "I agree ___ you.",
+     "zh": "我同意你。",
+     "o": [
+      "with",
+      "to",
+      "for",
+      "at"
+     ],
+     "a": 0,
+     "why": "agree with + 人。"
+    },
+    {
+     "t": "mc",
+     "q": "Let's ___ the project.",
+     "zh": "我哋計劃個專題。",
+     "o": [
+      "plan",
+      "planning",
+      "to plan",
+      "plans"
+     ],
+     "a": 0,
+     "why": "Let's 後面用原形。"
+    },
+    {
+     "t": "mc",
+     "q": "I ___ with that idea.",
+     "zh": "我唔同意嗰個主意。",
+     "o": [
+      "don't agree",
+      "am not agree",
+      "not agree",
+      "doesn't agree"
+     ],
+     "a": 0,
+     "why": "I 用 don't agree。"
+    },
+    {
+     "t": "fill",
+     "q": "She suggests a new ___.",
+     "zh": "佢提出一個新主意。",
+     "a": [
+      "idea"
+     ],
+     "why": "suggest 後面可以接名詞。"
+    },
+    {
+     "t": "fill",
+     "q": "Let's ___ together.",
+     "zh": "我哋一齊討論。",
+     "a": [
+      "talk",
+      "discuss"
+     ],
+     "why": "Let's + 原形。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "我同意你。",
+     "a": "I agree with you.",
+     "extra": [
+      "to",
+      "agreeing"
+     ],
+     "why": "agree with you。"
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "I agree ___ you.",
+     "zh": "我同意你。",
+     "o": [
+      "with",
+      "to",
+      "for",
+      "at"
+     ],
+     "a": 0,
+     "why": "agree with + 人。"
+    },
+    {
+     "t": "mc",
+     "q": "Let's ___ the project.",
+     "zh": "我哋計劃個專題。",
+     "o": [
+      "plan",
+      "planning",
+      "to plan",
+      "plans"
+     ],
+     "a": 0,
+     "why": "Let's 後面用原形。"
+    },
+    {
+     "t": "mc",
+     "q": "I ___ with that idea.",
+     "zh": "我唔同意嗰個主意。",
+     "o": [
+      "don't agree",
+      "am not agree",
+      "not agree",
+      "doesn't agree"
+     ],
+     "a": 0,
+     "why": "I 用 don't agree。"
+    },
+    {
+     "t": "fill",
+     "q": "She suggests a new ___.",
+     "zh": "佢提出一個新主意。",
+     "a": [
+      "idea"
+     ],
+     "why": "suggest 後面可以接名詞。"
+    },
+    {
+     "t": "fill",
+     "q": "Let's ___ together.",
+     "zh": "我哋一齊討論。",
+     "a": [
+      "talk",
+      "discuss"
+     ],
+     "why": "Let's + 原形。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "我同意你。",
+     "a": "I agree with you.",
+     "extra": [
+      "to",
+      "agreeing"
+     ],
+     "why": "agree with you。"
+    }
+   ]
+  }
+ ]
+}

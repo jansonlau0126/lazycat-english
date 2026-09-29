@@ -7,7 +7,11 @@
 - 出街任務：每主題一句，信任制自報，計入月結「出街次數」
 - 跨季零撞字（已驗證）
 
-完整 48 主題 × 25 字 + 出街任務見各季 `handoff-s3` / `handoff-s4` word-plan，以及本機展開版。
+完整 48 主題 × 25 字：
+- 第 2 季：`handoff-s2/data/season2-words.json`
+- 第 3 季：`handoff-s3/data/season3-words.json`（計劃仍見 `season3-word-plan.json`）
+- 第 4 季：`handoff-s4/data/season4-words.json`（計劃仍見 `season4-word-plan.json`）
+- 出街任務、日記、月結：`content/s1-s4-copy.md`
 
 主表詳細字列同中文對照以用戶確認之 Pasted 表 + v1.1 替換為準。
 

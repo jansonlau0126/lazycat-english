@@ -1,5 +1,11 @@
 # Season 2 handoff changelog
 
+## 2026-09-29 — 字檔入庫
+- `data/season2-words.json` 用已確認嘅 300 字檔（部分 tip 仍然短）
+- `data/season2-themes.json` 按字檔日次寫低
+- `data/season2-grammar.json` 為 g07–g12
+- `python3 tools/validate_s2.py` 通過
+
 ## 2026-09-29 — 前期包 v1（可交接）
 
 ### 已完成
