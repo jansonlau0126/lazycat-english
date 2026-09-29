@@ -1,0 +1,1066 @@
+{
+ "season": 2,
+ "lessons": [
+  {
+   "id": "g07",
+   "no": 7,
+   "week": 2,
+   "emoji": "🚶",
+   "title": "can / can't",
+   "en": "can and can't",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "能力同許可",
+     "p": "<b>can</b> 後面用動詞原形，講識唔識，或者可唔可以。<br>否定係 <b>can't</b>（cannot）。問句將 can 搬去句頭。",
+     "ex": [
+      [
+       "I can take the bus.",
+       "我識搭巴士。"
+      ],
+      [
+       "She can't drive.",
+       "佢唔識揸車。"
+      ],
+      [
+       "Can you help me?",
+       "你可唔可以幫我？"
+      ]
+     ]
+    },
+    {
+     "h": "⚠️ 香港人常犯",
+     "p": "can 後面唔加 to，亦唔加 s。<br>✅ She can swim.　❌ She can to swim.　❌ She cans swim.",
+     "ex": []
+    }
+   ],
+   "exercises": [
+    {
+     "t": "mc",
+     "q": "She ___ wait for the bus.",
+     "zh": "佢可以等巴士。",
+     "o": [
+      "can",
+      "cans",
+      "to can",
+      "can to"
+     ],
+     "a": 0,
+     "why": "can 後面直接接動詞原形。"
+    },
+    {
+     "t": "mc",
+     "q": "He ___ drive a car.",
+     "zh": "佢唔識揸車。",
+     "o": [
+      "can't",
+      "isn't",
+      "don't",
+      "no"
+     ],
+     "a": 0,
+     "why": "唔識做某件事用 can't。"
+    },
+    {
+     "t": "mc",
+     "q": "___ you help me?",
+     "zh": "你可唔可以幫我？",
+     "o": [
+      "Can",
+      "Do",
+      "Are",
+      "Have"
+     ],
+     "a": 0,
+     "why": "問能力或者許可，用 Can 開頭。"
+    },
+    {
+     "t": "fill",
+     "q": "I ___ walk to the park.",
+     "zh": "我可以行去公園。",
+     "a": [
+      "can"
+     ],
+     "why": "can + 動詞原形。"
+    },
+    {
+     "t": "fill",
+     "q": "We can't ___ a taxi.",
+     "zh": "我哋唔可以叫到的士？呢題係能力：叫的士用 take。",
+     "a": [
+      "take"
+     ],
+     "why": "can't 後面仍然係動詞原形 take。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "我識行路。",
+     "a": "I can walk.",
+     "extra": [
+      "to",
+      "walking"
+     ],
+     "why": "can 後面用 walk，唔用 to walk。"
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "She ___ wait for the bus.",
+     "zh": "佢可以等巴士。",
+     "o": [
+      "can",
+      "cans",
+      "to can",
+      "can to"
+     ],
+     "a": 0,
+     "why": "can 後面直接接動詞原形。"
+    },
+    {
+     "t": "mc",
+     "q": "He ___ drive a car.",
+     "zh": "佢唔識揸車。",
+     "o": [
+      "can't",
+      "isn't",
+      "don't",
+      "no"
+     ],
+     "a": 0,
+     "why": "唔識做某件事用 can't。"
+    },
+    {
+     "t": "mc",
+     "q": "___ you help me?",
+     "zh": "你可唔可以幫我？",
+     "o": [
+      "Can",
+      "Do",
+      "Are",
+      "Have"
+     ],
+     "a": 0,
+     "why": "問能力或者許可，用 Can 開頭。"
+    },
+    {
+     "t": "fill",
+     "q": "I ___ walk to the park.",
+     "zh": "我可以行去公園。",
+     "a": [
+      "can"
+     ],
+     "why": "can + 動詞原形。"
+    },
+    {
+     "t": "fill",
+     "q": "We can't ___ a taxi.",
+     "zh": "我哋唔可以叫到的士？呢題係能力：叫的士用 take。",
+     "a": [
+      "take"
+     ],
+     "why": "can't 後面仍然係動詞原形 take。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "我識行路。",
+     "a": "I can walk.",
+     "extra": [
+      "to",
+      "walking"
+     ],
+     "why": "can 後面用 walk，唔用 to walk。"
+    }
+   ]
+  },
+  {
+   "id": "g08",
+   "no": 8,
+   "week": 4,
+   "emoji": "🧭",
+   "title": "there is / there are + 介詞",
+   "en": "there is and prepositions",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "有冇呢樣嘢",
+     "p": "單數同不可數用 <b>There is</b>；複數用 <b>There are</b>。<br>問句：<b>Is there</b> …? / <b>Are there</b> …?",
+     "ex": [
+      [
+       "There is a bank near the park.",
+       "公園附近有一間銀行。"
+      ],
+      [
+       "There are two shops on this street.",
+       "呢條街有兩間舖。"
+      ]
+     ]
+    },
+    {
+     "h": "位置",
+     "p": "常用 <b>in / on / near / opposite / between / behind</b>。<br>✅ The cinema is opposite the bank.",
+     "ex": [
+      [
+       "The toilet is inside the station.",
+       "廁所喺車站入面。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "mc",
+     "q": "___ a library near my home.",
+     "zh": "我家附近有一間圖書館。",
+     "o": [
+      "There is",
+      "There are",
+      "It is",
+      "They are"
+     ],
+     "a": 0,
+     "why": "a library 係單數，用 There is。"
+    },
+    {
+     "t": "mc",
+     "q": "___ two cafés on this road.",
+     "zh": "呢條路有兩間咖啡店。",
+     "o": [
+      "There are",
+      "There is",
+      "It has",
+      "Are"
+     ],
+     "a": 0,
+     "why": "two 係複數，用 There are。"
+    },
+    {
+     "t": "mc",
+     "q": "The bank is ___ the park.",
+     "zh": "銀行喺公園附近。",
+     "o": [
+      "near",
+      "there",
+      "is",
+      "are"
+     ],
+     "a": 0,
+     "why": "near 表示附近。"
+    },
+    {
+     "t": "fill",
+     "q": "There ___ a hotel opposite the station.",
+     "zh": "車站對面有一間酒店。",
+     "a": [
+      "is"
+     ],
+     "why": "a hotel 單數用 is。"
+    },
+    {
+     "t": "fill",
+     "q": "Is ___ a toilet inside?",
+     "zh": "入面有冇廁所？",
+     "a": [
+      "there"
+     ],
+     "why": "問句 Is there …?"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "公園後面有一間舖。",
+     "a": "There is a shop behind the park.",
+     "extra": [
+      "are",
+      "shops"
+     ],
+     "why": "單數 shop 用 There is。"
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "___ a library near my home.",
+     "zh": "我家附近有一間圖書館。",
+     "o": [
+      "There is",
+      "There are",
+      "It is",
+      "They are"
+     ],
+     "a": 0,
+     "why": "a library 係單數，用 There is。"
+    },
+    {
+     "t": "mc",
+     "q": "___ two cafés on this road.",
+     "zh": "呢條路有兩間咖啡店。",
+     "o": [
+      "There are",
+      "There is",
+      "It has",
+      "Are"
+     ],
+     "a": 0,
+     "why": "two 係複數，用 There are。"
+    },
+    {
+     "t": "mc",
+     "q": "The bank is ___ the park.",
+     "zh": "銀行喺公園附近。",
+     "o": [
+      "near",
+      "there",
+      "is",
+      "are"
+     ],
+     "a": 0,
+     "why": "near 表示附近。"
+    },
+    {
+     "t": "fill",
+     "q": "There ___ a hotel opposite the station.",
+     "zh": "車站對面有一間酒店。",
+     "a": [
+      "is"
+     ],
+     "why": "a hotel 單數用 is。"
+    },
+    {
+     "t": "fill",
+     "q": "Is ___ a toilet inside?",
+     "zh": "入面有冇廁所？",
+     "a": [
+      "there"
+     ],
+     "why": "問句 Is there …?"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "公園後面有一間舖。",
+     "a": "There is a shop behind the park.",
+     "extra": [
+      "are",
+      "shops"
+     ],
+     "why": "單數 shop 用 There is。"
+    }
+   ]
+  },
+  {
+   "id": "g09",
+   "no": 9,
+   "week": 6,
+   "emoji": "💰",
+   "title": "how much / how many",
+   "en": "how much and how many",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "幾多",
+     "p": "<b>How many</b> 問數得清嘅東西，後面通常複數。<br><b>How much</b> 問價錢，或者數唔清嘅東西。",
+     "ex": [
+      [
+       "How many tickets do you need?",
+       "你要幾多張票？"
+      ],
+      [
+       "How much is this?",
+       "呢個幾多錢？"
+      ]
+     ]
+    },
+    {
+     "h": "價錢答法",
+     "p": "答價錢可以用 <b>It's</b> + 數目。<br>✅ How much is the ticket? — It's twenty dollars.",
+     "ex": [
+      [
+       "How much are the shoes?",
+       "對鞋幾多錢？"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "mc",
+     "q": "___ tickets do you need?",
+     "zh": "你要幾多張票？",
+     "o": [
+      "How many",
+      "How much",
+      "How long",
+      "How old"
+     ],
+     "a": 0,
+     "why": "tickets 數得清，用 How many。"
+    },
+    {
+     "t": "mc",
+     "q": "___ is this T-shirt?",
+     "zh": "呢件 T 恤幾多錢？",
+     "o": [
+      "How much",
+      "How many",
+      "How often",
+      "What time"
+     ],
+     "a": 0,
+     "why": "問價錢用 How much。"
+    },
+    {
+     "t": "mc",
+     "q": "How ___ water do you want?",
+     "zh": "你想要幾多水？",
+     "o": [
+      "much",
+      "many",
+      "long",
+      "far"
+     ],
+     "a": 0,
+     "why": "water 數唔清，用 much。"
+    },
+    {
+     "t": "fill",
+     "q": "How many ___ do you want?",
+     "zh": "你想要幾多個蘋果？填 apples。",
+     "a": [
+      "apples"
+     ],
+     "why": "How many 後面用複數。"
+    },
+    {
+     "t": "fill",
+     "q": "How much ___ this?",
+     "zh": "呢個幾多錢？",
+     "a": [
+      "is"
+     ],
+     "why": "單數價錢用 How much is。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "呢張飛幾多錢？",
+     "a": "How much is the ticket?",
+     "extra": [
+      "many",
+      "are"
+     ],
+     "why": "問一件東西嘅價錢用 How much is。"
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "___ tickets do you need?",
+     "zh": "你要幾多張票？",
+     "o": [
+      "How many",
+      "How much",
+      "How long",
+      "How old"
+     ],
+     "a": 0,
+     "why": "tickets 數得清，用 How many。"
+    },
+    {
+     "t": "mc",
+     "q": "___ is this T-shirt?",
+     "zh": "呢件 T 恤幾多錢？",
+     "o": [
+      "How much",
+      "How many",
+      "How often",
+      "What time"
+     ],
+     "a": 0,
+     "why": "問價錢用 How much。"
+    },
+    {
+     "t": "mc",
+     "q": "How ___ water do you want?",
+     "zh": "你想要幾多水？",
+     "o": [
+      "much",
+      "many",
+      "long",
+      "far"
+     ],
+     "a": 0,
+     "why": "water 數唔清，用 much。"
+    },
+    {
+     "t": "fill",
+     "q": "How many ___ do you want?",
+     "zh": "你想要幾多個蘋果？填 apples。",
+     "a": [
+      "apples"
+     ],
+     "why": "How many 後面用複數。"
+    },
+    {
+     "t": "fill",
+     "q": "How much ___ this?",
+     "zh": "呢個幾多錢？",
+     "a": [
+      "is"
+     ],
+     "why": "單數價錢用 How much is。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "呢張飛幾多錢？",
+     "a": "How much is the ticket?",
+     "extra": [
+      "many",
+      "are"
+     ],
+     "why": "問一件東西嘅價錢用 How much is。"
+    }
+   ]
+  },
+  {
+   "id": "g10",
+   "no": 10,
+   "week": 8,
+   "emoji": "🏥",
+   "title": "祈使句",
+   "en": "imperatives",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "叫人做嘢",
+     "p": "祈使句用動詞原形開頭，主語 you 通常唔寫出嚟。<br>客氣可以加 <b>Please</b>。",
+     "ex": [
+      [
+       "Rest today.",
+       "今日休息。"
+      ],
+      [
+       "Please wait here.",
+       "請喺度等。"
+      ]
+     ]
+    },
+    {
+     "h": "叫人唔好做",
+     "p": "否定用 <b>Don't</b> + 動詞原形。",
+     "ex": [
+      [
+       "Don't run.",
+       "唔好跑。"
+      ],
+      [
+       "Please don't shout.",
+       "請唔好大聲叫。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "mc",
+     "q": "___ the door, please.",
+     "zh": "請開門。",
+     "o": [
+      "Open",
+      "Opens",
+      "Opening",
+      "To open"
+     ],
+     "a": 0,
+     "why": "祈使句用動詞原形。"
+    },
+    {
+     "t": "mc",
+     "q": "___ eat too much.",
+     "zh": "唔好食太多。",
+     "o": [
+      "Don't",
+      "Not",
+      "No",
+      "Can't"
+     ],
+     "a": 0,
+     "why": "否定祈使用 Don't。"
+    },
+    {
+     "t": "mc",
+     "q": "Please ___ here.",
+     "zh": "請喺度等。",
+     "o": [
+      "wait",
+      "waits",
+      "waiting",
+      "to wait"
+     ],
+     "a": 0,
+     "why": "Please 後面仍然係原形。"
+    },
+    {
+     "t": "fill",
+     "q": "___ quiet, please.",
+     "zh": "請靜啲。動詞用 Be。",
+     "a": [
+      "Be"
+     ],
+     "why": "Be quiet 係常見祈使句。"
+    },
+    {
+     "t": "fill",
+     "q": "Don't ___ now.",
+     "zh": "而家唔好跑。",
+     "a": [
+      "run"
+     ],
+     "why": "Don't + 原形。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "請飲水。",
+     "a": "Please drink water.",
+     "extra": [
+      "drinks",
+      "to"
+     ],
+     "why": "Please + 動詞原形。"
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "___ the door, please.",
+     "zh": "請開門。",
+     "o": [
+      "Open",
+      "Opens",
+      "Opening",
+      "To open"
+     ],
+     "a": 0,
+     "why": "祈使句用動詞原形。"
+    },
+    {
+     "t": "mc",
+     "q": "___ eat too much.",
+     "zh": "唔好食太多。",
+     "o": [
+      "Don't",
+      "Not",
+      "No",
+      "Can't"
+     ],
+     "a": 0,
+     "why": "否定祈使用 Don't。"
+    },
+    {
+     "t": "mc",
+     "q": "Please ___ here.",
+     "zh": "請喺度等。",
+     "o": [
+      "wait",
+      "waits",
+      "waiting",
+      "to wait"
+     ],
+     "a": 0,
+     "why": "Please 後面仍然係原形。"
+    },
+    {
+     "t": "fill",
+     "q": "___ quiet, please.",
+     "zh": "請靜啲。動詞用 Be。",
+     "a": [
+      "Be"
+     ],
+     "why": "Be quiet 係常見祈使句。"
+    },
+    {
+     "t": "fill",
+     "q": "Don't ___ now.",
+     "zh": "而家唔好跑。",
+     "a": [
+      "run"
+     ],
+     "why": "Don't + 原形。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "請飲水。",
+     "a": "Please drink water.",
+     "extra": [
+      "drinks",
+      "to"
+     ],
+     "why": "Please + 動詞原形。"
+    }
+   ]
+  },
+  {
+   "id": "g11",
+   "no": 11,
+   "week": 10,
+   "emoji": "🎸",
+   "title": "like + -ing",
+   "en": "like + -ing",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "鍾意做某件事",
+     "p": "講興趣，<b>like / love / enjoy</b> 後面可以用 <b>動詞 -ing</b>。",
+     "ex": [
+      [
+       "I like swimming.",
+       "我鍾意游水。"
+      ],
+      [
+       "She loves reading.",
+       "佢好鍾意睇書。"
+      ],
+      [
+       "We enjoy cooking.",
+       "我哋鍾意煮飯。"
+      ]
+     ]
+    },
+    {
+     "h": "⚠️ 同 like + 名詞",
+     "p": "like 後面亦可以係名詞：I like music。<br>如果係「做嗰件事」，就用 -ing：I like singing.",
+     "ex": [
+      [
+       "He likes playing football.",
+       "佢鍾意踢波。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "mc",
+     "q": "I like ___.",
+     "zh": "我鍾意唱歌。",
+     "o": [
+      "singing",
+      "sing",
+      "to singing",
+      "sings"
+     ],
+     "a": 0,
+     "why": "like 後面用 -ing 表示鍾意做嗰件事。"
+    },
+    {
+     "t": "mc",
+     "q": "She ___ dancing.",
+     "zh": "佢鍾意跳舞。",
+     "o": [
+      "likes",
+      "like",
+      "is like",
+      "liking"
+     ],
+     "a": 0,
+     "why": "she 係第三人稱，like 要加 s。"
+    },
+    {
+     "t": "mc",
+     "q": "We enjoy ___.",
+     "zh": "我哋鍾意煮飯。",
+     "o": [
+      "cooking",
+      "cook",
+      "to cook",
+      "cooks"
+     ],
+     "a": 0,
+     "why": "enjoy 後面用 -ing。"
+    },
+    {
+     "t": "fill",
+     "q": "I love ___ photos.",
+     "zh": "我好鍾意影相。填 taking。",
+     "a": [
+      "taking"
+     ],
+     "why": "love + -ing。"
+    },
+    {
+     "t": "fill",
+     "q": "He likes ___ the guitar.",
+     "zh": "佢鍾意玩結他。填 playing。",
+     "a": [
+      "playing"
+     ],
+     "why": "likes + -ing。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "我鍾意睇戲。",
+     "a": "I like watching films.",
+     "extra": [
+      "to",
+      "watch"
+     ],
+     "why": "like 後面用 watching。"
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "I like ___.",
+     "zh": "我鍾意唱歌。",
+     "o": [
+      "singing",
+      "sing",
+      "to singing",
+      "sings"
+     ],
+     "a": 0,
+     "why": "like 後面用 -ing 表示鍾意做嗰件事。"
+    },
+    {
+     "t": "mc",
+     "q": "She ___ dancing.",
+     "zh": "佢鍾意跳舞。",
+     "o": [
+      "likes",
+      "like",
+      "is like",
+      "liking"
+     ],
+     "a": 0,
+     "why": "she 係第三人稱，like 要加 s。"
+    },
+    {
+     "t": "mc",
+     "q": "We enjoy ___.",
+     "zh": "我哋鍾意煮飯。",
+     "o": [
+      "cooking",
+      "cook",
+      "to cook",
+      "cooks"
+     ],
+     "a": 0,
+     "why": "enjoy 後面用 -ing。"
+    },
+    {
+     "t": "fill",
+     "q": "I love ___ photos.",
+     "zh": "我好鍾意影相。填 taking。",
+     "a": [
+      "taking"
+     ],
+     "why": "love + -ing。"
+    },
+    {
+     "t": "fill",
+     "q": "He likes ___ the guitar.",
+     "zh": "佢鍾意玩結他。填 playing。",
+     "a": [
+      "playing"
+     ],
+     "why": "likes + -ing。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "我鍾意睇戲。",
+     "a": "I like watching films.",
+     "extra": [
+      "to",
+      "watch"
+     ],
+     "why": "like 後面用 watching。"
+    }
+   ]
+  },
+  {
+   "id": "g12",
+   "no": 12,
+   "week": 12,
+   "emoji": "📱",
+   "title": "出街嘅現在進行式",
+   "en": "present continuous outside",
+   "reuse": "g05",
+   "intro": [
+    {
+     "h": "而家發生緊",
+     "p": "第 1 季學過進行式。<b>am / is / are + 動詞 -ing</b>，講而家做緊嘅事。",
+     "ex": [
+      [
+       "I am waiting for the bus.",
+       "我而家等緊巴士。"
+      ],
+      [
+       "She is walking to the station.",
+       "佢行緊去車站。"
+      ],
+      [
+       "They are looking at the map.",
+       "佢哋睇緊幅地圖。"
+      ]
+     ]
+    },
+    {
+     "h": "否定同問句",
+     "p": "否定：be + not + -ing。問句：將 be 搬去句頭。<br>✅ Are you coming?　I'm not running.",
+     "ex": [
+      [
+       "Are you waiting for me?",
+       "你係咪等緊我？"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "mc",
+     "q": "I ___ for the minibus.",
+     "zh": "我等緊小巴。",
+     "o": [
+      "am waiting",
+      "wait",
+      "waiting",
+      "am wait"
+     ],
+     "a": 0,
+     "why": "而家做緊要用 am waiting。"
+    },
+    {
+     "t": "mc",
+     "q": "She ___ a message.",
+     "zh": "佢而家傳緊短訊。",
+     "o": [
+      "is sending",
+      "send",
+      "sending",
+      "are sending"
+     ],
+     "a": 0,
+     "why": "she 用 is + -ing。"
+    },
+    {
+     "t": "mc",
+     "q": "___ you listening?",
+     "zh": "你係咪聽緊？",
+     "o": [
+      "Are",
+      "Do",
+      "Is",
+      "Can"
+     ],
+     "a": 0,
+     "why": "you 嘅進行式問句用 Are。"
+    },
+    {
+     "t": "fill",
+     "q": "They are ___ to the park.",
+     "zh": "佢哋行緊去公園。",
+     "a": [
+      "walking"
+     ],
+     "why": "are + -ing。"
+    },
+    {
+     "t": "fill",
+     "q": "I am not ___ now.",
+     "zh": "我而家冇跑。",
+     "a": [
+      "running"
+     ],
+     "why": "am not + -ing。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "佢睇緊部電話。",
+     "a": "She is looking at the phone.",
+     "extra": [
+      "look",
+      "are"
+     ],
+     "why": "she 用 is looking。"
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "I ___ for the minibus.",
+     "zh": "我等緊小巴。",
+     "o": [
+      "am waiting",
+      "wait",
+      "waiting",
+      "am wait"
+     ],
+     "a": 0,
+     "why": "而家做緊要用 am waiting。"
+    },
+    {
+     "t": "mc",
+     "q": "She ___ a message.",
+     "zh": "佢而家傳緊短訊。",
+     "o": [
+      "is sending",
+      "send",
+      "sending",
+      "are sending"
+     ],
+     "a": 0,
+     "why": "she 用 is + -ing。"
+    },
+    {
+     "t": "mc",
+     "q": "___ you listening?",
+     "zh": "你係咪聽緊？",
+     "o": [
+      "Are",
+      "Do",
+      "Is",
+      "Can"
+     ],
+     "a": 0,
+     "why": "you 嘅進行式問句用 Are。"
+    },
+    {
+     "t": "fill",
+     "q": "They are ___ to the park.",
+     "zh": "佢哋行緊去公園。",
+     "a": [
+      "walking"
+     ],
+     "why": "are + -ing。"
+    },
+    {
+     "t": "fill",
+     "q": "I am not ___ now.",
+     "zh": "我而家冇跑。",
+     "a": [
+      "running"
+     ],
+     "why": "am not + -ing。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "佢睇緊部電話。",
+     "a": "She is looking at the phone.",
+     "extra": [
+      "look",
+      "are"
+     ],
+     "why": "she 用 is looking。"
+    }
+   ]
+  }
+ ]
+}

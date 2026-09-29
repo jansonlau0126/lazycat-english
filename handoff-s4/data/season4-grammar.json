@@ -1,0 +1,1071 @@
+{
+ "season": 4,
+ "lessons": [
+  {
+   "id": "g19",
+   "no": 19,
+   "week": 2,
+   "emoji": "🎈",
+   "title": "Would you like …?",
+   "en": "Would you like",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "邀請同款待",
+     "p": "<b>Would you like</b> + 名詞，或者 <b>Would you like to</b> + 動詞，用來邀請，語氣客氣。",
+     "ex": [
+      [
+       "Would you like some tea?",
+       "你想唔想飲茶？"
+      ],
+      [
+       "Would you like to come?",
+       "你想唔想來？"
+      ]
+     ]
+    },
+    {
+     "h": "點答",
+     "p": "想：<b>Yes, please.</b>　唔使：<b>No, thank you.</b>",
+     "ex": [
+      [
+       "Yes, please. I would like to come.",
+       "好呀，我想來。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "mc",
+     "q": "Would you like ___ to the party?",
+     "zh": "你想唔想來派對？",
+     "o": [
+      "to come",
+      "come",
+      "coming",
+      "came"
+     ],
+     "a": 0,
+     "why": "Would you like to + 原形。"
+    },
+    {
+     "t": "mc",
+     "q": "Would you like ___ tea?",
+     "zh": "你想唔想飲茶？",
+     "o": [
+      "some",
+      "any",
+      "a",
+      "to"
+     ],
+     "a": 0,
+     "why": "名詞用 Would you like some tea?"
+    },
+    {
+     "t": "mc",
+     "q": "No, ___ .",
+     "zh": "唔使喇，多謝。",
+     "o": [
+      "thank you",
+      "please",
+      "I like",
+      "thanks you"
+     ],
+     "a": 0,
+     "why": "婉拒可以講 No, thank you。"
+    },
+    {
+     "t": "fill",
+     "q": "Would you like to ___ us?",
+     "zh": "你想唔想加入我哋？",
+     "a": [
+      "join"
+     ],
+     "why": "like to + 原形。"
+    },
+    {
+     "t": "fill",
+     "q": "Yes, ___.",
+     "zh": "好呀。填 please。",
+     "a": [
+      "please"
+     ],
+     "why": "接受邀請可以講 Yes, please。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "你想唔想來？",
+     "a": "Would you like to come?",
+     "extra": [
+      "coming",
+      "like you"
+     ],
+     "why": "Would you like to come?"
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "Would you like ___ to the party?",
+     "zh": "你想唔想來派對？",
+     "o": [
+      "to come",
+      "come",
+      "coming",
+      "came"
+     ],
+     "a": 0,
+     "why": "Would you like to + 原形。"
+    },
+    {
+     "t": "mc",
+     "q": "Would you like ___ tea?",
+     "zh": "你想唔想飲茶？",
+     "o": [
+      "some",
+      "any",
+      "a",
+      "to"
+     ],
+     "a": 0,
+     "why": "名詞用 Would you like some tea?"
+    },
+    {
+     "t": "mc",
+     "q": "No, ___ .",
+     "zh": "唔使喇，多謝。",
+     "o": [
+      "thank you",
+      "please",
+      "I like",
+      "thanks you"
+     ],
+     "a": 0,
+     "why": "婉拒可以講 No, thank you。"
+    },
+    {
+     "t": "fill",
+     "q": "Would you like to ___ us?",
+     "zh": "你想唔想加入我哋？",
+     "a": [
+      "join"
+     ],
+     "why": "like to + 原形。"
+    },
+    {
+     "t": "fill",
+     "q": "Yes, ___.",
+     "zh": "好呀。填 please。",
+     "a": [
+      "please"
+     ],
+     "why": "接受邀請可以講 Yes, please。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "你想唔想來？",
+     "a": "Would you like to come?",
+     "extra": [
+      "coming",
+      "like you"
+     ],
+     "why": "Would you like to come?"
+    }
+   ]
+  },
+  {
+   "id": "g20",
+   "no": 20,
+   "week": 4,
+   "emoji": "🎁",
+   "title": "物主 's",
+   "en": "possessive 's",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "邊個嘅",
+     "p": "單數名詞加 <b>'s</b>：Mum's gift、the cat's bow。<br>以 s 結尾嘅複數只加省略號：the students' party。",
+     "ex": [
+      [
+       "This is Mum's gift.",
+       "呢個係媽媽嘅禮物。"
+      ],
+      [
+       "The bow is on Dad's box.",
+       "蝴蝶結喺爸爸個盒上面。"
+      ]
+     ]
+    },
+    {
+     "h": "唔好同 is 混淆",
+     "p": "<b>Mum's</b> 可以係 Mum is 嘅縮寫，亦可以係「媽媽嘅」。<br>後面係名詞，多數係物主：Mum's gift。",
+     "ex": [
+      [
+       "It is my friend's mooncake.",
+       "呢個係我朋友嘅月餅。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "mc",
+     "q": "This is ___ gift.",
+     "zh": "呢個係媽媽嘅禮物。",
+     "o": [
+      "Mum's",
+      "Mums",
+      "Mum",
+      "Mum is"
+     ],
+     "a": 0,
+     "why": "物主用 Mum's。"
+    },
+    {
+     "t": "mc",
+     "q": "The ___ room is tidy.",
+     "zh": "啲學生嘅房好整齊。",
+     "o": [
+      "students'",
+      "student's",
+      "students",
+      "student"
+     ],
+     "a": 0,
+     "why": "複數 students 已經有 s，加 ' 就得。"
+    },
+    {
+     "t": "mc",
+     "q": "It is my ___ lantern.",
+     "zh": "呢個係我朋友嘅燈籠。",
+     "o": [
+      "friend's",
+      "friends",
+      "friend",
+      "friend is"
+     ],
+     "a": 0,
+     "why": "一個朋友用 friend's。"
+    },
+    {
+     "t": "fill",
+     "q": "That is Dad ___ box.",
+     "zh": "嗰個係爸爸嘅盒。填 's。",
+     "a": [
+      "'s"
+     ],
+     "why": "單數加 's。"
+    },
+    {
+     "t": "fill",
+     "q": "The bow is on the ___ gift.",
+     "zh": "蝴蝶結喺個禮物上面。填 cat's。",
+     "a": [
+      "cat's"
+     ],
+     "why": "cat's gift。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "呢個係媽媽嘅禮物。",
+     "a": "This is Mum's gift.",
+     "extra": [
+      "is",
+      "Mums"
+     ],
+     "why": "用 Mum's。"
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "This is ___ gift.",
+     "zh": "呢個係媽媽嘅禮物。",
+     "o": [
+      "Mum's",
+      "Mums",
+      "Mum",
+      "Mum is"
+     ],
+     "a": 0,
+     "why": "物主用 Mum's。"
+    },
+    {
+     "t": "mc",
+     "q": "The ___ room is tidy.",
+     "zh": "啲學生嘅房好整齊。",
+     "o": [
+      "students'",
+      "student's",
+      "students",
+      "student"
+     ],
+     "a": 0,
+     "why": "複數 students 已經有 s，加 ' 就得。"
+    },
+    {
+     "t": "mc",
+     "q": "It is my ___ lantern.",
+     "zh": "呢個係我朋友嘅燈籠。",
+     "o": [
+      "friend's",
+      "friends",
+      "friend",
+      "friend is"
+     ],
+     "a": 0,
+     "why": "一個朋友用 friend's。"
+    },
+    {
+     "t": "fill",
+     "q": "That is Dad ___ box.",
+     "zh": "嗰個係爸爸嘅盒。填 's。",
+     "a": [
+      "'s"
+     ],
+     "why": "單數加 's。"
+    },
+    {
+     "t": "fill",
+     "q": "The bow is on the ___ gift.",
+     "zh": "蝴蝶結喺個禮物上面。填 cat's。",
+     "a": [
+      "cat's"
+     ],
+     "why": "cat's gift。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "呢個係媽媽嘅禮物。",
+     "a": "This is Mum's gift.",
+     "extra": [
+      "is",
+      "Mums"
+     ],
+     "why": "用 Mum's。"
+    }
+   ]
+  },
+  {
+   "id": "g21",
+   "no": 21,
+   "week": 6,
+   "emoji": "😺",
+   "title": "too / very / enough",
+   "en": "too, very, enough",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "程度",
+     "p": "<b>very</b> 只係程度高。<b>too</b> 係過分，通常有負面意思。<br><b>enough</b> 放喺形容詞後面。",
+     "ex": [
+      [
+       "She is very kind.",
+       "佢非常善良。"
+      ],
+      [
+       "The music is too noisy.",
+       "音樂太嘈。"
+      ],
+      [
+       "He is patient enough.",
+       "佢夠有耐心。"
+      ]
+     ]
+    },
+    {
+     "h": "enough + 名詞",
+     "p": "enough 放喺名詞前面：enough time、enough friends。",
+     "ex": [
+      [
+       "We have enough food.",
+       "我哋有足夠食物。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "mc",
+     "q": "The room is ___ noisy.",
+     "zh": "間房太嘈，受唔住。",
+     "o": [
+      "too",
+      "very much",
+      "enough",
+      "to"
+     ],
+     "a": 0,
+     "why": "過分用 too。"
+    },
+    {
+     "t": "mc",
+     "q": "She is ___ helpful.",
+     "zh": "佢非常肯幫手，呢句冇批評。",
+     "o": [
+      "very",
+      "too",
+      "enough",
+      "to"
+     ],
+     "a": 0,
+     "why": "純粹程度高可以用 very。"
+    },
+    {
+     "t": "mc",
+     "q": "He is kind ___.",
+     "zh": "佢夠善良。",
+     "o": [
+      "enough",
+      "too",
+      "very",
+      "much"
+     ],
+     "a": 0,
+     "why": "enough 放喺形容詞後面。"
+    },
+    {
+     "t": "fill",
+     "q": "We have ___ time.",
+     "zh": "我哋有足夠時間。",
+     "a": [
+      "enough"
+     ],
+     "why": "enough + 名詞。"
+    },
+    {
+     "t": "fill",
+     "q": "This bag is ___ heavy.",
+     "zh": "呢個袋太重。",
+     "a": [
+      "too"
+     ],
+     "why": "too + 形容詞。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "佢夠有耐心。",
+     "a": "He is patient enough.",
+     "extra": [
+      "too",
+      "very"
+     ],
+     "why": "形容詞 + enough。"
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "The room is ___ noisy.",
+     "zh": "間房太嘈，受唔住。",
+     "o": [
+      "too",
+      "very much",
+      "enough",
+      "to"
+     ],
+     "a": 0,
+     "why": "過分用 too。"
+    },
+    {
+     "t": "mc",
+     "q": "She is ___ helpful.",
+     "zh": "佢非常肯幫手，呢句冇批評。",
+     "o": [
+      "very",
+      "too",
+      "enough",
+      "to"
+     ],
+     "a": 0,
+     "why": "純粹程度高可以用 very。"
+    },
+    {
+     "t": "mc",
+     "q": "He is kind ___.",
+     "zh": "佢夠善良。",
+     "o": [
+      "enough",
+      "too",
+      "very",
+      "much"
+     ],
+     "a": 0,
+     "why": "enough 放喺形容詞後面。"
+    },
+    {
+     "t": "fill",
+     "q": "We have ___ time.",
+     "zh": "我哋有足夠時間。",
+     "a": [
+      "enough"
+     ],
+     "why": "enough + 名詞。"
+    },
+    {
+     "t": "fill",
+     "q": "This bag is ___ heavy.",
+     "zh": "呢個袋太重。",
+     "a": [
+      "too"
+     ],
+     "why": "too + 形容詞。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "佢夠有耐心。",
+     "a": "He is patient enough.",
+     "extra": [
+      "too",
+      "very"
+     ],
+     "why": "形容詞 + enough。"
+    }
+   ]
+  },
+  {
+   "id": "g22",
+   "no": 22,
+   "week": 8,
+   "emoji": "♻️",
+   "title": "will 決定同承諾",
+   "en": "will for decisions",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "臨時決定同承諾",
+     "p": "<b>will</b> + 動詞原形。縮寫 <b>'ll</b>。否定 <b>won't</b>。",
+     "ex": [
+      [
+       "I will recycle this bottle.",
+       "我會回收呢個樽。"
+      ],
+      [
+       "I'll help you.",
+       "我會幫你。"
+      ],
+      [
+       "We won't litter.",
+       "我哋唔會亂拋垃圾。"
+      ]
+     ]
+    },
+    {
+     "h": "同 going to 嘅分別",
+     "p": "going to 多講早就計劃好。will 多講而家決定或者承諾。<br>而家先決定：I'll take the bus.",
+     "ex": [
+      [
+       "I will turn off the light.",
+       "我會關燈。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "mc",
+     "q": "I ___ recycle the paper.",
+     "zh": "我會回收啲紙。",
+     "o": [
+      "will",
+      "will to",
+      "am will",
+      "wills"
+     ],
+     "a": 0,
+     "why": "will + 原形。"
+    },
+    {
+     "t": "mc",
+     "q": "We ___ waste food.",
+     "zh": "我哋唔會浪費食物。",
+     "o": [
+      "won't",
+      "will",
+      "don't will",
+      "aren't"
+     ],
+     "a": 0,
+     "why": "否定用 won't。"
+    },
+    {
+     "t": "mc",
+     "q": "She ___ help the group.",
+     "zh": "佢會幫手。",
+     "o": [
+      "will",
+      "wills",
+      "is will",
+      "will be"
+     ],
+     "a": 0,
+     "why": "will 後面唔加 s。"
+    },
+    {
+     "t": "fill",
+     "q": "I'll ___ the bin.",
+     "zh": "我會拎個垃圾桶。填 take 或者 empty。",
+     "a": [
+      "take",
+      "empty"
+     ],
+     "why": "I'll + 原形。"
+    },
+    {
+     "t": "fill",
+     "q": "They won't ___ the river.",
+     "zh": "佢哋唔會污染條河。",
+     "a": [
+      "pollute"
+     ],
+     "why": "won't + 原形。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "我會幫你。",
+     "a": "I will help you.",
+     "extra": [
+      "to",
+      "helping"
+     ],
+     "why": "will help。"
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "I ___ recycle the paper.",
+     "zh": "我會回收啲紙。",
+     "o": [
+      "will",
+      "will to",
+      "am will",
+      "wills"
+     ],
+     "a": 0,
+     "why": "will + 原形。"
+    },
+    {
+     "t": "mc",
+     "q": "We ___ waste food.",
+     "zh": "我哋唔會浪費食物。",
+     "o": [
+      "won't",
+      "will",
+      "don't will",
+      "aren't"
+     ],
+     "a": 0,
+     "why": "否定用 won't。"
+    },
+    {
+     "t": "mc",
+     "q": "She ___ help the group.",
+     "zh": "佢會幫手。",
+     "o": [
+      "will",
+      "wills",
+      "is will",
+      "will be"
+     ],
+     "a": 0,
+     "why": "will 後面唔加 s。"
+    },
+    {
+     "t": "fill",
+     "q": "I'll ___ the bin.",
+     "zh": "我會拎個垃圾桶。填 take 或者 empty。",
+     "a": [
+      "take",
+      "empty"
+     ],
+     "why": "I'll + 原形。"
+    },
+    {
+     "t": "fill",
+     "q": "They won't ___ the river.",
+     "zh": "佢哋唔會污染條河。",
+     "a": [
+      "pollute"
+     ],
+     "why": "won't + 原形。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "我會幫你。",
+     "a": "I will help you.",
+     "extra": [
+      "to",
+      "helping"
+     ],
+     "why": "will help。"
+    }
+   ]
+  },
+  {
+   "id": "g23",
+   "no": 23,
+   "week": 10,
+   "emoji": "🙏",
+   "title": "客氣請求",
+   "en": "polite requests",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "請人幫忙",
+     "p": "<b>Could you</b> + 原形，比 Can you 更客氣。<br>加 please 更柔和。",
+     "ex": [
+      [
+       "Could you help me, please?",
+       "唔該你幫我手，好嗎？"
+      ],
+      [
+       "Could you say that again?",
+       "唔該你再講一次？"
+      ]
+     ]
+    },
+    {
+     "h": "回應",
+     "p": "得：<b>Of course.</b> / <b>Sure.</b><br>唔得都可以客氣：<b>I'm sorry, I can't.</b>",
+     "ex": [
+      [
+       "Of course. I can wait.",
+       "當然可以，我可以等。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "mc",
+     "q": "___ you open the door, please?",
+     "zh": "唔該你開門。",
+     "o": [
+      "Could",
+      "Are",
+      "Do",
+      "Have"
+     ],
+     "a": 0,
+     "why": "客氣請求用 Could you。"
+    },
+    {
+     "t": "mc",
+     "q": "Could you ___ me?",
+     "zh": "唔該你等我。",
+     "o": [
+      "wait for",
+      "waiting",
+      "to waiting",
+      "waited"
+     ],
+     "a": 0,
+     "why": "Could you + 原形。"
+    },
+    {
+     "t": "mc",
+     "q": "I'm sorry, I ___.",
+     "zh": "對唔住，我唔得閒。",
+     "o": [
+      "can't",
+      "couldn't to",
+      "am not",
+      "don't could"
+     ],
+     "a": 0,
+     "why": "婉拒可以講 I can't。"
+    },
+    {
+     "t": "fill",
+     "q": "Could you help ___, please?",
+     "zh": "唔該你幫我。",
+     "a": [
+      "me"
+     ],
+     "why": "help me。"
+    },
+    {
+     "t": "fill",
+     "q": "___, I can do it.",
+     "zh": "當然可以。填 Of course 或者 Sure。",
+     "a": [
+      "Of course",
+      "Sure"
+     ],
+     "why": "答應可以咁講。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "唔該你再講一次。",
+     "a": "Could you say that again?",
+     "extra": [
+      "to",
+      "saying"
+     ],
+     "why": "Could you say。"
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "___ you open the door, please?",
+     "zh": "唔該你開門。",
+     "o": [
+      "Could",
+      "Are",
+      "Do",
+      "Have"
+     ],
+     "a": 0,
+     "why": "客氣請求用 Could you。"
+    },
+    {
+     "t": "mc",
+     "q": "Could you ___ me?",
+     "zh": "唔該你等我。",
+     "o": [
+      "wait for",
+      "waiting",
+      "to waiting",
+      "waited"
+     ],
+     "a": 0,
+     "why": "Could you + 原形。"
+    },
+    {
+     "t": "mc",
+     "q": "I'm sorry, I ___.",
+     "zh": "對唔住，我唔得閒。",
+     "o": [
+      "can't",
+      "couldn't to",
+      "am not",
+      "don't could"
+     ],
+     "a": 0,
+     "why": "婉拒可以講 I can't。"
+    },
+    {
+     "t": "fill",
+     "q": "Could you help ___, please?",
+     "zh": "唔該你幫我。",
+     "a": [
+      "me"
+     ],
+     "why": "help me。"
+    },
+    {
+     "t": "fill",
+     "q": "___, I can do it.",
+     "zh": "當然可以。填 Of course 或者 Sure。",
+     "a": [
+      "Of course",
+      "Sure"
+     ],
+     "why": "答應可以咁講。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "唔該你再講一次。",
+     "a": "Could you say that again?",
+     "extra": [
+      "to",
+      "saying"
+     ],
+     "why": "Could you say。"
+    }
+   ]
+  },
+  {
+   "id": "g24",
+   "no": 24,
+   "week": 12,
+   "emoji": "🌟",
+   "title": "going to 講計劃",
+   "en": "going to",
+   "reuse": null,
+   "intro": [
+    {
+     "h": "打算",
+     "p": "<b>am / is / are going to</b> + 動詞原形，講已經有嘅計劃。",
+     "ex": [
+      [
+       "I am going to be a teacher.",
+       "我打算做老師。"
+      ],
+      [
+       "She is going to study art.",
+       "佢打算讀藝術。"
+      ],
+      [
+       "We are going to visit the museum.",
+       "我哋打算去博物館。"
+      ]
+     ]
+    },
+    {
+     "h": "問句",
+     "p": "將 be 搬去句頭：<b>Are you going to …?</b>",
+     "ex": [
+      [
+       "Are you going to join the club?",
+       "你打唔打算加入學會？"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "mc",
+     "q": "I ___ going to study tonight.",
+     "zh": "我今晚打算溫書。",
+     "o": [
+      "am",
+      "is",
+      "are",
+      "be"
+     ],
+     "a": 0,
+     "why": "I 用 am going to。"
+    },
+    {
+     "t": "mc",
+     "q": "She is going to ___ a doctor.",
+     "zh": "佢打算做醫生。",
+     "o": [
+      "be",
+      "being",
+      "is",
+      "am"
+     ],
+     "a": 0,
+     "why": "going to + 原形 be。"
+    },
+    {
+     "t": "mc",
+     "q": "___ they going to come?",
+     "zh": "佢哋打唔打算來？",
+     "o": [
+      "Are",
+      "Do",
+      "Is",
+      "Did"
+     ],
+     "a": 0,
+     "why": "they 用 Are。"
+    },
+    {
+     "t": "fill",
+     "q": "We are going to ___ the park.",
+     "zh": "我哋打算去公園。",
+     "a": [
+      "visit"
+     ],
+     "why": "going to + 原形。"
+    },
+    {
+     "t": "fill",
+     "q": "He ___ going to rest.",
+     "zh": "佢打算休息。",
+     "a": [
+      "is"
+     ],
+     "why": "he 用 is going to。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "我打算做老師。",
+     "a": "I am going to be a teacher.",
+     "extra": [
+      "will",
+      "being"
+     ],
+     "why": "am going to be。"
+    }
+   ],
+   "ex": [
+    {
+     "t": "mc",
+     "q": "I ___ going to study tonight.",
+     "zh": "我今晚打算溫書。",
+     "o": [
+      "am",
+      "is",
+      "are",
+      "be"
+     ],
+     "a": 0,
+     "why": "I 用 am going to。"
+    },
+    {
+     "t": "mc",
+     "q": "She is going to ___ a doctor.",
+     "zh": "佢打算做醫生。",
+     "o": [
+      "be",
+      "being",
+      "is",
+      "am"
+     ],
+     "a": 0,
+     "why": "going to + 原形 be。"
+    },
+    {
+     "t": "mc",
+     "q": "___ they going to come?",
+     "zh": "佢哋打唔打算來？",
+     "o": [
+      "Are",
+      "Do",
+      "Is",
+      "Did"
+     ],
+     "a": 0,
+     "why": "they 用 Are。"
+    },
+    {
+     "t": "fill",
+     "q": "We are going to ___ the park.",
+     "zh": "我哋打算去公園。",
+     "a": [
+      "visit"
+     ],
+     "why": "going to + 原形。"
+    },
+    {
+     "t": "fill",
+     "q": "He ___ going to rest.",
+     "zh": "佢打算休息。",
+     "a": [
+      "is"
+     ],
+     "why": "he 用 is going to。"
+    },
+    {
+     "t": "tiles",
+     "q": "砌一句",
+     "zh": "我打算做老師。",
+     "a": "I am going to be a teacher.",
+     "extra": [
+      "will",
+      "being"
+     ],
+     "why": "am going to be。"
+    }
+   ]
+  }
+ ]
+}

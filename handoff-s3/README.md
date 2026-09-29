@@ -1,6 +1,6 @@
 # Season 3 Handoff — 返學返工 (School & Work) v1.1
 
-字表計劃已定（300 字／12 主題）。跨季零撞字。含每主題出街任務。
+300 張完整生字卡同 6 篇文法已展開。跨季零撞字。每主題有出街任務。
 
 | 欄位 | 值 |
 |------|-----|
@@ -15,5 +15,8 @@
 - `data/s1s2-exclude-words.txt` — 禁字
 - 主表全文見 repo 根目錄 `S1-S4_MASTER_v1.1.md`
 
-## 下一步
-展開 `season3-words.json`（ipa／粵語 tip／例句），schema 同 S2。
+## 檔案（已展開）
+- `data/season3-words.json` — 300 張完整生字卡（ipa、粵語、例句、tip；icon null）
+- `data/season3-themes.json` — 12 主題、日次、出街任務
+- `data/season3-grammar.json` — g13–g18
+- 驗證：`python3 tools/validate_s3.py`

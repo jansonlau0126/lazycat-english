@@ -27,8 +27,8 @@
 
 | 檔案 | 狀態 |
 |------|------|
-| `data/season2-words.json` | ✅ 300 字完整（ipa／例句／tip；icon null） |
-| `data/season2-themes.json` | ✅ 12 主題 + review |
+| `data/season2-words.json` | ✅ 已入庫。用你確認過嗰份 300 字檔（ipa／例句／tip；icon null）。部分 tip 仍然好短 |
+| `data/season2-themes.json` | ✅ 12 主題，日次同字檔對得上 |
 | `data/season2-grammar.json` | ✅ g07–g12 |
 | `data/s1-exclude-words.txt` | ✅ S1 禁字 |
 | `tools/validate_s2.py` | ✅ 已通過 |

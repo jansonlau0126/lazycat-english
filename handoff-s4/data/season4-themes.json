@@ -1,0 +1,821 @@
+{
+ "season": 4,
+ "zh": "一齊過節",
+ "en": "Celebrate Together",
+ "emoji": "🏮",
+ "version": "1.1",
+ "level": "A2",
+ "learning_weeks": 12,
+ "total_words": 300,
+ "unlock_note": "完成第 3 季先解鎖呢季",
+ "themes": [
+  {
+   "id": "t37",
+   "no": 1,
+   "season": 4,
+   "week": 1,
+   "zh": "朋友同社交",
+   "en": "Friends and Social",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "pal",
+      "mate",
+      "buddy",
+      "neighbour",
+      "neighbourhood"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "stranger",
+      "guest",
+      "organiser",
+      "invite",
+      "invitation"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "accept",
+      "refuse",
+      "accompany",
+      "alone",
+      "crowd"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "chat",
+      "greet",
+      "welcome",
+      "befriend",
+      "acquaintance"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "flatmate",
+      "social",
+      "gather",
+      "meetup",
+      "contact"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "This is my neighbour.",
+    "scene_zh": "介紹鄰居"
+   },
+   "polysemy_notes": {},
+   "grammar": null
+  },
+  {
+   "id": "t38",
+   "no": 2,
+   "season": 4,
+   "week": 2,
+   "zh": "派對",
+   "en": "Parties",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "party",
+      "celebrate",
+      "celebration",
+      "festival",
+      "event"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "occasion",
+      "rsvp",
+      "balloon",
+      "decoration",
+      "confetti"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "cheers",
+      "cheer",
+      "clap",
+      "enjoy",
+      "entertainment"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "perform",
+      "performance",
+      "audience",
+      "banquet",
+      "reception"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "gathering",
+      "venue",
+      "entry",
+      "vip",
+      "festivity"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "Would you like to come?",
+    "scene_zh": "邀請人"
+   },
+   "polysemy_notes": {},
+   "grammar": "g19"
+  },
+  {
+   "id": "t39",
+   "no": 3,
+   "season": 4,
+   "week": 3,
+   "zh": "生日同禮物",
+   "en": "Birthdays and Gifts",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "gift",
+      "voucher",
+      "wrap",
+      "unwrap",
+      "parcel"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "package",
+      "candle",
+      "wish",
+      "blow",
+      "surprise"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "greeting",
+      "receive",
+      "grateful",
+      "thankful",
+      "appreciate"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "favour",
+      "memento",
+      "keepsake",
+      "memory",
+      "ribbon"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "box",
+      "tag",
+      "label",
+      "wrapping",
+      "bow"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "This gift is for you.",
+    "scene_zh": "送禮物"
+   },
+   "polysemy_notes": {},
+   "grammar": null
+  },
+  {
+   "id": "t40",
+   "no": 4,
+   "season": 4,
+   "week": 4,
+   "zh": "中式節日",
+   "en": "Chinese Festivals",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "lunar",
+      "zodiac",
+      "lantern",
+      "mid-autumn",
+      "reunion"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "ancestor",
+      "temple",
+      "bazaar",
+      "firecracker",
+      "dragon"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "drum",
+      "parade",
+      "angpow",
+      "redpacket",
+      "mooncake"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "ricecake",
+      "pomelo",
+      "tangerine",
+      "incense",
+      "worship"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "tradition",
+      "custom",
+      "culture",
+      "heritage",
+      "ritual"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "Happy New Year!",
+    "scene_zh": "過年祝賀"
+   },
+   "polysemy_notes": {},
+   "grammar": "g20"
+  },
+  {
+   "id": "t41",
+   "no": 5,
+   "season": 4,
+   "week": 5,
+   "zh": "其他節日",
+   "en": "Other Festivals",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "christmas",
+      "santa",
+      "easter",
+      "halloween",
+      "valentine"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "boxing",
+      "national",
+      "handover",
+      "carnival",
+      "costume"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "pumpkin",
+      "turkey",
+      "stocking",
+      "ornament",
+      "firework"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "countdown",
+      "eve",
+      "leave",
+      "carol",
+      "nativity"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "bunny",
+      "witch",
+      "trick",
+      "treat",
+      "festive"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "Merry Christmas!",
+    "scene_zh": "聖誕"
+   },
+   "polysemy_notes": {
+    "leave": "本季＝放假；另外有「離開」"
+   },
+   "grammar": null
+  },
+  {
+   "id": "t42",
+   "no": 6,
+   "season": 4,
+   "week": 6,
+   "zh": "性格",
+   "en": "Personality",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "kind",
+      "modest",
+      "rude",
+      "brave",
+      "funny"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "serious",
+      "honest",
+      "helpful",
+      "lazy",
+      "hardworking"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "clever",
+      "smart",
+      "silly",
+      "patient",
+      "impatient"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "friendly",
+      "unfriendly",
+      "active",
+      "noisy",
+      "generous"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "selfish",
+      "curious",
+      "creative",
+      "reliable",
+      "loyal"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "You are very kind.",
+    "scene_zh": "讚人"
+   },
+   "polysemy_notes": {},
+   "grammar": "g21"
+  },
+  {
+   "id": "t43",
+   "no": 7,
+   "season": 4,
+   "week": 7,
+   "zh": "自然",
+   "en": "Nature",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "nature",
+      "tree",
+      "flower",
+      "river",
+      "lake"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "hill",
+      "cloud",
+      "star",
+      "moon",
+      "insect"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "butterfly",
+      "bee",
+      "leaf",
+      "grass",
+      "stone"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "sand",
+      "soil",
+      "plant",
+      "seed",
+      "grow"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "path",
+      "trail",
+      "valley",
+      "cliff",
+      "cave"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "Let us walk in the park.",
+    "scene_zh": "行山／公園"
+   },
+   "polysemy_notes": {},
+   "grammar": null
+  },
+  {
+   "id": "t44",
+   "no": 8,
+   "season": 4,
+   "week": 8,
+   "zh": "環保",
+   "en": "Environment",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "environment",
+      "earth",
+      "planet",
+      "recycle",
+      "protect"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "waste",
+      "rubbish",
+      "litter",
+      "pollution",
+      "solar"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "energy",
+      "reuse",
+      "reduce",
+      "bin",
+      "glass"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "metal",
+      "eco",
+      "climate",
+      "flood",
+      "drought"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "smoke",
+      "fume",
+      "dust",
+      "organic",
+      "wildlife"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "Please recycle this.",
+    "scene_zh": "分類回收"
+   },
+   "polysemy_notes": {},
+   "grammar": "g22"
+  },
+  {
+   "id": "t45",
+   "no": 9,
+   "season": 4,
+   "week": 9,
+   "zh": "社區",
+   "en": "Community",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "community",
+      "resident",
+      "local",
+      "district",
+      "estate"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "block",
+      "facility",
+      "garden",
+      "service",
+      "public"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "private",
+      "safety",
+      "danger",
+      "citizen",
+      "nation"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "country",
+      "society",
+      "law",
+      "welfare",
+      "system"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "unity",
+      "harmony",
+      "flag",
+      "anthem",
+      "global"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "I live in this estate.",
+    "scene_zh": "介紹屋苑"
+   },
+   "polysemy_notes": {},
+   "grammar": null
+  },
+  {
+   "id": "t46",
+   "no": 10,
+   "season": 4,
+   "week": 10,
+   "zh": "禮貌",
+   "en": "Manners",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "thanks",
+      "pardon",
+      "apology",
+      "apologise",
+      "forgive"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "manner",
+      "gentle",
+      "considerate",
+      "compliment",
+      "blame"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "complain",
+      "request",
+      "sincere",
+      "humble",
+      "courteous"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "respectful",
+      "thoughtful",
+      "fair",
+      "equal",
+      "etiquette"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "courtesy",
+      "politeness",
+      "gratitude",
+      "appreciation",
+      "kindness"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "Thank you very much.",
+    "scene_zh": "道謝"
+   },
+   "polysemy_notes": {},
+   "grammar": "g23"
+  },
+  {
+   "id": "t47",
+   "no": 11,
+   "season": 4,
+   "week": 11,
+   "zh": "相處",
+   "en": "Getting Along",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "trust",
+      "promise",
+      "keep",
+      "betray",
+      "loan"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "owe",
+      "repay",
+      "quarrel",
+      "peace",
+      "include"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "upset",
+      "glad",
+      "pleased",
+      "delighted",
+      "disappointed"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "relieved",
+      "jealous",
+      "envious",
+      "sympathy",
+      "empathy"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "comfort",
+      "cuddle",
+      "wave",
+      "nod",
+      "shake"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "I am sorry.",
+    "scene_zh": "道歉／相處"
+   },
+   "polysemy_notes": {},
+   "grammar": null
+  },
+  {
+   "id": "t48",
+   "no": 12,
+   "season": 4,
+   "week": 12,
+   "zh": "夢想同未來",
+   "en": "Dreams and Future",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "ambition",
+      "effort",
+      "courage",
+      "confidence",
+      "passion"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "interest",
+      "choice",
+      "decision",
+      "opportunity",
+      "chance"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "luck",
+      "fortune",
+      "destiny",
+      "freedom",
+      "rights"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "belief",
+      "legend",
+      "hero",
+      "heroine",
+      "symbol"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "honour",
+      "pride",
+      "shame",
+      "award",
+      "trophy"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "I want to be a teacher.",
+    "scene_zh": "講志願"
+   },
+   "polysemy_notes": {
+    "interest": "本季＝興趣；另外有「利息」"
+   },
+   "grammar": "g24"
+  }
+ ]
+}

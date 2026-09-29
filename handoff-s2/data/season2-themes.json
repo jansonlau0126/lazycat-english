@@ -1,0 +1,771 @@
+{
+ "season": 2,
+ "zh": "出去曬太陽",
+ "en": "Go Out in the Sun",
+ "emoji": "☀️",
+ "subtitle_zh": "出街用得着",
+ "weeks": "14–26",
+ "level": "A1→A2",
+ "learning_weeks": 12,
+ "review_week": 13,
+ "total_words": 300,
+ "unlock_cat": "lammui",
+ "themes": [
+  {
+   "id": "t13",
+   "no": 1,
+   "season": 2,
+   "week": 1,
+   "emoji": "🔢",
+   "zh": "數字同數量",
+   "en": "Numbers",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "six",
+      "seven",
+      "eight",
+      "nine",
+      "ten"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "eleven",
+      "twelve",
+      "thirteen",
+      "fourteen",
+      "fifteen"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "sixteen",
+      "seventeen",
+      "eighteen",
+      "nineteen",
+      "twenty"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "zero",
+      "many",
+      "few",
+      "some",
+      "all"
+     ]
+    }
+   ],
+   "grammar": null
+  },
+  {
+   "id": "t14",
+   "no": 2,
+   "season": 2,
+   "week": 2,
+   "emoji": "🚶",
+   "zh": "出街動詞",
+   "en": "Going-out Verbs",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "go",
+      "come",
+      "want",
+      "need",
+      "like"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "have",
+      "get",
+      "make",
+      "take",
+      "give"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "eat",
+      "buy",
+      "help",
+      "ask",
+      "tell"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "look",
+      "listen",
+      "wait",
+      "walk",
+      "run"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "open",
+      "close",
+      "find",
+      "use",
+      "try"
+     ]
+    }
+   ],
+   "grammar": "g07"
+  },
+  {
+   "id": "t15",
+   "no": 3,
+   "season": 2,
+   "week": 3,
+   "emoji": "🚌",
+   "zh": "交通",
+   "en": "Transport",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "bus",
+      "train",
+      "taxi",
+      "car",
+      "bike"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "mtr",
+      "minibus",
+      "plane",
+      "ferry",
+      "tram"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "station",
+      "stop",
+      "ticket",
+      "platform",
+      "exit"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "ride",
+      "drive",
+      "board",
+      "alight",
+      "arrive"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "left",
+      "right",
+      "straight",
+      "map",
+      "far"
+     ]
+    }
+   ],
+   "grammar": null
+  },
+  {
+   "id": "t16",
+   "no": 4,
+   "season": 2,
+   "week": 4,
+   "emoji": "🧭",
+   "zh": "城市地方",
+   "en": "City Places",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "shop",
+      "park",
+      "hospital",
+      "bank",
+      "library"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "supermarket",
+      "market",
+      "cinema",
+      "hotel",
+      "office"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "street",
+      "road",
+      "building",
+      "place",
+      "centre"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "near",
+      "opposite",
+      "between",
+      "behind",
+      "inside"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "outside",
+      "upstairs",
+      "downstairs",
+      "address",
+      "city"
+     ]
+    }
+   ],
+   "grammar": "g08"
+  },
+  {
+   "id": "t17",
+   "no": 5,
+   "season": 2,
+   "week": 5,
+   "emoji": "🛍️",
+   "zh": "購物",
+   "en": "Shopping",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "sell",
+      "pay",
+      "cost",
+      "price",
+      "cheap"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "expensive",
+      "free",
+      "sale",
+      "discount",
+      "queue"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "customer",
+      "cashier",
+      "receipt",
+      "change",
+      "fit"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "choose",
+      "return",
+      "exchange",
+      "plastic",
+      "basket"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "closed",
+      "push",
+      "pull",
+      "enter",
+      "aisle"
+     ]
+    }
+   ],
+   "grammar": null
+  },
+  {
+   "id": "t18",
+   "no": 6,
+   "season": 2,
+   "week": 6,
+   "emoji": "💰",
+   "zh": "金錢",
+   "en": "Money",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "money",
+      "dollar",
+      "cent",
+      "cash",
+      "card"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "wallet",
+      "purse",
+      "coin",
+      "note",
+      "account"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "spend",
+      "save",
+      "earn",
+      "borrow",
+      "lend"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "rich",
+      "poor",
+      "enough",
+      "too",
+      "only"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "how",
+      "much",
+      "total",
+      "amount",
+      "payment"
+     ]
+    }
+   ],
+   "grammar": "g09"
+  },
+  {
+   "id": "t19",
+   "no": 7,
+   "season": 2,
+   "week": 7,
+   "emoji": "🍽️",
+   "zh": "餐廳食嘢",
+   "en": "Restaurants",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "restaurant",
+      "seat",
+      "reserve",
+      "serve",
+      "dish"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "plate",
+      "bowl",
+      "knife",
+      "fork",
+      "spoon"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "salt",
+      "pepper",
+      "sauce",
+      "oil",
+      "vinegar"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "fresh",
+      "raw",
+      "boil",
+      "fry",
+      "bake"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "recommend",
+      "special",
+      "set",
+      "portion",
+      "dessert"
+     ]
+    }
+   ],
+   "grammar": null
+  },
+  {
+   "id": "t20",
+   "no": 8,
+   "season": 2,
+   "week": 8,
+   "emoji": "🏥",
+   "zh": "健康",
+   "en": "Health",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "sick",
+      "ill",
+      "pain",
+      "hurt",
+      "fever"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "cough",
+      "flu",
+      "headache",
+      "stomachache",
+      "sore"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "doctor",
+      "nurse",
+      "clinic",
+      "medicine",
+      "pill"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "rest",
+      "exercise",
+      "healthy",
+      "better",
+      "worse"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "appointment",
+      "check",
+      "care",
+      "strong",
+      "weak"
+     ]
+    }
+   ],
+   "grammar": "g10"
+  },
+  {
+   "id": "t21",
+   "no": 9,
+   "season": 2,
+   "week": 9,
+   "emoji": "⚽",
+   "zh": "運動",
+   "en": "Sports",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "sport",
+      "football",
+      "basketball",
+      "swimming",
+      "tennis"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "jump",
+      "kick",
+      "throw",
+      "catch",
+      "hit"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "team",
+      "player",
+      "game",
+      "match",
+      "score"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "win",
+      "lose",
+      "draw",
+      "practise",
+      "coach"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "gym",
+      "pool",
+      "field",
+      "ball",
+      "race"
+     ]
+    }
+   ],
+   "grammar": null
+  },
+  {
+   "id": "t22",
+   "no": 10,
+   "season": 2,
+   "week": 10,
+   "emoji": "🎸",
+   "zh": "興趣娛樂",
+   "en": "Hobbies",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "hobby",
+      "music",
+      "song",
+      "sing",
+      "dance"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "sketch",
+      "paint",
+      "read",
+      "write",
+      "cook"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "play",
+      "film",
+      "photo",
+      "camera",
+      "video"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "fun",
+      "interesting",
+      "boring",
+      "favourite",
+      "club"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "join",
+      "learn",
+      "show",
+      "talent",
+      "collect"
+     ]
+    }
+   ],
+   "grammar": "g11"
+  },
+  {
+   "id": "t23",
+   "no": 11,
+   "season": 2,
+   "week": 11,
+   "emoji": "✈️",
+   "zh": "旅行",
+   "en": "Travel",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "travel",
+      "trip",
+      "tourist",
+      "guide",
+      "passport"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "airport",
+      "flight",
+      "luggage",
+      "suitcase",
+      "pack"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "room",
+      "book",
+      "stay",
+      "view",
+      "abroad"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "beach",
+      "mountain",
+      "island",
+      "sea",
+      "forest"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "visit",
+      "tour",
+      "souvenir",
+      "postcard",
+      "camp"
+     ]
+    }
+   ],
+   "grammar": null
+  },
+  {
+   "id": "t24",
+   "no": 12,
+   "season": 2,
+   "week": 12,
+   "emoji": "📱",
+   "zh": "手機同網絡",
+   "en": "Phone & Internet",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "phone",
+      "mobile",
+      "call",
+      "text",
+      "message"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "internet",
+      "wifi",
+      "app",
+      "website",
+      "email"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "click",
+      "download",
+      "upload",
+      "search",
+      "send"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "share",
+      "post",
+      "password",
+      "screen",
+      "battery"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "charge",
+      "online",
+      "offline",
+      "data",
+      "signal"
+     ]
+    }
+   ],
+   "grammar": "g12"
+  }
+ ]
+}

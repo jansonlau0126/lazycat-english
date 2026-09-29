@@ -1,0 +1,829 @@
+{
+ "season": 3,
+ "zh": "返學返工",
+ "en": "School & Work",
+ "emoji": "🏫",
+ "version": "1.1",
+ "level": "A1→A2",
+ "learning_weeks": 12,
+ "total_words": 300,
+ "unlock_note": "完成第 2 季先解鎖呢季",
+ "themes": [
+  {
+   "id": "t25",
+   "no": 1,
+   "season": 3,
+   "week": 1,
+   "zh": "學校地方",
+   "en": "School Places",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "school",
+      "classroom",
+      "playground",
+      "canteen",
+      "hall"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "corridor",
+      "gate",
+      "staffroom",
+      "lab",
+      "toilet"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "notice",
+      "locker",
+      "timetable",
+      "bell",
+      "break"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "recess",
+      "assembly",
+      "class",
+      "grade",
+      "form"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "campus",
+      "entrance",
+      "stairs",
+      "blackboard",
+      "whiteboard"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "Where is the canteen?",
+    "scene_zh": "學校問飯堂"
+   },
+   "polysemy_notes": {
+    "break": "本季＝小息；另外有「打破／休息」",
+    "class": "S3＝班；另外有「階級」",
+    "grade": "S3＝年級／分數相關",
+    "form": "本季＝年級（Form 1）；另外有「表格」"
+   },
+   "grammar": null
+  },
+  {
+   "id": "t26",
+   "no": 2,
+   "season": 3,
+   "week": 2,
+   "zh": "學校人物",
+   "en": "School People",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "teacher",
+      "student",
+      "pupil",
+      "classmate",
+      "principal"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "headmaster",
+      "monitor",
+      "prefect",
+      "partner",
+      "group"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "visitor",
+      "guard",
+      "cleaner",
+      "librarian",
+      "tutor"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "headmistress",
+      "assistant",
+      "peer",
+      "leader",
+      "member"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "volunteer",
+      "speaker",
+      "listener",
+      "host",
+      "deputy"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "She is my classmate.",
+    "scene_zh": "介紹同學"
+   },
+   "polysemy_notes": {},
+   "grammar": "g13"
+  },
+  {
+   "id": "t27",
+   "no": 3,
+   "season": 3,
+   "week": 3,
+   "zh": "文具同書包",
+   "en": "Stationery",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "pen",
+      "pencil",
+      "eraser",
+      "rubber",
+      "ruler"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "scissors",
+      "glue",
+      "tape",
+      "crayon",
+      "marker"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "highlighter",
+      "notebook",
+      "textbook",
+      "folder",
+      "file"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "backpack",
+      "pencilcase",
+      "stapler",
+      "clip",
+      "paper"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "page",
+      "cover",
+      "sharpener",
+      "calculator",
+      "ink"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "Can I borrow a pencil?",
+    "scene_zh": "借文具"
+   },
+   "polysemy_notes": {},
+   "grammar": null
+  },
+  {
+   "id": "t28",
+   "no": 4,
+   "season": 3,
+   "week": 4,
+   "zh": "學科",
+   "en": "Subjects",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "subject",
+      "english",
+      "chinese",
+      "maths",
+      "mathematics"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "science",
+      "history",
+      "geography",
+      "art",
+      "pe"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "computer",
+      "putonghua",
+      "lesson",
+      "period",
+      "chapter"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "topic",
+      "project",
+      "experiment",
+      "worksheet",
+      "dictation"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "composition",
+      "reading",
+      "writing",
+      "speaking",
+      "listening"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "I have Maths today.",
+    "scene_zh": "講今日科目"
+   },
+   "polysemy_notes": {},
+   "grammar": "g14"
+  },
+  {
+   "id": "t29",
+   "no": 5,
+   "season": 3,
+   "week": 5,
+   "zh": "學習動詞",
+   "en": "Study Verbs",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "study",
+      "teach",
+      "answer",
+      "question",
+      "explain"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "understand",
+      "remember",
+      "revise",
+      "copy",
+      "spell"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "calculate",
+      "underline",
+      "tick",
+      "cross",
+      "pass"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "fail",
+      "review",
+      "prepare",
+      "focus",
+      "repeat"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "recite",
+      "memorise",
+      "solve",
+      "translate",
+      "summarise"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "I do not understand.",
+    "scene_zh": "課堂／補習"
+   },
+   "polysemy_notes": {},
+   "grammar": null
+  },
+  {
+   "id": "t30",
+   "no": 6,
+   "season": 3,
+   "week": 6,
+   "zh": "功課同考試",
+   "en": "Homework and Exams",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "homework",
+      "assignment",
+      "test",
+      "exam",
+      "quiz"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "result",
+      "report",
+      "certificate",
+      "prize",
+      "medal"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "competition",
+      "contest",
+      "speech",
+      "presentation",
+      "essay"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "paragraph",
+      "sentence",
+      "mistake",
+      "error",
+      "correct"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "wrong",
+      "oral",
+      "written",
+      "mark",
+      "points"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "I have a test tomorrow.",
+    "scene_zh": "考試前"
+   },
+   "polysemy_notes": {
+    "mark": "本季＝分數；另外有「標記」意思"
+   },
+   "grammar": "g15"
+  },
+  {
+   "id": "t31",
+   "no": 7,
+   "season": 3,
+   "week": 7,
+   "zh": "課室規矩",
+   "en": "Classroom Rules",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "rule",
+      "quiet",
+      "raise",
+      "stand",
+      "sit"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "line",
+      "careful",
+      "tidy",
+      "absent",
+      "present"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "permission",
+      "attention",
+      "behave",
+      "polite",
+      "respect"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "follow",
+      "obey",
+      "allow",
+      "forbid",
+      "punish"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "reward",
+      "praise",
+      "warn",
+      "remind",
+      "discipline"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "Please be quiet.",
+    "scene_zh": "請人安靜（禮貌）"
+   },
+   "polysemy_notes": {
+    "present": "本季＝出席；禮物用 gift（S4）"
+   },
+   "grammar": null
+  },
+  {
+   "id": "t32",
+   "no": 8,
+   "season": 3,
+   "week": 8,
+   "zh": "職業",
+   "en": "Jobs",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "job",
+      "work",
+      "worker",
+      "boss",
+      "manager"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "colleague",
+      "staff",
+      "officer",
+      "driver",
+      "chef"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "police",
+      "firefighter",
+      "postman",
+      "farmer",
+      "pilot"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "singer",
+      "actor",
+      "actress",
+      "engineer",
+      "designer"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "programmer",
+      "baker",
+      "barber",
+      "lawyer",
+      "dentist"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "What do you do?",
+    "scene_zh": "問職業"
+   },
+   "polysemy_notes": {},
+   "grammar": "g16"
+  },
+  {
+   "id": "t33",
+   "no": 9,
+   "season": 3,
+   "week": 9,
+   "zh": "辦公室同求職",
+   "en": "Office and Job Hunting",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "meeting",
+      "interview",
+      "salary",
+      "wage",
+      "apply"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "application",
+      "cv",
+      "resume",
+      "keyboard",
+      "printer"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "print",
+      "document",
+      "signature",
+      "deadline",
+      "task"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "overtime",
+      "hire",
+      "fire",
+      "quit",
+      "retire"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "career",
+      "profession",
+      "company",
+      "employee",
+      "employer"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "I have an interview.",
+    "scene_zh": "求職"
+   },
+   "polysemy_notes": {
+    "apply": "本季＝申請；另外有「應用」",
+    "fire": "本季＝解僱；另外有「火」"
+   },
+   "grammar": null
+  },
+  {
+   "id": "t34",
+   "no": 10,
+   "season": 3,
+   "week": 10,
+   "zh": "時間表同作息",
+   "en": "Timetable and Routine",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "o'clock",
+      "past",
+      "am",
+      "pm",
+      "schedule"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "diary",
+      "delay",
+      "duration",
+      "punctual",
+      "prompt"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "soon",
+      "later",
+      "earlier",
+      "hourly",
+      "daily"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "weekly",
+      "monthly",
+      "yearly",
+      "begin",
+      "end"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "start",
+      "finish",
+      "homeroom",
+      "slot",
+      "shift"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "The class starts at nine.",
+    "scene_zh": "講時間"
+   },
+   "polysemy_notes": {},
+   "grammar": "g17"
+  },
+  {
+   "id": "t35",
+   "no": 11,
+   "season": 3,
+   "week": 11,
+   "zh": "升學同校園生活",
+   "en": "Further Study",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "primary",
+      "secondary",
+      "university",
+      "college",
+      "kindergarten"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "graduate",
+      "graduation",
+      "term",
+      "semester",
+      "vacation"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "outing",
+      "picnic",
+      "activity",
+      "duty",
+      "responsibility"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "goal",
+      "dream",
+      "future",
+      "degree",
+      "diploma"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "course",
+      "major",
+      "alumni",
+      "freshman",
+      "scholarship"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "I go to primary school.",
+    "scene_zh": "介紹學校"
+   },
+   "polysemy_notes": {},
+   "grammar": null
+  },
+  {
+   "id": "t36",
+   "no": 12,
+   "season": 3,
+   "week": 12,
+   "zh": "討論同合作",
+   "en": "Discussion and Teamwork",
+   "word_count": 25,
+   "days": [
+    {
+     "day": 1,
+     "words": [
+      "speak",
+      "talk",
+      "discuss",
+      "agree",
+      "disagree"
+     ]
+    },
+    {
+     "day": 2,
+     "words": [
+      "suggest",
+      "decide",
+      "plan",
+      "organise",
+      "continue"
+     ]
+    },
+    {
+     "day": 3,
+     "words": [
+      "improve",
+      "skill",
+      "ability",
+      "confident",
+      "success"
+     ]
+    },
+    {
+     "day": 4,
+     "words": [
+      "failure",
+      "teamwork",
+      "cooperate",
+      "support",
+      "encourage"
+     ]
+    },
+    {
+     "day": 5,
+     "words": [
+      "opinion",
+      "idea",
+      "debate",
+      "vote",
+      "argue"
+     ]
+    }
+   ],
+   "outing_task": {
+    "en": "I agree with you.",
+    "scene_zh": "討論時"
+   },
+   "polysemy_notes": {},
+   "grammar": "g18"
+  }
+ ]
+}
