@@ -391,6 +391,18 @@
     }).join("");
     return '<div class="page"><div class="row"><h2>貓貓圖鑑 🐾</h2><div class="count"><b>' + unlocked + "</b> / 15 隻貓貓</div></div><div class=\"bar\"><i style=\"width:" + (unlocked / 15 * 100) + '%"></i></div><button class="compline" data-act="companion">陪讀貓： ' + esc(comp.name_zh) + "（" + esc(comp.breed_zh) + "） ・ 撳一下可以換陪讀貓</button><div class=\"cgrid\">" + cards + "</div></div>";
   }
+  function poseCopy(cat, pose) {
+    const slot = pose.key === "actA" ? "a" : pose.key === "actB" ? "b" : "";
+    const extra = slot && cat.act && cat.act[slot];
+    return {
+      zh: (extra && extra.zh) || pose.zh,
+      title: ((extra && extra.title) || pose.title_tpl || "").replace("{name}", cat.name_zh),
+      quote: (extra && extra.quote) || pose.quote || ""
+    };
+  }
+  function nextRegularPose(lessons) {
+    return POSES.find(p => !p.bonus && (p.lessons_needed || 0) > (lessons || 0)) || null;
+  }
   function renderAlbum(slug) {
     const c = CAT[slug];
     const rec = S.cats[slug];
@@ -404,24 +416,25 @@
       const on = poseUnlocked(slug, p, lessons);
       const src = c.poses[p.key];
       const pos = p.object_position || "50% 40%";
+      const label = poseCopy(c, p).zh;
       if (on) {
-        grid += '<button class="photo on" data-act="light" data-id="' + slug + '" data-pose="' + p.key + '"><div class="pframe"><img alt="" src="' + esc(src) + '" style="object-position:' + pos + '"></div><span class="tag">' + esc(p.tag_zh) + '</span><div class="cap"><i>' + p.n + "</i>" + p.emoji + " " + esc(p.zh) + ' <span class="ok">已解鎖</span></div></button>';
+        grid += '<button class="photo on" data-act="light" data-id="' + slug + '" data-pose="' + p.key + '"><div class="pframe"><img alt="" src="' + esc(src) + '" style="object-position:' + pos + '"></div><span class="tag">' + esc(p.tag_zh) + '</span><div class="cap"><i>' + p.n + "</i>" + p.emoji + " " + esc(label) + ' <span class="ok">已解鎖</span></div></button>';
       } else {
         const left = Math.max(0, (p.lessons_needed || 0) - lessons);
-        grid += '<div class="photo off"><div class="pframe locked"><img alt="" src="' + esc(src) + '" style="object-position:' + pos + '"></div><span class="lockc">🔒</span><div class="hint">' + esc(p.locked_hint || "") + '</div><div class="cap"><i>' + p.n + "</i>" + esc(p.zh) + ' <span class="wait">再陪讀 ' + left + " 堂</span></div></div>";
+        grid += '<div class="photo off"><div class="pframe locked"><img alt="" src="' + esc(src) + '" style="object-position:' + pos + '"></div><span class="lockc">🔒</span><div class="hint">' + esc(p.locked_hint || "") + '</div><div class="cap"><i>' + p.n + "</i>" + esc(label) + ' <span class="wait">再陪讀 ' + left + " 堂</span></div></div>";
       }
     });
     const yarn = POSES.find(p => p.key === "yarn");
     const bonus = rec.bonus
       ? '<div class="bonus on"><div class="pframe"><img alt="" src="' + esc(c.poses.yarn) + '" style="object-position:50% 50%"></div><div><b>🧶 玩毛線 ・ ' + esc(THEME[rec.bonus.theme].zh) + ' 零錯誤獎勵</b></div></div>'
       : '<div class="bonus"><div class="pframe locked"><img alt="" src="' + esc(c.poses.yarn) + '"></div><div><b>🧶 隱藏相：玩毛線 <span class="bon">BONUS</span></b><p>🔒 任何一個主題全部答啱（零錯誤）</p><p>就會解鎖呢張隱藏相</p></div></div>';
-    const nextPose = lessons >= 15 ? null : lessons >= 10 ? POSES[3] : lessons >= 5 ? POSES[2] : POSES[1];
+    const nextPose = nextRegularPose(lessons);
     const paws = [0, 1, 2, 3, 4].map(i => '<i class="' + (i < math.paws ? "on" : "") + '">🐾</i>').join("");
-    const nextCard = math.done ? '<div class="nextph">🎉 全部相都解鎖咗！</div>' :
-      '<div class="nextph"><div class="row"><b>📷 下一張相：' + esc(nextPose.zh) + '</b><span>' + math.paws + ' / 5 堂</span></div><div class="paws">' + paws + "</div><p>揀" + esc(c.name_zh) + "做陪讀貓，再陪讀 " + math.nextN + " 堂就解鎖新相！</p></div>";
+    const nextCard = math.done ? '<div class="nextph">🎉 六張相都解鎖咗！</div>' :
+      '<div class="nextph"><div class="row"><b>📷 下一張相：' + esc(poseCopy(c, nextPose).zh) + '</b><span>' + math.paws + ' / 5 堂</span></div><div class="paws">' + paws + "</div><p>揀" + esc(c.name_zh) + "做陪讀貓，再陪讀 " + math.nextN + " 堂就解鎖新相！</p></div>";
     const btn = slug === S.companion ? '<button class="btn" disabled>而家陪緊你 ✓</button>' : '<button class="btn" data-act="setcomp" data-id="' + slug + '">揀佢做今日陪讀貓 🐾</button>';
     const cur = companion();
-    return '<div class="page album"><div class="chead"><button class="back" data-act="closealbum" aria-label="返回">‹</button><h2>' + esc(c.name_zh) + '嘅畫冊</h2><span class="pill sun">📷 ' + math.regular + ' / 4</span></div>' +
+    return '<div class="page album"><div class="chead"><button class="back" data-act="closealbum" aria-label="返回">‹</button><h2>' + esc(c.name_zh) + '嘅畫冊</h2><span class="pill sun">📷 ' + math.regular + " / " + math.total + "</span></div>" +
       '<div class="card profile tint-on"><div class="row">' + faceHTML(slug, 72) + '<div><b class="nm">' + esc(c.name_zh) + '</b> <span class="pill">' + esc(c.breed_zh) + "・" + esc(c.hair_zh) + '</span><p class="quote">「' + esc(c.quote_zh) + '」</p><p>一齊學咗 ' + lessons + " 堂 ・ " + esc(c.unlock.label_zh) + "</p></div></div></div>" +
       '<div class="row section-t"><span>📖 畫冊</span><small>每陪你學 5 堂，就多一張相</small></div><div class="agrid">' + grid + "</div>" + bonus + nextCard + btn +
       '<p class="fine">今日陪讀貓：' + esc(cur.name_zh) + " ・ 換咗都唔會蝕咗進度</p></div>";
@@ -513,7 +526,7 @@
     const sel = c.slug === (ui.pick || S.companion);
     const pills = (c.slug === S.companion ? '<span class="pill mint">而家陪緊你</span>' : "") + (!rec.seen ? '<span class="pill coral">NEW</span>' : "");
     const next = math.done ? "相已集齊" : "下一張：再陪讀 " + math.nextN + " 堂";
-    return '<button class="crow' + (sel ? " sel" : "") + '" data-act="compradio" data-id="' + c.slug + '">' + faceHTML(c.slug, 52) + '<div class="cbody"><div class="row"><b>' + esc(c.name_zh) + "</b> " + pills + '</div><div class="fine">' + esc(c.breed_zh) + '</div><div class="slots">' + slots + '</div><div class="fine">📷 ' + math.regular + " / 4 張相 ・ " + next + '</div><div class="bar thin"><i style="width:' + (math.paws / 5 * 100) + '%"></i></div></div><span class="radio">' + (sel ? "✓" : "") + "</span></button>";
+    return '<button class="crow' + (sel ? " sel" : "") + '" data-act="compradio" data-id="' + c.slug + '">' + faceHTML(c.slug, 52) + '<div class="cbody"><div class="row"><b>' + esc(c.name_zh) + "</b> " + pills + '</div><div class="fine">' + esc(c.breed_zh) + '</div><div class="slots">' + slots + '</div><div class="fine">📷 ' + math.regular + " / " + math.total + " 張相 ・ " + next + '</div><div class="bar thin"><i style="width:' + (math.paws / 5 * 100) + '%"></i></div></div><span class="radio">' + (sel ? "✓" : "") + "</span></button>";
   }
 
   function showCelebration() {
@@ -522,6 +535,7 @@
     if (!q.length || $("#lesson")) return;
     const item = q[0];
     if (item.type === "toast") { toast(item.msg); S.celebrationQueue.shift(); save(); return showCelebration(); }
+    if (item.type === "photo" || item.type === "yarn") LC.meow(item.cat, "song");
     const el = document.createElement("div"); el.id = "celebrate"; el.className = "celebrate-bg";
     el.innerHTML = '<div class="cel">' + celebrationHTML(item) + "</div>";
     $("#app").appendChild(el);
@@ -543,17 +557,18 @@
     const src = c.poses[yarn ? "yarn" : item.pose];
     const lessons = (S.cats[c.slug] && S.cats[c.slug].lessons) || item.lessons || 0;
     const math = albumMath(lessons);
-    const title = (pose.title_tpl || "").replace("{name}", c.name_zh);
+    const copy = poseCopy(c, pose);
+    const title = copy.title;
     const sub = yarn ? esc(THEME[item.theme].zh) + " 全部答啱，零錯誤！" : "多謝你陪" + esc(c.name_zh) + "學咗 " + lessons + " 堂";
-    const circ = ["", "①", "②", "③", "④"];
-    const cap = yarn ? "🧶 玩毛線" : (circ[pose.n] || "") + " " + pose.zh;
-    const pill = yarn ? "BONUS" : math.regular + " / 4";
+    const circ = ["", "①", "②", "③", "④", "⑤", "⑥"];
+    const cap = yarn ? "🧶 玩毛線" : (circ[pose.n] || "") + " " + copy.zh;
+    const pill = yarn ? "BONUS" : math.regular + " / " + math.total;
     const thumbs = POSES.map(p => {
       const on = poseUnlocked(c.slug, p, lessons) || (yarn && p.key === "yarn");
       const isNew = (yarn && p.key === "yarn") || (!yarn && p.key === item.pose);
       return '<div class="th' + (isNew ? " new" : "") + (p.bonus ? " yarn" : "") + '">' + (on ? '<img alt="" src="' + esc(c.poses[p.key]) + '">' : '<span>🔒</span>') + (isNew ? '<em>NEW</em>' : "") + "</div>";
     }).join("");
-    return '<div class="ribbon">' + (yarn ? "🧶 隱藏相！" : "📷 畫冊新相！") + '</div><div class="polaroid"><div class="tape"></div><img alt="" src="' + esc(src) + '"><div class="pcap">' + cap + ' <span class="pill">' + pill + "</span></div></div><h2>" + esc(title) + "</h2><p>" + sub + '</p><div class="bubble">' + esc(pose.quote || "") + '</div><div class="thumbs">' + thumbs + '</div><div class="pills"><span class="pill mint">🐾 陪讀 ' + lessons + " 堂</span>" + xp + '<span class="pill">📷 畫冊 ' + (yarn ? math.regular : math.regular) + ' / 4</span></div><button class="btn" data-act="cel-album" data-id="' + c.slug + '">睇' + esc(c.name_zh) + '嘅畫冊 🐾</button><button class="btn ghost" data-act="cel-next">繼續</button>';
+    return '<div class="ribbon">' + (yarn ? "🧶 隱藏相！" : "📷 畫冊新相！") + '</div><div class="polaroid"><div class="tape"></div><img alt="" src="' + esc(src) + '"><div class="pcap">' + cap + ' <span class="pill">' + pill + "</span></div></div><h2>" + esc(title) + "</h2><p>" + sub + '</p><div class="bubble">' + esc(copy.quote) + '</div><div class="thumbs">' + thumbs + '</div><div class="pills"><span class="pill mint">🐾 陪讀 ' + lessons + " 堂</span>" + xp + '<span class="pill">📷 畫冊 ' + math.regular + " / " + math.total + '</span></div><button class="btn" data-act="cel-album" data-id="' + c.slug + '">睇' + esc(c.name_zh) + '嘅畫冊 🐾</button><button class="btn ghost" data-act="cel-next">繼續</button>';
   }
   function nextCelebration() {
     const el = $("#celebrate"); if (el) el.remove();
@@ -842,7 +857,7 @@
     let i = Math.max(0, keys.indexOf(pose));
     const show = () => {
       const p = POSES.find(x => x.key === keys[i]);
-      modal('<button class="xbtn" data-act="close" aria-label="關閉">✕</button><div class="pframe big"><img alt="" src="' + esc(c.poses[keys[i]]) + '" style="object-position:' + (p.object_position || "50% 40%") + '"></div><p class="mp">' + p.emoji + " " + esc(p.zh) + "</p>" + (keys.length > 1 ? '<div class="row"><button class="btn ghost" data-act="lightprev">‹</button><button class="btn ghost" data-act="lightnext">›</button></div>' : ""), { lock: false });
+      modal('<button class="xbtn" data-act="close" aria-label="關閉">✕</button><div class="pframe big"><img alt="" src="' + esc(c.poses[keys[i]]) + '" style="object-position:' + (p.object_position || "50% 40%") + '"></div><p class="mp">' + p.emoji + " " + esc(poseCopy(c, p).zh) + "</p>" + (keys.length > 1 ? '<div class="row"><button class="btn ghost" data-act="lightprev">‹</button><button class="btn ghost" data-act="lightnext">›</button></div>' : ""), { lock: false });
     };
     ui.light = { keys, i, show, slug };
     ui.light.show = show;

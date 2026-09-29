@@ -107,7 +107,7 @@
       const next = math.done ? "相已集齊" : "下一張：再陪讀 " + math.nextN + " 堂";
       return '<button class="crow' + (sel ? " sel" : "") + '" data-act="compradio" data-id="' + c.slug + '">' + LC.faceHTML(c.slug, 52) +
         '<div class="cbody"><div class="row"><b>' + LC.esc(c.name_zh) + "</b> " + pills + '</div><div class="fine">' + LC.esc(c.breed_zh) +
-        '</div><div class="slots">' + slots + '</div><div class="fine">📷 ' + math.regular + " / 4 張相 ・ " + next +
+        '</div><div class="slots">' + slots + '</div><div class="fine">📷 ' + math.regular + " / " + math.total + " 張相 ・ " + next +
         '</div><div class="bar thin"><i style="width:' + (math.paws / 5 * 100) + '%"></i></div></div><span class="radio">' + (sel ? "✓" : "") + "</span></button>";
     }).join("");
     const ok = $("#compok");

@@ -349,7 +349,7 @@
         S.themeCards[node.theme] = { date: today(), cat: slug };
         queue.push({ type: "themeCard", theme: node.theme, xp });
       }
-      [["sleep", 5], ["stretch", 10], ["happy", 15]].forEach(([pose, need]) => {
+      [["sleep", 5], ["stretch", 10], ["happy", 15], ["actA", 20], ["actB", 25]].forEach(([pose, need]) => {
         if (beforeL < need && afterL >= need) queue.push({ type: "photo", cat: slug, pose, xp, lessons: afterL });
       });
     }

@@ -336,11 +336,15 @@
     });
     return newly;
   }
+  const PHOTO_GATES = [5, 10, 15, 20, 25];
   function albumMath(lessons) {
     lessons = lessons || 0;
-    const regular = 1 + Math.min(3, Math.floor(lessons / 5));
-    const done = lessons >= 15;
-    return { regular, nextN: done ? 0 : 5 - (lessons % 5), paws: done ? 5 : (lessons % 5), done };
+    const regular = 1 + PHOTO_GATES.filter(n => lessons >= n).length;
+    const nextGate = PHOTO_GATES.find(n => lessons < n);
+    const done = !nextGate;
+    if (done) return { regular, nextN: 0, paws: 5, done: true, total: 6 };
+    const prev = nextGate === 5 ? 0 : PHOTO_GATES[PHOTO_GATES.indexOf(nextGate) - 1];
+    return { regular, nextN: nextGate - lessons, paws: lessons - prev, done: false, total: 6 };
   }
   function poseUnlocked(catSlug, pose, lessons) {
     if (pose.key === "sit") return !!S.cats[catSlug];
@@ -522,7 +526,30 @@
       return AC;
     } catch (e) { return null; }
   }
-  function unlockAudio() { audioCtx(); }
+  let meowEl = null;
+  let meowGen = 0;
+  function meowSrc(slug, kind) {
+    const cat = CAT[slug];
+    if (!cat) return "";
+    const n = String(cat.no).padStart(2, "0");
+    const file = kind === "done" ? "cute" : kind === "song" ? "song" : "meow";
+    return "assets/meows/" + file + "_" + n + ".mp3";
+  }
+  function fallbackMeow(slug, kind) {
+    const ac = audioCtx();
+    if (!ac) return;
+    const go = () => { try { scheduleMeow(ac, slug, kind === "done" ? "done" : "pick", ac.currentTime + 0.02); } catch (e) {} };
+    if (ac.state === "running") go();
+    else {
+      const pending = ac.resume();
+      if (pending && pending.then) pending.then(go);
+      else go();
+    }
+  }
+  function unlockAudio() {
+    audioCtx();
+    try { if (!meowEl) meowEl = new Audio(); } catch (e) {}
+  }
   // Adult meow: F0 rises then falls; the mouth opens from a close "ee" to an open "ow"
   // (F1 rises, F2 falls). Kittens sit higher and shorter; big cats sit lower and longer.
   const MEOWS = {
@@ -599,14 +626,18 @@
   }
   function meow(slug, kind) {
     if (!S.settings.sound) return;
-    const ac = audioCtx();
-    if (!ac) return;
-    const go = () => { try { scheduleMeow(ac, slug, kind, ac.currentTime + 0.02); } catch (e) {} };
-    if (ac.state === "running") go();
-    else {
-      const pending = ac.resume();
-      if (pending && pending.then) pending.then(go);
-      else go();
+    const src = meowSrc(slug, kind);
+    if (!src) return;
+    const gen = ++meowGen;
+    try {
+      if (!meowEl) meowEl = new Audio();
+      meowEl.pause();
+      meowEl.src = src;
+      meowEl.volume = 0.9;
+      const pending = meowEl.play();
+      if (pending && pending.catch) pending.catch(() => { if (gen === meowGen) fallbackMeow(slug, kind); });
+    } catch (e) {
+      if (gen === meowGen) fallbackMeow(slug, kind);
     }
   }
   function beep(kind) {
