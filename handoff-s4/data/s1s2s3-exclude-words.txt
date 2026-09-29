@@ -1,0 +1,2 @@
+# Combined S1+S2+S3 exclude — full list in handoff-s4/data after clone; see season3-word-plan + s1s2-exclude for complete set
+# Use: all S1 + S2 words + all words from season3-word-plan.json themes
