@@ -340,6 +340,17 @@ h2,h3,h4{font-weight:normal}
 .here[data-r="1"]{top:calc(32.653% - 46px)}
 .here[data-r="2"]{top:calc(57.143% - 46px)}
 .here[data-r="3"]{top:calc(81.633% - 46px)}
+.journey{display:flex;align-items:stretch;gap:2px}
+.jstep{flex:1;min-width:0;border-radius:16px;border:2px solid var(--line);background:#fff;padding:8px 2px;text-align:center;line-height:1.2;min-height:52px}
+.jstep b{display:block;font-size:12px;font-weight:800}
+.jstep small{display:block;color:var(--muted);font-size:10px;margin-top:2px}
+.jstep.on{border-color:var(--orange);background:#FFF6EC;box-shadow:0 3px 0 var(--orange-d)}
+.jstep.lock{opacity:.6}
+.jarr{align-self:center;color:var(--muted);flex:0 0 auto;font-size:14px}
+.outing{background:#FFF8EE;border:2px dashed var(--line-d);border-radius:16px;padding:10px 12px;display:flex;flex-direction:column;gap:6px;text-align:left}
+.outing .enline{font-family:var(--en);font-size:18px;color:var(--orange-d)}
+.diary h3{font-size:17px;margin-bottom:4px}
+.diary textarea{width:100%;min-height:72px;border:2px solid var(--line);border-radius:12px;padding:8px;background:#fff;resize:vertical}
 .sc{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:20px;border:2px solid var(--line);text-align:left;width:100%;color:inherit}
 .sc .l{flex:1;min-width:0}
 .sc .t{font-size:14px;display:flex;align-items:center;gap:4px;flex-wrap:wrap}

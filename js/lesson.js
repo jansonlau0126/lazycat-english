@@ -16,9 +16,10 @@
 
   function distract(w, n) {
     const bad = x => x.id === w.id || x.meaning_zh === w.meaning_zh;
+    const same = x => (x.season || 1) === (w.season || 1);
     let pool = WORDS.filter(x => !bad(x) && x.theme_id === w.theme_id);
-    if (pool.length < n) pool = pool.concat(WORDS.filter(x => !bad(x) && S.srs[x.id] && x.theme_id !== w.theme_id));
-    if (pool.length < n) pool = WORDS.filter(x => !bad(x));
+    if (pool.length < n) pool = pool.concat(WORDS.filter(x => !bad(x) && same(x) && S.srs[x.id] && x.theme_id !== w.theme_id));
+    if (pool.length < n) pool = WORDS.filter(x => !bad(x) && same(x));
     const seen = new Set();
     const uniq = [];
     shuffle(pool).forEach(x => { if (!seen.has(x.id)) { seen.add(x.id); uniq.push(x); } });
@@ -49,7 +50,7 @@
       let extra = [];
       if (toks.length <= 7) {
         const low = toks.map(x => x.toLowerCase());
-        const pool = [...new Set(WORDS.filter(x => x.id !== w.id).flatMap(x => tokenize(x.example_en).map(y => y.toLowerCase())))].filter(y => !low.includes(y) && y !== "i");
+        const pool = [...new Set(WORDS.filter(x => x.id !== w.id && (x.season || 1) === (w.season || 1)).flatMap(x => tokenize(x.example_en).map(y => y.toLowerCase())))].filter(y => !low.includes(y) && y !== "i");
         extra = sample(pool, Math.min(2, pool.length));
       }
       return { t, w, tiles: shuffleNE([...toks, ...extra]), ans: toks.join(" ") };
@@ -429,12 +430,20 @@
     startLesson({ kind: "monthly", nodeId: node.id, steps: reviewSteps(weakest(spec.questions, pool), spec.questions, spec.match_groups), replay: isDone(node.id) });
   }
   function startQDay(node) {
-    const day = LC.TDATA.quarterly_review.review_days[node.day - 1];
+    const spec = LC.quarterlyById(node.qid) || LC.TDATA.quarterly_review;
+    const day = spec.review_days[node.day - 1];
     const pool = day.themes.flatMap(id => themeWords(id));
-    startLesson({ kind: "qday", nodeId: node.id, steps: reviewSteps(weakest(20, pool), 15, 1), replay: isDone(node.id) });
+    const n = spec.review_day_questions || 15;
+    startLesson({ kind: "qday", nodeId: node.id, steps: reviewSteps(weakest(Math.max(n, 20), pool), n, 1), replay: isDone(node.id) });
   }
   function startExam(node) {
-    startLesson({ kind: "exam", nodeId: node.id, steps: reviewSteps(weightedSample(WORDS, 40), 40, 4), replay: isDone(node.id) });
+    const spec = LC.quarterlyById(node.qid) || LC.TDATA.quarterly_review || { season: 1 };
+    const season = spec.season || node.season || 1;
+    const pool = WORDS.filter(w => w.season === season);
+    const src = pool.length ? pool : WORDS.filter(w => w.season === 1);
+    const n = (spec.exam && spec.exam.questions) || 40;
+    const groups = (spec.exam && spec.exam.match_groups) || 4;
+    startLesson({ kind: "exam", nodeId: node.id, steps: reviewSteps(weightedSample(src, n), n, groups), replay: isDone(node.id) });
   }
   function startReview(practice) {
     let ws, free = false;
