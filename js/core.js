@@ -66,7 +66,8 @@
       hearts: MAX_HEARTS, heartsAt: Date.now(), unlimited: false, unlockAll: false,
       startDate: null, lessons: 0, perfectLessons: 0,
       done: {}, lastNewLessonDate: null, newLessonsToday: 0, inProgress: null,
-      srs: {}, themeCards: {}, perfectThemes: [],
+      srs: {},       themeCards: {}, perfectThemes: [],
+      outings: {}, diary: {},
       companion: "fanshu", companionAskedDate: null,
       cats: { fanshu: { unlocked: t, lessons: 0, bonus: null, seen: false } },
       celebrationQueue: []
@@ -88,6 +89,8 @@
     out.activeDates = Array.isArray(s.activeDates) ? s.activeDates : [];
     out.perfectThemes = Array.isArray(s.perfectThemes) ? s.perfectThemes : [];
     out.celebrationQueue = Array.isArray(s.celebrationQueue) ? s.celebrationQueue : [];
+    out.outings = s.outings && typeof s.outings === "object" && !Array.isArray(s.outings) ? s.outings : {};
+    out.diary = s.diary && typeof s.diary === "object" && !Array.isArray(s.diary) ? s.diary : {};
     if (!out.cats.fanshu) out.cats.fanshu = { unlocked: out.createdAt || d.createdAt, lessons: 0, bonus: null, seen: false };
     out.settings.svgIcons = false;
     if (out.devIconMode !== "emoji" && out.devIconMode !== "tile") out.devIconMode = null;
@@ -196,16 +199,38 @@
   const wordsOf = (themeId, day) => THEME[themeId].days[day - 1].words.map(id => WORD[id]);
   const themeWords = t => WORDS.filter(w => w.theme_id === (t.id || t));
 
+  function quarterlyList() {
+    if (TDATA.quarterly_reviews && TDATA.quarterly_reviews.length) return TDATA.quarterly_reviews;
+    return TDATA.quarterly_review ? [TDATA.quarterly_review] : [];
+  }
+  function quarterlyById(id) { return quarterlyList().find(q => q.id === id) || null; }
+  function seasonByNo(n) { return (TDATA.seasons || []).find(s => s.season === n) || null; }
+  function seasonOpen(n) {
+    n = +n;
+    if (S.unlockAll) return true;
+    if (n <= 1) return true;
+    return isDone("q" + (n - 1) + "x");
+  }
+  function seasonLockLine(n) {
+    const lines = {
+      2: "出街未到時候。學完第 1 季，先一齊去港鐵同街市 🐾",
+      3: "學校門未開。學完第 2 季先返學 🐾",
+      4: "節日未到。學完第 3 季先去年宵同中秋 🐾"
+    };
+    return lines[n] || "學完上一季先可以過去 🐾";
+  }
   function buildPath() {
     const nodes = [];
     THEMES.forEach(t => {
-      for (let d = 1; d <= 5; d++) nodes.push({ id: t.id + "d" + d, type: "day", theme: t.id, day: d, week: t.week });
-      nodes.push({ id: t.id + "w", type: "weekly", theme: t.id, week: t.week });
-      if (t.grammar) nodes.push({ id: t.grammar, type: "grammar", theme: t.id, week: t.week, gid: t.grammar });
-      if (t.followed_by) nodes.push({ id: t.followed_by, type: "monthly", theme: t.id, week: t.week, mid: t.followed_by });
+      for (let d = 1; d <= 5; d++) nodes.push({ id: t.id + "d" + d, type: "day", theme: t.id, day: d, week: t.week, season: t.season || 1 });
+      nodes.push({ id: t.id + "w", type: "weekly", theme: t.id, week: t.week, season: t.season || 1 });
+      if (t.grammar) nodes.push({ id: t.grammar, type: "grammar", theme: t.id, week: t.week, gid: t.grammar, season: t.season || 1 });
+      if (t.followed_by) nodes.push({ id: t.followed_by, type: "monthly", theme: t.id, week: t.week, mid: t.followed_by, season: t.season || 1 });
     });
-    for (let d = 1; d <= 5; d++) nodes.push({ id: "q1d" + d, type: "qday", day: d, week: 13 });
-    nodes.push({ id: "q1x", type: "exam", week: 13 });
+    quarterlyList().forEach(q => {
+      for (let d = 1; d <= 5; d++) nodes.push({ id: q.id + "d" + d, type: "qday", day: d, week: q.week, qid: q.id, season: q.season || 1 });
+      nodes.push({ id: q.id + "x", type: "exam", week: q.week, qid: q.id, season: q.season || 1 });
+    });
     return nodes;
   }
   const PATH = buildPath();
@@ -221,12 +246,17 @@
       const prev = THEMES[ti - 1];
       if (!isDone(prev.id + "d5")) return false;
       if (prev.followed_by && !isDone(prev.followed_by)) return false;
+      if ((prev.season || 1) !== (THEME[n.theme].season || 1) && !isDone("q" + (prev.season || 1) + "x")) return false;
       return true;
     }
     if (n.type === "weekly" || n.type === "grammar") return isDone(n.theme + "d5");
     if (n.type === "monthly") return isDone(n.theme + "d5");
-    if (n.type === "qday") return n.day === 1 ? isDone("m3") : isDone("q1d" + (n.day - 1));
-    if (n.type === "exam") return isDone("q1d5");
+    if (n.type === "qday") {
+      if (n.day > 1) return isDone(n.qid + "d" + (n.day - 1));
+      const q = quarterlyById(n.qid);
+      return !!(q && q.after_monthly && isDone(q.after_monthly));
+    }
+    if (n.type === "exam") return isDone((n.qid || "q1") + "d5");
     return false;
   }
   function nextNewNode() {
@@ -241,7 +271,7 @@
     if (t < monday) return 0;
     let count = 0, d = monday;
     while (d <= t) { const wd = weekdayOf(d); if (wd >= 1 && wd <= 5) count++; d = addDays(d, 1); }
-    return Math.min(60, count);
+    return Math.min(THEMES.length * 5, count);
   }
   const isBehind = () => newLessonsDone() < expectedCount();
   const behindBy = () => Math.max(0, expectedCount() - newLessonsDone());
@@ -272,17 +302,22 @@
     const n = nextNewNode();
     if (n) return THEME[n.theme];
     for (const t of THEMES) {
-      if (!isDone(t.id + "d5")) return t;
+      if (!isDone(t.id + "d5")) {
+        const started = [1, 2, 3, 4, 5].some(d => isDone(t.id + "d" + d));
+        if (started || nodeUnlocked(NODE[t.id + "d1"])) return t;
+        return null;
+      }
       if (t.followed_by && !isDone(t.followed_by)) return t;
     }
     return null;
   }
   function currentWeek() {
-    if (isDone("q1x")) return 13;
-    const q = nextQuarterly();
-    if (q && isDone("m3")) return 13;
+    if (isDone("q4x")) return 52;
     const t = activeTheme();
-    return t ? t.week : 1;
+    if (t) return t.week;
+    const q = nextQuarterly();
+    if (q) return q.week;
+    return 1;
   }
   function themeWordsLearned(t) {
     let n = 0;
@@ -300,9 +335,12 @@
     return false;
   }
 
-  function seasonDoneCount() { return isDone("q1x") ? 1 : 0; }
+  function seasonDoneCount() { return [1, 2, 3, 4].filter(n => isDone("q" + n + "x")).length; }
   function grammarDoneCount() { return GRAMMAR.filter(g => isDone(g.id)).length; }
-  function monthlyDoneCount() { return ["m1", "m2", "m3"].filter(isDone).length; }
+  function monthlyDoneCount() {
+    const ids = (TDATA.monthly_reviews || []).map(m => m.id);
+    return (ids.length ? ids : ["m1", "m2", "m3"]).filter(isDone).length;
+  }
   function unlockValue(cat) {
     const u = cat.unlock;
     switch (u.type) {
@@ -689,7 +727,7 @@
     return { type: "yarn", cat: slug, theme: themeId };
   }
 
-  const ui = { tab: "home", segment: "cards", cardIndex: 0, bankFilter: "all", bankTheme: "all", album: null, calMonth: null, mapNode: null };
+  const ui = { tab: "home", segment: "cards", cardIndex: 0, bankFilter: "all", bankTheme: "all", album: null, calMonth: null, mapNode: null, mapSeason: null };
 
   Object.defineProperty(LC, "S", {
     get() { return S; },
@@ -709,6 +747,7 @@
     currentStreak, markActive, addXP, todayXP, refillHearts, loseHeart, heartCountdown,
     srsUpdate, learnedWords, dueWords, weakest, weightedSample, masteredCount, wordsOf, themeWords,
     PATH, NODE, isDone, nodeUnlocked, nextNewNode, newLessonsDone, newCountToday, expectedCount, isBehind, behindBy, isSundayRest, canStartNewToday,
+    quarterlyById, seasonByNo, seasonOpen, seasonLockLine,
     openSaturday, blockingMonthly, nextQuarterly, activeTheme, currentWeek, themeWordsLearned, wordLearnedOnCard,
     grammarDoneCount, monthlyDoneCount, unlockValue, ruleMet, checkUnlocks, albumMath, poseUnlocked, lockedProgressText, hairTint,
     placeholderMode, iconKind, renderIcon, tileHTML, iconErr, themeIconHTML, themeSlug, cardFileName, cropStyle, faceHTML, companion,

@@ -162,7 +162,36 @@
       return;
     }
     if (name === "mapnode") { LC.openMapSheet(el.dataset.id); return; }
-    if (name === "soon") { toast("第 " + el.dataset.season + " 季即將推出，學完第 1 季先 🐾"); return; }
+    if (name === "mapseason") {
+      const n = +el.dataset.season;
+      if (!LC.seasonOpen(n)) { toast(LC.seasonLockLine(n)); return; }
+      ui.mapSeason = n;
+      LC.render();
+      return;
+    }
+    if (name === "outing") {
+      const id = el.dataset.id;
+      if (!S.outings) S.outings = {};
+      if (S.outings[id]) { toast("呢句已經記低咗"); return; }
+      S.outings[id] = LC.today();
+      save();
+      el.textContent = "講過 ✓";
+      el.disabled = true;
+      el.classList.add("ghost");
+      const count = $("#outingCount");
+      if (count) count.textContent = "出街 " + Object.keys(S.outings).length + " 次";
+      toast("記低咗，今次算出街 🐾");
+      return;
+    }
+    if (name === "savediary") {
+      const n = String(el.dataset.season || "");
+      const ta = $("#diaryNote");
+      if (!S.diary) S.diary = {};
+      S.diary[n] = ((ta && ta.value) || "").slice(0, 80);
+      save();
+      toast("日記記低咗 🐾");
+      return;
+    }
     if (name === "seg") { ui.segment = el.dataset.s; LC.render(); return; }
     if (name === "ipa") { S.settings.showIPA = !S.settings.showIPA; save(); LC.render(); return; }
     if (name === "saveimg") { LC.exportCard(el.dataset.id, false); return; }

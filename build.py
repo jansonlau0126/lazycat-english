@@ -37,10 +37,22 @@ def copy_dir(name: str) -> None:
 
 def gather_text() -> str:
     chunks = []
-    for p in (HAND / "data").glob("*.json"):
-        if p.name.startswith("legacy"):
+    folders = [
+        HAND / "data",
+        ROOT / "handoff-s2" / "data",
+        ROOT / "handoff-s3" / "data",
+        ROOT / "handoff-s4" / "data",
+    ]
+    for folder in folders:
+        if not folder.is_dir():
             continue
-        chunks.append(p.read_text(encoding="utf-8"))
+        for p in folder.glob("*.json"):
+            if p.name.startswith("legacy") or "word-plan" in p.name:
+                continue
+            chunks.append(p.read_text(encoding="utf-8"))
+    copy = ROOT / "content" / "s1-s4-copy.json"
+    if copy.exists():
+        chunks.append(copy.read_text(encoding="utf-8"))
     for p in list((ROOT / "js").glob("*.js")) + [ROOT / "css" / "app.css", ROOT / "index.html"]:
         if p.name == "data.js":
             continue
@@ -115,28 +127,251 @@ def favicon() -> None:
     icon.resize((32, 32), Image.Resampling.LANCZOS).save(OUT / "favicon-32.png")
 
 
-def write_data() -> None:
-    words = json.loads((HAND / "data" / "season1-words.json").read_text(encoding="utf-8"))
-    themes = json.loads((HAND / "data" / "season1-themes.json").read_text(encoding="utf-8"))
-    grammar = json.loads((HAND / "data" / "season1-grammar.json").read_text(encoding="utf-8"))
-    cats = json.loads((HAND / "data" / "cats.json").read_text(encoding="utf-8"))
+# Calendar weeks: S1 stays 1–12 (review 13). Later seasons shift so weeks never collide.
+PACKS = [
+    {
+        "season": 1, "offset": 0, "review_week": 13, "qid": "q1", "month_start": 1,
+        "themes": "handoff-s1/data/season1-themes.json",
+        "words": "handoff-s1/data/season1-words.json",
+        "grammar": "handoff-s1/data/season1-grammar.json",
+        "zh": "伸個懶腰", "en": "Big Stretch", "emoji": "🌸", "subtitle": "生活基本",
+        "weeks": "1–13", "place": "屋企",
+        "bg": "linear-gradient(180deg,#FFF0F3,#FFF8EE)", "border": "#F9D7DF",
+        "exam_cat": "tongyun",
+    },
+    {
+        "season": 2, "offset": 13, "review_week": 26, "qid": "q2", "month_start": 4,
+        "themes": "handoff-s2/data/season2-themes.json",
+        "words": "handoff-s2/data/season2-words.json",
+        "grammar": "handoff-s2/data/season2-grammar.json",
+        "zh": "出去曬太陽", "en": "Go Out in the Sun", "emoji": "☀️", "subtitle": "出街用得着",
+        "weeks": "14–26", "place": "港鐵／街市",
+        "bg": "#FFF7E0", "border": "#F6E3A6",
+        "exam_cat": "lammui",
+    },
+    {
+        "season": 3, "offset": 26, "review_week": 39, "qid": "q3", "month_start": 7,
+        "themes": "handoff-s3/data/season3-themes.json",
+        "words": "handoff-s3/data/season3-words.json",
+        "grammar": "handoff-s3/data/season3-grammar.json",
+        "zh": "返學返工", "en": "School & Work", "emoji": "🏫", "subtitle": "學校同工作",
+        "weeks": "27–39", "place": "學校",
+        "bg": "#FFF1E6", "border": "#F4D3B5",
+        "exam_cat": "daihung",
+    },
+    {
+        "season": 4, "offset": 39, "review_week": 52, "qid": "q4", "month_start": 10,
+        "themes": "handoff-s4/data/season4-themes.json",
+        "words": "handoff-s4/data/season4-words.json",
+        "grammar": "handoff-s4/data/season4-grammar.json",
+        "zh": "一齊過節", "en": "Celebrate Together", "emoji": "🏮", "subtitle": "節日同相處",
+        "weeks": "40–52", "place": "年宵／中秋",
+        "bg": "#EEF5FB", "border": "#CFE3F2",
+        "exam_cat": None,
+    },
+]
+
+SHORT_ZH = {
+    "t13": "數字", "t14": "出街", "t15": "交通", "t16": "城市", "t17": "購物", "t18": "金錢",
+    "t19": "餐廳", "t20": "健康", "t21": "運動", "t22": "興趣", "t23": "旅行", "t24": "手機",
+    "t25": "學校", "t26": "人物", "t27": "文具", "t28": "學科", "t29": "學習", "t30": "功課",
+    "t31": "規矩", "t32": "職業", "t33": "求職", "t34": "時間", "t35": "升學", "t36": "合作",
+    "t37": "朋友", "t38": "派對", "t39": "禮物", "t40": "節日", "t41": "其他", "t42": "性格",
+    "t43": "自然", "t44": "環保", "t45": "社區", "t46": "禮貌", "t47": "相處", "t48": "夢想",
+}
+THEME_EMOJI = {
+    "t25": "🏫", "t26": "👩‍🏫", "t27": "✏️", "t28": "📚", "t29": "📝", "t30": "📋",
+    "t31": "🤫", "t32": "💼", "t33": "🏢", "t34": "⏰", "t35": "🎓", "t36": "🤝",
+    "t37": "👋", "t38": "🎉", "t39": "🎁", "t40": "🏮", "t41": "🎄", "t42": "🙂",
+    "t43": "🌿", "t44": "♻️", "t45": "🏘️", "t46": "🙏", "t47": "💬", "t48": "🌟",
+}
+
+
+def _load(rel: str):
+    return json.loads((ROOT / rel).read_text(encoding="utf-8"))
+
+
+def _monthlies(pack: dict, themes: list, raw: dict) -> list:
+    if pack["season"] == 1 and raw.get("monthly_reviews"):
+        months = raw["monthly_reviews"]
+        for m in months:
+            m["season"] = 1
+        return months
+    out = []
+    for k in range(3):
+        group = themes[k * 4:(k + 1) * 4]
+        no = pack["month_start"] + k
+        out.append({
+            "id": f"m{no}",
+            "no": no,
+            "season": pack["season"],
+            "after_week": group[-1]["week"],
+            "themes": [t["id"] for t in group],
+            "word_pool": 100,
+            "questions": 30,
+            "match_groups": 3,
+            "xp": 40,
+            "cat_unlock": None,
+        })
+    return out
+
+
+def _quarterly(pack: dict, themes: list, raw: dict) -> dict:
+    if pack["season"] == 1 and raw.get("quarterly_review"):
+        q = raw["quarterly_review"]
+        q["season"] = 1
+        q["after_monthly"] = "m3"
+        q["exam_cat"] = pack["exam_cat"]
+        return q
+    groups = [themes[0:3], themes[3:6], themes[6:8], themes[8:10], themes[10:12]]
+    return {
+        "id": pack["qid"],
+        "season": pack["season"],
+        "week": pack["review_week"],
+        "emoji": "👑",
+        "zh": "季度複習週",
+        "map_label_zh": "季度大複習",
+        "after_monthly": f"m{pack['season'] * 3}",
+        "review_days": [
+            {"day": i + 1, "themes": [t["id"] for t in g]} for i, g in enumerate(groups)
+        ],
+        "review_day_questions": 15,
+        "review_day_xp": 20,
+        "exam": {
+            "day": 6, "zh": "季度大考", "word_pool": 300,
+            "questions": 40, "match_groups": 4, "xp": 60,
+        },
+        "exam_cat": pack["exam_cat"],
+    }
+
+
+def _path_order(pack: dict, themes: list, raw: dict) -> list:
+    if pack["season"] == 1 and raw.get("path_order"):
+        return list(raw["path_order"])
+    ids = [t["id"] for t in themes]
+    mids = [f"m{pack['month_start'] + k}" for k in range(3)]
+    return ids[0:4] + [mids[0]] + ids[4:8] + [mids[1]] + ids[8:12] + [mids[2]] + [pack["qid"]]
+
+
+def merge_course() -> tuple:
     icon_dir = SRC / "icons"
+    words, themes, lessons = [], [], []
+    monthlies, quarterlies, seasons = [], [], []
+    for pack in PACKS:
+        raw = _load(pack["themes"])
+        pack_words = _load(pack["words"])
+        pack_grammar = _load(pack["grammar"])
+        pack_themes = raw["themes"]
+        if len(pack_themes) != 12 or len(pack_words) != 300:
+            raise SystemExit(f"season {pack['season']}: expected 12 themes and 300 words")
+        for w in pack_words:
+            w["week"] = int(w["week"]) + pack["offset"]
+            w["season"] = pack["season"]
+            png = icon_dir / f"{w['id']}.png"
+            w["icon"] = f"assets/icons/{w['id']}.png" if png.exists() else None
+        for i, t in enumerate(pack_themes):
+            t["week"] = int(t["week"]) + pack["offset"]
+            t["season"] = pack["season"]
+            if not t.get("short_zh"):
+                t["short_zh"] = SHORT_ZH.get(t["id"], t["zh"][:4])
+            if not t.get("emoji"):
+                t["emoji"] = THEME_EMOJI.get(t["id"], "🐾")
+            png = icon_dir / f"{t['id']}.png"
+            if png.exists():
+                t["icon"] = f"assets/icons/{t['id']}.png"
+            elif not t.get("icon"):
+                t["icon"] = None
+            if (i + 1) % 4 == 0 and not t.get("followed_by"):
+                t["followed_by"] = f"m{pack['month_start'] + i // 4}"
+            elif "followed_by" not in t:
+                t["followed_by"] = None
+        for g in pack_grammar["lessons"]:
+            g["week"] = int(g["week"]) + pack["offset"]
+            g["season"] = pack["season"]
+            if not g.get("ex"):
+                g["ex"] = g.get("exercises") or []
+            lessons.append(g)
+        monthlies.extend(_monthlies(pack, pack_themes, raw))
+        quarterlies.append(_quarterly(pack, pack_themes, raw))
+        path = _path_order(pack, pack_themes, raw)
+        if len(path) != 16:
+            raise SystemExit(f"season {pack['season']}: path has {len(path)} nodes")
+        seasons.append({
+            "season": pack["season"],
+            "zh": raw.get("zh") or pack["zh"],
+            "en": raw.get("en") or pack["en"],
+            "emoji": raw.get("emoji") or pack["emoji"],
+            "subtitle_zh": raw.get("subtitle_zh") or pack["subtitle"],
+            "weeks": raw.get("weeks") or pack["weeks"],
+            "place_zh": pack["place"],
+            "bg": pack["bg"],
+            "border": pack["border"],
+            "review_id": pack["qid"],
+            "review_week": pack["review_week"],
+            "exam_cat": pack["exam_cat"],
+            "path_order": path,
+            "theme_emojis": "".join(t.get("emoji") or "" for t in pack_themes),
+        })
+        words.extend(pack_words)
+        themes.extend(pack_themes)
+    for i, w in enumerate(words, 1):
+        w["seq"] = i
+    ids = [w["id"] for w in words]
+    if len(ids) != len(set(ids)):
+        raise SystemExit("duplicate word ids across seasons")
+    lemmas = [w["word"].lower() for w in words]
+    if len(lemmas) != len(set(lemmas)):
+        raise SystemExit("duplicate headwords across seasons")
+    by_theme = {t["id"]: t for t in themes}
     for w in words:
-        png = icon_dir / f"{w['id']}.png"
-        if png.exists():
-            w["icon"] = f"assets/icons/{w['id']}.png"
-        elif not w.get("icon"):
-            w["icon"] = None
-    for t in themes.get("themes", []):
-        png = icon_dir / f"{t['id']}.png"
-        if png.exists():
-            t["icon"] = f"assets/icons/{t['id']}.png"
+        t = by_theme[w["theme_id"]]
+        if w["week"] != t["week"] or w["season"] != t["season"]:
+            raise SystemExit(f"{w['id']}: week/season does not match its theme")
+    g_by = {g["id"]: g for g in lessons}
+    if len(g_by) != 24:
+        raise SystemExit(f"expected 24 grammar lessons, got {len(g_by)}")
+    for t in themes:
+        if t.get("grammar") and g_by[t["grammar"]]["week"] != t["week"]:
+            raise SystemExit(f"{t['id']}: grammar week mismatch")
+    if len(monthlies) != 12 or len(quarterlies) != 4:
+        raise SystemExit("expected 12 monthly reviews and 4 quarterly reviews")
+    copy = _load("content/s1-s4-copy.json")
+    if len(copy.get("outings") or []) != 48 or len(copy.get("diaries") or []) != 4:
+        raise SystemExit("copy must have 48 outings and 4 diaries")
+    theme_ids = {t["id"] for t in themes}
+    for o in copy["outings"]:
+        if o["theme_id"] not in theme_ids:
+            raise SystemExit("outing theme missing: " + o["theme_id"])
+    themes_obj = {
+        "seasons": seasons,
+        "themes": themes,
+        "monthly_reviews": monthlies,
+        "quarterly_reviews": quarterlies,
+        "quarterly_review": quarterlies[0],
+        "path_order": seasons[0]["path_order"],
+        "later_seasons": [],
+        "copy": {
+            "rule": copy.get("rule") or "",
+            "map": copy["map"],
+            "monthly": copy["monthly"],
+            "diaries": copy["diaries"],
+            "outings": copy["outings"],
+        },
+    }
+    grammar_obj = {"lessons": lessons}
+    return words, themes_obj, grammar_obj
+
+
+def write_data() -> None:
+    words, themes, grammar = merge_course()
+    cats = json.loads((HAND / "data" / "cats.json").read_text(encoding="utf-8"))
     svg_dir = OUT / "icons-svg"
     svg_ids = sorted(p.stem for p in svg_dir.glob("*.svg")) if svg_dir.is_dir() else []
     data = {"words": words, "themes": themes, "grammar": grammar, "cats": cats, "svgIds": svg_ids}
     text = "window.LAZYCAT_DATA=" + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + ";\n"
     (ROOT / "js" / "data.js").write_text(text, encoding="utf-8")
-    print(f"  js/data.js  {len(text)/1024:.0f} KB  svgIds={len(svg_ids)}")
+    icons = sum(1 for w in words if w.get("icon"))
+    print(f"  js/data.js  {len(text)/1024:.0f} KB  words={len(words)} themes={len(themes['themes'])} grammar={len(grammar['lessons'])} icons={icons} svgIds={len(svg_ids)}")
 
 
 def cache_bust() -> None:
