@@ -13,7 +13,14 @@
 
 圖入面嘅屋、港鐵、學校、過節、貓、小路、路牌、窗燈，就係地圖。圖上面印住嘅英文假頂欄（Lazy Cat English、Where have we been?）唔搬入 app。app 留返自己嘅頂欄同底欄，心心同每日目標保持不變。
 
-預覽：打開 `content/map-design/board.html`。
+App 版畫面（套上而家嘅頂欄、底欄、心心；場景用你畀嘅圖）：
+
+- 地圖直版：`content/map-design/crops/app-map.png`
+- 左右掃：`content/map-design/crops/app-swipe.png`
+- 首頁入口：`content/map-design/crops/app-home.png`
+- 四張旅程卡：`content/map-design/crops/app-cards.png`
+
+打開 `content/map-design/app-screens.html` 可以逐個畫面睇。場景稿：`content/map-design/board.html`。
 
 ## 四區
 

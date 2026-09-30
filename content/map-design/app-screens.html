@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>App 版地圖設計圖</title>
+<link rel="stylesheet" href="../../css/app.css">
+<style>
+  html, body { height: auto; background: var(--cream); }
+  body { display: block; }
+  .stage { width: 390px; margin: 0; }
+  .shot { width: 390px; height: 844px; background: var(--cream); display: flex; flex-direction: column; overflow: hidden; }
+  .shot.tall { height: auto; }
+  .shot #main, .shot .main { flex: 1; overflow: auto; }
+  .shot .tabs { height: 64px; flex-shrink: 0; display: flex; background: #fff; border-top: 2px solid var(--line); padding: 4px 6px 0; }
+  .scene { width: 100%; border-radius: 22px; display: block; border: 2px solid #F3D7B4; }
+  .pano-wrap, .cards-wrap { overflow-x: auto; border-radius: 22px; border: 2px solid #F3D7B4; background: #fff; }
+  .pano-wrap img { height: 230px; width: auto; display: block; }
+  .cards-wrap img { height: 250px; width: auto; display: block; }
+  .hint { text-align: center; color: var(--muted); font-size: 12px; }
+  .nodes { display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 8px; }
+  .node { width: 64px; flex: 0 0 auto; text-align: center; font-size: 11px; }
+  .node img { width: 56px; height: 56px; object-fit: contain; background: #fff; border-radius: 16px; border: 2px solid var(--line); }
+  .node.lock img { filter: grayscale(1); opacity: .45; }
+  .node.cur img { box-shadow: 0 0 0 3px #FFE1BF; border-color: var(--orange); }
+  .node small { display: block; color: var(--muted); }
+  .mapmini img { width: 100%; height: 92px; object-fit: cover; object-position: left center; border-radius: 16px; display: block; }
+  h2 { font-size: 22px; }
+  .page h2 { margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="stage" id="stage"></div>
+<script>
+const IC = {
+  home: '<svg viewBox="0 0 24 24"><path d="M4 11.5 12 5l8 6.5V19a1.5 1.5 0 0 1-1.5 1.5H15v-5h-6v5H5.5A1.5 1.5 0 0 1 4 19z" fill="currentColor"/></svg>',
+  map: '<svg viewBox="0 0 24 24"><path d="M3.5 6.5 9 4.5l6 2 5.5-2v13l-5.5 2-6-2-5.5 2z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M9 4.5v13M15 6.5v13" stroke="currentColor" stroke-width="2"/></svg>',
+  cards: '<svg viewBox="0 0 24 24"><rect x="7" y="3.5" width="13" height="16" rx="3" fill="currentColor" opacity=".45"/><rect x="4" y="5.5" width="13" height="16" rx="3" fill="currentColor"/><path d="M7.5 10h6M7.5 13.5h6M7.5 17h4" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>',
+  paw: '<svg viewBox="0 0 24 24" fill="currentColor"><ellipse cx="12" cy="16" rx="5.2" ry="4.4"/><ellipse cx="6" cy="10.5" rx="2.2" ry="2.8"/><ellipse cx="18" cy="10.5" rx="2.2" ry="2.8"/><ellipse cx="9.3" cy="6.3" rx="2.1" ry="2.7"/><ellipse cx="14.7" cy="6.3" rx="2.1" ry="2.7"/></svg>',
+  me: '<svg viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="4" fill="currentColor"/><path d="M4.5 20.5c.8-4 3.8-6 7.5-6s6.7 2 7.5 6z" fill="currentColor"/></svg>'
+};
+const face = '<span class="cphoto ring2" style="width:36px;height:36px;border-radius:50%;"><img src="../../assets/cats/01-fanshu-orange-tabby.webp" alt="番薯" style="width:283%;left:-92%;top:0"></span>';
+function topbar() {
+  return '<header class="top" style="height:52px;padding:0 14px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0">' +
+    '<div class="brand">' + face + '<span>懶貓英文</span></div>' +
+    '<div class="stats"><span class="stat fire off">🔥 0</span><span class="stat xp">⭐ 0</span><span class="stat heart">❤️ 5</span></div></header>';
+}
+function tabs(on) {
+  const items = [["home","首頁","home"],["map","地圖","map"],["cards","生字卡","cards"],["cats","貓貓","paw"],["me","我","me"]];
+  return '<nav class="tabs">' + items.map(([id,label,ic]) =>
+    '<button class="tab' + (id===on?" on":"") + '">' + IC[ic] + '<span>' + label + '</span></button>').join("") + '</nav>';
+}
+function word(id, cls) {
+  return '<button class="w ' + cls + '"><img class="ficon" alt="" width="46" height="46" src="../../assets/icons/' + id + '.png"><span class="fit">' + id + '</span></button>';
+}
+function node(file, label, cls) {
+  return '<div class="node ' + cls + '"><img src="../../assets/icons/' + file + '.png" alt=""><b>' + label + '</b></div>';
+}
+const screens = {
+  home: () => '<div class="shot">' + topbar() +
+    '<div class="main"><div class="page home">' +
+      '<div class="hero"><img class="heroimg" src="../../assets/cats/hero-fanshu-napping.webp" alt="番薯瞓緊" style="object-position:40% 62%"><div class="shade"></div><span class="zzz z1">z</span><span class="zzz z2">z</span><span class="zzz z3">Z</span><span class="heroname">番薯</span><div class="bubble"><b>喵～瞓醒未呀？</b>今日學埋 5 個字，就可以一齊瞓返個晏覺 😴</div></div>' +
+      '<button class="card theme"><div class="ttile"><span class="emoji" style="font-size:33px">🙋</span></div><div class="tmeta"><div class="t1">第 1 季・🌸 伸個懶腰 ・ 第 1 / 52 週</div><div class="t2">自我介紹同家人 <span class="en">Me &amp; Family</span></div><div class="bar"><i style="width:0%"></i></div></div><div class="tfrac">0/25</div></button>' +
+      '<button class="card mapmini" style="padding:10px;text-align:left;color:inherit"><img src="crops/panorama-scene.png" alt=""><span class="mapentry-t" style="display:flex;flex-direction:column;margin-top:8px"><b>你同貓一齊行到邊？</b><small style="color:var(--muted)">四個地方，慢慢亮</small></span></button>' +
+      '<div class="card today"><div class="row"><h3>今日 5 個字</h3><span class="pill sun">已學 0 / 5</span></div><div class="words">' +
+        word("hello","cur") + word("name","lock") + word("meet","lock") + word("friend","lock") + word("live","lock") +
+      '</div><button class="btn">開始學 🐾 今日 5 個字</button></div>' +
+    '</div></div>' + tabs("home") + '</div>',
+  map: () => '<div class="shot tall">' + topbar() +
+    '<div class="main"><div class="page mapage">' +
+      '<div><h2>我哋去到邊？</h2><p class="muted">同懶貓一齊行嘅香港</p></div>' +
+      '<img class="scene" src="crops/vertical-scene.png" alt="屋企、出街、學校、過節">' +
+      '<div class="card" style="padding:12px 12px 8px"><div class="row"><b>屋企嘅主題</b><span class="muted" style="font-size:12px">未解鎖會灰</span></div>' +
+      '<div class="nodes">' +
+        node("family","家人","") + node("head","身體","cur") + node("home","屋企","lock") + node("wake","作息","lock") +
+        node("noodles","食物","lock") + node("water","茶餐廳","lock") +
+      '</div><p class="hint">食物同其他主題一樣，未解鎖張生字圖會灰。</p></div>' +
+    '</div></div>' + tabs("map") + '</div>',
+  swipe: () => '<div class="shot">' + topbar() +
+    '<div class="main"><div class="page">' +
+      '<div><h2>我哋去到邊？</h2><p class="muted">左右掃，睇成條路</p></div>' +
+      '<div class="pano-wrap"><img src="crops/panorama-scene.png" alt="四季全景"></div>' +
+      '<p class="hint">屋企 → 出街 → 學校 → 過節</p>' +
+      '<div class="card" style="padding:12px"><b>出門記得帶鎖匙。</b><p class="muted">由屋企去出街嘅路牌</p></div>' +
+    '</div></div>' + tabs("map") + '</div>',
+  cards: () => '<div class="shot">' + topbar() +
+    '<div class="main"><div class="page">' +
+      '<div><h2>四個地方</h2><p class="muted">進度總覽。左右掃睇每一季。</p></div>' +
+      '<div class="cards-wrap"><img src="crops/journey-cards.png" alt="四張旅程卡"></div>' +
+      '<div class="card" style="padding:12px"><p>週燈係圓腳印，出街燈係菱形。未行到嘅卡灰住。</p></div>' +
+    '</div></div>' + tabs("map") + '</div>'
+};
+const which = new URLSearchParams(location.search).get("screen") || "map";
+document.getElementById("stage").innerHTML = (screens[which] || screens.map)();
+</script>
+</body>
+</html>
