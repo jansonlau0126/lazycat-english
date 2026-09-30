@@ -35,6 +35,18 @@ def copy_dir(name: str) -> None:
     shutil.copytree(src, dst)
 
 
+def icon_sources():
+    return [SRC / "icons", ROOT / "handoff-s2" / "assets" / "icons"]
+
+
+def find_icon(stem: str):
+    for folder in icon_sources():
+        png = folder / f"{stem}.png"
+        if png.exists():
+            return png
+    return None
+
+
 def gather_text() -> str:
     chunks = []
     folders = [
@@ -254,7 +266,6 @@ def _path_order(pack: dict, themes: list, raw: dict) -> list:
 
 
 def merge_course() -> tuple:
-    icon_dir = SRC / "icons"
     words, themes, lessons = [], [], []
     monthlies, quarterlies, seasons = [], [], []
     for pack in PACKS:
@@ -267,8 +278,7 @@ def merge_course() -> tuple:
         for w in pack_words:
             w["week"] = int(w["week"]) + pack["offset"]
             w["season"] = pack["season"]
-            png = icon_dir / f"{w['id']}.png"
-            w["icon"] = f"assets/icons/{w['id']}.png" if png.exists() else None
+            w["icon"] = f"assets/icons/{w['id']}.png" if find_icon(w["id"]) else None
         for i, t in enumerate(pack_themes):
             t["week"] = int(t["week"]) + pack["offset"]
             t["season"] = pack["season"]
@@ -276,8 +286,7 @@ def merge_course() -> tuple:
                 t["short_zh"] = SHORT_ZH.get(t["id"], t["zh"][:4])
             if not t.get("emoji"):
                 t["emoji"] = THEME_EMOJI.get(t["id"], "🐾")
-            png = icon_dir / f"{t['id']}.png"
-            if png.exists():
+            if find_icon(t["id"]):
                 t["icon"] = f"assets/icons/{t['id']}.png"
             elif not t.get("icon"):
                 t["icon"] = None
@@ -393,6 +402,12 @@ def main() -> None:
     OUT.mkdir(exist_ok=True)
     for name in ("cats", "poses", "icons", "icons-svg", "meows"):
         copy_dir(name)
+    extra_icons = ROOT / "handoff-s2" / "assets" / "icons"
+    if extra_icons.is_dir():
+        dest = OUT / "icons"
+        dest.mkdir(exist_ok=True)
+        for png in extra_icons.glob("*.png"):
+            shutil.copy2(png, dest / png.name)
     if FONTS.exists():
         shutil.rmtree(FONTS)
     lic = FONTS / "licenses"

@@ -161,7 +161,6 @@
       themeCard = '<div class="card theme"><div class="ttile"><span class="emoji">🌸</span></div><div class="tmeta"><div class="t1">全年 ・ 第 52 / 52 週</div><div class="t2">四個季節都學完 <span class="en">Year complete</span></div></div></div>';
     }
     const todayCard = homeToday();
-    const mapEntry = '<button class="mapentry" data-act="tab" data-t="map"><span class="mapmini" aria-hidden="true"><i>🏠</i><i>🚇</i><i>🏫</i><i>🏮</i></span><span class="mapentry-t"><b>你同貓一齊行到邊？</b><small>四個地方，慢慢亮</small></span></button>';
     const due = dueWords().length;
     const dueChip = due ? '<button class="due-chip" data-act="review">🧠 你有 <b>' + due + "</b> 個字今日要複習<span>去複習 →</span></button>" : "";
     const strip = weekStrip(theme);
@@ -169,7 +168,7 @@
     const zzz = frame.nap ? '<span class="zzz z1">z</span><span class="zzz z2">z</span><span class="zzz z3">Z</span>' : "";
     return '<div class="page home">' +
       '<div class="hero"><img class="heroimg" src="' + esc(frame.src) + '" alt="' + esc(frame.alt) + '" style="object-position:' + frame.pos + '"><div class="shade"></div>' + zzz + '<span class="heroname">' + esc(frame.label) + '</span><div class="bubble"><b>' + esc(ht) + "</b>" + esc(hb) + "</div></div>" +
-      themeCard + mapEntry +
+      themeCard +
       '<div class="card today"><div class="row"><h3>' + esc(todayCard.title) + "</h3>" + (todayCard.learned ? '<span class="pill sun">' + todayCard.learned + "</span>" : "") + "</div>" +
       (todayCard.sub && !todayCard.learned ? '<p class="muted">' + esc(todayCard.sub) + "</p>" : "") +
       todayCard.tiles + '<div class="btncol">' + todayCard.btns + "</div>" + (todayCard.extra || "") + "</div>" +
@@ -243,7 +242,8 @@
       } else if (m) { emoji = "🏆"; label = "月度複習"; }
       else { const t = THEME[id]; emoji = (t && t.emoji) || "🐾"; label = (t && (t.short_zh || t.zh)) || id; }
       const cls = "nd " + (m ? "rev " : "") + (q ? "q " : "") + (st === "done" ? "done" : st === "cur" ? "cur" : "lockd");
-      const icon = (id === "t05" && THEME.t05 && THEME.t05.icon) ? '<img alt="" src="' + esc(THEME.t05.icon) + '" style="width:32px;height:32px">' : '<span class="emoji">' + emoji + "</span>";
+      const sticker = !m && !q ? themeSticker(id) : "";
+      const icon = sticker ? '<img class="ndicon" alt="" src="' + esc(sticker) + '">' : '<span class="emoji">' + emoji + "</span>";
       const lab = st === "cur" && !m && !q ? '<span class="here-lab">' + esc(label) + "・學緊</span>" : esc(label);
       nodes += '<button class="' + cls + '" style="--c:' + c + ';--r:' + r + '" data-act="mapnode" data-id="' + id + '" aria-label="' + esc(label) + '">' + icon + (st === "done" ? '<span class="ck">✓</span>' : "") + "</button>" +
         '<div class="lb" style="--c:' + c + ';--r:' + r + '">' + lab + (sub ? '<b class="subcat">' + esc(sub) + "</b>" : "") + "</div>";
@@ -251,58 +251,15 @@
     const avatar = curI >= 0 ? '<div class="here" data-c="' + MAP_SLOTS[curI][0] + '" data-r="' + MAP_SLOTS[curI][1] + '">' + faceHTML(S.companion, 36) + "</div>" : "";
     return '<div class="snake" id="snake"><svg class="path" viewBox="0 0 334 294" id="mappath" data-path="' + esc(ids.join(",")) + '"></svg>' + nodes + avatar + "</div>";
   }
-  const ZONES = {
-    1: { name: "屋企", mark: "🪟", done: "「屋企」行完喇。窗台亮起。" },
-    2: { name: "出街", mark: "🚇", done: "「出街」行完喇。港鐵站牌亮起。" },
-    3: { name: "學校", mark: "🏫", done: "「學校」行完喇。校門牌亮起。" },
-    4: { name: "過節", mark: "🏮", done: "「過節」行完喇。燈籠亮起。" }
-  };
-  const SIGNS = { 2: "出門記得帶鎖匙。", 3: "鐘響之前，買個麵包都得。", 4: "功課放下，燈籠點起。" };
-  function weekLamp(theme) {
-    const days = [1, 2, 3, 4, 5].filter(d => isDone(theme.id + "d" + d)).length;
-    if (days >= 5) return "on";
-    if (days > 0) return "half";
+  function themeSticker(id) {
+    const t = THEME[id];
+    if (!t) return "";
+    if (t.icon) return t.icon;
+    for (let d = 1; d <= 5; d++) {
+      const hit = LC.wordsOf(id, d).find(w => w.icon);
+      if (hit) return hit.icon;
+    }
     return "";
-  }
-  function lifeMapHTML(view) {
-    const seasons = TDATA.seasons || [];
-    let html = '<div class="lifemap"><p class="lifelead">同懶貓一齊行嘅香港</p><p class="legend"><i class="lamp week on"></i> 學完一週　<i class="lamp street on"></i> 出過街</p>';
-    seasons.forEach(s => {
-      const z = ZONES[s.season] || { name: s.place_zh || s.zh, mark: s.emoji || "🐾", done: "" };
-      const open = LC.seasonOpen(s.season);
-      const themes = THEMES.filter(t => t.season === s.season);
-      const exam = isDone("q" + s.season + "x");
-      if (SIGNS[s.season]) {
-        const walked = isDone("q" + (s.season - 1) + "x");
-        html += '<div class="sign' + (walked ? " lit" : "") + '"><span aria-hidden="true">🪧</span><b>' + esc(SIGNS[s.season]) + "</b></div>";
-      }
-      html += '<button class="zone' + (s.season === view ? " on" : "") + (open ? "" : " fog") + '" style="background:' + (s.bg || "#fff") + ";border-color:" + (s.border || "#E7D5C3") + '" data-act="mapseason" data-season="' + s.season + '">';
-      html += '<div class="zmark' + (exam ? " lit" : "") + '" aria-hidden="true">' + z.mark + "</div><div class=\"zbody\"><b>" + esc(z.name) + "</b><small>" + esc((s.place_zh || "") + (s.zh ? " · " + s.zh : "")) + "</small>";
-      if (!open) html += "<p>仲未行到呢度。慢慢嚟。</p>";
-      else {
-        html += '<div class="lamps">' + themes.map(t => '<i class="lamp week ' + weekLamp(t) + '"></i>').join("") + "</div>";
-        html += '<div class="lamps">' + themes.map(t => '<i class="lamp street' + (S.outings && S.outings[t.id] ? " on" : "") + '" data-out="' + esc(t.id) + '"></i>').join("") + "</div>";
-        if (exam) {
-          const spec = LC.quarterlyById("q" + s.season);
-          const cat = spec && spec.exam_cat && CAT[spec.exam_cat];
-          html += '<p class="zdone">' + esc(z.done) + (cat ? " 解鎖新朋友：" + esc(cat.name_zh) + "。" : "") + "</p>";
-        }
-      }
-      html += "</div></button>";
-    });
-    return html + "</div>";
-  }
-  function nowOuting(season) {
-    const theme = activeTheme();
-    if (!theme || theme.season !== season.season) return "";
-    const o = ((TDATA.copy && TDATA.copy.outings) || []).find(x => x.theme_id === theme.id);
-    if (!o) return "";
-    const z = ZONES[season.season] || { name: season.place_zh || "" };
-    const themes = THEMES.filter(t => t.season === season.season);
-    const i = Math.max(1, themes.findIndex(t => t.id === theme.id) + 1);
-    const said = S.outings && S.outings[theme.id];
-    return '<div class="card outing"><b>' + esc(z.name) + " · 第 " + i + " 週</b><p>" + esc(o.scene_zh) + '</p><p class="enline">' + esc(o.en) + "</p>" +
-      (said ? '<button class="btn ghost" disabled>講過 ✓</button>' : '<button class="btn" data-act="outing" data-id="' + theme.id + '">我講過</button>') + "</div>";
   }
   function diaryHTML(season) {
     const diaries = (TDATA.copy && TDATA.copy.diaries) || [];
@@ -324,12 +281,15 @@
     const seasons = TDATA.seasons || [];
     const view = viewingSeason();
     const season = seasons.find(s => s.season === view) || seasons[0];
-    const head = '<div class="card yh"><div class="row"><h2>我哋去到邊？</h2><span class="wk">第 ' + week + ' / 52 週</span></div><div class="bar"><i style="width:' + Math.min(100, (week / 52) * 100) + '%"></i></div><div class="sub"><span>已學 ' + fmt(learned) + ' / 1,200 字</span><span>主題 ' + cards + " / 48 ・ 文法 " + g + ' / 24</span></div><div class="sub"><span id="outingCount">出街 ' + outN + ' 次</span><span>學習日 ' + studyN + " 日</span></div></div>";
+    const journey = '<div class="journey">' + seasons.map(s => {
+      const open = LC.seasonOpen(s.season);
+      const on = s.season === view;
+      return '<button class="jstep' + (on ? " on" : "") + (open ? "" : " lock") + '" data-act="mapseason" data-season="' + s.season + '"><b>' + esc(s.place_zh) + "</b><small>" + (open ? esc(s.zh) : "🔒") + "</small></button>";
+    }).join('<span class="jarr" aria-hidden="true">›</span>') + "</div>";
+    const head = '<div class="card yh"><div class="row"><h2>年度課程地圖 🗺️</h2><span class="wk">第 ' + week + ' / 52 週</span></div><div class="bar"><i style="width:' + Math.min(100, (week / 52) * 100) + '%"></i></div><div class="sub"><span>已學 ' + fmt(learned) + ' / 1,200 字</span><span>主題 ' + cards + " / 48 ・ 文法 " + g + ' / 24</span></div><div class="sub"><span id="outingCount">出街 ' + outN + ' 次</span><span>學習日 ' + studyN + " 日</span></div></div>";
     if (!season) return '<div class="page mapage">' + head + "</div>";
-    const z = ZONES[season.season] || { name: season.place_zh || "" };
-    const box = '<div class="s1" style="background:' + season.bg + ";border-color:" + season.border + '"><div class="sh"><span class="emoji">' + season.emoji + "</span>" + esc(z.name) + "・" + esc(season.zh) + "<small>第 " + esc(season.weeks) + " 週</small></div>" + snakeHTML(season) + "</div>";
-    const read = isDone("q" + season.season + "x") ? '<button class="btn ghost" data-act="readdiary">讀懶貓日記</button>' : "";
-    return '<div class="page mapage">' + head + lifeMapHTML(view) + nowOuting(season) + read + box + diaryHTML(season) + "</div>";
+    const box = '<div class="s1" style="background:' + season.bg + ";border-color:" + season.border + '"><div class="sh"><span class="emoji">' + season.emoji + "</span>第 " + season.season + " 季・" + esc(season.zh) + "<small>第 " + esc(season.weeks) + " 週 ・ " + esc(season.place_zh) + "</small></div>" + snakeHTML(season) + "</div>";
+    return '<div class="page mapage">' + head + journey + box + diaryHTML(season) + "</div>";
   }
   function paintMap() {
     const svg = $("#mappath"); if (!svg) return;
