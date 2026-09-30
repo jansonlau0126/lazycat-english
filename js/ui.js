@@ -20,7 +20,8 @@
   const PAW_W = IC.paw.replace("<svg", '<svg class="paww"');
 
   function fmt(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ","); }
-  function name() { return (S.profile && S.profile.name) || "Janson"; }
+  function name() { return ((S.profile && S.profile.name) || "").trim(); }
+  function cardSigner() { const n = name(); return n ? "🐾 " + n + " 已完成" : "🐾 已完成"; }
 
   function renderTop() {
     refillHearts();
@@ -53,7 +54,8 @@
     if (isSundayRest()) return ["今日懶貓日 😴", "冇新嘢學，想溫就溫下到期嘅字。"];
     const doneToday = newCountToday() > 0 && !canStartNewToday();
     if (doneToday || (newCountToday() > 0 && !isBehind())) return ["今日學完喇！", "我哋一齊瞓返個晏覺 😴"];
-    return ["喵～瞓醒未呀 " + name() + "？", "今日學埋 5 個字，就可以一齊瞓返個晏覺 😴"];
+    const who = name();
+    return [who ? "喵～瞓醒未呀 " + who + "？" : "喵～瞓醒未呀？", "今日學埋 5 個字，就可以一齊瞓返個晏覺 😴"];
   }
   function needsHearts(act) {
     return !S.unlimited && S.hearts <= 0 && act !== "review" && act !== "practice";
@@ -139,7 +141,7 @@
   function wordTiles(ws, seen, allDone) {
     return '<div class="words">' + ws.map((w, i) => {
       const cls = allDone || i < seen ? "done" : i === seen ? "cur" : "lock";
-      return '<button class="w ' + cls + ' speakable" data-speak="' + esc(w.word) + '">' + renderIcon(w, 34) + "<span class=\"fit\">" + esc(w.word) + "</span></button>";
+      return '<button class="w ' + cls + ' speakable" data-speak="' + esc(w.word) + '">' + renderIcon(w, 46) + "<span class=\"fit\">" + esc(w.word) + "</span></button>";
     }).join("") + "</div>";
   }
 
@@ -159,6 +161,7 @@
       themeCard = '<div class="card theme"><div class="ttile"><span class="emoji">🌸</span></div><div class="tmeta"><div class="t1">全年 ・ 第 52 / 52 週</div><div class="t2">四個季節都學完 <span class="en">Year complete</span></div></div></div>';
     }
     const todayCard = homeToday();
+    const mapEntry = '<button class="mapentry" data-act="tab" data-t="map"><span class="mapmini" aria-hidden="true"><i>🏠</i><i>🚇</i><i>🏫</i><i>🏮</i></span><span class="mapentry-t"><b>你同貓一齊行到邊？</b><small>四個地方，慢慢亮</small></span></button>';
     const due = dueWords().length;
     const dueChip = due ? '<button class="due-chip" data-act="review">🧠 你有 <b>' + due + "</b> 個字今日要複習<span>去複習 →</span></button>" : "";
     const strip = weekStrip(theme);
@@ -166,7 +169,7 @@
     const zzz = frame.nap ? '<span class="zzz z1">z</span><span class="zzz z2">z</span><span class="zzz z3">Z</span>' : "";
     return '<div class="page home">' +
       '<div class="hero"><img class="heroimg" src="' + esc(frame.src) + '" alt="' + esc(frame.alt) + '" style="object-position:' + frame.pos + '"><div class="shade"></div>' + zzz + '<span class="heroname">' + esc(frame.label) + '</span><div class="bubble"><b>' + esc(ht) + "</b>" + esc(hb) + "</div></div>" +
-      themeCard +
+      themeCard + mapEntry +
       '<div class="card today"><div class="row"><h3>' + esc(todayCard.title) + "</h3>" + (todayCard.learned ? '<span class="pill sun">' + todayCard.learned + "</span>" : "") + "</div>" +
       (todayCard.sub && !todayCard.learned ? '<p class="muted">' + esc(todayCard.sub) + "</p>" : "") +
       todayCard.tiles + '<div class="btncol">' + todayCard.btns + "</div>" + (todayCard.extra || "") + "</div>" +
@@ -248,6 +251,59 @@
     const avatar = curI >= 0 ? '<div class="here" data-c="' + MAP_SLOTS[curI][0] + '" data-r="' + MAP_SLOTS[curI][1] + '">' + faceHTML(S.companion, 36) + "</div>" : "";
     return '<div class="snake" id="snake"><svg class="path" viewBox="0 0 334 294" id="mappath" data-path="' + esc(ids.join(",")) + '"></svg>' + nodes + avatar + "</div>";
   }
+  const ZONES = {
+    1: { name: "屋企", mark: "🪟", done: "「屋企」行完喇。窗台亮起。" },
+    2: { name: "出街", mark: "🚇", done: "「出街」行完喇。港鐵站牌亮起。" },
+    3: { name: "學校", mark: "🏫", done: "「學校」行完喇。校門牌亮起。" },
+    4: { name: "過節", mark: "🏮", done: "「過節」行完喇。燈籠亮起。" }
+  };
+  const SIGNS = { 2: "出門記得帶鎖匙。", 3: "鐘響之前，買個麵包都得。", 4: "功課放下，燈籠點起。" };
+  function weekLamp(theme) {
+    const days = [1, 2, 3, 4, 5].filter(d => isDone(theme.id + "d" + d)).length;
+    if (days >= 5) return "on";
+    if (days > 0) return "half";
+    return "";
+  }
+  function lifeMapHTML(view) {
+    const seasons = TDATA.seasons || [];
+    let html = '<div class="lifemap"><p class="lifelead">同懶貓一齊行嘅香港</p><p class="legend"><i class="lamp week on"></i> 學完一週　<i class="lamp street on"></i> 出過街</p>';
+    seasons.forEach(s => {
+      const z = ZONES[s.season] || { name: s.place_zh || s.zh, mark: s.emoji || "🐾", done: "" };
+      const open = LC.seasonOpen(s.season);
+      const themes = THEMES.filter(t => t.season === s.season);
+      const exam = isDone("q" + s.season + "x");
+      if (SIGNS[s.season]) {
+        const walked = isDone("q" + (s.season - 1) + "x");
+        html += '<div class="sign' + (walked ? " lit" : "") + '"><span aria-hidden="true">🪧</span><b>' + esc(SIGNS[s.season]) + "</b></div>";
+      }
+      html += '<button class="zone' + (s.season === view ? " on" : "") + (open ? "" : " fog") + '" style="background:' + (s.bg || "#fff") + ";border-color:" + (s.border || "#E7D5C3") + '" data-act="mapseason" data-season="' + s.season + '">';
+      html += '<div class="zmark' + (exam ? " lit" : "") + '" aria-hidden="true">' + z.mark + "</div><div class=\"zbody\"><b>" + esc(z.name) + "</b><small>" + esc((s.place_zh || "") + (s.zh ? " · " + s.zh : "")) + "</small>";
+      if (!open) html += "<p>仲未行到呢度。慢慢嚟。</p>";
+      else {
+        html += '<div class="lamps">' + themes.map(t => '<i class="lamp week ' + weekLamp(t) + '"></i>').join("") + "</div>";
+        html += '<div class="lamps">' + themes.map(t => '<i class="lamp street' + (S.outings && S.outings[t.id] ? " on" : "") + '" data-out="' + esc(t.id) + '"></i>').join("") + "</div>";
+        if (exam) {
+          const spec = LC.quarterlyById("q" + s.season);
+          const cat = spec && spec.exam_cat && CAT[spec.exam_cat];
+          html += '<p class="zdone">' + esc(z.done) + (cat ? " 解鎖新朋友：" + esc(cat.name_zh) + "。" : "") + "</p>";
+        }
+      }
+      html += "</div></button>";
+    });
+    return html + "</div>";
+  }
+  function nowOuting(season) {
+    const theme = activeTheme();
+    if (!theme || theme.season !== season.season) return "";
+    const o = ((TDATA.copy && TDATA.copy.outings) || []).find(x => x.theme_id === theme.id);
+    if (!o) return "";
+    const z = ZONES[season.season] || { name: season.place_zh || "" };
+    const themes = THEMES.filter(t => t.season === season.season);
+    const i = Math.max(1, themes.findIndex(t => t.id === theme.id) + 1);
+    const said = S.outings && S.outings[theme.id];
+    return '<div class="card outing"><b>' + esc(z.name) + " · 第 " + i + " 週</b><p>" + esc(o.scene_zh) + '</p><p class="enline">' + esc(o.en) + "</p>" +
+      (said ? '<button class="btn ghost" disabled>講過 ✓</button>' : '<button class="btn" data-act="outing" data-id="' + theme.id + '">我講過</button>') + "</div>";
+  }
   function diaryHTML(season) {
     const diaries = (TDATA.copy && TDATA.copy.diaries) || [];
     const d = diaries.find(x => x.season === season.season);
@@ -256,7 +312,7 @@
       return '<div class="card diary"><h3>' + esc(d.title) + "</h3><p>" + esc(LC.seasonLockLine(season.season)) + "</p></div>";
     }
     const note = (S.diary && S.diary[String(season.season)]) || "";
-    return '<div class="card diary"><h3>' + esc(d.title) + "</h3><p>" + esc(d.body) + '</p><label class="mp" for="diaryNote">你想記低嘅一句</label><textarea id="diaryNote" maxlength="80">' + esc(note) + '</textarea><button class="btn ghost" data-act="savediary" data-season="' + season.season + '">記低</button></div>';
+    return '<div class="card diary" id="seasonDiary"><h3>' + esc(d.title) + "</h3><p>" + esc(d.body) + '</p><label class="mp" for="diaryNote">你想記低嘅一句</label><textarea id="diaryNote" maxlength="80">' + esc(note) + '</textarea><button class="btn ghost" data-act="savediary" data-season="' + season.season + '">記低</button></div>';
   }
   function renderMap() {
     const week = currentWeek();
@@ -268,15 +324,12 @@
     const seasons = TDATA.seasons || [];
     const view = viewingSeason();
     const season = seasons.find(s => s.season === view) || seasons[0];
-    const journey = '<div class="journey">' + seasons.map(s => {
-      const open = LC.seasonOpen(s.season);
-      const on = s.season === view;
-      return '<button class="jstep' + (on ? " on" : "") + (open ? "" : " lock") + '" data-act="mapseason" data-season="' + s.season + '"><b>' + esc(s.place_zh) + "</b><small>" + (open ? esc(s.zh) : "🔒") + "</small></button>";
-    }).join('<span class="jarr" aria-hidden="true">›</span>') + "</div>";
-    const head = '<div class="card yh"><div class="row"><h2>年度課程地圖 🗺️</h2><span class="wk">第 ' + week + ' / 52 週</span></div><div class="bar"><i style="width:' + Math.min(100, (week / 52) * 100) + '%"></i></div><div class="sub"><span>已學 ' + fmt(learned) + ' / 1,200 字</span><span>主題 ' + cards + " / 48 ・ 文法 " + g + ' / 24</span></div><div class="sub"><span id="outingCount">出街 ' + outN + ' 次</span><span>學習日 ' + studyN + " 日</span></div></div>";
+    const head = '<div class="card yh"><div class="row"><h2>我哋去到邊？</h2><span class="wk">第 ' + week + ' / 52 週</span></div><div class="bar"><i style="width:' + Math.min(100, (week / 52) * 100) + '%"></i></div><div class="sub"><span>已學 ' + fmt(learned) + ' / 1,200 字</span><span>主題 ' + cards + " / 48 ・ 文法 " + g + ' / 24</span></div><div class="sub"><span id="outingCount">出街 ' + outN + ' 次</span><span>學習日 ' + studyN + " 日</span></div></div>";
     if (!season) return '<div class="page mapage">' + head + "</div>";
-    const box = '<div class="s1" style="background:' + season.bg + ";border-color:" + season.border + '"><div class="sh"><span class="emoji">' + season.emoji + "</span>第 " + season.season + " 季・" + esc(season.zh) + "<small>第 " + esc(season.weeks) + " 週 ・ " + esc(season.place_zh) + "</small></div>" + snakeHTML(season) + "</div>";
-    return '<div class="page mapage">' + head + journey + box + diaryHTML(season) + "</div>";
+    const z = ZONES[season.season] || { name: season.place_zh || "" };
+    const box = '<div class="s1" style="background:' + season.bg + ";border-color:" + season.border + '"><div class="sh"><span class="emoji">' + season.emoji + "</span>" + esc(z.name) + "・" + esc(season.zh) + "<small>第 " + esc(season.weeks) + " 週</small></div>" + snakeHTML(season) + "</div>";
+    const read = isDone("q" + season.season + "x") ? '<button class="btn ghost" data-act="readdiary">讀懶貓日記</button>' : "";
+    return '<div class="page mapage">' + head + lifeMapHTML(view) + nowOuting(season) + read + box + diaryHTML(season) + "</div>";
   }
   function paintMap() {
     const svg = $("#mappath"); if (!svg) return;
@@ -310,7 +363,7 @@
       const done = isDone(t.id + "d" + d);
       const node = NODE[t.id + "d" + d];
       const open = LC.nodeUnlocked(node);
-      rows += '<div class="dayrow"><div class="dn">' + (done ? "✓" : d) + "</div><div class=\"dwords\">" + ws.map(w => '<button class="speakable" data-speak="' + esc(w.word) + '">' + esc(w.word) + "</button>").join(" ") + "</div>" +
+      rows += '<div class="dayrow"><div class="dn">' + (done ? "✓" : d) + "</div><div class=\"dwords\">" + ws.map(w => '<button class="speakable" data-speak="' + esc(w.word) + '">' + renderIcon(w, 36) + "<span>" + esc(w.word) + "</span></button>").join("") + "</div>" +
         (done ? '<button class="mini" data-act="startnode" data-id="' + node.id + '" data-replay="1">重溫</button>' : open && st !== "lock" ? '<button class="mini" data-act="startnode" data-id="' + node.id + '">開始</button>' : "") + "</div>";
     }
     const sat = isDone(t.id + "d5") ? '<div class="dayrow"><div class="dn">六</div><div>週複習' + (t.grammar ? "＋文法" : "") + "</div>" +
@@ -330,7 +383,8 @@
     const open = LC.nodeUnlocked(NODE[id]);
     const copy = (TDATA.copy && TDATA.copy.monthly) || {};
     const n = (spec.themes || []).filter(tid => S.outings && S.outings[tid]).length;
-    const line = n === 0 ? (copy.empty || "") : n === 1 ? (copy.one || "") : String(copy.many || "").replace("{n}", n);
+    const lamps = (spec.themes || []).filter(tid => isDone(tid + "d5")).length;
+    const line = n === 0 && lamps === 0 ? (copy.empty || "") : "今個月你同我亮咗 " + lamps + " 盞燈，出咗 " + n + " 次街。";
     const study = (S.activeDates || []).length;
     const place = seasonMeta(spec.season || 1).place_zh || "";
     const extra = copy.title ? '<div class="outing"><b>' + esc(copy.title) + "</b><p>" + esc(line) + "</p><p class=\"mp\">" + esc(copy.outing_label || "出街次數") + " " + n + " ・ " + esc(copy.study_days_label || "學習日") + " " + study + "</p><p class=\"mp\">" + esc(copy.study_days_hint || "") + "</p><p class=\"mp\">" + esc(copy.map_label || "地圖去到") + " " + esc(place) + "</p><p class=\"mp\">" + esc(copy.prompt || "") + "</p><p class=\"mp\">" + esc(copy.no_compare || "") + "</p></div>" : "";
@@ -399,13 +453,13 @@
         if (!wordLearnedOnCard(w) && !rec) {
           cells += '<div class="vc-cell empty" style="background:#F3EEE8"><b>' + d + "</b></div>";
         } else {
-          cells += '<button class="vc-cell speakable" data-speak="' + esc(w.word) + '" style="background:' + col + '">' + renderIcon(w, 36) +
+          cells += '<button class="vc-cell speakable" data-speak="' + esc(w.word) + '" style="background:' + col + '">' + renderIcon(w, 46) +
             '<b class="fit">' + esc(w.word) + "</b>" + (S.settings.showIPA ? "<small>" + esc(w.ipa) + "</small>" : "") + "<span>" + esc(w.meaning_zh) + "</span></button>";
         }
       });
     }
     const learned = themeWordsLearned(t);
-    const foot = rec ? "🐾 " + esc(name()) + " 已完成 ・ " + zhDate(rec.date) : "學緊 ・ 已學 " + learned + " / 25";
+    const foot = rec ? esc(cardSigner()) + " ・ " + zhDate(rec.date) : "學緊 ・ 已學 " + learned + " / 25";
     return '<div class="vc" id="vcard" data-theme="' + t.id + '"><div class="vc-head">' + photo +
       '<div class="vc-title"><div class="vc-kicker">第 ' + (t.season || 1) + ' 季 ・ 第 ' + t.week + ' 週 ・ 主題生字卡</div><div class="vc-name">' + (t.emoji || "") + " " + esc(t.zh) + ' <span>' + esc(t.en) + '</span></div></div>' +
       '<div class="vc-count"><b>25</b>個字</div></div><div class="vc-grid">' + cells + '</div><div class="vc-foot"><span>' + foot + '</span><span class="vc-logo">懶貓英文</span></div></div>';
@@ -429,7 +483,7 @@
     const rows = list.map(w => {
       const r = S.srs[w.id];
       const dueNow = r.due <= today();
-      return '<div class="wrow speakable" data-speak="' + esc(w.word) + '">' + renderIcon(w, 40) + '<div class="wmeta"><div class="ww">' + esc(w.word) + ' <small>' + esc(w.ipa) + '</small></div><div class="wz">' + esc(w.meaning_zh) + '</div></div><span class="lv lv' + r.box + '">' + LEVELS[r.box] + (dueNow ? "・今日" : "") + '</span><button class="info" data-act="info" data-id="' + w.id + '" aria-label="詳情">ⓘ</button></div>';
+      return '<div class="wrow speakable" data-speak="' + esc(w.word) + '">' + renderIcon(w, 56) + '<div class="wmeta"><div class="ww">' + esc(w.word) + ' <small>' + esc(w.ipa) + '</small></div><div class="wz">' + esc(w.meaning_zh) + '</div></div><span class="lv lv' + r.box + '">' + LEVELS[r.box] + (dueNow ? "・今日" : "") + '</span><button class="info" data-act="info" data-id="' + w.id + '" aria-label="詳情">ⓘ</button></div>';
     }).join("") || '<div class="empty">呢度暫時冇字 🌱</div>';
     const locked = WORDS.length - learned.length;
     return '<div class="page">' + segBar() + head + hearts + '<div class="section-t">📚 生字庫　<span>' + learned.length + " / " + WORDS.length + "</span></div>" + chips + th + rows + (locked && ui.bankFilter === "all" ? '<div class="empty">🔒 仲有 ' + locked + " 個字等緊你去學</div>" : "") + "</div>";
@@ -546,13 +600,13 @@
     }
     const vs = TTS.voices;
     const voice = TTS.ok ? '<select id="voiceSel"><option value="">自動（英式優先）</option>' + vs.map(v => '<option value="' + esc(v.name) + '"' + (S.settings.voice === v.name ? " selected" : "") + ">" + esc(v.name) + "</option>").join("") + "</select>" : "<span>唔支援</span>";
-    return '<div class="page me"><div class="mehead">' + faceHTML(S.companion, 96, { r: "28px" }) + "<h2>" + esc(name()) + "</h2><p class=\"muted\">" + (S.startDate ? "由 " + S.startDate + " 開始" : "今日就開始") + "</p></div>" +
+    return '<div class="page me"><div class="mehead">' + faceHTML(S.companion, 96, { r: "28px" }) + "<h2>" + esc(name() || "你") + "</h2><p class=\"muted\">" + (S.startDate ? "由 " + S.startDate + " 開始" : "今日就開始") + "</p></div>" +
       grid +
       '<div class="section-t">🎯 每日目標</div><div class="goalrow">' + ring + '<div><div class="gt">' + Math.min(tx, goal) + " / " + goal + ' XP</div><div class="goals">' + goals + "</div></div></div>" +
       '<div class="section-t">📊 最近 7 日 XP</div>' + chart +
       '<div class="section-t">📅 練習日曆</div><div class="cal"><div class="calh"><button data-act="cal" data-d="-1">‹</button><span>' + y + " 年 " + (mo + 1) + ' 月</span><button data-act="cal" data-d="1">›</button></div><div class="calg">' + cells + "</div></div>" +
       '<div class="section-t">⚙️ 設定</div>' +
-      '<div class="setrow"><span>你嘅名</span><input id="nameInp" value="' + esc(name()) + '" maxlength="16"></div>' +
+      '<div class="setrow"><span>你嘅名</span><input id="nameInp" value="' + esc(name()) + '" maxlength="16" placeholder="你想點稱呼"></div>' +
       '<div class="setrow"><span>🔊 音效</span><button class="switch' + (S.settings.sound ? " on" : "") + '" data-act="sound" aria-label="音效"></button></div>' +
       '<div class="setrow"><span>🗣️ 英文聲線</span>' + voice + "</div>" +
       '<div class="setrow"><span>🔊 試聽</span><button class="btn sm" data-speak="Hello! Nice to meet you.">Hello!</button></div>' +
@@ -844,19 +898,19 @@
       const x = gx + col * (cw + gap), y = gy + row * (ch + gap);
       ctx.fillStyle = DAY_COLORS[w.day].bg;
       roundRect(ctx, x, y, cw, ch, 22); ctx.fill();
-      await drawIconCanvas(ctx, w, x + cw / 2 - 36, y + 12, 72);
+      await drawIconCanvas(ctx, w, x + cw / 2 - 42, y + 8, 84);
       ctx.fillStyle = "#4A3A30"; ctx.textAlign = "center";
       let fs = 32;
       ctx.font = "800 " + fs + "px Nunito, Baloo 2, sans-serif";
       while (ctx.measureText(w.word).width > cw - 12 && fs > 16) { fs -= 1; ctx.font = "800 " + fs + "px Nunito, Baloo 2, sans-serif"; }
-      ctx.fillText(w.word, x + cw / 2, y + 108);
-      if (S.settings.showIPA) { ctx.fillStyle = "#9C8676"; ctx.font = "22px Noto Sans, Nunito, sans-serif"; ctx.fillText(w.ipa, x + cw / 2, y + 136); }
+      ctx.fillText(w.word, x + cw / 2, y + 116);
+      if (S.settings.showIPA) { ctx.fillStyle = "#9C8676"; ctx.font = "22px Noto Sans, Nunito, sans-serif"; ctx.fillText(w.ipa, x + cw / 2, y + 142); }
       ctx.fillStyle = "#6B5444"; ctx.font = "28px LazyCatRound, sans-serif";
-      const my = S.settings.showIPA ? y + 170 : y + 150;
+      const my = S.settings.showIPA ? y + 176 : y + 156;
       ctx.fillText(w.meaning_zh, x + cw / 2, my);
     }
     ctx.textAlign = "left"; ctx.fillStyle = "#B89F8A"; ctx.font = "32px LazyCatRound";
-    ctx.fillText("🐾 " + name() + " 已完成 ・ " + zhDate(rec.date), 70, 1540);
+    ctx.fillText(cardSigner() + " ・ " + zhDate(rec.date), 70, 1540);
     ctx.textAlign = "right"; ctx.fillStyle = "#E0822F"; ctx.fillText("懶貓英文", 1010, 1540);
   }
   async function drawIconCanvas(ctx, word, x, y, size) {

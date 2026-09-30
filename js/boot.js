@@ -56,7 +56,7 @@
     const meaning = w.meaning_full || w.meaning_zh;
     modal(
       '<div class="handle"></div><h3>' + LC.esc(w.word) + '</h3><p class="mp">' + LC.esc(w.ipa) + " · " + LC.esc(w.meaning_zh) + "</p>" +
-      '<div class="wtop" style="margin-bottom:10px">' + LC.renderIcon(w, 72) + "</div>" +
+      '<div class="wtop" style="margin-bottom:10px">' + LC.renderIcon(w, 104) + "</div>" +
       '<p><b>' + LC.esc(meaning) + "</b></p>" +
       '<p class="mp">' + LC.esc(w.explain_yue || "") + "</p>" +
       '<p class="mp"><button class="spk" data-speak="' + LC.esc(w.example_en) + '">🔊</button> ' + LC.esc(w.example_en) + "<br>" + LC.esc(w.example_zh) + "</p>" +
@@ -164,7 +164,7 @@
     if (name === "mapnode") { LC.openMapSheet(el.dataset.id); return; }
     if (name === "mapseason") {
       const n = +el.dataset.season;
-      if (!LC.seasonOpen(n)) { toast(LC.seasonLockLine(n)); return; }
+      if (!LC.seasonOpen(n)) { toast("仲未行到呢度。慢慢嚟。"); return; }
       ui.mapSeason = n;
       LC.render();
       return;
@@ -178,9 +178,15 @@
       el.textContent = "講過 ✓";
       el.disabled = true;
       el.classList.add("ghost");
+      $$('.lamp.street[data-out="' + id + '"]').forEach(lamp => lamp.classList.add("on"));
       const count = $("#outingCount");
       if (count) count.textContent = "出街 " + Object.keys(S.outings).length + " 次";
       toast("記低咗，今次算出街 🐾");
+      return;
+    }
+    if (name === "readdiary") {
+      const card = $("#seasonDiary");
+      if (card) card.scrollIntoView({ behavior: "smooth", block: "start" });
       return;
     }
     if (name === "savediary") {
@@ -380,7 +386,7 @@
 
   document.addEventListener("change", e => {
     if (e.target.id === "nameInp") {
-      S.profile.name = (e.target.value || "").trim().slice(0, 16) || "Janson";
+      S.profile.name = (e.target.value || "").trim().slice(0, 16);
       save();
       LC.renderTop();
     }

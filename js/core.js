@@ -59,7 +59,7 @@
     const t = dstr(new Date());
     return {
       v: 1, createdAt: t,
-      profile: { name: "Janson" },
+      profile: { name: "" },
       settings: { sound: true, voice: null, goal: 20, showIPA: true, askCompanionDaily: true, svgIcons: false },
       devIconMode: null, dayOffset: 0,
       xp: 0, xpByDate: {}, streak: 0, bestStreak: 0, lastActive: null, activeDates: [],
@@ -92,6 +92,7 @@
     out.outings = s.outings && typeof s.outings === "object" && !Array.isArray(s.outings) ? s.outings : {};
     out.diary = s.diary && typeof s.diary === "object" && !Array.isArray(s.diary) ? s.diary : {};
     if (!out.cats.fanshu) out.cats.fanshu = { unlocked: out.createdAt || d.createdAt, lessons: 0, bonus: null, seen: false };
+    if (out.profile.name === "Janson") out.profile.name = "";
     out.settings.svgIcons = false;
     if (out.devIconMode !== "emoji" && out.devIconMode !== "tile") out.devIconMode = null;
     return out;
