@@ -168,7 +168,7 @@
     body.innerHTML =
       '<div class="wchiprow"><span class="pill sun">' + theme.emoji + " " + esc(theme.zh) + "・今日第 " + ci + " / " + cards.length + ' 個字</span><span class="pill pink">' + (L.replay ? "溫習" : "新字") + "</span></div>" +
       '<div class="card wordcard"><div class="peek">' + faceHTML(S.companion, 72, { r: "22px" }) + "</div>" +
-      '<div class="wtop"><div class="wicon">' + renderIcon(w, 86) + "</div><div><div class=\"wd speakable\" data-speak=\"" + esc(w.word) + "\">" + esc(w.word) + "</div>" +
+      '<div class="wtop"><div class="wicon">' + renderIcon(w, 108) + "</div><div><div class=\"wd speakable\" data-speak=\"" + esc(w.word) + "\">" + esc(w.word) + "</div>" +
       '<div class="ipa">' + esc(w.ipa) + '</div><span class="pill lav">' + esc(pos) + "</span></div></div>" +
       '<div class="audio">' +
       '<button class="ab orange" data-speak="' + esc(w.word) + '"><span class="emoji">🔊</span>聽發音</button>' +

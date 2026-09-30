@@ -16,8 +16,8 @@
      "p": "<b>I → am</b>；<b>he / she / it / 單數名詞 → is</b>；<b>you / we / they / 複數名詞 → are</b>。<br>be 動詞用嚟講<b>身份、年齡、感覺、喺邊度</b>。",
      "ex": [
       [
-       "I am Janson.",
-       "我係 Janson。"
+       "I am a student.",
+       "我係學生。"
       ],
       [
        "My sister is ten years old.",
@@ -231,8 +231,8 @@
     },
     {
      "t": "mc",
-     "q": "Janson ___ his teeth twice a day.",
-     "zh": "Janson 一日刷兩次牙。",
+     "q": "My brother ___ his teeth twice a day.",
+     "zh": "我哥哥一日刷兩次牙。",
      "o": [
       "brush",
       "brushs",
