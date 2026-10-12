@@ -15,12 +15,12 @@
     "abstract": false,
     "emoji": "1️⃣",
     "icon_idea": "number 1 on a paw print",
-    "icon": null,
+    "icon": "assets/icons/one.png",
     "ipa": "/wʌn/",
-    "explain_yue": "數目字：一。",
-    "example_en": "I have one.",
-    "example_zh": "我有「一」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 1。數嘢、講價錢、排位都用到。",
+    "example_en": "I need one ticket to Mong Kok.",
+    "example_zh": "我要一張去旺角嘅車票。",
+    "tip": "one apple；a 同 one 都係「一個」，one 比較強調數目。"
   },
   {
     "id": "two",
@@ -38,12 +38,12 @@
     "abstract": false,
     "emoji": "2️⃣",
     "icon_idea": "number 2",
-    "icon": null,
+    "icon": "assets/icons/two.png",
     "ipa": "/tuː/",
-    "explain_yue": "數目字：二。",
-    "example_en": "I have two.",
-    "example_zh": "我有「二」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 2。",
+    "example_en": "Two buses stop here.",
+    "example_zh": "有兩架巴士喺呢度停。",
+    "tip": "讀音 /tuː/ 同 too、to 一樣；聽句要靠前後文。"
   },
   {
     "id": "three",
@@ -61,12 +61,12 @@
     "abstract": false,
     "emoji": "3️⃣",
     "icon_idea": "number 3",
-    "icon": null,
+    "icon": "assets/icons/three.png",
     "ipa": "/θriː/",
-    "explain_yue": "數目字：三。",
-    "example_en": "I have three.",
-    "example_zh": "我有「三」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 3。",
+    "example_en": "We wait for three minutes.",
+    "example_zh": "我哋等三分鐘。",
+    "tip": "th 咬舌；three 同 tree（樹）唔同，要分清。"
   },
   {
     "id": "four",
@@ -84,12 +84,12 @@
     "abstract": false,
     "emoji": "4️⃣",
     "icon_idea": "number 4",
-    "icon": null,
+    "icon": "assets/icons/four.png",
     "ipa": "/fɔː/",
-    "explain_yue": "數目字：四。",
-    "example_en": "I have four.",
-    "example_zh": "我有「四」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 4。",
+    "example_en": "The shop opens at four.",
+    "example_zh": "間舖四點開門。",
+    "tip": "讀音似 for、for；寫字唔好同 for 撈亂。"
   },
   {
     "id": "five",
@@ -107,12 +107,12 @@
     "abstract": false,
     "emoji": "5️⃣",
     "icon_idea": "number 5",
-    "icon": null,
+    "icon": "assets/icons/five.png",
     "ipa": "/faɪv/",
-    "explain_yue": "數目字：五。",
-    "example_en": "I have five.",
-    "example_zh": "我有「五」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 5。",
+    "example_en": "I buy five bananas.",
+    "example_zh": "我買五條蕉。",
+    "tip": "five 開頭有 /f/；同 live 押韻但開頭唔同。"
   },
   {
     "id": "six",
@@ -130,12 +130,12 @@
     "abstract": false,
     "emoji": "6️⃣",
     "icon_idea": "number 6",
-    "icon": null,
+    "icon": "assets/icons/six.png",
     "ipa": "/sɪks/",
-    "explain_yue": "數目字：六。",
-    "example_en": "I have six.",
-    "example_zh": "我有「六」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 6。",
+    "example_en": "The MTR comes every six minutes.",
+    "example_zh": "港鐵大約每六分鐘一班。",
+    "tip": "x 讀 /ks/；sixteen、sixty 都由 six 變出嚟。"
   },
   {
     "id": "seven",
@@ -153,12 +153,12 @@
     "abstract": false,
     "emoji": "7️⃣",
     "icon_idea": "number 7",
-    "icon": null,
+    "icon": "assets/icons/seven.png",
     "ipa": "/ˈsevən/",
-    "explain_yue": "數目字：七。",
-    "example_en": "I have seven.",
-    "example_zh": "我有「七」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 7。",
+    "example_en": "There are seven days in a week.",
+    "example_zh": "一個星期有七日。",
+    "tip": "兩個音節 se-ven；唔好讀成「仙」。"
   },
   {
     "id": "eight",
@@ -176,12 +176,12 @@
     "abstract": false,
     "emoji": "8️⃣",
     "icon_idea": "number 8",
-    "icon": null,
+    "icon": "assets/icons/eight.png",
     "ipa": "/eɪt/",
-    "explain_yue": "數目字：八。",
-    "example_en": "I have eight.",
-    "example_zh": "我有「八」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 8。",
+    "example_en": "I finish work at eight.",
+    "example_zh": "我八點收工。",
+    "tip": "讀音似 ate（食咗）；寫字有 gh 但唔讀出嚟。"
   },
   {
     "id": "nine",
@@ -199,12 +199,12 @@
     "abstract": false,
     "emoji": "9️⃣",
     "icon_idea": "number 9",
-    "icon": null,
+    "icon": "assets/icons/nine.png",
     "ipa": "/naɪn/",
-    "explain_yue": "數目字：九。",
-    "example_en": "I have nine.",
-    "example_zh": "我有「九」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 9。",
+    "example_en": "Platform nine is this way.",
+    "example_zh": "九號月台喺呢邊。",
+    "tip": "同 night 開頭一樣；nineteen、ninety 由 nine 變。"
   },
   {
     "id": "ten",
@@ -222,12 +222,12 @@
     "abstract": false,
     "emoji": "🔟",
     "icon_idea": "number 10",
-    "icon": null,
+    "icon": "assets/icons/ten.png",
     "ipa": "/ten/",
-    "explain_yue": "數目字：十。",
-    "example_en": "I have ten.",
-    "example_zh": "我有「十」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 10。十進制嘅基數。",
+    "example_en": "Ten dollars, please.",
+    "example_zh": "唔該，十蚊。",
+    "tip": "ten 好常用；ten o’clock = 十點。"
   },
   {
     "id": "eleven",
@@ -245,12 +245,12 @@
     "abstract": false,
     "emoji": "🔢",
     "icon_idea": "number 11",
-    "icon": null,
+    "icon": "assets/icons/eleven.png",
     "ipa": "/ɪˈlevən/",
-    "explain_yue": "數目字：十一。",
-    "example_en": "I have eleven.",
-    "example_zh": "我有「十一」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 11。",
+    "example_en": "The bus leaves at eleven.",
+    "example_zh": "巴士十一點開。",
+    "tip": "三個音節 e-lev-en；唔使講 ten-one。"
   },
   {
     "id": "twelve",
@@ -268,12 +268,12 @@
     "abstract": false,
     "emoji": "🔢",
     "icon_idea": "number 12",
-    "icon": null,
+    "icon": "assets/icons/twelve.png",
     "ipa": "/twelv/",
-    "explain_yue": "數目字：十二。",
-    "example_en": "I have twelve.",
-    "example_zh": "我有「十二」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 12。一個鐘、一打都係十二。",
+    "example_en": "We meet at twelve.",
+    "example_zh": "我哋十二點見。",
+    "tip": "十二點可以講 twelve 或者 noon（晏晝）。"
   },
   {
     "id": "thirteen",
@@ -291,12 +291,12 @@
     "abstract": false,
     "emoji": "🔢",
     "icon_idea": "number 13",
-    "icon": null,
+    "icon": "assets/icons/thirteen.png",
     "ipa": "/ˌθɜːˈtiːn/",
-    "explain_yue": "數目字：十三。",
-    "example_en": "I have thirteen.",
-    "example_zh": "我有「十三」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 13。teen 係「十幾」。",
+    "example_en": "I am thirteen years old.",
+    "example_zh": "我十三歲。",
+    "tip": "重音喺 teen；thirty（三十）重音喺 thir，唔好撈亂。"
   },
   {
     "id": "fourteen",
@@ -314,12 +314,12 @@
     "abstract": false,
     "emoji": "🔢",
     "icon_idea": "number 14",
-    "icon": null,
+    "icon": "assets/icons/fourteen.png",
     "ipa": "/ˌfɔːˈtiːn/",
-    "explain_yue": "數目字：十四。",
-    "example_en": "I have fourteen.",
-    "example_zh": "我有「十四」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 14。",
+    "example_en": "Room fourteen is upstairs.",
+    "example_zh": "十四號房喺樓上。",
+    "tip": "同 forty（四十）唔同：fourteen 有 u，forty 冇。"
   },
   {
     "id": "fifteen",
@@ -337,12 +337,12 @@
     "abstract": false,
     "emoji": "🔢",
     "icon_idea": "number 15",
-    "icon": null,
+    "icon": "assets/icons/fifteen.png",
     "ipa": "/ˌfɪfˈtiːn/",
-    "explain_yue": "數目字：十五。",
-    "example_en": "I have fifteen.",
-    "example_zh": "我有「十五」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 15。",
+    "example_en": "The train is fifteen minutes late.",
+    "example_zh": "班車遲咗十五分鐘。",
+    "tip": "five → fifteen（f 變 f，中間變）；fifty 係五十。"
   },
   {
     "id": "sixteen",
@@ -360,12 +360,12 @@
     "abstract": false,
     "emoji": "🔢",
     "icon_idea": "number 16",
-    "icon": null,
+    "icon": "assets/icons/sixteen.png",
     "ipa": "/ˌsɪkˈstiːn/",
-    "explain_yue": "數目字：十六。",
-    "example_en": "I have sixteen.",
-    "example_zh": "我有「十六」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 16。",
+    "example_en": "She is sixteen.",
+    "example_zh": "佢十六歲。",
+    "tip": "teen = 十幾；sixty 係六十，重音位置唔同。"
   },
   {
     "id": "seventeen",
@@ -383,12 +383,12 @@
     "abstract": false,
     "emoji": "🔢",
     "icon_idea": "number 17",
-    "icon": null,
+    "icon": "assets/icons/seventeen.png",
     "ipa": "/ˌsevənˈtiːn/",
-    "explain_yue": "數目字：十七。",
-    "example_en": "I have seventeen.",
-    "example_zh": "我有「十七」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 17。",
+    "example_en": "Gate seventeen is near the exit.",
+    "example_zh": "十七號閘就喺出口附近。",
+    "tip": "四個音節；seventeen / seventy（七十）要分清。"
   },
   {
     "id": "eighteen",
@@ -406,12 +406,12 @@
     "abstract": false,
     "emoji": "🔢",
     "icon_idea": "number 18",
-    "icon": null,
+    "icon": "assets/icons/eighteen.png",
     "ipa": "/ˌeɪˈtiːn/",
-    "explain_yue": "數目字：十八。",
-    "example_en": "I have eighteen.",
-    "example_zh": "我有「十八」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 18。",
+    "example_en": "I turn eighteen next month.",
+    "example_zh": "我下個月就十八歲。",
+    "tip": "eight + teen；eighty 係八十。"
   },
   {
     "id": "nineteen",
@@ -429,12 +429,12 @@
     "abstract": false,
     "emoji": "🔢",
     "icon_idea": "number 19",
-    "icon": null,
+    "icon": "assets/icons/nineteen.png",
     "ipa": "/ˌnaɪnˈtiːn/",
-    "explain_yue": "數目字：十九。",
-    "example_en": "I have nineteen.",
-    "example_zh": "我有「十九」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 19。",
+    "example_en": "Bus nineteen goes to the hospital.",
+    "example_zh": "十九號巴士去醫院。",
+    "tip": "teen 系列最後一個；ninety 係九十，重音唔同。"
   },
   {
     "id": "twenty",
@@ -452,12 +452,12 @@
     "abstract": false,
     "emoji": "🔢",
     "icon_idea": "number 20",
-    "icon": null,
+    "icon": "assets/icons/twenty.png",
     "ipa": "/ˈtwenti/",
-    "explain_yue": "數目字：二十。",
-    "example_en": "I have twenty.",
-    "example_zh": "我有「二十」呢個數量。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 20。",
+    "example_en": "A ride costs twenty dollars.",
+    "example_zh": "坐一程要廿蚊。",
+    "tip": "重音喺 twen；twenty-one = 二十一。"
   },
   {
     "id": "zero",
@@ -475,12 +475,12 @@
     "abstract": false,
     "emoji": "0️⃣",
     "icon_idea": "number 0",
-    "icon": null,
+    "icon": "assets/icons/zero.png",
     "ipa": "/ˈzɪərəʊ/",
-    "explain_yue": "數目字：零。",
-    "example_en": "My battery is at zero.",
-    "example_zh": "同「零」有關嘅用法。",
-    "tip": "讀音見 IPA；用喺數量同價錢。"
+    "explain_yue": "數目 0。冇、空、溫度零都可以講。",
+    "example_en": "My phone battery is at zero.",
+    "example_zh": "我電話電量係零。",
+    "tip": "電話號碼入面嘅 0，香港人有時講 oh，正式講 zero。"
   },
   {
     "id": "many",
@@ -498,12 +498,12 @@
     "abstract": true,
     "emoji": "📦",
     "icon_idea": "many small boxes stacked",
-    "icon": null,
+    "icon": "assets/icons/many.png",
     "ipa": "/ˈmeni/",
-    "explain_yue": "好多。",
+    "explain_yue": "好多（用喺數得嚟嘅嘢）。",
     "example_en": "How many tickets do you need?",
     "example_zh": "你要幾多張票？",
-    "tip": "接可數複數。"
+    "tip": "many + 複數：many people；much 先用嚟講水、錢呢類數唔清嘅。"
   },
   {
     "id": "few",
@@ -521,12 +521,12 @@
     "abstract": true,
     "emoji": "🪙",
     "icon_idea": "only a few coins",
-    "icon": null,
+    "icon": "assets/icons/few.png",
     "ipa": "/fjuː/",
-    "explain_yue": "少少。",
+    "explain_yue": "好少（數得嚟嘅嘢）。",
     "example_en": "Few shops are open now.",
-    "example_zh": "而家少舖開門。",
-    "tip": "a few = 有少少。"
+    "example_zh": "而家好少舖開門。",
+    "tip": "few = 少到幾乎冇；a few = 有少少。差一個 a，意思差好遠。"
   },
   {
     "id": "some",
@@ -544,12 +544,12 @@
     "abstract": true,
     "emoji": "✋",
     "icon_idea": "an open hand with a few items",
-    "icon": null,
+    "icon": "assets/icons/some.png",
     "ipa": "/sʌm/",
-    "explain_yue": "一啲。",
+    "explain_yue": "一啲、若干。",
     "example_en": "I need some help.",
-    "example_zh": "我需要少少幫手。",
-    "tip": "肯定句 some；否定／問句常 any。"
+    "example_zh": "我需要啲幫手。",
+    "tip": "肯定句多用 some；疑問同否定句常改 any。"
   },
   {
     "id": "all",
@@ -567,12 +567,12 @@
     "abstract": true,
     "emoji": "🧩",
     "icon_idea": "complete puzzle",
-    "icon": null,
+    "icon": "assets/icons/all.png",
     "ipa": "/ɔːl/",
-    "explain_yue": "全部。",
+    "explain_yue": "全部、所有。",
     "example_en": "All the trains are full.",
     "example_zh": "所有列車都滿座。",
-    "tip": "all day；not all。"
+    "tip": "all day = 成日；not all = 唔係全部都係。"
   },
   {
     "id": "go",
@@ -590,12 +590,12 @@
     "abstract": true,
     "emoji": "➡️",
     "icon_idea": "kitten walking toward a door",
-    "icon": null,
+    "icon": "assets/icons/go.png",
     "ipa": "/ɡəʊ/",
-    "explain_yue": "去。",
-    "example_en": "I go to the station.",
-    "example_zh": "我去車站。",
-    "tip": "go to + 地方；第三人稱 goes。"
+    "explain_yue": "去某度。",
+    "example_en": "I go to the MTR station every morning.",
+    "example_zh": "我朝早都會去港鐵站。",
+    "tip": "go to + 地方；返屋企講 go home，唔使 to。第三人稱 goes。"
   },
   {
     "id": "come",
@@ -613,12 +613,12 @@
     "abstract": true,
     "emoji": "⬅️",
     "icon_idea": "kitten coming closer",
-    "icon": null,
+    "icon": "assets/icons/come.png",
     "ipa": "/kʌm/",
-    "explain_yue": "嚟。",
+    "explain_yue": "向住你或者呢度嚟。",
     "example_en": "Please come here.",
-    "example_zh": "請過嚟。",
-    "tip": "come 向住你；go 離開。"
+    "example_zh": "請過嚟呢度。",
+    "tip": "come 係嚟近你；go 係離開你。come to Hong Kong = 嚟香港。"
   },
   {
     "id": "want",
@@ -636,12 +636,12 @@
     "abstract": true,
     "emoji": "🙏",
     "icon_idea": "kitten pointing at a treat",
-    "icon": null,
+    "icon": "assets/icons/want.png",
     "ipa": "/wɒnt/",
-    "explain_yue": "想要。",
-    "example_en": "I want a ticket.",
-    "example_zh": "我想要張票。",
-    "tip": "want to + 動詞。"
+    "explain_yue": "想要某樣嘢，或者想做某件事。",
+    "example_en": "I want a ticket to Central.",
+    "example_zh": "我想要一張去中環嘅車票。",
+    "tip": "want + 名詞；want to + 動詞（I want to go）。"
   },
   {
     "id": "need",
@@ -659,12 +659,12 @@
     "abstract": true,
     "emoji": "❗",
     "icon_idea": "kitten holding a shopping list",
-    "icon": null,
+    "icon": "assets/icons/need.png",
     "ipa": "/niːd/",
-    "explain_yue": "需要。",
-    "example_en": "You need a map.",
-    "example_zh": "你需要地圖。",
-    "tip": "need to + 動詞。"
+    "explain_yue": "需要；冇唔得。比 want 更「一定要」。",
+    "example_en": "You need an Octopus card.",
+    "example_zh": "你需要張八達通。",
+    "tip": "need to + 動詞：I need to go。唔好同 want 撈亂。"
   },
   {
     "id": "like",
@@ -682,12 +682,12 @@
     "abstract": true,
     "emoji": "💛",
     "icon_idea": "kitten hugging a heart",
-    "icon": null,
+    "icon": "assets/icons/like.png",
     "ipa": "/laɪk/",
-    "explain_yue": "鍾意。",
+    "explain_yue": "鍾意某樣嘢或者某件事。",
     "example_en": "I like this park.",
     "example_zh": "我鍾意呢個公園。",
-    "tip": "like + 名詞／-ing。"
+    "tip": "like + 名詞；like + -ing（I like walking）。would like = 想要（禮貌）。"
   },
   {
     "id": "have",
@@ -705,12 +705,12 @@
     "abstract": true,
     "emoji": "✋",
     "icon_idea": "kitten holding an item",
-    "icon": null,
+    "icon": "assets/icons/have.png",
     "ipa": "/hæv/",
-    "explain_yue": "有。",
-    "example_en": "I have a card.",
-    "example_zh": "我有張卡。",
-    "tip": "has／had；have breakfast。"
+    "explain_yue": "有；擁有。亦可以用嚟講食早餐。",
+    "example_en": "I have an Octopus card.",
+    "example_zh": "我有張八達通。",
+    "tip": "he/she has；過去式 had。have breakfast = 食早餐。"
   },
   {
     "id": "get",
@@ -728,12 +728,12 @@
     "abstract": true,
     "emoji": "🎁",
     "icon_idea": "kitten receiving a gift",
-    "icon": null,
+    "icon": "assets/icons/get.png",
     "ipa": "/ɡet/",
-    "explain_yue": "攞；得到。",
-    "example_en": "I get a receipt.",
-    "example_zh": "我攞到收據。",
-    "tip": "get on the bus；get to = 到達。"
+    "explain_yue": "攞到、得到；用法好闊。",
+    "example_en": "I get a receipt after I pay.",
+    "example_zh": "俾完錢我會攞收據。",
+    "tip": "get on／off the bus = 上／落車；get to = 到達。"
   },
   {
     "id": "make",
@@ -751,12 +751,12 @@
     "abstract": true,
     "emoji": "🛠️",
     "icon_idea": "kitten building with blocks",
-    "icon": null,
+    "icon": "assets/icons/make.png",
     "ipa": "/meɪk/",
-    "explain_yue": "整；做。",
-    "example_en": "Can you make a call?",
-    "example_zh": "你可以打去電話嗎？",
-    "tip": "make a call／make tea。"
+    "explain_yue": "整、做。好多固定搭配。",
+    "example_en": "Can you make a call for me?",
+    "example_zh": "你可以幫我打個電話嗎？",
+    "tip": "make a call／make tea／make a cake；唔係所有「做」都用 make（做作业用 do）。"
   },
   {
     "id": "take",
@@ -774,12 +774,12 @@
     "abstract": true,
     "emoji": "🧳",
     "icon_idea": "kitten carrying a bag",
-    "icon": null,
+    "icon": "assets/icons/take.png",
     "ipa": "/teɪk/",
-    "explain_yue": "拎；帶。",
-    "example_en": "Take the MTR, please.",
-    "example_zh": "請搭港鐵。",
-    "tip": "take the MTR；take a photo。"
+    "explain_yue": "拎、帶；搭車都用 take。",
+    "example_en": "Take the MTR to Causeway Bay.",
+    "example_zh": "搭港鐵去銅鑼灣。",
+    "tip": "take a photo = 影相；take the bus／MTR = 搭。"
   },
   {
     "id": "give",
@@ -797,12 +797,12 @@
     "abstract": true,
     "emoji": "🤲",
     "icon_idea": "kitten giving a gift",
-    "icon": null,
+    "icon": "assets/icons/give.png",
     "ipa": "/ɡɪv/",
-    "explain_yue": "俾。",
-    "example_en": "Give me the key.",
-    "example_zh": "俾鎖匙我。",
-    "tip": "give + 人 + 嘢。"
+    "explain_yue": "俾嘢人。",
+    "example_en": "Give me the key, please.",
+    "example_zh": "唔該俾鎖匙我。",
+    "tip": "give + 人 + 嘢；或者 give + 嘢 + to + 人。"
   },
   {
     "id": "eat",
@@ -820,12 +820,12 @@
     "abstract": true,
     "emoji": "🍽️",
     "icon_idea": "kitten eating from a bowl",
-    "icon": null,
+    "icon": "assets/icons/eat.png",
     "ipa": "/iːt/",
-    "explain_yue": "食。",
+    "explain_yue": "食嘢。",
     "example_en": "I eat lunch at twelve.",
     "example_zh": "我十二點食晏。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "過去式 ate；have lunch 都係食晏，日常好常用。"
   },
   {
     "id": "buy",
@@ -843,12 +843,12 @@
     "abstract": true,
     "emoji": "🛒",
     "icon_idea": "kitten at a checkout",
-    "icon": null,
+    "icon": "assets/icons/buy.png",
     "ipa": "/baɪ/",
-    "explain_yue": "買。",
+    "explain_yue": "用錢買嘢。",
     "example_en": "I buy fruit at the market.",
     "example_zh": "我喺街市買水果。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "過去式 bought；buy something for someone = 買嘢俾人。"
   },
   {
     "id": "help",
@@ -866,12 +866,12 @@
     "abstract": true,
     "emoji": "🤝",
     "icon_idea": "two kittens helping",
-    "icon": null,
+    "icon": "assets/icons/help.png",
     "ipa": "/help/",
-    "explain_yue": "幫手。",
+    "explain_yue": "幫手、協助。",
     "example_en": "Can you help me?",
     "example_zh": "可唔可以幫我？",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "help + 人 + 動詞：help me find…；名詞 help = 幫手。"
   },
   {
     "id": "ask",
@@ -889,12 +889,12 @@
     "abstract": true,
     "emoji": "❓",
     "icon_idea": "kitten with a question mark",
-    "icon": null,
+    "icon": "assets/icons/ask.png",
     "ipa": "/ɑːsk/",
-    "explain_yue": "問。",
+    "explain_yue": "問問題，或者請求。",
     "example_en": "Ask the staff for help.",
     "example_zh": "問職員幫手。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "ask someone a question；ask for = 要求某樣嘢。"
   },
   {
     "id": "tell",
@@ -912,12 +912,12 @@
     "abstract": true,
     "emoji": "💬",
     "icon_idea": "kitten speaking",
-    "icon": null,
+    "icon": "assets/icons/tell.png",
     "ipa": "/tel/",
-    "explain_yue": "話；告訴。",
+    "explain_yue": "話俾人知、告訴。",
     "example_en": "Tell me your address.",
     "example_zh": "話我知你地址。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "tell + 人 + 嘢；say 後面多數唔直接跟人（say something to someone）。"
   },
   {
     "id": "look",
@@ -935,12 +935,12 @@
     "abstract": true,
     "emoji": "👀",
     "icon_idea": "kitten looking",
-    "icon": null,
+    "icon": "assets/icons/look.png",
     "ipa": "/lʊk/",
-    "explain_yue": "睇。",
+    "explain_yue": "用眼睇。",
     "example_en": "Look at the map.",
-    "example_zh": "睇地圖。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "example_zh": "睇吓幅地圖。",
+    "tip": "look at + 嘢；look for = 搵；look like = 似。"
   },
   {
     "id": "listen",
@@ -958,12 +958,12 @@
     "abstract": true,
     "emoji": "👂",
     "icon_idea": "kitten with big ears",
-    "icon": null,
+    "icon": "assets/icons/listen.png",
     "ipa": "/ˈlɪsən/",
-    "explain_yue": "聽。",
+    "explain_yue": "留心去聽。",
     "example_en": "Listen to the announcement.",
-    "example_zh": "聽廣播。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "example_zh": "聽吓廣播。",
+    "tip": "listen to + 嘢；淨聽 listen，唔好漏 to。"
   },
   {
     "id": "wait",
@@ -981,12 +981,12 @@
     "abstract": true,
     "emoji": "⏳",
     "icon_idea": "kitten sitting by a clock",
-    "icon": null,
+    "icon": "assets/icons/wait.png",
     "ipa": "/weɪt/",
     "explain_yue": "等。",
     "example_en": "Please wait in the queue.",
-    "example_zh": "請排隊等。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "example_zh": "請喺隊度等。",
+    "tip": "wait for + 人／車；wait a minute = 等一陣。"
   },
   {
     "id": "walk",
@@ -1004,12 +1004,12 @@
     "abstract": true,
     "emoji": "🚶",
     "icon_idea": "kitten walking",
-    "icon": null,
+    "icon": "assets/icons/walk.png",
     "ipa": "/wɔːk/",
-    "explain_yue": "行。",
+    "explain_yue": "行路。",
     "example_en": "I walk to the shop.",
     "example_zh": "我行去舖頭。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "walk to = 行去；go for a walk = 去行下。"
   },
   {
     "id": "run",
@@ -1027,12 +1027,12 @@
     "abstract": true,
     "emoji": "🏃",
     "icon_idea": "kitten running",
-    "icon": null,
+    "icon": "assets/icons/run.png",
     "ipa": "/rʌn/",
-    "explain_yue": "跑。",
+    "explain_yue": "跑；走得快。",
     "example_en": "Don't run in the station.",
-    "example_zh": "車站唔好跑。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "example_zh": "車站入面唔好跑。",
+    "tip": "過去式 ran；run out of = 用晒、冇晒。"
   },
   {
     "id": "open",
@@ -1050,12 +1050,12 @@
     "abstract": true,
     "emoji": "🚪",
     "icon_idea": "kitten opening a door",
-    "icon": null,
+    "icon": "assets/icons/open.png",
     "ipa": "/ˈəʊpən/",
-    "explain_yue": "開。",
+    "explain_yue": "打開門、窗、盒子；舖頭開門都用。",
     "example_en": "Please open the door.",
     "example_zh": "請開門。",
-    "tip": "舖頭開門可以講 The shop opens；頭詞用原形 open。"
+    "tip": "The shop opens at nine = 舖頭九點開門；open 亦都係形容詞「開住」。"
   },
   {
     "id": "close",
@@ -1073,12 +1073,12 @@
     "abstract": true,
     "emoji": "🚪",
     "icon_idea": "kitten closing a door",
-    "icon": null,
+    "icon": "assets/icons/close.png",
     "ipa": "/kləʊz/",
-    "explain_yue": "關。",
+    "explain_yue": "關上。",
     "example_en": "Please close the door.",
     "example_zh": "請關門。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "The shop closes at ten；closed 係形容詞「閂咗門」。"
   },
   {
     "id": "find",
@@ -1096,12 +1096,12 @@
     "abstract": true,
     "emoji": "🔍",
     "icon_idea": "kitten finding a key",
-    "icon": null,
+    "icon": "assets/icons/find.png",
     "ipa": "/faɪnd/",
     "explain_yue": "搵到。",
-    "example_en": "I can't find my card.",
-    "example_zh": "我搵唔到張卡。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "example_en": "I can't find my Octopus card.",
+    "example_zh": "我搵唔到張八達通。",
+    "tip": "過去式 found；look for 係「喺度搵」，find 係「搵到結果」。"
   },
   {
     "id": "use",
@@ -1119,12 +1119,12 @@
     "abstract": true,
     "emoji": "🔧",
     "icon_idea": "kitten using a tool",
-    "icon": null,
+    "icon": "assets/icons/use.png",
     "ipa": "/juːz/",
-    "explain_yue": "用。",
-    "example_en": "I use the app every day.",
-    "example_zh": "我每日用個 app。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "explain_yue": "用某樣工具或者服務。",
+    "example_en": "I use this app every day.",
+    "example_zh": "我每日都用呢個 app。",
+    "tip": "use something to do…；useful = 有用。"
   },
   {
     "id": "try",
@@ -1142,12 +1142,12 @@
     "abstract": true,
     "emoji": "🧪",
     "icon_idea": "kitten trying on a hat",
-    "icon": null,
+    "icon": "assets/icons/try.png",
     "ipa": "/traɪ/",
-    "explain_yue": "試。",
+    "explain_yue": "試吓做；試食試著。",
     "example_en": "Try this dish.",
     "example_zh": "試吓呢碟菜。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "try to + 動詞 = 嘗試去做；try on = 試著衫。"
   },
   {
     "id": "bus",
@@ -1165,12 +1165,12 @@
     "abstract": false,
     "emoji": "🚌",
     "icon_idea": "a bus",
-    "icon": null,
+    "icon": "assets/icons/bus.png",
     "ipa": "/bʌs/",
-    "explain_yue": "巴士。",
-    "example_en": "The bus is full.",
-    "example_zh": "巴士滿座。",
-    "tip": "get on/off the bus；香港巴士。"
+    "explain_yue": "巴士。香港常見綠色、紅色同專線巴士。",
+    "example_en": "The bus to Mong Kok is full.",
+    "example_zh": "去旺角嘅巴士滿座。",
+    "tip": "get on／off the bus = 上／落車；take the bus = 搭巴士。"
   },
   {
     "id": "train",
@@ -1188,12 +1188,12 @@
     "abstract": false,
     "emoji": "🚆",
     "icon_idea": "a train",
-    "icon": null,
+    "icon": "assets/icons/train.png",
     "ipa": "/treɪn/",
-    "explain_yue": "火車；列車。",
-    "example_en": "The train is late.",
-    "example_zh": "列車遲到。",
-    "tip": "港鐵有時都叫 train。"
+    "explain_yue": "火車；列車。港鐵市區線有時都會叫 train。",
+    "example_en": "The train is late today.",
+    "example_zh": "今日班車遲到。",
+    "tip": "catch the train = 趕搭火車；港鐵口語多數直接講 MTR。"
   },
   {
     "id": "taxi",
@@ -1211,12 +1211,12 @@
     "abstract": false,
     "emoji": "🚕",
     "icon_idea": "a taxi",
-    "icon": null,
+    "icon": "assets/icons/taxi.png",
     "ipa": "/ˈtæksi/",
-    "explain_yue": "的士。",
-    "example_en": "I need this taxi.",
-    "example_zh": "的士",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "的士。香港紅色的士最常見。",
+    "example_en": "Let's take a taxi to the hotel.",
+    "example_zh": "我哋搭的士去酒店啦。",
+    "tip": "by taxi = 坐的士；taxi stand = 的士站。"
   },
   {
     "id": "car",
@@ -1234,12 +1234,12 @@
     "abstract": false,
     "emoji": "🚗",
     "icon_idea": "a car",
-    "icon": null,
+    "icon": "assets/icons/car.png",
     "ipa": "/kɑː/",
     "explain_yue": "私家車。",
-    "example_en": "I need this car.",
-    "example_zh": "私家車",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "My dad drives a car to work.",
+    "example_zh": "我爸爸揸車返工。",
+    "tip": "by car = 坐私家車；park the car = 泊車。"
   },
   {
     "id": "bike",
@@ -1257,12 +1257,12 @@
     "abstract": false,
     "emoji": "🚲",
     "icon_idea": "a bicycle",
-    "icon": null,
+    "icon": "assets/icons/bike.png",
     "ipa": "/baɪk/",
     "explain_yue": "單車。",
-    "example_en": "I need this bike.",
-    "example_zh": "單車",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "I go to school by bike.",
+    "example_zh": "我踩單車返學。",
+    "tip": "ride a bike = 踩單車；bike 亦可以指電單車，單車多數講 bicycle。"
   },
   {
     "id": "mtr",
@@ -1280,12 +1280,12 @@
     "abstract": false,
     "emoji": "🚇",
     "icon_idea": "MTR train icon",
-    "icon": null,
+    "icon": "assets/icons/mtr.png",
     "ipa": "/ˌem tiː ˈɑː/",
-    "explain_yue": "港鐵。",
+    "explain_yue": "港鐵（Mass Transit Railway）。香港主要鐵路系統。",
     "example_en": "Take the MTR to Central.",
     "example_zh": "搭港鐵去中環。",
-    "tip": "Mass Transit Railway；口語 MTR。"
+    "tip": "口語直接講 MTR；出口有字母，跟住 Exit A／B 就得。"
   },
   {
     "id": "minibus",
@@ -1303,12 +1303,12 @@
     "abstract": false,
     "emoji": "🚐",
     "icon_idea": "Hong Kong minibus",
-    "icon": null,
+    "icon": "assets/icons/minibus.png",
     "ipa": "/ˈmɪnibʌs/",
-    "explain_yue": "小巴。",
+    "explain_yue": "小巴。香港有紅小巴同綠小巴。",
     "example_en": "The green minibus is faster.",
     "example_zh": "綠小巴快啲。",
-    "tip": "香港紅／綠小巴。"
+    "tip": "綠小巴有固定站；紅小巴可以叫停，但唔一定識路。"
   },
   {
     "id": "plane",
@@ -1326,12 +1326,12 @@
     "abstract": false,
     "emoji": "✈️",
     "icon_idea": "an aeroplane",
-    "icon": null,
+    "icon": "assets/icons/plane.png",
     "ipa": "/pleɪn/",
     "explain_yue": "飛機。",
-    "example_en": "I need this plane.",
-    "example_zh": "飛機",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Our plane leaves at eight.",
+    "example_zh": "我哋架飛機八點起飛。",
+    "tip": "by plane = 坐飛機；on the plane = 喺飛機上面。"
   },
   {
     "id": "ferry",
@@ -1349,12 +1349,12 @@
     "abstract": false,
     "emoji": "⛴️",
     "icon_idea": "a ferry",
-    "icon": null,
+    "icon": "assets/icons/ferry.png",
     "ipa": "/ˈferi/",
-    "explain_yue": "渡輪。",
-    "example_en": "I need this ferry.",
-    "example_zh": "渡輪",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "渡輪。過海或者去離島常用。",
+    "example_en": "Take the ferry to Cheung Chau.",
+    "example_zh": "搭渡輪去長洲。",
+    "tip": "Star Ferry = 天星小輪；ferry pier = 碼頭。"
   },
   {
     "id": "tram",
@@ -1372,12 +1372,12 @@
     "abstract": false,
     "emoji": "🚊",
     "icon_idea": "Hong Kong tram",
-    "icon": null,
+    "icon": "assets/icons/tram.png",
     "ipa": "/træm/",
-    "explain_yue": "電車。",
+    "explain_yue": "電車。港島叮叮，慢但好玩。",
     "example_en": "The tram is slow but fun.",
     "example_zh": "電車慢但好玩。",
-    "tip": "港島叮叮。"
+    "tip": "港島特色；tram stop = 電車站。"
   },
   {
     "id": "station",
@@ -1395,12 +1395,12 @@
     "abstract": false,
     "emoji": "🚉",
     "icon_idea": "a station entrance",
-    "icon": null,
+    "icon": "assets/icons/station.png",
     "ipa": "/ˈsteɪʃən/",
-    "explain_yue": "車站。",
-    "example_en": "I need this station.",
-    "example_zh": "車站",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "車站；鐵路或者港鐵站。",
+    "example_en": "Meet me at the MTR station.",
+    "example_zh": "喺港鐵站見。",
+    "tip": "bus station 係巴士總站；細啲站多數講 stop。"
   },
   {
     "id": "stop",
@@ -1418,12 +1418,12 @@
     "abstract": false,
     "emoji": "🚏",
     "icon_idea": "a bus stop sign",
-    "icon": null,
+    "icon": "assets/icons/stop.png",
     "ipa": "/stɒp/",
-    "explain_yue": "站；停。",
-    "example_en": "I need this stop.",
-    "example_zh": "站；停",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "站；亦可以指「停」。巴士站常用。",
+    "example_en": "Get off at the next stop.",
+    "example_zh": "下一站落車。",
+    "tip": "bus stop = 巴士站；作動詞：Stop here! = 喺度停！"
   },
   {
     "id": "ticket",
@@ -1441,12 +1441,12 @@
     "abstract": false,
     "emoji": "🎫",
     "icon_idea": "a ticket",
-    "icon": null,
+    "icon": "assets/icons/ticket.png",
     "ipa": "/ˈtɪkɪt/",
-    "explain_yue": "票。",
+    "explain_yue": "票。搭車、入場都會用到。",
     "example_en": "How much is a ticket?",
     "example_zh": "一張票幾多錢？",
-    "tip": "single/return ticket。"
+    "tip": "single／return ticket = 單程／來回票；ticket gate = 閘機。"
   },
   {
     "id": "platform",
@@ -1464,12 +1464,12 @@
     "abstract": false,
     "emoji": "🛤️",
     "icon_idea": "train platform",
-    "icon": null,
+    "icon": "assets/icons/platform.png",
     "ipa": "/ˈplætfɔːm/",
-    "explain_yue": "月台。",
+    "explain_yue": "月台。等火車或者港鐵嘅地方。",
     "example_en": "Platform two is downstairs.",
     "example_zh": "二號月台喺樓下。",
-    "tip": "跟指示去 platform。"
+    "tip": "跟指示去 platform；mind the gap = 小心月台空隙。"
   },
   {
     "id": "exit",
@@ -1487,12 +1487,12 @@
     "abstract": false,
     "emoji": "🚪",
     "icon_idea": "exit sign",
-    "icon": null,
+    "icon": "assets/icons/exit.png",
     "ipa": "/ˈeksɪt/",
-    "explain_yue": "出口。",
+    "explain_yue": "出口。港鐵出口用字母標示。",
     "example_en": "Use exit A, please.",
     "example_zh": "請用 A 出口。",
-    "tip": "港鐵 exit 字母好重要。"
+    "tip": "港鐵 exit 字母好重要；emergency exit = 緊急出口。"
   },
   {
     "id": "ride",
@@ -1510,12 +1510,12 @@
     "abstract": true,
     "emoji": "🚌",
     "icon_idea": "kitten on a bus",
-    "icon": null,
+    "icon": "assets/icons/ride.png",
     "ipa": "/raɪd/",
-    "explain_yue": "搭；騎。",
+    "explain_yue": "搭（車）；騎（單車、馬）。",
     "example_en": "I ride the bus to work.",
     "example_zh": "我搭巴士返工。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "ride a bike／horse；give someone a ride = 載人一程。"
   },
   {
     "id": "drive",
@@ -1533,12 +1533,12 @@
     "abstract": true,
     "emoji": "🚗",
     "icon_idea": "kitten driving",
-    "icon": null,
+    "icon": "assets/icons/drive.png",
     "ipa": "/draɪv/",
     "explain_yue": "揸車。",
-    "example_en": "She can drive.",
-    "example_zh": "佢識揸車。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "example_en": "She can drive to the airport.",
+    "example_zh": "佢識揸車去機場。",
+    "tip": "drive a car；driver = 司機；drive carefully = 小心揸。"
   },
   {
     "id": "board",
@@ -1556,12 +1556,12 @@
     "abstract": true,
     "emoji": "🪜",
     "icon_idea": "kitten boarding",
-    "icon": null,
+    "icon": "assets/icons/board.png",
     "ipa": "/bɔːd/",
-    "explain_yue": "上車；登機。",
+    "explain_yue": "上車；登機。比較正式，廣播常見。",
     "example_en": "Please board the train now.",
     "example_zh": "請而家上車。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "boarding pass = 登機證；口語上巴士多數講 get on。"
   },
   {
     "id": "alight",
@@ -1579,12 +1579,12 @@
     "abstract": true,
     "emoji": "👣",
     "icon_idea": "kitten stepping off",
-    "icon": null,
+    "icon": "assets/icons/alight.png",
     "ipa": "/əˈlaɪt/",
-    "explain_yue": "落車。",
+    "explain_yue": "落車。廣播同告示常用。",
     "example_en": "Alight at the next station.",
     "example_zh": "下一站落車。",
-    "tip": "廣播用語；口語 get off。"
+    "tip": "正式用語；日常口語多數講 get off。"
   },
   {
     "id": "arrive",
@@ -1602,12 +1602,12 @@
     "abstract": true,
     "emoji": "📍",
     "icon_idea": "pin arriving",
-    "icon": null,
+    "icon": "assets/icons/arrive.png",
     "ipa": "/əˈraɪv/",
     "explain_yue": "到達。",
     "example_en": "What time do you arrive?",
     "example_zh": "你幾點到？",
-    "tip": "arrive at + 細地方；arrive in + 城市。"
+    "tip": "arrive at + 車站／機場；arrive in + 城市／國家。"
   },
   {
     "id": "left",
@@ -1625,12 +1625,12 @@
     "abstract": true,
     "emoji": "⬅️",
     "icon_idea": "arrow left",
-    "icon": null,
+    "icon": "assets/icons/left.png",
     "ipa": "/left/",
-    "explain_yue": "左邊。",
+    "explain_yue": "左邊；向左轉。",
     "example_en": "Turn left at the bank.",
     "example_zh": "喺銀行轉左。",
-    "tip": "on the left。"
+    "tip": "on the left = 喺左邊；left 亦係 leave 過去式，意思唔同。"
   },
   {
     "id": "right",
@@ -1648,12 +1648,12 @@
     "abstract": true,
     "emoji": "➡️",
     "icon_idea": "arrow right",
-    "icon": null,
+    "icon": "assets/icons/right.png",
     "ipa": "/raɪt/",
-    "explain_yue": "右邊。",
+    "explain_yue": "右邊；向右轉。",
     "example_en": "The exit is on the right.",
     "example_zh": "出口喺右邊。",
-    "tip": "turn right。"
+    "tip": "turn right = 轉右；all right／OK 嘅 right 係另一個用法。"
   },
   {
     "id": "straight",
@@ -1671,12 +1671,12 @@
     "abstract": true,
     "emoji": "⬆️",
     "icon_idea": "arrow straight",
-    "icon": null,
+    "icon": "assets/icons/straight.png",
     "ipa": "/streɪt/",
-    "explain_yue": "直走。",
+    "explain_yue": "直；一直向前。",
     "example_en": "Go straight ahead.",
     "example_zh": "一直向前行。",
-    "tip": "straight on。"
+    "tip": "straight on／go straight = 直走；唔好同 street（街）撈亂。"
   },
   {
     "id": "map",
@@ -1694,12 +1694,12 @@
     "abstract": false,
     "emoji": "🗺️",
     "icon_idea": "a map",
-    "icon": null,
+    "icon": "assets/icons/map.png",
     "ipa": "/mæp/",
     "explain_yue": "地圖。",
-    "example_en": "I need this map.",
-    "example_zh": "地圖",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "I need a map of Hong Kong.",
+    "example_zh": "我要一張香港地圖。",
+    "tip": "on the map = 喺地圖上面；online map = 網上地圖。"
   },
   {
     "id": "far",
@@ -1717,12 +1717,12 @@
     "abstract": true,
     "emoji": "📏",
     "icon_idea": "long distance",
-    "icon": null,
+    "icon": "assets/icons/far.png",
     "ipa": "/fɑː/",
     "explain_yue": "遠。",
-    "example_en": "Is the hotel far?",
-    "example_zh": "酒店遠唔遠？",
-    "tip": "far from；how far。"
+    "example_en": "Is the hotel far from here?",
+    "example_zh": "酒店離呢度遠唔遠？",
+    "tip": "far from = 離…遠；how far = 幾遠；反義 near。"
   },
   {
     "id": "shop",
@@ -1740,12 +1740,12 @@
     "abstract": false,
     "emoji": "🏪",
     "icon_idea": "a shop front",
-    "icon": null,
+    "icon": "assets/icons/shop.png",
     "ipa": "/ʃɒp/",
-    "explain_yue": "舖頭。",
-    "example_en": "I need this shop.",
-    "example_zh": "舖頭",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "舖頭；商店。",
+    "example_en": "This shop sells Octopus cards.",
+    "example_zh": "呢間舖賣八達通。",
+    "tip": "go shopping = 去購物；shop 亦可以作動詞「購物」。"
   },
   {
     "id": "park",
@@ -1763,12 +1763,12 @@
     "abstract": false,
     "emoji": "🏞️",
     "icon_idea": "a park",
-    "icon": null,
+    "icon": "assets/icons/park.png",
     "ipa": "/pɑːk/",
-    "explain_yue": "公園。",
-    "example_en": "I need this park.",
-    "example_zh": "公園",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "公園。亦可以指「泊車」。",
+    "example_en": "The kids play in the park.",
+    "example_zh": "小朋友喺公園玩。",
+    "tip": "car park = 停車場；作動詞 park the car = 泊車。"
   },
   {
     "id": "hospital",
@@ -1786,12 +1786,12 @@
     "abstract": false,
     "emoji": "🏥",
     "icon_idea": "a hospital",
-    "icon": null,
+    "icon": "assets/icons/hospital.png",
     "ipa": "/ˈhɒspɪtl/",
     "explain_yue": "醫院。",
     "example_en": "He is in hospital.",
     "example_zh": "佢住院。",
-    "tip": "英式常唔加 the。"
+    "tip": "英式常講 in hospital（唔加 the）；美式 in the hospital。"
   },
   {
     "id": "bank",
@@ -1809,12 +1809,12 @@
     "abstract": false,
     "emoji": "🏦",
     "icon_idea": "a bank",
-    "icon": null,
+    "icon": "assets/icons/bank.png",
     "ipa": "/bæŋk/",
     "explain_yue": "銀行。",
-    "example_en": "I need this bank.",
-    "example_zh": "銀行",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "There is a bank near the MTR.",
+    "example_zh": "港鐵附近有間銀行。",
+    "tip": "open a bank account = 開戶口；river bank（河岸）係另一個意思。"
   },
   {
     "id": "library",
@@ -1832,12 +1832,12 @@
     "abstract": false,
     "emoji": "📚",
     "icon_idea": "a library",
-    "icon": null,
+    "icon": "assets/icons/library.png",
     "ipa": "/ˈlaɪbrəri/",
     "explain_yue": "圖書館。",
-    "example_en": "I need this library.",
-    "example_zh": "圖書館",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "I study in the library after school.",
+    "example_zh": "放學後我喺圖書館溫書。",
+    "tip": "borrow a book from the library = 喺圖書館借書。"
   },
   {
     "id": "supermarket",
@@ -1855,12 +1855,12 @@
     "abstract": false,
     "emoji": "🛒",
     "icon_idea": "supermarket aisle",
-    "icon": null,
+    "icon": "assets/icons/supermarket.png",
     "ipa": "/ˈsuːpəmɑːkɪt/",
-    "explain_yue": "超級市場。",
-    "example_en": "I need this supermarket.",
-    "example_zh": "超級市場",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "超級市場。買日用品同食物。",
+    "example_en": "I buy rice at the supermarket.",
+    "example_zh": "我喺超市買米。",
+    "tip": "口語可叫 supermarket／超市；比街市冷氣多、乾貨多。"
   },
   {
     "id": "market",
@@ -1878,12 +1878,12 @@
     "abstract": false,
     "emoji": "🥬",
     "icon_idea": "wet market stall",
-    "icon": null,
+    "icon": "assets/icons/market.png",
     "ipa": "/ˈmɑːkɪt/",
-    "explain_yue": "街市；市場。",
-    "example_en": "I need this market.",
-    "example_zh": "街市；市場",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "街市；市場。香港講 wet market 即街市。",
+    "example_en": "Mum buys fish at the market.",
+    "example_zh": "媽媽喺街市買魚。",
+    "tip": "wet market = 街市；flea market = 跳蚤市場。"
   },
   {
     "id": "cinema",
@@ -1901,12 +1901,12 @@
     "abstract": false,
     "emoji": "🎬",
     "icon_idea": "cinema screen",
-    "icon": null,
+    "icon": "assets/icons/cinema.png",
     "ipa": "/ˈsɪnəmə/",
     "explain_yue": "戲院。",
-    "example_en": "I need this cinema.",
-    "example_zh": "戲院",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Shall we go to the cinema?",
+    "example_zh": "不如去戲院？",
+    "tip": "英式 cinema；美式 movie theater。at the cinema = 喺戲院。"
   },
   {
     "id": "hotel",
@@ -1924,12 +1924,12 @@
     "abstract": false,
     "emoji": "🏨",
     "icon_idea": "a hotel",
-    "icon": null,
+    "icon": "assets/icons/hotel.png",
     "ipa": "/həʊˈtel/",
     "explain_yue": "酒店。",
-    "example_en": "I need this hotel.",
-    "example_zh": "酒店",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "We stay at a hotel near the harbour.",
+    "example_zh": "我哋住海傍附近一間酒店。",
+    "tip": "book a hotel = 訂酒店；hotel room = 酒店房。"
   },
   {
     "id": "office",
@@ -1947,12 +1947,12 @@
     "abstract": false,
     "emoji": "🏢",
     "icon_idea": "an office building",
-    "icon": null,
+    "icon": "assets/icons/office.png",
     "ipa": "/ˈɒfɪs/",
-    "explain_yue": "辦公室。",
-    "example_en": "I need this office.",
-    "example_zh": "辦公室",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "辦公室；寫字樓。",
+    "example_en": "She works in an office in Central.",
+    "example_zh": "佢喺中環寫字樓返工。",
+    "tip": "at the office = 喺辦公室；post office = 郵政局。"
   },
   {
     "id": "street",
@@ -1970,12 +1970,12 @@
     "abstract": false,
     "emoji": "🛣️",
     "icon_idea": "a street",
-    "icon": null,
+    "icon": "assets/icons/street.png",
     "ipa": "/striːt/",
-    "explain_yue": "街道。",
-    "example_en": "I need this street.",
-    "example_zh": "街道",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "街道。兩邊通常有舖同行人路。",
+    "example_en": "This street is very busy.",
+    "example_zh": "呢條街好旺。",
+    "tip": "in the street／on the street；street food = 街頭小食。"
   },
   {
     "id": "road",
@@ -1993,12 +1993,12 @@
     "abstract": false,
     "emoji": "🛤️",
     "icon_idea": "a road",
-    "icon": null,
+    "icon": "assets/icons/road.png",
     "ipa": "/rəʊd/",
-    "explain_yue": "路。",
-    "example_en": "I need this road.",
-    "example_zh": "路",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "路；馬路。比 street 更著重行車。",
+    "example_en": "Be careful on the road.",
+    "example_zh": "喺馬路小心啲。",
+    "tip": "across the road = 過馬路對面；road 同 street 有時可互換。"
   },
   {
     "id": "building",
@@ -2016,12 +2016,12 @@
     "abstract": false,
     "emoji": "🏗️",
     "icon_idea": "a building",
-    "icon": null,
+    "icon": "assets/icons/building.png",
     "ipa": "/ˈbɪldɪŋ/",
     "explain_yue": "大廈；建築物。",
-    "example_en": "I need this building.",
-    "example_zh": "大廈；建築物",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "That tall building is a bank.",
+    "example_zh": "嗰棟高樓係銀行。",
+    "tip": "office building = 寫字樓；in the building = 喺大廈入面。"
   },
   {
     "id": "place",
@@ -2039,12 +2039,12 @@
     "abstract": true,
     "emoji": "📍",
     "icon_idea": "a place pin",
-    "icon": null,
+    "icon": "assets/icons/place.png",
     "ipa": "/pleɪs/",
-    "explain_yue": "地方。",
-    "example_en": "I need this place.",
-    "example_zh": "地方",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "地方；場所。",
+    "example_en": "This place is quiet and clean.",
+    "example_zh": "呢個地方又靜又乾淨。",
+    "tip": "a place to eat = 食嘢嘅地方；in place = 就位（另一用法）。"
   },
   {
     "id": "centre",
@@ -2062,12 +2062,12 @@
     "abstract": false,
     "emoji": "🏙️",
     "icon_idea": "city centre",
-    "icon": null,
+    "icon": "assets/icons/centre.png",
     "ipa": "/ˈsentə/",
-    "explain_yue": "中心。",
+    "explain_yue": "中心；亦指商場／活動中心。",
     "example_en": "The shopping centre is big.",
     "example_zh": "商場好大。",
-    "tip": "英式 centre；美式 center。"
+    "tip": "英式 centre；美式 center。city centre = 市中心。"
   },
   {
     "id": "near",
@@ -2085,12 +2085,12 @@
     "abstract": true,
     "emoji": "📎",
     "icon_idea": "two things close",
-    "icon": null,
+    "icon": "assets/icons/near.png",
     "ipa": "/nɪə/",
-    "explain_yue": "近。",
+    "explain_yue": "近；附近。",
     "example_en": "The park is near the station.",
     "example_zh": "公園近車站。",
-    "tip": "near + 名詞。"
+    "tip": "near + 名詞；near here = 附近。比 next to 範圍闊啲。"
   },
   {
     "id": "opposite",
@@ -2108,12 +2108,12 @@
     "abstract": true,
     "emoji": "↔️",
     "icon_idea": "across the street",
-    "icon": null,
+    "icon": "assets/icons/opposite.png",
     "ipa": "/ˈɒpəzɪt/",
     "explain_yue": "對面。",
     "example_en": "The bank is opposite the park.",
     "example_zh": "銀行喺公園對面。",
-    "tip": "= across from。"
+    "tip": "opposite ≈ across from；the opposite = 相反（另一用法）。"
   },
   {
     "id": "between",
@@ -2131,12 +2131,12 @@
     "abstract": true,
     "emoji": "␉",
     "icon_idea": "item between two",
-    "icon": null,
+    "icon": "assets/icons/between.png",
     "ipa": "/bɪˈtwiːn/",
-    "explain_yue": "之間。",
+    "explain_yue": "喺兩者之間。",
     "example_en": "The shop is between two cafes.",
     "example_zh": "舖頭夾喺兩間咖啡店中間。",
-    "tip": "between A and B。"
+    "tip": "between A and B；三個以上多數用 among。"
   },
   {
     "id": "behind",
@@ -2154,12 +2154,12 @@
     "abstract": true,
     "emoji": "🙈",
     "icon_idea": "behind a wall",
-    "icon": null,
+    "icon": "assets/icons/behind.png",
     "ipa": "/bɪˈhaɪnd/",
-    "explain_yue": "後面。",
+    "explain_yue": "喺後面。",
     "example_en": "The car is behind the bus.",
     "example_zh": "架車喺巴士後面。",
-    "tip": "見 IPA；配合主題例句用。"
+    "tip": "behind ≈ at the back of；反義 in front of。"
   },
   {
     "id": "inside",
@@ -2177,12 +2177,12 @@
     "abstract": true,
     "emoji": "📦",
     "icon_idea": "inside a box",
-    "icon": null,
+    "icon": "assets/icons/inside.png",
     "ipa": "/ˌɪnˈsaɪd/",
-    "explain_yue": "入面。",
+    "explain_yue": "入面；裏面。",
     "example_en": "Wait inside the station.",
     "example_zh": "喺車站入面等。",
-    "tip": "見 IPA；配合主題例句用。"
+    "tip": "inside／outside 一對；come inside = 入嚟。"
   },
   {
     "id": "outside",
@@ -2200,12 +2200,12 @@
     "abstract": true,
     "emoji": "🌳",
     "icon_idea": "outside under tree",
-    "icon": null,
+    "icon": "assets/icons/outside.png",
     "ipa": "/ˌaʊtˈsaɪd/",
-    "explain_yue": "出面。",
+    "explain_yue": "出面；外面。",
     "example_en": "Queue outside, please.",
     "example_zh": "請喺出面排隊。",
-    "tip": "見 IPA；配合主題例句用。"
+    "tip": "outside the shop = 舖外頭；go outside = 出去。"
   },
   {
     "id": "upstairs",
@@ -2223,12 +2223,12 @@
     "abstract": true,
     "emoji": "⬆️",
     "icon_idea": "stairs up",
-    "icon": null,
+    "icon": "assets/icons/upstairs.png",
     "ipa": "/ˌʌpˈsteəz/",
     "explain_yue": "樓上。",
     "example_en": "The clinic is upstairs.",
     "example_zh": "診所喺樓上。",
-    "tip": "見 IPA；配合主題例句用。"
+    "tip": "副詞：go upstairs。反義 downstairs。"
   },
   {
     "id": "downstairs",
@@ -2246,12 +2246,12 @@
     "abstract": true,
     "emoji": "⬇️",
     "icon_idea": "stairs down",
-    "icon": null,
+    "icon": "assets/icons/downstairs.png",
     "ipa": "/ˌdaʊnˈsteəz/",
     "explain_yue": "樓下。",
     "example_en": "The exit is downstairs.",
     "example_zh": "出口喺樓下。",
-    "tip": "見 IPA；配合主題例句用。"
+    "tip": "副詞：go downstairs。唔使加 to。"
   },
   {
     "id": "address",
@@ -2269,12 +2269,12 @@
     "abstract": true,
     "emoji": "🏠",
     "icon_idea": "address label",
-    "icon": null,
+    "icon": "assets/icons/address.png",
     "ipa": "/əˈdres/",
     "explain_yue": "地址。",
-    "example_en": "I need this address.",
-    "example_zh": "地址",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Please write your address here.",
+    "example_zh": "請喺呢度寫地址。",
+    "tip": "email address = 電郵地址；home address = 住址。"
   },
   {
     "id": "city",
@@ -2292,12 +2292,12 @@
     "abstract": false,
     "emoji": "🌆",
     "icon_idea": "city skyline",
-    "icon": null,
+    "icon": "assets/icons/city.png",
     "ipa": "/ˈsɪti/",
     "explain_yue": "城市。",
-    "example_en": "I need this city.",
-    "example_zh": "城市",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Hong Kong is a busy city.",
+    "example_zh": "香港係個繁忙嘅城市。",
+    "tip": "in the city = 喺市內；city centre = 市中心。"
   },
   {
     "id": "sell",
@@ -2315,12 +2315,12 @@
     "abstract": true,
     "emoji": "🏷️",
     "icon_idea": "price tag selling",
-    "icon": null,
+    "icon": "assets/icons/sell.png",
     "ipa": "/sel/",
     "explain_yue": "賣。",
     "example_en": "They sell tickets here.",
     "example_zh": "呢度賣票。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "sell something to someone；反義 buy。seller = 賣家。"
   },
   {
     "id": "pay",
@@ -2338,12 +2338,12 @@
     "abstract": true,
     "emoji": "💳",
     "icon_idea": "paying with card",
-    "icon": null,
+    "icon": "assets/icons/pay.png",
     "ipa": "/peɪ/",
-    "explain_yue": "俾錢。",
-    "example_en": "I pay by card.",
-    "example_zh": "我用卡俾錢。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "explain_yue": "俾錢；付款。",
+    "example_en": "I pay by Octopus card.",
+    "example_zh": "我用八達通俾錢。",
+    "tip": "pay for + 嘢；pay by card／cash = 用卡／現金俾。"
   },
   {
     "id": "cost",
@@ -2361,12 +2361,12 @@
     "abstract": true,
     "emoji": "💰",
     "icon_idea": "price amount",
-    "icon": null,
+    "icon": "assets/icons/cost.png",
     "ipa": "/kɒst/",
-    "explain_yue": "值；要價。",
+    "explain_yue": "值；要價。問價錢好常用。",
     "example_en": "How much does it cost?",
     "example_zh": "幾多錢？",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "It costs twenty dollars.；cost 過去式都係 cost。"
   },
   {
     "id": "price",
@@ -2384,12 +2384,12 @@
     "abstract": true,
     "emoji": "🏷️",
     "icon_idea": "price tag",
-    "icon": null,
+    "icon": "assets/icons/price.png",
     "ipa": "/praɪs/",
     "explain_yue": "價錢。",
-    "example_en": "I need this price.",
-    "example_zh": "價錢",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "The price is too high.",
+    "example_zh": "價錢太貴。",
+    "tip": "price tag = 價錢牌；half price = 半價。"
   },
   {
     "id": "cheap",
@@ -2407,12 +2407,12 @@
     "abstract": true,
     "emoji": "📉",
     "icon_idea": "low price arrow",
-    "icon": null,
+    "icon": "assets/icons/cheap.png",
     "ipa": "/tʃiːp/",
-    "explain_yue": "平。",
-    "example_en": "This bag is cheap.",
-    "example_zh": "呢個袋好平。",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "平；便宜。",
+    "example_en": "This bag is cheap but strong.",
+    "example_zh": "呢個袋平又夠實。",
+    "tip": "反義 expensive；cheap 有時帶「平嘢唔好」感覺，小心語氣。"
   },
   {
     "id": "expensive",
@@ -2430,12 +2430,12 @@
     "abstract": true,
     "emoji": "📈",
     "icon_idea": "high price",
-    "icon": null,
+    "icon": "assets/icons/expensive.png",
     "ipa": "/ɪkˈspensɪv/",
     "explain_yue": "貴。",
     "example_en": "The hotel is expensive.",
     "example_zh": "酒店好貴。",
-    "tip": "見 IPA；配合主題例句用。"
+    "tip": "too expensive = 太貴；反義 cheap／inexpensive。"
   },
   {
     "id": "free",
@@ -2453,12 +2453,12 @@
     "abstract": true,
     "emoji": "🆓",
     "icon_idea": "free badge",
-    "icon": null,
+    "icon": "assets/icons/free.png",
     "ipa": "/friː/",
-    "explain_yue": "免費。",
+    "explain_yue": "免費；亦可以指「空閒」。",
     "example_en": "The water is free.",
     "example_zh": "水免費。",
-    "tip": "free of charge。"
+    "tip": "free of charge = 免費；Are you free? = 你得唔得閒？（另一意思）"
   },
   {
     "id": "sale",
@@ -2476,12 +2476,12 @@
     "abstract": false,
     "emoji": "🛍️",
     "icon_idea": "sale sign",
-    "icon": null,
+    "icon": "assets/icons/sale.png",
     "ipa": "/seɪl/",
     "explain_yue": "減價；促銷。",
-    "example_en": "I need this sale.",
-    "example_zh": "減價；促銷",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "The shoes are on sale.",
+    "example_zh": "對鞋減緊價。",
+    "tip": "on sale = 減緊價；for sale = 待售（唔一定減價）。"
   },
   {
     "id": "discount",
@@ -2499,12 +2499,12 @@
     "abstract": true,
     "emoji": "٪",
     "icon_idea": "percent off",
-    "icon": null,
+    "icon": "assets/icons/discount.png",
     "ipa": "/ˈdɪskaʊnt/",
     "explain_yue": "折扣。",
-    "example_en": "I need this discount.",
-    "example_zh": "折扣",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Students get a discount.",
+    "example_zh": "學生有折扣。",
+    "tip": "a 10% discount = 九折；discount code = 優惠碼。"
   },
   {
     "id": "queue",
@@ -2522,12 +2522,12 @@
     "abstract": false,
     "emoji": "🧍",
     "icon_idea": "people in a queue",
-    "icon": null,
+    "icon": "assets/icons/queue.png",
     "ipa": "/kjuː/",
-    "explain_yue": "排隊。",
+    "explain_yue": "排隊；隊伍。",
     "example_en": "Please join the queue.",
     "example_zh": "請排隊。",
-    "tip": "英式 queue；美式 line。"
+    "tip": "英式 queue；美式 line。jump the queue = 打龍飛（唔禮貌）。"
   },
   {
     "id": "customer",
@@ -2545,12 +2545,12 @@
     "abstract": false,
     "emoji": "🧍",
     "icon_idea": "a customer",
-    "icon": null,
+    "icon": "assets/icons/customer.png",
     "ipa": "/ˈkʌstəmə/",
-    "explain_yue": "顧客。",
-    "example_en": "I need this customer.",
-    "example_zh": "顧客",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "顧客；客人。",
+    "example_en": "The customer wants a receipt.",
+    "example_zh": "個顧客要收據。",
+    "tip": "customer service = 顧客服務；regular customer = 熟客。"
   },
   {
     "id": "cashier",
@@ -2568,12 +2568,12 @@
     "abstract": false,
     "emoji": "🧾",
     "icon_idea": "cashier at till",
-    "icon": null,
+    "icon": "assets/icons/cashier.png",
     "ipa": "/kæˈʃɪə/",
     "explain_yue": "收銀員。",
-    "example_en": "I need this cashier.",
-    "example_zh": "收銀員",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Pay at the cashier, please.",
+    "example_zh": "請去收銀處俾錢。",
+    "tip": "cashier／checkout = 收銀台附近；港式亦講「收銀」。"
   },
   {
     "id": "receipt",
@@ -2591,12 +2591,12 @@
     "abstract": false,
     "emoji": "🧾",
     "icon_idea": "a receipt",
-    "icon": null,
+    "icon": "assets/icons/receipt.png",
     "ipa": "/rɪˈsiːt/",
-    "explain_yue": "收據。",
+    "explain_yue": "收據；發票。",
     "example_en": "Keep the receipt.",
     "example_zh": "收好收據。",
-    "tip": "退貨要 receipt。"
+    "tip": "退貨多數要 receipt；電子收據 = e-receipt。"
   },
   {
     "id": "change",
@@ -2614,12 +2614,12 @@
     "abstract": false,
     "emoji": "🪙",
     "icon_idea": "coins as change",
-    "icon": null,
+    "icon": "assets/icons/change.png",
     "ipa": "/tʃeɪndʒ/",
-    "explain_yue": "找續；零錢。",
-    "example_en": "I need this change.",
-    "example_zh": "找續；零錢",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "找續；零錢。亦可以指「改」。",
+    "example_en": "Here is your change.",
+    "example_zh": "呢啲係找你嘅錢。",
+    "tip": "keep the change = 唔使找；change money = 換錢。作動詞 = 改變。"
   },
   {
     "id": "fit",
@@ -2637,12 +2637,12 @@
     "abstract": true,
     "emoji": "👕",
     "icon_idea": "shirt that fits",
-    "icon": null,
+    "icon": "assets/icons/fit.png",
     "ipa": "/fɪt/",
-    "explain_yue": "合身。",
+    "explain_yue": "合身；啱尺碼。",
     "example_en": "Does this shirt fit?",
     "example_zh": "件衫合身嗎？",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "fit well = 好合身；size doesn't fit = 尺碼唔啱。"
   },
   {
     "id": "choose",
@@ -2660,12 +2660,12 @@
     "abstract": true,
     "emoji": "👆",
     "icon_idea": "pointing to choose",
-    "icon": null,
+    "icon": "assets/icons/choose.png",
     "ipa": "/tʃuːz/",
-    "explain_yue": "揀。",
-    "example_en": "Choose a colour.",
-    "example_zh": "揀個顏色。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "explain_yue": "揀；選擇。",
+    "example_en": "Choose a colour you like.",
+    "example_zh": "揀個你鍾意嘅顏色。",
+    "tip": "choose between A and B；過去式 chose，過分詞 chosen。"
   },
   {
     "id": "return",
@@ -2683,12 +2683,12 @@
     "abstract": true,
     "emoji": "↩️",
     "icon_idea": "return arrow",
-    "icon": null,
+    "icon": "assets/icons/return.png",
     "ipa": "/rɪˈtɜːn/",
-    "explain_yue": "退貨。",
+    "explain_yue": "退貨；送返。亦可以指「返回」。",
     "example_en": "Can I return this?",
     "example_zh": "可以退貨嗎？",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "return policy = 退貨政策；return home = 返屋企（另一用法）。"
   },
   {
     "id": "exchange",
@@ -2706,12 +2706,12 @@
     "abstract": true,
     "emoji": "🔄",
     "icon_idea": "swap arrows",
-    "icon": null,
+    "icon": "assets/icons/exchange.png",
     "ipa": "/ɪksˈtʃeɪndʒ/",
-    "explain_yue": "換貨。",
+    "explain_yue": "換貨；交換。",
     "example_en": "I want to exchange the size.",
     "example_zh": "我想換尺碼。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "exchange A for B；currency exchange = 兌貨幣。"
   },
   {
     "id": "plastic",
@@ -2729,12 +2729,12 @@
     "abstract": false,
     "emoji": "🧴",
     "icon_idea": "plastic bottle",
-    "icon": null,
+    "icon": "assets/icons/plastic.png",
     "ipa": "/ˈplæstɪk/",
-    "explain_yue": "塑膠。",
-    "example_en": "I need this plastic.",
-    "example_zh": "塑膠",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "塑膠；塑膠製嘅。",
+    "example_en": "Please use less plastic.",
+    "example_zh": "請少用啲塑膠。",
+    "tip": "plastic bag = 膠袋；香港買膠袋要付錢。"
   },
   {
     "id": "basket",
@@ -2752,12 +2752,12 @@
     "abstract": false,
     "emoji": "🧺",
     "icon_idea": "shopping basket",
-    "icon": null,
+    "icon": "assets/icons/basket.png",
     "ipa": "/ˈbɑːskɪt/",
-    "explain_yue": "購物籃。",
-    "example_en": "I need this basket.",
-    "example_zh": "購物籃",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "購物籃；籃。",
+    "example_en": "Put the eggs in the basket.",
+    "example_zh": "將雞蛋放入籃。",
+    "tip": "shopping basket 細件；大件用 trolley／cart。"
   },
   {
     "id": "closed",
@@ -2775,12 +2775,12 @@
     "abstract": true,
     "emoji": "🔒",
     "icon_idea": "closed sign",
-    "icon": null,
+    "icon": "assets/icons/closed.png",
     "ipa": "/kləʊzd/",
-    "explain_yue": "關閉；休息。",
+    "explain_yue": "關閉；休息（唔開門）。",
     "example_en": "The bank is closed today.",
     "example_zh": "銀行今日休息。",
-    "tip": "形容詞。"
+    "tip": "closed／open 一對；closed for lunch = 午休關門。"
   },
   {
     "id": "push",
@@ -2798,12 +2798,12 @@
     "abstract": true,
     "emoji": "👐",
     "icon_idea": "push door",
-    "icon": null,
+    "icon": "assets/icons/push.png",
     "ipa": "/pʊʃ/",
-    "explain_yue": "推。",
+    "explain_yue": "推。門牌常見。",
     "example_en": "Push the door to enter.",
     "example_zh": "推門入去。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "push 同 pull 相反；push the button = 撳掣。"
   },
   {
     "id": "pull",
@@ -2821,12 +2821,12 @@
     "abstract": true,
     "emoji": "🚪",
     "icon_idea": "pull door",
-    "icon": null,
+    "icon": "assets/icons/pull.png",
     "ipa": "/pʊl/",
-    "explain_yue": "拉。",
+    "explain_yue": "拉。門牌常見。",
     "example_en": "Pull the door, please.",
     "example_zh": "請拉門。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "pull 同 push 相反；pull out = 拉出／駛出（另一用法）。"
   },
   {
     "id": "enter",
@@ -2844,12 +2844,12 @@
     "abstract": true,
     "emoji": "➡️",
     "icon_idea": "enter arrow",
-    "icon": null,
+    "icon": "assets/icons/enter.png",
     "ipa": "/ˈentə/",
-    "explain_yue": "進入。",
+    "explain_yue": "進入；輸入。",
     "example_en": "Enter your password.",
     "example_zh": "輸入密碼。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "enter the shop = 入舖；Please enter = 請入內。"
   },
   {
     "id": "aisle",
@@ -2867,12 +2867,12 @@
     "abstract": false,
     "emoji": "🛒",
     "icon_idea": "supermarket aisle",
-    "icon": null,
+    "icon": "assets/icons/aisle.png",
     "ipa": "/aɪl/",
-    "explain_yue": "貨架通道。",
-    "example_en": "I need this aisle.",
-    "example_zh": "貨架通道",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "貨架通道；走道。",
+    "example_en": "Rice is in aisle three.",
+    "example_zh": "米喺三號通道。",
+    "tip": "超市找貨跟 aisle number；飛機走廊位亦叫 aisle seat。"
   },
   {
     "id": "money",
@@ -2890,12 +2890,12 @@
     "abstract": false,
     "emoji": "💵",
     "icon_idea": "banknotes",
-    "icon": null,
+    "icon": "assets/icons/money.png",
     "ipa": "/ˈmʌni/",
-    "explain_yue": "錢。",
-    "example_en": "I need this money.",
-    "example_zh": "錢",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "錢。不可數名詞。",
+    "example_en": "I don't have much money.",
+    "example_zh": "我冇好多錢。",
+    "tip": "不可數：唔講 moneys；make money = 賺錢；pocket money = 零用錢。"
   },
   {
     "id": "dollar",
@@ -2913,12 +2913,12 @@
     "abstract": false,
     "emoji": "💲",
     "icon_idea": "dollar sign",
-    "icon": null,
+    "icon": "assets/icons/dollar.png",
     "ipa": "/ˈdɒlə/",
-    "explain_yue": "蚊；元。",
-    "example_en": "One dollar is enough.",
-    "example_zh": "一蚊就夠。",
-    "tip": "複數 dollars；香港講 dollar／蚊。"
+    "explain_yue": "蚊；元。香港用港元。",
+    "example_en": "One dollar is enough for a candy.",
+    "example_zh": "一蚊夠買粒糖。",
+    "tip": "複數 dollars；十蚊口語 twenty dollars／廿蚊都得。"
   },
   {
     "id": "cent",
@@ -2936,12 +2936,12 @@
     "abstract": false,
     "emoji": "🪙",
     "icon_idea": "small coin",
-    "icon": null,
+    "icon": "assets/icons/cent.png",
     "ipa": "/sent/",
-    "explain_yue": "毫；分。",
-    "example_en": "I need this cent.",
-    "example_zh": "毫；分",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "毫；分。一元有一百分。",
+    "example_en": "This costs one cent more.",
+    "example_zh": "呢樣嘢貴多一仙。",
+    "tip": "香港少用 cent 口語，多數講毫子；100 cents = 1 dollar。"
   },
   {
     "id": "cash",
@@ -2959,12 +2959,12 @@
     "abstract": false,
     "emoji": "💵",
     "icon_idea": "cash notes",
-    "icon": null,
+    "icon": "assets/icons/cash.png",
     "ipa": "/kæʃ/",
-    "explain_yue": "現金。",
-    "example_en": "I need this cash.",
-    "example_zh": "現金",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "現金。紙幣同硬幣。",
+    "example_en": "Do you take cash?",
+    "example_zh": "收唔收現金？",
+    "tip": "pay in cash = 用現金俾；cash machine／ATM = 櫃員機。"
   },
   {
     "id": "card",
@@ -2982,12 +2982,12 @@
     "abstract": false,
     "emoji": "💳",
     "icon_idea": "a payment card",
-    "icon": null,
+    "icon": "assets/icons/card.png",
     "ipa": "/kɑːd/",
-    "explain_yue": "卡（信用卡／八達通類）。",
+    "explain_yue": "卡（信用卡、八達通等都可）。",
     "example_en": "I pay by card.",
-    "example_zh": "我用卡拍。",
-    "tip": "credit card／八達通都可叫 card。"
+    "example_zh": "我用卡俾。",
+    "tip": "credit／debit card；Octopus card = 八達通。比 cash 方便。"
   },
   {
     "id": "wallet",
@@ -3005,12 +3005,12 @@
     "abstract": false,
     "emoji": "👛",
     "icon_idea": "a wallet",
-    "icon": null,
+    "icon": "assets/icons/wallet.png",
     "ipa": "/ˈwɒlɪt/",
-    "explain_yue": "銀包。",
-    "example_en": "I need this wallet.",
-    "example_zh": "銀包",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "銀包。多數放褲袋或者袋入面。",
+    "example_en": "My wallet is in my bag.",
+    "example_zh": "我銀包喺袋入面。",
+    "tip": "lose your wallet = 掉咗銀包；wallet 多數扁身。"
   },
   {
     "id": "purse",
@@ -3028,12 +3028,12 @@
     "abstract": false,
     "emoji": "👜",
     "icon_idea": "a purse",
-    "icon": null,
+    "icon": "assets/icons/purse.png",
     "ipa": "/pɜːs/",
-    "explain_yue": "手袋式銀包。",
-    "example_en": "I need this purse.",
-    "example_zh": "手袋式銀包",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "手袋式銀包；細手袋。",
+    "example_en": "She puts the coins in her purse.",
+    "example_zh": "佢將硬幣放入銀包。",
+    "tip": "英式 purse 偏細銀包；美式 purse 有時指手袋。"
   },
   {
     "id": "coin",
@@ -3051,12 +3051,12 @@
     "abstract": false,
     "emoji": "🪙",
     "icon_idea": "a coin",
-    "icon": null,
+    "icon": "assets/icons/coin.png",
     "ipa": "/kɔɪn/",
     "explain_yue": "硬幣。",
-    "example_en": "I need this coin.",
-    "example_zh": "硬幣",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "I need a coin for the locker.",
+    "example_zh": "我要枚硬幣開儲物櫃。",
+    "tip": "coins 相對 notes（紙幣）；toss a coin = 掟硬幣。"
   },
   {
     "id": "note",
@@ -3074,12 +3074,12 @@
     "abstract": false,
     "emoji": "💵",
     "icon_idea": "a banknote",
-    "icon": null,
+    "icon": "assets/icons/note.png",
     "ipa": "/nəʊt/",
-    "explain_yue": "紙幣。",
-    "example_en": "I need this note.",
-    "example_zh": "紙幣",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "紙幣。亦可以指「筆記」。",
+    "example_en": "Do you have a hundred-dollar note?",
+    "example_zh": "你有冇一張一百蚊紙？",
+    "tip": "英式 note；美式 bill。make a note = 記低（另一意思）。"
   },
   {
     "id": "account",
@@ -3097,12 +3097,12 @@
     "abstract": true,
     "emoji": "🏦",
     "icon_idea": "bank account",
-    "icon": null,
+    "icon": "assets/icons/account.png",
     "ipa": "/əˈkaʊnt/",
-    "explain_yue": "戶口。",
-    "example_en": "I need this account.",
-    "example_zh": "戶口",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "戶口；帳戶。",
+    "example_en": "I opened a bank account.",
+    "example_zh": "我開咗銀行戶口。",
+    "tip": "account number = 戶口號碼；online account = 網上帳戶。"
   },
   {
     "id": "spend",
@@ -3120,12 +3120,12 @@
     "abstract": true,
     "emoji": "💸",
     "icon_idea": "money flying away",
-    "icon": null,
+    "icon": "assets/icons/spend.png",
     "ipa": "/spend/",
-    "explain_yue": "使錢。",
+    "explain_yue": "使錢；花費時間。",
     "example_en": "Don't spend too much.",
     "example_zh": "唔好使太多。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "spend money on…；spend time + -ing。過去式 spent。"
   },
   {
     "id": "save",
@@ -3143,12 +3143,12 @@
     "abstract": true,
     "emoji": "🐷",
     "icon_idea": "piggy bank",
-    "icon": null,
+    "icon": "assets/icons/save.png",
     "ipa": "/seɪv/",
-    "explain_yue": "儲錢。",
+    "explain_yue": "儲錢；亦可以指「救」。",
     "example_en": "I save money every month.",
     "example_zh": "我每月儲錢。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "save up for… = 儲錢買…；save a file = 儲存檔案（另一用法）。"
   },
   {
     "id": "earn",
@@ -3166,12 +3166,12 @@
     "abstract": true,
     "emoji": "💼",
     "icon_idea": "earning coins",
-    "icon": null,
+    "icon": "assets/icons/earn.png",
     "ipa": "/ɜːn/",
-    "explain_yue": "賺。",
+    "explain_yue": "賺（錢）。",
     "example_en": "I want to earn more money.",
     "example_zh": "我想多賺啲錢。",
-    "tip": "earn money；第三人稱 earns。"
+    "tip": "earn money／a living；第三人稱 earns。"
   },
   {
     "id": "borrow",
@@ -3189,12 +3189,12 @@
     "abstract": true,
     "emoji": "🙏",
     "icon_idea": "borrowing money",
-    "icon": null,
+    "icon": "assets/icons/borrow.png",
     "ipa": "/ˈbɒrəʊ/",
-    "explain_yue": "借入。",
+    "explain_yue": "借入（向人借嚟用）。",
     "example_en": "Can I borrow your charger?",
     "example_zh": "借個充電器得唔得？",
-    "tip": "borrow from 人。"
+    "tip": "borrow something from someone；反義 lend（借出）。"
   },
   {
     "id": "lend",
@@ -3212,12 +3212,12 @@
     "abstract": true,
     "emoji": "🤝",
     "icon_idea": "lending money",
-    "icon": null,
+    "icon": "assets/icons/lend.png",
     "ipa": "/lend/",
-    "explain_yue": "借出。",
+    "explain_yue": "借出（借俾人）。",
     "example_en": "I can lend you ten dollars.",
     "example_zh": "我可以借十蚊你。",
-    "tip": "lend 人 錢；borrow 相反。"
+    "tip": "lend someone something；lend 同 borrow 方向相反，好易撈亂。"
   },
   {
     "id": "rich",
@@ -3235,12 +3235,12 @@
     "abstract": true,
     "emoji": "💎",
     "icon_idea": "rich sparkles",
-    "icon": null,
+    "icon": "assets/icons/rich.png",
     "ipa": "/rɪtʃ/",
-    "explain_yue": "有錢。",
-    "example_en": "He is rich.",
-    "example_zh": "佢好有錢。",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "有錢；富裕。",
+    "example_en": "He is rich but very kind.",
+    "example_zh": "佢好有錢但好善良。",
+    "tip": "rich in vitamin = 富含維他命（另一用法）；反義 poor。"
   },
   {
     "id": "poor",
@@ -3258,12 +3258,12 @@
     "abstract": true,
     "emoji": "🕳️",
     "icon_idea": "empty pocket",
-    "icon": null,
+    "icon": "assets/icons/poor.png",
     "ipa": "/pɔː/",
-    "explain_yue": "窮。",
-    "example_en": "The signal is poor here.",
-    "example_zh": "呢度訊號好差。",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "窮；亦可指「差」。",
+    "example_en": "They help poor families.",
+    "example_zh": "佢哋幫助貧窮家庭。",
+    "tip": "money 主題先記「窮」；poor signal = 訊號差（另一用法）。"
   },
   {
     "id": "enough",
@@ -3281,12 +3281,12 @@
     "abstract": true,
     "emoji": "✅",
     "icon_idea": "enough check",
-    "icon": null,
+    "icon": "assets/icons/enough.png",
     "ipa": "/ɪˈnʌf/",
-    "explain_yue": "夠。",
+    "explain_yue": "夠；足夠。",
     "example_en": "I have enough cash.",
     "example_zh": "我現金夠。",
-    "tip": "見 IPA；配合主題例句用。"
+    "tip": "enough + 名詞；形容詞 + enough（big enough）。"
   },
   {
     "id": "too",
@@ -3304,12 +3304,12 @@
     "abstract": true,
     "emoji": "📊",
     "icon_idea": "too much meter",
-    "icon": null,
+    "icon": "assets/icons/too.png",
     "ipa": "/tuː/",
-    "explain_yue": "太。",
+    "explain_yue": "太（過度）。亦可以指「都係」。",
     "example_en": "This is too expensive.",
     "example_zh": "呢個太貴。",
-    "tip": "too + 形容詞。"
+    "tip": "too + 形容詞 = 太…；I think so too = 我都咁諗（另一用法）。"
   },
   {
     "id": "only",
@@ -3327,12 +3327,12 @@
     "abstract": true,
     "emoji": "1️⃣",
     "icon_idea": "only one",
-    "icon": null,
+    "icon": "assets/icons/only.png",
     "ipa": "/ˈəʊnli/",
     "explain_yue": "淨係；只有。",
     "example_en": "I only have a card.",
     "example_zh": "我淨係有卡。",
-    "tip": "見 IPA；配合主題例句用。"
+    "tip": "only 通常放喺所強調嘅詞前面：only ten dollars。"
   },
   {
     "id": "how",
@@ -3350,12 +3350,12 @@
     "abstract": true,
     "emoji": "❓",
     "icon_idea": "how question",
-    "icon": null,
+    "icon": "assets/icons/how.png",
     "ipa": "/haʊ/",
-    "explain_yue": "點樣；幾。",
+    "explain_yue": "點樣；幾（用嚟發問）。",
     "example_en": "How do I get to the exit?",
     "example_zh": "點樣去出口？",
-    "tip": "how much/many/far。"
+    "tip": "how much／many／far／often 好問題；唔好淨背一個 how。"
   },
   {
     "id": "much",
@@ -3373,12 +3373,12 @@
     "abstract": true,
     "emoji": "📦",
     "icon_idea": "much mass",
-    "icon": null,
+    "icon": "assets/icons/much.png",
     "ipa": "/mʌtʃ/",
-    "explain_yue": "好多（不可數）。",
-    "example_en": "How much is it?",
-    "example_zh": "幾多錢？",
-    "tip": "不可數／價錢。"
+    "explain_yue": "好多（不可數）；問價錢常用。",
+    "example_en": "I don't drink much water.",
+    "example_zh": "我唔飲好多水。",
+    "tip": "much + 不可數（money, water）；可數複數用 many。How much is it? = 幾多錢？"
   },
   {
     "id": "total",
@@ -3396,12 +3396,12 @@
     "abstract": true,
     "emoji": "🧮",
     "icon_idea": "total sum",
-    "icon": null,
+    "icon": "assets/icons/total.png",
     "ipa": "/ˈtəʊtl/",
-    "explain_yue": "總數。",
-    "example_en": "I need this total.",
-    "example_zh": "總數",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "總數；合計。",
+    "example_en": "The total is eighty dollars.",
+    "example_zh": "總數係八十蚊。",
+    "tip": "total price = 總價；in total = 合計。"
   },
   {
     "id": "amount",
@@ -3419,12 +3419,12 @@
     "abstract": true,
     "emoji": "🔢",
     "icon_idea": "amount figure",
-    "icon": null,
+    "icon": "assets/icons/amount.png",
     "ipa": "/əˈmaʊnt/",
     "explain_yue": "金額；數量。",
-    "example_en": "I need this amount.",
-    "example_zh": "金額；數量",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Enter the amount on the screen.",
+    "example_zh": "喺螢幕輸入金額。",
+    "tip": "a large amount of money；amount 偏正式，日常價錢多用 how much。"
   },
   {
     "id": "payment",
@@ -3442,12 +3442,12 @@
     "abstract": true,
     "emoji": "💳",
     "icon_idea": "payment icon",
-    "icon": null,
+    "icon": "assets/icons/payment.png",
     "ipa": "/ˈpeɪmənt/",
-    "explain_yue": "付款。",
-    "example_en": "I need this payment.",
-    "example_zh": "付款",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "付款；支付。",
+    "example_en": "Payment is by card only.",
+    "example_zh": "淨係收卡數。",
+    "tip": "make a payment = 付款；payment method = 付款方式。"
   },
   {
     "id": "restaurant",
@@ -3465,12 +3465,12 @@
     "abstract": false,
     "emoji": "🍽️",
     "icon_idea": "restaurant front",
-    "icon": null,
+    "icon": "assets/icons/restaurant.png",
     "ipa": "/ˈrestrɒnt/",
     "explain_yue": "餐廳。",
-    "example_en": "I need this restaurant.",
-    "example_zh": "餐廳",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "This restaurant is famous for noodles.",
+    "example_zh": "呢間餐廳以麵出名。",
+    "tip": "at a restaurant；book／reserve a table = 訂枱。"
   },
   {
     "id": "seat",
@@ -3488,12 +3488,12 @@
     "abstract": false,
     "emoji": "💺",
     "icon_idea": "a seat",
-    "icon": null,
+    "icon": "assets/icons/seat.png",
     "ipa": "/siːt/",
     "explain_yue": "座位。",
-    "example_en": "I need this seat.",
-    "example_zh": "座位",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Is this seat free?",
+    "example_zh": "呢個位有冇人？",
+    "tip": "take a seat = 請坐；window seat = 靠窗位。"
   },
   {
     "id": "reserve",
@@ -3511,12 +3511,12 @@
     "abstract": true,
     "emoji": "📅",
     "icon_idea": "reservation calendar",
-    "icon": null,
+    "icon": "assets/icons/reserve.png",
     "ipa": "/rɪˈzɜːv/",
-    "explain_yue": "訂位。",
+    "explain_yue": "預訂；訂位。",
     "example_en": "I'd like to reserve a table.",
     "example_zh": "我想訂枱。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "reserve a table／room；reservation = 預訂（名詞）。"
   },
   {
     "id": "serve",
@@ -3534,12 +3534,12 @@
     "abstract": true,
     "emoji": "🛎️",
     "icon_idea": "serving plate",
-    "icon": null,
+    "icon": "assets/icons/serve.png",
     "ipa": "/sɜːv/",
-    "explain_yue": "侍應；上菜。",
+    "explain_yue": "上菜；供應；服務。",
     "example_en": "They serve lunch until two.",
     "example_zh": "佢哋兩點前有午餐。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "serve customers = 招呼客人；service = 服務。"
   },
   {
     "id": "dish",
@@ -3557,12 +3557,12 @@
     "abstract": false,
     "emoji": "🍲",
     "icon_idea": "a dish",
-    "icon": null,
+    "icon": "assets/icons/dish.png",
     "ipa": "/dɪʃ/",
-    "explain_yue": "菜式。",
-    "example_en": "I need this dish.",
-    "example_zh": "菜式",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "菜式；亦可以指碟裝菜。",
+    "example_en": "What is today's special dish?",
+    "example_zh": "今日招牌菜係咩？",
+    "tip": "main dish = 主菜；do the dishes = 洗碗（另一用法）。"
   },
   {
     "id": "plate",
@@ -3580,12 +3580,12 @@
     "abstract": false,
     "emoji": "🍽️",
     "icon_idea": "a plate",
-    "icon": null,
+    "icon": "assets/icons/plate.png",
     "ipa": "/pleɪt/",
     "explain_yue": "碟。",
-    "example_en": "I need this plate.",
-    "example_zh": "碟",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Please bring a clean plate.",
+    "example_zh": "唔該攞隻乾淨碟嚟。",
+    "tip": "a plate of rice；dinner plate = 餐碟。"
   },
   {
     "id": "bowl",
@@ -3603,12 +3603,12 @@
     "abstract": false,
     "emoji": "🥣",
     "icon_idea": "a bowl",
-    "icon": null,
+    "icon": "assets/icons/bowl.png",
     "ipa": "/bəʊl/",
     "explain_yue": "碗。",
-    "example_en": "I need this bowl.",
-    "example_zh": "碗",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "I'd like a bowl of soup.",
+    "example_zh": "我想要一碗湯。",
+    "tip": "a bowl of noodles／rice；mixing bowl = 攪拌碗。"
   },
   {
     "id": "knife",
@@ -3626,12 +3626,12 @@
     "abstract": false,
     "emoji": "🔪",
     "icon_idea": "a knife",
-    "icon": null,
+    "icon": "assets/icons/knife.png",
     "ipa": "/naɪf/",
-    "explain_yue": "刀。",
-    "example_en": "I need this knife.",
-    "example_zh": "刀",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "刀。食飯用嘅餐刀。",
+    "example_en": "I need a knife and fork.",
+    "example_zh": "我要刀叉。",
+    "tip": "複數 knives；butter knife = 牛油刀。"
   },
   {
     "id": "fork",
@@ -3649,12 +3649,12 @@
     "abstract": false,
     "emoji": "🍴",
     "icon_idea": "a fork",
-    "icon": null,
+    "icon": "assets/icons/fork.png",
     "ipa": "/fɔːk/",
     "explain_yue": "叉。",
-    "example_en": "I need this fork.",
-    "example_zh": "叉",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Can I have a fork, please?",
+    "example_zh": "唔該俾支叉我？",
+    "tip": "knife and fork；fork 亦有「分叉路」意思。"
   },
   {
     "id": "spoon",
@@ -3672,12 +3672,12 @@
     "abstract": false,
     "emoji": "🥄",
     "icon_idea": "a spoon",
-    "icon": null,
+    "icon": "assets/icons/spoon.png",
     "ipa": "/spuːn/",
     "explain_yue": "匙羹。",
-    "example_en": "I need this spoon.",
-    "example_zh": "匙羹",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "I need a spoon for the soup.",
+    "example_zh": "食湯要匙羹。",
+    "tip": "teaspoon／tablespoon = 茶匙／湯匙（煮食分量）。"
   },
   {
     "id": "salt",
@@ -3695,12 +3695,12 @@
     "abstract": false,
     "emoji": "🧂",
     "icon_idea": "salt shaker",
-    "icon": null,
+    "icon": "assets/icons/salt.png",
     "ipa": "/sɔːlt/",
     "explain_yue": "鹽。",
-    "example_en": "I need this salt.",
-    "example_zh": "鹽",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "This soup needs a little salt.",
+    "example_zh": "呢碗湯要加少少鹽。",
+    "tip": "salt and pepper 一對；too salty = 太鹹。"
   },
   {
     "id": "pepper",
@@ -3718,12 +3718,12 @@
     "abstract": false,
     "emoji": "🌶️",
     "icon_idea": "pepper shaker",
-    "icon": null,
+    "icon": "assets/icons/pepper.png",
     "ipa": "/ˈpepə/",
-    "explain_yue": "胡椒。",
-    "example_en": "I need this pepper.",
-    "example_zh": "胡椒",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "胡椒；亦可指甜椒。餐枱多數係胡椒粉。",
+    "example_en": "Pass me the pepper, please.",
+    "example_zh": "唔該將胡椒粉遞畀我。",
+    "tip": "black pepper = 黑胡椒；bell pepper = 燈籠椒（另一意思）。"
   },
   {
     "id": "sauce",
@@ -3741,12 +3741,12 @@
     "abstract": false,
     "emoji": "🧴",
     "icon_idea": "sauce bottle",
-    "icon": null,
+    "icon": "assets/icons/sauce.png",
     "ipa": "/sɔːs/",
-    "explain_yue": "醬。",
-    "example_en": "I need this sauce.",
-    "example_zh": "醬",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "醬；汁。",
+    "example_en": "I'd like more sauce.",
+    "example_zh": "我想多啲醬。",
+    "tip": "soy sauce = 豉油；tomato sauce = 番茄醬。"
   },
   {
     "id": "oil",
@@ -3764,12 +3764,12 @@
     "abstract": false,
     "emoji": "🫒",
     "icon_idea": "oil bottle",
-    "icon": null,
+    "icon": "assets/icons/oil.png",
     "ipa": "/ɔɪl/",
-    "explain_yue": "油。",
-    "example_en": "I need this oil.",
-    "example_zh": "油",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "油。煮食用油最常見。",
+    "example_en": "Don't use too much oil.",
+    "example_zh": "唔好落太多油。",
+    "tip": "cooking oil；olive oil = 橄欖油。"
   },
   {
     "id": "vinegar",
@@ -3787,12 +3787,12 @@
     "abstract": false,
     "emoji": "🍶",
     "icon_idea": "vinegar bottle",
-    "icon": null,
+    "icon": "assets/icons/vinegar.png",
     "ipa": "/ˈvɪnɪɡə/",
     "explain_yue": "醋。",
-    "example_en": "I need this vinegar.",
-    "example_zh": "醋",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Add a little vinegar to the noodles.",
+    "example_zh": "麵度加少少醋。",
+    "tip": "black vinegar = 黑醋；港式雲吞麵常備醋。"
   },
   {
     "id": "fresh",
@@ -3810,12 +3810,12 @@
     "abstract": true,
     "emoji": "🥬",
     "icon_idea": "fresh greens",
-    "icon": null,
+    "icon": "assets/icons/fresh.png",
     "ipa": "/freʃ/",
     "explain_yue": "新鮮。",
-    "example_en": "The fish is fresh.",
-    "example_zh": "條魚好新鮮。",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "The fish is fresh today.",
+    "example_zh": "今日條魚好新鮮。",
+    "tip": "fresh fruit／air；fresh 反義 stale（唔新鮮）。"
   },
   {
     "id": "raw",
@@ -3833,12 +3833,12 @@
     "abstract": true,
     "emoji": "🍣",
     "icon_idea": "raw fish",
-    "icon": null,
+    "icon": "assets/icons/raw.png",
     "ipa": "/rɔː/",
-    "explain_yue": "生嘅。",
+    "explain_yue": "生嘅；未煮熟。",
     "example_en": "I don't eat raw fish.",
     "example_zh": "我唔食生魚。",
-    "tip": "見 IPA；配合主題例句用。"
+    "tip": "raw vegetables；raw 亦有「未加工／生猛」引申義。"
   },
   {
     "id": "boil",
@@ -3856,12 +3856,12 @@
     "abstract": true,
     "emoji": "🫧",
     "icon_idea": "boiling pot",
-    "icon": null,
+    "icon": "assets/icons/boil.png",
     "ipa": "/bɔɪl/",
-    "explain_yue": "煮滾。",
-    "example_en": "Please boil now.",
-    "example_zh": "煮滾",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "explain_yue": "煮滾；用水烚。",
+    "example_en": "Please boil the water first.",
+    "example_zh": "請先滾水。",
+    "tip": "boiled eggs = 烚蛋；bring to the boil = 煮至滾起。"
   },
   {
     "id": "fry",
@@ -3879,12 +3879,12 @@
     "abstract": true,
     "emoji": "🍳",
     "icon_idea": "frying pan",
-    "icon": null,
+    "icon": "assets/icons/fry.png",
     "ipa": "/fraɪ/",
     "explain_yue": "煎；炸。",
-    "example_en": "Please fry now.",
-    "example_zh": "煎；炸",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "example_en": "Fry the egg in a little oil.",
+    "example_zh": "用少少油煎蛋。",
+    "tip": "fried rice = 炒飯；deep-fry = 油炸。"
   },
   {
     "id": "bake",
@@ -3902,12 +3902,12 @@
     "abstract": true,
     "emoji": "🧁",
     "icon_idea": "oven baking",
-    "icon": null,
+    "icon": "assets/icons/bake.png",
     "ipa": "/beɪk/",
-    "explain_yue": "焗；烤。",
-    "example_en": "Please bake now.",
-    "example_zh": "焗；烤",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "explain_yue": "焗；烤（用焗爐）。",
+    "example_en": "I bake a cake on Sunday.",
+    "example_zh": "我星期日焗蛋糕。",
+    "tip": "baked potato；bake 用焗爐，grill／barbecue 偏直接火燒。"
   },
   {
     "id": "recommend",
@@ -3925,12 +3925,12 @@
     "abstract": true,
     "emoji": "⭐",
     "icon_idea": "star recommend",
-    "icon": null,
+    "icon": "assets/icons/recommend.png",
     "ipa": "/ˌrekəˈmend/",
-    "explain_yue": "推薦。",
+    "explain_yue": "推薦；推介。",
     "example_en": "I recommend the set lunch.",
     "example_zh": "我推介午餐套餐。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "recommend something to someone；recommendation = 推薦（名詞）。"
   },
   {
     "id": "special",
@@ -3948,12 +3948,12 @@
     "abstract": true,
     "emoji": "✨",
     "icon_idea": "chef special",
-    "icon": null,
+    "icon": "assets/icons/special.png",
     "ipa": "/ˈspeʃl/",
-    "explain_yue": "特餐；特別。",
-    "example_en": "I need this special.",
-    "example_zh": "特餐；特別",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "特餐；特別嘅。",
+    "example_en": "What is today's special?",
+    "example_zh": "今日特餐係咩？",
+    "tip": "chef's special = 廚師推介；作形容詞 = 特別。"
   },
   {
     "id": "set",
@@ -3971,12 +3971,12 @@
     "abstract": false,
     "emoji": "🍱",
     "icon_idea": "set meal tray",
-    "icon": null,
+    "icon": "assets/icons/set.png",
     "ipa": "/set/",
     "explain_yue": "套餐。",
-    "example_en": "I need this set.",
-    "example_zh": "套餐",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "I'll have the lunch set.",
+    "example_zh": "我要午餐套餐。",
+    "tip": "set lunch／set meal；作動詞 set the table = 擺餐具（另一用法）。"
   },
   {
     "id": "portion",
@@ -3994,12 +3994,12 @@
     "abstract": true,
     "emoji": "📏",
     "icon_idea": "portion size",
-    "icon": null,
+    "icon": "assets/icons/portion.png",
     "ipa": "/ˈpɔːʃn/",
     "explain_yue": "份量。",
-    "example_en": "I need this portion.",
-    "example_zh": "份量",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "This portion is too big for me.",
+    "example_zh": "呢份對我嚟講太大份。",
+    "tip": "a large／small portion；half portion = 半份。"
   },
   {
     "id": "dessert",
@@ -4017,12 +4017,12 @@
     "abstract": false,
     "emoji": "🍰",
     "icon_idea": "a dessert",
-    "icon": null,
+    "icon": "assets/icons/dessert.png",
     "ipa": "/dɪˈzɜːt/",
     "explain_yue": "甜品。",
     "example_en": "What dessert do you have?",
-    "example_zh": "有咩甜品？",
-    "tip": "dessert 甜品；desert 沙漠。"
+    "example_zh": "你哋有咩甜品？",
+    "tip": "注意拼法：dessert 甜品（兩個 s）；desert 沙漠（一個 s）。"
   },
   {
     "id": "sick",
@@ -4040,12 +4040,12 @@
     "abstract": true,
     "emoji": "🤒",
     "icon_idea": "sick face",
-    "icon": null,
+    "icon": "assets/icons/sick.png",
     "ipa": "/sɪk/",
-    "explain_yue": "病；唔舒服。",
+    "explain_yue": "病；唔舒服。想嘔都可以講 sick。",
     "example_en": "I feel sick today.",
-    "example_zh": "我今日唔舒服。",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_zh": "我今日好唔舒服。",
+    "tip": "feel sick；call in sick = 請病假。美式多用 sick，英式亦用 ill。"
   },
   {
     "id": "ill",
@@ -4063,12 +4063,12 @@
     "abstract": true,
     "emoji": "🤒",
     "icon_idea": "ill in bed",
-    "icon": null,
+    "icon": "assets/icons/ill.png",
     "ipa": "/ɪl/",
-    "explain_yue": "有病。",
+    "explain_yue": "有病；唔舒服。偏英式。",
     "example_en": "She is ill and stays home.",
-    "example_zh": "佢病咗留喺屋企。",
-    "tip": "稍正式。"
+    "example_zh": "佢有病留喺屋企。",
+    "tip": "fall ill = 病倒；ill 同 sick 意思近，香港兩者都聽到。"
   },
   {
     "id": "pain",
@@ -4086,12 +4086,12 @@
     "abstract": true,
     "emoji": "💥",
     "icon_idea": "pain flash",
-    "icon": null,
+    "icon": "assets/icons/pain.png",
     "ipa": "/peɪn/",
-    "explain_yue": "痛。",
-    "example_en": "I need this pain.",
-    "example_zh": "痛",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "痛；疼痛。",
+    "example_en": "I have a pain in my back.",
+    "example_zh": "我背痛。",
+    "tip": "in pain = 痛緊；chest pain = 胸口痛。比 ache 更 sharpness 啲。"
   },
   {
     "id": "hurt",
@@ -4109,12 +4109,12 @@
     "abstract": true,
     "emoji": "🤕",
     "icon_idea": "hurt bandage",
-    "icon": null,
+    "icon": "assets/icons/hurt.png",
     "ipa": "/hɜːt/",
-    "explain_yue": "痛；受傷。",
+    "explain_yue": "痛；弄傷。",
     "example_en": "Does it hurt?",
     "example_zh": "痛唔痛？",
-    "tip": "hurt 過去式同原形一樣；hurts 第三人稱。"
+    "tip": "My leg hurts.；過去式 hurt 同原形一樣。hurt someone = 傷害人。"
   },
   {
     "id": "fever",
@@ -4132,12 +4132,12 @@
     "abstract": true,
     "emoji": "🌡️",
     "icon_idea": "thermometer",
-    "icon": null,
+    "icon": "assets/icons/fever.png",
     "ipa": "/ˈfiːvə/",
     "explain_yue": "發燒。",
-    "example_en": "I need this fever.",
-    "example_zh": "發燒",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "I have a fever and need rest.",
+    "example_zh": "我發燒，要休息。",
+    "tip": "high fever = 高燒；take your temperature = 量體溫。"
   },
   {
     "id": "cough",
@@ -4155,12 +4155,12 @@
     "abstract": true,
     "emoji": "😷",
     "icon_idea": "coughing",
-    "icon": null,
+    "icon": "assets/icons/cough.png",
     "ipa": "/kɒf/",
-    "explain_yue": "咳。",
-    "example_en": "I need this cough.",
-    "example_zh": "咳",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "咳；咳嗽。名詞同動詞都得。",
+    "example_en": "This cough keeps me awake.",
+    "example_zh": "呢陣咳到我瞓唔着。",
+    "tip": "a dry cough = 乾咳；cough syrup = 咳藥水。"
   },
   {
     "id": "flu",
@@ -4178,12 +4178,12 @@
     "abstract": true,
     "emoji": "🤧",
     "icon_idea": "flu tissue",
-    "icon": null,
+    "icon": "assets/icons/flu.png",
     "ipa": "/fluː/",
     "explain_yue": "流感。",
-    "example_en": "I need this flu.",
-    "example_zh": "流感",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "He caught the flu last week.",
+    "example_zh": "佢上週中咗流感。",
+    "tip": "have the flu；flu shot／jab = 流感針。唔好同 cold（傷風）撈亂。"
   },
   {
     "id": "headache",
@@ -4201,12 +4201,12 @@
     "abstract": true,
     "emoji": "🤕",
     "icon_idea": "head pain",
-    "icon": null,
+    "icon": "assets/icons/headache.png",
     "ipa": "/ˈhedeɪk/",
     "explain_yue": "頭痛。",
-    "example_en": "I need this headache.",
-    "example_zh": "頭痛",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "I have a bad headache.",
+    "example_zh": "我頭痛得好犀利。",
+    "tip": "have a headache；-ache 系列：toothache、stomachache。"
   },
   {
     "id": "stomachache",
@@ -4224,12 +4224,12 @@
     "abstract": true,
     "emoji": "😣",
     "icon_idea": "stomach ache",
-    "icon": null,
+    "icon": "assets/icons/stomachache.png",
     "ipa": "/ˈstʌməkeɪk/",
-    "explain_yue": "肚痛。",
-    "example_en": "I need this stomachache.",
-    "example_zh": "肚痛",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "肚痛；胃痛。",
+    "example_en": "I have a stomachache after lunch.",
+    "example_zh": "食完晏我肚痛。",
+    "tip": "亦寫 stomach ache；eat too fast 好易胃痛。"
   },
   {
     "id": "sore",
@@ -4247,12 +4247,12 @@
     "abstract": true,
     "emoji": "😣",
     "icon_idea": "sore throat",
-    "icon": null,
+    "icon": "assets/icons/sore.png",
     "ipa": "/sɔː/",
-    "explain_yue": "痠痛；痛。",
+    "explain_yue": "痠痛；疼痛嘅。",
     "example_en": "I have a sore throat.",
     "example_zh": "我喉嚨痛。",
-    "tip": "見 IPA；配合主題例句用。"
+    "tip": "sore throat／muscles；feel sore after sport = 做完運動痠。"
   },
   {
     "id": "doctor",
@@ -4270,12 +4270,12 @@
     "abstract": false,
     "emoji": "👨‍⚕️",
     "icon_idea": "a doctor",
-    "icon": null,
+    "icon": "assets/icons/doctor.png",
     "ipa": "/ˈdɒktə/",
     "explain_yue": "醫生。",
-    "example_en": "I need this doctor.",
-    "example_zh": "醫生",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "You should see a doctor.",
+    "example_zh": "你應該睇醫生。",
+    "tip": "see a doctor = 睇醫生；Doctor Chan = 陳醫生。"
   },
   {
     "id": "nurse",
@@ -4293,12 +4293,12 @@
     "abstract": false,
     "emoji": "👩‍⚕️",
     "icon_idea": "a nurse",
-    "icon": null,
+    "icon": "assets/icons/nurse.png",
     "ipa": "/nɜːs/",
     "explain_yue": "護士。",
-    "example_en": "I need this nurse.",
-    "example_zh": "護士",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "The nurse takes my temperature.",
+    "example_zh": "護士幫我量體溫。",
+    "tip": "nurse 喺診所／醫院；nursing = 護理。"
   },
   {
     "id": "clinic",
@@ -4316,12 +4316,12 @@
     "abstract": false,
     "emoji": "🏥",
     "icon_idea": "a clinic",
-    "icon": null,
+    "icon": "assets/icons/clinic.png",
     "ipa": "/ˈklɪnɪk/",
-    "explain_yue": "診所。",
-    "example_en": "I need this clinic.",
-    "example_zh": "診所",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "診所。比醫院細。",
+    "example_en": "The clinic is upstairs.",
+    "example_zh": "診所喺樓上。",
+    "tip": "dental clinic = 牙科診所；go to the clinic = 去診所。"
   },
   {
     "id": "medicine",
@@ -4339,12 +4339,12 @@
     "abstract": false,
     "emoji": "💊",
     "icon_idea": "medicine bottle",
-    "icon": null,
+    "icon": "assets/icons/medicine.png",
     "ipa": "/ˈmedsn/",
-    "explain_yue": "藥。",
-    "example_en": "I need this medicine.",
-    "example_zh": "藥",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "藥；藥物。",
+    "example_en": "Take this medicine after food.",
+    "example_zh": "食完嘢食呢啲藥。",
+    "tip": "不可數為主；medicine cabinet = 藥櫃。英式亦用 medication。"
   },
   {
     "id": "pill",
@@ -4362,12 +4362,12 @@
     "abstract": false,
     "emoji": "💊",
     "icon_idea": "a pill",
-    "icon": null,
+    "icon": "assets/icons/pill.png",
     "ipa": "/pɪl/",
     "explain_yue": "藥丸。",
-    "example_en": "I need this pill.",
-    "example_zh": "藥丸",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Take one pill in the morning.",
+    "example_zh": "朝早食一粒藥。",
+    "tip": "a sleeping pill = 安眠藥；tablet 亦係藥丸。"
   },
   {
     "id": "rest",
@@ -4385,12 +4385,12 @@
     "abstract": true,
     "emoji": "😴",
     "icon_idea": "resting",
-    "icon": null,
+    "icon": "assets/icons/rest.png",
     "ipa": "/rest/",
     "explain_yue": "休息。",
     "example_en": "You need to rest.",
     "example_zh": "你要休息。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "have a rest；get some rest。作名詞同動詞都得。"
   },
   {
     "id": "exercise",
@@ -4408,12 +4408,12 @@
     "abstract": true,
     "emoji": "🏃",
     "icon_idea": "exercise",
-    "icon": null,
+    "icon": "assets/icons/exercise.png",
     "ipa": "/ˈeksəsaɪz/",
-    "explain_yue": "運動（健身）。",
-    "example_en": "I need this exercise.",
-    "example_zh": "運動（健身）",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "運動；鍛鍊（健身）。",
+    "example_en": "I do exercise three times a week.",
+    "example_zh": "我一星期三練。",
+    "tip": "do exercise／take exercise；an exercise = 練習題（另一意思）。"
   },
   {
     "id": "healthy",
@@ -4431,12 +4431,12 @@
     "abstract": true,
     "emoji": "💚",
     "icon_idea": "healthy heart",
-    "icon": null,
+    "icon": "assets/icons/healthy.png",
     "ipa": "/ˈhelθi/",
-    "explain_yue": "健康。",
-    "example_en": "Eat healthy food.",
-    "example_zh": "食健康食物。",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "健康嘅。",
+    "example_en": "Eat healthy food every day.",
+    "example_zh": "每日食健康食物。",
+    "tip": "stay healthy；healthy 形容生活／食物；health 係名詞。"
   },
   {
     "id": "better",
@@ -4454,12 +4454,12 @@
     "abstract": true,
     "emoji": "📈",
     "icon_idea": "feeling better",
-    "icon": null,
+    "icon": "assets/icons/better.png",
     "ipa": "/ˈbetə/",
-    "explain_yue": "好啲。",
+    "explain_yue": "好啲；較好。",
     "example_en": "I feel better now.",
     "example_zh": "我而家好啲。",
-    "tip": "get better。"
+    "tip": "get better = 好轉；better 係 good／well 比較級。"
   },
   {
     "id": "worse",
@@ -4477,12 +4477,12 @@
     "abstract": true,
     "emoji": "📉",
     "icon_idea": "feeling worse",
-    "icon": null,
+    "icon": "assets/icons/worse.png",
     "ipa": "/wɜːs/",
-    "explain_yue": "差啲。",
+    "explain_yue": "差啲；更差。",
     "example_en": "Don't make it worse.",
     "example_zh": "唔好令情況更差。",
-    "tip": "見 IPA；配合主題例句用。"
+    "tip": "get worse = 惡化；worse 係 bad 比較級；worst 最高級。"
   },
   {
     "id": "appointment",
@@ -4500,12 +4500,12 @@
     "abstract": true,
     "emoji": "📅",
     "icon_idea": "appointment card",
-    "icon": null,
+    "icon": "assets/icons/appointment.png",
     "ipa": "/əˈpɔɪntmənt/",
-    "explain_yue": "預約。",
-    "example_en": "I need this appointment.",
-    "example_zh": "預約",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "預約；約見（醫生等）。",
+    "example_en": "I have a doctor appointment at three.",
+    "example_zh": "我三點約咗醫生。",
+    "tip": "make／book an appointment；cancel an appointment = 取消預約。"
   },
   {
     "id": "check",
@@ -4523,12 +4523,12 @@
     "abstract": true,
     "emoji": "🩺",
     "icon_idea": "health check",
-    "icon": null,
+    "icon": "assets/icons/check.png",
     "ipa": "/tʃek/",
-    "explain_yue": "檢查。",
-    "example_en": "Please check now.",
-    "example_zh": "醫生檢查喉嚨。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "explain_yue": "檢查；查看。",
+    "example_en": "Please check my throat.",
+    "example_zh": "請檢查吓我喉嚨。",
+    "tip": "health check = 身體檢查；check-up = 體檢。"
   },
   {
     "id": "care",
@@ -4546,12 +4546,12 @@
     "abstract": true,
     "emoji": "💝",
     "icon_idea": "care hands",
-    "icon": null,
+    "icon": "assets/icons/care.png",
     "ipa": "/keə/",
-    "explain_yue": "照顧；護理。",
-    "example_en": "I need this care.",
-    "example_zh": "照顧；護理",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "照顧；護理；在意。",
+    "example_en": "She takes care of her mum.",
+    "example_zh": "佢照顧媽媽。",
+    "tip": "take care of…；Take care! = 保重。health care = 醫療護理。"
   },
   {
     "id": "strong",
@@ -4569,12 +4569,12 @@
     "abstract": true,
     "emoji": "💪",
     "icon_idea": "strong arm",
-    "icon": null,
+    "icon": "assets/icons/strong.png",
     "ipa": "/strɒŋ/",
-    "explain_yue": "強壯。",
-    "example_en": "She is strong.",
-    "example_zh": "佢好壯。",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "強壯；強。",
+    "example_en": "She is strong after training.",
+    "example_zh": "佢訓練後好壯。",
+    "tip": "strong body／tea；反義 weak。"
   },
   {
     "id": "weak",
@@ -4592,12 +4592,12 @@
     "abstract": true,
     "emoji": "🫠",
     "icon_idea": "weak posture",
-    "icon": null,
+    "icon": "assets/icons/weak.png",
     "ipa": "/wiːk/",
-    "explain_yue": "虛弱。",
+    "explain_yue": "虛弱；弱。",
     "example_en": "I feel weak after the flu.",
     "example_zh": "流感後好虛弱。",
-    "tip": "見 IPA；配合主題例句用。"
+    "tip": "feel weak；weak signal = 訊號弱（另一主題用法）。"
   },
   {
     "id": "sport",
@@ -4615,12 +4615,12 @@
     "abstract": false,
     "emoji": "🏅",
     "icon_idea": "sport medal",
-    "icon": null,
+    "icon": "assets/icons/sport.png",
     "ipa": "/spɔːt/",
-    "explain_yue": "運動。",
-    "example_en": "I need this sport.",
-    "example_zh": "運動",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "運動（項目）。",
+    "example_en": "What sport do you play?",
+    "example_zh": "你玩咩運動？",
+    "tip": "play sport(s)；英式 sport／sports 都見到；體育課 = PE。"
   },
   {
     "id": "football",
@@ -4638,12 +4638,12 @@
     "abstract": false,
     "emoji": "⚽",
     "icon_idea": "a football",
-    "icon": null,
+    "icon": "assets/icons/football.png",
     "ipa": "/ˈfʊtbɔːl/",
     "explain_yue": "足球。",
     "example_en": "We play football on Sunday.",
     "example_zh": "星期日踢足球。",
-    "tip": "美式 soccer。"
+    "tip": "英式 football；美式 soccer。play football（唔用 do）。"
   },
   {
     "id": "basketball",
@@ -4661,12 +4661,12 @@
     "abstract": false,
     "emoji": "🏀",
     "icon_idea": "a basketball",
-    "icon": null,
+    "icon": "assets/icons/basketball.png",
     "ipa": "/ˈbɑːskɪtbɔːl/",
     "explain_yue": "籃球。",
-    "example_en": "I need this basketball.",
-    "example_zh": "籃球",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "They play basketball after school.",
+    "example_zh": "佢哋放學打籃球。",
+    "tip": "play basketball；basketball court = 籃球場。"
   },
   {
     "id": "swimming",
@@ -4684,12 +4684,12 @@
     "abstract": false,
     "emoji": "🏊",
     "icon_idea": "swimming",
-    "icon": null,
+    "icon": "assets/icons/swimming.png",
     "ipa": "/ˈswɪmɪŋ/",
-    "explain_yue": "游泳。",
-    "example_en": "I need this swimming.",
-    "example_zh": "游泳",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "游泳（運動／活動）。",
+    "example_en": "Swimming is good for you.",
+    "example_zh": "游泳對身體好。",
+    "tip": "go swimming；swimming pool = 泳池。動詞原形 swim。"
   },
   {
     "id": "tennis",
@@ -4707,12 +4707,12 @@
     "abstract": false,
     "emoji": "🎾",
     "icon_idea": "a tennis ball",
-    "icon": null,
+    "icon": "assets/icons/tennis.png",
     "ipa": "/ˈtenɪs/",
     "explain_yue": "網球。",
-    "example_en": "I need this tennis.",
-    "example_zh": "網球",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Do you want to play tennis?",
+    "example_zh": "想唔想打網球？",
+    "tip": "play tennis；tennis court = 網球場。"
   },
   {
     "id": "jump",
@@ -4730,12 +4730,12 @@
     "abstract": true,
     "emoji": "🦘",
     "icon_idea": "jumping",
-    "icon": null,
+    "icon": "assets/icons/jump.png",
     "ipa": "/dʒʌmp/",
     "explain_yue": "跳。",
-    "example_en": "Jump high!",
-    "example_zh": "跳高啲！",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "example_en": "Jump high and catch the ball.",
+    "example_zh": "跳高啲接波。",
+    "tip": "jump up／over；jump rope = 跳繩。"
   },
   {
     "id": "kick",
@@ -4753,12 +4753,12 @@
     "abstract": true,
     "emoji": "🦵",
     "icon_idea": "kicking ball",
-    "icon": null,
+    "icon": "assets/icons/kick.png",
     "ipa": "/kɪk/",
     "explain_yue": "踢。",
     "example_en": "Kick the ball to me.",
     "example_zh": "將波踢過嚟。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "kick a ball；free kick = 免費球（足球）。"
   },
   {
     "id": "throw",
@@ -4776,12 +4776,12 @@
     "abstract": true,
     "emoji": "⚾",
     "icon_idea": "throwing",
-    "icon": null,
+    "icon": "assets/icons/throw.png",
     "ipa": "/θrəʊ/",
     "explain_yue": "掟；擲。",
     "example_en": "Throw the ball gently.",
     "example_zh": "輕輕掟波。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "throw to someone；過去式 threw，過分詞 thrown。"
   },
   {
     "id": "catch",
@@ -4799,12 +4799,12 @@
     "abstract": true,
     "emoji": "🤲",
     "icon_idea": "catching ball",
-    "icon": null,
+    "icon": "assets/icons/catch.png",
     "ipa": "/kætʃ/",
     "explain_yue": "接住。",
     "example_en": "Catch the ball!",
     "example_zh": "接波！",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "catch a ball；catch a bus = 趕搭巴士（另一用法）。"
   },
   {
     "id": "hit",
@@ -4822,12 +4822,12 @@
     "abstract": true,
     "emoji": "🏏",
     "icon_idea": "hitting",
-    "icon": null,
+    "icon": "assets/icons/hit.png",
     "ipa": "/hɪt/",
-    "explain_yue": "打中。",
+    "explain_yue": "打中；擊。",
     "example_en": "Don't hit the ball too hard.",
     "example_zh": "唔好打得太大力。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "hit the ball；過去式 hit 同原形一樣。唔好亂用嚟講打人。"
   },
   {
     "id": "team",
@@ -4845,12 +4845,12 @@
     "abstract": false,
     "emoji": "👥",
     "icon_idea": "a team",
-    "icon": null,
+    "icon": "assets/icons/team.png",
     "ipa": "/tiːm/",
-    "explain_yue": "隊。",
-    "example_en": "I need this team.",
-    "example_zh": "隊",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "隊；隊伍。",
+    "example_en": "Our team wears red.",
+    "example_zh": "我哋隊著紅色。",
+    "tip": "team member；teamwork = 团队合作。"
   },
   {
     "id": "player",
@@ -4868,12 +4868,12 @@
     "abstract": false,
     "emoji": "jersey",
     "icon_idea": "a player",
-    "icon": null,
+    "icon": "assets/icons/player.png",
     "ipa": "/ˈpleɪə/",
-    "explain_yue": "球員。",
-    "example_en": "I need this player.",
-    "example_zh": "球員",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "球員；玩家。",
+    "example_en": "She is the best player on the team.",
+    "example_zh": "佢係隊中最佳球員。",
+    "tip": "football player；player 亦可指遊戲玩家。"
   },
   {
     "id": "game",
@@ -4891,12 +4891,12 @@
     "abstract": false,
     "emoji": "🎮",
     "icon_idea": "a game",
-    "icon": null,
+    "icon": "assets/icons/game.png",
     "ipa": "/ɡeɪm/",
     "explain_yue": "遊戲；球賽。",
-    "example_en": "I need this game.",
-    "example_zh": "遊戲；球賽",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "The game starts at seven.",
+    "example_zh": "球賽七點開始。",
+    "tip": "play a game；game 偏一場活動，match 偏正式比賽。"
   },
   {
     "id": "match",
@@ -4914,12 +4914,12 @@
     "abstract": false,
     "emoji": "🏆",
     "icon_idea": "a match",
-    "icon": null,
+    "icon": "assets/icons/match.png",
     "ipa": "/mætʃ/",
-    "explain_yue": "比賽。",
-    "example_en": "I need this match.",
-    "example_zh": "比賽",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "比賽（較正式）。",
+    "example_en": "We have a football match tomorrow.",
+    "example_zh": "我哋聽日有場足球賽。",
+    "tip": "a tennis match；match 亦有「火柴／配對」意思。"
   },
   {
     "id": "score",
@@ -4937,12 +4937,12 @@
     "abstract": true,
     "emoji": "🔢",
     "icon_idea": "scoreboard",
-    "icon": null,
+    "icon": "assets/icons/score.png",
     "ipa": "/skɔː/",
-    "explain_yue": "分數；入球。",
-    "example_en": "I need this score.",
-    "example_zh": "分數；入球",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "分數；入球；得分。",
+    "example_en": "What's the score now?",
+    "example_zh": "而家比分幾多？",
+    "tip": "score a goal = 入球；final score = 最終比分。"
   },
   {
     "id": "win",
@@ -4960,12 +4960,12 @@
     "abstract": true,
     "emoji": "🏆",
     "icon_idea": "winning trophy",
-    "icon": null,
+    "icon": "assets/icons/win.png",
     "ipa": "/wɪn/",
     "explain_yue": "贏。",
     "example_en": "I hope we win.",
     "example_zh": "希望我哋贏。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "win a game／prize；過去式 won。反義 lose。"
   },
   {
     "id": "lose",
@@ -4983,12 +4983,12 @@
     "abstract": true,
     "emoji": "😢",
     "icon_idea": "losing",
-    "icon": null,
+    "icon": "assets/icons/lose.png",
     "ipa": "/luːz/",
-    "explain_yue": "輸。",
+    "explain_yue": "輸；失去。",
     "example_en": "Don't be sad if you lose.",
     "example_zh": "輸咗唔好唔開心。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "lose a match；lose your keys = 掉鎖匙（另一用法）。過去式 lost。"
   },
   {
     "id": "draw",
@@ -5006,12 +5006,12 @@
     "abstract": true,
     "emoji": "🤝",
     "icon_idea": "draw handshake",
-    "icon": null,
+    "icon": "assets/icons/draw.png",
     "ipa": "/drɔː/",
-    "explain_yue": "打和。",
-    "example_en": "I need this draw.",
-    "example_zh": "打和",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "打和。亦可以指「畫畫」。",
+    "example_en": "The match ended in a draw.",
+    "example_zh": "比賽打和完場。",
+    "tip": "a draw = 和局；作動詞 draw a picture = 畫畫（另一主題）。"
   },
   {
     "id": "practise",
@@ -5029,12 +5029,12 @@
     "abstract": true,
     "emoji": "🔁",
     "icon_idea": "practising",
-    "icon": null,
+    "icon": "assets/icons/practise.png",
     "ipa": "/ˈpræktɪs/",
-    "explain_yue": "練習。",
+    "explain_yue": "練習（動詞）。",
     "example_en": "Practise every day.",
     "example_zh": "每日練習。",
-    "tip": "英式動詞拼法；名詞 practice。"
+    "tip": "英式動詞 practise；名詞 practice。美式動詞名詞都寫 practice。"
   },
   {
     "id": "coach",
@@ -5052,12 +5052,12 @@
     "abstract": false,
     "emoji": "📋",
     "icon_idea": "a coach",
-    "icon": null,
+    "icon": "assets/icons/coach.png",
     "ipa": "/kəʊtʃ/",
     "explain_yue": "教練。",
-    "example_en": "I need this coach.",
-    "example_zh": "教練",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Our coach is very strict.",
+    "example_zh": "我哋教練好嚴。",
+    "tip": "football coach；coach 亦有「長途巴士」意思。"
   },
   {
     "id": "gym",
@@ -5075,12 +5075,12 @@
     "abstract": false,
     "emoji": "🏋️",
     "icon_idea": "a gym",
-    "icon": null,
+    "icon": "assets/icons/gym.png",
     "ipa": "/dʒɪm/",
-    "explain_yue": "健身房。",
-    "example_en": "I need this gym.",
-    "example_zh": "健身房",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "健身房；體育館。",
+    "example_en": "I go to the gym after work.",
+    "example_zh": "放工後去健身房。",
+    "tip": "gym = gymnasium 簡寫；at the gym。"
   },
   {
     "id": "pool",
@@ -5098,12 +5098,12 @@
     "abstract": false,
     "emoji": "🏊",
     "icon_idea": "a pool",
-    "icon": null,
+    "icon": "assets/icons/pool.png",
     "ipa": "/puːl/",
-    "explain_yue": "泳池。",
-    "example_en": "I need this pool.",
-    "example_zh": "泳池",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "泳池。亦可以指水池。",
+    "example_en": "The pool opens at seven.",
+    "example_zh": "泳池七點開門。",
+    "tip": "swimming pool；pool 亦有「桌球」意思（另一用法）。"
   },
   {
     "id": "field",
@@ -5121,12 +5121,12 @@
     "abstract": false,
     "emoji": "🏟️",
     "icon_idea": "a field",
-    "icon": null,
+    "icon": "assets/icons/field.png",
     "ipa": "/fiːld/",
-    "explain_yue": "球場（草地）。",
-    "example_en": "I need this field.",
-    "example_zh": "球場（草地）",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "球場（草地）；田地。",
+    "example_en": "The kids run on the field.",
+    "example_zh": "小朋友喺球場跑。",
+    "tip": "football field／pitch；field trip = 校外教學（另一用法）。"
   },
   {
     "id": "ball",
@@ -5144,12 +5144,12 @@
     "abstract": false,
     "emoji": "⚽",
     "icon_idea": "a ball",
-    "icon": null,
+    "icon": "assets/icons/ball.png",
     "ipa": "/bɔːl/",
     "explain_yue": "波；球。",
-    "example_en": "I need this ball.",
-    "example_zh": "波；球",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Pass me the ball.",
+    "example_zh": "傳波畀我。",
+    "tip": "kick／throw／catch a ball；ball game = 球類活動。"
   },
   {
     "id": "race",
@@ -5167,12 +5167,12 @@
     "abstract": false,
     "emoji": "🏁",
     "icon_idea": "a race",
-    "icon": null,
+    "icon": "assets/icons/race.png",
     "ipa": "/reɪs/",
-    "explain_yue": "賽跑。",
-    "example_en": "I need this race.",
-    "example_zh": "賽跑",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "賽跑；競賽。",
+    "example_en": "She won the race.",
+    "example_zh": "佢贏咗場賽跑。",
+    "tip": "run a race；race 亦有「種族」意思（另一用法）。"
   },
   {
     "id": "hobby",
@@ -5190,12 +5190,12 @@
     "abstract": true,
     "emoji": "🎨",
     "icon_idea": "hobby icons",
-    "icon": null,
+    "icon": "assets/icons/hobby.png",
     "ipa": "/ˈhɒbi/",
-    "explain_yue": "興趣。",
-    "example_en": "I need this hobby.",
-    "example_zh": "興趣",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "興趣；嗜好。",
+    "example_en": "Reading is my hobby.",
+    "example_zh": "睇書係我嘅興趣。",
+    "tip": "hobbies 複數；What's your hobby?"
   },
   {
     "id": "music",
@@ -5213,12 +5213,12 @@
     "abstract": false,
     "emoji": "🎵",
     "icon_idea": "music notes",
-    "icon": null,
+    "icon": "assets/icons/music.png",
     "ipa": "/ˈmjuːzɪk/",
     "explain_yue": "音樂。",
-    "example_en": "I need this music.",
-    "example_zh": "音樂",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "I listen to music on the MTR.",
+    "example_zh": "我喺港鐵聽歌。",
+    "tip": "不可數；listen to music；pop／classical music。"
   },
   {
     "id": "song",
@@ -5236,12 +5236,12 @@
     "abstract": false,
     "emoji": "🎶",
     "icon_idea": "a song",
-    "icon": null,
+    "icon": "assets/icons/song.png",
     "ipa": "/sɒŋ/",
     "explain_yue": "歌。",
-    "example_en": "I need this song.",
-    "example_zh": "歌",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "This song is easy to sing.",
+    "example_zh": "呢首歌好易唱。",
+    "tip": "sing a song；favourite song = 最鍾意嘅歌。"
   },
   {
     "id": "sing",
@@ -5259,12 +5259,12 @@
     "abstract": true,
     "emoji": "🎤",
     "icon_idea": "singing",
-    "icon": null,
+    "icon": "assets/icons/sing.png",
     "ipa": "/sɪŋ/",
     "explain_yue": "唱歌。",
     "example_en": "She can sing well.",
     "example_zh": "佢唱得好。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "sing a song；singer = 歌手。過去式 sang。"
   },
   {
     "id": "dance",
@@ -5282,12 +5282,12 @@
     "abstract": true,
     "emoji": "💃",
     "icon_idea": "dancing",
-    "icon": null,
+    "icon": "assets/icons/dance.png",
     "ipa": "/dɑːns/",
     "explain_yue": "跳舞。",
     "example_en": "They dance at the party.",
     "example_zh": "佢哋喺派對跳舞。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "dance to music；a dance = 一支舞／舞會。"
   },
   {
     "id": "sketch",
@@ -5305,12 +5305,12 @@
     "abstract": true,
     "emoji": "✏️",
     "icon_idea": "sketching",
-    "icon": null,
+    "icon": "assets/icons/sketch.png",
     "ipa": "/sketʃ/",
     "explain_yue": "素描；畫草圖。",
     "example_en": "I sketch cats for fun.",
     "example_zh": "我畫貓玩。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "make a sketch；sketch book = 素描簿。"
   },
   {
     "id": "paint",
@@ -5328,12 +5328,12 @@
     "abstract": true,
     "emoji": "🎨",
     "icon_idea": "painting",
-    "icon": null,
+    "icon": "assets/icons/paint.png",
     "ipa": "/peɪnt/",
-    "explain_yue": "畫（顏料）。",
+    "explain_yue": "用顏料畫；油漆。",
     "example_en": "Kids paint on paper.",
     "example_zh": "小朋友喺紙上面畫。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "paint a picture；painter = 畫家／油漆工。"
   },
   {
     "id": "read",
@@ -5351,12 +5351,12 @@
     "abstract": true,
     "emoji": "📖",
     "icon_idea": "reading a book",
-    "icon": null,
+    "icon": "assets/icons/read.png",
     "ipa": "/riːd/",
     "explain_yue": "讀；睇書。",
     "example_en": "I read a book every night.",
     "example_zh": "我每晚睇書。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "read books／news；過去式 read 發音 /red/。"
   },
   {
     "id": "write",
@@ -5374,12 +5374,12 @@
     "abstract": true,
     "emoji": "✍️",
     "icon_idea": "writing",
-    "icon": null,
+    "icon": "assets/icons/write.png",
     "ipa": "/raɪt/",
     "explain_yue": "寫。",
     "example_en": "Write your name here.",
     "example_zh": "喺呢度寫名。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "write an email；過去式 wrote，過分詞 written。"
   },
   {
     "id": "cook",
@@ -5397,12 +5397,12 @@
     "abstract": true,
     "emoji": "👨‍🍳",
     "icon_idea": "cooking",
-    "icon": null,
+    "icon": "assets/icons/cook.png",
     "ipa": "/kʊk/",
     "explain_yue": "煮食。",
     "example_en": "I cook dinner at home.",
     "example_zh": "我喺屋企煮晚餐。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "cook for family；a cook = 廚師；cookbook = 食譜。"
   },
   {
     "id": "play",
@@ -5420,12 +5420,12 @@
     "abstract": true,
     "emoji": "🎲",
     "icon_idea": "playing",
-    "icon": null,
+    "icon": "assets/icons/play.png",
     "ipa": "/pleɪ/",
-    "explain_yue": "玩；演奏。",
+    "explain_yue": "玩；演奏；打球。",
     "example_en": "Play a game with me.",
-    "example_zh": "一齊玩。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "example_zh": "同我一齊玩。",
+    "tip": "play football／the piano；play 用法闊，跟賓語變義。"
   },
   {
     "id": "film",
@@ -5443,12 +5443,12 @@
     "abstract": false,
     "emoji": "🎬",
     "icon_idea": "a film",
-    "icon": null,
+    "icon": "assets/icons/film.png",
     "ipa": "/fɪlm/",
-    "explain_yue": "電影。",
-    "example_en": "I need this film.",
-    "example_zh": "電影",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "電影。英式常用。",
+    "example_en": "We watched a film last night.",
+    "example_zh": "我哋尋晚睇咗套戲。",
+    "tip": "英式 film；美式 movie。film star = 電影明星。"
   },
   {
     "id": "photo",
@@ -5466,12 +5466,12 @@
     "abstract": false,
     "emoji": "📷",
     "icon_idea": "a photo",
-    "icon": null,
+    "icon": "assets/icons/photo.png",
     "ipa": "/ˈfəʊtəʊ/",
     "explain_yue": "相片。",
-    "example_en": "I need this photo.",
-    "example_zh": "相片",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "This photo is so clear.",
+    "example_zh": "呢張相好清晰。",
+    "tip": "take a photo；photo = photograph 簡寫。"
   },
   {
     "id": "camera",
@@ -5489,12 +5489,12 @@
     "abstract": false,
     "emoji": "📷",
     "icon_idea": "a camera",
-    "icon": null,
+    "icon": "assets/icons/camera.png",
     "ipa": "/ˈkæmərə/",
     "explain_yue": "相機。",
-    "example_en": "I need this camera.",
-    "example_zh": "相機",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Bring a camera to the trip.",
+    "example_zh": "旅行帶埋相機。",
+    "tip": "phone camera = 電話鏡頭；on camera = 鏡頭前。"
   },
   {
     "id": "video",
@@ -5512,12 +5512,12 @@
     "abstract": false,
     "emoji": "🎥",
     "icon_idea": "a video",
-    "icon": null,
+    "icon": "assets/icons/video.png",
     "ipa": "/ˈvɪdiəʊ/",
-    "explain_yue": "影片。",
-    "example_en": "I need this video.",
-    "example_zh": "影片",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "影片；錄像。",
+    "example_en": "I watched a short video.",
+    "example_zh": "我睇咗條短片。",
+    "tip": "video call = 視像通話；upload a video。"
   },
   {
     "id": "fun",
@@ -5535,12 +5535,12 @@
     "abstract": true,
     "emoji": "😄",
     "icon_idea": "fun face",
-    "icon": null,
+    "icon": "assets/icons/fun.png",
     "ipa": "/fʌn/",
-    "explain_yue": "好玩。",
+    "explain_yue": "好玩；樂趣。",
     "example_en": "The trip is fun.",
     "example_zh": "呢程旅行好好玩。",
-    "tip": "funny = 好笑。"
+    "tip": "have fun；fun 偏「好玩」，funny 係「好笑」，唔好撈亂。"
   },
   {
     "id": "interesting",
@@ -5558,12 +5558,12 @@
     "abstract": true,
     "emoji": "✨",
     "icon_idea": "interesting spark",
-    "icon": null,
+    "icon": "assets/icons/interesting.png",
     "ipa": "/ˈɪntrəstɪŋ/",
-    "explain_yue": "有趣。",
+    "explain_yue": "有趣嘅（形容事物）。",
     "example_en": "This app is interesting.",
     "example_zh": "呢個 app 好有趣。",
-    "tip": "interested 係人。"
+    "tip": "interesting 形容嘢；interested 形容人：I am interested in…"
   },
   {
     "id": "boring",
@@ -5581,12 +5581,12 @@
     "abstract": true,
     "emoji": "😑",
     "icon_idea": "boring face",
-    "icon": null,
+    "icon": "assets/icons/boring.png",
     "ipa": "/ˈbɔːrɪŋ/",
-    "explain_yue": "悶。",
+    "explain_yue": "悶嘅（形容事物）。",
     "example_en": "The long queue is boring.",
     "example_zh": "排長龍好悶。",
-    "tip": "bored 係人。"
+    "tip": "boring 形容嘢；bored 形容人：I am bored。"
   },
   {
     "id": "favourite",
@@ -5604,12 +5604,12 @@
     "abstract": true,
     "emoji": "⭐",
     "icon_idea": "favourite star",
-    "icon": null,
+    "icon": "assets/icons/favourite.png",
     "ipa": "/ˈfeɪvərɪt/",
-    "explain_yue": "最鍾意。",
+    "explain_yue": "最鍾意嘅。",
     "example_en": "Blue is my favourite colour.",
     "example_zh": "藍色我最鍾意。",
-    "tip": "英式 favourite。"
+    "tip": "英式 favourite；美式 favorite。favourite food／song。"
   },
   {
     "id": "club",
@@ -5627,12 +5627,12 @@
     "abstract": false,
     "emoji": "🏷️",
     "icon_idea": "a club badge",
-    "icon": null,
+    "icon": "assets/icons/club.png",
     "ipa": "/klʌb/",
     "explain_yue": "學會；俱樂部。",
-    "example_en": "I need this club.",
-    "example_zh": "學會；俱樂部",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "I joined the music club.",
+    "example_zh": "我加入咗音樂學會。",
+    "tip": "school club；club 亦可指夜店／球棒（其他意思）。"
   },
   {
     "id": "join",
@@ -5650,12 +5650,12 @@
     "abstract": true,
     "emoji": "➕",
     "icon_idea": "join plus",
-    "icon": null,
+    "icon": "assets/icons/join.png",
     "ipa": "/dʒɔɪn/",
     "explain_yue": "加入。",
-    "example_en": "Join us!",
-    "example_zh": "一齊嚟呀！",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "example_en": "Join us for lunch!",
+    "example_zh": "一齊食晏呀！",
+    "tip": "join a club／team；join 後面通常直接加人／組織。"
   },
   {
     "id": "learn",
@@ -5673,12 +5673,12 @@
     "abstract": true,
     "emoji": "📘",
     "icon_idea": "learning",
-    "icon": null,
+    "icon": "assets/icons/learn.png",
     "ipa": "/lɜːn/",
     "explain_yue": "學。",
     "example_en": "I learn English every day.",
     "example_zh": "我每日學英文。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "learn to + 動詞；learn about…。過去式 learned／learnt。"
   },
   {
     "id": "show",
@@ -5696,12 +5696,12 @@
     "abstract": false,
     "emoji": "🎭",
     "icon_idea": "a show",
-    "icon": null,
+    "icon": "assets/icons/show.png",
     "ipa": "/ʃəʊ/",
-    "explain_yue": "表演；節目。",
-    "example_en": "I need this show.",
-    "example_zh": "表演；節目",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "表演；節目；展示。",
+    "example_en": "The show starts at eight.",
+    "example_zh": "節目八點開始。",
+    "tip": "TV show；talk show。作動詞 show me = 出示畀我睇。"
   },
   {
     "id": "talent",
@@ -5719,12 +5719,12 @@
     "abstract": true,
     "emoji": "🌟",
     "icon_idea": "talent star",
-    "icon": null,
+    "icon": "assets/icons/talent.png",
     "ipa": "/ˈtælənt/",
-    "explain_yue": "才華。",
-    "example_en": "I need this talent.",
-    "example_zh": "才華",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "才華；天分。",
+    "example_en": "She has a talent for music.",
+    "example_zh": "佢喺音樂方面有天分。",
+    "tip": "talent show = 才藝表演；talented = 有才華嘅。"
   },
   {
     "id": "collect",
@@ -5742,12 +5742,12 @@
     "abstract": true,
     "emoji": "🗃️",
     "icon_idea": "collecting stamps",
-    "icon": null,
+    "icon": "assets/icons/collect.png",
     "ipa": "/kəˈlekt/",
     "explain_yue": "收集。",
     "example_en": "I collect postcards.",
     "example_zh": "我收集明信片。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "collect stamps／cards；collection = 收藏品。"
   },
   {
     "id": "travel",
@@ -5765,12 +5765,12 @@
     "abstract": true,
     "emoji": "🧳",
     "icon_idea": "travelling",
-    "icon": null,
+    "icon": "assets/icons/travel.png",
     "ipa": "/ˈtrævl/",
-    "explain_yue": "旅行。",
+    "explain_yue": "旅行；出行。",
     "example_en": "I travel by train.",
     "example_zh": "我坐火車旅行。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "travel to Japan；travel 不可數為主；traveller = 旅客。"
   },
   {
     "id": "trip",
@@ -5788,12 +5788,12 @@
     "abstract": false,
     "emoji": "🗺️",
     "icon_idea": "a trip",
-    "icon": null,
+    "icon": "assets/icons/trip.png",
     "ipa": "/trɪp/",
     "explain_yue": "行程；短途旅行。",
-    "example_en": "I need this trip.",
-    "example_zh": "行程；短途旅行",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "We had a great trip to Macau.",
+    "example_zh": "我哋去澳門玩得好開心。",
+    "tip": "a business trip = 出差；take a trip。trip 多數可數。"
   },
   {
     "id": "tourist",
@@ -5811,12 +5811,12 @@
     "abstract": false,
     "emoji": "📷",
     "icon_idea": "a tourist",
-    "icon": null,
+    "icon": "assets/icons/tourist.png",
     "ipa": "/ˈtʊərɪst/",
     "explain_yue": "遊客。",
-    "example_en": "I need this tourist.",
-    "example_zh": "遊客",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "That tourist needs a map.",
+    "example_zh": "嗰個遊客需要地圖。",
+    "tip": "tourist spot = 景點；tourism = 旅遊業。"
   },
   {
     "id": "guide",
@@ -5834,12 +5834,12 @@
     "abstract": false,
     "emoji": "🧭",
     "icon_idea": "a guide",
-    "icon": null,
+    "icon": "assets/icons/guide.png",
     "ipa": "/ɡaɪd/",
     "explain_yue": "導遊；指南。",
-    "example_en": "I need this guide.",
-    "example_zh": "導遊；指南",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Our guide speaks Cantonese.",
+    "example_zh": "我哋導遊識講廣東話。",
+    "tip": "tour guide；guidebook = 旅遊書。作動詞 = 帶領。"
   },
   {
     "id": "passport",
@@ -5857,12 +5857,12 @@
     "abstract": false,
     "emoji": "📘",
     "icon_idea": "a passport",
-    "icon": null,
+    "icon": "assets/icons/passport.png",
     "ipa": "/ˈpɑːspɔːt/",
     "explain_yue": "護照。",
-    "example_en": "I need this passport.",
-    "example_zh": "護照",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Don't forget your passport.",
+    "example_zh": "唔好唔記得護照。",
+    "tip": "passport control = 護照檢查；過關一定要帶。"
   },
   {
     "id": "airport",
@@ -5880,12 +5880,12 @@
     "abstract": false,
     "emoji": "🛂",
     "icon_idea": "an airport",
-    "icon": null,
+    "icon": "assets/icons/airport.png",
     "ipa": "/ˈeəpɔːt/",
     "explain_yue": "機場。",
-    "example_en": "I need this airport.",
-    "example_zh": "機場",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "We meet at the airport at six.",
+    "example_zh": "我哋六點機場見。",
+    "tip": "at the airport；airport express = 機場快綫。"
   },
   {
     "id": "flight",
@@ -5903,12 +5903,12 @@
     "abstract": false,
     "emoji": "✈️",
     "icon_idea": "a flight",
-    "icon": null,
+    "icon": "assets/icons/flight.png",
     "ipa": "/flaɪt/",
-    "explain_yue": "航班。",
-    "example_en": "I need this flight.",
-    "example_zh": "航班",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "航班；飛行。",
+    "example_en": "My flight is delayed.",
+    "example_zh": "我航班延誤。",
+    "tip": "flight number；direct flight = 直航；catch a flight。"
   },
   {
     "id": "luggage",
@@ -5926,12 +5926,12 @@
     "abstract": false,
     "emoji": "🧳",
     "icon_idea": "luggage",
-    "icon": null,
+    "icon": "assets/icons/luggage.png",
     "ipa": "/ˈlʌɡɪdʒ/",
-    "explain_yue": "行李。",
+    "explain_yue": "行李。英式不可數。",
     "example_en": "Where is my luggage?",
     "example_zh": "我行李呢？",
-    "tip": "英式不可數；a piece of luggage。"
+    "tip": "不可數：a piece of luggage；美式常用 baggage／luggage。"
   },
   {
     "id": "suitcase",
@@ -5949,12 +5949,12 @@
     "abstract": false,
     "emoji": "🧳",
     "icon_idea": "a suitcase",
-    "icon": null,
+    "icon": "assets/icons/suitcase.png",
     "ipa": "/ˈsuːtkeɪs/",
-    "explain_yue": "喼。",
-    "example_en": "I need this suitcase.",
-    "example_zh": "喼",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "喼；手提箱。",
+    "example_en": "This suitcase is too heavy.",
+    "example_zh": "呢個喼太重。",
+    "tip": "pack a suitcase；carry-on suitcase = 手提行李喼。"
   },
   {
     "id": "pack",
@@ -5972,12 +5972,12 @@
     "abstract": true,
     "emoji": "📦",
     "icon_idea": "packing",
-    "icon": null,
+    "icon": "assets/icons/pack.png",
     "ipa": "/pæk/",
-    "explain_yue": "執袋。",
+    "explain_yue": "執袋；包裝。",
     "example_en": "Pack your bag tonight.",
     "example_zh": "今晚執袋。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "pack clothes；unpack = 開袋攞嘢。"
   },
   {
     "id": "room",
@@ -5995,12 +5995,12 @@
     "abstract": false,
     "emoji": "🛏️",
     "icon_idea": "a hotel room",
-    "icon": null,
+    "icon": "assets/icons/room.png",
     "ipa": "/ruːm/",
     "explain_yue": "房間。",
-    "example_en": "I need this room.",
-    "example_zh": "房間",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Our room has a sea view.",
+    "example_zh": "我哋房望到海。",
+    "tip": "hotel room；single／double room = 單人／雙人房。"
   },
   {
     "id": "book",
@@ -6018,12 +6018,12 @@
     "abstract": true,
     "emoji": "📅",
     "icon_idea": "booking",
-    "icon": null,
+    "icon": "assets/icons/book.png",
     "ipa": "/bʊk/",
-    "explain_yue": "預訂。",
+    "explain_yue": "預訂（動詞）。呢度唔係「書」。",
     "example_en": "Book a room online.",
     "example_zh": "上網訂房。",
-    "tip": "呢度係動詞「預訂」，唔係書。"
+    "tip": "book a ticket／hotel；booking = 預訂。名詞 book = 書（S1 可能已有）。"
   },
   {
     "id": "stay",
@@ -6041,12 +6041,12 @@
     "abstract": true,
     "emoji": "🏨",
     "icon_idea": "staying over",
-    "icon": null,
+    "icon": "assets/icons/stay.png",
     "ipa": "/steɪ/",
-    "explain_yue": "住（酒店）。",
+    "explain_yue": "住（酒店等）；停留。",
     "example_en": "We stay two nights.",
     "example_zh": "住兩晚。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "stay at a hotel；stay with friends = 住朋友度。"
   },
   {
     "id": "view",
@@ -6064,12 +6064,12 @@
     "abstract": false,
     "emoji": "🏞️",
     "icon_idea": "a view",
-    "icon": null,
+    "icon": "assets/icons/view.png",
     "ipa": "/vjuː/",
-    "explain_yue": "景色。",
-    "example_en": "I need this view.",
-    "example_zh": "景色",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "景色；景觀。",
+    "example_en": "The room has a great view.",
+    "example_zh": "間房景色好正。",
+    "tip": "sea view／city view；viewpoint = 觀景點。作動詞 = 查看。"
   },
   {
     "id": "abroad",
@@ -6087,12 +6087,12 @@
     "abstract": true,
     "emoji": "🌍",
     "icon_idea": "abroad globe",
-    "icon": null,
+    "icon": "assets/icons/abroad.png",
     "ipa": "/əˈbrɔːd/",
-    "explain_yue": "外國。",
-    "example_en": "It is abroad.",
-    "example_zh": "外國",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "外國；海外。",
+    "example_en": "She wants to study abroad.",
+    "example_zh": "佢想出國讀書。",
+    "tip": "go abroad；live abroad。前面通常唔加 to：唔講 to abroad。"
   },
   {
     "id": "beach",
@@ -6110,12 +6110,12 @@
     "abstract": false,
     "emoji": "🏖️",
     "icon_idea": "a beach",
-    "icon": null,
+    "icon": "assets/icons/beach.png",
     "ipa": "/biːtʃ/",
-    "explain_yue": "海灘。",
-    "example_en": "I need this beach.",
-    "example_zh": "海灘",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "海灘；沙灘。",
+    "example_en": "Let's go to the beach this Sunday.",
+    "example_zh": "星期日去沙灘啦。",
+    "tip": "on the beach；beach towel = 沙灘巾。"
   },
   {
     "id": "mountain",
@@ -6133,12 +6133,12 @@
     "abstract": false,
     "emoji": "⛰️",
     "icon_idea": "a mountain",
-    "icon": null,
+    "icon": "assets/icons/mountain.png",
     "ipa": "/ˈmaʊntən/",
     "explain_yue": "山。",
-    "example_en": "I need this mountain.",
-    "example_zh": "山",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "We hike up the mountain.",
+    "example_zh": "我哋行山上。",
+    "tip": "in the mountains；mountain view。香港郊野好多山。"
   },
   {
     "id": "island",
@@ -6156,12 +6156,12 @@
     "abstract": false,
     "emoji": "🏝️",
     "icon_idea": "an island",
-    "icon": null,
+    "icon": "assets/icons/island.png",
     "ipa": "/ˈaɪlənd/",
     "explain_yue": "島。",
-    "example_en": "I need this island.",
-    "example_zh": "島",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Cheung Chau is a small island.",
+    "example_zh": "長洲係個細島。",
+    "tip": "on the island；Hong Kong Island = 港島。"
   },
   {
     "id": "sea",
@@ -6179,12 +6179,12 @@
     "abstract": false,
     "emoji": "🌊",
     "icon_idea": "the sea",
-    "icon": null,
+    "icon": "assets/icons/sea.png",
     "ipa": "/siː/",
     "explain_yue": "海。",
-    "example_en": "I need this sea.",
-    "example_zh": "海",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "The sea is calm today.",
+    "example_zh": "今日海好平靜。",
+    "tip": "by the sea；at sea = 出海中。ocean 更大範圍。"
   },
   {
     "id": "forest",
@@ -6202,12 +6202,12 @@
     "abstract": false,
     "emoji": "🌲",
     "icon_idea": "a forest",
-    "icon": null,
+    "icon": "assets/icons/forest.png",
     "ipa": "/ˈfɒrɪst/",
     "explain_yue": "森林。",
-    "example_en": "I need this forest.",
-    "example_zh": "森林",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Don't get lost in the forest.",
+    "example_zh": "唔好喺森林迷路。",
+    "tip": "in the forest；rainforest = 雨林。"
   },
   {
     "id": "visit",
@@ -6225,12 +6225,12 @@
     "abstract": true,
     "emoji": "📍",
     "icon_idea": "visiting",
-    "icon": null,
+    "icon": "assets/icons/visit.png",
     "ipa": "/ˈvɪzɪt/",
     "explain_yue": "探訪；參觀。",
-    "example_en": "Visit the museum.",
-    "example_zh": "去參觀博物館。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "example_en": "Visit the museum if you have time.",
+    "example_zh": "有時間就去參觀博物館。",
+    "tip": "visit a place／friend；visitor = 訪客。"
   },
   {
     "id": "tour",
@@ -6248,12 +6248,12 @@
     "abstract": false,
     "emoji": "🚌",
     "icon_idea": "a tour",
-    "icon": null,
+    "icon": "assets/icons/tour.png",
     "ipa": "/tʊə/",
-    "explain_yue": "導賞；一圈。",
-    "example_en": "I need this tour.",
-    "example_zh": "導賞；一圈",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "導賞；旅遊行程；一圈。",
+    "example_en": "We joined a harbour tour.",
+    "example_zh": "我哋參加咗維港遊。",
+    "tip": "tour guide；city tour。作動詞 tour the city = 遊城。"
   },
   {
     "id": "souvenir",
@@ -6271,12 +6271,12 @@
     "abstract": false,
     "emoji": "🎁",
     "icon_idea": "a souvenir",
-    "icon": null,
+    "icon": "assets/icons/souvenir.png",
     "ipa": "/ˌsuːvəˈnɪə/",
-    "explain_yue": "手信。",
-    "example_en": "I need this souvenir.",
-    "example_zh": "手信",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "手信；紀念品。",
+    "example_en": "I bought a souvenir for my mum.",
+    "example_zh": "我買咗手信畀媽媽。",
+    "tip": "souvenir shop；讀音偏 /ˌsuːvəˈnɪə/。"
   },
   {
     "id": "postcard",
@@ -6294,12 +6294,12 @@
     "abstract": false,
     "emoji": "📮",
     "icon_idea": "a postcard",
-    "icon": null,
+    "icon": "assets/icons/postcard.png",
     "ipa": "/ˈpəʊstkɑːd/",
     "explain_yue": "明信片。",
-    "example_en": "I need this postcard.",
-    "example_zh": "明信片",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Send me a postcard from Japan.",
+    "example_zh": "喺日本寄張明信片畀我。",
+    "tip": "write a postcard；postcard 背面寫短訊。"
   },
   {
     "id": "camp",
@@ -6317,12 +6317,12 @@
     "abstract": true,
     "emoji": "⛺",
     "icon_idea": "camping",
-    "icon": null,
+    "icon": "assets/icons/camp.png",
     "ipa": "/kæmp/",
     "explain_yue": "露營。",
     "example_en": "We camp by the sea.",
     "example_zh": "我哋海邊露營。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "go camping；campsite = 營地。summer camp = 夏令營。"
   },
   {
     "id": "phone",
@@ -6340,12 +6340,12 @@
     "abstract": false,
     "emoji": "📱",
     "icon_idea": "a phone",
-    "icon": null,
+    "icon": "assets/icons/phone.png",
     "ipa": "/fəʊn/",
     "explain_yue": "電話；手機。",
-    "example_en": "I need this phone.",
-    "example_zh": "電話；手機",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "My phone battery is low.",
+    "example_zh": "我電話電量低。",
+    "tip": "mobile phone；on the phone = 講緊電話。call someone on the phone。"
   },
   {
     "id": "mobile",
@@ -6363,12 +6363,12 @@
     "abstract": false,
     "emoji": "📱",
     "icon_idea": "a mobile",
-    "icon": null,
+    "icon": "assets/icons/mobile.png",
     "ipa": "/ˈməʊbaɪl/",
-    "explain_yue": "手提電話。",
-    "example_en": "I need this mobile.",
-    "example_zh": "手提電話",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "手提電話；流動嘅。",
+    "example_en": "What's your mobile number?",
+    "example_zh": "你手提電話幾多號？",
+    "tip": "英式 mobile；美式 cell phone。mobile data = 流動數據。"
   },
   {
     "id": "call",
@@ -6386,12 +6386,12 @@
     "abstract": true,
     "emoji": "📞",
     "icon_idea": "a phone call",
-    "icon": null,
+    "icon": "assets/icons/call.png",
     "ipa": "/kɔːl/",
-    "explain_yue": "打去電話。",
+    "explain_yue": "打去電話；通話。",
     "example_en": "Call me later.",
     "example_zh": "遲啲打畀我。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "give someone a call；missed call = 未接來電。作名詞同動詞都得。"
   },
   {
     "id": "text",
@@ -6409,12 +6409,12 @@
     "abstract": true,
     "emoji": "💬",
     "icon_idea": "a text bubble",
-    "icon": null,
+    "icon": "assets/icons/text.png",
     "ipa": "/tekst/",
-    "explain_yue": "短訊。",
+    "explain_yue": "短訊；發短訊。",
     "example_en": "I'll text you the address.",
     "example_zh": "我短訊地址你。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "send a text；text message。口語 text 當動詞好常見。"
   },
   {
     "id": "message",
@@ -6432,12 +6432,12 @@
     "abstract": false,
     "emoji": "💬",
     "icon_idea": "a message",
-    "icon": null,
+    "icon": "assets/icons/message.png",
     "ipa": "/ˈmesɪdʒ/",
-    "explain_yue": "訊息。",
-    "example_en": "I need this message.",
-    "example_zh": "訊息",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "訊息；短訊。",
+    "example_en": "I got your message.",
+    "example_zh": "我收到你訊息。",
+    "tip": "leave a message；instant message = 即時訊息。"
   },
   {
     "id": "internet",
@@ -6455,12 +6455,12 @@
     "abstract": true,
     "emoji": "🌐",
     "icon_idea": "internet globe",
-    "icon": null,
+    "icon": "assets/icons/internet.png",
     "ipa": "/ˈɪntənet/",
-    "explain_yue": "互聯網。",
-    "example_en": "I need this internet.",
-    "example_zh": "互聯網",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "互聯網；網絡。",
+    "example_en": "The internet is slow today.",
+    "example_zh": "今日網絡好慢。",
+    "tip": "on the internet；internet access = 上網。口語亦講 net／Wi-Fi。"
   },
   {
     "id": "wifi",
@@ -6478,12 +6478,12 @@
     "abstract": true,
     "emoji": "📶",
     "icon_idea": "wifi symbol",
-    "icon": null,
+    "icon": "assets/icons/wifi.png",
     "ipa": "/ˈwaɪfaɪ/",
-    "explain_yue": "Wi-Fi。",
-    "example_en": "I need wifi.",
-    "example_zh": "有免費 Wi-Fi 嗎？",
-    "tip": "connect to Wi-Fi。"
+    "explain_yue": "Wi-Fi；無線網絡。",
+    "example_en": "Is there free wifi here?",
+    "example_zh": "呢度有冇免費 Wi-Fi？",
+    "tip": "connect to wifi；wifi password。拼法 Wi-Fi／wifi 都見到。"
   },
   {
     "id": "app",
@@ -6501,12 +6501,12 @@
     "abstract": false,
     "emoji": "📱",
     "icon_idea": "an app icon",
-    "icon": null,
+    "icon": "assets/icons/app.png",
     "ipa": "/æp/",
-    "explain_yue": "應用程式。",
+    "explain_yue": "應用程式（application 簡寫）。",
     "example_en": "Download this app.",
     "example_zh": "下載呢個 app。",
-    "tip": "複數 apps。"
+    "tip": "複數 apps；mobile app。open the app。"
   },
   {
     "id": "website",
@@ -6524,12 +6524,12 @@
     "abstract": false,
     "emoji": "🖥️",
     "icon_idea": "a website",
-    "icon": null,
+    "icon": "assets/icons/website.png",
     "ipa": "/ˈwebsaɪt/",
     "explain_yue": "網站。",
-    "example_en": "I need this website.",
-    "example_zh": "網站",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "Check the train times on the website.",
+    "example_zh": "上網睇班次。",
+    "tip": "website address／URL；official website = 官方網站。"
   },
   {
     "id": "email",
@@ -6547,12 +6547,12 @@
     "abstract": false,
     "emoji": "📧",
     "icon_idea": "an email",
-    "icon": null,
+    "icon": "assets/icons/email.png",
     "ipa": "/ˈiːmeɪl/",
-    "explain_yue": "電郵。",
-    "example_en": "I need this email.",
-    "example_zh": "電郵",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "電郵；發電郵。",
+    "example_en": "Send me an email tonight.",
+    "example_zh": "今晚發電郵畀我。",
+    "tip": "email address；寫法 e-mail／email 都得。作名詞同動詞都常見。"
   },
   {
     "id": "click",
@@ -6570,12 +6570,12 @@
     "abstract": true,
     "emoji": "🖱️",
     "icon_idea": "a click",
-    "icon": null,
+    "icon": "assets/icons/click.png",
     "ipa": "/klɪk/",
     "explain_yue": "撳；點擊。",
     "example_en": "Click the green button.",
     "example_zh": "撳綠色掣。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "click on a link；double-click = 連撳兩下。"
   },
   {
     "id": "download",
@@ -6593,12 +6593,12 @@
     "abstract": true,
     "emoji": "⬇️",
     "icon_idea": "download arrow",
-    "icon": null,
+    "icon": "assets/icons/download.png",
     "ipa": "/ˌdaʊnˈləʊd/",
     "explain_yue": "下載。",
     "example_en": "Download the map first.",
     "example_zh": "先下載地圖。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "download an app／file；反義 upload。"
   },
   {
     "id": "upload",
@@ -6616,12 +6616,12 @@
     "abstract": true,
     "emoji": "⬆️",
     "icon_idea": "upload arrow",
-    "icon": null,
+    "icon": "assets/icons/upload.png",
     "ipa": "/ˌʌpˈləʊd/",
-    "explain_yue": "上載。",
+    "explain_yue": "上載；上傳。",
     "example_en": "Upload your photo.",
     "example_zh": "上載你張相。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "upload to the cloud；反義 download。"
   },
   {
     "id": "search",
@@ -6639,12 +6639,12 @@
     "abstract": true,
     "emoji": "🔍",
     "icon_idea": "search icon",
-    "icon": null,
+    "icon": "assets/icons/search.png",
     "ipa": "/sɜːtʃ/",
-    "explain_yue": "搜尋。",
-    "example_en": "Search for the station.",
-    "example_zh": "搜尋車站。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "explain_yue": "搜尋；搜查。",
+    "example_en": "Search for the station on the map.",
+    "example_zh": "用地圖搜尋車站。",
+    "tip": "search for…；search engine = 搜尋器。"
   },
   {
     "id": "send",
@@ -6662,12 +6662,12 @@
     "abstract": true,
     "emoji": "📤",
     "icon_idea": "send arrow",
-    "icon": null,
+    "icon": "assets/icons/send.png",
     "ipa": "/send/",
-    "explain_yue": "傳送。",
+    "explain_yue": "傳送；寄出。",
     "example_en": "Send the file now.",
     "example_zh": "而家傳檔。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "send an email／message；send to…。過去式 sent。"
   },
   {
     "id": "share",
@@ -6685,12 +6685,12 @@
     "abstract": true,
     "emoji": "🔗",
     "icon_idea": "share icon",
-    "icon": null,
+    "icon": "assets/icons/share.png",
     "ipa": "/ʃeə/",
     "explain_yue": "分享。",
     "example_en": "Share the photo with me.",
     "example_zh": "分享相畀我。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "share on social media；share with friends。"
   },
   {
     "id": "post",
@@ -6708,12 +6708,12 @@
     "abstract": true,
     "emoji": "📝",
     "icon_idea": "a post",
-    "icon": null,
+    "icon": "assets/icons/post.png",
     "ipa": "/pəʊst/",
-    "explain_yue": "發佈。",
+    "explain_yue": "發佈（社交平台）；亦可以指「郵寄」。",
     "example_en": "Don't post your password.",
     "example_zh": "唔好公開密碼。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "tip": "post a photo；a post = 一則貼文。英式 post 亦可 = 郵寄。"
   },
   {
     "id": "password",
@@ -6731,12 +6731,12 @@
     "abstract": true,
     "emoji": "🔐",
     "icon_idea": "a password lock",
-    "icon": null,
+    "icon": "assets/icons/password.png",
     "ipa": "/ˈpɑːswɜːd/",
     "explain_yue": "密碼。",
     "example_en": "Keep your password safe.",
     "example_zh": "密碼要保管好。",
-    "tip": "change your password。"
+    "tip": "change your password；唔好用生日做 password。"
   },
   {
     "id": "screen",
@@ -6754,12 +6754,12 @@
     "abstract": false,
     "emoji": "🖥️",
     "icon_idea": "a screen",
-    "icon": null,
+    "icon": "assets/icons/screen.png",
     "ipa": "/skriːn/",
     "explain_yue": "螢幕。",
-    "example_en": "I need this screen.",
-    "example_zh": "螢幕",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "The phone screen is cracked.",
+    "example_zh": "電話螢幕裂咗。",
+    "tip": "on the screen；lock screen = 鎖定畫面。"
   },
   {
     "id": "battery",
@@ -6777,12 +6777,12 @@
     "abstract": false,
     "emoji": "🔋",
     "icon_idea": "a battery",
-    "icon": null,
+    "icon": "assets/icons/battery.png",
     "ipa": "/ˈbætri/",
-    "explain_yue": "電池。",
-    "example_en": "I need this battery.",
-    "example_zh": "電池",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "電池；電量。",
+    "example_en": "My battery is at ten percent.",
+    "example_zh": "我電量得百分之十。",
+    "tip": "low battery；battery life = 電池壽命。charge the battery。"
   },
   {
     "id": "charge",
@@ -6800,12 +6800,12 @@
     "abstract": true,
     "emoji": "🔌",
     "icon_idea": "charging",
-    "icon": null,
+    "icon": "assets/icons/charge.png",
     "ipa": "/tʃɑːdʒ/",
-    "explain_yue": "充電。",
-    "example_en": "Charge your phone.",
-    "example_zh": "充電話。",
-    "tip": "見例句同 IPA；出街常用動詞。"
+    "explain_yue": "充電；收費。",
+    "example_en": "Charge your phone before you go.",
+    "example_zh": "出門前充好電話。",
+    "tip": "charge the battery；charger = 充電器。free of charge = 免費（另一用法）。"
   },
   {
     "id": "online",
@@ -6823,12 +6823,12 @@
     "abstract": true,
     "emoji": "🟢",
     "icon_idea": "online dot",
-    "icon": null,
+    "icon": "assets/icons/online.png",
     "ipa": "/ˌɒnˈlaɪn/",
-    "explain_yue": "上線。",
+    "explain_yue": "上線；網上。",
     "example_en": "I study online.",
     "example_zh": "我網上學習。",
-    "tip": "見 IPA；配合主題例句用。"
+    "tip": "go online；online shopping。反義 offline。"
   },
   {
     "id": "offline",
@@ -6846,12 +6846,12 @@
     "abstract": true,
     "emoji": "⚪",
     "icon_idea": "offline dot",
-    "icon": null,
+    "icon": "assets/icons/offline.png",
     "ipa": "/ˌɒfˈlaɪn/",
-    "explain_yue": "離線。",
+    "explain_yue": "離線；唔連網。",
     "example_en": "The app works offline.",
     "example_zh": "個 app 離線都用得。",
-    "tip": "見 IPA；配合主題例句用。"
+    "tip": "go offline；save offline = 離線儲存。反義 online。"
   },
   {
     "id": "data",
@@ -6869,12 +6869,12 @@
     "abstract": true,
     "emoji": "📊",
     "icon_idea": "data bars",
-    "icon": null,
+    "icon": "assets/icons/data.png",
     "ipa": "/ˈdeɪtə/",
-    "explain_yue": "數據。",
-    "example_en": "I need this data.",
-    "example_zh": "數據",
-    "tip": "見 IPA；配合主題例句用。"
+    "explain_yue": "數據；流動數據。",
+    "example_en": "Turn off mobile data to save money.",
+    "example_zh": "關流動數據慳錢。",
+    "tip": "mobile data；data plan = 數據計劃。不可數為主。"
   },
   {
     "id": "signal",
@@ -6892,11 +6892,11 @@
     "abstract": true,
     "emoji": "📶",
     "icon_idea": "signal bars",
-    "icon": null,
+    "icon": "assets/icons/signal.png",
     "ipa": "/ˈsɪɡnəl/",
     "explain_yue": "訊號。",
-    "example_en": "I need this signal.",
-    "example_zh": "訊號",
-    "tip": "見 IPA；配合主題例句用。"
+    "example_en": "There is no signal in the lift.",
+    "example_zh": "升降機入面冇訊號。",
+    "tip": "strong／weak signal；no signal = 沒有訊號。"
   }
 ]

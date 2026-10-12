@@ -236,8 +236,8 @@
       let emoji = "🏆", label = "", sub = "";
       if (q) {
         const spec = LC.quarterlyById(id);
-        emoji = "👑";
-        label = "季度大複習";
+        emoji = (spec && spec.emoji) || "👑";
+        label = (spec && spec.map_label_zh) || "季度大複習";
         if (spec && spec.exam_cat && CAT[spec.exam_cat]) sub = "解鎖" + CAT[spec.exam_cat].name_zh + " 🐱";
       } else if (m) { emoji = "🏆"; label = "月度複習"; }
       else { const t = THEME[id]; emoji = (t && t.emoji) || "🐾"; label = (t && (t.short_zh || t.zh)) || id; }

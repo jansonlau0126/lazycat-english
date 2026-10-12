@@ -1,771 +1,1096 @@
 {
- "season": 2,
- "zh": "出去曬太陽",
- "en": "Go Out in the Sun",
- "emoji": "☀️",
- "subtitle_zh": "出街用得着",
- "weeks": "14–26",
- "level": "A1→A2",
- "learning_weeks": 12,
- "review_week": 13,
- "total_words": 300,
- "unlock_cat": "lammui",
- "themes": [
-  {
-   "id": "t13",
-   "no": 1,
-   "season": 2,
-   "week": 1,
-   "emoji": "🔢",
-   "zh": "數字同數量",
-   "en": "Numbers",
-   "word_count": 25,
-   "days": [
+  "season": 2,
+  "zh": "出去曬太陽",
+  "en": "Go Out in the Sun",
+  "emoji": "☀️",
+  "subtitle_zh": "出街生活",
+  "weeks": "14–26",
+  "level": "A1–A2",
+  "learning_weeks": 12,
+  "review_week": 13,
+  "calendar_week_start": 14,
+  "total_words": 300,
+  "path_order": [
+    "t13",
+    "t14",
+    "t15",
+    "t16",
+    "t17",
+    "t18",
+    "t19",
+    "t20",
+    "t21",
+    "t22",
+    "t23",
+    "t24"
+  ],
+  "themes": [
     {
-     "day": 1,
-     "words": [
-      "one",
-      "two",
-      "three",
-      "four",
-      "five"
-     ]
+      "id": "t13",
+      "no": 1,
+      "season": 2,
+      "week": 1,
+      "emoji": "🔢",
+      "zh": "數字同數量",
+      "short_zh": "數字",
+      "en": "Numbers",
+      "description": "一至二十、零、數量詞同簡單問數量。補齊 Season 1 未教嘅基本數字，方便講價錢、年齡、幾多個。",
+      "description_en": "Numbers 0–20, quantity words, and asking how many — the biggest gap left from Season 1.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "one",
+            "two",
+            "three",
+            "four",
+            "five"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "six",
+            "seven",
+            "eight",
+            "nine",
+            "ten"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "eleven",
+            "twelve",
+            "thirteen",
+            "fourteen",
+            "fifteen"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "sixteen",
+            "seventeen",
+            "eighteen",
+            "nineteen",
+            "twenty"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "zero",
+            "many",
+            "few",
+            "some",
+            "all"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": null,
+        "story": "deferred"
+      },
+      "grammar": null,
+      "cat_unlock": null,
+      "followed_by": null
     },
     {
-     "day": 2,
-     "words": [
-      "six",
-      "seven",
-      "eight",
-      "nine",
-      "ten"
-     ]
+      "id": "t14",
+      "no": 2,
+      "season": 2,
+      "week": 2,
+      "emoji": "🚶",
+      "zh": "出街動詞",
+      "short_zh": "出街動詞",
+      "en": "Going-out Verbs",
+      "description": "出街最常用嘅動作動詞：去、嚟、想要、需要、鍾意、有、食、買、幫手、等。配合 can／can't 文法。",
+      "description_en": "High-frequency action verbs for getting around and doing things; pairs with can/can't.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "go",
+            "come",
+            "want",
+            "need",
+            "like"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "have",
+            "get",
+            "make",
+            "take",
+            "give"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "eat",
+            "buy",
+            "help",
+            "ask",
+            "tell"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "look",
+            "listen",
+            "wait",
+            "walk",
+            "run"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "open",
+            "close",
+            "find",
+            "use",
+            "try"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": "g07",
+        "story": null
+      },
+      "grammar": "g07",
+      "cat_unlock": null,
+      "followed_by": null
     },
     {
-     "day": 3,
-     "words": [
-      "eleven",
-      "twelve",
-      "thirteen",
-      "fourteen",
-      "fifteen"
-     ]
+      "id": "t15",
+      "no": 3,
+      "season": 2,
+      "week": 3,
+      "emoji": "🚌",
+      "zh": "交通",
+      "short_zh": "交通",
+      "en": "Transport",
+      "description": "巴士、港鐵、的士、單車等出行方式，同車站、票、上車相關字。香港日常出街核心。",
+      "description_en": "How you get around: bus, MTR, taxi, bike, tickets and stops — core Hong Kong daily life.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "bus",
+            "train",
+            "taxi",
+            "car",
+            "bike"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "mtr",
+            "minibus",
+            "plane",
+            "ferry",
+            "tram"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "station",
+            "stop",
+            "ticket",
+            "platform",
+            "exit"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "ride",
+            "drive",
+            "board",
+            "alight",
+            "arrive"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "left",
+            "right",
+            "straight",
+            "map",
+            "far"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": null,
+        "story": "deferred"
+      },
+      "grammar": null,
+      "cat_unlock": null,
+      "followed_by": null
     },
     {
-     "day": 4,
-     "words": [
-      "sixteen",
-      "seventeen",
-      "eighteen",
-      "nineteen",
-      "twenty"
-     ]
+      "id": "t16",
+      "no": 4,
+      "season": 2,
+      "week": 4,
+      "emoji": "🧭",
+      "zh": "城市地方",
+      "short_zh": "地方",
+      "en": "City Places",
+      "description": "公園、醫院、超市、街、圖書館等常見去處；用 there is／介詞講位置。",
+      "description_en": "Everyday places in the city; pairs with there is/are and place prepositions.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "shop",
+            "park",
+            "hospital",
+            "bank",
+            "library"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "supermarket",
+            "market",
+            "cinema",
+            "hotel",
+            "office"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "street",
+            "road",
+            "building",
+            "place",
+            "centre"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "near",
+            "opposite",
+            "between",
+            "behind",
+            "inside"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "outside",
+            "upstairs",
+            "downstairs",
+            "address",
+            "city"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": "g08",
+        "story": null
+      },
+      "grammar": "g08",
+      "cat_unlock": null,
+      "followed_by": "m4"
     },
     {
-     "day": 5,
-     "words": [
-      "zero",
-      "many",
-      "few",
-      "some",
-      "all"
-     ]
+      "id": "t17",
+      "no": 5,
+      "season": 2,
+      "week": 5,
+      "emoji": "🛍️",
+      "zh": "購物",
+      "short_zh": "購物",
+      "en": "Shopping",
+      "description": "買嘢、試穿、排隊、開檔／關門、折扣同收據——行街購物用語。",
+      "description_en": "Buying things, trying on, queues, open/closed, sales and receipts.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "sell",
+            "pay",
+            "cost",
+            "price",
+            "cheap"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "expensive",
+            "free",
+            "sale",
+            "discount",
+            "queue"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "customer",
+            "cashier",
+            "receipt",
+            "change",
+            "fit"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "choose",
+            "return",
+            "exchange",
+            "plastic",
+            "basket"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "closed",
+            "push",
+            "pull",
+            "enter",
+            "aisle"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": null,
+        "story": "deferred"
+      },
+      "grammar": null,
+      "cat_unlock": null,
+      "followed_by": null
+    },
+    {
+      "id": "t18",
+      "no": 6,
+      "season": 2,
+      "week": 6,
+      "emoji": "💰",
+      "zh": "金錢",
+      "short_zh": "金錢",
+      "en": "Money",
+      "description": "錢、銀碼、現金卡、銀包、儲蓄；配合 how much／how many 問價錢同數量。",
+      "description_en": "Cash, cards, wallets and prices; pairs with how much / how many.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "money",
+            "dollar",
+            "cent",
+            "cash",
+            "card"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "wallet",
+            "purse",
+            "coin",
+            "note",
+            "account"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "spend",
+            "save",
+            "earn",
+            "borrow",
+            "lend"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "rich",
+            "poor",
+            "enough",
+            "too",
+            "only"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "how",
+            "much",
+            "total",
+            "amount",
+            "payment"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": "g09",
+        "story": null
+      },
+      "grammar": "g09",
+      "cat_unlock": null,
+      "followed_by": null
+    },
+    {
+      "id": "t19",
+      "no": 7,
+      "season": 2,
+      "week": 7,
+      "emoji": "🍽️",
+      "zh": "餐廳食嘢",
+      "short_zh": "餐廳",
+      "en": "Restaurants",
+      "description": "餐廳（唔止茶餐廳）：訂位、餐牌延伸、餐具、味道同服務用語。",
+      "description_en": "Restaurant language beyond the cha chaan teng set — booking, cutlery, service.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "restaurant",
+            "seat",
+            "reserve",
+            "serve",
+            "dish"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "plate",
+            "bowl",
+            "knife",
+            "fork",
+            "spoon"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "salt",
+            "pepper",
+            "sauce",
+            "oil",
+            "vinegar"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "fresh",
+            "raw",
+            "boil",
+            "fry",
+            "bake"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "recommend",
+            "special",
+            "set",
+            "portion",
+            "dessert"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": null,
+        "story": "deferred"
+      },
+      "grammar": null,
+      "cat_unlock": null,
+      "followed_by": null
+    },
+    {
+      "id": "t20",
+      "no": 8,
+      "season": 2,
+      "week": 8,
+      "emoji": "🏥",
+      "zh": "健康",
+      "short_zh": "健康",
+      "en": "Health",
+      "description": "唔舒服、診所、藥、常見症狀同保持健康。配合祈使句（多飲水、休息）。",
+      "description_en": "Feeling unwell, clinic, medicine, symptoms; pairs with imperatives.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "sick",
+            "ill",
+            "pain",
+            "hurt",
+            "fever"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "cough",
+            "flu",
+            "headache",
+            "stomachache",
+            "sore"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "doctor",
+            "nurse",
+            "clinic",
+            "medicine",
+            "pill"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "rest",
+            "exercise",
+            "healthy",
+            "better",
+            "worse"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "appointment",
+            "check",
+            "care",
+            "strong",
+            "weak"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": "g10",
+        "story": null
+      },
+      "grammar": "g10",
+      "cat_unlock": null,
+      "followed_by": "m5"
+    },
+    {
+      "id": "t21",
+      "no": 9,
+      "season": 2,
+      "week": 9,
+      "emoji": "⚽",
+      "zh": "運動",
+      "short_zh": "運動",
+      "en": "Sports",
+      "description": "常見運動項目、贏輸、球隊同場地，鼓勵講自己玩咩。",
+      "description_en": "Common sports, winning and losing, teams and places to play.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "sport",
+            "football",
+            "basketball",
+            "swimming",
+            "tennis"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "jump",
+            "kick",
+            "throw",
+            "catch",
+            "hit"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "team",
+            "player",
+            "game",
+            "match",
+            "score"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "win",
+            "lose",
+            "draw",
+            "practise",
+            "coach"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "gym",
+            "pool",
+            "field",
+            "ball",
+            "race"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": null,
+        "story": "deferred"
+      },
+      "grammar": null,
+      "cat_unlock": null,
+      "followed_by": null
+    },
+    {
+      "id": "t22",
+      "no": 10,
+      "season": 2,
+      "week": 10,
+      "emoji": "🎸",
+      "zh": "興趣娛樂",
+      "short_zh": "興趣",
+      "en": "Hobbies",
+      "description": "興趣、音樂、畫畫、遊戲；配合 like + noun／like + -ing。",
+      "description_en": "Hobbies, music, art and games; pairs with like + noun / like + -ing.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "hobby",
+            "music",
+            "song",
+            "sing",
+            "dance"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "sketch",
+            "paint",
+            "read",
+            "write",
+            "cook"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "play",
+            "film",
+            "photo",
+            "camera",
+            "video"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "fun",
+            "interesting",
+            "boring",
+            "favourite",
+            "club"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "join",
+            "learn",
+            "show",
+            "talent",
+            "collect"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": "g11",
+        "story": null
+      },
+      "grammar": "g11",
+      "cat_unlock": null,
+      "followed_by": null
+    },
+    {
+      "id": "t23",
+      "no": 11,
+      "season": 2,
+      "week": 11,
+      "emoji": "✈️",
+      "zh": "旅行",
+      "short_zh": "旅行",
+      "en": "Travel",
+      "description": "旅行、機場、行李、酒店、門票——短途出遊同假期用語。",
+      "description_en": "Trips, airport, luggage, hotel and tickets for short travel and holidays.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "travel",
+            "trip",
+            "tourist",
+            "guide",
+            "passport"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "airport",
+            "flight",
+            "luggage",
+            "suitcase",
+            "pack"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "room",
+            "book",
+            "stay",
+            "view",
+            "abroad"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "beach",
+            "mountain",
+            "island",
+            "sea",
+            "forest"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "visit",
+            "tour",
+            "souvenir",
+            "postcard",
+            "camp"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": null,
+        "story": "deferred"
+      },
+      "grammar": null,
+      "cat_unlock": null,
+      "followed_by": null
+    },
+    {
+      "id": "t24",
+      "no": 12,
+      "season": 2,
+      "week": 12,
+      "emoji": "📱",
+      "zh": "手機同網絡",
+      "short_zh": "手機",
+      "en": "Phone & Internet",
+      "description": "手機、訊息、上網、app、拍照——現代出街必備；帶一點現在進行式（I am texting）。",
+      "description_en": "Phone, messages, internet and apps; light present continuous practice.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "phone",
+            "mobile",
+            "call",
+            "text",
+            "message"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "internet",
+            "wifi",
+            "app",
+            "website",
+            "email"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "click",
+            "download",
+            "upload",
+            "search",
+            "send"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "share",
+            "post",
+            "password",
+            "screen",
+            "battery"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "charge",
+            "online",
+            "offline",
+            "data",
+            "signal"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": "g12",
+        "story": null
+      },
+      "grammar": "g12",
+      "cat_unlock": null,
+      "followed_by": "m6"
     }
-   ],
-   "grammar": null
+  ],
+  "monthly_reviews": [
+    {
+      "id": "m4",
+      "no": 1,
+      "after_week": 4,
+      "themes": [
+        "t13",
+        "t14",
+        "t15",
+        "t16"
+      ],
+      "word_pool": 100,
+      "questions": 30,
+      "match_groups": 3,
+      "xp": 40,
+      "cat_unlock": null
+    },
+    {
+      "id": "m5",
+      "no": 2,
+      "after_week": 8,
+      "themes": [
+        "t17",
+        "t18",
+        "t19",
+        "t20"
+      ],
+      "word_pool": 100,
+      "questions": 30,
+      "match_groups": 3,
+      "xp": 40,
+      "cat_unlock": null
+    },
+    {
+      "id": "m6",
+      "no": 3,
+      "after_week": 12,
+      "themes": [
+        "t21",
+        "t22",
+        "t23",
+        "t24"
+      ],
+      "word_pool": 100,
+      "questions": 30,
+      "match_groups": 3,
+      "xp": 40,
+      "cat_unlock": null
+    }
+  ],
+  "quarterly_review": {
+    "id": "q2",
+    "week": 13,
+    "calendar_week": 26,
+    "emoji": "☀️",
+    "zh": "季度複習週",
+    "map_label_zh": "出去晒夠未",
+    "review_days": [
+      {
+        "day": 1,
+        "themes": [
+          "t13",
+          "t14",
+          "t15"
+        ]
+      },
+      {
+        "day": 2,
+        "themes": [
+          "t16",
+          "t17",
+          "t18"
+        ]
+      },
+      {
+        "day": 3,
+        "themes": [
+          "t19",
+          "t20"
+        ]
+      },
+      {
+        "day": 4,
+        "themes": [
+          "t21",
+          "t22"
+        ]
+      },
+      {
+        "day": 5,
+        "themes": [
+          "t23",
+          "t24"
+        ]
+      }
+    ],
+    "review_day_questions": 15,
+    "review_day_xp": 20,
+    "exam": {
+      "day": 6,
+      "zh": "季度大考",
+      "word_pool": 300,
+      "questions": 40,
+      "match_groups": 4,
+      "xp": 60
+    },
+    "cat_unlock": {
+      "cat": "lammui",
+      "trigger": "complete_season_2",
+      "note": "藍莓 unlocks when the Season 2 quarterly exam is completed."
+    }
   },
-  {
-   "id": "t14",
-   "no": 2,
-   "season": 2,
-   "week": 2,
-   "emoji": "🚶",
-   "zh": "出街動詞",
-   "en": "Going-out Verbs",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "go",
-      "come",
-      "want",
-      "need",
-      "like"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "have",
-      "get",
-      "make",
-      "take",
-      "give"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "eat",
-      "buy",
-      "help",
-      "ask",
-      "tell"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "look",
-      "listen",
-      "wait",
-      "walk",
-      "run"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "open",
-      "close",
-      "find",
-      "use",
-      "try"
-     ]
-    }
-   ],
-   "grammar": "g07"
-  },
-  {
-   "id": "t15",
-   "no": 3,
-   "season": 2,
-   "week": 3,
-   "emoji": "🚌",
-   "zh": "交通",
-   "en": "Transport",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "bus",
-      "train",
-      "taxi",
-      "car",
-      "bike"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "mtr",
-      "minibus",
-      "plane",
-      "ferry",
-      "tram"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "station",
-      "stop",
-      "ticket",
-      "platform",
-      "exit"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "ride",
-      "drive",
-      "board",
-      "alight",
-      "arrive"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "left",
-      "right",
-      "straight",
-      "map",
-      "far"
-     ]
-    }
-   ],
-   "grammar": null
-  },
-  {
-   "id": "t16",
-   "no": 4,
-   "season": 2,
-   "week": 4,
-   "emoji": "🧭",
-   "zh": "城市地方",
-   "en": "City Places",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "shop",
-      "park",
-      "hospital",
-      "bank",
-      "library"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "supermarket",
-      "market",
-      "cinema",
-      "hotel",
-      "office"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "street",
-      "road",
-      "building",
-      "place",
-      "centre"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "near",
-      "opposite",
-      "between",
-      "behind",
-      "inside"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "outside",
-      "upstairs",
-      "downstairs",
-      "address",
-      "city"
-     ]
-    }
-   ],
-   "grammar": "g08"
-  },
-  {
-   "id": "t17",
-   "no": 5,
-   "season": 2,
-   "week": 5,
-   "emoji": "🛍️",
-   "zh": "購物",
-   "en": "Shopping",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "sell",
-      "pay",
-      "cost",
-      "price",
-      "cheap"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "expensive",
-      "free",
-      "sale",
-      "discount",
-      "queue"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "customer",
-      "cashier",
-      "receipt",
-      "change",
-      "fit"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "choose",
-      "return",
-      "exchange",
-      "plastic",
-      "basket"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "closed",
-      "push",
-      "pull",
-      "enter",
-      "aisle"
-     ]
-    }
-   ],
-   "grammar": null
-  },
-  {
-   "id": "t18",
-   "no": 6,
-   "season": 2,
-   "week": 6,
-   "emoji": "💰",
-   "zh": "金錢",
-   "en": "Money",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "money",
-      "dollar",
-      "cent",
-      "cash",
-      "card"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "wallet",
-      "purse",
-      "coin",
-      "note",
-      "account"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "spend",
-      "save",
-      "earn",
-      "borrow",
-      "lend"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "rich",
-      "poor",
-      "enough",
-      "too",
-      "only"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "how",
-      "much",
-      "total",
-      "amount",
-      "payment"
-     ]
-    }
-   ],
-   "grammar": "g09"
-  },
-  {
-   "id": "t19",
-   "no": 7,
-   "season": 2,
-   "week": 7,
-   "emoji": "🍽️",
-   "zh": "餐廳食嘢",
-   "en": "Restaurants",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "restaurant",
-      "seat",
-      "reserve",
-      "serve",
-      "dish"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "plate",
-      "bowl",
-      "knife",
-      "fork",
-      "spoon"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "salt",
-      "pepper",
-      "sauce",
-      "oil",
-      "vinegar"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "fresh",
-      "raw",
-      "boil",
-      "fry",
-      "bake"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "recommend",
-      "special",
-      "set",
-      "portion",
-      "dessert"
-     ]
-    }
-   ],
-   "grammar": null
-  },
-  {
-   "id": "t20",
-   "no": 8,
-   "season": 2,
-   "week": 8,
-   "emoji": "🏥",
-   "zh": "健康",
-   "en": "Health",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "sick",
-      "ill",
-      "pain",
-      "hurt",
-      "fever"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "cough",
-      "flu",
-      "headache",
-      "stomachache",
-      "sore"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "doctor",
-      "nurse",
-      "clinic",
-      "medicine",
-      "pill"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "rest",
-      "exercise",
-      "healthy",
-      "better",
-      "worse"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "appointment",
-      "check",
-      "care",
-      "strong",
-      "weak"
-     ]
-    }
-   ],
-   "grammar": "g10"
-  },
-  {
-   "id": "t21",
-   "no": 9,
-   "season": 2,
-   "week": 9,
-   "emoji": "⚽",
-   "zh": "運動",
-   "en": "Sports",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "sport",
-      "football",
-      "basketball",
-      "swimming",
-      "tennis"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "jump",
-      "kick",
-      "throw",
-      "catch",
-      "hit"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "team",
-      "player",
-      "game",
-      "match",
-      "score"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "win",
-      "lose",
-      "draw",
-      "practise",
-      "coach"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "gym",
-      "pool",
-      "field",
-      "ball",
-      "race"
-     ]
-    }
-   ],
-   "grammar": null
-  },
-  {
-   "id": "t22",
-   "no": 10,
-   "season": 2,
-   "week": 10,
-   "emoji": "🎸",
-   "zh": "興趣娛樂",
-   "en": "Hobbies",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "hobby",
-      "music",
-      "song",
-      "sing",
-      "dance"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "sketch",
-      "paint",
-      "read",
-      "write",
-      "cook"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "play",
-      "film",
-      "photo",
-      "camera",
-      "video"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "fun",
-      "interesting",
-      "boring",
-      "favourite",
-      "club"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "join",
-      "learn",
-      "show",
-      "talent",
-      "collect"
-     ]
-    }
-   ],
-   "grammar": "g11"
-  },
-  {
-   "id": "t23",
-   "no": 11,
-   "season": 2,
-   "week": 11,
-   "emoji": "✈️",
-   "zh": "旅行",
-   "en": "Travel",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "travel",
-      "trip",
-      "tourist",
-      "guide",
-      "passport"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "airport",
-      "flight",
-      "luggage",
-      "suitcase",
-      "pack"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "room",
-      "book",
-      "stay",
-      "view",
-      "abroad"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "beach",
-      "mountain",
-      "island",
-      "sea",
-      "forest"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "visit",
-      "tour",
-      "souvenir",
-      "postcard",
-      "camp"
-     ]
-    }
-   ],
-   "grammar": null
-  },
-  {
-   "id": "t24",
-   "no": 12,
-   "season": 2,
-   "week": 12,
-   "emoji": "📱",
-   "zh": "手機同網絡",
-   "en": "Phone & Internet",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "phone",
-      "mobile",
-      "call",
-      "text",
-      "message"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "internet",
-      "wifi",
-      "app",
-      "website",
-      "email"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "click",
-      "download",
-      "upload",
-      "search",
-      "send"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "share",
-      "post",
-      "password",
-      "screen",
-      "battery"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "charge",
-      "online",
-      "offline",
-      "data",
-      "signal"
-     ]
-    }
-   ],
-   "grammar": "g12"
-  }
- ]
+  "notes_for_bot": [
+    "theme week 係季內 1–12；日曆週 = 13 + week（即 14–25 學習、26 複習）。",
+    "words[].week 建議寫季內 week（1–12），同 S1 一致；若 app 要用日曆週，build 時再映射。",
+    "t17 day5 有 open/closed：S1 無 open 作獨立 headword；t14 有 open 動詞——t17 嘅 open 建議改為營業義 tip，或 bot 檢查後將 t17 day5 open 換成 restock／shelf 等，避免同 id 衝突。",
+    "t23 同 t24 都有 camera／photo／map 風險：plan 已避 S1，但季內重複 id 唔得——見 word-plan 最終 id 必須 unique。",
+    "buy 出現喺 t14 同 t17 plan 草稿時要以 word-plan 為準只留一次。"
+  ]
 }
