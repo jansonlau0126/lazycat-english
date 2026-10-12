@@ -211,7 +211,7 @@
     } else if (e.t === "spell") {
       h += '<div class="qtitle">用字母串出呢個字</div><div class="speech">' + cat + '<div class="bubble">「' + esc(w.meaning_zh) + '」<div class="playrow" style="margin-top:8px"><button class="spk" data-speak="' + esc(w.word) + '">🔊</button><button class="spk" data-speak="' + esc(w.word) + '" data-slow="1">🐢</button></div></div></div><div class="answer-line" id="ans"></div><div class="bank" id="bank">' + e.tiles.map((c, i) => '<button class="tile letter" data-act="tile" data-i="' + i + '">' + esc(c) + "</button>").join("") + "</div>";
     } else if (e.t === "arrange" || e.t === "gtiles") {
-      const zh = e.t === "arrange" ? w.example_zh : e.g.zh;
+      const zh = e.t === "arrange" ? w.example_zh : (e.g.zh || e.g.q || "");
       h += '<div class="qtitle">將句子砌做英文</div><div class="speech">' + cat + '<div class="bubble">' + esc(zh) + '</div></div><div class="answer-line" id="ans"></div><div class="bank" id="bank">' + e.tiles.map((c, i) => '<button class="tile" data-act="tile" data-i="' + i + '">' + esc(c) + "</button>").join("") + "</div>";
     } else if (e.t === "match") {
       L.match = { l: null, r: null, done: new Set() };

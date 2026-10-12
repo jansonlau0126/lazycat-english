@@ -22,3 +22,16 @@
 - 潤飾偏短嘅名詞 tip（部分仍係模板味）
 - 人工覆核港式詞：mtr、minibus、tram、alight、queue、dollar
 - icon 未畫；build.py 接 S2 另開任務
+
+## 2026-10-13 — 英文老師內容定稿
+
+- 潤稿完成：`season2-words.json` 全部 300 字（explain_yue／example_en／example_zh／tip）
+- 潤稿完成：`season2-grammar.json` g07–g12
+- `season2-themes.json` 還原 m4／m5／m6 同 q2 季度節奏（複習日 3+3+2+2+2；大考解鎖藍莓）
+- Janson：貼紙弱格唔重畫
+
+## 2026-10-13 — 接入 app（上線 PR，未 merge）
+
+- `build.py` 用 themes 入面嘅月結／季度複習；季內週次加 13，變成日曆週 14–26
+- 300 個 icon：t13–t16 沿用 main 已有 PNG；t17–t24 由最終 5×5 貼紙表切出（`tools/slice_stickers.py`），冇重畫
+- 解鎖貓仍然係藍莓（`lammui`，完成 q2 大考）

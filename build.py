@@ -209,6 +209,18 @@ def _monthlies(pack: dict, themes: list, raw: dict) -> list:
         for m in months:
             m["season"] = 1
         return months
+    if raw.get("monthly_reviews"):
+        # Handoff weeks and month numbers are season-relative (S2: weeks 1–12,
+        # monthly no 1–3). Shift them onto the year calendar.
+        months = []
+        for src in raw["monthly_reviews"]:
+            m = dict(src)
+            m["season"] = pack["season"]
+            m["after_week"] = int(m["after_week"]) + pack["offset"]
+            if pack["month_start"] > 1 and int(m.get("no") or 0) < pack["month_start"]:
+                m["no"] = int(m["no"]) + pack["month_start"] - 1
+            months.append(m)
+        return months
     out = []
     for k in range(3):
         group = themes[k * 4:(k + 1) * 4]
@@ -234,6 +246,18 @@ def _quarterly(pack: dict, themes: list, raw: dict) -> dict:
         q["season"] = 1
         q["after_monthly"] = "m3"
         q["exam_cat"] = pack["exam_cat"]
+        return q
+    if raw.get("quarterly_review"):
+        q = dict(raw["quarterly_review"])
+        q["season"] = pack["season"]
+        if q.get("calendar_week"):
+            q["week"] = int(q["calendar_week"])
+        else:
+            q["week"] = int(q["week"]) + pack["offset"]
+        q["after_monthly"] = q.get("after_monthly") or f"m{pack['season'] * 3}"
+        unlock = q.get("cat_unlock") or {}
+        if not q.get("exam_cat"):
+            q["exam_cat"] = (unlock.get("cat") if isinstance(unlock, dict) else None) or pack["exam_cat"]
         return q
     groups = [themes[0:3], themes[3:6], themes[6:8], themes[8:10], themes[10:12]]
     return {
@@ -344,6 +368,9 @@ def merge_course() -> tuple:
             raise SystemExit(f"{t['id']}: grammar week mismatch")
     if len(monthlies) != 12 or len(quarterlies) != 4:
         raise SystemExit("expected 12 monthly reviews and 4 quarterly reviews")
+    missing_s2 = [w["id"] for w in words if w.get("season") == 2 and not w.get("icon")]
+    if missing_s2:
+        raise SystemExit(f"season 2 missing icons: {missing_s2[:8]} ({len(missing_s2)})")
     copy = _load("content/s1-s4-copy.json")
     if len(copy.get("outings") or []) != 48 or len(copy.get("diaries") or []) != 4:
         raise SystemExit("copy must have 48 outings and 4 diaries")

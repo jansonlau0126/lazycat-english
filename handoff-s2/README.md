@@ -27,9 +27,11 @@
 
 | 檔案 | 狀態 |
 |------|------|
-| `data/season2-words.json` | ✅ 已入庫。用你確認過嗰份 300 字檔（ipa／例句／tip；icon null）。部分 tip 仍然好短 |
-| `data/season2-themes.json` | ✅ 12 主題，日次同字檔對得上 |
-| `data/season2-grammar.json` | ✅ g07–g12 |
+| `data/season2-words.json` | ✅ 300 字定稿（ipa／例句／tip／icon） |
+| `data/season2-themes.json` | ✅ 12 主題 + m4／m5／m6 + q2 |
+| `data/season2-grammar.json` | ✅ g07–g12 定稿 |
+| `assets/icons/` | ✅ 300 PNG（t13–t16 沿用舊圖；t17–t24 由貼紙表切出） |
+| `assets/sticker-sheets/` | ✅ t13–t24 原表；t14／t16 另有最終版 |
 | `data/s1-exclude-words.txt` | ✅ S1 禁字 |
 | `tools/validate_s2.py` | ✅ 已通過 |
 | `BOT_PROMPT.md` | ✅ 下一手開場 |
@@ -39,7 +41,7 @@
 
 ```bash
 cd handoff-s2 && python3 tools/validate_s2.py
-# 預期：OK: 300 words, 12 themes x 25, grammar 6 lessons...
+# 預期：OK: 300 words, 12 themes x 25, grammar 6 lessons... icons 300.
 ```
 
 ---
@@ -70,16 +72,12 @@ cd handoff-s2 && python3 tools/validate_s2.py
 - `example_en` 必須含 **headword 原形**（`\bword\b`）
 - `ipa` 格式 `/.../`
 - 唔好撞 `s1-exclude-words.txt`
-- `icon` 暫時全部 `null`
+- `icon` 係 `assets/icons/<id>.png`
 
 ---
 
-## 下一手工作（承接）
+## 上線
 
-1. 跑 validate  
-2. 潤飾粵語 tip／港式例句（重點詞：mtr, minibus, tram, alight, queue, centre, practise, dessert, luggage, favourite）  
-3. 可選加強 grammar 練習  
-4. 更新 `CHANGELOG.md`  
-5. **唔好**改 theme id、season 名、總字數  
+內容已定稿。`python3 build.py` 會讀呢份 handoff，日曆週 14–26，季度複習跟 themes 入面嘅 q2，大考解鎖藍莓。
 
-接主站 `build.py`／icon 另開任務。
+唔好改 theme id、季節名、總字數。貼紙弱格唔重畫。Merge 先會發佈 GitHub Pages。

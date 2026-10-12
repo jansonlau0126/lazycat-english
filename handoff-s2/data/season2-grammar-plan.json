@@ -1,0 +1,169 @@
+{
+  "format": "Same shape as season1-grammar.json: intro[].p may contain <b>/<br> HTML; ex[].t = mc (o options, a = correct index) | fill (a = list of accepted answers) | tiles (a = answer sentence, extra = distractor tiles). q uses ___ for the blank.",
+  "season": 2,
+  "lessons": [
+    {
+      "id": "g07",
+      "no": 1,
+      "week": 2,
+      "emoji": "💪",
+      "title": "can / can't（能力同請求）",
+      "en": "can / can't for ability and requests",
+      "pairs_with_theme": "t14",
+      "outline": {
+        "points": [
+          "can + 原形動詞 = 有能力／被允許",
+          "can't = cannot 縮寫",
+          "問句：Can you…? Yes, I can. / No, I can't.",
+          "請求：Can you help me, please?"
+        ],
+        "example_pairs": [
+          ["I can swim.", "我識游水。"],
+          ["She can't drive.", "佢唔識揸車。"],
+          ["Can you wait, please?", "可唔可以等一陣？"]
+        ],
+        "exercise_ideas": [
+          "mc: 揀 can / can't",
+          "fill: Can you ___ me? (help)",
+          "tiles: Can you open the door?"
+        ]
+      },
+      "status": "outline_only"
+    },
+    {
+      "id": "g08",
+      "no": 2,
+      "week": 4,
+      "emoji": "📍",
+      "title": "There is / There are + 地方介詞",
+      "en": "There is / There are + place prepositions",
+      "pairs_with_theme": "t16",
+      "outline": {
+        "points": [
+          "There is + 單數；There are + 複數",
+          "near / opposite / between / behind / inside / outside",
+          "問句：Is there a…? Are there any…?"
+        ],
+        "example_pairs": [
+          ["There is a park near my home.", "我屋企附近有個公園。"],
+          ["There are two banks on this street.", "呢條街有兩間銀行。"],
+          ["The library is opposite the hospital.", "圖書館喺醫院對面。"]
+        ],
+        "exercise_ideas": [
+          "mc: is / are",
+          "fill: There ___ a station near here. (is)",
+          "tiles: The shop is between the bank and the park."
+        ]
+      },
+      "status": "outline_only"
+    },
+    {
+      "id": "g09",
+      "no": 3,
+      "week": 6,
+      "emoji": "💲",
+      "title": "How much / How many",
+      "en": "How much / How many",
+      "pairs_with_theme": "t18",
+      "outline": {
+        "points": [
+          "How much + 不可數（money, water）／價錢",
+          "How many + 可數複數（tickets, apples）",
+          "How much is this? / How many do you want?"
+        ],
+        "example_pairs": [
+          ["How much is the ticket?", "張票幾多錢？"],
+          ["How many dollars do you have?", "你有幾多蚊？"],
+          ["How much water do you need?", "你需要幾多水？"]
+        ],
+        "exercise_ideas": [
+          "mc: much vs many",
+          "fill: How ___ is this bag? (much)",
+          "tiles: How many tickets do you need?"
+        ]
+      },
+      "status": "outline_only"
+    },
+    {
+      "id": "g10",
+      "no": 4,
+      "week": 8,
+      "emoji": "🚫",
+      "title": "祈使句同 don't",
+      "en": "Imperatives and don't",
+      "pairs_with_theme": "t20",
+      "outline": {
+        "points": [
+          "原形動詞開頭：Open the door. Wait here.",
+          "否定：Don't + 原形：Don't run. Don't touch.",
+          "健康場景：Rest. Drink water. Don't stay up late."
+        ],
+        "example_pairs": [
+          ["Take this medicine.", "食呢啲藥。"],
+          ["Don't worry.", "唔好擔心。"],
+          ["Please wait outside.", "請喺出面等。"]
+        ],
+        "exercise_ideas": [
+          "mc: 揀正確祈使句",
+          "fill: ___ run in the hospital. (Don't)",
+          "tiles: Please sit down."
+        ]
+      },
+      "status": "outline_only"
+    },
+    {
+      "id": "g11",
+      "no": 5,
+      "week": 10,
+      "emoji": "❤️",
+      "title": "like + 名詞／like + -ing",
+      "en": "like + noun / like + -ing",
+      "pairs_with_theme": "t22",
+      "outline": {
+        "points": [
+          "I like music. / I like football.",
+          "I like swimming. / I like reading. （-ing 做興趣）",
+          "I don't like… / Do you like…?"
+        ],
+        "example_pairs": [
+          ["I like singing.", "我鍾意唱歌。"],
+          ["She likes this film.", "佢鍾意呢套戲。"],
+          ["Do you like cooking?", "你鍾意煮食嗎？"]
+        ],
+        "exercise_ideas": [
+          "mc: like + 正確形式",
+          "fill: I like ___. (swimming)",
+          "tiles: He likes playing football."
+        ]
+      },
+      "status": "outline_only"
+    },
+    {
+      "id": "g12",
+      "no": 6,
+      "week": 12,
+      "emoji": "📱",
+      "title": "現在進行式 be + -ing",
+      "en": "Present continuous: be + -ing",
+      "pairs_with_theme": "t24",
+      "outline": {
+        "points": [
+          "I am / you are / he is + V-ing = 而家進行緊",
+          "手機場景：I am texting. She is downloading an app.",
+          "問句：What are you doing?"
+        ],
+        "example_pairs": [
+          ["I am charging my phone.", "我喺度充緊電。"],
+          ["They are watching a video.", "佢哋睇緊片。"],
+          ["Are you using Wi-Fi?", "你用緊 Wi-Fi 嗎？"]
+        ],
+        "exercise_ideas": [
+          "mc: am/is/are",
+          "fill: He ___ sending a message. (is)",
+          "tiles: I am searching online."
+        ]
+      },
+      "status": "outline_only"
+    }
+  ]
+}

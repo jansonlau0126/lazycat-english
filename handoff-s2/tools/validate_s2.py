@@ -38,6 +38,8 @@ for w in W:
     check(isinstance(w["abstract"], bool), f"{w['id']}: abstract not bool")
     check(w.get("explain_yue"), f"{w['id']}: empty explain_yue")
     check(w.get("tip"), f"{w['id']}: empty tip")
+    if isinstance(w.get("icon"), str) and w["icon"]:
+        check(os.path.isfile(w["icon"]), f"{w['id']}: icon file missing: {w['icon']}")
 
 themes = T["themes"]
 check(len(themes) == 12, f"expected 12 themes, got {len(themes)}")
@@ -59,7 +61,8 @@ for g in G["lessons"]:
 if fails:
     print("FAILED:\n  " + "\n  ".join(fails))
     sys.exit(1)
+icons = sum(1 for w in W if isinstance(w.get("icon"), str) and w["icon"])
 print(
     f"OK: {len(W)} words, 12 themes x 25, grammar {len(G['lessons'])} lessons; "
-    f"no S1 collisions; all examples contain headword."
+    f"no S1 collisions; all examples contain headword; icons {icons}."
 )
