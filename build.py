@@ -379,6 +379,9 @@ def merge_course() -> tuple:
     missing_s3 = [w["id"] for w in words if w.get("season") == 3 and not w.get("icon")]
     if missing_s3:
         raise SystemExit(f"season 3 missing icons: {missing_s3[:8]} ({len(missing_s3)})")
+    missing_s4 = [w["id"] for w in words if w.get("season") == 4 and not w.get("icon")]
+    if missing_s4:
+        raise SystemExit(f"season 4 missing icons: {missing_s4[:8]} ({len(missing_s4)})")
     copy = _load("content/s1-s4-copy.json")
     if len(copy.get("outings") or []) != 48 or len(copy.get("diaries") or []) != 4:
         raise SystemExit("copy must have 48 outings and 4 diaries")
@@ -440,6 +443,7 @@ def main() -> None:
     for extra_icons in (
         ROOT / "handoff-s2" / "assets" / "icons",
         ROOT / "handoff-s3" / "assets" / "icons",
+        ROOT / "handoff-s4" / "assets" / "icons",
     ):
         if extra_icons.is_dir():
             dest = OUT / "icons"
