@@ -1,821 +1,1104 @@
 {
   "season": 4,
-  "zh": "一齊過節",
-  "en": "Celebrate Together",
-  "emoji": "🏮",
-  "version": "1.1",
-  "level": "A2",
+  "zh": "窩喺被竇",
+  "en": "Cosy in the Den",
+  "emoji": "❄️",
+  "subtitle_zh": "深入話題；週52季度＋年度大複習；解鎖路徑指向豹豹（1200字）",
+  "weeks": "40–52",
+  "level": "A2–B1",
   "learning_weeks": 12,
+  "review_week": 13,
+  "calendar_week_start": 40,
   "total_words": 300,
-  "unlock_note": "完成第 3 季先解鎖呢季",
+  "path_order": [
+    "t37",
+    "t38",
+    "t39",
+    "t40",
+    "t41",
+    "t42",
+    "t43",
+    "t44",
+    "t45",
+    "t46",
+    "t47",
+    "t48"
+  ],
   "themes": [
     {
       "id": "t37",
       "no": 1,
       "season": 4,
       "week": 1,
-      "zh": "朋友同社交",
-      "en": "Friends and Social",
+      "emoji": "♻️",
+      "zh": "環境同回收",
+      "short_zh": "環境",
+      "en": "Environment & Recycling",
+      "description": "環境問題同綠色生活：污染、廢物、再生能源、氣候、保護野生動物。",
+      "description_en": "Environment and green living — pollution, waste, renewable energy, climate and wildlife.",
+      "icon": null,
       "word_count": 25,
       "days": [
         {
           "day": 1,
+          "row_colour": "#FFF3E0",
           "words": [
-            "pal",
-            "mate",
-            "buddy",
-            "newcomer",
-            "neighbourhood"
+            "environment",
+            "pollution",
+            "waste",
+            "litter",
+            "dump"
           ]
         },
         {
           "day": 2,
+          "row_colour": "#FDEBF0",
           "words": [
-            "stranger",
-            "guest",
-            "organiser",
-            "invite",
-            "invitation"
+            "landfill",
+            "compost",
+            "organic",
+            "packaging",
+            "biodegradable"
           ]
         },
         {
           "day": 3,
+          "row_colour": "#EEF7EC",
           "words": [
-            "accept",
-            "refuse",
-            "accompany",
-            "alone",
-            "crowd"
+            "renewable",
+            "solar",
+            "wind",
+            "energy",
+            "climate"
           ]
         },
         {
           "day": 4,
+          "row_colour": "#EAF4FB",
           "words": [
-            "chat",
-            "greet",
-            "welcome",
-            "befriend",
-            "acquaintance"
+            "greenhouse",
+            "carbon",
+            "emission",
+            "reduce",
+            "reuse"
           ]
         },
         {
           "day": 5,
+          "row_colour": "#F2EEFB",
           "words": [
-            "flatmate",
-            "social",
-            "gather",
-            "meetup",
-            "contact"
+            "protect",
+            "wildlife",
+            "extinct",
+            "endangered",
+            "ocean"
           ]
         }
       ],
-      "outing_task": {
-        "en": "This is my neighbour.",
-        "scene_zh": "介紹鄰居"
+      "saturday": {
+        "weekly_review": true,
+        "grammar": null,
+        "story": "deferred"
       },
-      "polysemy_notes": {},
-      "grammar": null
+      "grammar": null,
+      "cat_unlock": null,
+      "followed_by": null
     },
     {
       "id": "t38",
       "no": 2,
       "season": 4,
       "week": 2,
-      "zh": "派對",
-      "en": "Parties",
+      "emoji": "📰",
+      "zh": "新聞同社會",
+      "short_zh": "新聞",
+      "en": "News & Society",
+      "description": "讀新聞同公民社會：報紙、標題、選舉、政府、真相同假消息。",
+      "description_en": "News and civic life — newspapers, headlines, elections, government, truth and fake news.",
+      "icon": null,
       "word_count": 25,
       "days": [
         {
           "day": 1,
+          "row_colour": "#FFF3E0",
           "words": [
-            "party",
-            "celebrate",
-            "celebration",
-            "festival",
-            "event"
+            "newspaper",
+            "article",
+            "headline",
+            "report",
+            "media"
           ]
         },
         {
           "day": 2,
+          "row_colour": "#FDEBF0",
           "words": [
-            "occasion",
-            "rsvp",
-            "balloon",
-            "decoration",
-            "confetti"
+            "editor",
+            "column",
+            "publish",
+            "broadcast",
+            "television"
           ]
         },
         {
           "day": 3,
+          "row_colour": "#EEF7EC",
           "words": [
-            "cheers",
-            "cheer",
-            "clap",
-            "enjoy",
-            "entertainment"
+            "society",
+            "citizen",
+            "vote",
+            "election",
+            "government"
           ]
         },
         {
           "day": 4,
+          "row_colour": "#EAF4FB",
           "words": [
-            "perform",
-            "encore",
-            "spectator",
-            "banquet",
-            "reception"
+            "law",
+            "rights",
+            "democracy",
+            "politics",
+            "parliament"
           ]
         },
         {
           "day": 5,
+          "row_colour": "#F2EEFB",
           "words": [
-            "gathering",
-            "venue",
-            "entry",
-            "vip",
-            "festivity"
+            "protest",
+            "campaign",
+            "truth",
+            "fact",
+            "fake"
           ]
         }
       ],
-      "outing_task": {
-        "en": "Would you like to come?",
-        "scene_zh": "邀請人"
+      "saturday": {
+        "weekly_review": true,
+        "grammar": "g19",
+        "story": "deferred"
       },
-      "polysemy_notes": {},
-      "grammar": "g19"
+      "grammar": "g19",
+      "cat_unlock": null,
+      "followed_by": null
     },
     {
       "id": "t39",
       "no": 3,
       "season": 4,
       "week": 3,
-      "zh": "生日同禮物",
-      "en": "Birthdays and Gifts",
+      "emoji": "💻",
+      "zh": "科技",
+      "short_zh": "科技",
+      "en": "Technology",
+      "description": "日常科技同數碼世界：電腦、手機、軟件、機械人、雲端、演算法。",
+      "description_en": "Everyday tech and digital life — computers, software, robots, cloud and algorithms.",
+      "icon": null,
       "word_count": 25,
       "days": [
         {
           "day": 1,
+          "row_colour": "#FFF3E0",
           "words": [
-            "gift",
-            "voucher",
-            "wrap",
-            "unwrap",
-            "parcel"
+            "technology",
+            "computer",
+            "smartphone",
+            "tablet",
+            "device"
           ]
         },
         {
           "day": 2,
+          "row_colour": "#FDEBF0",
           "words": [
-            "package",
-            "candle",
-            "wish",
-            "blow",
-            "surprise"
+            "software",
+            "hardware",
+            "program",
+            "coding",
+            "code"
           ]
         },
         {
           "day": 3,
+          "row_colour": "#EEF7EC",
           "words": [
-            "greeting",
-            "receive",
-            "grateful",
-            "thankful",
-            "appreciate"
+            "robot",
+            "virtual",
+            "digital",
+            "cloud",
+            "server"
           ]
         },
         {
           "day": 4,
+          "row_colour": "#EAF4FB",
           "words": [
-            "favour",
-            "memento",
-            "keepsake",
-            "memory",
-            "ribbon"
+            "network",
+            "bluetooth",
+            "browser",
+            "update",
+            "install"
           ]
         },
         {
           "day": 5,
+          "row_colour": "#F2EEFB",
           "words": [
-            "box",
-            "tag",
-            "label",
-            "wrapping",
-            "bow"
+            "gadget",
+            "drone",
+            "sensor",
+            "chip",
+            "algorithm"
           ]
         }
       ],
-      "outing_task": {
-        "en": "This gift is for you.",
-        "scene_zh": "送禮物"
+      "saturday": {
+        "weekly_review": true,
+        "grammar": null,
+        "story": "deferred"
       },
-      "polysemy_notes": {},
-      "grammar": null
+      "grammar": null,
+      "cat_unlock": null,
+      "followed_by": null
     },
     {
       "id": "t40",
       "no": 4,
       "season": 4,
       "week": 4,
-      "zh": "中式節日",
-      "en": "Chinese Festivals",
+      "emoji": "🚨",
+      "zh": "安全同緊急情況",
+      "short_zh": "安全",
+      "en": "Safety & Emergencies",
+      "description": "安全意識同突發情況：火災、救護、疏散、地震水浸、交通同罪案防範。",
+      "description_en": "Safety and emergencies — fire, rescue, evacuate, quake/flood, traffic and crime basics.",
+      "icon": null,
       "word_count": 25,
       "days": [
         {
           "day": 1,
+          "row_colour": "#FFF3E0",
           "words": [
-            "lunar",
-            "zodiac",
-            "lantern",
-            "mid-autumn",
-            "reunion"
+            "safety",
+            "emergency",
+            "danger",
+            "accident",
+            "hazard"
           ]
         },
         {
           "day": 2,
+          "row_colour": "#FDEBF0",
           "words": [
-            "ancestor",
-            "temple",
-            "bazaar",
-            "firecracker",
-            "dragon"
+            "fire",
+            "ambulance",
+            "siren",
+            "extinguisher",
+            "escape"
           ]
         },
         {
           "day": 3,
+          "row_colour": "#EEF7EC",
           "words": [
-            "drum",
-            "parade",
-            "angpow",
-            "redpacket",
-            "mooncake"
+            "rescue",
+            "evacuate",
+            "shelter",
+            "warning",
+            "earthquake"
           ]
         },
         {
           "day": 4,
+          "row_colour": "#EAF4FB",
           "words": [
-            "ricecake",
-            "pomelo",
-            "tangerine",
-            "incense",
-            "worship"
+            "flood",
+            "injury",
+            "burn",
+            "bleed",
+            "bandage"
           ]
         },
         {
           "day": 5,
+          "row_colour": "#F2EEFB",
           "words": [
-            "tradition",
-            "custom",
-            "culture",
-            "heritage",
-            "ritual"
+            "helmet",
+            "seatbelt",
+            "crime",
+            "theft",
+            "robbery"
           ]
         }
       ],
-      "outing_task": {
-        "en": "Happy New Year!",
-        "scene_zh": "過年祝賀"
+      "saturday": {
+        "weekly_review": true,
+        "grammar": "g20",
+        "story": "deferred"
       },
-      "polysemy_notes": {},
-      "grammar": "g20"
+      "grammar": "g20",
+      "cat_unlock": null,
+      "followed_by": "m10"
     },
     {
       "id": "t41",
       "no": 5,
       "season": 4,
       "week": 5,
-      "zh": "其他節日",
-      "en": "Other Festivals",
+      "emoji": "📋",
+      "zh": "規則同禮貌",
+      "short_zh": "規則",
+      "en": "Rules & Manners",
+      "description": "規矩同禮貌：規則、道歉、准許、禁止、守時、課堂禮儀。",
+      "description_en": "Rules and manners — regulations, apology, permission, forbidden signs and classroom courtesy.",
+      "icon": null,
       "word_count": 25,
       "days": [
         {
           "day": 1,
+          "row_colour": "#FFF3E0",
           "words": [
-            "christmas",
-            "santa",
-            "easter",
-            "halloween",
-            "valentine"
+            "rule",
+            "manners",
+            "courtesy",
+            "honesty",
+            "punctual"
           ]
         },
         {
           "day": 2,
+          "row_colour": "#FDEBF0",
           "words": [
-            "boxing",
-            "national",
-            "handover",
-            "carnival",
-            "costume"
+            "apology",
+            "excuse",
+            "permission",
+            "interrupt",
+            "whisper"
           ]
         },
         {
           "day": 3,
+          "row_colour": "#EEF7EC",
           "words": [
-            "pumpkin",
-            "turkey",
-            "stocking",
-            "ornament",
-            "firework"
+            "regulation",
+            "obey",
+            "break",
+            "punish",
+            "fine"
           ]
         },
         {
           "day": 4,
+          "row_colour": "#EAF4FB",
           "words": [
-            "countdown",
-            "eve",
-            "leave",
-            "carol",
-            "nativity"
+            "instruction",
+            "sign",
+            "forbidden",
+            "allowed",
+            "required"
           ]
         },
         {
           "day": 5,
+          "row_colour": "#F2EEFB",
           "words": [
-            "bunny",
-            "witch",
-            "trick",
-            "treat",
-            "festive"
+            "compulsory",
+            "silence",
+            "shout",
+            "behaviour",
+            "etiquette"
           ]
         }
       ],
-      "outing_task": {
-        "en": "Merry Christmas!",
-        "scene_zh": "聖誕"
+      "saturday": {
+        "weekly_review": true,
+        "grammar": null,
+        "story": "deferred"
       },
-      "polysemy_notes": {
-        "leave": "本季＝放假；另外有「離開」"
-      },
-      "grammar": null
+      "grammar": null,
+      "cat_unlock": null,
+      "followed_by": null
     },
     {
       "id": "t42",
       "no": 6,
       "season": 4,
       "week": 6,
-      "zh": "性格",
-      "en": "Personality",
+      "emoji": "💬",
+      "zh": "表達意見",
+      "short_zh": "意見",
+      "en": "Expressing Opinions",
+      "description": "表達同討論意見：同意、建議、討論、說服、決定（含 agree／suggest／discuss）。",
+      "description_en": "Expressing opinions — agree, suggest, discuss, persuade and decide (reserved agree/suggest/discuss).",
+      "icon": null,
       "word_count": 25,
       "days": [
         {
           "day": 1,
+          "row_colour": "#FFF3E0",
           "words": [
-            "cheerful",
-            "modest",
-            "greedy",
-            "strict",
-            "soft"
+            "agree",
+            "disagree",
+            "suggest",
+            "discuss",
+            "opinion"
           ]
         },
         {
           "day": 2,
+          "row_colour": "#FDEBF0",
           "words": [
-            "serious",
-            "tough",
-            "supportive",
-            "lazy",
-            "hardworking"
+            "argue",
+            "prefer",
+            "believe",
+            "consider",
+            "propose"
           ]
         },
         {
           "day": 3,
+          "row_colour": "#EEF7EC",
           "words": [
-            "wise",
-            "bright",
-            "playful",
-            "keen",
-            "impatient"
+            "support",
+            "oppose",
+            "convince",
+            "persuade",
+            "decision"
           ]
         },
         {
           "day": 4,
+          "row_colour": "#EAF4FB",
           "words": [
-            "warm-hearted",
-            "unfriendly",
-            "active",
-            "noisy",
-            "eager"
+            "choice",
+            "reason",
+            "point",
+            "idea",
+            "viewpoint"
           ]
         },
         {
           "day": 5,
+          "row_colour": "#F2EEFB",
           "words": [
-            "unfair",
-            "curious",
-            "creative",
-            "reliable",
-            "mood"
+            "express",
+            "explain",
+            "mention",
+            "admit",
+            "deny"
           ]
         }
       ],
-      "outing_task": {
-        "en": "You are very kind.",
-        "scene_zh": "讚人"
+      "saturday": {
+        "weekly_review": true,
+        "grammar": "g21",
+        "story": "deferred"
       },
-      "polysemy_notes": {},
-      "grammar": "g21"
+      "grammar": "g21",
+      "cat_unlock": null,
+      "followed_by": null
     },
     {
       "id": "t43",
       "no": 7,
       "season": 4,
       "week": 7,
-      "zh": "自然",
-      "en": "Nature",
+      "emoji": "❤️",
+      "zh": "人際關係",
+      "short_zh": "關係",
+      "en": "Relationships",
+      "description": "感情同相處：拍拖、婚姻、親戚、爭吵、原諒、信任同妥協。",
+      "description_en": "Relationships — dating, marriage, relatives, quarrels, kindness, loyalty and compromise.",
+      "icon": null,
       "word_count": 25,
       "days": [
         {
           "day": 1,
+          "row_colour": "#FFF3E0",
           "words": [
-            "nature",
-            "tree",
-            "flower",
-            "river",
-            "lake"
+            "relationship",
+            "friendship",
+            "partner",
+            "boyfriend",
+            "girlfriend"
           ]
         },
         {
           "day": 2,
+          "row_colour": "#FDEBF0",
           "words": [
-            "hill",
-            "cloud",
-            "star",
-            "moon",
-            "insect"
+            "marriage",
+            "divorce",
+            "couple",
+            "engagement",
+            "relative"
           ]
         },
         {
           "day": 3,
+          "row_colour": "#EEF7EC",
           "words": [
-            "butterfly",
-            "bee",
-            "leaf",
-            "grass",
-            "stone"
+            "nephew",
+            "niece",
+            "quarrel",
+            "jealous",
+            "kindness"
           ]
         },
         {
           "day": 4,
+          "row_colour": "#EAF4FB",
           "words": [
-            "sand",
-            "soil",
-            "plant",
-            "seed",
-            "grow"
+            "patience",
+            "heart",
+            "kiss",
+            "understand",
+            "conflict"
           ]
         },
         {
           "day": 5,
+          "row_colour": "#F2EEFB",
           "words": [
-            "path",
-            "trail",
-            "valley",
-            "cliff",
-            "cave"
+            "compromise",
+            "loyalty",
+            "bond",
+            "affection",
+            "breakup"
           ]
         }
       ],
-      "outing_task": {
-        "en": "Let us walk in the park.",
-        "scene_zh": "行山／公園"
+      "saturday": {
+        "weekly_review": true,
+        "grammar": null,
+        "story": "deferred"
       },
-      "polysemy_notes": {},
-      "grammar": null
+      "grammar": null,
+      "cat_unlock": null,
+      "followed_by": null
     },
     {
       "id": "t44",
       "no": 8,
       "season": 4,
       "week": 8,
-      "zh": "環保",
-      "en": "Environment",
+      "emoji": "🎯",
+      "zh": "計劃同目標",
+      "short_zh": "計劃",
+      "en": "Plans & Goals",
+      "description": "訂計劃同追目標：目標、時間表、進步、習慣、優先次序、動力。",
+      "description_en": "Plans and goals — targets, schedules, progress, habits, priorities and motivation.",
+      "icon": null,
       "word_count": 25,
       "days": [
         {
           "day": 1,
+          "row_colour": "#FFF3E0",
           "words": [
-            "environment",
-            "earth",
-            "planet",
-            "cleanup",
-            "protect"
+            "plan",
+            "goal",
+            "target",
+            "schedule",
+            "achieve"
           ]
         },
         {
           "day": 2,
+          "row_colour": "#FDEBF0",
           "words": [
-            "waste",
-            "compost",
-            "litter",
-            "pollution",
-            "solar"
+            "success",
+            "challenge",
+            "opportunity",
+            "progress",
+            "habit"
           ]
         },
         {
           "day": 3,
+          "row_colour": "#EEF7EC",
           "words": [
-            "energy",
-            "reuse",
-            "reduce",
-            "landfill",
-            "glass"
+            "improve",
+            "organise",
+            "arrange",
+            "intention",
+            "purpose"
           ]
         },
         {
           "day": 4,
+          "row_colour": "#EAF4FB",
           "words": [
-            "metal",
-            "eco",
-            "climate",
-            "flood",
-            "drought"
+            "resolve",
+            "prioritise",
+            "focus",
+            "motivate",
+            "inspire"
           ]
         },
         {
           "day": 5,
+          "row_colour": "#F2EEFB",
           "words": [
-            "smoke",
-            "fume",
-            "emission",
-            "organic",
-            "wildlife"
+            "ambition",
+            "milestone",
+            "strategy",
+            "objective",
+            "effort"
           ]
         }
       ],
-      "outing_task": {
-        "en": "Please recycle this.",
-        "scene_zh": "分類回收"
+      "saturday": {
+        "weekly_review": true,
+        "grammar": "g22",
+        "story": "deferred"
       },
-      "polysemy_notes": {},
-      "grammar": "g22"
+      "grammar": "g22",
+      "cat_unlock": null,
+      "followed_by": "m11"
     },
     {
       "id": "t45",
       "no": 9,
       "season": 4,
       "week": 9,
-      "zh": "社區",
-      "en": "Community",
+      "emoji": "🎉",
+      "zh": "節日同慶祝",
+      "short_zh": "節日",
+      "en": "Festivals & Celebrations",
+      "description": "節日同慶祝場合：聖誕、復活節、萬聖節、遊行、禮物、邀請。",
+      "description_en": "Festivals and celebrations — Christmas, Easter, Halloween, parades, gifts and invitations.",
+      "icon": null,
       "word_count": 25,
       "days": [
         {
           "day": 1,
+          "row_colour": "#FFF3E0",
           "words": [
-            "suburb",
-            "mayor",
-            "local",
-            "district",
-            "council"
+            "festival",
+            "celebrate",
+            "celebration",
+            "event",
+            "occasion"
           ]
         },
         {
           "day": 2,
+          "row_colour": "#FDEBF0",
           "words": [
-            "lane",
-            "museum",
-            "garden",
-            "service",
-            "public"
+            "christmas",
+            "easter",
+            "halloween",
+            "carnival",
+            "costume"
           ]
         },
         {
           "day": 3,
+          "row_colour": "#EEF7EC",
           "words": [
-            "private",
-            "safety",
-            "danger",
-            "citizen",
-            "nation"
+            "fireworks",
+            "parade",
+            "balloon",
+            "decoration",
+            "confetti"
           ]
         },
         {
           "day": 4,
+          "row_colour": "#EAF4FB",
           "words": [
-            "country",
-            "society",
-            "law",
-            "welfare",
-            "system"
+            "ceremony",
+            "wedding",
+            "gift",
+            "present",
+            "invite"
           ]
         },
         {
           "day": 5,
+          "row_colour": "#F2EEFB",
           "words": [
-            "unity",
-            "harmony",
-            "flag",
-            "anthem",
-            "global"
+            "invitation",
+            "guest",
+            "host",
+            "dragon",
+            "lantern"
           ]
         }
       ],
-      "outing_task": {
-        "en": "I live in this estate.",
-        "scene_zh": "介紹屋苑"
+      "saturday": {
+        "weekly_review": true,
+        "grammar": null,
+        "story": "deferred"
       },
-      "polysemy_notes": {},
-      "grammar": null
+      "grammar": null,
+      "cat_unlock": null,
+      "followed_by": null
     },
     {
       "id": "t46",
       "no": 10,
       "season": 4,
       "week": 10,
-      "zh": "禮貌",
-      "en": "Manners",
+      "emoji": "🏙️",
+      "zh": "香港文化",
+      "short_zh": "香港",
+      "en": "Hong Kong Culture",
+      "description": "香港日常同本地文化：維港、霓虹、點心、天星碼頭風、八達通、廟街味、龍舟月餅。",
+      "description_en": "Hong Kong culture — harbour, neon, dim sum, local snacks, temples, dragon boat and lai see.",
+      "icon": null,
       "word_count": 25,
       "days": [
         {
           "day": 1,
+          "row_colour": "#FFF3E0",
           "words": [
-            "thanks",
-            "pardon",
-            "apology",
-            "excuse",
-            "regret"
+            "harbour",
+            "skyline",
+            "neon",
+            "dimsum",
+            "pier"
           ]
         },
         {
           "day": 2,
+          "row_colour": "#FDEBF0",
           "words": [
-            "manner",
-            "gentle",
-            "considerate",
-            "compliment",
-            "blame"
+            "cheongsam",
+            "junk",
+            "mahjong",
+            "karaoke",
+            "peak"
           ]
         },
         {
           "day": 3,
+          "row_colour": "#EEF7EC",
           "words": [
-            "praise",
-            "request",
-            "sincere",
-            "humble",
-            "courteous"
+            "octopus",
+            "wonton",
+            "congee",
+            "bao",
+            "eggtart"
           ]
         },
         {
           "day": 4,
+          "row_colour": "#EAF4FB",
           "words": [
-            "respectful",
-            "thoughtful",
-            "fair",
-            "equal",
-            "etiquette"
+            "eggwaffle",
+            "wetmarket",
+            "temple",
+            "incense",
+            "dragonboat"
           ]
         },
         {
           "day": 5,
+          "row_colour": "#F2EEFB",
           "words": [
-            "courtesy",
-            "politeness",
-            "gratitude",
-            "appreciation",
-            "kindness"
+            "mooncake",
+            "laisee",
+            "yumcha",
+            "promenade",
+            "doubledecker"
           ]
         }
       ],
-      "outing_task": {
-        "en": "Thank you very much.",
-        "scene_zh": "道謝"
+      "saturday": {
+        "weekly_review": true,
+        "grammar": "g23",
+        "story": "deferred"
       },
-      "polysemy_notes": {},
-      "grammar": "g23"
+      "grammar": "g23",
+      "cat_unlock": null,
+      "followed_by": null
     },
     {
       "id": "t47",
       "no": 11,
       "season": 4,
       "week": 11,
-      "zh": "相處",
-      "en": "Getting Along",
+      "emoji": "🌟",
+      "zh": "人生經歷",
+      "short_zh": "經歷",
+      "en": "Life Experiences",
+      "description": "成長同人生體會：童年、勇氣、遺憾、獨立、失敗成功、堅持同反思。",
+      "description_en": "Life experiences — childhood, courage, regret, independence, failure, wisdom and resilience.",
+      "icon": null,
       "word_count": 25,
       "days": [
         {
           "day": 1,
+          "row_colour": "#FFF3E0",
           "words": [
-            "faith",
-            "promise",
-            "keep",
-            "betray",
-            "loan"
+            "experience",
+            "memory",
+            "childhood",
+            "courage",
+            "adventure"
           ]
         },
         {
           "day": 2,
+          "row_colour": "#FDEBF0",
           "words": [
-            "owe",
-            "repay",
-            "quarrel",
-            "peace",
-            "include"
+            "journey",
+            "regret",
+            "independent",
+            "mature",
+            "grow"
           ]
         },
         {
           "day": 3,
+          "row_colour": "#EEF7EC",
           "words": [
-            "upset",
-            "glad",
-            "pleased",
-            "delighted",
-            "disappointed"
+            "routine",
+            "failure",
+            "achievement",
+            "reflection",
+            "wisdom"
           ]
         },
         {
           "day": 4,
+          "row_colour": "#EAF4FB",
           "words": [
-            "relieved",
-            "jealous",
-            "envious",
-            "sympathy",
-            "empathy"
+            "bravery",
+            "struggle",
+            "overcome",
+            "persistence",
+            "resilience"
           ]
         },
         {
           "day": 5,
+          "row_colour": "#F2EEFB",
           "words": [
-            "comfort",
-            "cuddle",
-            "wave",
-            "nod",
-            "shake"
+            "confidence",
+            "identity",
+            "personality",
+            "character",
+            "lesson"
           ]
         }
       ],
-      "outing_task": {
-        "en": "I am sorry.",
-        "scene_zh": "道歉／相處"
+      "saturday": {
+        "weekly_review": true,
+        "grammar": null,
+        "story": "deferred"
       },
-      "polysemy_notes": {},
-      "grammar": null
+      "grammar": null,
+      "cat_unlock": null,
+      "followed_by": null
     },
     {
       "id": "t48",
       "no": 12,
       "season": 4,
       "week": 12,
-      "zh": "夢想同未來",
-      "en": "Dreams and Future",
+      "emoji": "🚀",
+      "zh": "未來同夢想",
+      "short_zh": "未來",
+      "en": "Future & Dreams",
+      "description": "未來想像同夢想：發明、太空、創業、探索、願景——全年收尾。",
+      "description_en": "Future and dreams — invent, space, startups, explore, vision; year wrap lead-in.",
+      "icon": null,
       "word_count": 25,
       "days": [
         {
           "day": 1,
+          "row_colour": "#FFF3E0",
           "words": [
-            "ambition",
-            "effort",
-            "courage",
-            "confidence",
-            "passion"
+            "future",
+            "dream",
+            "invent",
+            "create",
+            "imagination"
           ]
         },
         {
           "day": 2,
+          "row_colour": "#FDEBF0",
           "words": [
-            "goal",
-            "choice",
-            "decision",
-            "opportunity",
-            "chance"
+            "astronaut",
+            "scientist",
+            "entrepreneur",
+            "invention",
+            "discovery"
           ]
         },
         {
           "day": 3,
+          "row_colour": "#EEF7EC",
           "words": [
-            "luck",
-            "fortune",
-            "destiny",
-            "freedom",
-            "rights"
+            "space",
+            "rocket",
+            "universe",
+            "galaxy",
+            "innovate"
           ]
         },
         {
           "day": 4,
+          "row_colour": "#EAF4FB",
           "words": [
-            "belief",
-            "legend",
-            "hero",
-            "heroine",
-            "symbol"
+            "explore",
+            "colonise",
+            "satellite",
+            "orbit",
+            "mission"
           ]
         },
         {
           "day": 5,
+          "row_colour": "#F2EEFB",
           "words": [
-            "honour",
-            "pride",
-            "shame",
-            "certificate",
-            "success"
+            "vision",
+            "fortune",
+            "destiny",
+            "wish",
+            "pioneer"
           ]
         }
       ],
-      "outing_task": {
-        "en": "I want to be a teacher.",
-        "scene_zh": "講志願"
+      "saturday": {
+        "weekly_review": true,
+        "grammar": "g24",
+        "story": "deferred"
       },
-      "polysemy_notes": {
-        "interest": "本季＝興趣；另外有「利息」"
-      },
-      "grammar": "g24"
+      "grammar": "g24",
+      "cat_unlock": null,
+      "followed_by": "m12"
     }
+  ],
+  "monthly_reviews": [
+    {
+      "id": "m10",
+      "no": 1,
+      "after_week": 4,
+      "themes": [
+        "t37",
+        "t38",
+        "t39",
+        "t40"
+      ],
+      "word_pool": 100,
+      "questions": 30,
+      "match_groups": 3,
+      "xp": 40,
+      "cat_unlock": null
+    },
+    {
+      "id": "m11",
+      "no": 2,
+      "after_week": 8,
+      "themes": [
+        "t41",
+        "t42",
+        "t43",
+        "t44"
+      ],
+      "word_pool": 100,
+      "questions": 30,
+      "match_groups": 3,
+      "xp": 40,
+      "cat_unlock": null
+    },
+    {
+      "id": "m12",
+      "no": 3,
+      "after_week": 12,
+      "themes": [
+        "t45",
+        "t46",
+        "t47",
+        "t48"
+      ],
+      "word_pool": 100,
+      "questions": 30,
+      "match_groups": 3,
+      "xp": 40,
+      "cat_unlock": null
+    }
+  ],
+  "quarterly_review": {
+    "id": "q4",
+    "week": 13,
+    "calendar_week": 52,
+    "emoji": "❄️",
+    "zh": "季度複習週＋年度大複習",
+    "map_label_zh": "窩喺被竇夠晒未 · 畢業在望",
+    "review_days": [
+      {
+        "day": 1,
+        "themes": [
+          "t37",
+          "t38",
+          "t39"
+        ]
+      },
+      {
+        "day": 2,
+        "themes": [
+          "t40",
+          "t41",
+          "t42"
+        ]
+      },
+      {
+        "day": 3,
+        "themes": [
+          "t43",
+          "t44"
+        ]
+      },
+      {
+        "day": 4,
+        "themes": [
+          "t45",
+          "t46"
+        ]
+      },
+      {
+        "day": 5,
+        "themes": [
+          "t47",
+          "t48"
+        ]
+      }
+    ],
+    "review_day_questions": 15,
+    "review_day_xp": 20,
+    "exam": {
+      "day": 6,
+      "zh": "季度大考＋年度大考",
+      "word_pool": 300,
+      "questions": 40,
+      "match_groups": 4,
+      "xp": 60,
+      "year_wrap": {
+        "zh": "全年 1,200 字收官",
+        "note": "完成 q4／累積 words_learned=1200 後解鎖路徑指向 baubau（豹豹）；唔係 season_complete:4。"
+      }
+    },
+    "cat_unlock": {
+      "cat": "baubau",
+      "trigger": "words_learned_1200_after_year_wrap",
+      "note": "豹豹（孟加拉豹貓）unlocks when the learner reaches 1,200 words (year wrap after q4), not a Season-4-only season_complete flag."
+    }
+  },
+  "notes_for_bot": [
+    "theme week 係季內 1–12；日曆週 = 39 + week（即 40–51 學習、52 複習）。calendar_week_start=40。",
+    "words[].week 寫季內 week（1–12），同 S1–S3 一致。",
+    "文法預留 g19–g24（雙數週）：t38 被動、t40 if 第一類、t42 關係代名詞、t44 動名詞vs不定詞、t46 有禮貌問法、t48 -ed/-ing 形容詞。本包只做 word-plan，未寫 grammar JSON。",
+    "舊 handoff-s4 stub（朋友／派對／性格…）已作廢；主題以 DESIGN-CONCEPT-v2 為準。",
+    "t42 必須含 agree／suggest／discuss（S3 預留）。",
+    "英式拼寫：organise／prioritise／colonise／behaviour／hospitalisation 等。",
+    "解鎖路徑：q4 年度收官 → baubau（豹豹，words_learned 1200）。",
+    "id 必須 = normalized headword，且唔好撞 s1s2s3-exclude-words.txt。",
+    "HK 主題用單字 headword：dimsum／yumcha／laisee／eggtart／eggwaffle／dragonboat／wetmarket／doubledecker；tip 稍後補港式用法。"
   ]
 }

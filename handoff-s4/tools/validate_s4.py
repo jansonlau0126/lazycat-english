@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-"""Validate Season 4 handoff data. Run from handoff-s4/:  python3 tools/validate_s4.py"""
+"""Validate Season 4 polished words + themes + grammar."""
 import json, os, re, sys
+from pathlib import Path
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 fails = []
@@ -11,9 +13,11 @@ def check(cond, msg):
 
 W = json.load(open("data/season4-words.json", encoding="utf-8"))
 T = json.load(open("data/season4-themes.json", encoding="utf-8"))
-G = json.load(open("data/season4-grammar.json", encoding="utf-8"))
-PREV = set(x.strip().lower() for x in open("data/s1s2s3-exclude-words.txt", encoding="utf-8") if x.strip() and not x.startswith("#"))
-FORBIDDEN = {"basis", "method", "flair", "justice", "ally", "remark", "dedication", "steady", "cable", "socket", "plug"}
+EXCL = set(
+    x.strip().lower()
+    for x in open("data/s1s2s3-exclude-words.txt", encoding="utf-8")
+    if x.strip()
+)
 
 REQ = [
     "id", "season", "week", "theme_id", "theme_zh", "theme_en",
@@ -21,53 +25,88 @@ REQ = [
     "example_en", "example_zh", "icon", "emoji", "abstract", "icon_idea",
     "explain_yue", "tip",
 ]
+
 check(len(W) == 300, f"expected 300 words, got {len(W)}")
 check(len({w["id"] for w in W}) == 300, "word ids not unique")
 check(len({w["word"].lower() for w in W}) == 300, "words not unique")
-words = {w["word"].lower() for w in W}
-check(not (words & PREV), f"collides with earlier seasons: {sorted(words & PREV)[:20]}")
-check(not (words & FORBIDDEN), f"off-theme words: {sorted(words & FORBIDDEN)}")
-for need in ("flatmate", "wrapping", "bow", "include", "passion", "rights"):
-    check(need in words, f"missing v1.1 word {need}")
+coll = {w["word"].lower() for w in W} & EXCL
+check(not coll, f"collides with S1/S2/S3: {sorted(coll)[:20]}")
+
+# reserved S3 leftovers that must appear
+for need in ("agree", "suggest", "discuss"):
+    check(need in {w["word"].lower() for w in W}, f"missing reserved word {need}")
+
 for w in W:
     for k in REQ:
         check(k in w, f"{w.get('id')}: missing {k}")
     check(w["season"] == 4, f"{w['id']}: season != 4")
     check(w["id"] == w["word"], f"{w.get('id')}: id != word")
     check(1 <= w["day"] <= 5 and 1 <= w["order"] <= 5, f"{w['id']}: bad day/order")
+    check(1 <= w["week"] <= 12, f"{w['id']}: bad week")
     check(isinstance(w["ipa"], str) and w["ipa"].startswith("/") and w["ipa"].endswith("/"), f"{w['id']}: bad IPA")
-    check(bool(re.search(r"\b" + re.escape(w["word"]) + r"\b", w["example_en"], re.I)), f"{w['id']}: example missing headword")
-    check(w.get("icon") is None, f"{w['id']}: icon must stay null")
+    check(bool(re.search(r"\b" + re.escape(w["word"]) + r"\b", w["example_en"], re.I)),
+          f"{w['id']}: example_en must contain headword")
+    check(bool(w.get("emoji")), f"{w['id']}: empty emoji")
     check(isinstance(w["abstract"], bool), f"{w['id']}: abstract not bool")
-    check(w.get("explain_yue") and w.get("tip") and w.get("example_zh"), f"{w['id']}: empty copy")
+    check(bool(w.get("explain_yue")), f"{w['id']}: empty explain_yue")
+    check(bool(w.get("tip")), f"{w['id']}: empty tip")
+    check(bool(w.get("example_zh")), f"{w['id']}: empty example_zh")
+    check(bool(w.get("icon")), f"{w['id']}: empty icon")
+    check(Path(w["icon"]).name == w["id"] + ".png" or w["icon"].endswith("/" + w["id"] + ".png"), f"{w['id']}: icon filename should match id")
+    icon_path = Path("assets/icons") / f"{w['id']}.png"
+    check(icon_path.exists(), f"{w['id']}: missing {icon_path}")
 
 themes = T["themes"]
 check(len(themes) == 12, f"expected 12 themes, got {len(themes)}")
+check(T.get("season") == 4, "themes.season != 4")
+check(T.get("zh") == "窩喺被竇", "themes.zh must be 窩喺被竇")
+check(T.get("en") == "Cosy in the Den", "themes.en must be Cosy in the Den")
+expected = [
+    ("t37", "環境同回收"), ("t38", "新聞同社會"), ("t39", "科技"), ("t40", "安全同緊急情況"),
+    ("t41", "規則同禮貌"), ("t42", "表達意見"), ("t43", "人際關係"), ("t44", "計劃同目標"),
+    ("t45", "節日同慶祝"), ("t46", "香港文化"), ("t47", "人生經歷"), ("t48", "未來同夢想"),
+]
+for th, (eid, ezh) in zip(themes, expected):
+    check(th["id"] == eid and th["zh"] == ezh, f"theme mismatch {th.get('id')}/{th.get('zh')}")
+
 for t in themes:
     tw = [w for w in W if w["theme_id"] == t["id"]]
-    check(len(tw) == 25, f"{t['id']}: {len(tw)} words")
-    check(t.get("outing_task", {}).get("en") and t.get("outing_task", {}).get("scene_zh"), f"{t['id']}: outing missing")
+    check(len(tw) == 25, f"{t['id']}: {len(tw)} words, expected 25")
     for d in range(1, 6):
         dw = sorted((w for w in tw if w["day"] == d), key=lambda w: w["order"])
         check([w["order"] for w in dw] == [1, 2, 3, 4, 5], f"{t['id']} day {d}: orders")
-        check([w["id"] for w in dw] == t["days"][d - 1]["words"], f"{t['id']} day {d}: theme mismatch")
+        check([w["id"] for w in dw] == t["days"][d - 1]["words"], f"{t['id']} day {d}: theme/words mismatch")
     check(all(w["week"] == t["week"] for w in tw), f"{t['id']}: week mismatch")
 
-by = {w["word"]: w for w in W}
-for word, bit in {"leave": "放假", "interest": "興趣", "flatmate": "同住", "bow": "蝴蝶結", "wrapping": "包裝", "include": "包括", "passion": "熱", "rights": "權利"}.items():
-    check(bit in by[word]["tip"] or bit in by[word]["explain_yue"], f"{word}: missing note {bit}")
+gpath = "data/season4-grammar.json"
+check(os.path.exists(gpath), "missing season4-grammar.json")
+G = json.load(open(gpath, encoding="utf-8"))
+lessons = G.get("lessons") or []
+check(G.get("season") == 4, "grammar.season != 4")
+check(len(lessons) == 6, "expected 6 grammar lessons")
+check([g["id"] for g in lessons] == ["g19","g20","g21","g22","g23","g24"], "grammar ids must be g19–g24")
+check([g["week"] for g in lessons] == [2, 4, 6, 8, 10, 12], "grammar weeks must be 2,4,...,12")
+for g in lessons:
+    check(g.get("intro"), f"{g['id']}: missing intro")
+    check(len(g.get("intro") or []) == 2, f"{g['id']}: intro must have 2 cards")
+    check(g.get("exercises"), f"{g['id']}: missing exercises")
+    check(len(g.get("exercises") or []) == 5, f"{g['id']}: need 5 exercises")
+    types = [ex.get("t") for ex in g["exercises"]]
+    check(types == ["mc","mc","fill","fill","tiles"], f"{g['id']}: exercise types {types}")
 
-check(len(G["lessons"]) == 6, "expected 6 grammar lessons")
-check([g["id"] for g in G["lessons"]] == ["g19", "g20", "g21", "g22", "g23", "g24"], "grammar ids")
-check([g["week"] for g in G["lessons"]] == [2, 4, 6, 8, 10, 12], "grammar weeks")
-for g in G["lessons"]:
-    check(g.get("intro") and g.get("exercises"), f"{g['id']}: incomplete")
-
-copy = json.load(open("../content/s1-s4-copy.json", encoding="utf-8"))
-check(len(copy["outings"]) == 48, "expected 48 outing tasks in the copy file")
-check(len(copy["diaries"]) == 4, "expected 4 season diaries")
+# monthly + q4
+check(len(T.get("monthly_reviews") or []) == 3, "need m10–m12")
+check([m["id"] for m in T["monthly_reviews"]] == ["m10","m11","m12"], "monthly ids")
+q = T.get("quarterly_review") or {}
+check(q.get("id") == "q4", "quarterly id q4")
+unlock = q.get("cat_unlock") or {}
+check(unlock.get("cat") == "baubau", "q4 should unlock baubau")
 
 if fails:
-    print("FAILED:\n  " + "\n  ".join(fails))
+    print("FAIL:")
+    for f in fails[:40]:
+        print("-", f)
+    if len(fails) > 40:
+        print(f"... +{len(fails)-40} more")
     sys.exit(1)
-print(f"OK: {len(W)} words, 12 themes x 25, grammar {len(G['lessons'])} lessons; v1.1 words kept; no earlier collisions.")
+print("OK: Season 4 — 300 words, 12 themes, g19–g24, icons, m10–m12, q4/baubau")

@@ -19,8 +19,8 @@
   },
   {
    "season": 4,
-   "place_zh": "年宵／中秋",
-   "season_zh": "一齊過節"
+   "place_zh": "被竇／冬天",
+   "season_zh": "窩喺被竇"
   }
  ],
  "monthly": {
@@ -56,9 +56,9 @@
   },
   {
    "season": 4,
-   "place_zh": "年宵／中秋",
-   "title": "過節日記",
-   "body": "節日到，講一句祝福或者介紹一個人。年宵、中秋、生日，慢慢嚟。講完可以一齊休息。"
+   "place_zh": "被竇／冬天",
+   "title": "被竇日記",
+   "body": "冬天窩喺被竇，學深入話題：新聞、科技、香港同夢想。學完可以同豹豹一齊休息。"
   }
  ],
  "outings": [
@@ -353,97 +353,97 @@
   {
    "season": 4,
    "theme_id": "t37",
-   "theme_zh": "朋友同社交",
-   "en": "This is my neighbour.",
-   "scene_zh": "介紹鄰居",
+   "theme_zh": "環境同回收",
+   "en": "Let's recycle this bottle.",
+   "scene_zh": "回收膠樽",
    "counts_as": "outing"
   },
   {
    "season": 4,
    "theme_id": "t38",
-   "theme_zh": "派對",
-   "en": "Would you like to come?",
-   "scene_zh": "邀請人",
+   "theme_zh": "新聞同社會",
+   "en": "I read the news today.",
+   "scene_zh": "睇新聞",
    "counts_as": "outing"
   },
   {
    "season": 4,
    "theme_id": "t39",
-   "theme_zh": "生日同禮物",
-   "en": "This gift is for you.",
-   "scene_zh": "送禮物",
+   "theme_zh": "科技",
+   "en": "Can you help me update the app?",
+   "scene_zh": "更新 app",
    "counts_as": "outing"
   },
   {
    "season": 4,
    "theme_id": "t40",
-   "theme_zh": "中式節日",
-   "en": "Happy New Year!",
-   "scene_zh": "過年祝賀",
+   "theme_zh": "安全同緊急情況",
+   "en": "Where is the emergency exit?",
+   "scene_zh": "搵緊急出口",
    "counts_as": "outing"
   },
   {
    "season": 4,
    "theme_id": "t41",
-   "theme_zh": "其他節日",
-   "en": "Merry Christmas!",
-   "scene_zh": "聖誕",
+   "theme_zh": "規則同禮貌",
+   "en": "May I come in, please?",
+   "scene_zh": "有禮貌問路",
    "counts_as": "outing"
   },
   {
    "season": 4,
    "theme_id": "t42",
-   "theme_zh": "性格",
-   "en": "You are very kind.",
-   "scene_zh": "讚人",
+   "theme_zh": "表達意見",
+   "en": "I agree with your idea.",
+   "scene_zh": "表達同意",
    "counts_as": "outing"
   },
   {
    "season": 4,
    "theme_id": "t43",
-   "theme_zh": "自然",
-   "en": "Let us walk in the park.",
-   "scene_zh": "行山／公園",
+   "theme_zh": "人際關係",
+   "en": "She is a good friend.",
+   "scene_zh": "講朋友",
    "counts_as": "outing"
   },
   {
    "season": 4,
    "theme_id": "t44",
-   "theme_zh": "環保",
-   "en": "Please recycle this.",
-   "scene_zh": "分類回收",
+   "theme_zh": "計劃同目標",
+   "en": "My goal is to improve English.",
+   "scene_zh": "講目標",
    "counts_as": "outing"
   },
   {
    "season": 4,
    "theme_id": "t45",
-   "theme_zh": "社區",
-   "en": "I live in this estate.",
-   "scene_zh": "介紹屋苑",
+   "theme_zh": "節日同慶祝",
+   "en": "Happy Mid-Autumn Festival!",
+   "scene_zh": "節日祝賀",
    "counts_as": "outing"
   },
   {
    "season": 4,
    "theme_id": "t46",
-   "theme_zh": "禮貌",
-   "en": "Thank you very much.",
-   "scene_zh": "道謝",
+   "theme_zh": "香港文化",
+   "en": "Let's go yumcha this Sunday.",
+   "scene_zh": "約飲茶",
    "counts_as": "outing"
   },
   {
    "season": 4,
    "theme_id": "t47",
-   "theme_zh": "相處",
-   "en": "I am sorry.",
-   "scene_zh": "道歉／相處",
+   "theme_zh": "人生經歷",
+   "en": "I learned a lesson from that.",
+   "scene_zh": "講人生一課",
    "counts_as": "outing"
   },
   {
    "season": 4,
    "theme_id": "t48",
-   "theme_zh": "夢想同未來",
-   "en": "I want to be a teacher.",
-   "scene_zh": "講志願",
+   "theme_zh": "未來同夢想",
+   "en": "I dream of exploring space.",
+   "scene_zh": "講夢想",
    "counts_as": "outing"
   }
  ]
