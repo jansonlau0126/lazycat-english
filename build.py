@@ -36,7 +36,11 @@ def copy_dir(name: str) -> None:
 
 
 def icon_sources():
-    return [SRC / "icons", ROOT / "handoff-s2" / "assets" / "icons"]
+    return [
+        SRC / "icons",
+        ROOT / "handoff-s2" / "assets" / "icons",
+        ROOT / "handoff-s3" / "assets" / "icons",
+    ]
 
 
 def find_icon(stem: str):
@@ -186,14 +190,14 @@ PACKS = [
 SHORT_ZH = {
     "t13": "數字", "t14": "出街", "t15": "交通", "t16": "城市", "t17": "購物", "t18": "金錢",
     "t19": "餐廳", "t20": "健康", "t21": "運動", "t22": "興趣", "t23": "旅行", "t24": "手機",
-    "t25": "學校", "t26": "人物", "t27": "文具", "t28": "學科", "t29": "學習", "t30": "功課",
-    "t31": "規矩", "t32": "職業", "t33": "求職", "t34": "時間", "t35": "升學", "t36": "合作",
+    "t25": "學校", "t26": "科目", "t27": "考試", "t28": "朋友", "t29": "外表", "t30": "課外",
+    "t31": "家務", "t32": "煮飯", "t33": "社區", "t34": "電影", "t35": "職業", "t36": "辦公",
     "t37": "朋友", "t38": "派對", "t39": "禮物", "t40": "節日", "t41": "其他", "t42": "性格",
     "t43": "自然", "t44": "環保", "t45": "社區", "t46": "禮貌", "t47": "相處", "t48": "夢想",
 }
 THEME_EMOJI = {
-    "t25": "🏫", "t26": "👩‍🏫", "t27": "✏️", "t28": "📚", "t29": "📝", "t30": "📋",
-    "t31": "🤫", "t32": "💼", "t33": "🏢", "t34": "⏰", "t35": "🎓", "t36": "🤝",
+    "t25": "🏫", "t26": "📚", "t27": "📝", "t28": "🤝", "t29": "🪞", "t30": "🏅",
+    "t31": "🧹", "t32": "🍳", "t33": "🏘️", "t34": "🎬", "t35": "💼", "t36": "📧",
     "t37": "👋", "t38": "🎉", "t39": "🎁", "t40": "🏮", "t41": "🎄", "t42": "🙂",
     "t43": "🌿", "t44": "♻️", "t45": "🏘️", "t46": "🙏", "t47": "💬", "t48": "🌟",
 }
@@ -371,6 +375,9 @@ def merge_course() -> tuple:
     missing_s2 = [w["id"] for w in words if w.get("season") == 2 and not w.get("icon")]
     if missing_s2:
         raise SystemExit(f"season 2 missing icons: {missing_s2[:8]} ({len(missing_s2)})")
+    missing_s3 = [w["id"] for w in words if w.get("season") == 3 and not w.get("icon")]
+    if missing_s3:
+        raise SystemExit(f"season 3 missing icons: {missing_s3[:8]} ({len(missing_s3)})")
     copy = _load("content/s1-s4-copy.json")
     if len(copy.get("outings") or []) != 48 or len(copy.get("diaries") or []) != 4:
         raise SystemExit("copy must have 48 outings and 4 diaries")
@@ -429,12 +436,15 @@ def main() -> None:
     OUT.mkdir(exist_ok=True)
     for name in ("cats", "poses", "icons", "icons-svg", "meows"):
         copy_dir(name)
-    extra_icons = ROOT / "handoff-s2" / "assets" / "icons"
-    if extra_icons.is_dir():
-        dest = OUT / "icons"
-        dest.mkdir(exist_ok=True)
-        for png in extra_icons.glob("*.png"):
-            shutil.copy2(png, dest / png.name)
+    for extra_icons in (
+        ROOT / "handoff-s2" / "assets" / "icons",
+        ROOT / "handoff-s3" / "assets" / "icons",
+    ):
+        if extra_icons.is_dir():
+            dest = OUT / "icons"
+            dest.mkdir(exist_ok=True)
+            for png in extra_icons.glob("*.png"):
+                shutil.copy2(png, dest / png.name)
     if FONTS.exists():
         shutil.rmtree(FONTS)
     lic = FONTS / "licenses"
