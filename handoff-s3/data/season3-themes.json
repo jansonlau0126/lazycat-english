@@ -1,829 +1,1098 @@
 {
- "season": 3,
- "zh": "返學返工",
- "en": "School & Work",
- "emoji": "🏫",
- "version": "1.1",
- "level": "A1→A2",
- "learning_weeks": 12,
- "total_words": 300,
- "unlock_note": "完成第 2 季先解鎖呢季",
- "themes": [
-  {
-   "id": "t25",
-   "no": 1,
-   "season": 3,
-   "week": 1,
-   "zh": "學校地方",
-   "en": "School Places",
-   "word_count": 25,
-   "days": [
+  "season": 3,
+  "zh": "返學返工",
+  "en": "Back to School & Work",
+  "emoji": "🍂",
+  "subtitle_zh": "學校先、職場入門放最尾",
+  "weeks": "27–39",
+  "level": "A2",
+  "learning_weeks": 12,
+  "review_week": 13,
+  "calendar_week_start": 27,
+  "total_words": 300,
+  "path_order": [
+    "t25",
+    "t26",
+    "t27",
+    "t28",
+    "t29",
+    "t30",
+    "t31",
+    "t32",
+    "t33",
+    "t34",
+    "t35",
+    "t36"
+  ],
+  "themes": [
     {
-     "day": 1,
-     "words": [
-      "school",
-      "classroom",
-      "playground",
-      "canteen",
-      "hall"
-     ]
+      "id": "t25",
+      "no": 1,
+      "season": 3,
+      "week": 1,
+      "emoji": "🏫",
+      "zh": "學校",
+      "short_zh": "學校",
+      "en": "School",
+      "description": "學校地方、人物同基本文具：課室、老師、學生、黑板、鉛筆、飯堂、操場。",
+      "description_en": "School places, people and basic stationery — classroom, teachers, desk tools, canteen and playground.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "school",
+            "classroom",
+            "teacher",
+            "student",
+            "principal"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "blackboard",
+            "whiteboard",
+            "chalk",
+            "marker",
+            "stationery"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "pencil",
+            "pen",
+            "eraser",
+            "ruler",
+            "scissors"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "notebook",
+            "textbook",
+            "folder",
+            "locker",
+            "dictionary"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "canteen",
+            "playground",
+            "corridor",
+            "assembly",
+            "timetable"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": null,
+        "story": "deferred"
+      },
+      "grammar": null,
+      "cat_unlock": null,
+      "followed_by": null
     },
     {
-     "day": 2,
-     "words": [
-      "corridor",
-      "gate",
-      "staffroom",
-      "lab",
-      "toilet"
-     ]
+      "id": "t26",
+      "no": 2,
+      "season": 3,
+      "week": 2,
+      "emoji": "📚",
+      "zh": "科目同溫書",
+      "short_zh": "科目",
+      "en": "Subjects & Studying",
+      "description": "常見中學科目同溫書動作：數學、英文、科學、溫習、生字、串法。",
+      "description_en": "Common secondary subjects and study actions — maths, science, revise, vocabulary and spelling.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "subject",
+            "maths",
+            "english",
+            "chinese",
+            "science"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "history",
+            "geography",
+            "art",
+            "pe",
+            "biology"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "chemistry",
+            "physics",
+            "literature",
+            "ict",
+            "economics"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "study",
+            "revise",
+            "memorise",
+            "summarise",
+            "underline"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "chapter",
+            "paragraph",
+            "sentence",
+            "vocabulary",
+            "spelling"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": "g13",
+        "story": null
+      },
+      "grammar": "g13",
+      "cat_unlock": null,
+      "followed_by": null
     },
     {
-     "day": 3,
-     "words": [
-      "notice",
-      "locker",
-      "timetable",
-      "bell",
-      "break"
-     ]
+      "id": "t27",
+      "no": 3,
+      "season": 3,
+      "week": 3,
+      "emoji": "📝",
+      "zh": "考試同功課",
+      "short_zh": "考試",
+      "en": "Exams & Homework",
+      "description": "考試、測驗、功課、分數、交卷同臨場心情——中學生最常用一套。",
+      "description_en": "Exams, quizzes, homework, marks, submitting work and exam-day feelings.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "exam",
+            "test",
+            "quiz",
+            "homework",
+            "assignment"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "grade",
+            "mark",
+            "result",
+            "pass",
+            "fail"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "essay",
+            "project",
+            "presentation",
+            "worksheet",
+            "draft"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "deadline",
+            "submit",
+            "correct",
+            "mistake",
+            "answer"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "concentrate",
+            "prepare",
+            "confident",
+            "anxious",
+            "pressure"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": null,
+        "story": "deferred"
+      },
+      "grammar": null,
+      "cat_unlock": null,
+      "followed_by": null
     },
     {
-     "day": 4,
-     "words": [
-      "recess",
-      "assembly",
-      "class",
-      "grade",
-      "form"
-     ]
+      "id": "t28",
+      "no": 4,
+      "season": 3,
+      "week": 4,
+      "emoji": "🤝",
+      "zh": "朋友同性格",
+      "short_zh": "朋友",
+      "en": "Friends & Personality",
+      "description": "同學關係同性格形容詞：友善、誠實、有禮貌、幫手、道歉。",
+      "description_en": "Classmates and personality adjectives — kind, honest, polite, helpful, apologise.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "classmate",
+            "kind",
+            "friendly",
+            "brave",
+            "honest"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "polite",
+            "rude",
+            "funny",
+            "clever",
+            "smart"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "silly",
+            "quiet",
+            "loud",
+            "helpful",
+            "caring"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "selfish",
+            "generous",
+            "patient",
+            "loyal",
+            "popular"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "respect",
+            "trust",
+            "encourage",
+            "apologise",
+            "forgive"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": "g14",
+        "story": null
+      },
+      "grammar": "g14",
+      "cat_unlock": null,
+      "followed_by": "m7"
     },
     {
-     "day": 5,
-     "words": [
-      "campus",
-      "entrance",
-      "stairs",
-      "blackboard",
-      "whiteboard"
-     ]
+      "id": "t29",
+      "no": 5,
+      "season": 3,
+      "week": 5,
+      "emoji": "🪞",
+      "zh": "外表",
+      "short_zh": "外表",
+      "en": "Appearance",
+      "description": "外貌形容：高矮肥瘦、頭髮、鬍鬚、眼鏡、靚仔靚女。",
+      "description_en": "Describing looks — height, build, hair, facial features and beauty words.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "tall",
+            "short",
+            "thin",
+            "fat",
+            "slim"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "overweight",
+            "muscular",
+            "curly",
+            "wavy",
+            "bald"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "ponytail",
+            "fringe",
+            "beard",
+            "moustache",
+            "freckles"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "glasses",
+            "pale",
+            "beautiful",
+            "pretty",
+            "handsome"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "young",
+            "old",
+            "appearance",
+            "height",
+            "weight"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": null,
+        "story": "deferred"
+      },
+      "grammar": null,
+      "cat_unlock": null,
+      "followed_by": null
+    },
+    {
+      "id": "t30",
+      "no": 6,
+      "season": 3,
+      "week": 6,
+      "emoji": "🎒",
+      "zh": "課外活動同學會",
+      "short_zh": "課外",
+      "en": "Clubs & Activities",
+      "description": "學會、活動、比賽、獎盃、彩排——學校生活第二現場。",
+      "description_en": "Clubs, sports activities, competitions, awards and rehearsals.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "activity",
+            "member",
+            "captain",
+            "committee",
+            "enrol"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "choir",
+            "orchestra",
+            "debate",
+            "drama",
+            "volunteer"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "scout",
+            "camping",
+            "badminton",
+            "volleyball",
+            "gymnastics"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "medal",
+            "trophy",
+            "award",
+            "competition",
+            "contest"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "performance",
+            "rehearse",
+            "attend",
+            "participate",
+            "interest"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": "g15",
+        "story": null
+      },
+      "grammar": "g15",
+      "cat_unlock": null,
+      "followed_by": null
+    },
+    {
+      "id": "t31",
+      "no": 7,
+      "season": 3,
+      "week": 7,
+      "emoji": "🧹",
+      "zh": "家務",
+      "short_zh": "家務",
+      "en": "Housework",
+      "description": "掃地拖地、抹塵、垃圾回收、洗衣熨衫——屋企幫手用語。",
+      "description_en": "Housework verbs and tools — sweep, mop, rubbish, laundry and detergent.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "housework",
+            "chore",
+            "sweep",
+            "mop",
+            "vacuum"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "dust",
+            "wipe",
+            "scrub",
+            "rinse",
+            "polish"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "dirty",
+            "tidy",
+            "mess",
+            "rubbish",
+            "bin"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "recycle",
+            "laundry",
+            "dry",
+            "iron",
+            "fold"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "broom",
+            "dustpan",
+            "sponge",
+            "detergent",
+            "dishwasher"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": null,
+        "story": "deferred"
+      },
+      "grammar": null,
+      "cat_unlock": null,
+      "followed_by": null
+    },
+    {
+      "id": "t32",
+      "no": 8,
+      "season": 3,
+      "week": 8,
+      "emoji": "🍳",
+      "zh": "煮飯同廚房",
+      "short_zh": "廚房",
+      "en": "Cooking & Kitchen",
+      "description": "廚房工具同煮食動作：食譜、砧板旁動詞、焗爐、鑊、味道。",
+      "description_en": "Kitchen tools and cooking actions beyond Season 1 basics — recipe, oven, wok, steam.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "recipe",
+            "ingredient",
+            "chop",
+            "stir",
+            "mix"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "oven",
+            "stove",
+            "microwave",
+            "kettle",
+            "blender"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "sink",
+            "pot",
+            "pan",
+            "wok",
+            "spatula"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "steam",
+            "grill",
+            "roast",
+            "simmer",
+            "whisk"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "bitter",
+            "sour",
+            "flour",
+            "dough",
+            "apron"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": "g16",
+        "story": null
+      },
+      "grammar": "g16",
+      "cat_unlock": null,
+      "followed_by": "m8"
+    },
+    {
+      "id": "t33",
+      "no": 9,
+      "season": 3,
+      "week": 9,
+      "emoji": "🏘️",
+      "zh": "社區同鄰居",
+      "short_zh": "社區",
+      "en": "Community & Neighbours",
+      "description": "屋苑、鄰居、租務、藥房、行人路——香港社區日常。",
+      "description_en": "Estate living, neighbours, rent, pharmacy and pedestrian life in HK.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "neighbour",
+            "community",
+            "resident",
+            "landlord",
+            "tenant"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "estate",
+            "apartment",
+            "block",
+            "lobby",
+            "stairs"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "elevator",
+            "mailbox",
+            "noticeboard",
+            "facility",
+            "clubhouse"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "pharmacy",
+            "carpark",
+            "pavement",
+            "crossing",
+            "pedestrian"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "rent",
+            "deposit",
+            "noise",
+            "complain",
+            "repair"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": null,
+        "story": "deferred"
+      },
+      "grammar": null,
+      "cat_unlock": null,
+      "followed_by": null
+    },
+    {
+      "id": "t34",
+      "no": 10,
+      "season": 3,
+      "week": 10,
+      "emoji": "🎬",
+      "zh": "電影同音樂",
+      "short_zh": "電影",
+      "en": "Films & Music",
+      "description": "電影類型、演員導演、演唱會、樂隊、歌詞節奏——休閒娛樂詞。",
+      "description_en": "Movies, genres, actors, concerts, bands, lyrics and rhythm.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "movie",
+            "actor",
+            "actress",
+            "director",
+            "producer"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "script",
+            "scene",
+            "stage",
+            "audience",
+            "trailer"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "comedy",
+            "horror",
+            "thriller",
+            "romance",
+            "documentary"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "concert",
+            "musician",
+            "band",
+            "album",
+            "playlist"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "lyrics",
+            "melody",
+            "rhythm",
+            "guitar",
+            "piano"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": "g17",
+        "story": null
+      },
+      "grammar": "g17",
+      "cat_unlock": null,
+      "followed_by": null
+    },
+    {
+      "id": "t35",
+      "no": 11,
+      "season": 3,
+      "week": 11,
+      "emoji": "🧑‍🍳",
+      "zh": "職業",
+      "short_zh": "職業",
+      "en": "Jobs",
+      "description": "常見職業同求職基本詞：工程師、律師、面試、履歷、薪水。（唔搶 S4 表達意見字）",
+      "description_en": "Common jobs and job-hunt basics — engineer, lawyer, interview, resume, salary.",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "job",
+            "work",
+            "career",
+            "occupation",
+            "profession"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "boss",
+            "colleague",
+            "manager",
+            "intern",
+            "staff"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "engineer",
+            "designer",
+            "lawyer",
+            "accountant",
+            "architect"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "driver",
+            "pilot",
+            "firefighter",
+            "police",
+            "journalist"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "interview",
+            "cv",
+            "apply",
+            "hire",
+            "salary"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": null,
+        "story": "deferred"
+      },
+      "grammar": null,
+      "cat_unlock": null,
+      "followed_by": null
+    },
+    {
+      "id": "t36",
+      "no": 12,
+      "season": 3,
+      "week": 12,
+      "emoji": "💼",
+      "zh": "辦公室同電郵",
+      "short_zh": "辦公室",
+      "en": "Office & Emails",
+      "description": "辦公設備同電郵動作：收件箱、回覆、附件、會議、加班。（email／office 字本身已喺 S2，唔重複）",
+      "description_en": "Office tools and email actions — inbox, reply, attachment, meeting, overtime. (Skip S2 email/office headwords.)",
+      "icon": null,
+      "word_count": 25,
+      "days": [
+        {
+          "day": 1,
+          "row_colour": "#FFF3E0",
+          "words": [
+            "inbox",
+            "reply",
+            "forward",
+            "attachment",
+            "recipient"
+          ]
+        },
+        {
+          "day": 2,
+          "row_colour": "#FDEBF0",
+          "words": [
+            "printer",
+            "scanner",
+            "photocopier",
+            "stapler",
+            "paperclip"
+          ]
+        },
+        {
+          "day": 3,
+          "row_colour": "#EEF7EC",
+          "words": [
+            "laptop",
+            "keyboard",
+            "monitor",
+            "document",
+            "file"
+          ]
+        },
+        {
+          "day": 4,
+          "row_colour": "#EAF4FB",
+          "words": [
+            "meeting",
+            "conference",
+            "agenda",
+            "memo",
+            "task"
+          ]
+        },
+        {
+          "day": 5,
+          "row_colour": "#F2EEFB",
+          "words": [
+            "overtime",
+            "commute",
+            "department",
+            "company",
+            "client"
+          ]
+        }
+      ],
+      "saturday": {
+        "weekly_review": true,
+        "grammar": "g18",
+        "story": null
+      },
+      "grammar": "g18",
+      "cat_unlock": null,
+      "followed_by": "m9"
     }
-   ],
-   "outing_task": {
-    "en": "Where is the canteen?",
-    "scene_zh": "學校問飯堂"
-   },
-   "polysemy_notes": {
-    "break": "本季＝小息；另外有「打破／休息」",
-    "class": "S3＝班；另外有「階級」",
-    "grade": "S3＝年級／分數相關",
-    "form": "本季＝年級（Form 1）；另外有「表格」"
-   },
-   "grammar": null
+  ],
+  "monthly_reviews": [
+    {
+      "id": "m7",
+      "no": 1,
+      "after_week": 4,
+      "themes": [
+        "t25",
+        "t26",
+        "t27",
+        "t28"
+      ],
+      "word_pool": 100,
+      "questions": 30,
+      "match_groups": 3,
+      "xp": 40,
+      "cat_unlock": null
+    },
+    {
+      "id": "m8",
+      "no": 2,
+      "after_week": 8,
+      "themes": [
+        "t29",
+        "t30",
+        "t31",
+        "t32"
+      ],
+      "word_pool": 100,
+      "questions": 30,
+      "match_groups": 3,
+      "xp": 40,
+      "cat_unlock": null
+    },
+    {
+      "id": "m9",
+      "no": 3,
+      "after_week": 12,
+      "themes": [
+        "t33",
+        "t34",
+        "t35",
+        "t36"
+      ],
+      "word_pool": 100,
+      "questions": 30,
+      "match_groups": 3,
+      "xp": 40,
+      "cat_unlock": null
+    }
+  ],
+  "quarterly_review": {
+    "id": "q3",
+    "week": 13,
+    "calendar_week": 39,
+    "emoji": "🍂",
+    "zh": "季度複習週",
+    "map_label_zh": "返學返工夠晒未",
+    "review_days": [
+      {
+        "day": 1,
+        "themes": [
+          "t25",
+          "t26",
+          "t27"
+        ]
+      },
+      {
+        "day": 2,
+        "themes": [
+          "t28",
+          "t29",
+          "t30"
+        ]
+      },
+      {
+        "day": 3,
+        "themes": [
+          "t31",
+          "t32"
+        ]
+      },
+      {
+        "day": 4,
+        "themes": [
+          "t33",
+          "t34"
+        ]
+      },
+      {
+        "day": 5,
+        "themes": [
+          "t35",
+          "t36"
+        ]
+      }
+    ],
+    "review_day_questions": 15,
+    "review_day_xp": 20,
+    "exam": {
+      "day": 6,
+      "zh": "季度大考",
+      "word_pool": 300,
+      "questions": 40,
+      "match_groups": 4,
+      "xp": 60
+    },
+    "cat_unlock": {
+      "cat": "daihung",
+      "trigger": "complete_season_3",
+      "note": "大熊（緬因貓）unlocks when the Season 3 quarterly exam is completed."
+    }
   },
-  {
-   "id": "t26",
-   "no": 2,
-   "season": 3,
-   "week": 2,
-   "zh": "學校人物",
-   "en": "School People",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "teacher",
-      "student",
-      "pupil",
-      "classmate",
-      "principal"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "headmaster",
-      "monitor",
-      "prefect",
-      "partner",
-      "group"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "visitor",
-      "guard",
-      "cleaner",
-      "librarian",
-      "tutor"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "headmistress",
-      "assistant",
-      "peer",
-      "leader",
-      "member"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "volunteer",
-      "speaker",
-      "listener",
-      "host",
-      "deputy"
-     ]
-    }
-   ],
-   "outing_task": {
-    "en": "She is my classmate.",
-    "scene_zh": "介紹同學"
-   },
-   "polysemy_notes": {},
-   "grammar": "g13"
-  },
-  {
-   "id": "t27",
-   "no": 3,
-   "season": 3,
-   "week": 3,
-   "zh": "文具同書包",
-   "en": "Stationery",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "pen",
-      "pencil",
-      "eraser",
-      "rubber",
-      "ruler"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "scissors",
-      "glue",
-      "tape",
-      "crayon",
-      "marker"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "highlighter",
-      "notebook",
-      "textbook",
-      "folder",
-      "file"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "backpack",
-      "pencilcase",
-      "stapler",
-      "clip",
-      "paper"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "page",
-      "cover",
-      "sharpener",
-      "calculator",
-      "ink"
-     ]
-    }
-   ],
-   "outing_task": {
-    "en": "Can I borrow a pencil?",
-    "scene_zh": "借文具"
-   },
-   "polysemy_notes": {},
-   "grammar": null
-  },
-  {
-   "id": "t28",
-   "no": 4,
-   "season": 3,
-   "week": 4,
-   "zh": "學科",
-   "en": "Subjects",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "subject",
-      "english",
-      "chinese",
-      "maths",
-      "mathematics"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "science",
-      "history",
-      "geography",
-      "art",
-      "pe"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "computer",
-      "putonghua",
-      "lesson",
-      "period",
-      "chapter"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "topic",
-      "project",
-      "experiment",
-      "worksheet",
-      "dictation"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "composition",
-      "reading",
-      "writing",
-      "speaking",
-      "listening"
-     ]
-    }
-   ],
-   "outing_task": {
-    "en": "I have Maths today.",
-    "scene_zh": "講今日科目"
-   },
-   "polysemy_notes": {},
-   "grammar": "g14"
-  },
-  {
-   "id": "t29",
-   "no": 5,
-   "season": 3,
-   "week": 5,
-   "zh": "學習動詞",
-   "en": "Study Verbs",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "study",
-      "teach",
-      "answer",
-      "question",
-      "explain"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "understand",
-      "remember",
-      "revise",
-      "copy",
-      "spell"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "calculate",
-      "underline",
-      "tick",
-      "cross",
-      "pass"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "fail",
-      "review",
-      "prepare",
-      "focus",
-      "repeat"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "recite",
-      "memorise",
-      "solve",
-      "translate",
-      "summarise"
-     ]
-    }
-   ],
-   "outing_task": {
-    "en": "I do not understand.",
-    "scene_zh": "課堂／補習"
-   },
-   "polysemy_notes": {},
-   "grammar": null
-  },
-  {
-   "id": "t30",
-   "no": 6,
-   "season": 3,
-   "week": 6,
-   "zh": "功課同考試",
-   "en": "Homework and Exams",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "homework",
-      "assignment",
-      "test",
-      "exam",
-      "quiz"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "result",
-      "report",
-      "certificate",
-      "prize",
-      "medal"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "competition",
-      "contest",
-      "speech",
-      "presentation",
-      "essay"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "paragraph",
-      "sentence",
-      "mistake",
-      "error",
-      "correct"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "wrong",
-      "oral",
-      "written",
-      "mark",
-      "points"
-     ]
-    }
-   ],
-   "outing_task": {
-    "en": "I have a test tomorrow.",
-    "scene_zh": "考試前"
-   },
-   "polysemy_notes": {
-    "mark": "本季＝分數；另外有「標記」意思"
-   },
-   "grammar": "g15"
-  },
-  {
-   "id": "t31",
-   "no": 7,
-   "season": 3,
-   "week": 7,
-   "zh": "課室規矩",
-   "en": "Classroom Rules",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "rule",
-      "quiet",
-      "raise",
-      "stand",
-      "sit"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "line",
-      "careful",
-      "tidy",
-      "absent",
-      "present"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "permission",
-      "attention",
-      "behave",
-      "polite",
-      "respect"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "follow",
-      "obey",
-      "allow",
-      "forbid",
-      "punish"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "reward",
-      "praise",
-      "warn",
-      "remind",
-      "discipline"
-     ]
-    }
-   ],
-   "outing_task": {
-    "en": "Please be quiet.",
-    "scene_zh": "請人安靜（禮貌）"
-   },
-   "polysemy_notes": {
-    "present": "本季＝出席；禮物用 gift（S4）"
-   },
-   "grammar": null
-  },
-  {
-   "id": "t32",
-   "no": 8,
-   "season": 3,
-   "week": 8,
-   "zh": "職業",
-   "en": "Jobs",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "job",
-      "work",
-      "worker",
-      "boss",
-      "manager"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "colleague",
-      "staff",
-      "officer",
-      "driver",
-      "chef"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "police",
-      "firefighter",
-      "postman",
-      "farmer",
-      "pilot"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "singer",
-      "actor",
-      "actress",
-      "engineer",
-      "designer"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "programmer",
-      "baker",
-      "barber",
-      "lawyer",
-      "dentist"
-     ]
-    }
-   ],
-   "outing_task": {
-    "en": "What do you do?",
-    "scene_zh": "問職業"
-   },
-   "polysemy_notes": {},
-   "grammar": "g16"
-  },
-  {
-   "id": "t33",
-   "no": 9,
-   "season": 3,
-   "week": 9,
-   "zh": "辦公室同求職",
-   "en": "Office and Job Hunting",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "meeting",
-      "interview",
-      "salary",
-      "wage",
-      "apply"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "application",
-      "cv",
-      "resume",
-      "keyboard",
-      "printer"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "print",
-      "document",
-      "signature",
-      "deadline",
-      "task"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "overtime",
-      "hire",
-      "fire",
-      "quit",
-      "retire"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "career",
-      "profession",
-      "company",
-      "employee",
-      "employer"
-     ]
-    }
-   ],
-   "outing_task": {
-    "en": "I have an interview.",
-    "scene_zh": "求職"
-   },
-   "polysemy_notes": {
-    "apply": "本季＝申請；另外有「應用」",
-    "fire": "本季＝解僱；另外有「火」"
-   },
-   "grammar": null
-  },
-  {
-   "id": "t34",
-   "no": 10,
-   "season": 3,
-   "week": 10,
-   "zh": "時間表同作息",
-   "en": "Timetable and Routine",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "o'clock",
-      "past",
-      "am",
-      "pm",
-      "schedule"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "diary",
-      "delay",
-      "duration",
-      "punctual",
-      "prompt"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "soon",
-      "later",
-      "earlier",
-      "hourly",
-      "daily"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "weekly",
-      "monthly",
-      "yearly",
-      "begin",
-      "end"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "start",
-      "finish",
-      "homeroom",
-      "slot",
-      "shift"
-     ]
-    }
-   ],
-   "outing_task": {
-    "en": "The class starts at nine.",
-    "scene_zh": "講時間"
-   },
-   "polysemy_notes": {},
-   "grammar": "g17"
-  },
-  {
-   "id": "t35",
-   "no": 11,
-   "season": 3,
-   "week": 11,
-   "zh": "升學同校園生活",
-   "en": "Further Study",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "primary",
-      "secondary",
-      "university",
-      "college",
-      "kindergarten"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "graduate",
-      "graduation",
-      "term",
-      "semester",
-      "vacation"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "outing",
-      "picnic",
-      "activity",
-      "duty",
-      "responsibility"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "goal",
-      "dream",
-      "future",
-      "degree",
-      "diploma"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "course",
-      "major",
-      "alumni",
-      "freshman",
-      "scholarship"
-     ]
-    }
-   ],
-   "outing_task": {
-    "en": "I go to primary school.",
-    "scene_zh": "介紹學校"
-   },
-   "polysemy_notes": {},
-   "grammar": null
-  },
-  {
-   "id": "t36",
-   "no": 12,
-   "season": 3,
-   "week": 12,
-   "zh": "討論同合作",
-   "en": "Discussion and Teamwork",
-   "word_count": 25,
-   "days": [
-    {
-     "day": 1,
-     "words": [
-      "speak",
-      "talk",
-      "discuss",
-      "agree",
-      "disagree"
-     ]
-    },
-    {
-     "day": 2,
-     "words": [
-      "suggest",
-      "decide",
-      "plan",
-      "organise",
-      "continue"
-     ]
-    },
-    {
-     "day": 3,
-     "words": [
-      "improve",
-      "skill",
-      "ability",
-      "confident",
-      "success"
-     ]
-    },
-    {
-     "day": 4,
-     "words": [
-      "failure",
-      "teamwork",
-      "cooperate",
-      "support",
-      "encourage"
-     ]
-    },
-    {
-     "day": 5,
-     "words": [
-      "opinion",
-      "idea",
-      "debate",
-      "vote",
-      "argue"
-     ]
-    }
-   ],
-   "outing_task": {
-    "en": "I agree with you.",
-    "scene_zh": "討論時"
-   },
-   "polysemy_notes": {},
-   "grammar": "g18"
-  }
- ]
+  "notes_for_bot": [
+    "theme week 係季內 1–12；日曆週 = 26 + week（即 27–38 學習、39 複習）。calendar_week_start=27。",
+    "words[].week 寫季內 week（1–12），同 S1／S2 一致。",
+    "文法預留 g13–g18（雙數週）：t26 will/going to、t28 過去進行式、t30 現在完成式、t32 頻率副詞、t34 should/must/have to、t36 連接詞。本包只做 word-plan，未寫 grammar JSON。",
+    "S2 已用 email／office／film／cinema／mouse 等：t36 用 inbox／reply／attachment；t34 用 movie 而非 film。",
+    "唔好偷 S4「表達意見」字：agree／suggest／discuss。職場只得 t35＋t36 兩主題。",
+    "解鎖貓：daihung（大熊）喺 q3 季度大考完成後。",
+    "id 必須 = normalized headword，且唔好撞 s1s2-exclude-words.txt。"
+  ]
 }
