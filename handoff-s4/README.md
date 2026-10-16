@@ -1,23 +1,29 @@
-# Season 4 Handoff — 一齊過節 (Celebrate Together) v1.1
-
-300 張完整生字卡同 6 篇文法已展開。v1.1 貼題換字已用。跨季零撞字。每主題有出街任務。
+# Season 4 Handoff — 窩喺被竇 (Cosy in the Den)
 
 | 欄位 | 值 |
 |------|-----|
-| season | 4 |
-| zh | 一齊過節 |
-| theme id | t37–t48 |
-| total_words | 300 |
-| version | 1.1 |
+| zh | 窩喺被竇 |
+| en | Cosy in the Den |
+| emoji | ❄️ |
+| level | A2–B1 |
+| themes | t37–t48（300 字） |
+| grammar | g19–g24 |
+| monthly | m10–m12 |
+| quarterly | q4（週52）＋年度大複習 |
+| unlock | baubau（豹豹）← `words_learned` 1200 |
 
 ## 檔案
-- `data/season4-word-plan.json` — 主題、生字、outing_task、polysemy_notes
-- `data/s1s2s3-exclude-words.txt` — 禁字
-- 主表全文見 `S1-S4_MASTER_v1.1.md`
 
-## 檔案（已展開）
-- `data/season4-words.json` — 300 張完整生字卡。v1.1 用 homeroom／scholarship 喺第 3 季，呢季用 flatmate、wrapping、bow、include、passion、rights
-- `data/season4-themes.json` — 12 主題、日次、出街任務
+- `data/season4-words.json` — 300 張完整生字卡（ipa／粵語／例句／tip／icon）
+- `data/season4-themes.json` — 12 主題、m10–m12、q4／baubau
 - `data/season4-grammar.json` — g19–g24
-- `data/s1s2s3-exclude-words.txt` — 前三季 900 個禁字
-- 驗證：`python3 tools/validate_s4.py`
+- `data/season4-word-plan.json` — stub 對照（可選）
+- `data/s1s2s3-exclude-words.txt` — 禁字
+- `assets/icons/{word}.png` — 300 張水彩貼紙切圖
+- `tools/validate_s4.py` — 驗證
+
+> 已取代舊 stub《一齊過節 / Celebrate Together》。
+
+```bash
+cd handoff-s4 && python3 tools/validate_s4.py
+```
