@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>地圖設計稿 · 未放入 app</title>
+<style>
+  :root { --ink:#5B4636; --muted:#8C7666; --line:#F0E0D0; --bg:#FFF8EE; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.55 "Iowan Old Style", Palatino, "Songti TC", "Noto Sans CJK TC", sans-serif; }
+  main { max-width: 980px; margin: 0 auto; padding: 28px 20px 64px; }
+  h1 { font-size: 32px; margin: 0 0 6px; }
+  h2 { font-size: 22px; margin: 36px 0 8px; }
+  .lead, .note { color: var(--muted); }
+  .banner { display:inline-block; background:#F59A3E; color:#fff; border-radius:999px; padding:4px 10px; font-size:13px; font-weight:700; letter-spacing:.02em; }
+  figure { margin: 16px 0 28px; }
+  figcaption { margin-top: 8px; }
+  figcaption b { display:block; font-size:18px; }
+  img.art { width:100%; height:auto; border-radius:18px; border:3px solid #F3D7B4; background:#fff; }
+  .pair { display:grid; grid-template-columns: 1.4fr .8fr; gap:16px; }
+  @media (max-width: 800px) { .pair { grid-template-columns: 1fr; } }
+  .nodes { display:flex; flex-wrap:wrap; gap:14px; margin-top:12px; }
+  .node { width:92px; text-align:center; font-size:13px; }
+  .node img { width:72px; height:72px; object-fit:contain; background:#fff; border-radius:18px; border:2px solid var(--line); }
+  .node.lock img { filter: grayscale(1); opacity:.45; }
+  .node small { display:block; color:var(--muted); }
+  .food { background:#FFF6EC; border:2px solid #F3D7B4; border-radius:18px; padding:14px; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  th, td { text-align:left; padding:8px 6px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; }
+</style>
+</head>
+<body>
+<main>
+  <p class="banner">設計稿 · 未放入 app</p>
+  <h1>地圖用你畀嘅四張圖</h1>
+  <p class="lead">手機打開地圖，就係下面直版呢張。左右掃先睇全景。進度總覽用四張旅程卡。首頁入口用縮圖。圖入面嘅屋、港鐵、學校、過節、貓、小路、路牌、窗燈，就係地圖。英文假頂欄唔搬入 app。心心同每日目標留喺而家嘅頂欄同「我」頁。</p>
+
+  <h2>手機預設</h2>
+  <figure>
+    <img class="art" src="../map-direction/03-vertical-phone.jpg" alt="直版香港生活地圖">
+    <figcaption><b>打開地圖就見到呢張。</b>由上到下：屋企、出街、學校、過節。未行到嘅區灰住，句字係「仲未行到呢度。慢慢嚟。」</figcaption>
+  </figure>
+
+  <div class="pair">
+    <figure>
+      <img class="art" src="../map-direction/01-panorama.jpg" alt="左右可以掃嘅四季全景">
+      <figcaption><b>左右掃。</b>同一條路橫過嚟：屋企、港鐵、學校、過節。</figcaption>
+    </figure>
+    <figure>
+      <img class="art" src="../map-direction/04-thumbnail-path.jpg" alt="首頁入口縮圖">
+      <figcaption><b>首頁入口。</b>縮圖加一句「你同貓一齊行到邊？」</figcaption>
+    </figure>
+  </div>
+
+  <figure>
+    <img class="art" src="../map-direction/02-journey-cards.jpg" alt="四張旅程卡">
+    <figcaption><b>進度總覽同月結底。</b>四張卡各自記週燈同出街燈。週燈用圓腳印，街燈用菱形。</figcaption>
+  </figure>
+
+  <h2>主題節點改用生字卡圖</h2>
+  <p>舊地圖蛇路上面嘅 emoji 唔再做主題圖示。每個主題用該主題其中一張生字卡圖。</p>
+  <div class="nodes">
+    <div class="node"><img src="../../assets/icons/family.png" alt=""><b>家人</b><small>family</small></div>
+    <div class="node"><img src="../../assets/icons/head.png" alt=""><b>身體</b><small>head</small></div>
+    <div class="node"><img src="../../assets/icons/home.png" alt=""><b>屋企</b><small>home</small></div>
+    <div class="node"><img src="../../assets/icons/wake.png" alt=""><b>作息</b><small>wake</small></div>
+    <div class="node"><img src="../../assets/icons/noodles.png" alt=""><b>食物</b><small>noodles</small></div>
+    <div class="node"><img src="../../assets/icons/water.png" alt=""><b>茶餐廳</b><small>water</small></div>
+    <div class="node"><img src="../../assets/icons/clothes.png" alt=""><b>衣服</b><small>clothes</small></div>
+    <div class="node"><img src="../../assets/icons/red.png" alt=""><b>顏色</b><small>red</small></div>
+    <div class="node"><img src="../../assets/icons/weather.png" alt=""><b>天氣</b><small>weather</small></div>
+    <div class="node"><img src="../../assets/icons/time.png" alt=""><b>時間</b><small>time</small></div>
+    <div class="node"><img src="../../assets/icons/animal.png" alt=""><b>動物</b><small>animal</small></div>
+    <div class="node"><img src="../../assets/icons/happy.png" alt=""><b>情緒</b><small>happy</small></div>
+  </div>
+
+  <h2>未解鎖要灰，食物都一樣</h2>
+  <div class="food">
+    <p>未解鎖嘅主題，張生字圖灰階、變淡。解鎖之後先有顏色。食物同其他主題同一規則。</p>
+    <div class="nodes">
+      <div class="node lock"><img src="../../assets/icons/noodles.png" alt=""><b>食物 · 未解鎖</b><small>灰階</small></div>
+      <div class="node"><img src="../../assets/icons/noodles.png" alt=""><b>食物 · 行緊</b><small>有色</small></div>
+      <div class="node lock"><img src="../../assets/icons/home.png" alt=""><b>屋企 · 未解鎖</b><small>灰階</small></div>
+      <div class="node"><img src="../../assets/icons/home.png" alt=""><b>屋企 · 行緊</b><small>有色</small></div>
+    </div>
+    <p class="note">而家 app 嘅蛇路只把 emoji 變淡。食物用咗麵嘅生字圖，未解鎖都仲係彩色。下一輪灰階打中張圖，食物冇例外。</p>
+  </div>
+
+  <h2>路牌</h2>
+  <table>
+    <tr><th>路段</th><th>牌</th></tr>
+    <tr><td>屋企 → 出街</td><td>出門記得帶鎖匙。</td></tr>
+    <tr><td>出街 → 學校</td><td>鐘響之前，買個麵包都得。</td></tr>
+    <tr><td>學校 → 過節</td><td>功課放下，燈籠點起。</td></tr>
+  </table>
+  <p class="note">第 2 至第 4 季未有獨立生字圖之前，主題節點留空，唔再填 emoji。有圖之後用上面同一規則。app 呢輪冇改。</p>
+</main>
+</body>
+</html>
